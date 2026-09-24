@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T15:52:44.478Z",
+  "exportedAt": "2026-09-24T16:15:06.419Z",
   "vehicles": [
     {
       "id": "v_1789495226612_o5r98",
@@ -1824,9 +1824,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "92322",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "92322"
       ]
     },
     {
@@ -1841,9 +1844,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "92322",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "92322"
       ]
     },
     {
@@ -2414,9 +2420,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "92792",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 24系"
+      ],
+      "productCodes": [
+        "92792"
       ]
     },
     {
@@ -3009,9 +3018,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "92792",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 24系"
+      ],
+      "productCodes": [
+        "92792"
       ]
     },
     {
@@ -3230,9 +3242,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "92792",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 24系"
+      ],
+      "productCodes": [
+        "92792"
       ]
     },
     {
@@ -27915,9 +27930,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98781",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "98781"
       ]
     },
     {
@@ -34961,9 +34979,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "956",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "956",
+        "10-1547"
       ]
     },
     {
@@ -35165,9 +35187,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "5331",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "5331"
       ]
     },
     {
@@ -35617,6 +35642,77 @@
       "sourcePath": "01_JR 國鐵/01_客車/32系雙重屋根/スロハフ30.png",
       "series": "32系雙重屋根",
       "modelCode": "スロハフ30",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 32系雙重屋根"
+      ]
+    },
+    {
+      "id": "v_1790266161275_rjv7n",
+      "sourcePath": "01_JR 國鐵/01_客車/32系雙重屋根/スハネ31.png",
+      "series": "32系雙重屋根",
+      "modelCode": "スハネ31",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 32系雙重屋根"
+      ]
+    },
+    {
+      "id": "v_1790266161275_qkh9f",
+      "sourcePath": "01_JR 國鐵/01_客車/32系雙重屋根/スハネ30.png",
+      "series": "32系雙重屋根",
+      "modelCode": "スハネ30",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 32系雙重屋根"
+      ]
+    },
+    {
+      "id": "v_1790266161275_yc6j0",
+      "sourcePath": "01_JR 國鐵/01_客車/32系雙重屋根/マイテ49.png",
+      "series": "32系雙重屋根",
+      "modelCode": "マイテ49",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1893",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 32系雙重屋根"
+      ],
+      "productCodes": [
+        "10-1893"
+      ]
+    },
+    {
+      "id": "v_1790266161275_mz6ov",
+      "sourcePath": "01_JR 國鐵/01_客車/32系雙重屋根/マシ38.png",
+      "series": "32系雙重屋根",
+      "modelCode": "マシ38",
       "variantCode": "",
       "liveryName": "",
       "side": "",
