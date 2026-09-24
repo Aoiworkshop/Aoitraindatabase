@@ -1,0 +1,6344 @@
+{
+  "formationsIndex": [
+    {
+      "id": "f_1789495952533",
+      "name": "●常磐(快速)線(1984年4月1日，マト18)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年4月1日",
+      "trainInfo": "マト18",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "取手",
+          "fromPos": "",
+          "to": "上野",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "国鉄",
+      "region": "東日本",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クハ103",
+        "モハ103-1000",
+        "モハ102-1000"
+      ],
+      "updatedAt": "2026-09-18T10:17:26.575Z"
+    },
+    {
+      "id": "f_1789525314979",
+      "name": "●常磐(快速)線(1979年3月10日，マト9)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1979年3月10日",
+      "trainInfo": "マト9",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "クハ103",
+        "モハ103",
+        "サハ103"
+      ],
+      "updatedAt": "2026-09-16T02:21:54.981Z"
+    },
+    {
+      "id": "f_1789525395903",
+      "name": "●常磐(快速)線(1984年1月28日，トマ1)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年1月28日",
+      "trainInfo": "トマ1",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "クハ103",
+        "モハ103",
+        "サハ103"
+      ],
+      "updatedAt": "2026-09-16T02:23:15.905Z"
+    },
+    {
+      "id": "f_1789525505513",
+      "name": "●常磐(快速)線(1984年2月20日，トマ5)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年2月20日",
+      "trainInfo": "トマ5",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "サハ103",
+        "モハ103",
+        "クハ103"
+      ],
+      "updatedAt": "2026-09-18T07:58:50.904Z"
+    },
+    {
+      "id": "f_1789525600784",
+      "name": "●常磐(快速)線(1984年2月20日，トマ5)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年2月20日",
+      "trainInfo": "トマ5",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "サハ103",
+        "クハ103",
+        "モハ103"
+      ],
+      "updatedAt": "2026-09-18T07:59:08.116Z"
+    },
+    {
+      "id": "f_1789525723095",
+      "name": "●常磐(快速)線(1980年3月9日，トマ14)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1980年3月9日",
+      "trainInfo": "トマ14",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "サハ103",
+        "モハ103",
+        "クハ103"
+      ],
+      "updatedAt": "2026-09-18T07:59:16.149Z"
+    },
+    {
+      "id": "f_1789525818456",
+      "name": "●常磐(快速)線(1984年3月10日，マト12)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年3月10日",
+      "trainInfo": "マト12",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "サハ103",
+        "モハ103",
+        "クハ103"
+      ],
+      "updatedAt": "2026-09-16T02:30:18.457Z"
+    },
+    {
+      "id": "f_1789526050161",
+      "name": "●常磐(快速)線(1984年4月1日，マト17)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年4月1日",
+      "trainInfo": "マト17",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "サハ103",
+        "モハ103",
+        "クハ103"
+      ],
+      "updatedAt": "2026-09-16T02:34:10.164Z"
+    },
+    {
+      "id": "f_1789526176365",
+      "name": "●常磐(快速)線(1985年1月28日，マト1)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1985年1月28日",
+      "trainInfo": "マト1",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "サハ103",
+        "モハ103",
+        "クハ103"
+      ],
+      "updatedAt": "2026-09-16T02:36:16.376Z"
+    },
+    {
+      "id": "f_1789526254655",
+      "name": "●常磐(快速)線(1986年4月1日，トマ6)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1986年4月1日",
+      "trainInfo": "トマ6",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "クハ103",
+        "モハ103",
+        "サハ103"
+      ],
+      "updatedAt": "2026-09-16T02:37:34.657Z"
+    },
+    {
+      "id": "f_1789526429966",
+      "name": "●常磐(快速)線(1984年3月11日，トマ3)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年3月11日",
+      "trainInfo": "トマ3",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "クハ103",
+        "モハ103",
+        "サハ103"
+      ],
+      "updatedAt": "2026-09-16T02:40:29.968Z"
+    },
+    {
+      "id": "f_1789526547562",
+      "name": "●常磐(快速)線(1984年3月11日，マト17)",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年3月11日",
+      "trainInfo": "マト17",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クモハ103",
+        "モハ102",
+        "サハ103",
+        "モハ103",
+        "クハ103"
+      ],
+      "updatedAt": "2026-09-16T02:42:27.564Z"
+    },
+    {
+      "id": "f_1789545304080",
+      "name": "●寝台特急「北斗星1．2号」(札幌運転所)",
+      "routeName": "",
+      "trainType": "寝台特急",
+      "dateStr": "",
+      "trainInfo": "札幌運転所",
+      "segments": [
+        {
+          "nickname": "北斗星1．2号",
+          "from": "上野",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "JR東日本 JR北海道",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "オハネフ25-0",
+        "オハネ25-0",
+        "オハネ25-560",
+        "オハネ25-550",
+        "スハネ25-500",
+        "スシ24-500",
+        "オロネ24-500",
+        "オロハネ25-550",
+        "カニ24-500"
+      ],
+      "updatedAt": "2026-09-16T07:55:04.082Z"
+    },
+    {
+      "id": "f_1789547577194",
+      "name": "●特急「北斗星81．82号」(2001～2003頃，夢空間北斗星号．北海道編成)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2001～2003頃",
+      "trainInfo": "夢空間北斗星号．北海道編成",
+      "segments": [
+        {
+          "nickname": "北斗星81．82号",
+          "from": "上野",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "9．11号車を外して8号車をカニの次位に付ると「夢空間北斗星ニセコ」になる"
+      ],
+      "carModelsUsed": [
+        "オシ25-900",
+        "オハフ25-900",
+        "オロネ25-900",
+        "オハ25-550",
+        "オロネ25-500",
+        "オロハネ25-550",
+        "オハネフ24-500",
+        "オハネフ25-200",
+        "カニ24-500"
+      ],
+      "updatedAt": "2026-09-16T08:35:32.733Z"
+    },
+    {
+      "id": "f_1789548168284",
+      "name": "●「夢空間ハッピートレイン」(1994年2月)",
+      "routeName": "",
+      "trainType": "",
+      "dateStr": "1994年2月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "夢空間ハッピートレイン",
+          "from": "福井",
+          "fromPos": "",
+          "to": "糸魚川",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "オシ25-900",
+        "オハフ25-900",
+        "オロネ25-900",
+        "スハフ14-550",
+        "オハ14-500",
+        "マイテ49"
+      ],
+      "updatedAt": "2026-09-22T08:40:57.600Z"
+    },
+    {
+      "id": "f_1789549406585",
+      "name": "●特急「さよなら夢空間北斗星」(2008年3月1日)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2008年3月1日",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "さよなら夢空間北斗星",
+          "from": "札幌",
+          "fromPos": "",
+          "to": "上野",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "盛岡駅到着後はDE10 1763が入れ換えを担当"
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "EF81",
+        "オシ25-900",
+        "オハフ25-900",
+        "オロネ25-900",
+        "オハネ25-100",
+        "オハネフ25-0",
+        "オハネ25-0",
+        "オハネフ25-200",
+        "カニ24-500"
+      ],
+      "updatedAt": "2026-09-20T14:42:50.087Z"
+    },
+    {
+      "id": "f_1789717383107",
+      "name": "●特急「スーパーとかち」(1991年7月登場時)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1991年7月登場時",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパーとかち",
+          "from": "帯広",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ183-0",
+        "キサロハ182-550",
+        "キハ182-0",
+        "キハ182-550"
+      ],
+      "updatedAt": "2026-09-18T07:43:27.147Z"
+    },
+    {
+      "id": "f_1789718314174",
+      "name": "●特急「オホーツク」(2010年04月)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2010年04月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "オホーツク",
+          "from": "札幌．網走",
+          "fromPos": "",
+          "to": "遠軽",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ183-200",
+        "キロハ182",
+        "スハネフ14-500",
+        "キハ182-0"
+      ],
+      "updatedAt": "2026-09-18T07:58:34.175Z"
+    },
+    {
+      "id": "f_1789719247525",
+      "name": "●特急「スーパーやくも」",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパーやくも",
+          "from": "出雲市",
+          "fromPos": "",
+          "to": "岡山",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クロ380",
+        "モハ380",
+        "モハ381",
+        "クハ381"
+      ],
+      "updatedAt": "2026-09-18T08:16:11.398Z"
+    },
+    {
+      "id": "f_1789719349189",
+      "name": "●特急「スーパーやくも」",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパーやくも",
+          "from": "出雲市",
+          "fromPos": "",
+          "to": "岡山",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クロ380",
+        "モハ380",
+        "モハ381",
+        "クハ381"
+      ],
+      "updatedAt": "2026-09-18T08:15:49.190Z"
+    },
+    {
+      "id": "f_1789719437433",
+      "name": "●特急「スーパーやくも」",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパーやくも",
+          "from": "出雲市",
+          "fromPos": "",
+          "to": "岡山",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "クロ380",
+        "モハ380",
+        "モハ381",
+        "クハ381"
+      ],
+      "updatedAt": "2026-09-18T08:17:17.435Z"
+    },
+    {
+      "id": "f_1789720414620",
+      "name": "●特急「北斗(代走)」(1969年)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1969年",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "北斗(代走)",
+          "from": "函館．旭川",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "札幌で方向転換、札幌～旭川間は逆向き。"
+      ],
+      "carModelsUsed": [
+        "キハ56",
+        "キハ27",
+        "キロ26"
+      ],
+      "updatedAt": "2026-09-18T08:34:45.731Z"
+    },
+    {
+      "id": "f_1789720607833",
+      "name": "●函館本線(1995年頃)",
+      "routeName": "函館本線",
+      "trainType": "",
+      "dateStr": "1995年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "倶知安",
+          "fromPos": "",
+          "to": "小樽",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ40",
+        "キハ27",
+        "キハ56"
+      ],
+      "updatedAt": "2026-09-18T08:36:47.834Z"
+    },
+    {
+      "id": "f_1789720797792",
+      "name": "●二俣線·片町線なと(1978年頃)",
+      "routeName": "二俣線·片町線なと",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ20"
+      ],
+      "updatedAt": "2026-09-18T08:43:12.829Z"
+    },
+    {
+      "id": "f_1789721092764",
+      "name": "●関西本線(1976年頃)",
+      "routeName": "関西本線",
+      "trainType": "",
+      "dateStr": "1976年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ20",
+        "キハ35",
+        "キハ23"
+      ],
+      "updatedAt": "2026-09-18T08:45:05.990Z"
+    },
+    {
+      "id": "f_1789721327194",
+      "name": "●東北本線普通列車(1978年頃，盛岡→沼宮内·大館)",
+      "routeName": "東北本線",
+      "trainType": "普通列車",
+      "dateStr": "1978年頃",
+      "trainInfo": "盛岡→沼宮内·大館",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "沼宮内·大館",
+          "fromPos": "",
+          "to": "盛岡",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "ED75-700",
+        "スハフ42",
+        "オハ47",
+        "スハ43",
+        "オハ61",
+        "キハ52",
+        "キハ55",
+        "キハユニ26"
+      ],
+      "updatedAt": "2026-09-20T14:42:22.514Z"
+    },
+    {
+      "id": "f_1789721515588",
+      "name": "●播但線(1978年頃)",
+      "routeName": "播但線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ35",
+        "キハ26",
+        "キハ25",
+        "キユニ26",
+        "キハ17",
+        "キハ20"
+      ],
+      "updatedAt": "2026-09-18T08:51:55.590Z"
+    },
+    {
+      "id": "f_1789721617049",
+      "name": "●播但線(1977年頃)",
+      "routeName": "播但線",
+      "trainType": "",
+      "dateStr": "1977年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キユニ26",
+        "キハ23",
+        "キハ35"
+      ],
+      "updatedAt": "2026-09-18T08:53:37.051Z"
+    },
+    {
+      "id": "f_1789721687706",
+      "name": "●高山本線(1978年頃)",
+      "routeName": "高山本線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キユニ26",
+        "キハ58",
+        "キハ28"
+      ],
+      "updatedAt": "2026-09-18T08:54:47.708Z"
+    },
+    {
+      "id": "f_1789721747387",
+      "name": "●山陰本線(1977年頃)",
+      "routeName": "山陰本線",
+      "trainType": "",
+      "dateStr": "1977年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キユニ26",
+        "キハ35"
+      ],
+      "updatedAt": "2026-09-18T08:55:47.390Z"
+    },
+    {
+      "id": "f_1789721850619",
+      "name": "●只見線·会津線(1979年頃)",
+      "routeName": "只見線·会津線",
+      "trainType": "",
+      "dateStr": "1979年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハユニ26",
+        "キハ55",
+        "キハ48"
+      ],
+      "updatedAt": "2026-09-18T08:57:47.002Z"
+    },
+    {
+      "id": "f_1789721987731",
+      "name": "●豊肥本線(1978年頃)",
+      "routeName": "豊肥本線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ58",
+        "キハ52",
+        "キハユニ26",
+        "キハ55"
+      ],
+      "updatedAt": "2026-09-18T09:00:02.373Z"
+    },
+    {
+      "id": "f_1789722063858",
+      "name": "●北上線(1976年頃)",
+      "routeName": "北上線",
+      "trainType": "",
+      "dateStr": "1976年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ22",
+        "キハユニ26"
+      ],
+      "updatedAt": "2026-09-18T09:01:03.861Z"
+    },
+    {
+      "id": "f_1789722126468",
+      "name": "●陸羽西線(1978年頃)",
+      "routeName": "陸羽西線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ17",
+        "キハユニ26"
+      ],
+      "updatedAt": "2026-09-18T09:02:12.230Z"
+    },
+    {
+      "id": "f_1789722204837",
+      "name": "●大湊線·大畑線(1978年頃)",
+      "routeName": "大湊線·大畑線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハユニ26",
+        "キハ22"
+      ],
+      "updatedAt": "2026-09-18T09:03:24.838Z"
+    },
+    {
+      "id": "f_1789722290073",
+      "name": "●真岡線(1978年頃)",
+      "routeName": "真岡線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ20",
+        "キハ25"
+      ],
+      "updatedAt": "2026-09-18T09:04:50.074Z"
+    },
+    {
+      "id": "f_1789722361000",
+      "name": "●参宮線(1978年頃)",
+      "routeName": "参宮線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ20",
+        "キハ30"
+      ],
+      "updatedAt": "2026-09-18T09:06:01.001Z"
+    },
+    {
+      "id": "f_1789722583874",
+      "name": "●43系急行「みちのく」",
+      "routeName": "43系",
+      "trainType": "急行",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "みちのく",
+          "from": "上野",
+          "fromPos": "",
+          "to": "青森",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "牽引機関車：仙台～平間C62常磐形、上野～平間EF80、青森～仙台DD51-500"
+      ],
+      "carModelsUsed": [
+        "スハフ42",
+        "スハ43",
+        "オロ61",
+        "スシ48",
+        "ナハ11",
+        "オハ47",
+        "オハフ45"
+      ],
+      "updatedAt": "2026-09-18T09:10:21.435Z"
+    },
+    {
+      "id": "f_1789723142288",
+      "name": "●「きたぐに」(1970 (昭和45)年10月頃，502レ)",
+      "routeName": "",
+      "trainType": "",
+      "dateStr": "1970 (昭和45)年10月頃",
+      "trainInfo": "502レ",
+      "segments": [
+        {
+          "nickname": "きたぐに",
+          "from": "大阪",
+          "fromPos": "",
+          "to": "青森",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "オユ10",
+        "スロ62",
+        "オハ46",
+        "ナハ10",
+        "オシ17",
+        "ナハフ11",
+        "スハフ42",
+        "スハネ16",
+        "オロネ10",
+        "オハネフ12"
+      ],
+      "updatedAt": "2026-09-18T09:19:02.290Z"
+    },
+    {
+      "id": "f_1789723706490",
+      "name": "●寝台特急「あさかぜ」(1963年12月から1965年3月，初期編成)",
+      "routeName": "",
+      "trainType": "寝台特急",
+      "dateStr": "1963年12月から1965年3月",
+      "trainInfo": "初期編成",
+      "segments": [
+        {
+          "nickname": "あさかぜ",
+          "from": "博多",
+          "fromPos": "",
+          "to": "東京",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "牽引機関車：東京～広島EF60-500、広島～下関C62、下関～門司EF30、門司～博多ED72。"
+      ],
+      "carModelsUsed": [
+        "カニ21",
+        "ナロネ20",
+        "ナロネ22",
+        "ナロネ21",
+        "ナロ20",
+        "ナシ20",
+        "ナハネ20",
+        "ナハ20",
+        "ナハフ20"
+      ],
+      "updatedAt": "2026-09-18T09:28:26.493Z"
+    },
+    {
+      "id": "f_1789724014950",
+      "name": "●急行「利尻」(1997年2月8日，311D)",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1997年2月8日",
+      "trainInfo": "311D",
+      "segments": [
+        {
+          "nickname": "利尻",
+          "from": "稚內",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ56",
+        "キハ400",
+        "キハ480",
+        "スハネフ14"
+      ],
+      "updatedAt": "2026-09-18T09:33:34.952Z"
+    },
+    {
+      "id": "f_1789724170488",
+      "name": "●急行「利尻」(1997年11月4日，312D)",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1997年11月4日",
+      "trainInfo": "312D",
+      "segments": [
+        {
+          "nickname": "利尻",
+          "from": "稚內",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ400",
+        "キハ480",
+        "スハネフ14"
+      ],
+      "updatedAt": "2026-09-18T09:36:10.490Z"
+    },
+    {
+      "id": "f_1789724545834",
+      "name": "●急行「利尻」(1998年1月3日，311D)",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1998年1月3日",
+      "trainInfo": "311D",
+      "segments": [
+        {
+          "nickname": "利尻",
+          "from": "稚內",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "キハ480",
+        "キハ182",
+        "スハネフ14",
+        "キハ56",
+        "キハ400",
+        "キハ54"
+      ],
+      "updatedAt": "2026-09-18T09:42:25.836Z"
+    },
+    {
+      "id": "f_1789727034168",
+      "name": "●山陽本線(1974年2月12日，5051レ)",
+      "routeName": "山陽本線",
+      "trainType": "",
+      "dateStr": "1974年2月12日",
+      "trainInfo": "5051レ",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "長崎",
+          "fromPos": "",
+          "to": "姬路",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "EF66",
+        "レサ10000",
+        "レムフ10000"
+      ],
+      "updatedAt": "2026-09-18T17:11:55.286Z"
+    },
+    {
+      "id": "f_1789753503831",
+      "name": "●寝台急行「音戸」(1965年頃)",
+      "routeName": "",
+      "trainType": "寝台急行",
+      "dateStr": "1965年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "音戸",
+          "from": "下関",
+          "fromPos": "1",
+          "to": "新大阪",
+          "toPos": "8"
+        },
+        {
+          "nickname": "音戸",
+          "from": "広島",
+          "fromPos": "9",
+          "to": "新大阪",
+          "toPos": "12"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "carModelsUsed": [
+        "マニ60",
+        "マロネ41",
+        "スハネ30",
+        "オハネ17",
+        "ナハネフ10"
+      ],
+      "updatedAt": "2026-09-18T17:46:03.816Z"
+    },
+    {
+      "id": "f_1789753853727",
+      "name": "●北陸本線寝台急行「つるぎ」(1969年10月頃から1972年3月頃)",
+      "routeName": "北陸本線",
+      "trainType": "寝台急行",
+      "dateStr": "1969年10月頃から1972年3月頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "つるぎ",
+          "from": "大阪",
+          "fromPos": "",
+          "to": "富山",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "牽引機関車：大阪～米原EF58、米原～田村DE10、田村～富山ED70。"
+      ],
+      "carModelsUsed": [
+        "マニ60",
+        "マユ35",
+        "オロネ10",
+        "スハネ30",
+        "スハ43",
+        "スハフ42"
+      ],
+      "updatedAt": "2026-09-18T17:54:09.721Z"
+    },
+    {
+      "id": "f_1789811684822",
+      "name": "●特急「北斗星」(2008年3月～2012年3月)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2008年3月～2012年3月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "北斗星",
+          "from": "函館",
+          "fromPos": "",
+          "to": "上野．札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "けん引機は，上野～青森信号場がEF81形（～2010年7月）．EF510形（2010年7月～）、青森信号場～函館がED79形、函館～札幌がDD51形重連でした。"
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "オハネフ25-0",
+        "オハネフ24-500",
+        "オハネ25-560",
+        "オハネ25-550",
+        "スハネ25-500",
+        "スシ24-500",
+        "オロネ25-500",
+        "オロハネ25-500",
+        "オロハネ24-550",
+        "オハネフ25-200",
+        "カニ24-500"
+      ],
+      "updatedAt": "2026-09-19T10:13:53.117Z"
+    },
+    {
+      "id": "f_1789812407878",
+      "name": "●特急「北斗星1・2号」(1998年3月～2008年3月) ※青森～函館は逆向き。",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1998年3月～2008年3月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "北斗星1・2号",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "けん引機は上野～青森がEF81形、青森～函館がED79形、函館～札幌がDD51形重連でした",
+        "2006年3月以降は、青森信号場経由での運転となり、上野～青森信号場間は従来と編成が逆向きになりました。"
+      ],
+      "titleNote": "青森～函館は逆向き。",
+      "carModelsUsed": [
+        "オハネフ25-0",
+        "オハネ25-560",
+        "オハネ25-550",
+        "スハネ25-500",
+        "スシ24-500",
+        "オロネ25-500",
+        "オロハネ25-550",
+        "カニ24-500"
+      ],
+      "updatedAt": "2026-09-19T10:13:29.481Z"
+    },
+    {
+      "id": "f_1790246273186",
+      "name": "●特急「彗星・あかつき」(2000年3月～2005年10月)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2000年3月～2005年10月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "彗星",
+          "from": "南宮崎",
+          "fromPos": "1",
+          "to": "京都",
+          "toPos": "6"
+        },
+        {
+          "nickname": "あかつき",
+          "from": "長崎",
+          "fromPos": "7",
+          "to": "京都",
+          "toPos": "14"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "けん引機は、京都～下関がEF66形、下関~門司がEF81形",
+        "下り「彗星」の門司～大分がEF81形、大分～南宮崎がED76形、「あかつき」の門司～長崎がED76形でした。また、上り「彗星」の南宮崎～門司がED76形でした",
+        "3.4.8号車は、主に多客期に連結されました。"
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "スハネフ15",
+        "オハネ15-350",
+        "オハネ15",
+        "オロネ14-300",
+        "オハネ14-300",
+        "オハ14-300"
+      ],
+      "updatedAt": "2026-09-24T10:46:51.070Z"
+    }
+  ],
+  "formationsData": {
+    "f_1789495952533": {
+      "id": "f_1789495952533",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年4月1日",
+      "trainInfo": "マト18",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "取手",
+          "fromPos": "",
+          "to": "上野",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "国鉄",
+      "region": "東日本",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_k47ys",
+          "flipped": false,
+          "attribute": "TO",
+          "productCode": "98284",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_rz2zm",
+          "flipped": false,
+          "attribute": "TO",
+          "productCode": "98284",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_k47ys",
+          "flipped": false,
+          "attribute": "TO",
+          "productCode": "98284",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_rz2zm",
+          "flipped": false,
+          "attribute": "TO",
+          "productCode": "98284",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_k47ys",
+          "flipped": false,
+          "attribute": "TO",
+          "productCode": "98284",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_rz2zm",
+          "flipped": false,
+          "attribute": "TO",
+          "productCode": "98284",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_k47ys",
+          "flipped": false,
+          "attribute": "TO",
+          "productCode": "98284",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_rz2zm",
+          "flipped": false,
+          "attribute": "TO",
+          "productCode": "98284",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789525314979": {
+      "id": "f_1789525314979",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1979年3月10日",
+      "trainInfo": "マト9",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226615_gstwd",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_fn7tn",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1744A",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226615_d6k3x",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743A",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_fn7tn",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743A",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "単",
+          "productCode": "10-1743E",
+          "setGroupId": ""
+        }
+      ]
+    },
+    "f_1789525395903": {
+      "id": "f_1789525395903",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年1月28日",
+      "trainInfo": "トマ1",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_w9rhy",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743G",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743G",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_gstwd",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "C"
+        }
+      ]
+    },
+    "f_1789525505513": {
+      "id": "f_1789525505513",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年2月20日",
+      "trainInfo": "トマ5",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_djw2f",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743D",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_q2k81",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743D",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_fn7tn",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744A",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226615_d6k3x",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744A",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_fn7tn",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744A",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789525600784": {
+      "id": "f_1789525600784",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年2月20日",
+      "trainInfo": "トマ5",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_hdxpr",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743D",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_zzayf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743D",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_fn7tn",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744A",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_w9rhy",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743G",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743G",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789525723095": {
+      "id": "f_1789525723095",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1980年3月9日",
+      "trainInfo": "トマ14",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_f9uaa",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743C",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_ru3h8",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743C",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_gstwd",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789525818456": {
+      "id": "f_1789525818456",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年3月10日",
+      "trainInfo": "マト12",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744B",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744B",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_gstwd",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1743E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_gstwd",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ]
+    },
+    "f_1789526050161": {
+      "id": "f_1789526050161",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年4月1日",
+      "trainInfo": "マト17",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744B",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744B",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_w9rhy",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744B",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744B",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_w9rhy",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743G",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743G",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ]
+    },
+    "f_1789526176365": {
+      "id": "f_1789526176365",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1985年1月28日",
+      "trainInfo": "マト1",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_w9rhy",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743G",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743G",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_gstwd",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ]
+    },
+    "f_1789526254655": {
+      "id": "f_1789526254655",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1986年4月1日",
+      "trainInfo": "トマ6",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_s0ixf",
+          "flipped": true,
+          "attribute": "単",
+          "productCode": "10-1743C",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_s0ixf",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1743C",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_d6k3x",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743A",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_fn7tn",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743A",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_d6k3x",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743A",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_fn7tn",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743A",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ]
+    },
+    "f_1789526429966": {
+      "id": "f_1789526429966",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年3月11日",
+      "trainInfo": "トマ3",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1743E",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "単",
+          "productCode": "10-1743E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_f9uaa",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743C",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_ru3h8",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1743C",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226615_gstwd",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ]
+    },
+    "f_1789526547562": {
+      "id": "f_1789526547562",
+      "routeName": "常磐(快速)線",
+      "trainType": "",
+      "dateStr": "1984年3月11日",
+      "trainInfo": "マト17",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ekel0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1744B",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744B",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_w9rhy",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744B",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1744B",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226614_bbhs1",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "10-1744E",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_w9rhy",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1744B",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_2k2hx",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "10-1744B",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_0ycs4",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1743E",
+          "setGroupId": "A"
+        }
+      ]
+    },
+    "f_1789545304080": {
+      "id": "f_1789545304080",
+      "routeName": "",
+      "trainType": "寝台特急",
+      "dateStr": "",
+      "trainInfo": "札幌運転所",
+      "segments": [
+        {
+          "nickname": "北斗星1．2号",
+          "from": "上野",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "JR東日本 JR北海道",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_8zlo0",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_r1e8v",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_1iimm",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_y9mus",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_kdghz",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_7hh5a",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_7hh5a",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_ttwr1",
+          "flipped": true,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        }
+      ]
+    },
+    "f_1789547577194": {
+      "id": "f_1789547577194",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2001～2003頃",
+      "trainInfo": "夢空間北斗星号．北海道編成",
+      "segments": [
+        {
+          "nickname": "北斗星81．82号",
+          "from": "上野",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "9．11号車を外して8号車をカニの次位に付ると「夢空間北斗星ニセコ」になる"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226613_b6p4j",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_ddce9",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_r7x5m",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_w108g",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98656",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "92786",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_0q64a",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98677",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226613_7hh5a",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98656",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98656",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98677",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98677",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98677",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226613_fl1uh",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "98656",
+          "setGroupId": "B"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789548168284": {
+      "id": "f_1789548168284",
+      "routeName": "",
+      "trainType": "",
+      "dateStr": "1994年2月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "夢空間ハッピートレイン",
+          "from": "福井",
+          "fromPos": "",
+          "to": "糸魚川",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226613_b6p4j",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_ddce9",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_r7x5m",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_1n4dl",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "92322",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_d6tip",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "92322",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_dkvo9",
+          "flipped": true,
+          "attribute": "増Set",
+          "productCode": "92322",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789579757594_l4veg",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
+    },
+    "f_1789549406585": {
+      "id": "f_1789549406585",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2008年3月1日",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "さよなら夢空間北斗星",
+          "from": "札幌",
+          "fromPos": "",
+          "to": "上野",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "盛岡駅到着後はDE10 1763が入れ換えを担当"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789900684787_648vn",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_b6p4j",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_ddce9",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_r7x5m",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92792",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9532",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9532",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9532",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9529",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9532",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9530",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9531",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_ttwr1",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "92397",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
+    },
+    "f_1789717383107": {
+      "id": "f_1789717383107",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1991年7月登場時",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパーとかち",
+          "from": "帯広",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_46tn4",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92791",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_h0jed",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92791",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_unxlm",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92791",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_unxlm",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92791",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_unxlm",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92791",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_743iq",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92791",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789718314174": {
+      "id": "f_1789718314174",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2010年04月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "オホーツク",
+          "from": "札幌．網走",
+          "fromPos": "",
+          "to": "遠軽",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_rxgaq",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92812",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_xpu75",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92812",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_dmh5t",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "92812",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_7wqbi",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92812",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_7wqbi",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92812",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_0ujku",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "92812",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789719247525": {
+      "id": "f_1789719247525",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパーやくも",
+          "from": "出雲市",
+          "fromPos": "",
+          "to": "岡山",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226617_b21o7",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_ait2h",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_0qzrw",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_ait2h",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_0qzrw",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_t5yly",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789719349189": {
+      "id": "f_1789719349189",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパーやくも",
+          "from": "出雲市",
+          "fromPos": "",
+          "to": "岡山",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226617_b21o7",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_plr0c",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1777",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226617_g9fhr",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1777",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226617_t5yly",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1937",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789719437433": {
+      "id": "f_1789719437433",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパーやくも",
+          "from": "出雲市",
+          "fromPos": "",
+          "to": "岡山",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226617_b21o7",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_plr0c",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1777",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226617_g9fhr",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1777",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226617_ait2h",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1937",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_0qzrw",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1936",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_t5yly",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1937",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789720414620": {
+      "id": "f_1789720414620",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1969年",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "北斗(代走)",
+          "from": "函館．旭川",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "札幌で方向転換、札幌～旭川間は逆向き。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_6lne8",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98435",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_f15i9",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98435",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_6lne8",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9454",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_yspra",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98435",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_66ohr",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98435",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_6lne8",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9454",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_66ohr",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9454",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789720607833": {
+      "id": "f_1789720607833",
+      "routeName": "函館本線",
+      "trainType": "",
+      "dateStr": "1995年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "倶知安",
+          "fromPos": "",
+          "to": "小樽",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_tpsp2",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "8401",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_wi8je",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9455",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_66ohr",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9454",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789720797792": {
+      "id": "f_1789720797792",
+      "routeName": "二俣線·片町線なと",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ezst6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7422",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ezst6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7423",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789721092764": {
+      "id": "f_1789721092764",
+      "routeName": "関西本線",
+      "trainType": "",
+      "dateStr": "1976年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ezst6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7422",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_qz780",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9458",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ueqyk",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "8447",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ezst6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7423",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789721327194": {
+      "id": "f_1789721327194",
+      "routeName": "東北本線",
+      "trainType": "普通列車",
+      "dateStr": "1978年頃",
+      "trainInfo": "盛岡→沼宮内·大館",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "沼宮内·大館",
+          "fromPos": "",
+          "to": "盛岡",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789915272778_4x34t",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_7ugmp",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "8548",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_sclz4",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "8549",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_sclz4",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "8547",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_swh6n",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "8521",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_6d1vc",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9444",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_b3xqm",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9462",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_apy5h",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7425",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
+    },
+    "f_1789721515588": {
+      "id": "f_1789721515588",
+      "routeName": "播但線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_qz780",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9458",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_u6xww",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98110",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_z1jq5",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7424",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_u6xww",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98110",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_17x10",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7426",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_kh0xj",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "2442",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ezst6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7423",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ns1nn",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9458",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789721617049": {
+      "id": "f_1789721617049",
+      "routeName": "播但線",
+      "trainType": "",
+      "dateStr": "1977年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_17x10",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7426",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ueqyk",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "8447",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_qz780",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98099",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ns1nn",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98099",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789721687706": {
+      "id": "f_1789721687706",
+      "routeName": "高山本線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_17x10",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7426",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_iulih",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7430",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_e7inm",
+          "flipped": true,
+          "attribute": "単",
+          "productCode": "7432",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_iulih",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7431",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789721747387": {
+      "id": "f_1789721747387",
+      "routeName": "山陰本線",
+      "trainType": "",
+      "dateStr": "1977年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_17x10",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7426",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_qz780",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9458",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_qz780",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98099",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_ns1nn",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98099",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_ns1nn",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9458",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ns1nn",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9458",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789721850619": {
+      "id": "f_1789721850619",
+      "routeName": "只見線·会津線",
+      "trainType": "",
+      "dateStr": "1979年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_v8i6q",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7425",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_b3xqm",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9462",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_t1vuq",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9476",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789721987731": {
+      "id": "f_1789721987731",
+      "routeName": "豊肥本線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_iulih",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7431",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_6d1vc",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "8458",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_apy5h",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7425",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_tbzvl",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9462",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789722063858": {
+      "id": "f_1789722063858",
+      "routeName": "北上線",
+      "trainType": "",
+      "dateStr": "1976年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ikev3",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7460",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ikev3",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7460",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ikev3",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7460",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ikev3",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7460",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_apy5h",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7425",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789722126468": {
+      "id": "f_1789722126468",
+      "routeName": "陸羽西線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_kh0xj",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "92147",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_kh0xj",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "92147",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_apy5h",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7425",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789722204837": {
+      "id": "f_1789722204837",
+      "routeName": "大湊線·大畑線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_v8i6q",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7425",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_ikev3",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9459",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789722290073": {
+      "id": "f_1789722290073",
+      "routeName": "真岡線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ezst6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7422",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_z1jq5",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98135",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_9q879",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98135",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789722361000": {
+      "id": "f_1789722361000",
+      "routeName": "参宮線",
+      "trainType": "",
+      "dateStr": "1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ezst6",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7422",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_p2xb0",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9457",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789722583874": {
+      "id": "f_1789722583874",
+      "routeName": "43系",
+      "trainType": "急行",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "みちのく",
+          "from": "上野",
+          "fromPos": "",
+          "to": "青森",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "牽引機関車：仙台～平間C62常磐形、上野～平間EF80、青森～仙台DD51-500"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_7ugmp",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1547",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_sclz4",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1547",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_vi4x9",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1547",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_vi4x9",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1546",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_hygzy",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1547",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_98oq8",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1546",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_98oq8",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1546",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_sclz4",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1546",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_sclz4",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1547",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_sclz4",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1547",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_7ugmp",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1547",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_sclz4",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1546",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_7ugmp",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1546",
+          "setGroupId": "B"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789723142288": {
+      "id": "f_1789723142288",
+      "routeName": "",
+      "trainType": "",
+      "dateStr": "1970 (昭和45)年10月頃",
+      "trainInfo": "502レ",
+      "segments": [
+        {
+          "nickname": "きたぐに",
+          "from": "大阪",
+          "fromPos": "",
+          "to": "青森",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226613_lca5b",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5069",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_dudab",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5331",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_7mtl0",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5228",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_98oq8",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "10-1624",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_8xwhk",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5065-8",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_98oq8",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "10-1624",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_7mtl0",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5228",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_8i830",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5334",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_7ugmp",
+          "flipped": true,
+          "attribute": "単",
+          "productCode": "5134-2",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5060",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5060",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_umdrk",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5063",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5060",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "5062",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789723706490": {
+      "id": "f_1789723706490",
+      "routeName": "",
+      "trainType": "寝台特急",
+      "dateStr": "1963年12月から1965年3月",
+      "trainInfo": "初期編成",
+      "segments": [
+        {
+          "nickname": "あさかぜ",
+          "from": "博多",
+          "fromPos": "",
+          "to": "東京",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "牽引機関車：東京～広島EF60-500、広島～下関C62、下関～門司EF30、門司～博多ED72。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226613_6acrl",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1725",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_35wdj",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1725",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_0nyub",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1726",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_0itvc",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1726",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_0itvc",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1726",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_0itvc",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1725",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_0itvc",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1726",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_ki4ig",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1725",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_vvln7",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1725",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_q574w",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1726",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_q574w",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1726",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_q574w",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1726",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_q574w",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1725",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_kabm6",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1725",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_7vlyp",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1725",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789724014950": {
+      "id": "f_1789724014950",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1997年2月8日",
+      "trainInfo": "311D",
+      "segments": [
+        {
+          "nickname": "利尻",
+          "from": "稚內",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_6lne8",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9454",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_wblkf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_790z1",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_dtyby",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_wblkf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_790z1",
+          "flipped": true,
+          "attribute": "単",
+          "productCode": "97240",
+          "setGroupId": "B"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789724170488": {
+      "id": "f_1789724170488",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1997年11月4日",
+      "trainInfo": "312D",
+      "segments": [
+        {
+          "nickname": "利尻",
+          "from": "稚內",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_wblkf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_790z1",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_dtyby",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_wblkf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_wblkf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789724545834": {
+      "id": "f_1789724545834",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1998年1月3日",
+      "trainInfo": "311D",
+      "segments": [
+        {
+          "nickname": "利尻",
+          "from": "稚內",
+          "fromPos": "",
+          "to": "札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_790z1",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_u1ljs",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_dtyby",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_dtyby",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "97240",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_6lne8",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "98435",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_6lne8",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "98435",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_66ohr",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "98435",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_wblkf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226614_sf456",
+          "flipped": false,
+          "attribute": "GM",
+          "productCode": "31735",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226614_wblkf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "97240",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789727034168": {
+      "id": "f_1789727034168",
+      "routeName": "山陽本線",
+      "trainType": "",
+      "dateStr": "1974年2月12日",
+      "trainInfo": "5051レ",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "長崎",
+          "fromPos": "",
+          "to": "姬路",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789579783851_0t6zr",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7142",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98723",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98723",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98723",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98723",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98723",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98723",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98723",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98724",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98724",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98724",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98724",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226617_g848b",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98724",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1789495226617_d2trb",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "98723",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789753503831": {
+      "id": "f_1789753503831",
+      "routeName": "",
+      "trainType": "寝台急行",
+      "dateStr": "1965年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "音戸",
+          "from": "下関",
+          "fromPos": "1",
+          "to": "新大阪",
+          "toPos": "8"
+        },
+        {
+          "nickname": "音戸",
+          "from": "広島",
+          "fromPos": "9",
+          "to": "新大阪",
+          "toPos": "12"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ytqbj",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1348",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789753033840_fzdw8",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1348",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_m96mn",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1348",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_m96mn",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1348",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_m96mn",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1348",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_m96mn",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1348",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1348",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1348",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1349",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1349",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1349",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_74k73",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1349",
+          "setGroupId": "B"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789753853727": {
+      "id": "f_1789753853727",
+      "routeName": "北陸本線",
+      "trainType": "寝台急行",
+      "dateStr": "1969年10月頃から1972年3月頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "つるぎ",
+          "from": "大阪",
+          "fromPos": "",
+          "to": "富山",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "牽引機関車：大阪～米原EF58、米原～田村DE10、田村～富山ED70。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226614_ytqbj",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1387",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789753033840_4fkfe",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1388",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_umdrk",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1387",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_tggca",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1387",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_tggca",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1387",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_tggca",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1387",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_tggca",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1387",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789751504232_tggca",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1388",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789751504232_tggca",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1388",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789751504232_tggca",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1388",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_sclz4",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "10-1388",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_7ugmp",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1387",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false
+    },
+    "f_1789811684822": {
+      "id": "f_1789811684822",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2008年3月～2012年3月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "北斗星",
+          "from": "函館",
+          "fromPos": "",
+          "to": "上野．札幌",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "けん引機は，上野～青森信号場がEF81形（～2010年7月）．EF510形（2010年7月～）、青森信号場～函館がED79形、函館～札幌がDD51形重連でした。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98870",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98870",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_8zlo0",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98871",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_8zlo0",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98871",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_r1e8v",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98871",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_1iimm",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98870",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_a0asw",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98870",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98871",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_qn087",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98870",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_uxw3e",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98871",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98871",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_ttwr1",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "98870",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
+    },
+    "f_1789812407878": {
+      "id": "f_1789812407878",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1998年3月～2008年3月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "北斗星1・2号",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "けん引機は上野～青森がEF81形、青森～函館がED79形、函館～札幌がDD51形重連でした",
+        "2006年3月以降は、青森信号場経由での運転となり、上野～青森信号場間は従来と編成が逆向きになりました。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98835",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_8zlo0",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98835",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_8zlo0",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98836",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_8zlo0",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98836",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_r1e8v",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98836",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226614_1iimm",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98835",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_y9mus",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98835",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_7cxh9",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98836",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_0q64a",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98836",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_0q64a",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98835",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1789495226613_jsur6",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98836",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1789495226613_fl1uh",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "98835",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false,
+      "titleNote": "青森～函館は逆向き。"
+    },
+    "f_1790246273186": {
+      "id": "f_1790246273186",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2000年3月～2005年10月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "彗星",
+          "from": "南宮崎",
+          "fromPos": "1",
+          "to": "京都",
+          "toPos": "6"
+        },
+        {
+          "nickname": "あかつき",
+          "from": "長崎",
+          "fromPos": "7",
+          "to": "京都",
+          "toPos": "14"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "けん引機は、京都～下関がEF66形、下関~門司がEF81形",
+        "下り「彗星」の門司～大分がEF81形、大分～南宮崎がED76形、「あかつき」の門司～長崎がED76形でした。また、上り「彗星」の南宮崎～門司がED76形でした",
+        "3.4.8号車は、主に多客期に連結されました。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1790245440156_mrjlf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98750",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790246098435_vnfjz",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "98750",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790245440156_2sotm",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9536",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1790245440156_2sotm",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9536",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1790245440156_2sotm",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98750",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790245440156_eovxh",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98750",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790245440156_mrjlf",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1790245440156_2sotm",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9536",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790245440156_2sotm",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1790245440156_2sotm",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1790245440156_eovxh",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1790245440156_7r9le",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1790245440156_da7j9",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1790245440156_rj3wc",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "C"
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
+    }
+  },
+  "savedAt": "2026-09-24T14:34:43.430Z"
+}
