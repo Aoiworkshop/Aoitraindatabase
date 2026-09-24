@@ -1794,50 +1794,6 @@
       "updatedAt": "2026-09-18T17:54:09.721Z"
     },
     {
-      "id": "f_1789811684822",
-      "name": "●特急「北斗星」(2008年3月～2012年3月)",
-      "routeName": "",
-      "trainType": "特急",
-      "dateStr": "2008年3月～2012年3月",
-      "trainInfo": "",
-      "segments": [
-        {
-          "nickname": "北斗星",
-          "from": "函館",
-          "fromPos": "",
-          "to": "上野．札幌",
-          "toPos": ""
-        },
-        {
-          "nickname": "",
-          "from": "",
-          "fromPos": "",
-          "to": "",
-          "toPos": ""
-        }
-      ],
-      "company": "",
-      "region": "",
-      "notes": [
-        "けん引機は，上野～青森信号場がEF81形（～2010年7月）．EF510形（2010年7月～）、青森信号場～函館がED79形、函館～札幌がDD51形重連でした。"
-      ],
-      "titleNote": "",
-      "carModelsUsed": [
-        "オハネフ25-0",
-        "オハネフ24-500",
-        "オハネ25-560",
-        "オハネ25-550",
-        "スハネ25-500",
-        "スシ24-500",
-        "オロネ25-500",
-        "オロハネ25-500",
-        "オロハネ24-550",
-        "オハネフ25-200",
-        "カニ24-500"
-      ],
-      "updatedAt": "2026-09-19T10:13:53.117Z"
-    },
-    {
       "id": "f_1789812407878",
       "name": "●特急「北斗星1・2号」(1998年3月～2008年3月) ※青森～函館は逆向き。",
       "routeName": "",
@@ -5974,122 +5930,6 @@
       ],
       "reversed": false
     },
-    "f_1789811684822": {
-      "id": "f_1789811684822",
-      "routeName": "",
-      "trainType": "特急",
-      "dateStr": "2008年3月～2012年3月",
-      "trainInfo": "",
-      "segments": [
-        {
-          "nickname": "北斗星",
-          "from": "函館",
-          "fromPos": "",
-          "to": "上野．札幌",
-          "toPos": ""
-        },
-        {
-          "nickname": "",
-          "from": "",
-          "fromPos": "",
-          "to": "",
-          "toPos": ""
-        }
-      ],
-      "company": "",
-      "region": "",
-      "notes": [
-        "けん引機は，上野～青森信号場がEF81形（～2010年7月）．EF510形（2010年7月～）、青森信号場～函館がED79形、函館～札幌がDD51形重連でした。"
-      ],
-      "cars": [
-        {
-          "vehicleId": "v_1789495226613_jsur6",
-          "flipped": false,
-          "attribute": "基Set",
-          "productCode": "98870",
-          "setGroupId": "A"
-        },
-        {
-          "vehicleId": "v_1789495226613_7cxh9",
-          "flipped": false,
-          "attribute": "基Set",
-          "productCode": "98870",
-          "setGroupId": "A"
-        },
-        {
-          "vehicleId": "v_1789495226613_8zlo0",
-          "flipped": false,
-          "attribute": "増Set",
-          "productCode": "98871",
-          "setGroupId": "B"
-        },
-        {
-          "vehicleId": "v_1789495226613_8zlo0",
-          "flipped": false,
-          "attribute": "増Set",
-          "productCode": "98871",
-          "setGroupId": "B"
-        },
-        {
-          "vehicleId": "v_1789495226613_r1e8v",
-          "flipped": false,
-          "attribute": "増Set",
-          "productCode": "98871",
-          "setGroupId": "B"
-        },
-        {
-          "vehicleId": "v_1789495226614_1iimm",
-          "flipped": false,
-          "attribute": "基Set",
-          "productCode": "98870",
-          "setGroupId": "A"
-        },
-        {
-          "vehicleId": "v_1789495226613_a0asw",
-          "flipped": false,
-          "attribute": "基Set",
-          "productCode": "98870",
-          "setGroupId": "A"
-        },
-        {
-          "vehicleId": "v_1789495226613_7cxh9",
-          "flipped": false,
-          "attribute": "増Set",
-          "productCode": "98871",
-          "setGroupId": "B"
-        },
-        {
-          "vehicleId": "v_1789495226613_qn087",
-          "flipped": false,
-          "attribute": "基Set",
-          "productCode": "98870",
-          "setGroupId": "A"
-        },
-        {
-          "vehicleId": "v_1789495226613_uxw3e",
-          "flipped": false,
-          "attribute": "増Set",
-          "productCode": "98871",
-          "setGroupId": "B"
-        },
-        {
-          "vehicleId": "v_1789495226613_jsur6",
-          "flipped": false,
-          "attribute": "増Set",
-          "productCode": "98871",
-          "setGroupId": "B"
-        },
-        {
-          "vehicleId": "v_1789495226613_ttwr1",
-          "flipped": true,
-          "attribute": "基Set",
-          "productCode": "98870",
-          "setGroupId": "A"
-        }
-      ],
-      "reversed": false,
-      "titleNote": ""
-    },
     "f_1789812407878": {
       "id": "f_1789812407878",
       "routeName": "",
@@ -6340,5 +6180,5 @@
       "titleNote": ""
     }
   },
-  "savedAt": "2026-09-24T14:34:43.430Z"
+  "savedAt": "2026-09-24T15:05:35.959Z"
 }
