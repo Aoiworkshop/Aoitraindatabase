@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T16:15:06.419Z",
+  "exportedAt": "2026-09-24T16:51:56.959Z",
   "vehicles": [
     {
       "id": "v_1789495226612_o5r98",
@@ -6155,9 +6155,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-836",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ181系"
+      ],
+      "productCodes": [
+        "10-836",
+        "10-1253"
       ]
     },
     {
@@ -6172,9 +6176,17 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-836",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ181系"
+      ],
+      "productCodes": [
+        "10-836",
+        "10-1253",
+        "10-1254",
+        "6083-5",
+        "6083",
+        "6082"
       ]
     },
     {
@@ -6189,9 +6201,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-836",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ181系"
+      ],
+      "productCodes": [
+        "10-836",
+        "10-1253",
+        "10-1254",
+        "6087",
+        "6081"
       ]
     },
     {
@@ -6206,9 +6225,14 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-836",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ181系"
+      ],
+      "productCodes": [
+        "10-836",
+        "10-1253",
+        "6084"
       ]
     },
     {
@@ -6223,9 +6247,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98641",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98641"
       ]
     },
     {
@@ -6260,9 +6287,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98693",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98693",
+        "98675",
+        "98641",
+        "98262"
       ]
     },
     {
@@ -6277,9 +6310,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98502",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98502",
+        "98504",
+        "2407",
+        "98503"
       ]
     },
     {
@@ -6353,7 +6392,9 @@
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
       ],
       "productCodes": [
-        "92791"
+        "92791",
+        "98302",
+        "98261"
       ]
     },
     {
@@ -6385,9 +6426,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98693",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98693"
       ]
     },
     {
@@ -6402,9 +6446,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "9402",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "9402"
       ]
     },
     {
@@ -6419,9 +6466,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97629",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "97629",
+        "97630"
       ]
     },
     {
@@ -6436,9 +6487,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "HO-9086",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "HO-9086",
+        "98419",
+        "9402",
+        "98420",
+        "98421"
       ]
     },
     {
@@ -6470,9 +6528,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98631",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98631"
       ]
     },
     {
@@ -6487,9 +6548,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98523",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98523"
       ]
     },
     {
@@ -6504,9 +6568,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98502",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98502",
+        "98503"
       ]
     },
     {
@@ -6595,9 +6663,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98503",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98503"
       ]
     },
     {
@@ -6612,9 +6683,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98693",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98693"
       ]
     },
     {
@@ -6629,9 +6703,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98503",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98503"
       ]
     },
     {
@@ -6646,9 +6723,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98262",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98262"
       ]
     },
     {
@@ -6663,9 +6743,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "HO-9086",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "HO-9086",
+        "HO-426",
+        "98419",
+        "98420",
+        "98421"
       ]
     },
     {
@@ -6680,9 +6767,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98262",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98262",
+        "98261"
       ]
     },
     {
@@ -6697,9 +6788,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98675",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98675"
       ]
     },
     {
@@ -6719,7 +6813,10 @@
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
       ],
       "productCodes": [
-        "92812"
+        "92812",
+        "98693",
+        "98641",
+        "98261"
       ]
     },
     {
@@ -6734,9 +6831,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98302",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98302"
       ]
     },
     {
@@ -6771,9 +6871,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97629",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "97629",
+        "97630"
       ]
     },
     {
@@ -6788,9 +6892,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98675",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98675",
+        "98641"
       ]
     },
     {
@@ -6805,9 +6913,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98302",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98302"
       ]
     },
     {
@@ -6822,9 +6933,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "HO-9086",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "HO-9086",
+        "98419"
       ]
     },
     {
@@ -6839,9 +6954,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98523",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98523"
       ]
     },
     {
@@ -6856,9 +6974,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98523",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98523"
       ]
     },
     {
@@ -6873,9 +6994,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98631",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98631"
       ]
     },
     {
@@ -6890,9 +7014,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98675",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98675"
       ]
     },
     {
@@ -6907,9 +7034,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98504",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98504"
       ]
     },
     {
@@ -6941,9 +7071,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98675",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98675"
       ]
     },
     {
@@ -6975,9 +7108,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97629",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "97629"
       ]
     },
     {
@@ -6992,9 +7128,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98693",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98693"
       ]
     },
     {
@@ -7009,9 +7148,14 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "HO-9086",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "HO-9086",
+        "98419",
+        "98420"
       ]
     },
     {
@@ -7043,9 +7187,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98502",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98502",
+        "98503"
       ]
     },
     {
@@ -7060,9 +7208,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98631",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98631"
       ]
     },
     {
@@ -7077,9 +7228,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98262",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98262"
       ]
     },
     {
@@ -7099,7 +7253,8 @@
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
       ],
       "productCodes": [
-        "92812"
+        "92812",
+        "98261"
       ]
     },
     {
@@ -7119,7 +7274,8 @@
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
       ],
       "productCodes": [
-        "92812"
+        "92812",
+        "98641"
       ]
     },
     {
@@ -29021,9 +29177,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98693",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98693"
       ]
     },
     {
@@ -29055,9 +29214,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "HO-429",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "HO-429"
       ]
     },
     {
@@ -29072,9 +29234,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98693",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98693"
       ]
     },
     {
@@ -29089,9 +29254,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98631",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ183系"
+      ],
+      "productCodes": [
+        "98631"
       ]
     },
     {
@@ -33305,9 +33473,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98555",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / HC85系"
+      ],
+      "productCodes": [
+        "98555"
       ]
     },
     {
@@ -33322,9 +33493,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98555",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / HC85系"
+      ],
+      "productCodes": [
+        "98555"
       ]
     },
     {
@@ -33339,9 +33513,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98555",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 03_特急形 / HC85系"
+      ],
+      "productCodes": [
+        "98555"
       ]
     },
     {
@@ -35723,6 +35900,203 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 32系雙重屋根"
+      ]
+    },
+    {
+      "id": "v_1790267093709_mw9zh",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キハ84-0.png",
+      "series": "キハ85系",
+      "modelCode": "キハ84",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1886",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ],
+      "productCodes": [
+        "10-1886",
+        "10-1888"
+      ]
+    },
+    {
+      "id": "v_1790267093710_4r39z",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キハ84-200.png",
+      "series": "キハ85系",
+      "modelCode": "キハ84",
+      "variantCode": "200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1888",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ],
+      "productCodes": [
+        "10-1888"
+      ]
+    },
+    {
+      "id": "v_1790267093710_jqljj",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キハ84-300.png",
+      "series": "キハ85系",
+      "modelCode": "キハ84",
+      "variantCode": "300",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1887",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ],
+      "productCodes": [
+        "10-1887"
+      ]
+    },
+    {
+      "id": "v_1790267093710_yeivp",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キハ85-100.png",
+      "series": "キハ85系",
+      "modelCode": "キハ85",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ]
+    },
+    {
+      "id": "v_1790267093710_kn3zo",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キハ85-1100.png",
+      "series": "キハ85系",
+      "modelCode": "キハ85",
+      "variantCode": "1100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1886",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ],
+      "productCodes": [
+        "10-1886",
+        "10-1887",
+        "10-1888"
+      ]
+    },
+    {
+      "id": "v_1790267093710_74yg7",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キハ85-0.png",
+      "series": "キハ85系",
+      "modelCode": "キハ85",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1886",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ],
+      "productCodes": [
+        "10-1886"
+      ]
+    },
+    {
+      "id": "v_1790267093710_wy43r",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キハ85-1200.png",
+      "series": "キハ85系",
+      "modelCode": "キハ85",
+      "variantCode": "1200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ]
+    },
+    {
+      "id": "v_1790267093710_coije",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キロ85-0.png",
+      "series": "キハ85系",
+      "modelCode": "キロ85",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1887",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ],
+      "productCodes": [
+        "10-1887"
+      ]
+    },
+    {
+      "id": "v_1790267093710_esbig",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キロハ84-0.png",
+      "series": "キハ85系",
+      "modelCode": "キロハ84",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1886",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ],
+      "productCodes": [
+        "10-1886"
+      ]
+    },
+    {
+      "id": "v_1790267093710_ip3dr",
+      "sourcePath": "01_JR 國鐵/02_氣動車/03_特急形/キハ85系/キハ85-200.png",
+      "series": "キハ85系",
+      "modelCode": "キハ85",
+      "variantCode": "200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1888",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 03_特急形 / キハ85系"
+      ],
+      "productCodes": [
+        "10-1888"
       ]
     }
   ]
