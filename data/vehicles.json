@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T16:51:56.959Z",
+  "exportedAt": "2026-09-25T17:10:15.133Z",
   "vehicles": [
     {
       "id": "v_1789495226612_o5r98",
@@ -36097,6 +36097,992 @@
       ],
       "productCodes": [
         "10-1888"
+      ]
+    },
+    {
+      "id": "v_1790356213317_r4d46",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21000系/モ21100.png",
+      "series": "21000系",
+      "modelCode": "モ21100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_rcs7t",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21000系/モ21200.png",
+      "series": "21000系",
+      "modelCode": "モ21200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_xlqs0",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21000系/モ21500.png",
+      "series": "21000系",
+      "modelCode": "モ21500",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_g2o2v",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21000系/モ21304.png",
+      "series": "21000系",
+      "modelCode": "モ21304",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_08dhv",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21000系/モ21404.png",
+      "series": "21000系",
+      "modelCode": "モ21404",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_fyqjm",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21000系/モ21800.png",
+      "series": "21000系",
+      "modelCode": "モ21800",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_aj29m",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21000系/モ21700.png",
+      "series": "21000系",
+      "modelCode": "モ21700",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_g6fyr",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21000系/モ21600.png",
+      "series": "21000系",
+      "modelCode": "モ21600",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_dvesq",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21020系/ク21120.png",
+      "series": "21020系",
+      "modelCode": "ク21120",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_uazzc",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21020系/モ21220.png",
+      "series": "21020系",
+      "modelCode": "モ21220",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_0xo5i",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21020系/サ21420.png",
+      "series": "21020系",
+      "modelCode": "サ21420",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_8m7qs",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21020系/ク21620.png",
+      "series": "21020系",
+      "modelCode": "ク21620",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_pktsy",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21020系/モ21520.png",
+      "series": "21020系",
+      "modelCode": "モ21520",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_6abm8",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/21020系/モ21320.png",
+      "series": "21020系",
+      "modelCode": "モ21320",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_ayiqj",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22200.png",
+      "series": "22000系",
+      "modelCode": "モ22200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_19ik3",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22100.png",
+      "series": "22000系",
+      "modelCode": "モ22100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_ewf3y",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22300.png",
+      "series": "22000系",
+      "modelCode": "モ22300",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_ng93g",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22400.png",
+      "series": "22000系",
+      "modelCode": "モ22400",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_ggch8",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22600.png",
+      "series": "22600系",
+      "modelCode": "モ22600",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_yt0y1",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22700.png",
+      "series": "22600系",
+      "modelCode": "モ22700",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_gczdv",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22900.png",
+      "series": "22600系",
+      "modelCode": "モ22900",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_5c6o2",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22800.png",
+      "series": "22600系",
+      "modelCode": "モ22800",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_qxxox",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/ク23100_赤色.png",
+      "series": "23000系",
+      "modelCode": "ク23100",
+      "variantCode": "",
+      "liveryName": "赤色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_dn9ox",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/ク23100_黄色.png",
+      "series": "23000系",
+      "modelCode": "ク23100",
+      "variantCode": "",
+      "liveryName": "黄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_w2rs5",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/ク23600_赤色.png",
+      "series": "23000系",
+      "modelCode": "ク23600",
+      "variantCode": "",
+      "liveryName": "赤色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_da7wz",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23200_黄色.png",
+      "series": "23000系",
+      "modelCode": "モ23200",
+      "variantCode": "",
+      "liveryName": "黄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_rle7a",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/ク23600_黄色.png",
+      "series": "23000系",
+      "modelCode": "ク23600",
+      "variantCode": "",
+      "liveryName": "黄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_3dqgh",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23200_赤色.png",
+      "series": "23000系",
+      "modelCode": "モ23200",
+      "variantCode": "",
+      "liveryName": "赤色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_zfawe",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23300_赤色_R.png",
+      "series": "23000系",
+      "modelCode": "モ23300",
+      "variantCode": "",
+      "liveryName": "赤色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_5hqlx",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23300_黄色_R.png",
+      "series": "23000系",
+      "modelCode": "モ23300",
+      "variantCode": "",
+      "liveryName": "黄色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_egf04",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23300_黄色_L.png",
+      "series": "23000系",
+      "modelCode": "モ23300",
+      "variantCode": "",
+      "liveryName": "黄色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_kcctt",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23300_赤色_L.png",
+      "series": "23000系",
+      "modelCode": "モ23300",
+      "variantCode": "",
+      "liveryName": "赤色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_8batp",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23400_赤色.png",
+      "series": "23000系",
+      "modelCode": "モ23400",
+      "variantCode": "",
+      "liveryName": "赤色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_4dhud",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23400_黄色.png",
+      "series": "23000系",
+      "modelCode": "モ23400",
+      "variantCode": "",
+      "liveryName": "黄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_txt36",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23500_黄色.png",
+      "series": "23000系",
+      "modelCode": "モ23500",
+      "variantCode": "",
+      "liveryName": "黄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_jpr8z",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/23000系/モ23500_赤色.png",
+      "series": "23000系",
+      "modelCode": "モ23500",
+      "variantCode": "",
+      "liveryName": "赤色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 23000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_2ei7a",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/30000系/モ30100.png",
+      "series": "30000系",
+      "modelCode": "モ30100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 30000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_ti5az",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/30000系/モ30100_ビスタEX.png",
+      "series": "30000系",
+      "modelCode": "モ30100",
+      "variantCode": "",
+      "liveryName": "ビスタEX",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 30000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_3bxtw",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/30000系/モ30150.png",
+      "series": "30000系",
+      "modelCode": "モ30150",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 30000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_91xqg",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/30000系/モ30150_ビスタEX.png",
+      "series": "30000系",
+      "modelCode": "モ30150",
+      "variantCode": "",
+      "liveryName": "ビスタEX",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 30000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_6859j",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/30000系/モ30200.png",
+      "series": "30000系",
+      "modelCode": "モ30200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 30000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_ynx1w",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/30000系/モ30200_ビスタEX.png",
+      "series": "30000系",
+      "modelCode": "モ30200",
+      "variantCode": "",
+      "liveryName": "ビスタEX",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 30000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_77466",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/30000系/モ30250_ビスタEX.png",
+      "series": "30000系",
+      "modelCode": "モ30250",
+      "variantCode": "",
+      "liveryName": "ビスタEX",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 30000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_7mvxz",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/30000系/モ30250.png",
+      "series": "30000系",
+      "modelCode": "モ30250",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 30000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_avlm3",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/50000系/ク50600.png",
+      "series": "50000系",
+      "modelCode": "ク50600",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 50000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_5ibz8",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/50000系/ク50100.png",
+      "series": "50000系",
+      "modelCode": "ク50100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 50000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_e2ysx",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/50000系/サ50400.png",
+      "series": "50000系",
+      "modelCode": "サ50400",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 50000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_u95i2",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/50000系/モ50200.png",
+      "series": "50000系",
+      "modelCode": "モ50200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 50000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_v6lhl",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/50000系/モ50500.png",
+      "series": "50000系",
+      "modelCode": "モ50500",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 50000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_7agvk",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/50000系/モ50300.png",
+      "series": "50000系",
+      "modelCode": "モ50300",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 50000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_4k74m",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/80000系/ク80100.png",
+      "series": "80000系",
+      "modelCode": "ク80100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_mn8cc",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/80000系/ク80600.png",
+      "series": "80000系",
+      "modelCode": "ク80600",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_o3pd1",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/80000系/サ80300.png",
+      "series": "80000系",
+      "modelCode": "サ80300",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_jmgpm",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/80000系/サ80800.png",
+      "series": "80000系",
+      "modelCode": "サ80800",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_emvrg",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/80000系/モ80500.png",
+      "series": "80000系",
+      "modelCode": "モ80500",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_8f8nz",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/80000系/モ80700.png",
+      "series": "80000系",
+      "modelCode": "モ80700",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_1br0p",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/80000系/モ80200.png",
+      "series": "80000系",
+      "modelCode": "モ80200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "v_1790356213317_6sw25",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/80000系/モ80400.png",
+      "series": "80000系",
+      "modelCode": "モ80400",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
       ]
     }
   ]
