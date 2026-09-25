@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T17:10:15.133Z",
+  "exportedAt": "2026-09-25T17:30:59.038Z",
   "vehicles": [
     {
       "id": "v_1789495226612_o5r98",
@@ -37083,6 +37083,346 @@
       "defaultProductCode": "",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_y2b5l",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/クハE351-0.png",
+      "series": "E351系",
+      "modelCode": "クハE351",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_pjhz9",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/クハE351-100.png",
+      "series": "E351系",
+      "modelCode": "クハE351",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_4feft",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/クハE351-200.png",
+      "series": "E351系",
+      "modelCode": "クハE351",
+      "variantCode": "200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_g66xh",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/クハE351-300.png",
+      "series": "E351系",
+      "modelCode": "クハE351",
+      "variantCode": "300",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_6k3j1",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/サロE351-0.png",
+      "series": "E351系",
+      "modelCode": "サロE351",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_97jmd",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/サハE351-0.png",
+      "series": "E351系",
+      "modelCode": "サハE351",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_xl008",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/モハE350-100.png",
+      "series": "E351系",
+      "modelCode": "モハE350",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_a7rl7",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/モハE350-0.png",
+      "series": "E351系",
+      "modelCode": "モハE350",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_fmbzy",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/モハE351-100.png",
+      "series": "E351系",
+      "modelCode": "モハE351",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_alec6",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/E351系/モハE351-0.png",
+      "series": "E351系",
+      "modelCode": "モハE351",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / E351系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_gpe6k",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1021系/ク1121.png",
+      "series": "1021系",
+      "modelCode": "ク1121",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1021系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_q0sls",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1021系/サ1171.png",
+      "series": "1021系",
+      "modelCode": "サ1171",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1021系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_qmacm",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1021系/モ1071.png",
+      "series": "1021系",
+      "modelCode": "モ1071",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1021系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_a0xim",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1021系/モ1021.png",
+      "series": "1021系",
+      "modelCode": "モ1021",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1021系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_50ghb",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1026系/ク1126.png",
+      "series": "1026系",
+      "modelCode": "ク1126",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_he6u1",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1026系/サ1176.png",
+      "series": "1026系",
+      "modelCode": "サ1176",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_owj63",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1026系/モ1026.png",
+      "series": "1026系",
+      "modelCode": "モ1026",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_q48nq",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1026系/モ1096.png",
+      "series": "1026系",
+      "modelCode": "モ1096",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_029hs",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1026系/サ1196.png",
+      "series": "1026系",
+      "modelCode": "サ1196",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ]
+    },
+    {
+      "id": "v_1790357457196_f13qq",
+      "sourcePath": "02_私鐵/近畿日本鉄道/一般用/1026系/モ1076.png",
+      "series": "1026系",
+      "modelCode": "モ1076",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
       ]
     }
   ]
