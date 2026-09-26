@@ -567,6 +567,10 @@ if(location.protocol === "http:" || location.protocol === "https:"){
             <tbody id="cargo-table-body"></tbody>
           </table>
         </div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap;">
+          <button class="btn small" id="btn-remember-products" type="button">記錄產品資訊</button>
+          <span style="font-size:10.5px;color:var(--muted);">把上表的貨號與廠商（KA／TO／MA／GM）存進車輛資料庫，下次挑同一輛車就會自動帶入。套組（単／SET／基SET／増SET）每次編成都不同，不會被記錄。</span>
+        </div>
       </div>
 
       <div class="panel">
@@ -910,7 +914,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20260924-1430";
+  const APP_BUILD = "20260926-0257";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -3482,6 +3486,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     "GM":   { bg: "#02834B", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 }
   };
   const ATTR_KEYS = Object.keys(ATTRS);
+  // 「単/Set/基Set/増Set」描述的是這個編成裡的套組狀態,每次都不一樣,不適合當預設;
+  // 「KA/TO/MA/GM」是產品的製造廠商,屬於車輛本身的固定資訊,才會被記錄起來。
+  const MAKER_ATTRS = ["KA", "TO", "MA", "GM"];
   // 若「00_必要資料」資料夾裡有跟屬性同名的圖片檔,優先用圖片取代畫布畫的色塊
   let attrBadgeImages = {};
   // 檔名比對用:容忍「單/単」寫法差異、英文大小寫差異(例如 SET vs Set、基SET vs 基Set)
@@ -4114,6 +4121,55 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     renderCargoTable();
   }
 
+  // 把目前編成表格裡的貨號與廠商,存進各車輛的預設資料。
+  // 用按鈕觸發而不是自動記錄,才不會把編成裡的臨時設定寫進資料庫。
+  $("#btn-remember-products").addEventListener("click", async () => {
+    if(!state.cars.length){ alert("編成裡還沒有車廂。"); return; }
+    const codeAdds = [], makerChanges = [];
+    const seen = new Set();
+    state.cars.forEach(c => {
+      const v = vehiclesById[c.vehicleId];
+      if(!v) return;
+      const code = (c.productCode || "").trim();
+      if(code && !productCodesOf(v).includes(code)){
+        const k = v.id + "\u0001" + code;
+        if(!seen.has(k)){ seen.add(k); codeAdds.push({ v, code }); }
+      }
+      // 只記廠商;套組類(単/Set/基Set/増Set)每個編成都不一樣,不寫入預設
+      const attr = (c.attribute || "").trim();
+      if(MAKER_ATTRS.includes(attr) && (v.defaultAttribute || "") !== attr){
+        const k = v.id + "\u0001A";
+        if(!seen.has(k)){ seen.add(k); makerChanges.push({ v, attr }); }
+      }
+    });
+
+    if(!codeAdds.length && !makerChanges.length){
+      alert("沒有需要記錄的新資訊。\n（貨號已經記錄過,或分類填的是套組類,套組不會存成預設）");
+      return;
+    }
+    const lines = [];
+    if(codeAdds.length){
+      lines.push(`新增貨號 ${codeAdds.length} 筆:`);
+      codeAdds.slice(0, 8).forEach(x => lines.push(`　${vehicleLabel(x.v)}　${x.code}`));
+      if(codeAdds.length > 8) lines.push(`　…等共 ${codeAdds.length} 筆`);
+    }
+    if(makerChanges.length){
+      if(lines.length) lines.push("");
+      lines.push(`設定廠商 ${makerChanges.length} 筆:`);
+      makerChanges.slice(0, 8).forEach(x =>
+        lines.push(`　${vehicleLabel(x.v)}　${(x.v.defaultAttribute || "(無)")} → ${x.attr}`));
+      if(makerChanges.length > 8) lines.push(`　…等共 ${makerChanges.length} 筆`);
+    }
+    if(!confirm("要把以下資訊記錄到車輛資料庫嗎?\n\n" + lines.join("\n"))) return;
+
+    codeAdds.forEach(x => rememberProductCode(x.v.id, x.code));
+    makerChanges.forEach(x => { x.v.defaultAttribute = x.attr; });
+    await persistVehicles();
+    renderCargoTable();
+    renderLibrary();
+    alert(`已記錄:貨號 ${codeAdds.length} 筆、廠商 ${makerChanges.length} 筆。`);
+  });
+
   function renderCargoTable(){
     const body = $("#cargo-table-body");
     body.innerHTML = "";
@@ -4152,15 +4208,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       codeInput.placeholder = "例：10-0000";
       codeInput.autocomplete = "off";
       const known = productCodesOf(v);
+      // 只更新這個編成用的值;要存進車輛的預設資料,請按下方的「記錄產品資訊」
       codeInput.addEventListener("input", () => { entry.productCode = codeInput.value; });
-      // 離開欄位時把打過的貨號記進這輛車,下次同一張圖就能從清單挑
-      codeInput.addEventListener("change", async () => {
-        entry.productCode = codeInput.value;
-        if(v && rememberProductCode(v.id, codeInput.value)){
-          await persistVehicles();
-          renderCargoTable();
-        }
-      });
       codeWrap.appendChild(codeInput);
 
       if(known.length){
