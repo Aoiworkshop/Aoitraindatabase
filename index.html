@@ -567,9 +567,8 @@ if(location.protocol === "http:" || location.protocol === "https:"){
             <tbody id="cargo-table-body"></tbody>
           </table>
         </div>
-        <div style="display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap;">
-          <button class="btn small" id="btn-remember-products" type="button">記錄產品資訊</button>
-          <span style="font-size:10.5px;color:var(--muted);">把上表的貨號與廠商（KA／TO／MA／GM）存進車輛資料庫，下次挑同一輛車就會自動帶入。套組（単／SET／基SET／増SET）每次編成都不同，不會被記錄。</span>
+        <div style="margin-top:10px;">
+          <button class="btn small" id="btn-remember-products" type="button" title="把上表的貨號與廠商存進車輛資料庫（套組不會被記錄）">記錄產品資訊</button>
         </div>
       </div>
 
@@ -914,7 +913,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20260926-0257";
+  const APP_BUILD = "20260926-0259";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
