@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T17:30:59.038Z",
+  "exportedAt": "2026-09-26T02:47:19.179Z",
   "vehicles": [
     {
       "id": "v_1789495226612_o5r98",
@@ -36110,10 +36110,13 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "TO",
+      "defaultProductCode": "98291",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ],
+      "productCodes": [
+        "98291"
       ]
     },
     {
@@ -36127,10 +36130,13 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "TO",
+      "defaultProductCode": "98292",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ],
+      "productCodes": [
+        "98292"
       ]
     },
     {
@@ -36144,10 +36150,13 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "TO",
+      "defaultProductCode": "98292",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ],
+      "productCodes": [
+        "98292"
       ]
     },
     {
@@ -36161,10 +36170,13 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "TO",
+      "defaultProductCode": "98291",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ],
+      "productCodes": [
+        "98291"
       ]
     },
     {
@@ -36178,10 +36190,13 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "TO",
+      "defaultProductCode": "98292",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ],
+      "productCodes": [
+        "98292"
       ]
     },
     {
@@ -36195,10 +36210,13 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "TO",
+      "defaultProductCode": "98292",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ],
+      "productCodes": [
+        "98292"
       ]
     },
     {
@@ -36212,10 +36230,13 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "TO",
+      "defaultProductCode": "98292",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ],
+      "productCodes": [
+        "98292"
       ]
     },
     {
@@ -36229,10 +36250,13 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "TO",
+      "defaultProductCode": "98291",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21000系"
+      ],
+      "productCodes": [
+        "98291"
       ]
     },
     {
@@ -36247,9 +36271,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "31755",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ],
+      "productCodes": [
+        "31755"
       ]
     },
     {
@@ -36264,9 +36291,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "31755",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ],
+      "productCodes": [
+        "31755"
       ]
     },
     {
@@ -36281,9 +36311,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "31755",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ],
+      "productCodes": [
+        "31755"
       ]
     },
     {
@@ -36298,9 +36331,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "31755",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ],
+      "productCodes": [
+        "31755"
       ]
     },
     {
@@ -36315,9 +36351,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "31755",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ],
+      "productCodes": [
+        "31755"
       ]
     },
     {
@@ -36332,9 +36371,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "31755",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 21020系"
+      ],
+      "productCodes": [
+        "31755"
       ]
     },
     {
@@ -37266,10 +37308,14 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1021系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944"
       ]
     },
     {
@@ -37283,10 +37329,14 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1021系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944"
       ]
     },
     {
@@ -37300,10 +37350,14 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1021系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944"
       ]
     },
     {
@@ -37317,10 +37371,14 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1021系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944"
       ]
     },
     {
@@ -37334,10 +37392,17 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944",
+        "30148",
+        "30149",
+        "30150"
       ]
     },
     {
@@ -37351,10 +37416,17 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944",
+        "30148",
+        "30149",
+        "30150"
       ]
     },
     {
@@ -37368,10 +37440,17 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944",
+        "30148",
+        "30149",
+        "30150"
       ]
     },
     {
@@ -37385,10 +37464,17 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944",
+        "30148",
+        "30149",
+        "30150"
       ]
     },
     {
@@ -37402,10 +37488,18 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944",
+        "30148",
+        "30149",
+        "301",
+        "30150"
       ]
     },
     {
@@ -37419,10 +37513,17 @@
       "company": "",
       "widthCm": 3.8,
       "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultAttribute": "GM",
+      "defaultProductCode": "32215",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 一般用 / 1026系"
+      ],
+      "productCodes": [
+        "32215",
+        "31944",
+        "30148",
+        "30149",
+        "30150"
       ]
     }
   ]
