@@ -913,7 +913,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20260926-0259";
+  const APP_BUILD = "20260927-0452";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -1338,7 +1338,42 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   // ================= tab switching =================
   let currentTab = "vehicles";
-  function switchTab(tab){
+  // ---------- 接管瀏覽器的「上一頁」 ----------
+  // 在網頁上操作時,上一頁很容易誤按而整個離開網站。
+  // 這裡把分頁切換與資料夾往下鑽都記錄成一個步驟,
+  // 按上一頁就會退回上一層資料夾或上一個分頁,只有真的沒有步驟可退時才會離開。
+  let navApplying = false;     // 正在依照上一頁還原畫面,避免又記錄一次
+  function navSnapshot(){
+    return { app: true, tab: currentTab, folder: folderPath.slice() };
+  }
+  function pushNavState(){
+    if(navApplying) return;
+    try{ history.pushState(navSnapshot(), ""); }catch(e){ /* 不支援就算了 */ }
+  }
+  function applyNavState(st){
+    navApplying = true;
+    try{
+      folderPath = Array.isArray(st.folder) ? st.folder.slice() : [];
+      selectedVehicleIds.clear();
+      lastSelectedIndex = null;
+      switchTab(st.tab || "vehicles", true);
+    }finally{ navApplying = false; }
+  }
+  // 編成有內容但還沒存進資料庫時,關掉或離開頁面前先提醒一聲
+  window.addEventListener("beforeunload", (e) => {
+    if(state && state.cars && state.cars.length && !state.id){
+      e.preventDefault();
+      e.returnValue = "";
+    }
+  });
+  window.addEventListener("popstate", (e) => {
+    const st = e.state;
+    if(st && st.app){ applyNavState(st); }
+    // 沒有我們的紀錄就讓瀏覽器照原本的行為走(離開網站)
+  });
+
+  function switchTab(tab, fromNav){
+    const changed = currentTab !== tab;
     currentTab = tab;
     document.querySelectorAll(".tab-btn").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
     const showSidebarLayout = (tab === "vehicles" || tab === "builder");
@@ -1350,6 +1385,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     }
     if(tab === "search") refreshFormationResults();
     if(typeof renderLibrary === "function") renderLibrary();
+    if(changed && !fromNav) pushNavState();
   }
   document.querySelectorAll(".tab-btn").forEach(b => {
     b.addEventListener("click", () => switchTab(b.dataset.tab));
@@ -2045,6 +2081,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         folderPath.pop();
         selectedVehicleIds.clear();
         lastSelectedIndex = null;
+        pushNavState();
         renderLibrary();
       });
       el.appendChild(upBtn);
@@ -2159,6 +2196,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         folderPath.push(f.name);
         selectedVehicleIds.clear();
         lastSelectedIndex = null;
+        pushNavState();
         renderLibrary();
       });
       item.querySelector('[data-act="del-folder"]').addEventListener("click", async (e) => {
@@ -5156,7 +5194,12 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     await step("線上版介面", applyWebModeUI);
     await step("線上版字型", waitWebFonts);
     await step("線上版徽章圖片", loadWebBadgeImages);
-    await step("初始分頁", () => { setMode("single"); switchTab("vehicles"); });
+    await step("初始分頁", () => {
+      setMode("single");
+      switchTab("vehicles", true);
+      // 記下起始狀態,之後的操作才有東西可以退回
+      try{ history.replaceState(navSnapshot(), ""); }catch(e){}
+    });
     setLoad(100, "完成");
     setTimeout(hideLoad, 150);
 
