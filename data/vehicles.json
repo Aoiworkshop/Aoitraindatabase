@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-26T02:59:57.924Z",
+  "exportedAt": "2026-09-27T04:53:09.967Z",
   "vehicles": [
     {
       "id": "v_1789495226612_o5r98",
@@ -7953,9 +7953,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1171",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 101系"
+      ],
+      "productCodes": [
+        "10-1171"
       ]
     },
     {
@@ -8004,9 +8007,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1170",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 101系"
+      ],
+      "productCodes": [
+        "10-1170"
       ]
     },
     {
@@ -8072,9 +8078,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1170",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 101系"
+      ],
+      "productCodes": [
+        "10-1170"
       ]
     },
     {
@@ -8106,9 +8115,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1170",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 101系"
+      ],
+      "productCodes": [
+        "10-1170",
+        "10-1171"
       ]
     },
     {
@@ -8194,6 +8207,10 @@
       "defaultProductCode": "10-1743G",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743G",
+        "10-1191"
       ]
     },
     {
@@ -8211,6 +8228,10 @@
       "defaultProductCode": "10-1743A",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743A",
+        "10-1743F"
       ]
     },
     {
@@ -8228,6 +8249,11 @@
       "defaultProductCode": "10-1743C",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743C",
+        "10-1189",
+        "92512"
       ]
     },
     {
@@ -8245,6 +8271,10 @@
       "defaultProductCode": "10-1743E",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743E",
+        "92479"
       ]
     },
     {
@@ -8262,6 +8292,12 @@
       "defaultProductCode": "10-1743D",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743D",
+        "10-1193",
+        "92481",
+        "92482"
       ]
     },
     {
@@ -8296,6 +8332,10 @@
       "defaultProductCode": "10-1743A",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743A",
+        "10-1743F"
       ]
     },
     {
@@ -8310,9 +8350,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "基Set",
-      "defaultProductCode": "10-1743E",
+      "defaultProductCode": "10-1743C",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743C"
       ]
     },
     {
@@ -8327,9 +8370,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "基Set",
-      "defaultProductCode": "10-1743C",
+      "defaultProductCode": "10-1743E",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743E",
+        "92479"
       ]
     },
     {
@@ -8344,9 +8391,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "TO",
-      "defaultProductCode": "98284",
+      "defaultProductCode": "10-1743D",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743D",
+        "92481"
       ]
     },
     {
@@ -8400,7 +8451,8 @@
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
       ],
       "productCodes": [
-        "10-1744B"
+        "10-1744B",
+        "10-1192"
       ]
     },
     {
@@ -8435,6 +8487,11 @@
       "defaultProductCode": "10-1744C",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1744C",
+        "10-1190",
+        "8960"
       ]
     },
     {
@@ -8452,6 +8509,10 @@
       "defaultProductCode": "10-1744E",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1744E",
+        "8956"
       ]
     },
     {
@@ -8469,6 +8530,10 @@
       "defaultProductCode": "10-1744D",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1744D",
+        "10-1194"
       ]
     },
     {
@@ -8523,7 +8588,9 @@
       ],
       "productCodes": [
         "10-1743G",
-        "10-1744B"
+        "10-1744B",
+        "10-1191",
+        "10-1192"
       ]
     },
     {
@@ -8538,9 +8605,14 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "基Set",
-      "defaultProductCode": "10-1743C",
+      "defaultProductCode": "10-1743A",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743A",
+        "10-1744A",
+        "10-1743F"
       ]
     },
     {
@@ -8555,9 +8627,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "基Set",
-      "defaultProductCode": "10-1743A",
+      "defaultProductCode": "10-1743D",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743D",
+        "10-1744D",
+        "10-1193",
+        "10-1194",
+        "92482"
       ]
     },
     {
@@ -8572,9 +8651,17 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "基Set",
-      "defaultProductCode": "10-1743D",
+      "defaultProductCode": "10-1743C",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743C",
+        "10-1744C",
+        "10-1189",
+        "10-1190",
+        "92512",
+        "92513"
       ]
     },
     {
@@ -8592,6 +8679,11 @@
       "defaultProductCode": "10-1743E",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743E",
+        "10-1744E",
+        "92480"
       ]
     },
     {
@@ -11309,9 +11401,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98466",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ],
+      "productCodes": [
+        "98466",
+        "98467",
+        "10-435",
+        "10-1581"
       ]
     },
     {
@@ -11343,9 +11441,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1492",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ],
+      "productCodes": [
+        "10-1492",
+        "10-1491S",
+        "10-1578",
+        "10-1579"
       ]
     },
     {
@@ -11377,9 +11481,14 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98466",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ],
+      "productCodes": [
+        "98466",
+        "98467",
+        "10-435"
       ]
     },
     {
@@ -11411,9 +11520,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1492",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ],
+      "productCodes": [
+        "10-1492",
+        "10-1491S",
+        "10-1578",
+        "10-1579"
       ]
     },
     {
@@ -11428,9 +11543,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1581",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ],
+      "productCodes": [
+        "10-1581"
       ]
     },
     {
@@ -11441,40 +11559,6 @@
       "variantCode": "",
       "liveryName": "ホロ付",
       "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
-      ]
-    },
-    {
-      "id": "v_1789495226616_2l70a",
-      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/221系/モハ220.png",
-      "series": "221系",
-      "modelCode": "モハ220",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
-      ]
-    },
-    {
-      "id": "v_1789495226616_bc3wf",
-      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/221系/サハ221.png",
-      "series": "221系",
-      "modelCode": "サハ221",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
       "company": "",
       "widthCm": 3.8,
       "note": "",
@@ -22427,7 +22511,7 @@
     },
     {
       "id": "v_1789636710980_d1ke2",
-      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/785系/クハ784-0_下枠交差型パンタグラフ_R.png",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/785系/クハ784-0_R.png",
       "series": "785系",
       "modelCode": "クハ784",
       "variantCode": "0",
@@ -22495,7 +22579,7 @@
     },
     {
       "id": "v_1789636710980_swzyn",
-      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/785系/サハ784-0_R.png",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/785系/サハ784-0_下枠交差型パンタグラフ_R.png",
       "series": "785系",
       "modelCode": "サハ784",
       "variantCode": "0",
@@ -29342,9 +29426,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1170",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 101系"
+      ],
+      "productCodes": [
+        "10-1170",
+        "10-1171"
       ]
     },
     {
@@ -29376,9 +29464,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1170",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 101系"
+      ],
+      "productCodes": [
+        "10-1170",
+        "10-1171"
       ]
     },
     {
@@ -29427,9 +29519,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1170",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 101系"
+      ],
+      "productCodes": [
+        "10-1170"
       ]
     },
     {
@@ -29546,9 +29641,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1743G",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743G",
+        "10-1744B",
+        "10-1191",
+        "10-1192"
       ]
     },
     {
@@ -29563,9 +29664,14 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1743A",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743A",
+        "10-1744A",
+        "10-1743F"
       ]
     },
     {
@@ -29580,9 +29686,17 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1743C",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743C",
+        "10-1744C",
+        "10-1189",
+        "10-1190",
+        "92512",
+        "92513"
       ]
     },
     {
@@ -29597,9 +29711,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1743E",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743E",
+        "10-1744E",
+        "92479",
+        "92480"
       ]
     },
     {
@@ -29614,9 +29734,17 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1743D",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 103系"
+      ],
+      "productCodes": [
+        "10-1743D",
+        "10-1744D",
+        "10-1193",
+        "10-1194",
+        "92481",
+        "92482"
       ]
     },
     {
@@ -37524,6 +37652,273 @@
         "30148",
         "30149",
         "30150"
+      ]
+    },
+    {
+      "id": "v_1790434312851_xigkv",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/789系/クハ789-300.png",
+      "series": "789系",
+      "modelCode": "クハ789",
+      "variantCode": "300",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ]
+    },
+    {
+      "id": "v_1790434312851_bkjhv",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/789系/クロハ789-100.png",
+      "series": "789系",
+      "modelCode": "クロハ789",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ]
+    },
+    {
+      "id": "v_1790434312851_6uu8o",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/789系/クハ789-200.png",
+      "series": "789系",
+      "modelCode": "クハ789",
+      "variantCode": "200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ]
+    },
+    {
+      "id": "v_1790434312851_vdg1x",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/789系/モハ788-300.png",
+      "series": "789系",
+      "modelCode": "モハ788",
+      "variantCode": "300",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ]
+    },
+    {
+      "id": "v_1790434312851_cku7v",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/789系/サハ789-100.png",
+      "series": "789系",
+      "modelCode": "サハ789",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ]
+    },
+    {
+      "id": "v_1790434312851_gqon0",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/789系/モハ788-100.png",
+      "series": "789系",
+      "modelCode": "モハ788",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ]
+    },
+    {
+      "id": "v_1790434312851_fc1kd",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/789系/モハ788-200.png",
+      "series": "789系",
+      "modelCode": "モハ788",
+      "variantCode": "200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ]
+    },
+    {
+      "id": "v_1790434312851_9x1ni",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/03_交流用/789系/モハ789-200.png",
+      "series": "789系",
+      "modelCode": "モハ789",
+      "variantCode": "200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ]
+    },
+    {
+      "id": "v_1790481034127_rksn0",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/221系/モハ221_L.png",
+      "series": "221系",
+      "modelCode": "モハ221",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "98466",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ],
+      "productCodes": [
+        "98466",
+        "98467",
+        "10-1492",
+        "10-1491S",
+        "10-1578",
+        "10-1579",
+        "10-435",
+        "10-1581"
+      ]
+    },
+    {
+      "id": "v_1790481057407_z4ih3",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/221系/モハ221_R.png",
+      "series": "221系",
+      "modelCode": "モハ221",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ]
+    },
+    {
+      "id": "v_1790481107761_4h667",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/221系/サハ221_L.png",
+      "series": "221系",
+      "modelCode": "サハ221",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "98466",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ],
+      "productCodes": [
+        "98466",
+        "98467",
+        "98468",
+        "10-1492",
+        "10-1491S",
+        "10-1578",
+        "10-1579",
+        "10-435",
+        "10-436",
+        "10-1581"
+      ]
+    },
+    {
+      "id": "v_1790481107761_b7tl5",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/221系/サハ221_R.png",
+      "series": "221系",
+      "modelCode": "サハ221",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ]
+    },
+    {
+      "id": "v_1790482073524_kua1s",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/221系/モハ220_L.png",
+      "series": "221系",
+      "modelCode": "モハ220",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "98467",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ],
+      "productCodes": [
+        "98467",
+        "98468",
+        "10-1578",
+        "10-1579",
+        "10-436"
+      ]
+    },
+    {
+      "id": "v_1790482073524_vg2zp",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/221系/モハ220_R.png",
+      "series": "221系",
+      "modelCode": "モハ220",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
       ]
     }
   ]
