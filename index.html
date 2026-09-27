@@ -913,7 +913,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20260927-0452";
+  const APP_BUILD = "20260927-0524";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -4005,7 +4005,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const wrap = document.createElement("div");
     wrap.id = "preview-wrap";
     const row = document.createElement("div");
-    row.style.display = "flex"; row.style.gap = "6px"; row.style.alignItems = "flex-end";
+    // 靠上對齊:車號換行(例如 クモハ102-1000)時,那一節的高度會變高,
+    // 若靠下對齊就會把圖片往上頂,造成整排圖片與上方按鈕高低不一
+    row.style.display = "flex"; row.style.gap = "6px"; row.style.alignItems = "flex-start";
     const carLabelFam = getCarLabelFontFamily();
     $("#reverse-hint").style.display = state.reversed ? "" : "none";
     // 有「車輛已從資料庫移除」的殘留車廂時,才顯示一鍵清除的按鈕
