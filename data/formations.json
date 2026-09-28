@@ -666,7 +666,7 @@
         "オハ14-500",
         "マイテ49"
       ],
-      "updatedAt": "2026-09-24T16:11:36.303Z"
+      "updatedAt": "2026-09-28T17:15:39.465Z"
     },
     {
       "id": "f_1789549406585",
@@ -1463,16 +1463,16 @@
         {
           "nickname": "みちのく",
           "from": "上野",
-          "fromPos": "",
+          "fromPos": "1",
           "to": "青森",
-          "toPos": ""
+          "toPos": "11"
         },
         {
-          "nickname": "",
-          "from": "",
-          "fromPos": "",
-          "to": "",
-          "toPos": ""
+          "nickname": " ",
+          "from": "上野",
+          "fromPos": "12",
+          "to": "盛岡",
+          "toPos": "13"
         }
       ],
       "company": "",
@@ -1482,13 +1482,15 @@
       ],
       "titleNote": "",
       "carModelsUsed": [
-        "オハフ45",
-        "オハ47",
+        "スハフ42",
+        "スハ43",
         "オロ61",
         "スシ48",
-        "ナハ10"
+        "ナハ11",
+        "オハ47",
+        "オハフ45"
       ],
-      "updatedAt": "2026-09-24T16:15:21.462Z"
+      "updatedAt": "2026-09-28T17:23:35.607Z"
     },
     {
       "id": "f_1789723142288",
@@ -3493,7 +3495,7 @@
           "setGroupId": ""
         },
         {
-          "vehicleId": "v_1790266161275_yc6j0",
+          "vehicleId": "v_1789579757594_l4veg",
           "flipped": false,
           "attribute": "単",
           "productCode": "10-1893",
@@ -4953,16 +4955,16 @@
         {
           "nickname": "みちのく",
           "from": "上野",
-          "fromPos": "",
+          "fromPos": "1",
           "to": "青森",
-          "toPos": ""
+          "toPos": "11"
         },
         {
-          "nickname": "",
-          "from": "",
-          "fromPos": "",
-          "to": "",
-          "toPos": ""
+          "nickname": " ",
+          "from": "上野",
+          "fromPos": "12",
+          "to": "盛岡",
+          "toPos": "13"
         }
       ],
       "company": "",
@@ -4972,87 +4974,94 @@
       ],
       "cars": [
         {
-          "vehicleId": "v_1789495226614_7ugmp",
+          "vehicleId": "v_1790135530248_sjwdn",
           "flipped": false,
           "attribute": "基Set",
-          "productCode": "10-1547",
+          "productCode": "10-1546",
           "setGroupId": "A"
         },
         {
-          "vehicleId": "v_1789495226614_sclz4",
+          "vehicleId": "v_1790135530248_enxfp",
           "flipped": false,
           "attribute": "基Set",
-          "productCode": "10-1547",
+          "productCode": "10-1546",
           "setGroupId": "A"
         },
         {
-          "vehicleId": "v_1790265160284_0e67m",
+          "vehicleId": "v_1790615606290_uwvbk",
           "flipped": false,
           "attribute": "基Set",
+          "productCode": "10-1546",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790615606290_uwvbk",
+          "flipped": false,
+          "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": ""
+          "setGroupId": "B"
         },
         {
           "vehicleId": "v_1789495226614_hygzy",
           "flipped": false,
           "attribute": "基Set",
-          "productCode": "10-1547",
+          "productCode": "10-1546",
           "setGroupId": "A"
         },
         {
-          "vehicleId": "v_1789495226613_98oq8",
+          "vehicleId": "v_1790135530248_jiaxk",
           "flipped": false,
           "attribute": "増Set",
-          "productCode": "10-1546",
+          "productCode": "10-1547",
           "setGroupId": "B"
         },
         {
-          "vehicleId": "v_1789495226613_98oq8",
+          "vehicleId": "v_1790135530248_jiaxk",
           "flipped": false,
           "attribute": "増Set",
-          "productCode": "10-1546",
+          "productCode": "10-1547",
           "setGroupId": "B"
         },
         {
-          "vehicleId": "v_1789495226614_sclz4",
+          "vehicleId": "v_1790135530248_enxfp",
           "flipped": false,
           "attribute": "増Set",
-          "productCode": "10-1546",
+          "productCode": "10-1547",
           "setGroupId": "B"
         },
         {
-          "vehicleId": "v_1789495226614_sclz4",
+          "vehicleId": "v_1790135530248_enxfp",
           "flipped": false,
           "attribute": "基Set",
-          "productCode": "10-1547",
+          "productCode": "10-1546",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790135530248_enxfp",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "10-1546",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790135530248_sjwdn",
+          "flipped": true,
+          "attribute": "基Set",
+          "productCode": "10-1546",
           "setGroupId": "A"
         },
         {
           "vehicleId": "v_1789495226614_sclz4",
           "flipped": false,
-          "attribute": "基Set",
+          "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": "A"
+          "setGroupId": "B"
         },
         {
           "vehicleId": "v_1789495226614_7ugmp",
-          "flipped": false,
-          "attribute": "基Set",
+          "flipped": true,
+          "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": "A"
-        },
-        {
-          "vehicleId": "v_1789495226614_sclz4",
-          "flipped": false,
-          "attribute": "増Set",
-          "productCode": "10-1546",
-          "setGroupId": "B"
-        },
-        {
-          "vehicleId": "v_1789495226614_7ugmp",
-          "flipped": false,
-          "attribute": "増Set",
-          "productCode": "10-1546",
           "setGroupId": "B"
         }
       ],
@@ -6174,5 +6183,5 @@
       "titleNote": ""
     }
   },
-  "savedAt": "2026-09-28T08:14:53.307Z"
+  "savedAt": "2026-09-28T17:23:35.621Z"
 }
