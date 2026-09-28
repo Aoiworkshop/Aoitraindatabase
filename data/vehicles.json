@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-28T17:21:33.002Z",
+  "exportedAt": "2026-09-28T17:55:30.381Z",
   "vehicles": [
     {
       "id": "v_1789495226612_o5r98",
@@ -34527,9 +34527,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98753",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "98753"
       ]
     },
     {
@@ -34629,9 +34632,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98753",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "98753"
       ]
     },
     {
@@ -34799,9 +34805,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98450",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "98450"
       ]
     },
     {
@@ -34833,9 +34842,14 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "9536",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "9536",
+        "98450",
+        "98753"
       ]
     },
     {
@@ -34935,9 +34949,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98753",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "98753"
       ]
     },
     {
@@ -35105,9 +35122,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98450",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "98450",
+        "98753"
       ]
     },
     {
@@ -35122,9 +35143,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98450",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 14系"
+      ],
+      "productCodes": [
+        "98450",
+        "98753"
       ]
     },
     {

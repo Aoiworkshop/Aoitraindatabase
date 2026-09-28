@@ -1793,6 +1793,47 @@
         "カニ24-500"
       ],
       "updatedAt": "2026-09-19T10:13:29.481Z"
+    },
+    {
+      "id": "f_1790618045195",
+      "name": "●特急「彗星・あかつき」(2000年3月～2005年10月)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2000年3月～2005年10月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "彗星",
+          "from": "南宮崎",
+          "fromPos": "1",
+          "to": "京都",
+          "toPos": "6"
+        },
+        {
+          "nickname": "あかつき",
+          "from": "長崎",
+          "fromPos": "7",
+          "to": "京都",
+          "toPos": "14"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "けん引機は、京都～下関がEF66形、下関～門司がEF81形、下り「彗星」の門司～大分がEF81形、大分～南宮崎がED76形、「あかつき」の門司～長崎がED76形でした。",
+        "また、上り「彗星」の南宮崎～門司がED76形でした。",
+        "3．4．8号車は、主に多客期に連結されました。"
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "スハネフ15",
+        "オハネ15-350",
+        "オハネ15",
+        "オロネ14-300",
+        "オハネ14-300",
+        "オハ14-300"
+      ],
+      "updatedAt": "2026-09-28T18:00:38.378Z"
     }
   ],
   "formationsData": {
@@ -5836,7 +5877,139 @@
       ],
       "reversed": false,
       "titleNote": "青森～函館は逆向き。"
+    },
+    "f_1790618045195": {
+      "id": "f_1790618045195",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2000年3月～2005年10月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "彗星",
+          "from": "南宮崎",
+          "fromPos": "1",
+          "to": "京都",
+          "toPos": "6"
+        },
+        {
+          "nickname": "あかつき",
+          "from": "長崎",
+          "fromPos": "7",
+          "to": "京都",
+          "toPos": "14"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "けん引機は、京都～下関がEF66形、下関～門司がEF81形、下り「彗星」の門司～大分がEF81形、大分～南宮崎がED76形、「あかつき」の門司～長崎がED76形でした。",
+        "また、上り「彗星」の南宮崎～門司がED76形でした。",
+        "3．4．8号車は、主に多客期に連結されました。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "v_1790615606290_qpgni",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98450",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790615606290_4ghna",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "98450",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790615606290_40lmb",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9536",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1790615606290_40lmb",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9536",
+          "setGroupId": "C"
+        },
+        {
+          "vehicleId": "v_1790615606290_40lmb",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98450",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790615606290_4u9jj",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98450",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "v_1790615606290_qpgni",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1790615606290_40lmb",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9536",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "v_1790615606290_40lmb",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1790615606290_40lmb",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1790615606290_4u9jj",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1790615606290_zoonz",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1790615606290_5pdpl",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "v_1790615606290_kjyu6",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98753",
+          "setGroupId": "B"
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
     }
   },
-  "savedAt": "2026-09-28T17:48:16.574Z"
+  "savedAt": "2026-09-28T18:00:38.388Z"
 }
