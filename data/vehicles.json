@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-27T05:21:27.228Z",
+  "exportedAt": "2026-09-28T08:15:43.631Z",
   "vehicles": [
     {
       "id": "v_1789495226612_o5r98",
@@ -36578,7 +36578,7 @@
     },
     {
       "id": "v_1790356213317_ayiqj",
-      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22200.png",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22200_新塗装.png",
       "series": "22000系",
       "modelCode": "モ22200",
       "variantCode": "",
@@ -36595,7 +36595,7 @@
     },
     {
       "id": "v_1790356213317_19ik3",
-      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22100.png",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22100_新塗装.png",
       "series": "22000系",
       "modelCode": "モ22100",
       "variantCode": "",
@@ -36612,7 +36612,7 @@
     },
     {
       "id": "v_1790356213317_ewf3y",
-      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22300.png",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22300_新塗装.png",
       "series": "22000系",
       "modelCode": "モ22300",
       "variantCode": "",
@@ -36628,25 +36628,8 @@
       ]
     },
     {
-      "id": "v_1790356213317_ng93g",
-      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22400.png",
-      "series": "22000系",
-      "modelCode": "モ22400",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
-      ]
-    },
-    {
       "id": "v_1790356213317_ggch8",
-      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22600.png",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22600_新塗装.png",
       "series": "22600系",
       "modelCode": "モ22600",
       "variantCode": "",
@@ -36663,7 +36646,7 @@
     },
     {
       "id": "v_1790356213317_yt0y1",
-      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22700.png",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22700_新塗装.png",
       "series": "22600系",
       "modelCode": "モ22700",
       "variantCode": "",
@@ -36680,7 +36663,7 @@
     },
     {
       "id": "v_1790356213317_gczdv",
-      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22900.png",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22900_新塗装.png",
       "series": "22600系",
       "modelCode": "モ22900",
       "variantCode": "",
@@ -36697,7 +36680,7 @@
     },
     {
       "id": "v_1790356213317_5c6o2",
-      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22800.png",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22800_新塗装.png",
       "series": "22600系",
       "modelCode": "モ22800",
       "variantCode": "",
@@ -37988,6 +37971,1026 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 221系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_w6l02",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12200系/ク12300_旧塗装.png",
+      "series": "12200系",
+      "modelCode": "ク12300",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12200系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_ma3j7",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12200系/ク12300_旧塗装．下枠交差型パンタグラフ.png",
+      "series": "12200系",
+      "modelCode": "ク12300",
+      "variantCode": "",
+      "liveryName": "旧塗装．下枠交差型パンタグラフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12200系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_bdj1v",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12200系/サ12120_旧塗装．下枠交差型パンタグラフ.png",
+      "series": "12200系",
+      "modelCode": "サ12120",
+      "variantCode": "",
+      "liveryName": "旧塗装．下枠交差型パンタグラフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12200系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_lsssi",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12200系/サ12120_旧塗装.png",
+      "series": "12200系",
+      "modelCode": "サ12120",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12200系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_3boz0",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12200系/モ12200_旧塗装．下枠交差型パンタグラフ.png",
+      "series": "12200系",
+      "modelCode": "モ12200",
+      "variantCode": "",
+      "liveryName": "旧塗装．下枠交差型パンタグラフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12200系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_pvwaf",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12200系/モ12020_旧塗装.png",
+      "series": "12200系",
+      "modelCode": "モ12020",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12200系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_6msq2",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12200系/モ12020_旧塗装．下枠交差型パンタグラフ.png",
+      "series": "12200系",
+      "modelCode": "モ12020",
+      "variantCode": "",
+      "liveryName": "旧塗装．下枠交差型パンタグラフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12200系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_pabic",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12200系/モ12200_旧塗装.png",
+      "series": "12200系",
+      "modelCode": "モ12200",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12200系"
+      ]
+    },
+    {
+      "id": "v_1790583336506_hfz1d",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12400系/ク12500_新塗装.png",
+      "series": "12400系",
+      "modelCode": "ク12500",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_6bqyd",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12400系/ク12500_旧塗装.png",
+      "series": "12400系",
+      "modelCode": "ク12500",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_x3798",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12400系/サ12550_新塗装.png",
+      "series": "12400系",
+      "modelCode": "サ12550",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_70qib",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12400系/サ12550_旧塗装.png",
+      "series": "12400系",
+      "modelCode": "サ12550",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_47ics",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12400系/モ12450_旧塗装.png",
+      "series": "12400系",
+      "modelCode": "モ12450",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_fh068",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12400系/モ12400_旧塗装.png",
+      "series": "12400系",
+      "modelCode": "モ12400",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_j3i4a",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12400系/モ12450_新塗装.png",
+      "series": "12400系",
+      "modelCode": "モ12450",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_ul89g",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12400系/モ12400_新塗装.png",
+      "series": "12400系",
+      "modelCode": "モ12400",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_0xelc",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12410系/ク12510_新塗装.png",
+      "series": "12410系",
+      "modelCode": "ク12510",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12410系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_gy8w0",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12410系/ク12510_旧塗装.png",
+      "series": "12410系",
+      "modelCode": "ク12510",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12410系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_1vlxf",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12410系/サ12560_新塗装.png",
+      "series": "12410系",
+      "modelCode": "サ12560",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12410系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_kbp5k",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12410系/サ12560_旧塗装.png",
+      "series": "12410系",
+      "modelCode": "サ12560",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12410系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_7r6v4",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12410系/モ12410_旧塗装.png",
+      "series": "12410系",
+      "modelCode": "モ12410",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12410系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_yw5bw",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12410系/モ12410_新塗装.png",
+      "series": "12410系",
+      "modelCode": "モ12410",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12410系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_j81iu",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12410系/モ12460_旧塗装.png",
+      "series": "12410系",
+      "modelCode": "モ12460",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12410系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_vl27i",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12410系/モ12460_新塗装.png",
+      "series": "12410系",
+      "modelCode": "モ12460",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12410系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_kcz48",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12600系/ク12700_新塗装.png",
+      "series": "12600系",
+      "modelCode": "ク12700",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_ga486",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12600系/ク12700_旧塗装.png",
+      "series": "12600系",
+      "modelCode": "ク12700",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_2on1d",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12600系/サ12750_新塗装.png",
+      "series": "12600系",
+      "modelCode": "サ12750",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_huvc6",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12600系/モ12600_新塗装.png",
+      "series": "12600系",
+      "modelCode": "モ12600",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_u2mxh",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12600系/モ12650_旧塗装.png",
+      "series": "12600系",
+      "modelCode": "モ12650",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_7gtny",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12600系/サ12750_旧塗装.png",
+      "series": "12600系",
+      "modelCode": "サ12750",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_yb8a9",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12600系/モ12600_旧塗装.png",
+      "series": "12600系",
+      "modelCode": "モ12600",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_nl3vz",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/12600系/モ12650_新塗装.png",
+      "series": "12600系",
+      "modelCode": "モ12650",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 12600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_4c5ff",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16010系/ク16110_新塗装.png",
+      "series": "16010系",
+      "modelCode": "ク16110",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16010系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_la1ur",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16010系/ク16110_旧塗装.png",
+      "series": "16010系",
+      "modelCode": "ク16110",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16010系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_in5ea",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16010系/モ16010_新塗装.png",
+      "series": "16010系",
+      "modelCode": "モ16010",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16010系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_pvw6y",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16010系/モ16010_旧塗装.png",
+      "series": "16010系",
+      "modelCode": "モ16010",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16010系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_dhbns",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16200系/ク16300.png",
+      "series": "16200系",
+      "modelCode": "ク16300",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16200系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_pkgik",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16200系/モ16250.png",
+      "series": "16200系",
+      "modelCode": "モ16250",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16200系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_axr6y",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16200系/モ16200.png",
+      "series": "16200系",
+      "modelCode": "モ16200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16200系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_59xrp",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16400系/ク16500_新塗装.png",
+      "series": "16400系",
+      "modelCode": "ク16500",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_tvgpt",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16400系/ク16500_旧塗装.png",
+      "series": "16400系",
+      "modelCode": "ク16500",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_a9gtf",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16400系/モ16400_旧塗装.png",
+      "series": "16400系",
+      "modelCode": "モ16400",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_hss1i",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16400系/モ16400_新塗装.png",
+      "series": "16400系",
+      "modelCode": "モ16400",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16400系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_f5djs",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16600系/ク16700_新塗装.png",
+      "series": "16600系",
+      "modelCode": "ク16700",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_pe7pa",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16600系/ク16700_旧塗装.png",
+      "series": "16600系",
+      "modelCode": "ク16700",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_7dztv",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16600系/モ16600_新塗装.png",
+      "series": "16600系",
+      "modelCode": "モ16600",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_aww9z",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/16600系/モ16600_旧塗装.png",
+      "series": "16600系",
+      "modelCode": "モ16600",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 16600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_diyn4",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22100_旧塗装.png",
+      "series": "22000系",
+      "modelCode": "モ22100",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_g3zn5",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22200_旧塗装.png",
+      "series": "22000系",
+      "modelCode": "モ22200",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_gkzx7",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22400_旧塗装.png",
+      "series": "22000系",
+      "modelCode": "モ22400",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_1swbx",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22300_旧塗装.png",
+      "series": "22000系",
+      "modelCode": "モ22300",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_hu1tf",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22000系/モ22400_新塗装.png",
+      "series": "22000系",
+      "modelCode": "モ22400",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22000系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_5ys71",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22600_旧塗装.png",
+      "series": "22600系",
+      "modelCode": "モ22600",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_8bifj",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22650_旧塗装.png",
+      "series": "22600系",
+      "modelCode": "モ22650",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_828zd",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22650_新塗装.png",
+      "series": "22600系",
+      "modelCode": "モ22650",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_o2mf9",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22800_旧塗装.png",
+      "series": "22600系",
+      "modelCode": "モ22800",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_aocai",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22700_旧塗装.png",
+      "series": "22600系",
+      "modelCode": "モ22700",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_4jr7b",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22900_旧塗装.png",
+      "series": "22600系",
+      "modelCode": "モ22900",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_8pvsq",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22950_新塗装.png",
+      "series": "22600系",
+      "modelCode": "モ22950",
+      "variantCode": "",
+      "liveryName": "新塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
+      ]
+    },
+    {
+      "id": "v_1790583336507_ut5nj",
+      "sourcePath": "02_私鐵/近畿日本鉄道/特急用/22600系/モ22950_旧塗装.png",
+      "series": "22600系",
+      "modelCode": "モ22950",
+      "variantCode": "",
+      "liveryName": "旧塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 近畿日本鉄道 / 特急用 / 22600系"
       ]
     }
   ]
