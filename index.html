@@ -340,6 +340,9 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small secondary" id="btn-dedupe-vehicles" style="flex:1;">清理重複車輛（同圖片多筆紀錄）</button>
       </div>
       <div class="db-io-row">
+        <button class="btn small secondary" id="btn-unify-ids" style="flex:1;" title="讓車輛編號改由檔案路徑決定，兩台電腦算出來才會一致">統一車輛編號（多台電腦同步用）</button>
+      </div>
+      <div class="db-io-row">
         <button class="btn small secondary" id="btn-export-vehicles">匯出車輛庫(JSON)</button>
         <label class="btn small secondary" style="cursor:pointer;margin:0;">
           匯入車輛庫
@@ -913,7 +916,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20260929-0159";
+  const APP_BUILD = "20260929-0739";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -1106,7 +1109,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     // 本機專用的功能整列隱藏(連同按鈕外層的那一列,才不會留下空白間距)
     ["btn-pick-root-folder", "btn-export-web", "btn-pick-vehicle-folder",
      "btn-scan-vehicle-folder", "btn-dedupe-vehicles", "btn-pick-formation-folder",
-     "btn-pick-assets-folder", "btn-export-vehicles-excel"].forEach(id => {
+     "btn-pick-assets-folder", "btn-export-vehicles-excel", "btn-unify-ids"].forEach(id => {
       const el = document.getElementById(id);
       if(!el) return;
       const row = el.closest(".db-io-row");
@@ -1513,6 +1516,21 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     }
   }
 
+  // 由檔案路徑算出固定不變的車輛編號。
+  // 編號若用時間或亂數產生,兩台電腦各自掃描同一批圖片會得到不同編號,
+  // 於是在 A 電腦做的編成到了 B 電腦就對不上,出現「車輛已從資料庫移除」。
+  // 改用路徑推算後,只要檔案位置一樣,任何電腦算出來的編號都相同。
+  function stableVehicleId(sourcePath){
+    const str = String(sourcePath || "");
+    let h1 = 5381, h2 = 52711;
+    for(let i = 0; i < str.length; i++){
+      const c = str.charCodeAt(i);
+      h1 = (h1 * 33 ^ c) >>> 0;
+      h2 = (h2 * 31 ^ c) >>> 0;
+    }
+    return "vp_" + h1.toString(36) + h2.toString(36);
+  }
+
   // ---------- 掃描車輛資料夾:遞迴找圖片、只新增沒建檔過的,不動既有資料 ----------
   const IMG_EXT_RE = /\.(png|jpe?g|gif|webp|bmp)$/i;
 
@@ -1614,7 +1632,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       stillNew.forEach(({ f, dataUrl }) => {
         const parsed = parseVehicleFromPath(f.relPath);
         vehicles.push({
-          id: "v_" + Date.now() + "_" + Math.random().toString(36).slice(2,7),
+          id: stableVehicleId(f.relPath),
           sourcePath: f.relPath,
           series: parsed.series, modelCode: parsed.modelCode, variantCode: parsed.variantCode || "",
           liveryName: parsed.liveryName, side: parsed.side, company: "",
@@ -2452,6 +2470,70 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       btn.disabled = false; btn.textContent = oldText;
     }
   }
+  // ---------- 統一車輛編號 ----------
+  // 把編號改成由檔案路徑推算,讓每台電腦算出來都一致;
+  // 編成裡指向舊編號的車廂會一併改成新編號,不會變成「車輛已移除」。
+  async function unifyVehicleIds(){
+    const btn = $("#btn-unify-ids");
+    const oldText = btn.textContent;
+    btn.disabled = true; btn.textContent = "處理中…";
+    try{
+      const remap = {};
+      const taken = new Set(vehicles.map(v => v.id));
+      let changed = 0, skipped = 0;
+      vehicles.forEach(v => {
+        if(!v.sourcePath){ skipped++; return; }      // 手動新增、沒有來源檔案的維持原編號
+        const want = stableVehicleId(v.sourcePath);
+        if(v.id === want) return;
+        if(taken.has(want)){ skipped++; return; }     // 極少見的重複,保守跳過
+        taken.delete(v.id); taken.add(want);
+        remap[v.id] = want;
+        v.id = want;
+        changed++;
+      });
+
+      if(!changed){
+        alert("檢查完成:所有車輛編號都已經是依路徑產生的,不需要調整。" +
+              (skipped ? `\\n(${skipped} 筆沒有來源檔案或編號衝突,維持原樣)` : ""));
+        return;
+      }
+
+      // 編成裡的參照一起改
+      btn.textContent = "更新編成…";
+      const idx = await loadIndex();
+      let fixedFormations = 0;
+      for(const f of idx){
+        try{
+          const res = await storage.get("formations:" + f.id, false);
+          if(!res) continue;
+          const data = JSON.parse(res.value);
+          let touched = false;
+          (data.cars || []).forEach(c => {
+            if(remap[c.vehicleId]){ c.vehicleId = remap[c.vehicleId]; touched = true; }
+          });
+          if(touched){
+            await storage.set("formations:" + f.id, JSON.stringify(data), false);
+            fixedFormations++;
+          }
+        }catch(e){ /* 略過讀不到的那筆 */ }
+      }
+
+      reindexVehicles();
+      await persistVehicles();
+      await syncFormationsToFolder();
+      renderLibrary();
+      if(typeof refreshFormationResults === "function") refreshFormationResults();
+      alert(`完成:\\n・${changed} 輛車改用依路徑產生的編號\\n・${fixedFormations} 個編成的參照已同步更新` +
+            (skipped ? `\\n・${skipped} 筆維持原樣(沒有來源檔案)` : "") +
+            `\\n\\n請在另一台電腦也執行一次,兩邊的編號就會一致。`);
+    }catch(e){
+      alert("處理失敗:" + (e && e.message ? e.message : e));
+    }finally{
+      btn.disabled = false; btn.textContent = oldText;
+    }
+  }
+  $("#btn-unify-ids").addEventListener("click", unifyVehicleIds);
+
   $("#btn-dedupe-vehicles").addEventListener("click", dedupeVehicles);
 
   $("#btn-scan-vehicle-folder").addEventListener("click", scanVehicleFolder);
