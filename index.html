@@ -913,7 +913,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20260927-0524";
+  const APP_BUILD = "20260929-0159";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -4697,75 +4697,123 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const ARROW_RIGHT = "\uF0E0";
     ctx.textBaseline = "alphabetic";
     const stationY = margin + topH - 6 * K;
-    const segs = state.segments || [];
-    // 整列反轉時,出發站與抵達站要左右互換(箭頭方向也跟著對調)
-    const rawFrom = uniq(segs.map(s => (s.from || "").trim()).filter(Boolean));
-    const rawTo = uniq(segs.map(s => (s.to || "").trim()).filter(Boolean));
-    const fromTexts = state.reversed ? rawTo : rawFrom;
-    const toTexts = state.reversed ? rawFrom : rawTo;
-    const activeSegs = state.reversed
-      ? segs.filter(s => (s.nickname || "").trim()).slice().reverse()
-      : segs.filter(s => (s.nickname || "").trim());
+    const STA_FONT = `${ptToPx(16, scale)}px "${titleFam}"`;
+    const ARR_FONT = `${ptToPx(16, scale)}px ${ARROW_FONT}`;
 
-    if(fromTexts.length){
-      const nameText = fromTexts.join("・");
-      ctx.font = `${ptToPx(16, scale)}px ${ARROW_FONT}`;
-      const arrowW = ctx.measureText(ARROW_LEFT).width;
-      ctx.textAlign = "left";
-      ctx.fillText(ARROW_LEFT, margin, stationY);
-      ctx.font = `${ptToPx(16, scale)}px "${titleFam}"`;
-      ctx.fillText(" " + nameText, margin + arrowW, stationY);
-    }
-    if(toTexts.length){
-      const nameText = toTexts.join("・") + " ";
-      ctx.font = `${ptToPx(16, scale)}px "${titleFam}"`;
-      const nameW = ctx.measureText(nameText).width;
-      ctx.font = `${ptToPx(16, scale)}px ${ARROW_FONT}`;
-      const arrowW = ctx.measureText(ARROW_RIGHT).width;
-      const startX = margin + innerW - nameW - arrowW;
-      ctx.textAlign = "left";
-      ctx.font = `${ptToPx(16, scale)}px "${titleFam}"`;
-      ctx.fillText(nameText, startX, stationY);
-      ctx.font = `${ptToPx(16, scale)}px ${ARROW_FONT}`;
-      ctx.fillText(ARROW_RIGHT, startX + nameW, stationY);
-    }
+    // 只取有填東西的區段;整列反轉時順序倒過來,出發與終點互換
+    const rawSegs = (state.segments || []).filter(s =>
+      (s.nickname || "").trim() || (s.from || "").trim() || (s.to || "").trim());
+    const segList = (state.reversed ? rawSegs.slice().reverse() : rawSegs).map(s => ({
+      nickname: (s.nickname || "").trim(),
+      from: state.reversed ? (s.to || "").trim() : (s.from || "").trim(),
+      to:   state.reversed ? (s.from || "").trim() : (s.to || "").trim(),
+      fromPos: state.reversed ? s.toPos : s.fromPos,
+      toPos:   state.reversed ? s.fromPos : s.toPos
+    }));
 
-    // 中間愛稱分割:只有兩個以上愛稱(代表列車有中途分割)才需要顯示,
-    // 單一愛稱的話標題已經顯示過了,不用在編成上方重複一次
-    if(activeSegs.length >= 2){
-      const boundaries = [];
-      // 位置欄填的是「原始編成的第幾節」,整列反轉後要換算成畫面上的位置。
-      // 例如原本 9 節車的第 3 節,反轉後會出現在畫面上的第 7 節。
+    if(segList.length){
+      // 要切成多段,必須有依據:有填車號,或各區段愛稱不同。
+      // 兩者都沒有(例如只填了幾組起訖站)就當成一整段,同側站名用「・」合併。
+      const hasPos = segList.some(s =>
+        !isNaN(parseInt(s.fromPos, 10)) || !isNaN(parseInt(s.toPos, 10)));
+      const distinctNicks = uniq(segList.map(s => s.nickname).filter(Boolean)).length >= 2;
+      if(!hasPos && !distinctNicks && segList.length > 1){
+        const merged = {
+          nickname: segList[0].nickname,
+          from: uniq(segList.map(s => s.from).filter(Boolean)).join("・"),
+          to: uniq(segList.map(s => s.to).filter(Boolean)).join("・"),
+          fromPos: "", toPos: ""
+        };
+        segList.length = 0;
+        segList.push(merged);
+      }
+      // 分割線位置:依「愛稱結束車號／起始車號」換算,沒填就平均分
       const mapPos = p => state.reversed ? (n + 1 - p) : p;
-      for(let i = 0; i < activeSegs.length - 1; i++){
-        // 反轉後「這一段的結尾」在畫面上會變成「下一段的開頭」,所以兩個欄位也要互換
-        const rawTo = parseInt(state.reversed ? activeSegs[i].fromPos : activeSegs[i].toPos, 10);
-        const rawFrom = parseInt(state.reversed ? activeSegs[i + 1].toPos : activeSegs[i + 1].fromPos, 10);
-        const toPos = isNaN(rawTo) ? NaN : mapPos(rawTo) - (state.reversed ? 1 : 0);
-        const fromPos = isNaN(rawFrom) ? NaN : mapPos(rawFrom) + (state.reversed ? 1 : 0);
+      const boundaries = [];
+      for(let i = 0; i < segList.length - 1; i++){
+        const endPos = parseInt(segList[i].toPos, 10);
+        const startPos = parseInt(segList[i + 1].fromPos, 10);
         let x;
-        if(!isNaN(toPos) && toPos >= 1 && toPos <= n){
-          x = carRightX(toPos - 1) + gap / 2;
-        }else if(!isNaN(fromPos) && fromPos >= 1 && fromPos <= n){
-          x = carLeftX(fromPos - 1) - gap / 2;
+        if(!isNaN(endPos) && endPos >= 1 && endPos <= n){
+          const p = mapPos(endPos) - (state.reversed ? 1 : 0);
+          x = carRightX(p - 1) + gap / 2;
+        }else if(!isNaN(startPos) && startPos >= 1 && startPos <= n){
+          const p = mapPos(startPos) + (state.reversed ? 1 : 0);
+          x = carLeftX(p - 1) - gap / 2;
         }else{
-          x = margin + innerW * (i + 1) / activeSegs.length;
+          x = margin + innerW * (i + 1) / segList.length;
         }
         boundaries.push(x);
       }
-      // 每一段的愛稱都在自己的區段內置中。
-      // 第一段的左界是編成最左邊、最後一段的右界是編成最右邊,
-      // 中間各段則是自己左右兩條分割線之間。
+
       const leftEdge = margin;
       const rightEdge = margin + innerW;
-      ctx.textAlign = "center";
-      activeSegs.forEach((seg, i) => {
-        const name = seg.nickname.trim();
-        if(!name) return;
-        const lo = (i === 0) ? leftEdge : boundaries[i - 1];
-        const hi = (i === activeSegs.length - 1) ? rightEdge : boundaries[i];
-        ctx.fillText(name, (lo + hi) / 2, stationY);
-      });
+      const segLo = i => (i === 0) ? leftEdge : boundaries[i - 1];
+      const segHi = i => (i === segList.length - 1) ? rightEdge : boundaries[i];
+
+      // 哪一側是共通的(所有區段都一樣)就只在最外端顯示一次,
+      // 不同的那一側則各自貼在自己區段的邊緣
+      const froms = uniq(segList.map(s => s.from).filter(Boolean));
+      const tos   = uniq(segList.map(s => s.to).filter(Boolean));
+      const nicks = uniq(segList.map(s => s.nickname).filter(Boolean));
+      const fromCommon = froms.length <= 1;
+      const toCommon = tos.length <= 1;
+      // 愛稱只有在各區段不同時才顯示(相同或只有一個的話標題已經有了)
+      const showNick = nicks.length >= 2;
+
+      // 畫「←站名」:箭頭在左,文字接在後面
+      function drawLeftArrowText(x, text){
+        ctx.font = ARR_FONT;
+        const aw = ctx.measureText(ARROW_LEFT).width;
+        ctx.textAlign = "left";
+        ctx.fillText(ARROW_LEFT, x, stationY);
+        ctx.font = STA_FONT;
+        ctx.fillText(text, x + aw, stationY);
+      }
+      // 畫「站名→」:文字在前,箭頭接在後面,整體靠右對齊到 x
+      function drawTextRightArrow(x, text){
+        ctx.font = STA_FONT;
+        const tw = ctx.measureText(text).width;
+        ctx.font = ARR_FONT;
+        const aw = ctx.measureText(ARROW_RIGHT).width;
+        const startX = x - tw - aw;
+        ctx.textAlign = "left";
+        ctx.font = STA_FONT;
+        ctx.fillText(text, startX, stationY);
+        ctx.font = ARR_FONT;
+        ctx.fillText(ARROW_RIGHT, startX + tw, stationY);
+      }
+      // 愛稱只跟著其中一側顯示:出發側是逐段顯示時跟著出發側,否則跟著終點側
+      const nickSide = !fromCommon ? "from" : "to";
+      const withNick = (seg, name, side) =>
+        (showNick && seg.nickname && side === nickSide) ? `「${seg.nickname}」${name}` : name;
+
+      // 出發側
+      if(fromCommon){
+        if(froms.length) drawLeftArrowText(leftEdge, froms.join("・"));
+      }else{
+        segList.forEach((seg, i) => {
+          if(seg.from) drawLeftArrowText(segLo(i), withNick(seg, seg.from, "from"));
+        });
+      }
+      // 終點側
+      if(toCommon){
+        if(tos.length) drawTextRightArrow(rightEdge, tos.join("・"));
+      }else{
+        segList.forEach((seg, i) => {
+          if(seg.to) drawTextRightArrow(segHi(i), withNick(seg, seg.to, "to"));
+        });
+      }
+      // 兩側都共通、但愛稱不同時,愛稱在各自區段置中顯示
+      if(fromCommon && toCommon && showNick){
+        ctx.font = STA_FONT;
+        ctx.textAlign = "center";
+        segList.forEach((seg, i) => {
+          if(seg.nickname) ctx.fillText(`「${seg.nickname}」`, (segLo(i) + segHi(i)) / 2, stationY);
+        });
+      }
+      // 分割線
+      ctx.font = STA_FONT;
       ctx.textAlign = "center";
       boundaries.forEach(bx => ctx.fillText("｜", bx, stationY));
     }
