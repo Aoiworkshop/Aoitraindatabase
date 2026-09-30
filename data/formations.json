@@ -1834,6 +1834,46 @@
         "オハ14-300"
       ],
       "updatedAt": "2026-09-28T18:00:38.378Z"
+    },
+    {
+      "id": "f_1790780231234",
+      "name": "●試験車「MUE-Train」",
+      "routeName": "",
+      "trainType": "試験車",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "MUE-Train",
+          "from": "八王子・奥多摩・成田・品川・大宮",
+          "fromPos": "",
+          "to": "川越車両センター・国府津・小机・黒磯",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "クヤ209-2",
+        "モヤ209-3",
+        "モヤ208-3",
+        "サヤ209-8",
+        "モヤ209-4",
+        "モヤ208-4",
+        "クヤ208-2"
+      ],
+      "updatedAt": "2026-09-30T15:25:54.934Z"
     }
   ],
   "formationsData": {
@@ -6009,7 +6049,88 @@
       ],
       "reversed": false,
       "titleNote": ""
+    },
+    "f_1790780231234": {
+      "id": "f_1790780231234",
+      "routeName": "",
+      "trainType": "試験車",
+      "dateStr": "",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "MUE-Train",
+          "from": "八王子・奥多摩・成田・品川・大宮",
+          "fromPos": "",
+          "to": "川越車両センター・国府津・小机・黒磯",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_x8glgovh17vg",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "93556",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_zcfh9gtcjxtw",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "93556",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_1gbcycl14b2l1t",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "93556",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_6qiv201gpiv4o",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "93556",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_13h1bj7nbalcr",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "93556",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_15ziqn6q5e1qu",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "93556",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_qcbmjt1d0y2wx",
+          "flipped": true,
+          "attribute": "Set",
+          "productCode": "93556",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
     }
   },
-  "savedAt": "2026-09-30T11:28:16.271Z"
+  "savedAt": "2026-09-30T15:25:54.943Z"
 }

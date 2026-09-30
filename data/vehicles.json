@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-29T13:19:02.254Z",
+  "exportedAt": "2026-09-30T15:25:40.954Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -12671,7 +12671,7 @@
     },
     {
       "id": "vp_8aagqezo53l6",
-      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/6000系/クハ6050.png",
+      "sourcePath": "02_私鐵/富士急行/6000系/クハ6050.png",
       "series": "6000系",
       "modelCode": "クハ6050",
       "variantCode": "",
@@ -12683,12 +12683,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 6000系"
+        "02_私鐵 / 富士急行 / 6000系"
       ]
     },
     {
       "id": "vp_enkh7515txft5",
-      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/6000系/クモハ6000.png",
+      "sourcePath": "02_私鐵/富士急行/6000系/クモハ6000.png",
       "series": "6000系",
       "modelCode": "クモハ6000",
       "variantCode": "",
@@ -12700,12 +12700,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 6000系"
+        "02_私鐵 / 富士急行 / 6000系"
       ]
     },
     {
       "id": "vp_1820lq61yx9k2i",
-      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/6000系/モハ6000.png",
+      "sourcePath": "02_私鐵/富士急行/6000系/モハ6000.png",
       "series": "6000系",
       "modelCode": "モハ6000",
       "variantCode": "",
@@ -12717,7 +12717,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 6000系"
+        "02_私鐵 / 富士急行 / 6000系"
       ]
     },
     {
@@ -38992,6 +38992,4579 @@
       "defaultProductCode": "",
       "categories": [
         "02_私鐵 / 近畿日本鉄道 / 特急用 / 80000系"
+      ]
+    },
+    {
+      "id": "vp_x06l982nmfky",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-0_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "0",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_f3j9gbuzsh7n",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-0_南武線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "0",
+      "liveryName": "南武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1b4rf561rgvkka",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-1000_中央線色.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "1000",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_en8g3a1xh0awu",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-1000_中央線色．01_L.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "1000",
+      "liveryName": "中央線色．01",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_f7sm3s1xomaow",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-1000_中央線色．01_R.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "1000",
+      "liveryName": "中央線色．01",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_zq09rtovi71t",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-1000_千代田線色.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "1000",
+      "liveryName": "千代田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_kq1s80uklxlu",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-2000_房総色.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "2000",
+      "liveryName": "房総色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_hucd9dcpfrz7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-2100_房総色.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "2100",
+      "liveryName": "房総色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1sk1w1213r40ig",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-3000_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "3000",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_b5mj151yws15t",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-2200_南武線色.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "2200",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1gydcnb18chz3",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-3100_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "3100",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_d2ba9vzpmj5f",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-3500_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "3500",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_drz4ux814brb",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-500_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "500",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1ybfgkq61dc9g",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-500_京葉線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "500",
+      "liveryName": "京葉線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1p722h2u6nn3u",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-500_総武線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "500",
+      "liveryName": "総武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_u8x5gy1purzr2",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ208-500_武蔵野線.png",
+      "series": "209系",
+      "modelCode": "クハ208",
+      "variantCode": "500",
+      "liveryName": "武蔵野線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_jjimqljzldnz",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-0_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "0",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1i1wrtm1ogdjoq",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-0_南武線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "0",
+      "liveryName": "南武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_88idrfeo27q7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-1000_中央線色.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_17u451s231lje",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-1000_中央線色．06_L.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色．06",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_186pxqm1oexn8",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-1000_中央線色．06_R.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色．06",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_5mowm03k96u2",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-1000_千代田線色.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "1000",
+      "liveryName": "千代田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1bp6qm9cp4mtl",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-2000_房総色.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "2000",
+      "liveryName": "房総色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_u1kp4w1jo94zs",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-2100_房総色.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "2100",
+      "liveryName": "房総色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1ccn74o1sxxe24",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-2200_南武線色.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "2200",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_187fy931h328cx",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-3000_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "3000",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_nq4zq8z3svm",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-3100_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "3100",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_oxpkci1xri92u",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-3500_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "3500",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_13sust41tlv0ve",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-500_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "500",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_14w0d7715wtgnt",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-500_武蔵野線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "500",
+      "liveryName": "武蔵野線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_qcbmjt1d0y2wx",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クヤ208-2_MUE-Train.png",
+      "series": "209系",
+      "modelCode": "クヤ208",
+      "variantCode": "2",
+      "liveryName": "MUE-Train",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_2gtfqj401hit",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-500_京葉線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "500",
+      "liveryName": "京葉線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_q6q2pz912ctv",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クハ209-500_総武線.png",
+      "series": "209系",
+      "modelCode": "クハ209",
+      "variantCode": "500",
+      "liveryName": "総武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_x8glgovh17vg",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/クヤ209-2_MUE-Train.png",
+      "series": "209系",
+      "modelCode": "クヤ209",
+      "variantCode": "2",
+      "liveryName": "MUE-Train",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1nipnk617llz3s",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サハ208-0_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "サハ208",
+      "variantCode": "0",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_16yqepzrkdodh",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サハ209-0_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "サハ209",
+      "variantCode": "0",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_tryupfszs7d",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サハ209-1000_中央線色.png",
+      "series": "209系",
+      "modelCode": "サハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_rlhw761vpsh38",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サハ209-1000_千代田線色.png",
+      "series": "209系",
+      "modelCode": "サハ209",
+      "variantCode": "1000",
+      "liveryName": "千代田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1tq2l36kb7tiw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サハ209-500_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "サハ209",
+      "variantCode": "500",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_17eve9d18qo6j3",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サハ209-500_京葉線.png",
+      "series": "209系",
+      "modelCode": "サハ209",
+      "variantCode": "500",
+      "liveryName": "京葉線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1yl4efdkgrajr",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サハ209-500_武蔵野線.png",
+      "series": "209系",
+      "modelCode": "サハ209",
+      "variantCode": "500",
+      "liveryName": "武蔵野線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_95fzktfqlurh",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サハ209-500_総武線.png",
+      "series": "209系",
+      "modelCode": "サハ209",
+      "variantCode": "500",
+      "liveryName": "総武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_6qiv201gpiv4o",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/サヤ209-8_MUE-Train.png",
+      "series": "209系",
+      "modelCode": "サヤ209",
+      "variantCode": "8",
+      "liveryName": "MUE-Train",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1j50c414o8bl7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-0_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "0",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_16i2oie1jliuy6",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-0_南武線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "0",
+      "liveryName": "南武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1n2ttuv1ibq8o3",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-1000_中央線色.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "1000",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_tjcxg81rib5ui",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-1000_中央線色．02_L.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "1000",
+      "liveryName": "中央線色．02",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_9d11i71ovbb35",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-1000_中央線色．05_L.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "1000",
+      "liveryName": "中央線色．05",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_tlch521rl8lhg",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-1000_中央線色．02_R.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "1000",
+      "liveryName": "中央線色．02",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_9mzbk11onphfj",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-1000_中央線色．05_R.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "1000",
+      "liveryName": "中央線色．05",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_hrohqs1607kpi",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-1000_千代田線色.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "1000",
+      "liveryName": "千代田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_182ask47f2ahc",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-2200_南武線色.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "2200",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1bxk26lx01tth",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-2000_房総色.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "2000",
+      "liveryName": "房総色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_u9y0p81vzvtkk",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-2100_房総色.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "2100",
+      "liveryName": "房総色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_zw3yzvyfqxbx",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-3000_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "3000",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1c1ttoqno1ulq",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-3100_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "3100",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_6srswedxnvd6",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-3500_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "3500",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_ewfe3r1nn4lp5",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-500_京葉線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "500",
+      "liveryName": "京葉線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1ds21hw1kz1zla",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-500_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "500",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_ew719b1ez4lv9",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-500_武蔵野線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "500",
+      "liveryName": "武蔵野線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_lccpvv1b7oov",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ208-500_総武線.png",
+      "series": "209系",
+      "modelCode": "モハ208",
+      "variantCode": "500",
+      "liveryName": "総武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1dacuvr1abim0n",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-0_南武線.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "0",
+      "liveryName": "南武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_chl7dys8mroe",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-1000_中央線色.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_a9gyau1pdndk2",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-1000_中央線色．03_R.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色．03",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_a7hem01p8dnuk",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-1000_中央線色．03_L.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色．03",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1d67pa7113q2yn",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-1000_中央線色．04_L.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色．04",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1dg5std11bbwm9",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-1000_中央線色．04_R.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "1000",
+      "liveryName": "中央線色．04",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_bmdfzpb4sh6l",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-1000_千代田線色.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "1000",
+      "liveryName": "千代田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1ub4c1818rauy6",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-2000_房総色.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "2000",
+      "liveryName": "房総色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_f868t11oylgjp",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-2200_南武線色.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "2200",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_yw77l6o15iac",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-3000_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "3000",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_12gder1qw4pbj",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-2100_房総色.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "2100",
+      "liveryName": "房総色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_ocznkb1671n",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-3100_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "3100",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_utcnbp17qujmz",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-500_京浜東北線.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "500",
+      "liveryName": "京浜東北線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_t5lsrq1ytrrx4",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-500_京葉線.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "500",
+      "liveryName": "京葉線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_vs5ua7hvvclz",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-3500_川越・八高線.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "3500",
+      "liveryName": "川越・八高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_19af7zyvmeoe2",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-500_武蔵野線.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "500",
+      "liveryName": "武蔵野線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_m7a1my152oq2e",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-500_総武線.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "500",
+      "liveryName": "総武線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1gbcycl14b2l1t",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モヤ208-3_MUE-Train.png",
+      "series": "209系",
+      "modelCode": "モヤ208",
+      "variantCode": "3",
+      "liveryName": "MUE-Train",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_w0pdk61gr7eak",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モハ209-500_総武線．菱形パンタグラフ.png",
+      "series": "209系",
+      "modelCode": "モハ209",
+      "variantCode": "500",
+      "liveryName": "総武線．菱形パンタグラフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_zcfh9gtcjxtw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モヤ209-3_MUE-Train.png",
+      "series": "209系",
+      "modelCode": "モヤ209",
+      "variantCode": "3",
+      "liveryName": "MUE-Train",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_15ziqn6q5e1qu",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モヤ208-4_MUE-Train.png",
+      "series": "209系",
+      "modelCode": "モヤ208",
+      "variantCode": "4",
+      "liveryName": "MUE-Train",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_13h1bj7nbalcr",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/209系/モヤ209-4_MUE-Train.png",
+      "series": "209系",
+      "modelCode": "モヤ209",
+      "variantCode": "4",
+      "liveryName": "MUE-Train",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ]
+    },
+    {
+      "id": "vp_1up7cxcn0ssmi",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-0_常磐・成田線色.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "0",
+      "liveryName": "常磐・成田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_8xfzk41irpf1a",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-0_武蔵野色.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "0",
+      "liveryName": "武蔵野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_tmjw7eubh9m6",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-0_総武線色.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "0",
+      "liveryName": "総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_564aof5y992n",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-3000_川越・八高線色.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "3000",
+      "liveryName": "川越・八高線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_2wl0231n5elsj",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-500_中央・総武線更新車.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "500",
+      "liveryName": "中央・総武線更新車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1g3ikxo1wvyroa",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-500_山手線色.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "500",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_ruueactfoxe4",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-8000_東海道色.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "8000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1pgsr8a44o0le",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-6000_東海道色.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "6000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_3eo8a0dlcxxk",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE230-800_地下鉄東西線.png",
+      "series": "E231",
+      "modelCode": "クハE230",
+      "variantCode": "800",
+      "liveryName": "地下鉄東西線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_16ax5ip111pm5n",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-0_常磐・成田線色.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "0",
+      "liveryName": "常磐・成田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_qhhi3pqlg021",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-0_武蔵野色.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "0",
+      "liveryName": "武蔵野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_klvvvv1x2vbk1",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-0_総武線色.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "0",
+      "liveryName": "総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_57jfamzfczpg",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-3000_川越・八高線色.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "3000",
+      "liveryName": "川越・八高線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_jil4i2sz4p26",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-500_中央・総武線更新車.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "500",
+      "liveryName": "中央・総武線更新車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1xzrt996w5lgx",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-500_山手線色.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "500",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_17zvcnv8nr36b",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-6000_東海道色.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "6000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1ct8t1bem8wd",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-8000_東海道色.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "8000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_13rixqh1ewft43",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-800_地下鉄東西線.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "800",
+      "liveryName": "地下鉄東西線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1sqrlo013madk6",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/クハE231-8500_東海道色.png",
+      "series": "E231",
+      "modelCode": "クハE231",
+      "variantCode": "8500",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1tvxz2ons4o38",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE230-0_総武線色.png",
+      "series": "E231",
+      "modelCode": "サハE230",
+      "variantCode": "0",
+      "liveryName": "総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_10iadeuj5okas",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE230-500_山手線色.png",
+      "series": "E231",
+      "modelCode": "サハE230",
+      "variantCode": "500",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_18jr7qjd00gmp",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-0_常磐・成田線色.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "0",
+      "liveryName": "常磐・成田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1elhwp2puhtw6",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-1000_東海道色.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "1000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_z5iccf19qmzx7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-0_武蔵野色.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "0",
+      "liveryName": "武蔵野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1ddm5gxx1lj1z",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-0_総武線色.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "0",
+      "liveryName": "総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1b5pdxg1a9zlw4",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-3000_東海道色.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "3000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_gf1z9sp5dhc",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-500_中央・総武線更新車.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "500",
+      "liveryName": "中央・総武線更新車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1oab16v1mgnzlf",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-500_山手線色.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "500",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_z788011ownot9",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-6000_東海道色.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "6000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1m6yob79o4gn7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-600_中央・総武線更新車.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "600",
+      "liveryName": "中央・総武線更新車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1pjvg7n1qfn4xx",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サハE231-800_地下鉄東西線.png",
+      "series": "E231",
+      "modelCode": "サハE231",
+      "variantCode": "800",
+      "liveryName": "地下鉄東西線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1hgfcmd4woyft",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サロE230-1000_東海道色.png",
+      "series": "E231",
+      "modelCode": "サロE230",
+      "variantCode": "1000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_id4jvoffqlio",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/サロE231-1000_東海道色.png",
+      "series": "E231",
+      "modelCode": "サロE231",
+      "variantCode": "1000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_8wyuzh1vczk39",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-0_常磐・成田線色.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "0",
+      "liveryName": "常磐・成田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1qazsqxwvk9in",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-0_武蔵野色.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "0",
+      "liveryName": "武蔵野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1419swl1ohh8ox",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-1500_東海道色.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "1500",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_4mo7k71trf4s3",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-0_総武線色.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "0",
+      "liveryName": "総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_g4ni9c948sma",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-1000_東海道色.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "1000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_zpu9tu8uregm",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-3000_川越・八高線色.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "3000",
+      "liveryName": "川越・八高線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1w9s8lziagpwn",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-3500_東海道色.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "3500",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_100hrqeqwu2xw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-500_中央・総武線更新車.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "500",
+      "liveryName": "中央・総武線更新車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_qf13751dc1mk7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-500_山手線色.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "500",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_5d0m5h33xe2p",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE230-800_地下鉄東西線.png",
+      "series": "E231",
+      "modelCode": "モハE230",
+      "variantCode": "800",
+      "liveryName": "地下鉄東西線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1wxrsnw1x61hic",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-0_常磐・成田線色.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "0",
+      "liveryName": "常磐・成田線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_13tdu3s1bajdvw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-0_武蔵野色.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "0",
+      "liveryName": "武蔵野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_f95812cdqem8",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-0_総武線色.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "0",
+      "liveryName": "総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1vm2pf5n1wtij",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-1000_東海道色.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "1000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_ngb104fvrevg",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-1500_東海道色.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "1500",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_850z4m14xed4y",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-3500_東海道色.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "3500",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_7q0qzn1hgww1d",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-3000_川越・八高線色.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "3000",
+      "liveryName": "川越・八高線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_33ra5j7uwha1",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-500_中央・総武線更新車.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "500",
+      "liveryName": "中央・総武線更新車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_tpxdzksh2ns",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-500_山手線色.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "500",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_1igaev81hhioge",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E231/モハE231-800_地下鉄東西線.png",
+      "series": "E231",
+      "modelCode": "モハE231",
+      "variantCode": "800",
+      "liveryName": "地下鉄東西線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E231"
+      ]
+    },
+    {
+      "id": "vp_zubcio1etrvcw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-0_中央線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "0",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_fb83j88e5ph6",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-1000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "1000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_nm7ilz1w3wgq7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-1000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "1000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_5km95zcbqlph",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-2000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "2000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1pif3z3atl4dj",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-3000_東海道色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "3000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_mswmpfbdhodv",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-5000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "5000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_czus05msqoiz",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-500_中央線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "500",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1vsmttm1jdjmsw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-3500_東海道色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "3500",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_vmyroj18pshbb",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-6000_横浜線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "6000",
+      "liveryName": "横浜線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_ux80ko33hphk",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-7000_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "7000",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_bn1feybv0b2w",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE232-8000_南武線色.png",
+      "series": "E233",
+      "modelCode": "クハE232",
+      "variantCode": "8000",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_rihu2p1ltkk17",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-0_中央線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "0",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_14uwqlh18bqqjr",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-1000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "1000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1s4o5py126rafq",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-1000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "1000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1j12qhy1js2pgw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-2000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "2000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_b2k3fi2sw7ly",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-3000_東海道色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "3000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1d9s7gbvokctp",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-3500_東海道色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "3500",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_12hp7n6ghl19u",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-5000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "5000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1ch0bz61wf5b3u",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-6000_横浜線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "6000",
+      "liveryName": "横浜線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1qipe1wkzrjcw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-500_中央線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "500",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_llzznt1aig65v",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-7000_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "7000",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1413h3fpqmdqp",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/クハE233-8000_南武線色.png",
+      "series": "E233",
+      "modelCode": "クハE233",
+      "variantCode": "8000",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1pgrxnfuljqn9",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-0_中央線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "0",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_160ini73ejn9x",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-1000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "1000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_109kzl82a5t6g",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-1000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "1000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_ekt6rbv8y9r3",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-0_東海道色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "0",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1j5g3uk1sgrhnu",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-2000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "2000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_11xjigutiepzc",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-2200_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "2200",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1cs7up427twqk",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-5000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "5000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1abud1aoan3kq",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-500_中央線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "500",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_fyu11p19xqqn",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-5500_京葉線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "5500",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_11ff9uhd9020",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-500_東海道色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "500",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1bfzurc1ei64oc",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-6000_横浜線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "6000",
+      "liveryName": "横浜線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_ombvi2avbkdm",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-6200_横浜線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "6200",
+      "liveryName": "横浜線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_17frmoopxntq0",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サロE232-0_中央線色.png",
+      "series": "E233",
+      "modelCode": "サロE232",
+      "variantCode": "0",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1j6vr6b13is91p",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-7000_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "7000",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_wapqp16k3kxr",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サハE233-7200_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "サハE233",
+      "variantCode": "7200",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1k0nucnpp0vgf",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サロE232-3000_東海道色.png",
+      "series": "E233",
+      "modelCode": "サロE232",
+      "variantCode": "3000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_10atbi1q0ygf7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サロE233-0_中央線色.png",
+      "series": "E233",
+      "modelCode": "サロE233",
+      "variantCode": "0",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1beg8km179pghq",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/サロE233-3000_東海道色.png",
+      "series": "E233",
+      "modelCode": "サロE233",
+      "variantCode": "3000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_635xwtsuu6np",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-0_中央線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "0",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_y13vex1iu8ybp",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-1000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "1000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_u3e1ga1ctdgqw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-1000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "1000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_cm8mff16u7f4j",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-1200_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "1200",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1awfnrs1j40r4i",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-1200_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "1200",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_8pat711272ihl",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-1400_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "1400",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_pedetmh6qlcq",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-2000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "2000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_15ysz8e1blw8ss",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-1400_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "1400",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_wb3xv3e5ufdz",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-200_中央線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "200",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1ccspzc21l4mw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-2200_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "2200",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_hbbt1q1wj7p5q",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-2400_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "2400",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_ilayya1ojdi9c",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-3000_東海道色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "3000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_6haucwrvs602",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-3200_東海道色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "3200",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1tkf9pyl9k7xg",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-3400_東海道色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "3400",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_15ihcj811cdequ",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-3600_東海道色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "3600",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1rwd4nyeejpxo",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-5000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "5000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_13ebqh3vuls9",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-400_中央線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "400",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_igb40s1u4llfa",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-5200_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "5200",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_12v8va21hkjts8",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-5400_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "5400",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_w0cemm1htov6k",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-6000_横浜線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "6000",
+      "liveryName": "横浜線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_95pn621vob8ew",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-6400_横浜線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "6400",
+      "liveryName": "横浜線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_swzhd7aniqrv",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-600_中央線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "600",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_y8t06dphrc0t",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-7000_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "7000",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1sh8gbr1y2vabz",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-7200_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "7200",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1clc1sx147x0g1",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-7400_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "7400",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1c8hktj1f6cb23",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-8000_南武線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "8000",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_f60ehx101hcfl",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE232-8200_南武線色.png",
+      "series": "E233",
+      "modelCode": "モハE232",
+      "variantCode": "8200",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_wy9h58r275d6",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-0_中央線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "0",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_x2n1srz2q9zd",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-1000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "1000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1pdp9fs15ij8i8",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-1000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "1000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1mucjgs7e7k2c",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-1400_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "1400",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_4retai47464y",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-1200_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "1200",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_7vsf89fpe5d3",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-1200_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "1200",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_120qv6njza0el",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-1400_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "1400",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_w47tl71q3j3nr",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-2000_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "2000",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_9g240e1hrvup0",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-200_中央線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "200",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_21vxzd1gjugih",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-2200_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "2200",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_cxhzbj16fwy1f",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-2400_京浜東北線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "2400",
+      "liveryName": "京浜東北線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_19hjxpv1nnxfz5",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-3000_東海道色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "3000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_z0jnzl7u7ltz",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-3200_東海道色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "3200",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1jxv94n10vf6b1",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-3400_東海道色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "3400",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_aoykz91ukp9f",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-3600_東海道色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "3600",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_xnxn60gltu92",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-400_中央線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "400",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_184rtrmq09o5",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-5000_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "5000",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_a5bu3hd93d8z",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-5200_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "5200",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1r0mxbrpwmyp",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-6000_横浜線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "6000",
+      "liveryName": "横浜線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_1b4r0pn12wte0h",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-5400_京葉線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "5400",
+      "liveryName": "京葉線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_2oom6ilr9h9c",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-600_中央線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "600",
+      "liveryName": "中央線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_12dsl1n1gyvocl",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-6400_横浜線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "6400",
+      "liveryName": "横浜線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_129rfpgp1sze2",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-7000_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "7000",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_3igurq1dexngw",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-7200_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "7200",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_8ro8me1l10cmq",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-8000_南武線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "8000",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_14f2xr83lmuus",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-8200_南武線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "8200",
+      "liveryName": "南武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_kt2ji81g9d5xy",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E233/モハE233-7400_埼京・川越線色.png",
+      "series": "E233",
+      "modelCode": "モハE233",
+      "variantCode": "7400",
+      "liveryName": "埼京・川越線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E233"
+      ]
+    },
+    {
+      "id": "vp_rd8655lsxzjd",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE234-0_山手線色.png",
+      "series": "E235",
+      "modelCode": "クハE234",
+      "variantCode": "0",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1bglncs19eaoti",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE234-0_山手線色・103系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "クハE234",
+      "variantCode": "0",
+      "liveryName": "山手線色・103系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1f24d4y1e0q7rg",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE234-1000_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "クハE234",
+      "variantCode": "1000",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_bcthehwsjktp",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE234-0_山手線色・205系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "クハE234",
+      "variantCode": "0",
+      "liveryName": "山手線色・205系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1h1ro9v1nqftvf",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE234-1100_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "クハE234",
+      "variantCode": "1100",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1w2f1h4xb1yo2",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE235-0_山手線色.png",
+      "series": "E235",
+      "modelCode": "クハE235",
+      "variantCode": "0",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1nsgpqwlf2r9c",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE235-0_山手線色・205系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "クハE235",
+      "variantCode": "0",
+      "liveryName": "山手線色・205系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_70sn9f13zonih",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE235-1000_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "クハE235",
+      "variantCode": "1000",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1s5yg0y1e414ve",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE235-1100_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "クハE235",
+      "variantCode": "1100",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_o2m4e51r1qe9z",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/クハE235-0_山手線色・103系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "クハE235",
+      "variantCode": "0",
+      "liveryName": "山手線色・103系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1tl7lab1dmfzxn",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/サハE234-0_山手線色.png",
+      "series": "E235",
+      "modelCode": "サハE234",
+      "variantCode": "0",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_fppx1f1coxq37",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/サハE234-0_山手線色・205系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "サハE234",
+      "variantCode": "0",
+      "liveryName": "山手線色・205系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1ycqtgi95zbyk",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/サハE235-0_山手線色.png",
+      "series": "E235",
+      "modelCode": "サハE235",
+      "variantCode": "0",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_13bnmzdldq5p7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/サハE235-1000_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "サハE235",
+      "variantCode": "1000",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_gpuz5u12p2rxi",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/サハE235-0_山手線色・205系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "サハE235",
+      "variantCode": "0",
+      "liveryName": "山手線色・205系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_188z6ed1kmq21",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/サロE234-1000_東海道色.png",
+      "series": "E235",
+      "modelCode": "サロE234",
+      "variantCode": "1000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_7vqdk41cb7fgg",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/サロE235-1000_東海道色.png",
+      "series": "E235",
+      "modelCode": "サロE235",
+      "variantCode": "1000",
+      "liveryName": "東海道色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1iq88r8bptybs",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE234-0_山手線色.png",
+      "series": "E235",
+      "modelCode": "モハE234",
+      "variantCode": "0",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_5q5r78n3q1wa",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE234-0_山手線色・205系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "モハE234",
+      "variantCode": "0",
+      "liveryName": "山手線色・205系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_yi808f1yju9sf",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE234-1000_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "モハE234",
+      "variantCode": "1000",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_h40e8e9e4na8",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE234-1100_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "モハE234",
+      "variantCode": "1100",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_saygvh1sgrq5t",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE234-1200_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "モハE234",
+      "variantCode": "1200",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1tfcqmkwjld6a",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE234-1300_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "モハE234",
+      "variantCode": "1300",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1ktkhx111fajif",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE235-0_山手線色.png",
+      "series": "E235",
+      "modelCode": "モハE235",
+      "variantCode": "0",
+      "liveryName": "山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1ficbw5144uz8h",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE235-0_片側パンタ．山手線色.png",
+      "series": "E235",
+      "modelCode": "モハE235",
+      "variantCode": "0",
+      "liveryName": "片側パンタ．山手線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_g2ofsl7ypffr",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE235-0_山手線色・205系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "モハE235",
+      "variantCode": "0",
+      "liveryName": "山手線色・205系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_hr5vn91vw44ad",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE235-0_片側パンタ．山手線色・205系ラッピング車.png",
+      "series": "E235",
+      "modelCode": "モハE235",
+      "variantCode": "0",
+      "liveryName": "片側パンタ．山手線色・205系ラッピング車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_pypqsu1s82ea2",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE235-1000_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "モハE235",
+      "variantCode": "1000",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_m40q41sk8qag",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE235-1200_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "モハE235",
+      "variantCode": "1200",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1kskutr5i559l",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE235-1100_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "モハE235",
+      "variantCode": "1100",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_1dzddjhq8w3k7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E235/モハE235-1300_横須賀・総武線色.png",
+      "series": "E235",
+      "modelCode": "モハE235",
+      "variantCode": "1300",
+      "liveryName": "横須賀・総武線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E235"
+      ]
+    },
+    {
+      "id": "vp_ognq12oekmu8",
+      "sourcePath": "02_私鐵/伊豆急行/クハ3000_赤.png",
+      "series": "伊豆急行",
+      "modelCode": "クハ3000",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 伊豆急行"
+      ]
+    },
+    {
+      "id": "vp_1j1vxyo1jjb34m",
+      "sourcePath": "02_私鐵/伊豆急行/クハ3000_青.png",
+      "series": "伊豆急行",
+      "modelCode": "クハ3000",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 伊豆急行"
+      ]
+    },
+    {
+      "id": "vp_13hqp431d3d4y3",
+      "sourcePath": "02_私鐵/伊豆急行/クハ3050_赤.png",
+      "series": "伊豆急行",
+      "modelCode": "クハ3050",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 伊豆急行"
+      ]
+    },
+    {
+      "id": "vp_1e2ikut1sbrq4d",
+      "sourcePath": "02_私鐵/伊豆急行/クハ3050_青.png",
+      "series": "伊豆急行",
+      "modelCode": "クハ3050",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 伊豆急行"
+      ]
+    },
+    {
+      "id": "vp_4m0twq13qfmwq",
+      "sourcePath": "02_私鐵/伊豆急行/モハ3100_赤.png",
+      "series": "伊豆急行",
+      "modelCode": "モハ3100",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 伊豆急行"
+      ]
+    },
+    {
+      "id": "vp_1d54jft10e3ifp",
+      "sourcePath": "02_私鐵/伊豆急行/モハ3200_赤.png",
+      "series": "伊豆急行",
+      "modelCode": "モハ3200",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 伊豆急行"
+      ]
+    },
+    {
+      "id": "vp_18i0acc8ux6do",
+      "sourcePath": "02_私鐵/伊豆急行/モハ3100_青.png",
+      "series": "伊豆急行",
+      "modelCode": "モハ3100",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 伊豆急行"
+      ]
+    },
+    {
+      "id": "vp_i030m75io4ub",
+      "sourcePath": "02_私鐵/伊豆急行/モハ3200_青.png",
+      "series": "伊豆急行",
+      "modelCode": "モハ3200",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "02_私鐵 / 伊豆急行"
       ]
     }
   ]
