@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-30T15:25:40.954Z",
+  "exportedAt": "2026-09-30T17:09:59.480Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -39040,9 +39040,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98849",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98849"
       ]
     },
     {
@@ -39125,9 +39128,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98765",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98765",
+        "98766"
       ]
     },
     {
@@ -39142,9 +39149,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98354",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98354"
       ]
     },
     {
@@ -39193,9 +39203,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98321",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98321"
       ]
     },
     {
@@ -39227,9 +39240,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98863",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98863"
       ]
     },
     {
@@ -39261,9 +39277,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98664",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98664"
       ]
     },
     {
@@ -39312,9 +39331,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98849",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98849"
       ]
     },
     {
@@ -39397,9 +39419,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98765",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98765",
+        "98766"
       ]
     },
     {
@@ -39431,9 +39457,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98354",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98354"
       ]
     },
     {
@@ -39465,9 +39494,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98321",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98321"
       ]
     },
     {
@@ -39499,9 +39531,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98664",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98664"
       ]
     },
     {
@@ -39516,9 +39551,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "93556",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "93556"
       ]
     },
     {
@@ -39533,9 +39571,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98863",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98863"
       ]
     },
     {
@@ -39567,9 +39608,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "93556",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "93556"
       ]
     },
     {
@@ -39618,9 +39662,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98850",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98850"
       ]
     },
     {
@@ -39669,9 +39716,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98863",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98863"
       ]
     },
     {
@@ -39686,9 +39736,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98664",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98664"
       ]
     },
     {
@@ -39720,9 +39773,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "93556",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "93556"
       ]
     },
     {
@@ -39771,9 +39827,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98850",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98850",
+        "98849"
       ]
     },
     {
@@ -39907,9 +39967,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98765",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98765",
+        "98766"
       ]
     },
     {
@@ -39924,9 +39988,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98354",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98354"
       ]
     },
     {
@@ -39958,9 +40025,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98321",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98321"
       ]
     },
     {
@@ -39975,9 +40045,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98863",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98863"
       ]
     },
     {
@@ -40009,9 +40082,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98664",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98664"
       ]
     },
     {
@@ -40060,9 +40136,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98850",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98850",
+        "98849"
       ]
     },
     {
@@ -40196,9 +40276,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98354",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98354"
       ]
     },
     {
@@ -40213,9 +40296,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98765",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98765",
+        "98766"
       ]
     },
     {
@@ -40264,9 +40351,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98863",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98863"
       ]
     },
     {
@@ -40281,9 +40371,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98321",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98321"
       ]
     },
     {
@@ -40298,9 +40391,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98664",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "98664"
       ]
     },
     {
@@ -40332,9 +40428,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "93556",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "93556"
       ]
     },
     {
@@ -40366,9 +40465,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "93556",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "93556"
       ]
     },
     {
@@ -40383,9 +40485,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "93556",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "93556"
       ]
     },
     {
@@ -40400,9 +40505,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "93556",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 209系"
+      ],
+      "productCodes": [
+        "93556"
       ]
     },
     {
