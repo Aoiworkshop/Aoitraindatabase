@@ -435,6 +435,22 @@ if(location.protocol === "http:" || location.protocol === "https:"){
               <div class="field"><label>車廂寬度（公分）</label><input id="s-width" placeholder="預設 3.8" value="3.8"></div>
               <div class="field"><label>方向（左右不對稱時填 L／R）</label><input id="s-side" placeholder="留白 / L / R"></div>
               <div class="field">
+                <label>貨櫃尺寸（貨櫃才填）</label>
+                <select id="s-container-ft" style="width:100%;font-family:inherit;font-size:12.5px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;">
+                  <option value="">（不是貨櫃）</option>
+                  <option value="12ft">12ft</option>
+                  <option value="20ft">20ft</option>
+                  <option value="30ft">30ft</option>
+                  <option value="40ft">40ft</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>平車</label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:12.5px;padding:6px 0;">
+                  <input type="checkbox" id="s-flatcar"> 可裝載貨櫃
+                </label>
+              </div>
+              <div class="field">
                 <label>預設屬性</label>
                 <select id="s-attr" style="width:100%;font-family:inherit;font-size:12.5px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;"></select>
               </div>
@@ -916,7 +932,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20260929-0739";
+  const APP_BUILD = "20261001-0812";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -1979,6 +1995,104 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return (n && n > 0) ? n : 3.8;
   }
 
+  // ---------- 貨櫃(平車裝載) ----------
+  // 平車只有這三種寬度,裝載區的位置與寬度固定,直接寫死。
+  // inset = 裝載區左緣距車輛圖片左邊幾公分(圖片一律以未鏡射的方向為準)
+  const DECK_BY_WIDTH = {
+    "3.8": { inset: 0.2, deck: 3.6 },
+    "3.6": { inset: 0,   deck: 3.6 },
+    "2.6": { inset: 0.2, deck: 2.4 }
+  };
+  const CONTAINER_SIZES = { "12ft": 0.72, "20ft": 1.2, "30ft": 1.8, "40ft": 2.4 };
+  const CONTAINER_BOTTOM_CM = 0.9;   // 貨櫃底部距車輛圖片底部
+  const CONTAINER_HEIGHT_CM = 1.5;   // 貨櫃高度一律這個值,高矮差異在圖片裡處理
+
+  function deckOf(v){
+    if(!v || !v.isFlatcar) return null;
+    return DECK_BY_WIDTH[String(carWidthCm(v))] || { inset: 0.2, deck: carWidthCm(v) - 0.2 };
+  }
+  // 這輛車是不是貨櫃,以及它幾英尺寬
+  function containerFtOf(v){
+    if(!v) return "";
+    if(v.containerFt && CONTAINER_SIZES[v.containerFt]) return v.containerFt;
+    // 沒設定就從路徑或分類推測(資料夾名稱含 12ft/20ft/30ft/40ft)
+    const hay = (v.sourcePath || "") + " " + ((v.categories || []).join(" "));
+    const m = hay.match(/(12|20|30|40)\s*ft/i);
+    return m ? (m[1] + "ft") : "";
+  }
+  function containerWidthCm(v){ return CONTAINER_SIZES[containerFtOf(v)] || 0; }
+  // 依裝載順序算出每個貨櫃的位置(從左邊依序排,再依對齊方式整組位移)
+  // 車輛翻轉(或整列反轉)時,裝載區會跟著鏡射到另一邊,
+  // 所以貨櫃位置要左右對調。對調之後視覺上的順序自然就相反了,
+  // 但貨櫃圖案本身維持正向,不做鏡射。
+  function mirrorContainerX(x, w, carW){ return carW - (x + w); }
+  // 五個槽位的位置(距裝載區左緣),會隨貨櫃寬度變化:
+  //   1 靠左 / 2 靠左+0.72 / 3 置中 / 4 靠右-0.72 / 5 靠右
+  const CONTAINER_SLOTS = 5;
+  function slotOffset(slot, w, deck){
+    switch(slot){
+      case 1: return 0;
+      case 2: return 0.72;
+      case 3: return (deck - w) / 2;
+      case 4: return deck - 0.72 - w;
+      case 5: return deck - w;
+      default: return 0;
+    }
+  }
+  // 車廂上的貨櫃以「槽位」儲存,中間可以留空
+  function containerSlotsOf(carEntry){
+    const raw = carEntry && carEntry.containers;
+    const out = new Array(CONTAINER_SLOTS).fill(null);
+    if(Array.isArray(raw)){
+      raw.slice(0, CONTAINER_SLOTS).forEach((id, i) => { if(id) out[i] = id; });
+    }else if(raw && typeof raw === "object"){
+      for(let i = 1; i <= CONTAINER_SLOTS; i++){ if(raw[i]) out[i - 1] = raw[i]; }
+    }
+    return out;
+  }
+  function setContainerSlot(carEntry, slot, vehicleId){
+    const slots = containerSlotsOf(carEntry);
+    slots[slot - 1] = vehicleId || null;
+    if(slots.some(Boolean)) carEntry.containers = slots;
+    else { delete carEntry.containers; delete carEntry.containerAlign; }
+  }
+  // 算出每個貨櫃實際要畫在哪裡
+  function layoutContainers(carEntry, flatcar){
+    const d = deckOf(flatcar);
+    if(!d) return [];
+    const out = [];
+    containerSlotsOf(carEntry).forEach((id, i) => {
+      const v = id && vehiclesById[id];
+      const w = containerWidthCm(v);
+      if(!v || !w) return;
+      out.push({ v, w, slot: i + 1, x: d.inset + slotOffset(i + 1, w, d.deck) });
+    });
+    return out;
+  }
+  // 這個槽位放這種貨櫃會不會超出裝載區、跟其他已放的重疊,或違反搭配限制
+  function canPlaceContainer(carEntry, flatcar, slot, w, ft){
+    const d = deckOf(flatcar);
+    if(!d || !w) return false;
+    const x = slotOffset(slot, w, d.deck);
+    if(x < -0.0001 || x + w > d.deck + 0.0001) return false;
+
+    const others = layoutContainers(carEntry, flatcar).filter(it => it.slot !== slot);
+    // 位置不能重疊
+    const noOverlap = others.every(it => {
+      const ox = it.x - d.inset;
+      return (x + w <= ox + 0.0001) || (ox + it.w <= x + 0.0001);
+    });
+    if(!noOverlap) return false;
+
+    // 40ft 只能跟 12ft 同車。雖然 40ft+20ft 在寬度上剛好塞得下,
+    // 實際上不會這樣裝,所以直接擋掉。
+    const size = ft || Object.keys(CONTAINER_SIZES).find(k => CONTAINER_SIZES[k] === w) || "";
+    const otherFts = others.map(it => containerFtOf(it.v));
+    if(size === "40ft" && otherFts.some(f => f !== "12ft")) return false;
+    if(otherFts.includes("40ft") && size !== "12ft") return false;
+    return true;
+  }
+
   // ---------- vehicle library render / search (shared sidebar) ----------
   // 車輛編輯表單裡正在編輯的貨號清單
   let editingCodes = [];
@@ -2019,9 +2133,16 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   const carCountEl = $("#car-count");
   let activeCategoryFilter = "";
 
+  // 貨櫃不在「編成製作」的車輛清單出現,避免被誤加成車廂;
+  // 它們只會在平車的 📦 裝載選單裡挑選。
+  // 「車輛資料庫」分頁仍然看得到,才能編輯貨櫃本身的資料。
+  function hiddenInBuilder(v){
+    return currentTab === "builder" && !!containerFtOf(v);
+  }
   function matchesFilter(v){
     // 有左右兩面的車,清單上只顯示 L 那筆當代表(R 收合起來,由翻轉鈕自動切換)
     if(isPairSecondary(v)) return false;
+    if(hiddenInBuilder(v)) return false;
     const t = searchTextEl.value.trim().toLowerCase();
     if(t){
       const hay = [v.series, v.modelCode, v.variantCode, v.liveryName, v.company, v.note].join(" ").toLowerCase();
@@ -2071,6 +2192,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   function subFoldersOfCurrent(){
     const counts = {};
     vehicles.forEach(v => {
+      if(hiddenInBuilder(v)) return;
       const folders = vehicleFolders(v);
       if(folders.length <= folderPath.length) return;
       if(!isUnderFolder(v, folderPath)) return;
@@ -2724,6 +2846,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     $("#s-company").value = v.company || "";
     $("#s-width").value = v.widthCm || 3.8;
     $("#s-side").value = v.side || "";
+    $("#s-container-ft").value = v.containerFt || "";
+    $("#s-flatcar").checked = !!v.isFlatcar;
     $("#s-attr").value = v.defaultAttribute || "";
     editingCodes = productCodesOf(v);
     $("#s-code").value = "";
@@ -2894,6 +3018,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     $("#s-model").value = ""; $("#s-variant").value = ""; $("#s-livery").value = "";
     $("#s-company").value = ""; $("#s-width").value = "3.8"; $("#s-note").value = "";
     $("#s-side").value = "";
+    $("#s-container-ft").value = ""; $("#s-flatcar").checked = false;
     $("#s-attr").value = ""; $("#s-code").value = "";
     editingCodes = []; renderCodeList();
     $("#single-file").value = "";
@@ -2909,6 +3034,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const series = $("#s-series").value.trim();
     const widthCm = parseFloat($("#s-width").value) || 3.8;
     const side = $("#s-side").value.trim().toUpperCase();
+    const containerFt = $("#s-container-ft").value;
+    const isFlatcar = $("#s-flatcar").checked;
     const defaultAttribute = $("#s-attr").value;
     // 輸入框裡若還有沒按「加入」的貨號,一併收進清單
     addEditingCode();
@@ -2919,7 +3046,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       const partner = sidePartnerOf[v.id];
       Object.assign(v, {
         series, modelCode, variantCode: $("#s-variant").value.trim(),
-        liveryName: $("#s-livery").value.trim(), company: $("#s-company").value.trim(), widthCm, side,
+        liveryName: $("#s-livery").value.trim(), company: $("#s-company").value.trim(), widthCm, side, containerFt, isFlatcar,
         defaultAttribute, defaultProductCode, productCodes,
         note: $("#s-note").value.trim(), categories: singlePicker.cats.slice(), img: singleFileDataUrl
       });
@@ -2929,7 +3056,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         Object.assign(partner, {
           series, modelCode, variantCode: $("#s-variant").value.trim(),
           liveryName: $("#s-livery").value.trim(), company: $("#s-company").value.trim(),
-          widthCm, defaultAttribute, defaultProductCode, productCodes,
+          widthCm, containerFt, isFlatcar, defaultAttribute, defaultProductCode, productCodes,
           note: $("#s-note").value.trim(), categories: singlePicker.cats.slice()
         });
       }
@@ -2937,7 +3064,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       vehicles.push({
         id: "v_" + Date.now() + "_" + Math.random().toString(36).slice(2,7),
         series, modelCode, variantCode: $("#s-variant").value.trim(),
-        liveryName: $("#s-livery").value.trim(), company: $("#s-company").value.trim(), widthCm, side,
+        liveryName: $("#s-livery").value.trim(), company: $("#s-company").value.trim(), widthCm, side, containerFt, isFlatcar,
         defaultAttribute, defaultProductCode, productCodes,
         note: $("#s-note").value.trim(), categories: singlePicker.cats.slice(), img: singleFileDataUrl
       });
@@ -3089,6 +3216,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     ["company", "所屬公司"],
     ["widthCm", "寬度(cm)"],
     ["side", "方向(L/R)"],
+    ["isFlatcar", "平車(1=可裝貨櫃)"],
+    ["containerFt", "貨櫃尺寸(12ft/20ft/30ft/40ft)"],
     ["defaultAttribute", "預設屬性"],
     ["productCodes", "貨號清單(用｜分隔多個)"],
     ["categories", "分類標籤(用｜分隔多個)"],
@@ -3101,6 +3230,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       EXCEL_COLS.forEach(([key, label]) => {
         if(key === "categories") row[label] = (v.categories || []).join("｜");
         else if(key === "productCodes") row[label] = productCodesOf(v).join("｜");
+        else if(key === "isFlatcar") row[label] = v.isFlatcar ? 1 : "";
         else row[label] = v[key] != null ? v[key] : "";
       });
       return row;
@@ -3512,6 +3642,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       EXCEL_COLS.forEach(([key, label]) => {
         if(key === "categories") row[label] = (v.categories || []).join("｜");
         else if(key === "productCodes") row[label] = productCodesOf(v).join("｜");
+        else if(key === "isFlatcar") row[label] = v.isFlatcar ? 1 : "";
         else row[label] = v[key] != null ? v[key] : "";
       });
       return row;
@@ -3555,6 +3686,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
             const list = text ? text.split("｜").map(s => s.trim()).filter(Boolean) : [];
             v.productCodes = list;
             v.defaultProductCode = list[0] || "";
+          }else if(key === "isFlatcar"){
+            const t = String(row[label] ?? "").trim().toLowerCase();
+            v.isFlatcar = !!t && t !== "0" && t !== "false" && t !== "no";
           }else if(key === "widthCm"){
             const n = parseFloat(row[label]);
             v.widthCm = (n && n > 0) ? n : 3.8;
@@ -3758,6 +3892,163 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   // 雙擊車廂時跳出的塗裝切換選單
+  // 貨櫃裝載選單:點平車上的 📦 按鈕打開。
+  // 五個槽位各自獨立,中間可以留空;放不下或會疊到別的貨櫃時不會出現在選項裡。
+  function showContainerPicker(anchorEl, realIdx){
+    document.querySelectorAll(".container-picker").forEach(el => el.remove());
+    const entry = state.cars[realIdx];
+    const flat = vehiclesById[entry.vehicleId];
+    const d = deckOf(flat);
+    if(!d) return;
+
+    const menu = document.createElement("div");
+    menu.className = "container-picker";
+    menu.style.cssText = "position:fixed;z-index:9999;background:#fff;border:1px solid var(--line);" +
+      "border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.18);padding:10px;width:330px;" +
+      "max-height:72vh;overflow-y:auto;";
+    let openSlot = 0;   // 正在挑選貨櫃的槽位(0 = 沒有)
+
+    function redraw(){
+      menu.innerHTML = "";
+      const head = document.createElement("div");
+      head.style.cssText = "font-size:12px;font-weight:700;margin-bottom:2px;";
+      head.textContent = `貨櫃裝載　${vehicleLabel(flat)}`;
+      menu.appendChild(head);
+      const sub = document.createElement("div");
+      sub.style.cssText = "font-size:10.5px;color:var(--muted);margin-bottom:8px;";
+      sub.textContent = `裝載區 ${d.deck}cm　槽位 1 靠左 / 2 靠左+0.72 / 3 置中 / 4 靠右-0.72 / 5 靠右`;
+      menu.appendChild(sub);
+
+      const slots = containerSlotsOf(entry);
+      for(let slot = 1; slot <= CONTAINER_SLOTS; slot++){
+        const row = document.createElement("div");
+        row.style.cssText = "display:flex;align-items:center;gap:6px;padding:3px 0;border-top:1px solid var(--line);";
+        const no = document.createElement("span");
+        no.style.cssText = "font-size:11px;font-weight:700;width:14px;flex-shrink:0;";
+        no.textContent = slot;
+        row.appendChild(no);
+
+        const id = slots[slot - 1];
+        const cv = id && vehiclesById[id];
+        if(cv){
+          const thumb = document.createElement("img");
+          thumb.src = vehicleImgSrc(cv);
+          thumb.style.cssText = "width:46px;height:20px;display:block;flex-shrink:0;";
+          const name = document.createElement("span");
+          name.style.cssText = "flex:1;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;";
+          name.textContent = `${vehicleLabel(cv)}（${containerFtOf(cv)}）`;
+          const del = document.createElement("button");
+          del.type = "button"; del.textContent = "✕"; del.title = "清除這個槽位";
+          del.style.cssText = "border:none;background:none;color:var(--rail-red);cursor:pointer;font-size:11px;";
+          del.addEventListener("click", () => {
+            setContainerSlot(entry, slot, null);
+            renderFormation(); redraw();
+          });
+          row.appendChild(thumb); row.appendChild(name); row.appendChild(del);
+        }else{
+          const empty = document.createElement("span");
+          empty.style.cssText = "flex:1;font-size:11px;color:var(--muted);";
+          empty.textContent = "（無）";
+          // 這個槽位還放不放得下任何一種貨櫃
+          const usable = Object.keys(CONTAINER_SIZES)
+            .some(ft => canPlaceContainer(entry, flat, slot, CONTAINER_SIZES[ft], ft));
+          const pick = document.createElement("button");
+          pick.type = "button";
+          pick.style.cssText = "padding:2px 8px;font-size:10.5px;";
+          if(usable){
+            pick.className = "btn small secondary";
+            pick.textContent = openSlot === slot ? "收合" : "選擇";
+            pick.addEventListener("click", () => { openSlot = (openSlot === slot ? 0 : slot); redraw(); });
+          }else{
+            pick.className = "btn small secondary";
+            pick.textContent = "✕";
+            pick.disabled = true;
+            pick.title = "這個槽位放不下任何貨櫃";
+            pick.style.cssText += "opacity:.45;cursor:not-allowed;";
+            empty.textContent = "（不可放置）";
+          }
+          row.appendChild(empty); row.appendChild(pick);
+        }
+        menu.appendChild(row);
+
+        // 展開這個槽位可以放的貨櫃
+        if(openSlot === slot && !cv){
+          const box = document.createElement("div");
+          box.style.cssText = "padding:4px 0 6px 20px;";
+          const filter = document.createElement("input");
+          filter.placeholder = "搜尋貨櫃…";
+          filter.style.cssText = "width:100%;font-size:11px;padding:4px 6px;border:1px solid var(--line);border-radius:4px;margin-bottom:4px;";
+          box.appendChild(filter);
+          const listBox = document.createElement("div");
+          listBox.style.cssText = "max-height:190px;overflow-y:auto;";
+          box.appendChild(listBox);
+
+          function renderList(){
+            listBox.innerHTML = "";
+            const q = filter.value.trim().toLowerCase();
+            const qr = normRoma(q);
+            const cands = vehicles.filter(c => {
+              const ft = containerFtOf(c);
+              if(!ft || isPairSecondary(c)) return false;
+              if(!canPlaceContainer(entry, flat, slot, containerWidthCm(c), ft)) return false;
+              if(!q) return true;
+              const hay = [c.modelCode, c.liveryName, c.series, ft].join(" ").toLowerCase();
+              return hay.includes(q) || (qr && vehicleRoma(c).includes(qr));
+            }).slice(0, 60);
+            if(!cands.length){
+              listBox.innerHTML = `<div style="font-size:10.5px;color:var(--muted);">這個槽位放不下任何貨櫃（會超出或疊到其他貨櫃）</div>`;
+              return;
+            }
+            cands.forEach(c => {
+              const r = document.createElement("div");
+              r.style.cssText = "display:flex;align-items:center;gap:6px;padding:3px;border-radius:4px;cursor:pointer;";
+              r.addEventListener("mouseenter", () => r.style.background = "#f3f7fc");
+              r.addEventListener("mouseleave", () => r.style.background = "");
+              const th = document.createElement("img");
+              th.src = vehicleImgSrc(c);
+              th.style.cssText = "width:46px;height:20px;display:block;flex-shrink:0;";
+              const nm = document.createElement("span");
+              nm.style.cssText = "flex:1;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;";
+              nm.textContent = `${vehicleLabel(c)}${c.liveryName ? " " + c.liveryName : ""}（${containerFtOf(c)}）`;
+              r.appendChild(th); r.appendChild(nm);
+              r.addEventListener("click", () => {
+                setContainerSlot(entry, slot, c.id);
+                openSlot = 0;
+                renderFormation(); redraw();
+              });
+              listBox.appendChild(r);
+            });
+          }
+          filter.addEventListener("input", renderList);
+          renderList();
+          menu.appendChild(box);
+          setTimeout(() => filter.focus(), 0);
+        }
+      }
+    }
+    redraw();
+
+    document.body.appendChild(menu);
+    const r = anchorEl.getBoundingClientRect();
+    const mw = menu.offsetWidth, mh = menu.offsetHeight;
+    const left = Math.max(8, Math.min(r.left, window.innerWidth - mw - 8));
+    const top = (r.bottom + mh + 8 <= window.innerHeight) ? (r.bottom + 4) : Math.max(8, r.top - mh - 4);
+    menu.style.left = left + "px";
+    menu.style.top = top + "px";
+
+    const close = (ev) => {
+      if(ev && ev.type === "mousedown" && menu.contains(ev.target)) return;
+      menu.remove();
+      document.removeEventListener("mousedown", close);
+      document.removeEventListener("keydown", onKey);
+    };
+    const onKey = (ev) => { if(ev.key === "Escape") close(); };
+    setTimeout(() => {
+      document.addEventListener("mousedown", close);
+      document.addEventListener("keydown", onKey);
+    }, 0);
+  }
+
   function showVariantPicker(anchorEl, realIdx, variants, currentId){
     document.querySelectorAll(".variant-picker").forEach(el => el.remove());
     const menu = document.createElement("div");
@@ -4035,10 +4326,16 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   function normalizeCarEntry(e){
     if(typeof e === "string") return { vehicleId: e, flipped: false, attribute: "", productCode: "", setGroupId: "" };
-    return {
+    const o = {
       vehicleId: e.vehicleId, flipped: !!e.flipped,
       attribute: e.attribute || "", productCode: e.productCode || "", setGroupId: e.setGroupId || ""
     };
+    // 只有實際裝了貨櫃的車廂才會帶這兩個欄位,其他車廂不會多存東西
+    if(Array.isArray(e.containers) && e.containers.length){
+      o.containers = e.containers.slice();
+      o.containerAlign = e.containerAlign || "left";
+    }
+    return o;
   }
   function normalizeCars(){ state.cars = (state.cars || []).map(normalizeCarEntry); }
 
@@ -4160,6 +4457,41 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       img.src = vehicleImgSrc(v); img.style.width = previewW + "px"; img.style.display = "block";
       if(dc.flipped) img.style.transform = "scaleX(-1)";
       imgBox.appendChild(img);
+
+      // 平車:多一個裝載貨櫃的按鈕
+      if(deckOf(v)){
+        const cbtn = document.createElement("button");
+        cbtn.type = "button";
+        const cnt = (entry.containers || []).length;
+        cbtn.textContent = cnt ? `📦${cnt}` : "📦";
+        cbtn.title = "裝載貨櫃";
+        cbtn.style.cssText = "position:absolute;bottom:2px;right:2px;z-index:3;border:1px solid var(--line);" +
+          "background:rgba(255,255,255,.9);border-radius:3px;cursor:pointer;font-size:9px;padding:0 3px;";
+        cbtn.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          showContainerPicker(cbtn, ri);
+        });
+        slot.appendChild(cbtn);
+      }
+
+      // 平車上的貨櫃:疊在車輛圖片上方,位置依裝載區換算(預覽 20px/公分)
+      const loaded = layoutContainers(entry, v);
+      if(loaded.length){
+        imgBox.style.position = "relative";
+        const carImgH = 3.0 * 20;
+        loaded.forEach(item => {
+          const ci = document.createElement("img");
+          ci.src = vehicleImgSrc(item.v);
+          ci.title = vehicleLabel(item.v);
+          const cx = dc.flipped ? mirrorContainerX(item.x, item.w, carWidthCm(v)) : item.x;
+          ci.style.cssText = "position:absolute;display:block;pointer-events:none;" +
+            `left:${cx * 20}px;` +
+            `bottom:${CONTAINER_BOTTOM_CM * 20}px;` +
+            `width:${item.w * 20}px;height:${CONTAINER_HEIGHT_CM * 20}px;`;
+          imgBox.appendChild(ci);
+        });
+        imgBox.style.height = carImgH + "px";
+      }
 
       const numRow = document.createElement("div");
       // 圖片下方約 0.8 公分是預留給車號的空白區(預覽比例 20px/公分 → 16px),
@@ -4721,7 +5053,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     // 整列反轉時會自動倒序並把每節車的朝向對調(貨號/套組資訊跟著車廂一起走)
     const cars = displayCars()
       .map(dc => ({
-        v: vehiclesById[dc.entry.vehicleId], flipped: dc.flipped,
+        v: vehiclesById[dc.entry.vehicleId], flipped: dc.flipped, entry: dc.entry,
         attribute: dc.entry.attribute || "", productCode: dc.entry.productCode || "",
         setGroupId: dc.entry.setGroupId || ""
       }))
@@ -4902,14 +5234,18 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
     // 車輛列
     const carY = margin + topH;
-    const imgs = cars.map(c => {
+    const mkImg = src => {
       const img = new Image();
       // 線上版圖片是從相對路徑載入的,同網域不會污染畫布,
       // 但保險起見宣告一下,確保 toBlob/toDataURL 一定能用
       if(IS_WEB) img.crossOrigin = "anonymous";
-      img.src = vehicleImgSrc(c.v);
+      img.src = src;
       return img;
-    });
+    };
+    const imgs = cars.map(c => mkImg(vehicleImgSrc(c.v)));
+    // 平車上的貨櫃也要先載入,否則輸出時可能畫不出來
+    const containerImgs = cars.map(c =>
+      layoutContainers(c.entry || {}, c.v).map(item => ({ item, img: mkImg(vehicleImgSrc(item.v)) })));
 
     function drawAll(){
       ctx.font = `${ptToPx(14, scale)}px "${carLabelFam}"`;
@@ -4924,6 +5260,16 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         }else{
           ctx.drawImage(imgs[idx], cx, carY, w, carH);
         }
+        // 平車上的貨櫃:疊在車輛圖片上面。
+        // 車輛翻轉時位置左右對調(視覺順序跟著相反),但貨櫃圖案本身不鏡射。
+        (containerImgs[idx] || []).forEach(({ item, img }) => {
+          const ix = c.flipped ? mirrorContainerX(item.x, item.w, carWidthCm(c.v)) : item.x;
+          ctx.drawImage(img,
+            cx + ix * scale,
+            carY + carH - (CONTAINER_BOTTOM_CM + CONTAINER_HEIGHT_CM) * scale,
+            item.w * scale,
+            CONTAINER_HEIGHT_CM * scale);
+        });
         // 車號標籤:車號直接接在車輛型式前面,單行文字,不畫圓圈
         ctx.fillStyle = "#1a1a1a";
         ctx.font = `${ptToPx(14, scale)}px "${carLabelFam}"`;
@@ -5104,7 +5450,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     // 等所有圖片確定載入完成後只畫一次、只下載一次
     // (data URL有時會同步就載完,onload事件跟「已完成」檢查兩條路徑都會觸發,
     // 用Promise統一等待可以避免drawAll被呼叫兩次、下載兩張重複的圖)
-    await Promise.all(imgs.map(img => img.complete
+    const allImgs = imgs.concat(containerImgs.flat().map(x => x.img));
+    await Promise.all(allImgs.map(img => img.complete
       ? Promise.resolve()
       : new Promise(resolve => { img.onload = resolve; img.onerror = resolve; })
     ));
