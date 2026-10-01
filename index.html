@@ -202,6 +202,25 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   .formation-card .fc-cars{font-size:11.5px;color:#444;line-height:1.6;}
   .formation-card .fc-actions{display:flex;flex-direction:column;gap:6px;flex-shrink:0;}
   /* 編成預覽:車廂圖片排成一列,太長時在卡片內左右捲動,不會把按鈕擠出去 */
+  /* 貨櫃裝載面板:固定在編成組成下方,槽位水平排列,窄螢幕可左右捲動 */
+  #container-editor{border:1px solid var(--line);border-radius:8px;background:#fff;
+    padding:10px;margin-top:8px;}
+  .ce-head{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;}
+  .ce-slots{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;}
+  .ce-slot{flex:0 0 auto;width:92px;border:1px solid var(--line);border-radius:6px;padding:5px;
+    text-align:center;cursor:pointer;background:#fcfbf8;}
+  .ce-slot.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:#eef3fa;}
+  .ce-slot.disabled{opacity:.45;cursor:not-allowed;}
+  .ce-slot .ce-no{font-size:10px;color:var(--muted);}
+  .ce-slot img{width:100%;height:26px;object-fit:contain;display:block;margin:2px 0;}
+  .ce-slot .ce-name{font-size:9.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .ce-pick{margin-top:8px;border-top:1px solid var(--line);padding-top:8px;}
+  .ce-list{display:flex;flex-wrap:wrap;gap:6px;max-height:190px;overflow-y:auto;}
+  .ce-item{display:flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:5px;
+    padding:3px 6px;cursor:pointer;background:#fff;}
+  .ce-item:hover{border-color:var(--accent);background:#f3f7fc;}
+  .ce-item img{width:44px;height:19px;object-fit:contain;display:block;}
+  .ce-item span{font-size:10.5px;white-space:nowrap;}
   .fc-strip{display:flex;align-items:flex-start;overflow-x:auto;max-width:100%;padding-bottom:4px;}
   .fc-strip img{display:block;flex-shrink:0;}
   .fc-strip-gone{flex-shrink:0;box-sizing:border-box;border:1.5px dashed #c9c4ba;border-radius:3px;background:#f3f1ec;}
@@ -516,6 +535,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small danger" id="btn-remove-missing" type="button" style="display:none;">移除失效車廂</button>
       </div>
       <div id="formation-area"></div>
+      <div id="container-editor" style="display:none;"></div>
       </div>
 
       <div class="builder-body">
@@ -932,7 +952,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261001-0823";
+  const APP_BUILD = "20261001-0950";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -3903,161 +3923,160 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   // 雙擊車廂時跳出的塗裝切換選單
-  // 貨櫃裝載選單:點平車上的 📦 按鈕打開。
-  // 五個槽位各自獨立,中間可以留空;放不下或會疊到別的貨櫃時不會出現在選項裡。
-  function showContainerPicker(anchorEl, realIdx){
-    document.querySelectorAll(".container-picker").forEach(el => el.remove());
-    const entry = state.cars[realIdx];
-    const flat = vehiclesById[entry.vehicleId];
+  // ---------- 貨櫃裝載面板 ----------
+  // 固定顯示在「編成組成」下方,不是浮動視窗,所以展開選項時不會跑出畫面。
+  // 槽位 1~5 水平排列,位置與車上的實際位置對應;窄螢幕時可左右捲動。
+  let ceCarIdx = -1;     // 正在編輯的車廂(state.cars 的位置),-1 = 關閉
+  let ceSlot = 0;        // 正在挑選的槽位
+
+  function openContainerEditor(realIdx){
+    ceCarIdx = (ceCarIdx === realIdx) ? -1 : realIdx;
+    ceSlot = 0;
+    renderContainerEditor();
+  }
+  function closeContainerEditor(){
+    ceCarIdx = -1; ceSlot = 0;
+    renderContainerEditor();
+  }
+
+  function renderContainerEditor(){
+    const box = $("#container-editor");
+    if(!box || !box.style) return;
+    const entry = state.cars[ceCarIdx];
+    const flat = entry && vehiclesById[entry.vehicleId];
     const d = deckOf(flat);
-    if(!d) return;
+    if(ceCarIdx < 0 || !d){ box.style.display = "none"; box.innerHTML = ""; return; }
 
-    const menu = document.createElement("div");
-    menu.className = "container-picker";
-    menu.style.cssText = "position:fixed;z-index:9999;background:#fff;border:1px solid var(--line);" +
-      "border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.18);padding:10px;width:330px;" +
-      "max-height:72vh;overflow-y:auto;";
-    let openSlot = 0;   // 正在挑選貨櫃的槽位(0 = 沒有)
+    box.style.display = "";
+    box.innerHTML = "";
 
-    function redraw(){
-      menu.innerHTML = "";
-      const head = document.createElement("div");
-      head.style.cssText = "font-size:12px;font-weight:700;margin-bottom:2px;";
-      head.textContent = `貨櫃裝載　${vehicleLabel(flat)}`;
-      menu.appendChild(head);
-      const sub = document.createElement("div");
-      sub.style.cssText = "font-size:10.5px;color:var(--muted);margin-bottom:8px;";
-      sub.textContent = `裝載區 ${d.deck}cm　槽位 1 靠左 / 2 靠左+0.72 / 3 置中 / 4 靠右-0.72 / 5 靠右`;
-      menu.appendChild(sub);
+    const head = document.createElement("div");
+    head.className = "ce-head";
+    const title = document.createElement("span");
+    title.style.cssText = "font-size:12px;font-weight:700;";
+    title.textContent = `貨櫃裝載　${vehicleLabel(flat)}`;
+    const hint = document.createElement("span");
+    hint.style.cssText = "font-size:10.5px;color:var(--muted);flex:1;";
+    hint.textContent = `裝載區 ${d.deck}cm　點槽位選擇貨櫃`;
+    const closeBtn = document.createElement("button");
+    closeBtn.type = "button"; closeBtn.className = "btn small secondary";
+    closeBtn.style.cssText = "padding:2px 10px;font-size:10.5px;";
+    closeBtn.textContent = "關閉";
+    closeBtn.addEventListener("click", closeContainerEditor);
+    head.appendChild(title); head.appendChild(hint); head.appendChild(closeBtn);
+    box.appendChild(head);
 
-      const slots = containerSlotsOf(entry);
-      for(let slot = 1; slot <= CONTAINER_SLOTS; slot++){
-        const row = document.createElement("div");
-        row.style.cssText = "display:flex;align-items:center;gap:6px;padding:3px 0;border-top:1px solid var(--line);";
-        const no = document.createElement("span");
-        no.style.cssText = "font-size:11px;font-weight:700;width:14px;flex-shrink:0;";
-        no.textContent = slot;
-        row.appendChild(no);
+    // 槽位列(水平,對應車上的左右位置)
+    const slotsRow = document.createElement("div");
+    slotsRow.className = "ce-slots";
+    const slots = containerSlotsOf(entry);
+    for(let slot = 1; slot <= CONTAINER_SLOTS; slot++){
+      const id = slots[slot - 1];
+      const cv = id && vehiclesById[id];
+      const usable = cv ? true : Object.keys(CONTAINER_SIZES)
+        .some(ft => canPlaceContainer(entry, flat, slot, CONTAINER_SIZES[ft], ft));
 
-        const id = slots[slot - 1];
-        const cv = id && vehiclesById[id];
-        if(cv){
-          const thumb = document.createElement("img");
-          thumb.src = vehicleImgSrc(cv);
-          thumb.style.cssText = "width:46px;height:20px;display:block;flex-shrink:0;";
-          const name = document.createElement("span");
-          name.style.cssText = "flex:1;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;";
-          name.textContent = `${vehicleLabel(cv)}（${containerFtOf(cv)}）`;
-          const del = document.createElement("button");
-          del.type = "button"; del.textContent = "✕"; del.title = "清除這個槽位";
-          del.style.cssText = "border:none;background:none;color:var(--rail-red);cursor:pointer;font-size:11px;";
-          del.addEventListener("click", () => {
-            setContainerSlot(entry, slot, null);
-            renderFormation(); redraw();
-          });
-          row.appendChild(thumb); row.appendChild(name); row.appendChild(del);
-        }else{
-          const empty = document.createElement("span");
-          empty.style.cssText = "flex:1;font-size:11px;color:var(--muted);";
-          empty.textContent = "（無）";
-          // 這個槽位還放不放得下任何一種貨櫃
-          const usable = Object.keys(CONTAINER_SIZES)
-            .some(ft => canPlaceContainer(entry, flat, slot, CONTAINER_SIZES[ft], ft));
-          const pick = document.createElement("button");
-          pick.type = "button";
-          pick.style.cssText = "padding:2px 8px;font-size:10.5px;";
-          if(usable){
-            pick.className = "btn small secondary";
-            pick.textContent = openSlot === slot ? "收合" : "選擇";
-            pick.addEventListener("click", () => { openSlot = (openSlot === slot ? 0 : slot); redraw(); });
-          }else{
-            pick.className = "btn small secondary";
-            pick.textContent = "✕";
-            pick.disabled = true;
-            pick.title = "這個槽位放不下任何貨櫃";
-            pick.style.cssText += "opacity:.45;cursor:not-allowed;";
-            empty.textContent = "（不可放置）";
-          }
-          row.appendChild(empty); row.appendChild(pick);
-        }
-        menu.appendChild(row);
+      const card = document.createElement("div");
+      card.className = "ce-slot" + (ceSlot === slot ? " active" : "") + (usable ? "" : " disabled");
+      const no = document.createElement("div");
+      no.className = "ce-no";
+      no.textContent = slot;
+      card.appendChild(no);
 
-        // 展開這個槽位可以放的貨櫃
-        if(openSlot === slot && !cv){
-          const box = document.createElement("div");
-          box.style.cssText = "padding:4px 0 6px 20px;";
-          const filter = document.createElement("input");
-          filter.placeholder = "搜尋貨櫃…";
-          filter.style.cssText = "width:100%;font-size:11px;padding:4px 6px;border:1px solid var(--line);border-radius:4px;margin-bottom:4px;";
-          box.appendChild(filter);
-          const listBox = document.createElement("div");
-          listBox.style.cssText = "max-height:190px;overflow-y:auto;";
-          box.appendChild(listBox);
-
-          function renderList(){
-            listBox.innerHTML = "";
-            const q = filter.value.trim().toLowerCase();
-            const qr = normRoma(q);
-            const cands = vehicles.filter(c => {
-              const ft = containerFtOf(c);
-              if(!ft || isPairSecondary(c)) return false;
-              if(!canPlaceContainer(entry, flat, slot, containerWidthCm(c), ft)) return false;
-              if(!q) return true;
-              const hay = [c.modelCode, c.liveryName, c.series, ft].join(" ").toLowerCase();
-              return hay.includes(q) || (qr && vehicleRoma(c).includes(qr));
-            }).slice(0, 60);
-            if(!cands.length){
-              listBox.innerHTML = `<div style="font-size:10.5px;color:var(--muted);">這個槽位放不下任何貨櫃（會超出或疊到其他貨櫃）</div>`;
-              return;
-            }
-            cands.forEach(c => {
-              const r = document.createElement("div");
-              r.style.cssText = "display:flex;align-items:center;gap:6px;padding:3px;border-radius:4px;cursor:pointer;";
-              r.addEventListener("mouseenter", () => r.style.background = "#f3f7fc");
-              r.addEventListener("mouseleave", () => r.style.background = "");
-              const th = document.createElement("img");
-              th.src = vehicleImgSrc(c);
-              th.style.cssText = "width:46px;height:20px;display:block;flex-shrink:0;";
-              const nm = document.createElement("span");
-              nm.style.cssText = "flex:1;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;";
-              nm.textContent = `${vehicleLabel(c)}${c.liveryName ? " " + c.liveryName : ""}（${containerFtOf(c)}）`;
-              r.appendChild(th); r.appendChild(nm);
-              r.addEventListener("click", () => {
-                setContainerSlot(entry, slot, c.id);
-                openSlot = 0;
-                renderFormation(); redraw();
-              });
-              listBox.appendChild(r);
-            });
-          }
-          filter.addEventListener("input", renderList);
-          renderList();
-          menu.appendChild(box);
-          setTimeout(() => filter.focus(), 0);
-        }
+      if(cv){
+        const img = document.createElement("img");
+        img.src = vehicleImgSrc(cv);
+        card.appendChild(img);
+        const nm = document.createElement("div");
+        nm.className = "ce-name";
+        nm.textContent = containerFtOf(cv);
+        card.appendChild(nm);
+        const del = document.createElement("button");
+        del.type = "button"; del.textContent = "✕ 清除";
+        del.style.cssText = "border:none;background:none;color:var(--rail-red);cursor:pointer;font-size:9.5px;padding:0;";
+        del.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          setContainerSlot(entry, slot, null);
+          renderFormation(); renderContainerEditor();
+        });
+        card.appendChild(del);
+        card.title = vehicleLabel(cv) + (cv.liveryName ? ` ${cv.liveryName}` : "");
+      }else{
+        const ph = document.createElement("div");
+        ph.className = "ce-name";
+        ph.style.cssText = "height:26px;display:flex;align-items:center;justify-content:center;color:var(--muted);";
+        ph.textContent = usable ? "（無）" : "✕";
+        card.appendChild(ph);
+        const sub = document.createElement("div");
+        sub.className = "ce-name";
+        sub.style.color = "var(--muted)";
+        sub.textContent = usable ? "點此選擇" : "不可放置";
+        card.appendChild(sub);
+        if(!usable) card.title = "這個槽位放不下任何貨櫃";
       }
+
+      if(usable && !cv){
+        card.addEventListener("click", () => { ceSlot = (ceSlot === slot ? 0 : slot); renderContainerEditor(); });
+      }
+      slotsRow.appendChild(card);
     }
-    redraw();
+    box.appendChild(slotsRow);
 
-    document.body.appendChild(menu);
-    const r = anchorEl.getBoundingClientRect();
-    const mw = menu.offsetWidth, mh = menu.offsetHeight;
-    const left = Math.max(8, Math.min(r.left, window.innerWidth - mw - 8));
-    const top = (r.bottom + mh + 8 <= window.innerHeight) ? (r.bottom + 4) : Math.max(8, r.top - mh - 4);
-    menu.style.left = left + "px";
-    menu.style.top = top + "px";
+    // 選了某個空槽位才顯示候補清單
+    if(ceSlot >= 1 && !slots[ceSlot - 1]){
+      const pick = document.createElement("div");
+      pick.className = "ce-pick";
+      const label = document.createElement("div");
+      label.style.cssText = "font-size:11px;margin-bottom:5px;";
+      label.textContent = `槽位 ${ceSlot} 可放的貨櫃`;
+      pick.appendChild(label);
 
-    const close = (ev) => {
-      if(ev && ev.type === "mousedown" && menu.contains(ev.target)) return;
-      menu.remove();
-      document.removeEventListener("mousedown", close);
-      document.removeEventListener("keydown", onKey);
-    };
-    const onKey = (ev) => { if(ev.key === "Escape") close(); };
-    setTimeout(() => {
-      document.addEventListener("mousedown", close);
-      document.addEventListener("keydown", onKey);
-    }, 0);
+      const filter = document.createElement("input");
+      filter.placeholder = "搜尋貨櫃…";
+      filter.style.cssText = "width:100%;max-width:260px;font-size:11px;padding:4px 6px;border:1px solid var(--line);border-radius:4px;margin-bottom:6px;";
+      pick.appendChild(filter);
+
+      const list = document.createElement("div");
+      list.className = "ce-list";
+      pick.appendChild(list);
+
+      function renderList(){
+        list.innerHTML = "";
+        const q = filter.value.trim().toLowerCase();
+        const qr = normRoma(q);
+        const cands = vehicles.filter(c => {
+          const ft = containerFtOf(c);
+          if(!ft || isPairSecondary(c)) return false;
+          if(!canPlaceContainer(entry, flat, ceSlot, containerWidthCm(c), ft)) return false;
+          if(!q) return true;
+          const hay = [c.modelCode, c.liveryName, c.series, ft].join(" ").toLowerCase();
+          return hay.includes(q) || (qr && vehicleRoma(c).includes(qr));
+        }).slice(0, 80);
+        if(!cands.length){
+          list.innerHTML = `<div style="font-size:10.5px;color:var(--muted);">找不到符合的貨櫃</div>`;
+          return;
+        }
+        cands.forEach(c => {
+          const it = document.createElement("div");
+          it.className = "ce-item";
+          const im = document.createElement("img");
+          im.src = vehicleImgSrc(c);
+          const nm = document.createElement("span");
+          nm.textContent = `${vehicleLabel(c)}${c.liveryName ? " " + c.liveryName : ""}（${containerFtOf(c)}）`;
+          it.appendChild(im); it.appendChild(nm);
+          it.addEventListener("click", () => {
+            setContainerSlot(entry, ceSlot, c.id);
+            ceSlot = 0;
+            renderFormation(); renderContainerEditor();
+          });
+          list.appendChild(it);
+        });
+      }
+      filter.addEventListener("input", renderList);
+      renderList();
+      box.appendChild(pick);
+      setTimeout(() => filter.focus(), 0);
+    }
   }
 
   function showVariantPicker(anchorEl, realIdx, variants, currentId){
@@ -4390,6 +4409,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     if(state.cars.length === 0){
       areaEl.innerHTML = `<div class="empty-hint">點選資料庫車輛以加入編成<br>拖曳可改變順序，點兩下更換顏色</div>`;
       renderCargoTable();
+      renderContainerEditor();
       return;
     }
     const wrap = document.createElement("div");
@@ -4480,7 +4500,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           "background:rgba(255,255,255,.9);border-radius:3px;cursor:pointer;font-size:9px;padding:0 3px;";
         cbtn.addEventListener("click", (ev) => {
           ev.stopPropagation();
-          showContainerPicker(cbtn, ri);
+          openContainerEditor(ri);
         });
         slot.appendChild(cbtn);
       }
@@ -4583,6 +4603,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     wrap.appendChild(row);
     areaEl.appendChild(wrap);
     renderCargoTable();
+    renderContainerEditor();   // 編成有變動時,貨櫃面板跟著更新
   }
 
   // 把目前編成表格裡的貨號與廠商,存進各車輛的預設資料。
@@ -4630,6 +4651,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     makerChanges.forEach(x => { x.v.defaultAttribute = x.attr; });
     await persistVehicles();
     renderCargoTable();
+    renderContainerEditor();   // 編成有變動時,面板內容跟著更新
     renderLibrary();
     alert(`已記錄:貨號 ${codeAdds.length} 筆、廠商 ${makerChanges.length} 筆。`);
   });
