@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T15:23:22.416Z",
+  "exportedAt": "2026-10-02T17:41:16.322Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -17582,13 +17582,16 @@
       "liveryName": "",
       "side": "",
       "company": "",
-      "widthCm": 180.1,
+      "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
         "03_機關車 / 02_柴油機關車"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": []
     },
     {
       "id": "vp_1bg0ttv5u4rur",
@@ -43828,13 +43831,17 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "8002",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "8002",
+        "2756",
+        "2757"
+      ]
     },
     {
       "id": "vp_2t47d31p9z87b",
@@ -43848,13 +43855,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "92862",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "92862"
+      ]
     },
     {
       "id": "vp_1r66rag1ceqaiu",
@@ -43868,13 +43877,15 @@
       "widthCm": 3.6,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "92862",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "92862"
+      ]
     },
     {
       "id": "vp_exstcb1l2tcf7",
@@ -43888,13 +43899,16 @@
       "widthCm": 3.6,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98071",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "98071",
+        "10-1871"
+      ]
     },
     {
       "id": "vp_1hisp1f15wa67f",
@@ -43908,13 +43922,17 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1421",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "10-1421",
+        "8729",
+        "2778"
+      ]
     },
     {
       "id": "vp_5f8a9018ahxfy",
@@ -43928,13 +43946,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98071",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "98071",
+        "10-1871"
+      ]
     },
     {
       "id": "vp_16lgskit0g91o",
@@ -43948,13 +43969,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1983",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "10-1983",
+        "2749"
+      ]
     },
     {
       "id": "vp_1slzypqu1eklu",
@@ -43968,13 +43992,18 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1478",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "10-1478",
+        "10-1796",
+        "10-245",
+        "10-317"
+      ]
     },
     {
       "id": "vp_16o1sy4xfntks",
@@ -44008,13 +44037,18 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1433",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "10-1433",
+        "10-1797",
+        "8075-3",
+        "10-1796"
+      ]
     },
     {
       "id": "vp_t396s18vipun",
@@ -44028,13 +44062,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "8741",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "8741",
+        "8742"
+      ]
     },
     {
       "id": "vp_w4w1sbzs9er",
@@ -44048,13 +44085,18 @@
       "widthCm": 2.6,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "8042",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "8042",
+        "8042-1",
+        "8752",
+        "8042-2"
+      ]
     },
     {
       "id": "vp_10ihrps1nc1hze",
@@ -44068,13 +44110,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "8743",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "8743",
+        "98857"
+      ]
     },
     {
       "id": "vp_wokddv63w5m3",
@@ -44088,13 +44133,18 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1317",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "10-1317",
+        "10-1393",
+        "2783",
+        "2782"
+      ]
     },
     {
       "id": "vp_1mo2hli1mugres",
@@ -44108,13 +44158,19 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "8059-1",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "8059-1",
+        "8059-2",
+        "8014",
+        "2754",
+        "2755"
+      ]
     },
     {
       "id": "vp_4g5l2q1mf3db4",
@@ -44128,13 +44184,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "8003",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "8003",
+        "2758"
+      ]
     },
     {
       "id": "vp_1flx4qn1j69jaj",
@@ -44168,13 +44227,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "2784",
       "categories": [
         "04_貨物列車 / 04_貨櫃平車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "2784"
+      ]
     },
     {
       "id": "vp_197zq3gjrb7w",
