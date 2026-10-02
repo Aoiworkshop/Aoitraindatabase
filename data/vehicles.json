@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T17:41:16.322Z",
+  "exportedAt": "2026-10-02T18:42:37.903Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -45834,6 +45834,111 @@
       "categories": [
         "08_貨物 / コンテナ / 40ft"
       ]
+    },
+    {
+      "id": "vp_6cru1tpefhqn",
+      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ10000_改造_38.png",
+      "series": "04_貨櫃平車",
+      "modelCode": "コキ10000",
+      "variantCode": "",
+      "liveryName": "38_改造",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "A3114",
+      "categories": [
+        "04_貨物列車 / 04_貨櫃平車"
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": [
+        "A3114",
+        "2757"
+      ]
+    },
+    {
+      "id": "vp_24yjfp1qsvk4z",
+      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ50000_改造_38.png",
+      "series": "04_貨櫃平車",
+      "modelCode": "コキ50000",
+      "variantCode": "",
+      "liveryName": "38_改造",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "04_貨物列車 / 04_貨櫃平車"
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
+    },
+    {
+      "id": "vp_w9c39s144fxky",
+      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ5500_改造_38.png",
+      "series": "04_貨櫃平車",
+      "modelCode": "コキ5500",
+      "variantCode": "",
+      "liveryName": "38_改造",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "04_貨物列車 / 04_貨櫃平車"
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
+    },
+    {
+      "id": "vp_lxmad0sivan2",
+      "sourcePath": "04_貨物列車/04_貨櫃平車/コキフ10000_改造_38.png",
+      "series": "04_貨櫃平車",
+      "modelCode": "コキフ10000",
+      "variantCode": "",
+      "liveryName": "38_改造",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "A3114",
+      "categories": [
+        "04_貨物列車 / 04_貨櫃平車"
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": [
+        "A3114"
+      ]
+    },
+    {
+      "id": "vp_19ycjqo1fooiqq",
+      "sourcePath": "04_貨物列車/04_貨櫃平車/コキフ50000_改造_38.png",
+      "series": "04_貨櫃平車",
+      "modelCode": "コキフ50000",
+      "variantCode": "",
+      "liveryName": "38_改造",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "04_貨物列車 / 04_貨櫃平車"
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
     }
   ]
 }

@@ -953,7 +953,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261002-0150";
+  const APP_BUILD = "20261002-1828";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -2028,9 +2028,18 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   const CONTAINER_BOTTOM_CM = 0.9;   // 貨櫃底部距車輛圖片底部
   const CONTAINER_HEIGHT_CM = 1.5;   // 貨櫃高度一律這個值,高矮差異在圖片裡處理
 
+  // 檔名或型式裡有「改造」的平車(コキ10000、コキ50000、コキ5500 等),
+  // 裝載方式不同:只放 12ft、四格等分,中間會有空隙。
+  function isRebuiltFlatcar(v){
+    if(!v) return false;
+    return /改造/.test([v.sourcePath, v.modelCode, v.liveryName, v.note].join(" "));
+  }
   function deckOf(v){
     if(!v || !v.isFlatcar) return null;
-    return DECK_BY_WIDTH[String(carWidthCm(v))] || { inset: 0.2, deck: carWidthCm(v) - 0.2 };
+    const base = DECK_BY_WIDTH[String(carWidthCm(v))] || { inset: 0.2, deck: carWidthCm(v) - 0.2 };
+    return isRebuiltFlatcar(v)
+      ? { inset: base.inset, deck: base.deck, slotCount: 4, rebuilt: true }
+      : { inset: base.inset, deck: base.deck, slotCount: CONTAINER_SLOTS, rebuilt: false };
   }
   // 這輛車是不是貨櫃,以及它幾英尺寬
   function containerFtOf(v){
@@ -2050,7 +2059,13 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   // 五個槽位的位置(距裝載區左緣),會隨貨櫃寬度變化:
   //   1 靠左 / 2 靠左+0.72 / 3 置中 / 4 靠右-0.72 / 5 靠右
   const CONTAINER_SLOTS = 5;
-  function slotOffset(slot, w, deck){
+  function slotOffset(slot, w, d){
+    const deck = (typeof d === "number") ? d : d.deck;
+    if(d && d.rebuilt){
+      // 四格等分:兩端貼齊裝載區,中間三段間隔相同
+      const gap = (deck - 4 * 0.72) / 3;
+      return (slot - 1) * (0.72 + gap);
+    }
     switch(slot){
       case 1: return 0;
       case 2: return 0.72;
@@ -2085,8 +2100,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     containerSlotsOf(carEntry).forEach((id, i) => {
       const v = id && vehiclesById[id];
       const w = containerWidthCm(v);
-      if(!v || !w) return;
-      out.push({ v, w, slot: i + 1, x: d.inset + slotOffset(i + 1, w, d.deck) });
+      if(!v || !w || i + 1 > d.slotCount) return;
+      out.push({ v, w, slot: i + 1, x: d.inset + slotOffset(i + 1, w, d) });
     });
     return out;
   }
@@ -2104,8 +2119,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const d = deckOf(flatcar);
     if(!d || !w) return false;
     const size0 = ft || Object.keys(CONTAINER_SIZES).find(k => CONTAINER_SIZES[k] === w) || "";
-    if(!(SLOT_ALLOWED[slot] || []).includes(size0)) return false;
-    const x = slotOffset(slot, w, d.deck);
+    if(slot > d.slotCount) return false;
+    // 改造車只放 12ft,其餘依槽位的尺寸限制
+    if(d.rebuilt){
+      if(size0 !== "12ft") return false;
+    }else if(!(SLOT_ALLOWED[slot] || []).includes(size0)){
+      return false;
+    }
+    const x = slotOffset(slot, w, d);
     if(x < -0.0001 || x + w > d.deck + 0.0001) return false;
 
     const others = layoutContainers(carEntry, flatcar).filter(it => it.slot !== slot);
@@ -3960,7 +3981,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     head.className = "ce-head";
     const title = document.createElement("span");
     title.style.cssText = "font-size:12px;font-weight:700;";
-    title.textContent = `貨櫃裝載　${vehicleLabel(flat)}`;
+    title.textContent = `貨櫃裝載　${vehicleLabel(flat)}` + (d.rebuilt ? "（改造：四格・僅 12ft）" : "");
     const hint = document.createElement("span");
     hint.style.cssText = "flex:1;";
     const closeBtn = document.createElement("button");
@@ -3975,7 +3996,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const slotsRow = document.createElement("div");
     slotsRow.className = "ce-slots";
     const slots = containerSlotsOf(entry);
-    for(let slot = 1; slot <= CONTAINER_SLOTS; slot++){
+    // 車廂翻轉(或整列反轉)時,畫面上的左右順序是相反的,
+    // 所以槽位卡片也跟著倒過來排,點哪一格就是畫面上的那一格。
+    const flippedNow = state.reversed ? !entry.flipped : !!entry.flipped;
+    // 改造車只有四格
+    const order = [];
+    for(let i = 1; i <= d.slotCount; i++) order.push(i);
+    if(flippedNow) order.reverse();
+    for(const slot of order){
       const id = slots[slot - 1];
       const cv = id && vehiclesById[id];
       const usable = cv ? true : Object.keys(CONTAINER_SIZES)
@@ -4020,7 +4048,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         if(!usable) card.title = "這個槽位放不下任何貨櫃";
       }
 
-      if(usable && !cv){
+      // 空的槽位點了就挑貨櫃;已經放了的點一下也能直接換成別的,不必先清除
+      if(usable){
         card.addEventListener("click", () => { ceSlot = (ceSlot === slot ? 0 : slot); renderContainerEditor(); });
       }
       slotsRow.appendChild(card);
@@ -4028,12 +4057,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     box.appendChild(slotsRow);
 
     // 選了某個空槽位才顯示候補清單
-    if(ceSlot >= 1 && !slots[ceSlot - 1]){
+    if(ceSlot >= 1){
       const pick = document.createElement("div");
       pick.className = "ce-pick";
       const label = document.createElement("div");
       label.style.cssText = "font-size:12.5px;font-weight:700;margin-bottom:6px;";
-      label.textContent = `槽位 ${ceSlot} 可放的貨櫃`;
+      label.textContent = slots[ceSlot - 1]
+        ? `槽位 ${ceSlot} 更換為…（目前：${vehicleLabel(vehiclesById[slots[ceSlot - 1]]) || "?"}）`
+        : `槽位 ${ceSlot} 可放的貨櫃`;
       pick.appendChild(label);
 
       const filter = document.createElement("input");
@@ -4478,11 +4509,13 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         <button data-act="left" ${idx===0 ? "disabled":""}>◀</button>
         <button data-act="right" ${idx===state.cars.length-1 ? "disabled":""}>▶</button>
         <button data-act="flip" title="水平翻轉">⇋</button>
+        <button data-act="dup" title="複製這節車廂">⧉</button>
         <button data-act="del" class="del">✕</button>
       `;
       ctrl.querySelector('[data-act="left"]').addEventListener("click", () => moveCar(ri, leftDelta));
       ctrl.querySelector('[data-act="right"]').addEventListener("click", () => moveCar(ri, rightDelta));
       ctrl.querySelector('[data-act="flip"]').addEventListener("click", () => flipCar(ri));
+      ctrl.querySelector('[data-act="dup"]').addEventListener("click", () => duplicateCar(ri));
       ctrl.querySelector('[data-act="del"]').addEventListener("click", () => deleteCar(ri));
 
       // 圖片放在固定高度的容器裡並靠上對齊,
@@ -4791,6 +4824,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     renderFormation();
   }
   function deleteCar(idx){ state.cars.splice(idx, 1); renderFormation(); }
+  // 複製一節車廂:方向、分類、貨號、貨櫃裝載全部照抄,插在原本那節後面
+  function duplicateCar(idx){
+    const src = state.cars[idx];
+    if(!src) return;
+    const copy = JSON.parse(JSON.stringify(src));
+    state.cars.splice(idx + 1, 0, copy);
+    renderFormation();
+  }
   bindRole("clear", () => { state.cars = []; renderFormation(); });
 
   // ---------- formation DB persistence ----------
