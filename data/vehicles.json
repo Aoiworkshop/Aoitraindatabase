@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T15:23:22.416Z",
+  "exportedAt": "2026-10-02T01:40:10.598Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -44534,10 +44534,10 @@
       ]
     },
     {
-      "id": "vp_2yi9va5dqc7s",
-      "sourcePath": "08_貨物/コンテナ/12ft/18E_JRFマーク.png",
+      "id": "vp_3brrw3fpbyq9",
+      "sourcePath": "08_貨物/コンテナ/12ft/19A_JRFマーク.png",
       "series": "12ft",
-      "modelCode": "18E",
+      "modelCode": "19A",
       "variantCode": "",
       "liveryName": "JRFマーク",
       "side": "",
@@ -44568,10 +44568,10 @@
       ]
     },
     {
-      "id": "vp_3brrw3fpbyq9",
-      "sourcePath": "08_貨物/コンテナ/12ft/19A_JRFマーク.png",
+      "id": "vp_1qtaziofl0vw0",
+      "sourcePath": "08_貨物/コンテナ/12ft/19B_JRFマーク.png",
       "series": "12ft",
-      "modelCode": "19A",
+      "modelCode": "19B",
       "variantCode": "",
       "liveryName": "JRFマーク",
       "side": "",
@@ -44585,10 +44585,27 @@
       ]
     },
     {
-      "id": "vp_1qtaziofl0vw0",
-      "sourcePath": "08_貨物/コンテナ/12ft/19B_JRFマーク.png",
+      "id": "vp_2yi9va5dqc7s",
+      "sourcePath": "08_貨物/コンテナ/12ft/18E_JRFマーク.png",
       "series": "12ft",
-      "modelCode": "19B",
+      "modelCode": "18E",
+      "variantCode": "",
+      "liveryName": "JRFマーク",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 12ft"
+      ]
+    },
+    {
+      "id": "vp_qvalgx1aqobzr",
+      "sourcePath": "08_貨物/コンテナ/12ft/19C_JRFマーク.png",
+      "series": "12ft",
+      "modelCode": "19C",
       "variantCode": "",
       "liveryName": "JRFマーク",
       "side": "",
@@ -44607,40 +44624,6 @@
       "series": "12ft",
       "modelCode": "19D",
       "variantCode": "0",
-      "liveryName": "JRFマーク",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 12ft"
-      ]
-    },
-    {
-      "id": "vp_1mg71vr1egylzb",
-      "sourcePath": "08_貨物/コンテナ/12ft/19D-30000_JRFマーク小.png",
-      "series": "12ft",
-      "modelCode": "19D",
-      "variantCode": "30000",
-      "liveryName": "JRFマーク小",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 12ft"
-      ]
-    },
-    {
-      "id": "vp_qvalgx1aqobzr",
-      "sourcePath": "08_貨物/コンテナ/12ft/19C_JRFマーク.png",
-      "series": "12ft",
-      "modelCode": "19C",
-      "variantCode": "",
       "liveryName": "JRFマーク",
       "side": "",
       "company": "",
@@ -44687,12 +44670,12 @@
       ]
     },
     {
-      "id": "vp_13cz8ziq6tjxa",
-      "sourcePath": "08_貨物/コンテナ/12ft/19D-5000_JRFマーク.png",
+      "id": "vp_1mg71vr1egylzb",
+      "sourcePath": "08_貨物/コンテナ/12ft/19D-30000_JRFマーク小.png",
       "series": "12ft",
       "modelCode": "19D",
-      "variantCode": "5000",
-      "liveryName": "JRFマーク",
+      "variantCode": "30000",
+      "liveryName": "JRFマーク小",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -44704,11 +44687,11 @@
       ]
     },
     {
-      "id": "vp_2siygzq16i1f",
-      "sourcePath": "08_貨物/コンテナ/12ft/19D-80000_JRFマーク.png",
+      "id": "vp_13cz8ziq6tjxa",
+      "sourcePath": "08_貨物/コンテナ/12ft/19D-5000_JRFマーク.png",
       "series": "12ft",
       "modelCode": "19D",
-      "variantCode": "80000",
+      "variantCode": "5000",
       "liveryName": "JRFマーク",
       "side": "",
       "company": "",
@@ -44727,6 +44710,23 @@
       "modelCode": "19D",
       "variantCode": "60000",
       "liveryName": "JRマーク小",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 12ft"
+      ]
+    },
+    {
+      "id": "vp_2siygzq16i1f",
+      "sourcePath": "08_貨物/コンテナ/12ft/19D-80000_JRFマーク.png",
+      "series": "12ft",
+      "modelCode": "19D",
+      "variantCode": "80000",
+      "liveryName": "JRFマーク",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -44891,23 +44891,6 @@
       ]
     },
     {
-      "id": "vp_v5ww898gtwqx",
-      "sourcePath": "08_貨物/コンテナ/12ft/20D_JRF ．エコマーク.png",
-      "series": "12ft",
-      "modelCode": "20D",
-      "variantCode": "",
-      "liveryName": "JRF ．エコマーク",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 12ft"
-      ]
-    },
-    {
       "id": "vp_11i4ngcnsrvpu",
       "sourcePath": "08_貨物/コンテナ/12ft/20D_JRFマーク.png",
       "series": "12ft",
@@ -44948,6 +44931,23 @@
       "modelCode": "20D",
       "variantCode": "",
       "liveryName": "JRマーク大",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 12ft"
+      ]
+    },
+    {
+      "id": "vp_v5ww898gtwqx",
+      "sourcePath": "08_貨物/コンテナ/12ft/20D_JRF ．エコマーク.png",
+      "series": "12ft",
+      "modelCode": "20D",
+      "variantCode": "",
+      "liveryName": "JRF ．エコマーク",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45010,12 +45010,12 @@
       ]
     },
     {
-      "id": "vp_1llyvsj1cindwz",
-      "sourcePath": "08_貨物/コンテナ/12ft/C21-50000_北海道支社.png",
+      "id": "vp_f9o83n8hdoor",
+      "sourcePath": "08_貨物/コンテナ/12ft/C21-50000_九州支社.png",
       "series": "12ft",
       "modelCode": "C21",
       "variantCode": "50000",
-      "liveryName": "北海道支社",
+      "liveryName": "九州支社",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45027,12 +45027,12 @@
       ]
     },
     {
-      "id": "vp_f9o83n8hdoor",
-      "sourcePath": "08_貨物/コンテナ/12ft/C21-50000_九州支社.png",
+      "id": "vp_1llyvsj1cindwz",
+      "sourcePath": "08_貨物/コンテナ/12ft/C21-50000_北海道支社.png",
       "series": "12ft",
       "modelCode": "C21",
       "variantCode": "50000",
-      "liveryName": "九州支社",
+      "liveryName": "北海道支社",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45214,12 +45214,12 @@
       ]
     },
     {
-      "id": "vp_e01q0jnopj7x",
-      "sourcePath": "08_貨物/コンテナ/12ft/UR18A_北海道ジェイアール物流.png",
+      "id": "vp_jbkne4gatfe2",
+      "sourcePath": "08_貨物/コンテナ/12ft/UR18A_日本石油輸送・赤帯.png",
       "series": "12ft",
       "modelCode": "UR18A",
       "variantCode": "",
-      "liveryName": "北海道ジェイアール物流",
+      "liveryName": "日本石油輸送・赤帯",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45231,12 +45231,12 @@
       ]
     },
     {
-      "id": "vp_jbkne4gatfe2",
-      "sourcePath": "08_貨物/コンテナ/12ft/UR18A_日本石油輸送・赤帯.png",
+      "id": "vp_e01q0jnopj7x",
+      "sourcePath": "08_貨物/コンテナ/12ft/UR18A_北海道ジェイアール物流.png",
       "series": "12ft",
       "modelCode": "UR18A",
       "variantCode": "",
-      "liveryName": "日本石油輸送・赤帯",
+      "liveryName": "北海道ジェイアール物流",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45282,23 +45282,6 @@
       ]
     },
     {
-      "id": "vp_e8z6uphptms5",
-      "sourcePath": "08_貨物/コンテナ/12ft/UR19A_日本石油輸送・スカイブルー.png",
-      "series": "12ft",
-      "modelCode": "UR19A",
-      "variantCode": "",
-      "liveryName": "日本石油輸送・スカイブルー",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 12ft"
-      ]
-    },
-    {
       "id": "vp_o84hje1eftw5c",
       "sourcePath": "08_貨物/コンテナ/12ft/UR19A_日本石油輸送・桃帯.png",
       "series": "12ft",
@@ -45316,12 +45299,12 @@
       ]
     },
     {
-      "id": "vp_1fbwrnx37q4ll",
-      "sourcePath": "08_貨物/コンテナ/12ft/UR19A_日本石油輸送・赤帯.png",
+      "id": "vp_e8z6uphptms5",
+      "sourcePath": "08_貨物/コンテナ/12ft/UR19A_日本石油輸送・スカイブルー.png",
       "series": "12ft",
       "modelCode": "UR19A",
       "variantCode": "",
-      "liveryName": "日本石油輸送・赤帯",
+      "liveryName": "日本石油輸送・スカイブルー",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45339,6 +45322,23 @@
       "modelCode": "UR19A",
       "variantCode": "",
       "liveryName": "日本石油輸送・緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 12ft"
+      ]
+    },
+    {
+      "id": "vp_1fbwrnx37q4ll",
+      "sourcePath": "08_貨物/コンテナ/12ft/UR19A_日本石油輸送・赤帯.png",
+      "series": "12ft",
+      "modelCode": "UR19A",
+      "variantCode": "",
+      "liveryName": "日本石油輸送・赤帯",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45401,23 +45401,6 @@
       ]
     },
     {
-      "id": "vp_dk07czypzvvl",
-      "sourcePath": "08_貨物/コンテナ/20ft/C900_緑.png",
-      "series": "20ft",
-      "modelCode": "C900",
-      "variantCode": "",
-      "liveryName": "緑",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 20ft"
-      ]
-    },
-    {
       "id": "vp_1j1kr2cpg2fp2",
       "sourcePath": "08_貨物/コンテナ/20ft/ISO20ftタンクコンテナ_フレームタイプ・日本石油輸送・グリーン.png",
       "series": "20ft",
@@ -45435,12 +45418,12 @@
       ]
     },
     {
-      "id": "vp_168wyz6121hqwg",
-      "sourcePath": "08_貨物/コンテナ/20ft/C900_銀.png",
+      "id": "vp_dk07czypzvvl",
+      "sourcePath": "08_貨物/コンテナ/20ft/C900_緑.png",
       "series": "20ft",
       "modelCode": "C900",
       "variantCode": "",
-      "liveryName": "銀",
+      "liveryName": "緑",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45469,40 +45452,6 @@
       ]
     },
     {
-      "id": "vp_5l93na1j8lxma",
-      "sourcePath": "08_貨物/コンテナ/20ft/ISO20ftタンクコンテナ_日本石油輸送・グリーン.png",
-      "series": "20ft",
-      "modelCode": "ISO20ftタンクコンテナ",
-      "variantCode": "",
-      "liveryName": "日本石油輸送・グリーン",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 20ft"
-      ]
-    },
-    {
-      "id": "vp_1yo67fj4n48ut",
-      "sourcePath": "08_貨物/コンテナ/20ft/ISO20ftタンクコンテナ_フレームタイプ・NRS.png",
-      "series": "20ft",
-      "modelCode": "ISO20ftタンクコンテナ",
-      "variantCode": "",
-      "liveryName": "フレームタイプ・NRS",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 20ft"
-      ]
-    },
-    {
       "id": "vp_n8t33z13ccmgb",
       "sourcePath": "08_貨物/コンテナ/20ft/ISO20ftタンクコンテナ_日陸.png",
       "series": "20ft",
@@ -45520,12 +45469,63 @@
       ]
     },
     {
+      "id": "vp_168wyz6121hqwg",
+      "sourcePath": "08_貨物/コンテナ/20ft/C900_銀.png",
+      "series": "20ft",
+      "modelCode": "C900",
+      "variantCode": "",
+      "liveryName": "銀",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 20ft"
+      ]
+    },
+    {
+      "id": "vp_5l93na1j8lxma",
+      "sourcePath": "08_貨物/コンテナ/20ft/ISO20ftタンクコンテナ_日本石油輸送・グリーン.png",
+      "series": "20ft",
+      "modelCode": "ISO20ftタンクコンテナ",
+      "variantCode": "",
+      "liveryName": "日本石油輸送・グリーン",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 20ft"
+      ]
+    },
+    {
       "id": "vp_o9xtsq1bvd86a",
       "sourcePath": "08_貨物/コンテナ/20ft/U31A_ONE.png",
       "series": "20ft",
       "modelCode": "U31A",
       "variantCode": "",
       "liveryName": "ONE",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 20ft"
+      ]
+    },
+    {
+      "id": "vp_1yo67fj4n48ut",
+      "sourcePath": "08_貨物/コンテナ/20ft/ISO20ftタンクコンテナ_フレームタイプ・NRS.png",
+      "series": "20ft",
+      "modelCode": "ISO20ftタンクコンテナ",
+      "variantCode": "",
+      "liveryName": "フレームタイプ・NRS",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45622,6 +45622,23 @@
       ]
     },
     {
+      "id": "vp_16caylr1mbo53t",
+      "sourcePath": "08_貨物/コンテナ/30ft/U55A-38000_全国通運.png",
+      "series": "30ft",
+      "modelCode": "U55A",
+      "variantCode": "38000",
+      "liveryName": "全国通運",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
       "id": "vp_1irodhx45ij5p",
       "sourcePath": "08_貨物/コンテナ/30ft/U54A-30000_佐川急便.png",
       "series": "30ft",
@@ -45656,23 +45673,6 @@
       ]
     },
     {
-      "id": "vp_16caylr1mbo53t",
-      "sourcePath": "08_貨物/コンテナ/30ft/U55A-38000_全国通運.png",
-      "series": "30ft",
-      "modelCode": "U55A",
-      "variantCode": "38000",
-      "liveryName": "全国通運",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 30ft"
-      ]
-    },
-    {
       "id": "vp_orhekb1e6f47",
       "sourcePath": "08_貨物/コンテナ/30ft/UF42A-38000_ランテック.png",
       "series": "30ft",
@@ -45690,29 +45690,12 @@
       ]
     },
     {
-      "id": "vp_nv5xjve6ow8j",
-      "sourcePath": "08_貨物/コンテナ/30ft/UV52A-38000_ヤマト．白.png",
+      "id": "vp_1kmduhwp5z40c",
+      "sourcePath": "08_貨物/コンテナ/30ft/U55A-38000_福山通運.png",
       "series": "30ft",
-      "modelCode": "UV52A",
+      "modelCode": "U55A",
       "variantCode": "38000",
-      "liveryName": "ヤマト．白",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 30ft"
-      ]
-    },
-    {
-      "id": "vp_1labxe415vifgw",
-      "sourcePath": "08_貨物/コンテナ/30ft/UV51A-38000_ヤマト．新ロゴ.png",
-      "series": "30ft",
-      "modelCode": "UV51A",
-      "variantCode": "38000",
-      "liveryName": "ヤマト．新ロゴ",
+      "liveryName": "福山通運",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -45741,12 +45724,29 @@
       ]
     },
     {
-      "id": "vp_1kmduhwp5z40c",
-      "sourcePath": "08_貨物/コンテナ/30ft/U55A-38000_福山通運.png",
+      "id": "vp_1labxe415vifgw",
+      "sourcePath": "08_貨物/コンテナ/30ft/UV51A-38000_ヤマト．新ロゴ.png",
       "series": "30ft",
-      "modelCode": "U55A",
+      "modelCode": "UV51A",
       "variantCode": "38000",
-      "liveryName": "福山通運",
+      "liveryName": "ヤマト．新ロゴ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_nv5xjve6ow8j",
+      "sourcePath": "08_貨物/コンテナ/30ft/UV52A-38000_ヤマト．白.png",
+      "series": "30ft",
+      "modelCode": "UV52A",
+      "variantCode": "38000",
+      "liveryName": "ヤマト．白",
       "side": "",
       "company": "",
       "widthCm": 3.8,
