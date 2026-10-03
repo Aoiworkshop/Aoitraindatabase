@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T18:42:37.903Z",
+  "exportedAt": "2026-10-03T01:02:01.747Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -45939,6 +45939,193 @@
       "containerFt": "",
       "isFlatcar": true,
       "productCodes": []
+    },
+    {
+      "id": "vp_nsz6dcnksmak",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/クモハ215-100_R.png",
+      "series": "215系",
+      "modelCode": "クモハ215",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_nj12u6nq25vm",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/クモハ215-100_L.png",
+      "series": "215系",
+      "modelCode": "クモハ215",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_hgu91812pnhpq",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/クモハ215_R.png",
+      "series": "215系",
+      "modelCode": "クモハ215",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_ho4tya12fp7u8",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/クモハ215_L.png",
+      "series": "215系",
+      "modelCode": "クモハ215",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_1bnw8nc1lujeee",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/サハ214.png",
+      "series": "215系",
+      "modelCode": "サハ214",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_8jinue1y4ji86",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/サハ215-200.png",
+      "series": "215系",
+      "modelCode": "サハ215",
+      "variantCode": "200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_efmdbeednqcc",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/サロ214.png",
+      "series": "215系",
+      "modelCode": "サロ214",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_1ngv9rp1igwdet",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/サハ215-100.png",
+      "series": "215系",
+      "modelCode": "サハ215",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_edjip7ebwk9p",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/サロ215.png",
+      "series": "215系",
+      "modelCode": "サロ215",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_1erqqfz1k5hc45",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/モハ214.png",
+      "series": "215系",
+      "modelCode": "モハ214",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_19pg4o3xstyx7",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/215系/モハ214-100.png",
+      "series": "215系",
+      "modelCode": "モハ214",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
     }
   ]
 }

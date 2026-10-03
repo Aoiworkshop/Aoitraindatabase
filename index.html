@@ -120,10 +120,18 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   .car-slot.dragging{opacity:.4;cursor:grabbing;}
   .car-slot.drop-left{box-shadow:-3px 0 0 var(--accent);}
   .car-slot.drop-right{box-shadow:3px 0 0 var(--accent);}
-  .car-slot .ctrl{position:absolute;top:-10px;left:50%;transform:translateX(-50%);display:flex;gap:2px;opacity:0;transition:opacity .12s;}
-  .car-slot:hover .ctrl{opacity:1;}
-  .car-slot .ctrl button{width:16px;height:16px;font-size:9px;line-height:1;border:1px solid var(--ink);background:#fff;border-radius:3px;cursor:pointer;padding:0;}
-  .car-slot .ctrl button.del{color:var(--rail-red);border-color:var(--rail-red);}
+  /* 車廂操作列:掛在頁面最上層,同時只會有一組,
+     所以按鈕可以做得比車廂寬、也不會被編成區裁切,更不會撐高版面 */
+  #car-toolbar{position:fixed;z-index:60;display:none;gap:4px;padding:4px;
+    background:#fff;border:1px solid var(--line);border-radius:8px;
+    box-shadow:0 3px 12px rgba(0,0,0,.16);}
+  #car-toolbar button{width:28px;height:28px;font-size:13px;line-height:1;border:1px solid var(--ink);
+    background:#fff;border-radius:5px;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;}
+  #car-toolbar button:disabled{opacity:.3;cursor:not-allowed;}
+  #car-toolbar button.del{color:var(--rail-red);border-color:var(--rail-red);}
+  @media (max-width: 1050px){
+    #car-toolbar button{width:38px;height:38px;font-size:17px;}
+  }
   .num-badge{width:18px;height:18px;border:1.3px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;}
 
   footer.hint{margin-top:22px;font-size:11.5px;color:var(--muted);line-height:1.7;border-top:1px solid var(--line);padding-top:12px;max-width:680px;}
@@ -536,6 +544,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small danger" id="btn-remove-missing" type="button" style="display:none;">移除失效車廂</button>
       </div>
       <div id="formation-area"></div>
+      <div id="car-toolbar"></div>
       </div>
 
       <div class="builder-body">
@@ -953,7 +962,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261002-1828";
+  const APP_BUILD = "20261003-0120";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -1293,10 +1302,20 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   async function loadBadgeImagesFromAssetsFolder(dirHandle){
     const found = [];
     attrBadgeImages = {};
+    arrowImages = {};
     try{
       for await (const [name, handle] of dirHandle.entries()){
         if(handle.kind !== "file") continue;
         const baseName = name.replace(/\.[^.\/]+$/, "");
+        // 起訖站用的箭頭圖(檔名 L / R)
+        const arrowKey = /^[lr]$/i.test(baseName.trim()) ? baseName.trim().toUpperCase() : "";
+        if(arrowKey){
+          try{
+            arrowImages[arrowKey] = await createImageBitmap(await handle.getFile());
+            found.push(`${name} → 箭頭${arrowKey}`);
+          }catch(e){ console.warn("箭頭圖片載入失敗:", name, e); }
+          continue;
+        }
         const matchedKey = ATTR_LOOKUP[normalizeAttrName(baseName)];
         if(!matchedKey) continue;
         try{
@@ -3797,6 +3816,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   const MAKER_ATTRS = ["KA", "TO", "MA", "GM"];
   // 若「00_必要資料」資料夾裡有跟屬性同名的圖片檔,優先用圖片取代畫布畫的色塊
   let attrBadgeImages = {};
+  // 起訖站的箭頭圖(00_必要資料/L、R),沒有就退回用字型畫
+  let arrowImages = {};
   // 檔名比對用:容忍「單/単」寫法差異、英文大小寫差異(例如 SET vs Set、基SET vs 基Set)
   function normalizeAttrName(s){
     return (s || "").trim()
@@ -3838,6 +3859,17 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       }
       done++;
       setLoad(82 + (done / total) * 13, `正在載入屬性徽章… ${done} / ${total}`);
+    }));
+    // 起訖站箭頭
+    await Promise.all(["L", "R"].map(async key => {
+      for(const name of [key + ".png", key + ".PNG", key.toLowerCase() + ".png"]){
+        try{
+          const res = await fetch(WEB_ASSET_BASE + encodeURIComponent(name), { cache: "force-cache" });
+          if(!res.ok) continue;
+          arrowImages[key] = await createImageBitmap(await res.blob());
+          break;
+        }catch(e){ /* 換下一種寫法 */ }
+      }
     }));
     if(loaded) console.info(`已從網站載入 ${loaded} / ${total} 個屬性徽章圖片。`);
     else console.info("網站上找不到屬性徽章圖片,輸出時會改用程式繪製的色塊。");
@@ -4440,7 +4472,109 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     }
   }
 
+  // ---------- 車廂操作列 ----------
+  // 整頁只有一組,浮在被操作的車廂上方。
+  // 因為不受車廂寬度(76px)限制,按鈕可以做大;也不會撐高編成列或被捲動區裁切。
+  let toolbarCar = -1;      // 目前顯示操作列的車廂(state.cars 的位置)
+  let toolbarPinned = false; // 手機點選後釘住,滑鼠移開不會消失
+
+  let toolbarHideTimer = null;
+  function cancelToolbarHide(){
+    if(toolbarHideTimer){ clearTimeout(toolbarHideTimer); toolbarHideTimer = null; }
+  }
+  function hideCarToolbar(){
+    cancelToolbarHide();
+    const tb = document.getElementById("car-toolbar");
+    if(tb) tb.style.display = "none";
+    toolbarCar = -1; toolbarPinned = false;
+  }
+  // 延遲一下再收起,滑鼠從車廂移到操作列的途中才不會被判定為離開
+  function hideCarToolbarSoon(){
+    cancelToolbarHide();
+    toolbarHideTimer = setTimeout(() => { if(!toolbarPinned) hideCarToolbar(); }, 220);
+  }
+  // 滑到操作列上就維持顯示
+  (function bindToolbarHover(){
+    const tb = document.getElementById("car-toolbar");
+    if(!tb || !tb.addEventListener) return;
+    tb.addEventListener("mouseenter", cancelToolbarHide);
+    tb.addEventListener("mouseleave", () => { if(!toolbarPinned) hideCarToolbarSoon(); });
+  })();
+
+  function showCarToolbar(slotEl, realIdx, displayIdx, missing){
+    const tb = document.getElementById("car-toolbar");
+    if(!tb) return;
+    toolbarCar = realIdx;
+    // 反轉顯示時,畫面上的「往左」其實是資料上的「往右」
+    const leftDelta = state.reversed ? 1 : -1;
+    const rightDelta = state.reversed ? -1 : 1;
+    const acts = [
+      { key: "left",  label: "◀", title: "往左移", disabled: displayIdx === 0,
+        run: () => moveCar(realIdx, leftDelta) },
+      { key: "right", label: "▶", title: "往右移", disabled: displayIdx === state.cars.length - 1,
+        run: () => moveCar(realIdx, rightDelta) },
+      { key: "flip",  label: "⇋", title: "水平翻轉", hide: missing,
+        run: () => flipCar(realIdx) },
+      { key: "dup",   label: "⧉", title: "複製這節車廂", hide: missing,
+        run: () => duplicateCar(realIdx) },
+      { key: "del",   label: "✕", title: "刪除這節車廂", cls: "del",
+        run: () => deleteCar(realIdx) }
+    ];
+    tb.innerHTML = "";
+    acts.filter(a => !a.hide).forEach(a => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = a.label;
+      b.title = a.title;
+      if(a.cls) b.className = a.cls;
+      b.disabled = !!a.disabled;
+      b.addEventListener("click", (ev) => { ev.stopPropagation(); a.run(); });
+      tb.appendChild(b);
+    });
+    tb.style.display = "flex";
+
+    // 定位到車廂正上方,並確保不會超出畫面左右
+    const r = slotEl.getBoundingClientRect();
+    const tw = tb.offsetWidth, th = tb.offsetHeight;
+    let left = r.left + r.width / 2 - tw / 2;
+    left = Math.max(6, Math.min(left, window.innerWidth - tw - 6));
+    // 跟車身重疊 2px,中間不留空隙,滑鼠才不會在移過去的途中離開判定範圍
+    let top = r.top - th + 2;
+    if(top < 6) top = r.bottom - 2;      // 上方放不下就改放下方
+    tb.style.left = left + "px";
+    tb.style.top = top + "px";
+  }
+
+  // 把一節車廂接上操作列:滑鼠移過就顯示(桌機),點一下釘住(手機)
+  function attachCarToolbar(slotEl, realIdx, displayIdx, missing){
+    slotEl.addEventListener("mouseenter", () => {
+      cancelToolbarHide();
+      if(!toolbarPinned) showCarToolbar(slotEl, realIdx, displayIdx, missing);
+    });
+    slotEl.addEventListener("mouseleave", () => {
+      if(!toolbarPinned && toolbarCar === realIdx) hideCarToolbarSoon();
+    });
+    slotEl.addEventListener("click", (ev) => {
+      // 點車廂本身 = 釘住操作列;再點一次收起
+      if(ev.target.closest && ev.target.closest("#car-toolbar")) return;
+      if(toolbarPinned && toolbarCar === realIdx){ hideCarToolbar(); return; }
+      toolbarPinned = true;
+      showCarToolbar(slotEl, realIdx, displayIdx, missing);
+    });
+  }
+
+  // 點空白處、捲動或重新繪製時收起
+  document.addEventListener("mousedown", (ev) => {
+    const tb = document.getElementById("car-toolbar");
+    if(!tb || tb.style.display === "none") return;
+    if(tb.contains(ev.target)) return;
+    if(ev.target.closest && ev.target.closest(".car-slot")) return;
+    hideCarToolbar();
+  });
+  window.addEventListener("scroll", () => { if(toolbarCar >= 0) hideCarToolbar(); }, true);
+
   function renderFormation(){
+    hideCarToolbar();
     areaEl.innerHTML = "";
     if(state.cars.length === 0){
       areaEl.innerHTML = `<div class="empty-hint">點選資料庫車輛以加入編成<br>拖曳可改變順序，點兩下更換顏色</div>`;
@@ -4473,18 +4607,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         // 車輛已從資料庫刪除,但這一節仍然佔著編成的位置,
         // 所以照樣給它完整的操作按鈕(尤其是刪除),不然會變成刪不掉的殘留欄位
         slot.style.width = "76px";
-        const ctrlGone = document.createElement("div");
-        ctrlGone.className = "ctrl";
-        const lD = state.reversed ? 1 : -1;
-        const rD = state.reversed ? -1 : 1;
-        ctrlGone.innerHTML = `
-          <button data-act="left" ${idx===0 ? "disabled":""}>◀</button>
-          <button data-act="right" ${idx===state.cars.length-1 ? "disabled":""}>▶</button>
-          <button data-act="del" class="del">✕</button>
-        `;
-        ctrlGone.querySelector('[data-act="left"]').addEventListener("click", () => moveCar(ri, lD));
-        ctrlGone.querySelector('[data-act="right"]').addEventListener("click", () => moveCar(ri, rD));
-        ctrlGone.querySelector('[data-act="del"]').addEventListener("click", () => deleteCar(ri));
+        attachCarToolbar(slot, ri, idx, true);
 
         const gone = document.createElement("div");
         gone.style.cssText = "border:1.5px dashed var(--rail-red);border-radius:6px;height:99px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:10px;color:var(--rail-red);padding:4px;line-height:1.4;";
@@ -4494,29 +4617,12 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         numGone.style.cssText = "margin-top:4px;text-align:center;font-size:11px;color:var(--rail-red);";
         numGone.textContent = circledNumber(idx + 1);
 
-        slot.appendChild(ctrlGone);
         slot.appendChild(gone);
         slot.appendChild(numGone);
         row.appendChild(slot);
         return;
       }
-      const ctrl = document.createElement("div");
-      ctrl.className = "ctrl";
-      // 反轉顯示時,畫面上的「往左」其實是資料上的「往右」,所以方向要對調
-      const leftDelta = state.reversed ? 1 : -1;
-      const rightDelta = state.reversed ? -1 : 1;
-      ctrl.innerHTML = `
-        <button data-act="left" ${idx===0 ? "disabled":""}>◀</button>
-        <button data-act="right" ${idx===state.cars.length-1 ? "disabled":""}>▶</button>
-        <button data-act="flip" title="水平翻轉">⇋</button>
-        <button data-act="dup" title="複製這節車廂">⧉</button>
-        <button data-act="del" class="del">✕</button>
-      `;
-      ctrl.querySelector('[data-act="left"]').addEventListener("click", () => moveCar(ri, leftDelta));
-      ctrl.querySelector('[data-act="right"]').addEventListener("click", () => moveCar(ri, rightDelta));
-      ctrl.querySelector('[data-act="flip"]').addEventListener("click", () => flipCar(ri));
-      ctrl.querySelector('[data-act="dup"]').addEventListener("click", () => duplicateCar(ri));
-      ctrl.querySelector('[data-act="del"]').addEventListener("click", () => deleteCar(ri));
+      attachCarToolbar(slot, ri, idx);
 
       // 圖片放在固定高度的容器裡並靠上對齊,
       // 這樣有沒有「(翻轉)」註記都不會讓圖片上下跑掉
@@ -4635,7 +4741,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         });
       }
 
-      slot.appendChild(ctrl); slot.appendChild(imgBox); slot.appendChild(numRow);
+      slot.appendChild(imgBox); slot.appendChild(numRow);
       row.appendChild(slot);
     });
     wrap.appendChild(row);
@@ -5254,27 +5360,53 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       // 愛稱只有在各區段不同時才顯示(相同或只有一個的話標題已經有了)
       const showNick = nicks.length >= 2;
 
+      // 箭頭:優先用 00_必要資料 裡的 L／R 圖片,找不到才退回用字型畫。
+      // 圖片高度對齊文字高度,並與文字垂直置中。
+      const ARROW_GAP = 0.08 * scale;       // 箭頭與站名之間留一點空隙
+      function arrowMetrics(key){
+        const img = arrowImages[key];
+        if(!img) return null;
+        ctx.font = STA_FONT;
+        const m = ctx.measureText("あ");
+        const asc = m.actualBoundingBoxAscent || ptToPx(16, scale) * 0.72;
+        const h = asc;                                  // 箭頭高度 = 文字高度
+        const w = h * (img.width / img.height);         // 依原圖比例(54:48)
+        return { img, w, h, top: stationY - asc + (asc - h) / 2 };
+      }
+      function arrowWidth(key){
+        const a = arrowMetrics(key);
+        if(a) return a.w + ARROW_GAP;
+        ctx.font = ARR_FONT;
+        return ctx.measureText(key === "L" ? ARROW_LEFT : ARROW_RIGHT).width;
+      }
+      function drawArrow(key, x){
+        const a = arrowMetrics(key);
+        if(a){
+          ctx.drawImage(a.img, x, a.top, a.w, a.h);
+          return a.w + ARROW_GAP;
+        }
+        ctx.font = ARR_FONT;
+        ctx.textAlign = "left";
+        const ch = key === "L" ? ARROW_LEFT : ARROW_RIGHT;
+        ctx.fillText(ch, x, stationY);
+        return ctx.measureText(ch).width;
+      }
       // 畫「←站名」:箭頭在左,文字接在後面
       function drawLeftArrowText(x, text){
-        ctx.font = ARR_FONT;
-        const aw = ctx.measureText(ARROW_LEFT).width;
-        ctx.textAlign = "left";
-        ctx.fillText(ARROW_LEFT, x, stationY);
+        const aw = drawArrow("L", x);
         ctx.font = STA_FONT;
+        ctx.textAlign = "left";
         ctx.fillText(text, x + aw, stationY);
       }
       // 畫「站名→」:文字在前,箭頭接在後面,整體靠右對齊到 x
       function drawTextRightArrow(x, text){
         ctx.font = STA_FONT;
         const tw = ctx.measureText(text).width;
-        ctx.font = ARR_FONT;
-        const aw = ctx.measureText(ARROW_RIGHT).width;
+        const aw = arrowWidth("R");
         const startX = x - tw - aw;
         ctx.textAlign = "left";
-        ctx.font = STA_FONT;
         ctx.fillText(text, startX, stationY);
-        ctx.font = ARR_FONT;
-        ctx.fillText(ARROW_RIGHT, startX + tw, stationY);
+        drawArrow("R", startX + tw + (arrowImages["R"] ? ARROW_GAP : 0));
       }
       // 愛稱只跟著其中一側顯示:出發側是逐段顯示時跟著出發側,否則跟著終點側
       const nickSide = !fromCommon ? "from" : "to";

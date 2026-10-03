@@ -2244,6 +2244,48 @@
         "コキ10000"
       ],
       "updatedAt": "2026-10-02T18:43:22.396Z"
+    },
+    {
+      "id": "f_1790989426993",
+      "name": "●(～2021年3月)",
+      "routeName": "",
+      "trainType": "",
+      "dateStr": "～2021年3月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "←小田原・熱海",
+          "fromPos": "",
+          "to": "東京．新宿→",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "クモハ215",
+        "モハ214",
+        "サハ215-200",
+        "サロ214",
+        "サロ215",
+        "サハ214",
+        "サハ215-100",
+        "モハ214-100",
+        "クモハ215-100"
+      ],
+      "updatedAt": "2026-10-03T01:23:39.767Z"
     }
   ],
   "formationsData": {
@@ -7913,7 +7955,109 @@
       ],
       "reversed": false,
       "titleNote": ""
+    },
+    "f_1790989426993": {
+      "id": "f_1790989426993",
+      "routeName": "",
+      "trainType": "",
+      "dateStr": "～2021年3月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "←小田原・熱海",
+          "fromPos": "",
+          "to": "東京．新宿→",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_ho4tya12fp7u8",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98445",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_1erqqfz1k5hc45",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98445",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_8jinue1y4ji86",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98444",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "vp_efmdbeednqcc",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98444",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "vp_edjip7ebwk9p",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98444",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "vp_1bnw8nc1lujeee",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98444",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "vp_1bnw8nc1lujeee",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98444",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "vp_1ngv9rp1igwdet",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98444",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "vp_19pg4o3xstyx7",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98445",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_nsz6dcnksmak",
+          "flipped": false,
+          "attribute": "基Set",
+          "productCode": "98445",
+          "setGroupId": "A"
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
     }
   },
-  "savedAt": "2026-10-02T18:43:22.407Z"
+  "savedAt": "2026-10-03T01:23:39.777Z"
 }
