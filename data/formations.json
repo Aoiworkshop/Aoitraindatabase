@@ -2208,7 +2208,7 @@
         "コキ107",
         "コキ106"
       ],
-      "updatedAt": "2026-10-02T18:14:11.935Z"
+      "updatedAt": "2026-10-03T08:08:33.047Z"
     },
     {
       "id": "f_1790966135168",
@@ -2286,6 +2286,47 @@
         "クモハ215-100"
       ],
       "updatedAt": "2026-10-03T01:23:39.767Z"
+    },
+    {
+      "id": "f_1791015631025",
+      "name": "●特急「スーパー白鳥」(2010年頃)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2010年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパー白鳥",
+          "from": "新青森．函館",
+          "fromPos": "",
+          "to": "青森",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "増結した8両編成の場合，通過できるカーブ半径は280ｍｍ以上です。"
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "クロハ789-100",
+        "モハ788-100",
+        "サハ789-100",
+        "モハ789-200",
+        "モハ788-200",
+        "クハ789-200",
+        "モハ788-300",
+        "クハ789-300"
+      ],
+      "updatedAt": "2026-10-03T08:22:07.091Z"
     }
   ],
   "formationsData": {
@@ -7330,7 +7371,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1k4wrxc8s7g9e",
@@ -7344,7 +7386,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7358,7 +7401,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1k4wrxc8s7g9e",
@@ -7372,7 +7416,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7386,7 +7431,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7400,7 +7446,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1k4wrxc8s7g9e",
@@ -7414,7 +7461,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7428,7 +7476,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7442,7 +7491,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1k4wrxc8s7g9e",
@@ -7456,7 +7506,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7470,7 +7521,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7484,7 +7536,23 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
+        },
+        {
+          "vehicleId": "vp_1k4wrxc8s7g9e",
+          "flipped": true,
+          "attribute": "",
+          "productCode": "10-1433",
+          "setGroupId": "",
+          "containers": [
+            "vp_18dyox439i22o",
+            null,
+            null,
+            null,
+            "vp_zgir9l1ltpnmr"
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1k4wrxc8s7g9e",
@@ -7498,21 +7566,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
-        },
-        {
-          "vehicleId": "vp_1k4wrxc8s7g9e",
-          "flipped": true,
-          "attribute": "",
-          "productCode": "10-1433",
-          "setGroupId": "",
-          "containers": [
-            "vp_1kmduhwp5z40c",
-            null,
-            null,
-            null,
-            "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1k4wrxc8s7g9e",
@@ -7526,7 +7581,8 @@
             "vp_1kmduhwp5z40c",
             null,
             null
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7540,7 +7596,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7554,7 +7611,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7568,7 +7626,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7582,7 +7641,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7596,7 +7656,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7610,7 +7671,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1slzypqu1eklu",
@@ -7624,7 +7686,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
           "vehicleId": "vp_1hisp1f15wa67f",
@@ -7638,7 +7701,8 @@
             null,
             null,
             "vp_1kmduhwp5z40c"
-          ]
+          ],
+          "containerAlign": "left"
         }
       ],
       "reversed": false,
@@ -8057,7 +8121,95 @@
       ],
       "reversed": false,
       "titleNote": ""
+    },
+    "f_1791015631025": {
+      "id": "f_1791015631025",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2010年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "スーパー白鳥",
+          "from": "新青森．函館",
+          "fromPos": "",
+          "to": "青森",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "増結した8両編成の場合，通過できるカーブ半径は280ｍｍ以上です。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_1p7o7j51v5ck3j",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98895",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_8egqo0188ec42",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98895",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_erb32uzpshos",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98895",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_12jmcle28ygt0",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98895",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_1ktj1tvskrwep",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98895",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_6509n3174m1i5",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98895",
+          "setGroupId": "A"
+        },
+        {
+          "vehicleId": "vp_10puole2k5hhs",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98896",
+          "setGroupId": "B"
+        },
+        {
+          "vehicleId": "vp_1l2fydqh3zggs",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "98896",
+          "setGroupId": "B"
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
     }
   },
-  "savedAt": "2026-10-03T01:23:39.777Z"
+  "savedAt": "2026-10-03T08:22:07.103Z"
 }

@@ -962,7 +962,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261003-0120";
+  const APP_BUILD = "20261003-0133";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -5413,12 +5413,16 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       const withNick = (seg, name, side) =>
         (showNick && seg.nickname && side === nickSide) ? `「${seg.nickname}」${name}` : name;
 
+      // 貼在分割線旁邊時留一點空隙,不要跟分割線黏在一起
+      const DIV_PAD = 0.08 * scale;
       // 出發側
       if(fromCommon){
         if(froms.length) drawLeftArrowText(leftEdge, froms.join("・"));
       }else{
         segList.forEach((seg, i) => {
-          if(seg.from) drawLeftArrowText(segLo(i), withNick(seg, seg.from, "from"));
+          if(!seg.from) return;
+          const x = segLo(i) + (i === 0 ? 0 : DIV_PAD);
+          drawLeftArrowText(x, withNick(seg, seg.from, "from"));
         });
       }
       // 終點側
@@ -5426,7 +5430,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         if(tos.length) drawTextRightArrow(rightEdge, tos.join("・"));
       }else{
         segList.forEach((seg, i) => {
-          if(seg.to) drawTextRightArrow(segHi(i), withNick(seg, seg.to, "to"));
+          if(!seg.to) return;
+          const x = segHi(i) - (i === segList.length - 1 ? 0 : DIV_PAD);
+          drawTextRightArrow(x, withNick(seg, seg.to, "to"));
         });
       }
       // 兩側都共通、但愛稱不同時,愛稱在各自區段置中顯示

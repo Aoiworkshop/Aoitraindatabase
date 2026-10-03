@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-03T01:02:01.747Z",
+  "exportedAt": "2026-10-03T08:20:28.752Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -37410,9 +37410,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98896",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ],
+      "productCodes": [
+        "98896"
       ]
     },
     {
@@ -37427,9 +37430,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98895",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ],
+      "productCodes": [
+        "98895"
       ]
     },
     {
@@ -37444,9 +37450,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98895",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ],
+      "productCodes": [
+        "98895"
       ]
     },
     {
@@ -37461,9 +37470,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98896",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ],
+      "productCodes": [
+        "98896"
       ]
     },
     {
@@ -37478,9 +37490,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98895",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ],
+      "productCodes": [
+        "98895"
       ]
     },
     {
@@ -37495,9 +37510,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98895",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ],
+      "productCodes": [
+        "98895"
       ]
     },
     {
@@ -37512,9 +37530,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98895",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ],
+      "productCodes": [
+        "98895"
       ]
     },
     {
@@ -37529,9 +37550,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98895",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 03_交流用 / 789系"
+      ],
+      "productCodes": [
+        "98895"
       ]
     },
     {
@@ -44493,40 +44517,6 @@
       ]
     },
     {
-      "id": "vp_1j5nqmw1gnwdua",
-      "sourcePath": "08_貨物/コンテナ/30ft/U54A-30000_Super Green.png",
-      "series": "30ft",
-      "modelCode": "U54A",
-      "variantCode": "30000",
-      "liveryName": "Super Green",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 30ft"
-      ]
-    },
-    {
-      "id": "vp_1crz52l11bh5kz",
-      "sourcePath": "08_貨物/コンテナ/30ft/U54A-30000_西濃運輸.png",
-      "series": "30ft",
-      "modelCode": "U54A",
-      "variantCode": "30000",
-      "liveryName": "西濃運輸",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 30ft"
-      ]
-    },
-    {
       "id": "vp_1ybpzsctw73uw",
       "sourcePath": "08_貨物/コンテナ/40ft/40ft-ハイキューブコンテナ_NYK.png",
       "series": "40ft",
@@ -45004,7 +44994,7 @@
     },
     {
       "id": "vp_l82fi51igl01x",
-      "sourcePath": "08_貨物/コンテナ/12ft/20D_JRマーク大.png",
+      "sourcePath": "08_貨物/コンテナ/12ft/20D_JRマーク_新.png",
       "series": "12ft",
       "modelCode": "20D",
       "variantCode": "",
@@ -45700,23 +45690,6 @@
       ]
     },
     {
-      "id": "vp_8kukfof4lku",
-      "sourcePath": "08_貨物/コンテナ/30ft/U55A-38000_トヨタ.png",
-      "series": "30ft",
-      "modelCode": "U55A",
-      "variantCode": "38000",
-      "liveryName": "トヨタ",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "08_貨物 / コンテナ / 30ft"
-      ]
-    },
-    {
       "id": "vp_16caylr1mbo53t",
       "sourcePath": "08_貨物/コンテナ/30ft/U55A-38000_全国通運.png",
       "series": "30ft",
@@ -46125,6 +46098,618 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 215系"
+      ]
+    },
+    {
+      "id": "vp_12lnz7j1vjj0rl",
+      "sourcePath": "08_貨物/コンテナ/20ft/UC7_フレートライナー.png",
+      "series": "20ft",
+      "modelCode": "UC7",
+      "variantCode": "",
+      "liveryName": "フレートライナー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 20ft"
+      ]
+    },
+    {
+      "id": "vp_1f6dsyi7poth2",
+      "sourcePath": "08_貨物/コンテナ/20ft/UM12A-5000_グレー.png",
+      "series": "20ft",
+      "modelCode": "UM12A",
+      "variantCode": "5000",
+      "liveryName": "グレー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 20ft"
+      ]
+    },
+    {
+      "id": "vp_1y9ob4zf97v97",
+      "sourcePath": "08_貨物/コンテナ/20ft/UM12A-5000_クリーム.png",
+      "series": "20ft",
+      "modelCode": "UM12A",
+      "variantCode": "5000",
+      "liveryName": "クリーム",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 20ft"
+      ]
+    },
+    {
+      "id": "vp_qsuiw21bpq6ne",
+      "sourcePath": "08_貨物/コンテナ/20ft/UM12A-5000_日本通運.png",
+      "series": "20ft",
+      "modelCode": "UM12A",
+      "variantCode": "5000",
+      "liveryName": "日本通運",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 20ft"
+      ]
+    },
+    {
+      "id": "vp_196tlcv5u4cbb",
+      "sourcePath": "08_貨物/コンテナ/30ft/U46A-30000_フットワークエクスプレス.png",
+      "series": "30ft",
+      "modelCode": "U46A",
+      "variantCode": "30000",
+      "liveryName": "フットワークエクスプレス",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_44rtkp1olme8j",
+      "sourcePath": "08_貨物/コンテナ/30ft/U46A-30000_日本通運.png",
+      "series": "30ft",
+      "modelCode": "U46A",
+      "variantCode": "30000",
+      "liveryName": "日本通運",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_18drh3ejgrdpg",
+      "sourcePath": "08_貨物/コンテナ/30ft/U46A-30000_日本通運．白.png",
+      "series": "30ft",
+      "modelCode": "U46A",
+      "variantCode": "30000",
+      "liveryName": "日本通運．白",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1ykyjqj1hmjk1v",
+      "sourcePath": "08_貨物/コンテナ/30ft/U47A-38000_日本通運．ECO LINER.png",
+      "series": "30ft",
+      "modelCode": "U47A",
+      "variantCode": "38000",
+      "liveryName": "日本通運．ECO LINER",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_zwikiiaxqxs8",
+      "sourcePath": "08_貨物/コンテナ/30ft/U47A-38000_ヤマト.png",
+      "series": "30ft",
+      "modelCode": "U47A",
+      "variantCode": "38000",
+      "liveryName": "ヤマト",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1gptvbk12v8ucu",
+      "sourcePath": "08_貨物/コンテナ/30ft/U48A-30000_日本フレートライナー.png",
+      "series": "30ft",
+      "modelCode": "U48A",
+      "variantCode": "30000",
+      "liveryName": "日本フレートライナー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_13lxgeb5bzapx",
+      "sourcePath": "08_貨物/コンテナ/30ft/U47A-38000_日本通運．白.png",
+      "series": "30ft",
+      "modelCode": "U47A",
+      "variantCode": "38000",
+      "liveryName": "日本通運．白",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1s7l2m2y73f4",
+      "sourcePath": "08_貨物/コンテナ/30ft/U48A-30000_日本フレートライナー．新.png",
+      "series": "30ft",
+      "modelCode": "U48A",
+      "variantCode": "30000",
+      "liveryName": "日本フレートライナー．新",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_4kx9mo10jjnp0",
+      "sourcePath": "08_貨物/コンテナ/30ft/U48A-30000_西濃運輸.png",
+      "series": "30ft",
+      "modelCode": "U48A",
+      "variantCode": "30000",
+      "liveryName": "西濃運輸",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1dmjauug0nt9i",
+      "sourcePath": "08_貨物/コンテナ/30ft/U48A-38000_スーパーグリーン・シャトル.png",
+      "series": "30ft",
+      "modelCode": "U48A",
+      "variantCode": "38000",
+      "liveryName": "スーパーグリーン・シャトル",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_ykzu85rsj3lh",
+      "sourcePath": "08_貨物/コンテナ/30ft/U48A-38000_スーパーグリーン・シャトル．白.png",
+      "series": "30ft",
+      "modelCode": "U48A",
+      "variantCode": "38000",
+      "liveryName": "スーパーグリーン・シャトル．白",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_i0jdrx10lzzrt",
+      "sourcePath": "08_貨物/コンテナ/30ft/U48A-38000_日本石油輸送.png",
+      "series": "30ft",
+      "modelCode": "U48A",
+      "variantCode": "38000",
+      "liveryName": "日本石油輸送",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_faz9p118aj2k3",
+      "sourcePath": "08_貨物/コンテナ/30ft/U48A-38000_日通商事.png",
+      "series": "30ft",
+      "modelCode": "U48A",
+      "variantCode": "38000",
+      "liveryName": "日通商事",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_nn292e2p3dbs",
+      "sourcePath": "08_貨物/コンテナ/30ft/U48A-38000_ヤマト運輸.png",
+      "series": "30ft",
+      "modelCode": "U48A",
+      "variantCode": "38000",
+      "liveryName": "ヤマト運輸",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_ym0is79ytjw9",
+      "sourcePath": "08_貨物/コンテナ/30ft/U49A-38000_スーパーグリーン・シャトル.png",
+      "series": "30ft",
+      "modelCode": "U49A",
+      "variantCode": "38000",
+      "liveryName": "スーパーグリーン・シャトル",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1q3h16q1v42ele",
+      "sourcePath": "08_貨物/コンテナ/30ft/U49A-38000_全国通運.png",
+      "series": "30ft",
+      "modelCode": "U49A",
+      "variantCode": "38000",
+      "liveryName": "全国通運",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_13n7gof1wjxqc3",
+      "sourcePath": "08_貨物/コンテナ/30ft/U49A-38000_武州運輸倉庫.png",
+      "series": "30ft",
+      "modelCode": "U49A",
+      "variantCode": "38000",
+      "liveryName": "武州運輸倉庫",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_zgir9l1ltpnmr",
+      "sourcePath": "08_貨物/コンテナ/30ft/U49A-38000_福山通運.png",
+      "series": "30ft",
+      "modelCode": "U49A",
+      "variantCode": "38000",
+      "liveryName": "福山通運",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1b3nvzjhns7v",
+      "sourcePath": "08_貨物/コンテナ/30ft/U51A-30000_日本電気硝子.png",
+      "series": "30ft",
+      "modelCode": "U51A",
+      "variantCode": "30000",
+      "liveryName": "日本電気硝子",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_18dyox439i22o",
+      "sourcePath": "08_貨物/コンテナ/30ft/U51A-30000_福山通運.png",
+      "series": "30ft",
+      "modelCode": "U51A",
+      "variantCode": "30000",
+      "liveryName": "福山通運",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_9145615ih916",
+      "sourcePath": "08_貨物/コンテナ/30ft/U51A-39500_スーパーグリーン・シャトル.png",
+      "series": "30ft",
+      "modelCode": "U51A",
+      "variantCode": "39500",
+      "liveryName": "スーパーグリーン・シャトル",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1jxrtoohqnqwe",
+      "sourcePath": "08_貨物/コンテナ/30ft/U51A-39500_佐賀運輸.png",
+      "series": "30ft",
+      "modelCode": "U51A",
+      "variantCode": "39500",
+      "liveryName": "佐賀運輸",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_73nhwoty75co",
+      "sourcePath": "08_貨物/コンテナ/30ft/U51A-39500_日本通運．ECO LINER.png",
+      "series": "30ft",
+      "modelCode": "U51A",
+      "variantCode": "39500",
+      "liveryName": "日本通運．ECO LINER",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1in8zoz19vvkdn",
+      "sourcePath": "08_貨物/コンテナ/30ft/U54A-30000_スーパーグリーン・シャトル.png",
+      "series": "30ft",
+      "modelCode": "U54A",
+      "variantCode": "30000",
+      "liveryName": "スーパーグリーン・シャトル",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_17aigff159ikcv",
+      "sourcePath": "08_貨物/コンテナ/30ft/U54A-30000_佐川急便．新.png",
+      "series": "30ft",
+      "modelCode": "U54A",
+      "variantCode": "30000",
+      "liveryName": "佐川急便．新",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_r590rx1x8hylh",
+      "sourcePath": "08_貨物/コンテナ/30ft/U54A-30000_福山通運.png",
+      "series": "30ft",
+      "modelCode": "U54A",
+      "variantCode": "30000",
+      "liveryName": "福山通運",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1vgtnqd168o6h7",
+      "sourcePath": "08_貨物/コンテナ/30ft/U54A-38000_西濃運輸.png",
+      "series": "30ft",
+      "modelCode": "U54A",
+      "variantCode": "38000",
+      "liveryName": "西濃運輸",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_x8ctu8pla6rk",
+      "sourcePath": "08_貨物/コンテナ/30ft/U55A-39500_トヨタ.png",
+      "series": "30ft",
+      "modelCode": "U55A",
+      "variantCode": "39500",
+      "liveryName": "トヨタ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_ww5bvw1tlcjn0",
+      "sourcePath": "08_貨物/コンテナ/30ft/U55A-39500_日本通運．ECO LINER.png",
+      "series": "30ft",
+      "modelCode": "U55A",
+      "variantCode": "39500",
+      "liveryName": "日本通運．ECO LINER",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_gv12sa1wx2uus",
+      "sourcePath": "08_貨物/コンテナ/30ft/UF43A-38000_ランテック.png",
+      "series": "30ft",
+      "modelCode": "UF43A",
+      "variantCode": "38000",
+      "liveryName": "ランテック",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_1drvcwo3ms4ow",
+      "sourcePath": "08_貨物/コンテナ/30ft/UF43A-38000_九州牛乳輸送.png",
+      "series": "30ft",
+      "modelCode": "UF43A",
+      "variantCode": "38000",
+      "liveryName": "九州牛乳輸送",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_huggxd1wcvbbx",
+      "sourcePath": "08_貨物/コンテナ/30ft/UF42A-38000_日本石油輸送.png",
+      "series": "30ft",
+      "modelCode": "UF42A",
+      "variantCode": "38000",
+      "liveryName": "日本石油輸送",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "08_貨物 / コンテナ / 30ft"
       ]
     }
   ]
