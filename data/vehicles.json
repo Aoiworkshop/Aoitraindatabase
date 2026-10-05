@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-03T08:20:28.752Z",
+  "exportedAt": "2026-10-05T17:17:24.701Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -1554,9 +1554,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "5069",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "5069",
+        "10-898"
       ]
     },
     {
@@ -1901,9 +1905,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1872",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 20系"
+      ],
+      "productCodes": [
+        "10-1872"
       ]
     },
     {
@@ -1974,7 +1981,8 @@
         "01_JR 國鐵 / 01_客車 / 20系"
       ],
       "productCodes": [
-        "10-1725"
+        "10-1725",
+        "10-1872"
       ]
     },
     {
@@ -2049,7 +2057,9 @@
       ],
       "productCodes": [
         "10-1725",
-        "10-1726"
+        "10-1726",
+        "10-1873",
+        "10-1872"
       ]
     },
     {
@@ -2081,9 +2091,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1872",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 20系"
+      ],
+      "productCodes": [
+        "10-1872"
       ]
     },
     {
@@ -2132,9 +2145,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1873",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 20系"
+      ],
+      "productCodes": [
+        "10-1873"
       ]
     },
     {
@@ -2249,7 +2265,8 @@
       ],
       "productCodes": [
         "10-1725",
-        "10-1726"
+        "10-1726",
+        "10-1873"
       ]
     },
     {
@@ -2269,7 +2286,8 @@
         "01_JR 國鐵 / 01_客車 / 20系"
       ],
       "productCodes": [
-        "10-1726"
+        "10-1726",
+        "10-1872"
       ]
     },
     {
@@ -2318,9 +2336,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1873",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 20系"
+      ],
+      "productCodes": [
+        "10-1873"
       ]
     },
     {
@@ -4085,9 +4106,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-899",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 32-35系"
+      ],
+      "productCodes": [
+        "10-899",
+        "10-1724",
+        "5229",
+        "5079",
+        "10-898"
       ]
     },
     {
@@ -4119,9 +4147,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1724",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 32-35系"
+      ],
+      "productCodes": [
+        "10-1724",
+        "5078"
       ]
     },
     {
@@ -4686,7 +4718,11 @@
       ],
       "productCodes": [
         "10-1348",
-        "10-1387"
+        "10-1387",
+        "10-899",
+        "5220",
+        "5240",
+        "10-898"
       ]
     },
     {
@@ -6060,8 +6096,8 @@
     },
     {
       "id": "vp_1idkox51l3f531",
-      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ59系/キロ29.png",
-      "series": "キハ59系",
+      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キロ29.png",
+      "series": "キハ56系",
       "modelCode": "キロ29",
       "variantCode": "",
       "liveryName": "",
@@ -6072,13 +6108,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ59系"
+        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
       ]
     },
     {
       "id": "vp_1cmwxhq1iqdg7s",
-      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ59系/キロ59.png",
-      "series": "キハ59系",
+      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キロ59.png",
+      "series": "キハ56系",
       "modelCode": "キロ59",
       "variantCode": "",
       "liveryName": "",
@@ -6089,7 +6125,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ59系"
+        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
       ]
     },
     {
@@ -22634,9 +22670,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-899",
       "categories": [
         "04_貨物列車 / 01_有蓋車"
+      ],
+      "productCodes": [
+        "10-899",
+        "10-1724"
       ]
     },
     {
@@ -22668,9 +22708,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-899",
       "categories": [
         "04_貨物列車 / 01_有蓋車"
+      ],
+      "productCodes": [
+        "10-899"
       ]
     },
     {
@@ -22685,9 +22728,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1590",
       "categories": [
         "04_貨物列車 / 01_有蓋車"
+      ],
+      "productCodes": [
+        "10-1590"
       ]
     },
     {
@@ -22719,9 +22765,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1724",
       "categories": [
         "04_貨物列車 / 01_有蓋車"
+      ],
+      "productCodes": [
+        "10-1724"
       ]
     },
     {
@@ -34260,9 +34309,13 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "10-1590",
       "categories": [
         "01_JR 國鐵 / 01_客車 / 50系"
+      ],
+      "productCodes": [
+        "10-1590",
+        "5140"
       ]
     },
     {
@@ -44993,7 +45046,7 @@
       ]
     },
     {
-      "id": "vp_l82fi51igl01x",
+      "id": "vp_9gq7lh1a08p5d",
       "sourcePath": "08_貨物/コンテナ/12ft/20D_JRマーク_新.png",
       "series": "12ft",
       "modelCode": "20D",
@@ -46710,6 +46763,284 @@
       "defaultProductCode": "",
       "categories": [
         "08_貨物 / コンテナ / 30ft"
+      ]
+    },
+    {
+      "id": "vp_17jdwx7fgul67",
+      "sourcePath": "01_JR 國鐵/01_客車/10系/オユ11-100_冷改車・青.png",
+      "series": "10系",
+      "modelCode": "オユ11",
+      "variantCode": "100",
+      "liveryName": "冷改車・青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1724",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "10-1724"
+      ]
+    },
+    {
+      "id": "vp_1pui6zvdwqu8l",
+      "sourcePath": "01_JR 國鐵/01_客車/10系/オユ12_青.png",
+      "series": "10系",
+      "modelCode": "オユ12",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-899",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "10-899",
+        "5059-2"
+      ]
+    },
+    {
+      "id": "vp_16e2imq1ekio7o",
+      "sourcePath": "01_JR 國鐵/01_客車/10系/オユ14_冷改車・青.png",
+      "series": "10系",
+      "modelCode": "オユ14",
+      "variantCode": "",
+      "liveryName": "冷改車・青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1590",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "10-1590"
+      ]
+    },
+    {
+      "id": "vp_129e3xufqv5x0",
+      "sourcePath": "01_JR 國鐵/01_客車/10系/スユ15.png",
+      "series": "10系",
+      "modelCode": "スユ15",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1590",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "10-1590",
+        "5224"
+      ]
+    },
+    {
+      "id": "vp_194ictx1sk2r81",
+      "sourcePath": "01_JR 國鐵/01_客車/60系/スユニ60_茶.png",
+      "series": "60系",
+      "modelCode": "スユニ60",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 60系"
+      ]
+    },
+    {
+      "id": "vp_qvdmyc1fkmjio",
+      "sourcePath": "01_JR 國鐵/01_客車/60系/スユニ61_茶.png",
+      "series": "60系",
+      "modelCode": "スユニ61",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 60系"
+      ]
+    },
+    {
+      "id": "vp_t8qfh11gi43gz",
+      "sourcePath": "01_JR 國鐵/01_客車/60系/マニ61_茶.png",
+      "series": "60系",
+      "modelCode": "マニ61",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-1724",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 60系"
+      ],
+      "productCodes": [
+        "10-1724"
+      ]
+    },
+    {
+      "id": "vp_1fns9lb10l2pqp",
+      "sourcePath": "01_JR 國鐵/01_客車/10系/オユ12_茶.png",
+      "series": "10系",
+      "modelCode": "オユ12",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "5059-1",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "5059-1"
+      ]
+    },
+    {
+      "id": "vp_15y6nvd1y9cot5",
+      "sourcePath": "01_JR 國鐵/01_客車/10系/スユ13_青.png",
+      "series": "10系",
+      "modelCode": "スユ13",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "10-898",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 10系"
+      ],
+      "productCodes": [
+        "10-898"
+      ]
+    },
+    {
+      "id": "vp_15fa1nj4a0twz",
+      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キハ27-500_ミッドナイト色_L.png",
+      "series": "キハ56系",
+      "modelCode": "キハ27",
+      "variantCode": "500",
+      "liveryName": "ミッドナイト色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
+      ]
+    },
+    {
+      "id": "vp_15p8bpd4mb7ql",
+      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キハ27-500_ミッドナイト色_R.png",
+      "series": "キハ56系",
+      "modelCode": "キハ27",
+      "variantCode": "500",
+      "liveryName": "ミッドナイト色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
+      ]
+    },
+    {
+      "id": "vp_dq8djw9hp9os",
+      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キハ56-550_ミッドナイト色_L.png",
+      "series": "キハ56系",
+      "modelCode": "キハ56",
+      "variantCode": "550",
+      "liveryName": "ミッドナイト色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
+      ]
+    },
+    {
+      "id": "vp_dxj4zm95epqq",
+      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キハ56-550_ミッドナイト色_R.png",
+      "series": "キハ56系",
+      "modelCode": "キハ56",
+      "variantCode": "550",
+      "liveryName": "ミッドナイト色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
+      ]
+    },
+    {
+      "id": "vp_1lfuos81y9vggw",
+      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キロ29_ミッドナイト色.png",
+      "series": "キハ56系",
+      "modelCode": "キロ29",
+      "variantCode": "",
+      "liveryName": "ミッドナイト色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
+      ]
+    },
+    {
+      "id": "vp_14fi78f1fdut6d",
+      "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キロ59_ミッドナイト色.png",
+      "series": "キハ56系",
+      "modelCode": "キロ59",
+      "variantCode": "",
+      "liveryName": "ミッドナイト色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
       ]
     }
   ]

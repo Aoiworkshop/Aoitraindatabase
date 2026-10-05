@@ -2327,6 +2327,90 @@
         "クハ789-300"
       ],
       "updatedAt": "2026-10-03T08:22:07.091Z"
+    },
+    {
+      "id": "f_1791124871377",
+      "name": "●特急「あけぼの」(2010年8月20日)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2010年8月20日",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "あけぼの",
+          "from": "上野",
+          "fromPos": "",
+          "to": "青森",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "EF64-1000",
+        "オハネフ25-100",
+        "オハネ25-0",
+        "オハネ24-0",
+        "オハネフ24-0",
+        "オハネ24-550",
+        "オロネ24-500",
+        "オハネフ24",
+        "カニ24-0"
+      ],
+      "updatedAt": "2026-10-04T14:41:11.381Z"
+    },
+    {
+      "id": "f_1791125104320",
+      "name": "●特急「あけぼの」(2012年3月16日)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2012年3月16日",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "あけぼの",
+          "from": "青森",
+          "fromPos": "",
+          "to": "上野",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "carModelsUsed": [
+        "EF64-1000",
+        "カニ24-100",
+        "オハネフ24",
+        "スロネ24-500",
+        "オハネ24-550",
+        "オハネフ25-100",
+        "オハネ24-0",
+        "オハネ25-100",
+        "オハネフ25-200"
+      ],
+      "updatedAt": "2026-10-04T14:45:04.321Z"
     }
   ],
   "formationsData": {
@@ -8209,7 +8293,218 @@
       ],
       "reversed": false,
       "titleNote": ""
+    },
+    "f_1791124871377": {
+      "id": "f_1791124871377",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2010年8月20日",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "あけぼの",
+          "from": "上野",
+          "fromPos": "",
+          "to": "青森",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_wmh83h8doizz",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_sdpcoqvw2upw",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_iaxymm1sboqmi",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_jx5wtrab5ynh",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_n4xonf1093hu7",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_ykv9e717y8z9f",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_ykv9e717y8z9f",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_15sd10omee2aw",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_eza1z1aoutrt",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_18mlofzd318sd",
+          "flipped": true,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
+    },
+    "f_1791125104320": {
+      "id": "f_1791125104320",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2012年3月16日",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "あけぼの",
+          "from": "青森",
+          "fromPos": "",
+          "to": "上野",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_wmh83h8doizz",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_kgbg5ffy9z2h",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_czjuh1aq0vpj",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_5h9xadowpvcz",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_y89n8117szfod",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_y89n8117szfod",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_sicezovt5l7e",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_1i4hiu5qjlpyf",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_10wdg74gj824k",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_9y773lr9sg47",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        },
+        {
+          "vehicleId": "vp_ttuabr1nd3xx7",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": ""
+        }
+      ],
+      "reversed": false,
+      "titleNote": ""
     }
   },
-  "savedAt": "2026-10-03T08:22:07.103Z"
+  "savedAt": "2026-10-05T17:17:00.557Z"
 }
