@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-05T17:17:24.701Z",
+  "exportedAt": "2026-10-06T15:06:48.230Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -6095,7 +6095,7 @@
       ]
     },
     {
-      "id": "vp_1idkox51l3f531",
+      "id": "vp_cv5vl2pngzju",
       "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キロ29.png",
       "series": "キハ56系",
       "modelCode": "キロ29",
@@ -6112,7 +6112,7 @@
       ]
     },
     {
-      "id": "vp_1cmwxhq1iqdg7s",
+      "id": "vp_g3aaf5o63me3",
       "sourcePath": "01_JR 國鐵/02_氣動車/02_準急形・急行形/キハ56系/キロ59.png",
       "series": "キハ56系",
       "modelCode": "キロ59",
@@ -47041,6 +47041,533 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 02_準急形・急行形 / キハ56系"
+      ]
+    },
+    {
+      "id": "vp_1nohyu71dwgdr3",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/クハ250_リニューアル塗装.png",
+      "series": "251系",
+      "modelCode": "クハ250",
+      "variantCode": "",
+      "liveryName": "リニューアル塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_t87q8gtl693k",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/クハ250_初代塗装.png",
+      "series": "251系",
+      "modelCode": "クハ250",
+      "variantCode": "",
+      "liveryName": "初代塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_1d3tx3117yxkil",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/クロ250_リニューアル塗装.png",
+      "series": "251系",
+      "modelCode": "クロ250",
+      "variantCode": "",
+      "liveryName": "リニューアル塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_14vc982bi6xp6",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/クロ250_初代塗装.png",
+      "series": "251系",
+      "modelCode": "クロ250",
+      "variantCode": "",
+      "liveryName": "初代塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_18kui1w1spvjli",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/サハ251_リニューアル塗装.png",
+      "series": "251系",
+      "modelCode": "サハ251",
+      "variantCode": "",
+      "liveryName": "リニューアル塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_eimlkb1moep8h",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/サハ251_初代塗装.png",
+      "series": "251系",
+      "modelCode": "サハ251",
+      "variantCode": "",
+      "liveryName": "初代塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_2jjz46zn5754",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/サロ251_リニューアル塗装.png",
+      "series": "251系",
+      "modelCode": "サロ251",
+      "variantCode": "",
+      "liveryName": "リニューアル塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_ywo3ih1kw6pl3",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/サロ251_初代塗装.png",
+      "series": "251系",
+      "modelCode": "サロ251",
+      "variantCode": "",
+      "liveryName": "初代塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_18fak261d7zgzu",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/モハ250-100_リニューアル塗装.png",
+      "series": "251系",
+      "modelCode": "モハ250",
+      "variantCode": "100",
+      "liveryName": "リニューアル塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_14gkt35vtojql",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/モハ250-100_初代塗装.png",
+      "series": "251系",
+      "modelCode": "モハ250",
+      "variantCode": "100",
+      "liveryName": "初代塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_dxrz1u9izlt8",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/モハ250_リニューアル塗装.png",
+      "series": "251系",
+      "modelCode": "モハ250",
+      "variantCode": "",
+      "liveryName": "リニューアル塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_ph6fwd1kkf2c3",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/モハ250_初代塗装.png",
+      "series": "251系",
+      "modelCode": "モハ250",
+      "variantCode": "",
+      "liveryName": "初代塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_12ashwv16uqq0x",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/モハ251-100_リニューアル塗装.png",
+      "series": "251系",
+      "modelCode": "モハ251",
+      "variantCode": "100",
+      "liveryName": "リニューアル塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_oskm8wts5zd2",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/モハ251-100_初代塗装.png",
+      "series": "251系",
+      "modelCode": "モハ251",
+      "variantCode": "100",
+      "liveryName": "初代塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_gvco43ik5qc7",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/モハ251_リニューアル塗装.png",
+      "series": "251系",
+      "modelCode": "モハ251",
+      "variantCode": "",
+      "liveryName": "リニューアル塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_qbhafwah5l88",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/251系/モハ251_初代塗装.png",
+      "series": "251系",
+      "modelCode": "モハ251",
+      "variantCode": "",
+      "liveryName": "初代塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 251系"
+      ]
+    },
+    {
+      "id": "vp_euw76r1x2yj2v",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/255系/クハ254.png",
+      "series": "255系",
+      "modelCode": "クハ254",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 255系"
+      ]
+    },
+    {
+      "id": "vp_ewz1sy1x32fxy",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/255系/クハ255.png",
+      "series": "255系",
+      "modelCode": "クハ255",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 255系"
+      ]
+    },
+    {
+      "id": "vp_14fyv7cqlvb1o",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/255系/サハ255.png",
+      "series": "255系",
+      "modelCode": "サハ255",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 255系"
+      ]
+    },
+    {
+      "id": "vp_14dw73tqmdval",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/255系/サハ254.png",
+      "series": "255系",
+      "modelCode": "サハ254",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 255系"
+      ]
+    },
+    {
+      "id": "vp_13d0oij1latccz",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/255系/サロ254.png",
+      "series": "255系",
+      "modelCode": "サロ254",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 255系"
+      ]
+    },
+    {
+      "id": "vp_1k1bqen17ew9yf",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/255系/モハ255.png",
+      "series": "255系",
+      "modelCode": "モハ255",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 255系"
+      ]
+    },
+    {
+      "id": "vp_1k3el0u17g2jgm",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/01_直流用/255系/モハ254.png",
+      "series": "255系",
+      "modelCode": "モハ254",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 255系"
+      ]
+    },
+    {
+      "id": "vp_1opbrk41s499e6",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/02_交直両用/651系/クハ650.png",
+      "series": "651系",
+      "modelCode": "クハ650",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
+      ]
+    },
+    {
+      "id": "vp_1m14d6h1v97hdp",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/02_交直両用/651系/クハ651-100.png",
+      "series": "651系",
+      "modelCode": "クハ651",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
+      ]
+    },
+    {
+      "id": "vp_1opzosl1s2i3bj",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/02_交直両用/651系/クハ651.png",
+      "series": "651系",
+      "modelCode": "クハ651",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
+      ]
+    },
+    {
+      "id": "vp_1q2rcvx69ec2v",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/02_交直両用/651系/サロ651.png",
+      "series": "651系",
+      "modelCode": "サロ651",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
+      ]
+    },
+    {
+      "id": "vp_155fagls07hf9",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/02_交直両用/651系/モハ650-100.png",
+      "series": "651系",
+      "modelCode": "モハ650",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
+      ]
+    },
+    {
+      "id": "vp_jh6hjd1sm78hj",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/02_交直両用/651系/モハ650.png",
+      "series": "651系",
+      "modelCode": "モハ650",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
+      ]
+    },
+    {
+      "id": "vp_lz2ub81shf4o8",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/02_交直両用/651系/モハ651-100.png",
+      "series": "651系",
+      "modelCode": "モハ651",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
+      ]
+    },
+    {
+      "id": "vp_jgikaw1sm5viu",
+      "sourcePath": "01_JR 國鐵/03_電車/03_急行形・特急形/02_交直両用/651系/モハ651.png",
+      "series": "651系",
+      "modelCode": "モハ651",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
       ]
     }
   ]
