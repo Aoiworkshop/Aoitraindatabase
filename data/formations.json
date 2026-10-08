@@ -1170,12 +1170,13 @@
       "notes": [
         ""
       ],
+      "titleNote": "",
       "carModelsUsed": [
         "キユニ26",
         "キハ58",
         "キハ28"
       ],
-      "updatedAt": "2026-09-18T08:54:47.708Z"
+      "updatedAt": "2026-10-07T16:14:09.216Z"
     },
     {
       "id": "f_1789721747387",
@@ -1239,12 +1240,13 @@
       "notes": [
         ""
       ],
+      "titleNote": "",
       "carModelsUsed": [
         "キハユニ26",
         "キハ55",
-        "キハ48"
+        "キハ48-500"
       ],
-      "updatedAt": "2026-09-18T08:57:47.002Z"
+      "updatedAt": "2026-10-07T16:12:14.712Z"
     },
     {
       "id": "f_1789721987731",
@@ -5028,13 +5030,14 @@
         },
         {
           "vehicleId": "vp_1nv6ohjmoomdp",
-          "flipped": false,
+          "flipped": true,
           "attribute": "単",
           "productCode": "7431",
           "setGroupId": ""
         }
       ],
-      "reversed": false
+      "reversed": false,
+      "titleNote": ""
     },
     "f_1789721747387": {
       "id": "f_1789721747387",
@@ -5152,14 +5155,15 @@
           "setGroupId": ""
         },
         {
-          "vehicleId": "vp_usqm2n64biid",
+          "vehicleId": "vp_ib6dukz7x7fs",
           "flipped": false,
-          "attribute": "単",
-          "productCode": "9476",
+          "attribute": "",
+          "productCode": "",
           "setGroupId": ""
         }
       ],
-      "reversed": false
+      "reversed": false,
+      "titleNote": ""
     },
     "f_1789721987731": {
       "id": "f_1789721987731",
@@ -8506,5 +8510,5 @@
       "titleNote": ""
     }
   },
-  "savedAt": "2026-10-06T15:06:48.336Z"
+  "savedAt": "2026-10-07T16:14:09.226Z"
 }

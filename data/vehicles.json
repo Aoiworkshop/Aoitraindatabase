@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-06T15:06:48.230Z",
+  "exportedAt": "2026-10-07T16:11:45.097Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -5427,40 +5427,6 @@
       ]
     },
     {
-      "id": "vp_1hw1b59syrl69",
-      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40_宗谷急行色.png",
-      "series": "キハ40系",
-      "modelCode": "キハ40",
-      "variantCode": "",
-      "liveryName": "宗谷急行色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
-      ]
-    },
-    {
-      "id": "vp_130c409ytoymp",
-      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40_富良野色.png",
-      "series": "キハ40系",
-      "modelCode": "キハ40",
-      "variantCode": "",
-      "liveryName": "富良野色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
-      ]
-    },
-    {
       "id": "vp_x0wshz1bvo5zv",
       "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40_首都圈色.png",
       "series": "キハ40系",
@@ -5481,8 +5447,8 @@
       ]
     },
     {
-      "id": "vp_16s2r3ujn9yqk",
-      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_L.png",
+      "id": "vp_374s5qksaeb2",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_国鉄色_L.png",
       "series": "キハ45系",
       "modelCode": "キハ45",
       "variantCode": "",
@@ -5498,8 +5464,8 @@
       ]
     },
     {
-      "id": "vp_16wpzxgjsjog2",
-      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_R.png",
+      "id": "vp_2uizgwkic4fk",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_国鉄色_R.png",
       "series": "キハ45系",
       "modelCode": "キハ45",
       "variantCode": "",
@@ -5512,77 +5478,6 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
-      ]
-    },
-    {
-      "id": "vp_1r05ep0qzobkm",
-      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48_R.png",
-      "series": "キハ48系",
-      "modelCode": "キハ48",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
-      ]
-    },
-    {
-      "id": "vp_1qvi5vergn9jc",
-      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48_L.png",
-      "series": "キハ48系",
-      "modelCode": "キハ48",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
-      ]
-    },
-    {
-      "id": "vp_v2oplt6iyvij",
-      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48_冷改車_L.png",
-      "series": "キハ48系",
-      "modelCode": "キハ48",
-      "variantCode": "",
-      "liveryName": "冷改車",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
-      ]
-    },
-    {
-      "id": "vp_usqm2n64biid",
-      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48_冷改車_R.png",
-      "series": "キハ48系",
-      "modelCode": "キハ48",
-      "variantCode": "",
-      "liveryName": "冷改車",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "9476",
-      "categories": [
-        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
-      ],
-      "productCodes": [
-        "9476"
       ]
     },
     {
@@ -47568,6 +47463,1757 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 國鐵 / 03_電車 / 03_急行形・特急形 / 02_交直両用 / 651系"
+      ]
+    },
+    {
+      "id": "vp_hd4kzi8iiicg",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1000_烏山線.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1000",
+      "liveryName": "烏山線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1tds2pn12tn189",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-100_首都圈色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "100",
+      "liveryName": "首都圈色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1dw9vniewlyug",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_JR北海道色・タイフォン撤去車.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "JR北海道色・タイフォン撤去車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_d71ffi1xc0fnq",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_ながまれ号.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "ながまれ号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_qajgm2damfay",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_国鉄一般色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "国鉄一般色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1ucmd1817bf0h2",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_宗谷線急行色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "宗谷線急行色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_rv9zzb9ytiwx",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_山吹色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "山吹色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_11h6b4yjur870",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_山明.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "山明",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1coisql1h0m0bj",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_濃緑色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "濃緑色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1yrx0a013ogmbs",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_濃赤色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "濃赤色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_14lv8wb19m73jt",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_道北流氷の恵み.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "道北流氷の恵み",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_49oj2q1u91r2k",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_白色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "白色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1f5v9vm1tmqak",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_紫水.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "紫水",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1twrcui7fh3ik",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_道南海の恵み.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "道南海の恵み",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_9ij3jpgjy4gp",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_道東 森の恵み.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "道東 森の恵み",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_p7midzujnh5",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_道央 花の恵み.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "道央 花の恵み",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1xvday41migpdg",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-1700_首都圈色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "1700",
+      "liveryName": "首都圈色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_zste9xugsdxf",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_JR西日本更新車・広島色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "JR西日本更新車・広島色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_rnic3k1f5c3ls",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_JR西日本更新車・岡山色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "JR西日本更新車・岡山色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_vxjpt51bmzb6d",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_JR西日本更新車・高岡色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "JR西日本更新車・高岡色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_v01u021w0i6uw",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_ねこ娘列車.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "ねこ娘列車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_rrjrdn1w0aj7f",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_ねずみ男列車.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "ねずみ男列車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_paw1k8dupzaq",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_九州色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "九州色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1jr2coqn2q9jq",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_加古川線.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "加古川線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_u9crx7q3w85f",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_四國色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "四國色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1a7rnvoqi3xdk",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_新潟色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "新潟色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_13bms81mh4ooy",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_姫新線.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "姫新線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_nfdz1s18znt7u",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_東北地域本社色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "東北地域本社色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_18e6z1t1orxpbd",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_水タンク撤去.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "水タンク撤去",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1njlmgl1a7bvjj",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_目玉おやじ列車.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "目玉おやじ列車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1hiwri4y0x0d0",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-2000_鬼太郎列車.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "2000",
+      "liveryName": "鬼太郎列車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1ppwxsa1vnvs4s",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-350_日高線.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "350",
+      "liveryName": "日高線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_62aoul1x4klc5",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-500_小湊鐵道・1番.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "500",
+      "liveryName": "小湊鐵道・1番",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1e3a6em1vvca14",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-500_小湊鐵道・2番.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "500",
+      "liveryName": "小湊鐵道・2番",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1nwu4js1ibjdyk",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-500_更新車・五能線.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "500",
+      "liveryName": "更新車・五能線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_t22rrk19nvsyw",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-500_後期型．盛岡色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "500",
+      "liveryName": "後期型．盛岡色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1x7q1yf1tvccun",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-500_東北地域本社色.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "500",
+      "liveryName": "東北地域本社色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_ucjt2hzsdrt5",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-500_更新車・男鹿線.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "500",
+      "liveryName": "更新車・男鹿線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_m3p70p1m4cw15",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1k0p83gn7q2e2",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ40系/キハ40-500_男鹿線.png",
+      "series": "キハ40系",
+      "modelCode": "キハ40",
+      "variantCode": "500",
+      "liveryName": "男鹿線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ40系"
+      ]
+    },
+    {
+      "id": "vp_1oacth01z0nmu4",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_九州色_L.png",
+      "series": "キハ45系",
+      "modelCode": "キハ45",
+      "variantCode": "",
+      "liveryName": "九州色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
+      ]
+    },
+    {
+      "id": "vp_1os9gve4t4g2",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_九州色_R.png",
+      "series": "キハ45系",
+      "modelCode": "キハ45",
+      "variantCode": "",
+      "liveryName": "九州色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
+      ]
+    },
+    {
+      "id": "vp_j56ivnlo1tx",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_四國色_L.png",
+      "series": "キハ45系",
+      "modelCode": "キハ45",
+      "variantCode": "",
+      "liveryName": "四國色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
+      ]
+    },
+    {
+      "id": "vp_h5mu1nirhmj",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_四國色_R.png",
+      "series": "キハ45系",
+      "modelCode": "キハ45",
+      "variantCode": "",
+      "liveryName": "四國色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
+      ]
+    },
+    {
+      "id": "vp_malptuym6uau",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_広島色_L.png",
+      "series": "キハ45系",
+      "modelCode": "キハ45",
+      "variantCode": "",
+      "liveryName": "広島色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
+      ]
+    },
+    {
+      "id": "vp_6yt3nxkzbf0x",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_首都圏色_R.png",
+      "series": "キハ45系",
+      "modelCode": "キハ45",
+      "variantCode": "",
+      "liveryName": "首都圏色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
+      ]
+    },
+    {
+      "id": "vp_6jjsczl99owf",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_首都圏色_L.png",
+      "series": "キハ45系",
+      "modelCode": "キハ45",
+      "variantCode": "",
+      "liveryName": "首都圏色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
+      ]
+    },
+    {
+      "id": "vp_m3aye4ylloqg",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ45系/キハ45_広島色_R.png",
+      "series": "キハ45系",
+      "modelCode": "キハ45",
+      "variantCode": "",
+      "liveryName": "広島色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ45系"
+      ]
+    },
+    {
+      "id": "vp_1ekbmw11czf075",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_JR西日本更新車・岡山色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "JR西日本更新車・岡山色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1eadjcv1crt6jj",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_JR西日本更新車・岡山色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "JR西日本更新車・岡山色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1douh5w1h0xwsm",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_JR西日本更新車・広島色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "JR西日本更新車・広島色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1dk7euy1h0cxco",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_JR西日本更新車・広島色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "JR西日本更新車・広島色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_osuiu664f3uo",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_アクアライナー色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "アクアライナー色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_p2ssw05wt42m",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_アクアライナー色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "アクアライナー色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1w6arnt1yhvfh3",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_九州色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "九州色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1vlqlnb1yzh0o9",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_九州色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "九州色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1mizndn122896z",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_加古川線_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "加古川線",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1mnmpol11nkw6t",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_加古川線_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "加古川線",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_114i5fe1pe0hhi",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_四國色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "四國色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_11957qc1pdfbx4",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_四國色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "四國色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1qp87qx1b8a1k7",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_姫新線_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "姫新線",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_l1vhx41o2qupi",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_後期型．盛岡色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "後期型．盛岡色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1qr7xyf1b73zfd",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_姫新線_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "姫新線",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_l3v84m1ojpso8",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_後期型．盛岡色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "後期型．盛岡色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_19x9t51h02jzt",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_新潟色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "新潟色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_19smkbfh18lxj",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_新潟色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "新潟色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_e9b64jspdkm",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_新潟色・青_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "新潟色・青",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1z041uak9objc",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-0_新潟色・青_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "0",
+      "liveryName": "新潟色・青",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_9bchqd1izeszn",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1rsgiwz1wn7buj",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_JR西日本更新車・岡山色.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "JR西日本更新車・岡山色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1rqxjraa83wcc",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_JR西日本更新車・広島色.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "JR西日本更新車・広島色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_11nmpqn3f1f7n",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_アクアライナー色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "アクアライナー色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_66yeob14e7qv",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_九州色.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "九州色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_11b13kh39rpi5",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_アクアライナー色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "アクアライナー色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_p0ckl51dhr7sx",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_加古川線.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "加古川線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_s0x1bs1ajfgca",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_四國色.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "四國色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_15meu4u1pj687e",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_新潟色・青.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "新潟色・青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_160wgtgz74kpk",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_後期型．盛岡色.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "後期型．盛岡色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_7zfawri99j0b",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_姫新線.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "姫新線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1gr43d3t70ww1",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1000_新潟色.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1000",
+      "liveryName": "新潟色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_lr1ati1ca7l6m",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-100_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_lp1km01chteu8",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-100_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_500d2rwq67xl",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-1500_JR東海色.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "1500",
+      "liveryName": "JR東海色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1xj8c6nbmoomb",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-500_JR東海色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "500",
+      "liveryName": "JR東海色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1x6mjhtbhf519",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-500_JR東海色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "500",
+      "liveryName": "JR東海色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_9yihox1n2p7kh",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-8000_九州色_L.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "8000",
+      "liveryName": "九州色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_ab4adr1ncnbbj",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-8000_九州色_R.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "8000",
+      "liveryName": "九州色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_aquw1vectov",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ47系/キハ47-9000_九州色.png",
+      "series": "キハ47系",
+      "modelCode": "キハ47",
+      "variantCode": "9000",
+      "liveryName": "九州色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ47系"
+      ]
+    },
+    {
+      "id": "vp_1sbkpts1pzw7de",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-1500.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "1500",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_1xg02u01lgn4co",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-1500_更新車・男鹿線.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "1500",
+      "liveryName": "更新車・男鹿線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_iih5aayqy9h2",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-500_L.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "500",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_ib6dukz7x7fs",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-500_R.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "500",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_qp8wrp58lrv7",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-500_更新車・五能線_R.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "500",
+      "liveryName": "更新車・五能線",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_fd135lliwucp",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-1500_更新車・五能線.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "1500",
+      "liveryName": "更新車・五能線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_qklny35kw5ot",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-500_更新車・五能線_L.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "500",
+      "liveryName": "更新車・五能線",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_1xo5hay1kacns8",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-500_更新車・男鹿線_L.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "500",
+      "liveryName": "更新車・男鹿線",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_1xssq4k1jtdpti",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ48系/キハ48-500_更新車・男鹿線_R.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "500",
+      "liveryName": "更新車・男鹿線",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_jbg0u61pdecmi",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ66系/キハ66_シーサイドライナー.png",
+      "series": "キハ66系",
+      "modelCode": "キハ66",
+      "variantCode": "",
+      "liveryName": "シーサイドライナー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ66系"
+      ]
+    },
+    {
+      "id": "vp_quyj8d159mm8h",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ66系/キハ66_冷却機能強化型.png",
+      "series": "キハ66系",
+      "modelCode": "キハ66",
+      "variantCode": "",
+      "liveryName": "冷却機能強化型",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ66系"
+      ]
+    },
+    {
+      "id": "vp_u38a6n10kon9r",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ66系/キハ66_復活国鉄色.png",
+      "series": "キハ66系",
+      "modelCode": "キハ66",
+      "variantCode": "",
+      "liveryName": "復活国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ66系"
+      ]
+    },
+    {
+      "id": "vp_16u4c0sfi3fvc",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ66系/キハ67_冷却機能強化型.png",
+      "series": "キハ66系",
+      "modelCode": "キハ67",
+      "variantCode": "",
+      "liveryName": "冷却機能強化型",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ66系"
+      ]
+    },
+    {
+      "id": "vp_c5bw9a10e6moe",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ66系/キハ67_復活国鉄色.png",
+      "series": "キハ66系",
+      "modelCode": "キハ67",
+      "variantCode": "",
+      "liveryName": "復活国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ66系"
+      ]
+    },
+    {
+      "id": "vp_1c196n43aycb",
+      "sourcePath": "01_JR 國鐵/02_氣動車/01_一般型/キハ66系/キハ67_シーサイドライナー.png",
+      "series": "キハ66系",
+      "modelCode": "キハ67",
+      "variantCode": "",
+      "liveryName": "シーサイドライナー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 02_氣動車 / 01_一般型 / キハ66系"
       ]
     }
   ]
