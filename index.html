@@ -129,6 +129,8 @@ if(location.protocol === "http:" || location.protocol === "https:"){
     background:#fff;border-radius:5px;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;}
   #car-toolbar button:disabled{opacity:.3;cursor:not-allowed;}
   #car-toolbar button.del{color:var(--rail-red);border-color:var(--rail-red);}
+  /* 釘住操作列的那一節,套上黑色圓角外框,一眼看出現在的操作對象 */
+  .car-slot.pinned{box-shadow:0 0 0 2px var(--ink);border-radius:7px;}
   @media (max-width: 1050px){
     #car-toolbar button{width:38px;height:38px;font-size:17px;}
   }
@@ -962,7 +964,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261003-0133";
+  const APP_BUILD = "20261008-1318";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -4478,6 +4480,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   let toolbarCar = -1;      // 目前顯示操作列的車廂(state.cars 的位置)
   let toolbarPinned = false; // 手機點選後釘住,滑鼠移開不會消失
 
+  // 重繪之後要重新釘住的車廂(連續刪除時用)
+  let pendingPinIdx = -1;
+  function clearPinnedOutline(){
+    document.querySelectorAll(".car-slot.pinned").forEach(el => el.classList.remove("pinned"));
+  }
   let toolbarHideTimer = null;
   function cancelToolbarHide(){
     if(toolbarHideTimer){ clearTimeout(toolbarHideTimer); toolbarHideTimer = null; }
@@ -4486,6 +4493,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     cancelToolbarHide();
     const tb = document.getElementById("car-toolbar");
     if(tb) tb.style.display = "none";
+    clearPinnedOutline();
     toolbarCar = -1; toolbarPinned = false;
   }
   // 延遲一下再收起,滑鼠從車廂移到操作列的途中才不會被判定為離開
@@ -4532,6 +4540,10 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       tb.appendChild(b);
     });
     tb.style.display = "flex";
+
+    // 只有釘住時才畫外框,滑鼠滑過不畫,免得整排一直閃
+    clearPinnedOutline();
+    if(toolbarPinned) slotEl.classList.add("pinned");
 
     // 定位到車廂正上方,並確保不會超出畫面左右
     const r = slotEl.getBoundingClientRect();
@@ -4748,6 +4760,22 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     areaEl.appendChild(wrap);
     renderCargoTable();
     renderContainerEditor();   // 編成有變動時,貨櫃面板跟著更新
+    restorePinnedToolbar();
+  }
+
+  // 刪除／複製／移動之後,把操作列重新釘到指定的車廂上。
+  // 這樣連續刪除時不用重新點選,游標停在原地就能一直按 ✕。
+  function restorePinnedToolbar(){
+    if(pendingPinIdx < 0) return;
+    const ri = pendingPinIdx;
+    pendingPinIdx = -1;
+    const entry = state.cars[ri];
+    if(!entry) return;
+    const el = areaEl.querySelector(`.car-slot[data-ri="${ri}"]`);
+    if(!el) return;
+    const displayIdx = state.reversed ? (state.cars.length - 1 - ri) : ri;
+    toolbarPinned = true;
+    showCarToolbar(el, ri, displayIdx, !vehiclesById[entry.vehicleId]);
   }
 
   // 把目前編成表格裡的貨號與廠商,存進各車輛的預設資料。
@@ -4879,6 +4907,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const j = idx + dir;
     if(j < 0 || j >= state.cars.length) return;
     [state.cars[idx], state.cars[j]] = [state.cars[j], state.cars[idx]];
+    if(toolbarPinned && toolbarCar === idx) pendingPinIdx = j;   // 跟著移動的那節走
     renderFormation();
   }
   // 翻轉:對使用者來說只有一顆按鈕,背後自動判斷要怎麼做——
@@ -4927,15 +4956,24 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     }else{
       entry.flipped = !entry.flipped;
     }
+    if(toolbarPinned && toolbarCar === idx) pendingPinIdx = idx;   // 翻轉後維持釘在同一節
     renderFormation();
   }
-  function deleteCar(idx){ state.cars.splice(idx, 1); renderFormation(); }
+  function deleteCar(idx){
+    const wasPinned = toolbarPinned && toolbarCar === idx;
+    state.cars.splice(idx, 1);
+    // 原本釘住的那節被刪掉時,改釘遞補上來的那一節;
+    // 刪到最後一節就往前退一格,沒車了才收起操作列
+    if(wasPinned && state.cars.length) pendingPinIdx = Math.min(idx, state.cars.length - 1);
+    renderFormation();
+  }
   // 複製一節車廂:方向、分類、貨號、貨櫃裝載全部照抄,插在原本那節後面
   function duplicateCar(idx){
     const src = state.cars[idx];
     if(!src) return;
     const copy = JSON.parse(JSON.stringify(src));
     state.cars.splice(idx + 1, 0, copy);
+    if(toolbarPinned && toolbarCar === idx) pendingPinIdx = idx + 1;   // 釘到新複製的那節
     renderFormation();
   }
   bindRole("clear", () => { state.cars = []; renderFormation(); });
