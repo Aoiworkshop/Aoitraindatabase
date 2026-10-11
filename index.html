@@ -1003,7 +1003,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261012-1810";
+  const APP_BUILD = "20261012-1940";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -3265,7 +3265,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         if(!name) return;
         const trimmed = name.trim();
         if(!trimmed) return;
-        if(parentNode[trimmed]){ alert("這個名稱已經存在了。"); return; }
+        if(parentNode[trimmed]){ toast("這個名稱已經存在了。", "err"); return; }
         parentNode[trimmed] = {};
         await saveCategoryTree();
         renderCategoryNav();
@@ -3285,7 +3285,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           if(!trimmed || trimmed === selfKey) return;
           let grandParent = CATEGORY_TREE;
           for(let i = 0; i < navPath.length - 1; i++) grandParent = grandParent[navPath[i]];
-          if(grandParent[trimmed]){ alert("這個名稱已經存在了。"); return; }
+          if(grandParent[trimmed]){ toast("這個名稱已經存在了。", "err"); return; }
           grandParent[trimmed] = grandParent[selfKey];
           delete grandParent[selfKey];
           navPath[navPath.length - 1] = trimmed;
@@ -3486,7 +3486,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   const batchTagPicker = createCatPicker("#batch-tag-picker", "#batch-tag-tags", null);
 
   $("#btn-apply-batch-tag").addEventListener("click", async () => {
-    if(batchTagPicker.cats.length === 0){ alert("請先選至少一個分類標籤。"); return; }
+    if(batchTagPicker.cats.length === 0){
+      toast("請先選至少一個分類標籤。", "err");
+      $("#batch-tag-picker").scrollIntoView({ block: "center" });
+      return;
+    }
     let changed = 0;
     selectedVehicleIds.forEach(id => {
       const v = vehiclesById[id];
@@ -3498,7 +3502,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     $("#batch-tag-panel").style.display = "none";
     selectedVehicleIds.clear();
     renderLibrary();
-    alert(`已把 ${changed} 輛車的分類標籤覆寫成這一組。`);
+    toast(`已把 ${changed} 輛車的分類標籤覆寫成這一組。`);
   });
   $("#btn-cancel-batch-tag").addEventListener("click", () => {
     $("#batch-tag-panel").style.display = "none";
@@ -3522,8 +3526,17 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
   $("#s-save").addEventListener("click", async () => {
     const modelCode = $("#s-model").value.trim();
-    if(!modelCode){ alert("請至少輸入車輛型式。"); return; }
-    if(!singleFileDataUrl){ alert("請選擇一張車輛圖片。"); return; }
+    if(!modelCode){
+      // 提示在畫面底部,所以同時把游標帶到該填的欄位,不會找不到問題在哪
+      toast("請至少輸入車輛型式。", "err");
+      $("#s-model").focus(); $("#s-model").scrollIntoView({ block: "center" });
+      return;
+    }
+    if(!singleFileDataUrl){
+      toast("請選擇一張車輛圖片。", "err");
+      $("#single-file").scrollIntoView({ block: "center" });
+      return;
+    }
     const series = $("#s-series").value.trim();
     const widthCm = parseFloat($("#s-width").value) || 3.8;
     const side = $("#s-side").value.trim().toUpperCase();
@@ -3658,7 +3671,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   $("#b-save").addEventListener("click", async () => {
     const cats = batchPicker.cats.slice();
     const valid = batchItems.filter(Boolean);
-    if(valid.length === 0){ alert("沒有可匯入的圖片。"); return; }
+    if(valid.length === 0){ toast("沒有可匯入的圖片。", "err"); return; }
     valid.forEach(item => {
       vehicles.push({
         id: "v_" + Date.now() + "_" + Math.random().toString(36).slice(2,7),
@@ -3676,7 +3689,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     $("#batch-list").innerHTML = "";
     $("#batch-files").value = "";
     $("#b-save").disabled = true;
-    alert(`已匯入 ${valid.length} 輛車到資料庫。`);
+    toast(`已匯入 ${valid.length} 輛車到資料庫。`);
   });
 
   // ---------- vehicle DB backup ----------
@@ -3692,14 +3705,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const file = e.target.files[0];
     if(!file) return;
     const reader = new FileReader();
-    reader.onerror = () => alert("讀取檔案失敗,請再試一次。");
+    reader.onerror = () => toast("讀取檔案失敗，請再試一次。", "err");
     reader.onload = async () => {
       let payload;
       try{ payload = JSON.parse(reader.result); }
-      catch(err){ alert("匯入失敗,這不是有效的JSON檔案。"); return; }
+      catch(err){ toast("匯入失敗，這不是有效的JSON檔案。", "err"); return; }
       const incoming = payload.vehicles || [];
       if(!Array.isArray(incoming) || incoming.length === 0){
-        alert("這個檔案裡沒有車輛資料(找不到 vehicles 欄位)。");
+        toast("這個檔案裡沒有車輛資料（找不到 vehicles 欄位）。", "err");
         return;
       }
       if(!confirm(`目前車輛資料庫有 ${vehicles.length} 輛車。匯入後會整個覆蓋成檔案中的 ${incoming.length} 輛車,確定要繼續嗎？`)) return;
@@ -3710,12 +3723,12 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       try{
         await persistVehicles();
         renderLibrary();
-        alert(`匯入完成，共 ${incoming.length} 輛車。`);
+        toast(`匯入完成，共 ${incoming.length} 輛車。`);
       }catch(err){
         vehicles = backup;
         reindexVehicles();
         renderLibrary();
-        alert("匯入失敗：" + (err && err.message ? err.message : err));
+        toast("匯入失敗：" + (err && err.message ? err.message : err), "err");
       }
     };
     reader.readAsText(file);
@@ -3886,7 +3899,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   // 匯出選取的車輛(可一輛或多輛)
   function exportSelectedVehicles(){
     const list = vehicles.filter(v => selectedVehicleIds.has(v.id));
-    if(!list.length){ alert("請先在車輛清單選取要匯出的車輛。"); return; }
+    if(!list.length){ toast("請先在車輛清單選取要匯出的車輛。", "err"); return; }
     const payload = {
       格式: SHARE_VEHICLE, 版本: 1,
       匯出時間: new Date().toISOString(), 來源版本: APP_BUILD,
@@ -3904,7 +3917,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   // 匯出目前編輯中的編成
   function exportCurrentFormation(){
-    if(!state.cars.length){ alert("目前沒有可以匯出的編成。"); return; }
+    if(!state.cars.length){ toast("目前沒有可以匯出的編成。", "err"); return; }
     downloadShare(buildFormationShare(state), shareFileName("編成分享", buildTitleText().replace("●","")));
   }
   function buildFormationShare(data){
@@ -3944,11 +3957,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     let payload;
     try{
       payload = JSON.parse(await file.text());
-    }catch(e){ alert("這不是有效的分享檔(JSON 格式錯誤)。"); return; }
+    }catch(e){ toast("這不是有效的分享檔（JSON 格式錯誤）。", "err"); return; }
     const kind = payload["格式"] || payload.format;
     if(kind === SHARE_VEHICLE) return importSharedVehicles(payload);
     if(kind === SHARE_FORMATION) return importSharedFormation(payload);
-    alert("無法辨識這個檔案。\n請選擇由「匯出車輛／匯出編成」產生的分享檔。");
+    toast("無法辨識這個檔案。\n請選擇由「匯出車輛／匯出編成」產生的分享檔。", "err", 5000);
   }
 
   const SHARE_FIELDS = [
@@ -3961,7 +3974,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   async function importSharedVehicles(payload){
     const incoming = payload["資料"] || payload.data || [];
-    if(!Array.isArray(incoming) || !incoming.length){ alert("這個檔案裡沒有車輛資料。"); return; }
+    if(!Array.isArray(incoming) || !incoming.length){ toast("這個檔案裡沒有車輛資料。", "err"); return; }
     const changes = [], notFound = [];
     incoming.forEach(ref => {
       const v = findVehicleByRef(ref);
@@ -3976,8 +3989,17 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     });
 
     if(!changes.length){
-      alert(`比對完成:${incoming.length} 筆車輛資料都跟你目前的資料相同,沒有需要更新的地方。` +
-            (notFound.length ? `\n\n有 ${notFound.length} 筆在你的資料庫裡找不到:\n・${notFound.slice(0,8).join("\n・")}` : ""));
+      if(notFound.length){
+        showReport("比對完成：沒有需要更新的地方", [
+          `${incoming.length} 筆車輛資料都跟你目前的資料相同。`,
+          "",
+          `不過有 ${notFound.length} 筆在你的資料庫裡找不到：`,
+          "・" + notFound.slice(0, 8).join("\n・"),
+          notFound.length > 8 ? `…等共 ${notFound.length} 筆` : null
+        ]);
+      }else{
+        toast(`比對完成：${incoming.length} 筆車輛資料都跟你目前的資料相同，沒有需要更新的地方。`, "", 3600);
+      }
       return;
     }
     const fmt = x => Array.isArray(x) ? (x.join("／") || "(空)") : (String(x ?? "").trim() || "(空)");
@@ -4000,7 +4022,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     reindexVehicles();
     await persistVehicles();
     renderLibrary();
-    alert(`已更新 ${changes.length} 輛車的資訊。`);
+    toast(`已更新 ${changes.length} 輛車的資訊。`);
   }
 
   // 用「標題 + 車輛排列(含翻轉、屬性、貨號)」當作編成的識別特徵,
@@ -4027,7 +4049,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   async function importSharedFormation(payload){
     const body = payload["資料"] || payload.data || {};
     const data = body["編成"] || body.formation;
-    if(!data || !Array.isArray(data.cars)){ alert("這個檔案裡沒有編成資料。"); return; }
+    if(!data || !Array.isArray(data.cars)){ toast("這個檔案裡沒有編成資料。", "err"); return; }
     const refs = body["用到的車輛"] || body.vehicles || [];
     const refById = {};
     refs.forEach(r => { if(r && r.id) refById[r.id] = r; });
@@ -4076,9 +4098,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     updateEditingHint();
     setRoleDisabled("delete", true);
     switchTab("builder");
-    alert(state.id
-      ? "已載入到「編成製作」。確認內容後按「儲存／更新到編成資料庫」,會覆蓋原本那一筆編成。"
-      : "已載入到「編成製作」,確認內容後按「儲存／更新到編成資料庫」就會存成一筆新編成。");
+    toast(state.id
+      ? "已載入到「編成製作」\n確認內容後按「儲存／更新到編成資料庫」，會覆蓋原本那一筆編成。"
+      : "已載入到「編成製作」\n確認內容後按「儲存／更新到編成資料庫」就會存成一筆新編成。", "", 5200);
   }
 
   async function exportWebData(){
@@ -4124,20 +4146,20 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
       const mb = n => (n / 1024 / 1024).toFixed(2);
       setTimeout(() => {
-        alert(
-          `已產生兩個檔案：\n` +
-          `・vehicles.json（${mb(vehBlob.size)} MB，${slimVehicles.length} 輛車）\n` +
-          `・formations.json（${mb(fmBlob.size)} MB，${idx.length} 筆編成）\n\n` +
-          `上傳到網站時的資料夾結構：\n` +
-          `  index.html\n` +
-          `  data/vehicles.json\n` +
-          `  data/formations.json\n` +
-          `  01_車輛資料/…（整個圖片資料夾）\n` +
-          `  00_必要資料/…（屬性徽章圖片，字型不用上傳）`
-        );
+        showReport("已產生兩個檔案", [
+          `・vehicles.json（${mb(vehBlob.size)} MB，${slimVehicles.length} 輛車）`,
+          `・formations.json（${mb(fmBlob.size)} MB，${idx.length} 筆編成）`,
+          "",
+          "上傳到網站時的資料夾結構：",
+          "　index.html",
+          "　data/vehicles.json",
+          "　data/formations.json",
+          "　01_車輛資料/…（整個圖片資料夾）",
+          "　00_必要資料/…（屬性徽章圖片，字型不用上傳）"
+        ], "", 25000);
       }, 800);
     }catch(e){
-      alert("匯出失敗：" + (e && e.message ? e.message : e));
+      toast("匯出失敗：" + (e && e.message ? e.message : e), "err");
     }finally{
       btn.disabled = false; btn.textContent = oldText;
     }
@@ -4170,7 +4192,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         // 表單有填東西才存,避免誤觸存出一筆空白車輛
         const hasContent = ($("#s-model").value || "").trim() || editingVehicleId;
         if(btn && hasContent) btn.click();
-        else toast("車輛表單是空的,沒有東西可以儲存", "warn");
+        else toast("車輛表單是空的，沒有東西可以儲存。", "warn");
       }else if(currentTab === "search" && pickedFormationId){
         exportFormationById(pickedFormationId);   // 有選取編成時改成輸出那一筆的PNG
       }else{
@@ -4243,7 +4265,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   });
 
   $("#btn-export-vehicles-excel").addEventListener("click", () => {
-    if(vehicles.length === 0){ alert("車輛資料庫目前是空的,沒有東西可以匯出。"); return; }
+    if(vehicles.length === 0){ toast("車輛資料庫目前是空的，沒有東西可以匯出。", "err"); return; }
     const rows = vehicles.map(v => {
       const row = {};
       EXCEL_COLS.forEach(([key, label]) => {
@@ -4270,7 +4292,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         const ws = wb.Sheets[wb.SheetNames[0]];
         rows = XLSX.utils.sheet_to_json(ws, { defval: "" });
       }catch(err){
-        alert("讀取Excel失敗,請確認檔案格式:" + err);
+        toast("讀取Excel失敗，請確認檔案格式：" + err, "err");
         return;
       }
       const idLabel = EXCEL_COLS.find(c => c[0] === "id")[1];
@@ -4307,7 +4329,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       });
 
       if(updated === 0){
-        alert("沒有任何一列比對到現有的車輛ID,可能是Excel裡的id欄位被改動過或清空了,已取消匯入。");
+        toast("沒有任何一列比對到現有的車輛ID，可能是Excel裡的id欄位被改動過或清空了，已取消匯入。", "err", 6000);
         e.target.value = "";
         return;
       }
@@ -4318,7 +4340,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       reindexVehicles();
       await persistVehicles();
       renderLibrary();
-      alert(`已更新 ${updated} 輛車的文字欄位。`);
+      toast(`已更新 ${updated} 輛車的文字欄位。`);
     };
     reader.readAsArrayBuffer(file);
     e.target.value = "";
@@ -5314,7 +5336,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   // 把目前編成表格裡的貨號與廠商,存進各車輛的預設資料。
   // 用按鈕觸發而不是自動記錄,才不會把編成裡的臨時設定寫進資料庫。
   $("#btn-remember-products").addEventListener("click", async () => {
-    if(!state.cars.length){ alert("編成裡還沒有車廂。"); return; }
+    if(!state.cars.length){ toast("編成裡還沒有車廂。", "err"); return; }
     const codeAdds = [], makerChanges = [];
     const seen = new Set();
     state.cars.forEach(c => {
@@ -5334,7 +5356,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     });
 
     if(!codeAdds.length && !makerChanges.length){
-      alert("沒有需要記錄的新資訊。\n（貨號已經記錄過,或分類填的是套組類,套組不會存成預設）");
+      toast("沒有需要記錄的新資訊。\n（貨號已經記錄過，或分類填的是套組類，套組不會存成預設）", "", 4200);
       return;
     }
     const lines = [];
@@ -5604,7 +5626,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   // 若複製後不儲存就離開,也不會留下任何東西。
   bindRole("duplicate", () => {
     if(state.cars.length === 0 && !buildTitleText().replace("●", "").trim()){
-      alert("目前沒有可以複製的內容。");
+      toast("目前沒有可以複製的內容。", "err");
       return;
     }
     state = JSON.parse(JSON.stringify(state));
@@ -5617,7 +5639,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   });
 
   bindRole("save", async () => {
-    if(state.cars.length === 0){ alert("請先加入至少一節車廂再儲存。"); return; }
+    if(state.cars.length === 0){ toast("請先加入至少一節車廂再儲存。", "err"); return; }
     if(!state.id) state.id = "f_" + Date.now();
     try{
       await storage.set("formations:" + state.id, JSON.stringify(state), false);
@@ -5699,7 +5721,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       document.fonts.add(ff);
       uploadedTitleFont = "UserTitleFont";
       $("#font-status-title").textContent = "已載入:" + file.name;
-    }catch(err){ alert("字型載入失敗:" + err); }
+    }catch(err){ toast("字型載入失敗：" + err, "err"); }
   });
   $("#font-file-carlabel").addEventListener("change", async (e) => {
     const file = e.target.files[0];
@@ -5712,7 +5734,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       uploadedCarLabelFont = "UserCarLabelFont";
       $("#font-status-carlabel").textContent = "已載入:" + file.name;
       renderFormation();
-    }catch(err){ alert("字型載入失敗:" + err); }
+    }catch(err){ toast("字型載入失敗：" + err, "err"); }
   });
   // 量出一段文字「實際墨跡」的範圍(相對於繪製起點與基線)。
   // 做法:在暫存畫布上真的畫一次,再掃描有顏色的像素找出上下左右邊界。
@@ -5776,7 +5798,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   // ---------- export PNG ----------
   bindRole("export", () => {
-    if(state.cars.length === 0){ alert("請先組出編成再輸出。"); return; }
+    if(state.cars.length === 0){ toast("請先組出編成再輸出。", "err"); return; }
     exportPng();
   });
   async function exportPng(){
@@ -5815,7 +5837,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       }))
       .filter(c => c.v);
     const n = cars.length;
-    if(n === 0){ alert("編成中的車輛都已從資料庫移除,無法輸出。"); return; }
+    if(n === 0){ toast("編成中的車輛都已從資料庫移除，無法輸出。", "err", 5000); return; }
 
     // 依每輛車實際寬度(公分)算出每節車廂的實際寬度與左邊界(不是固定值 × 編號那種算法),
     // 這樣才能容納「二軸貨車」這種跟一般車廂寬度不同的車輛
@@ -6195,7 +6217,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
             const w = await fh.createWritable();
             await w.write(blob);
             await w.close();
-            alert(`已輸出到「${pngDirHandle.name}」資料夾：\n${fileName}`);
+            toast(`已輸出到「${pngDirHandle.name}」資料夾\n${fileName}`, "", 3600);
             return;
           }catch(e){
             console.warn("寫入編成圖片存檔資料夾失敗,改用下載", e);
@@ -6218,9 +6240,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           const murl = URL.createObjectURL(blob);
           const win = window.open(murl, "_blank");
           if(!win){
-            alert("瀏覽器擋住了新分頁，請允許彈出視窗後再試一次。");
+            toast("瀏覽器擋住了新分頁，請允許彈出視窗後再試一次。", "err", 5000);
           }else{
-            alert("圖片已開在新分頁，長按圖片即可儲存到相簿。");
+            toast("圖片已開在新分頁，長按圖片即可儲存到相簿。", "", 4200);
           }
           setTimeout(() => URL.revokeObjectURL(murl), 60000);
           return;
@@ -6454,14 +6476,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const file = e.target.files[0];
     if(!file) return;
     const reader = new FileReader();
-    reader.onerror = () => alert("讀取檔案失敗,請再試一次。");
+    reader.onerror = () => toast("讀取檔案失敗，請再試一次。", "err");
     reader.onload = async () => {
       let payload;
       try{ payload = JSON.parse(reader.result); }
-      catch(err){ alert("匯入失敗,這不是有效的JSON檔案。"); return; }
+      catch(err){ toast("匯入失敗，這不是有效的JSON檔案。", "err"); return; }
       const incoming = payload.formationsIndex || [];
       if(!Array.isArray(incoming) || incoming.length === 0){
-        alert("這個檔案裡沒有編成資料(找不到 formationsIndex 欄位)。");
+        toast("這個檔案裡沒有編成資料（找不到 formationsIndex 欄位）。", "err");
         return;
       }
       if(!confirm(`匯入後會整個覆蓋目前的編成資料庫,改成檔案中的 ${incoming.length} 筆編成,確定要繼續嗎？`)) return;
@@ -6476,14 +6498,15 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         await syncFormationsToFolder();
         resetState();
         refreshFormationResults();
-        alert(`匯入完成，共 ${incoming.length} 筆編成。`);
+        toast(`匯入完成，共 ${incoming.length} 筆編成。`);
       }catch(err){
         resetState();
         refreshFormationResults();
         const quotaLike = err && (err.name === "QuotaExceededError" || /quota|storage|exceeded/i.test(String(err)));
-        alert(quotaLike
+        toast(quotaLike
           ? `這台裝置的瀏覽器儲存空間不足，只成功匯入了 ${done} / ${incoming.length} 筆編成。`
-          : `匯入時發生錯誤（已完成 ${done} / ${incoming.length} 筆）：` + (err && err.message ? err.message : err));
+          : `匯入時發生錯誤（已完成 ${done} / ${incoming.length} 筆）：` + (err && err.message ? err.message : err),
+          "err", 7000);
       }
     };
     reader.readAsText(file);
