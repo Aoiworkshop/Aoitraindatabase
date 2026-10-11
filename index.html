@@ -131,6 +131,33 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   #car-toolbar button.del{color:var(--rail-red);border-color:var(--rail-red);}
   /* 釘住操作列的那一節,套上黑色圓角外框,一眼看出現在的操作對象 */
   .car-slot.pinned{box-shadow:0 0 0 2px var(--ink);border-radius:7px;}
+  /* 浮動提示:取代儲存成功時的彈出視窗,會自動消失不用按確認 */
+  #toast-area{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:10050;
+    display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none;}
+  .toast{min-width:150px;max-width:min(420px,90vw);padding:10px 18px;border-radius:999px;
+    background:#1a1a1a;color:#fff;font-size:13px;line-height:1.5;text-align:center;
+    box-shadow:0 4px 18px rgba(0,0,0,.26);opacity:0;transform:translateY(8px);
+    transition:opacity .18s,transform .18s;white-space:pre-line;}
+  .toast.show{opacity:1;transform:translateY(0);}
+  .toast.err{background:var(--rail-red);}
+  .toast.warn{background:#b26a00;}
+  /* 處理結果卡:內容多到一行講不完時用這個,會自動消失,滑鼠移上去就暫停倒數 */
+  .report{pointer-events:auto;min-width:260px;max-width:min(460px,92vw);padding:12px 14px 10px;
+    border-radius:10px;background:#1a1a1a;color:#fff;font-size:12.5px;line-height:1.65;
+    text-align:left;box-shadow:0 6px 24px rgba(0,0,0,.3);opacity:0;transform:translateY(8px);
+    transition:opacity .18s,transform .18s;overflow:hidden;}
+  .report.show{opacity:1;transform:translateY(0);}
+  .report.err{background:var(--rail-red);}
+  .report.warn{background:#9a5a00;}
+  .report-head{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+  .report-head b{flex:1;font-size:13px;}
+  .report-head button{flex:0 0 auto;width:22px;height:22px;padding:0;border:0;border-radius:5px;
+    background:rgba(255,255,255,.16);color:#fff;font-size:13px;line-height:1;cursor:pointer;}
+  .report-head button:hover{background:rgba(255,255,255,.3);}
+  .report-body{white-space:pre-line;max-height:46vh;overflow:auto;}
+  .report-bar{height:2px;margin:9px -14px -10px;background:rgba(255,255,255,.5);
+    transform-origin:left center;transition:transform linear;}
+  .report:hover .report-bar{transition:none;}
   @media (max-width: 1050px){
     #car-toolbar button{width:38px;height:38px;font-size:17px;}
   }
@@ -211,6 +238,14 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   .formation-card .fc-meta{font-size:11.5px;color:var(--muted);margin-bottom:6px;}
   .formation-card .fc-cars{font-size:11.5px;color:#444;line-height:1.6;}
   .formation-card .fc-actions{display:flex;flex-direction:column;gap:6px;flex-shrink:0;}
+  /* 點一下選取,之後可以用鍵盤操作這一筆(Ctrl+S 輸出PNG、Delete 刪除) */
+  .formation-card{cursor:pointer;transition:box-shadow .12s,border-color .12s;}
+  .formation-card:hover{border-color:#b9b9b4;}
+  .formation-card.picked{border-color:var(--ink);box-shadow:0 0 0 2px var(--ink);cursor:default;}
+  .formation-card.picked .fc-title::before{content:"▸ ";color:var(--accent);}
+  #formation-key-hint{display:none;font-size:11px;color:var(--muted);background:#f6f7f4;
+    border:1px solid var(--line);border-radius:6px;padding:6px 10px;margin-bottom:8px;line-height:1.6;}
+  #formation-key-hint b{color:var(--ink);font-family:ui-monospace,Menlo,Consolas,monospace;}
   /* 編成預覽:車廂圖片排成一列,太長時在卡片內左右捲動,不會把按鈕擠出去 */
   /* 貨櫃裝載面板:固定在編成組成下方,槽位水平排列,窄螢幕可左右捲動 */
   #container-editor{border:1px solid var(--line);border-radius:8px;background:#fff;
@@ -497,7 +532,10 @@ if(location.protocol === "http:" || location.protocol === "https:"){
             <div id="s-cat-picker" style="border:1px solid var(--line);border-radius:6px;padding:10px;margin-bottom:8px;background:#fafaf8;"></div>
             <div class="tags" id="s-cat-tags"></div>
             <div class="field" style="margin-bottom:12px;"><label>備註</label><input id="s-note" placeholder="選填"></div>
-            <button class="btn" id="s-save">加入資料庫</button>
+            <div id="s-rename-row" style="display:none;background:#f6f7f4;border:1px solid var(--line);border-radius:6px;padding:8px 10px;margin-bottom:10px;line-height:1.6;font-size:11px;color:var(--muted);">
+              <div id="s-rename-preview"></div>
+            </div>
+            <button class="btn" id="s-save" title="Ctrl+S">加入資料庫</button>
           </div>
 
           <div id="batch-mode" style="display:none;">
@@ -530,7 +568,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div class="toolbar">
         <button class="btn secondary" data-role="new">＋ 新編成</button>
         <button class="btn secondary" data-role="duplicate">⧉ 複製編成</button>
-        <button class="btn" data-role="save">儲存／更新到編成資料庫</button>
+        <button class="btn" data-role="save" title="Ctrl+S">儲存／更新到編成資料庫</button>
         <button class="btn danger" data-role="delete" disabled>刪除這個編成</button>
         <span style="flex:1"></span>
         <button class="btn secondary" data-role="clear">清空車廂</button>
@@ -541,7 +579,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
 
       <div style="display:flex;align-items:center;gap:10px;margin:0 0 8px 2px;">
         <h2 style="font-size:12px;letter-spacing:0.06em;color:var(--muted);text-transform:uppercase;margin:0;">1. 編成組成</h2>
-        <button class="btn small secondary" id="btn-reverse-formation" type="button" title="整列頭尾對調：車廂順序、朝向、起訖站都會左右互換（只影響輸出，不改變儲存的資料）">⇄ 整列反轉</button>
+        <button class="btn small secondary" id="btn-reverse-formation" type="button" title="整列頭尾對調：車廂順序、朝向、起訖站都會左右互換（Ctrl+Shift+M）">⇄ 整列反轉</button>
         <span id="reverse-hint" style="font-size:11px;color:var(--accent);display:none;">目前為反轉顯示</span>
         <button class="btn small danger" id="btn-remove-missing" type="button" style="display:none;">移除失效車廂</button>
       </div>
@@ -656,7 +694,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div class="toolbar" style="border-top:1px solid var(--line);padding-top:16px;">
         <button class="btn secondary" data-role="new">＋ 新編成</button>
         <button class="btn secondary" data-role="duplicate">⧉ 複製編成</button>
-        <button class="btn" data-role="save">儲存／更新到編成資料庫</button>
+        <button class="btn" data-role="save" title="Ctrl+S">儲存／更新到編成資料庫</button>
         <button class="btn danger" data-role="delete" disabled>刪除這個編成</button>
         <span style="flex:1"></span>
         <button class="btn secondary" data-role="clear">清空車廂</button>
@@ -687,6 +725,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div id="formation-count" style="font-size:11.5px;color:var(--muted);margin-top:8px;"></div>
     </div>
     <div class="search-body">
+      <div id="formation-key-hint"></div>
       <div id="formation-results"></div>
     </div>
   </div>
@@ -964,7 +1003,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261008-1318";
+  const APP_BUILD = "20261012-1810";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -1037,6 +1076,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
   function updateVehicleFolderStatus(){
     setFolderBadge($("#vehicle-folder-status"), !!vehicleDirHandle, vehicleDirHandle ? vehicleDirHandle.name : "");
+    // 綁定狀態會決定「儲存時要不要一併改檔名」,所以提示也要跟著更新
+    if(typeof updateRenamePreview === "function") updateRenamePreview();
   }
   function updateFormationFolderStatus(){
     setFolderBadge($("#formation-folder-status"), !!formationDirHandle, formationDirHandle ? formationDirHandle.name : "");
@@ -1062,14 +1103,15 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   $("#btn-pick-vehicle-folder").addEventListener("click", async () => {
-    if(!FS_SUPPORTED){ alert("您的瀏覽器不支援資料夾綁定功能,建議使用電腦版Chrome或Edge,或繼續用「匯出/匯入車輛庫」手動備份。"); return; }
+    if(!FS_SUPPORTED){ toast("這個瀏覽器不支援資料夾綁定，建議用電腦版 Chrome 或 Edge，或繼續用「匯出／匯入車輛庫」手動備份。", "err", 6000); return; }
     try{
       const handle = await window.showDirectoryPicker({ id: "vehicle-folder", mode: "readwrite" });
       const perm = await handle.requestPermission({ mode: "readwrite" });
-      if(perm !== "granted"){ alert("沒有取得資料夾讀寫權限,綁定取消。"); return; }
+      if(perm !== "granted"){ toast("沒有取得資料夾讀寫權限，綁定取消。", "err"); return; }
       await bindVehicleFolder(handle, true);
+      toast(`已綁定車輛資料夾「${handle.name}」・${vehicles.length} 輛車`);
     }catch(e){
-      if(e.name !== "AbortError") alert("選擇資料夾失敗:" + e);
+      if(e.name !== "AbortError") toast("選擇資料夾失敗：" + e, "err");
     }
   });
 
@@ -1095,14 +1137,15 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   $("#btn-pick-formation-folder").addEventListener("click", async () => {
-    if(!FS_SUPPORTED){ alert("您的瀏覽器不支援資料夾綁定功能,建議使用電腦版Chrome或Edge,或繼續用「匯出/匯入編成資料庫」手動備份。"); return; }
+    if(!FS_SUPPORTED){ toast("這個瀏覽器不支援資料夾綁定，建議用電腦版 Chrome 或 Edge，或繼續用「匯出／匯入編成資料庫」手動備份。", "err", 6000); return; }
     try{
       const handle = await window.showDirectoryPicker({ id: "formation-folder", mode: "readwrite" });
       const perm = await handle.requestPermission({ mode: "readwrite" });
-      if(perm !== "granted"){ alert("沒有取得資料夾讀寫權限,綁定取消。"); return; }
+      if(perm !== "granted"){ toast("沒有取得資料夾讀寫權限，綁定取消。", "err"); return; }
       await bindFormationFolder(handle, true);
+      toast(`已綁定編成資料夾「${handle.name}」`);
     }catch(e){
-      if(e.name !== "AbortError") alert("選擇資料夾失敗:" + e);
+      if(e.name !== "AbortError") toast("選擇資料夾失敗：" + e, "err");
     }
   });
 
@@ -1180,11 +1223,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   async function pickRootFolder(){
-    if(!FS_SUPPORTED){ alert("您的瀏覽器不支援資料夾綁定功能,建議使用電腦版Chrome或Edge,或用下方各分頁的個別按鈕手動指定。"); return; }
+    if(!FS_SUPPORTED){ toast("這個瀏覽器不支援資料夾綁定，建議用電腦版 Chrome 或 Edge，或用下方各分頁的個別按鈕手動指定。", "err", 6000); return; }
     try{
       const rootHandle = await window.showDirectoryPicker({ id: "root-folder", mode: "readwrite" });
       const perm = await rootHandle.requestPermission({ mode: "readwrite" });
-      if(perm !== "granted"){ alert("沒有取得資料夾讀寫權限,綁定取消。"); return; }
+      if(perm !== "granted"){ toast("沒有取得資料夾讀寫權限，綁定取消。", "err"); return; }
       await idbSet("rootDirHandle", rootHandle);
 
       const results = [];
@@ -1205,9 +1248,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         }
       }
       updateRootFolderStatus();
-      alert("工作資料夾設定結果：\n" + results.join("\n"));
+      const bad = results.filter(r => r.indexOf("✕") === 0).length;
+      showReport(bad ? `工作資料夾：${results.length - bad} 項成功、${bad} 項找不到` : "工作資料夾已設定完成",
+                 results, bad ? "warn" : "");
     }catch(e){
-      if(e.name !== "AbortError") alert("選擇資料夾失敗:" + e);
+      if(e.name !== "AbortError") toast("選擇資料夾失敗：" + e, "err");
     }
   }
   $("#btn-pick-root-folder").addEventListener("click", pickRootFolder);
@@ -1369,14 +1414,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   $("#btn-pick-assets-folder").addEventListener("click", async () => {
-    if(!FS_SUPPORTED){ alert("您的瀏覽器不支援資料夾綁定功能,建議使用電腦版Chrome或Edge,或繼續用「手動上傳（單次）」。"); return; }
+    if(!FS_SUPPORTED){ toast("這個瀏覽器不支援資料夾綁定，建議用電腦版 Chrome 或 Edge，或繼續用「手動上傳（單次）」。", "err", 6000); return; }
     try{
       const handle = await window.showDirectoryPicker({ id: "assets-folder", mode: "read" });
       const perm = await handle.requestPermission({ mode: "read" });
-      if(perm !== "granted"){ alert("沒有取得資料夾讀取權限,綁定取消。"); return; }
+      if(perm !== "granted"){ toast("沒有取得資料夾讀取權限，綁定取消。", "err"); return; }
       await bindAssetsFolder(handle);
     }catch(e){
-      if(e.name !== "AbortError") alert("選擇資料夾失敗:" + e);
+      if(e.name !== "AbortError") toast("選擇資料夾失敗：" + e, "err");
     }
   });
 
@@ -1553,26 +1598,55 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     }
     reindexVehicles();
   }
-  async function persistVehicles(){
-    await storage.set(VEHICLES_KEY, JSON.stringify(vehicles), false);
+  // 儲存車輛資料。
+  // 以前每改一筆就把整個資料庫(含圖片,數 MB)重寫三次——瀏覽器資料庫一次、
+  // 車輛資料夾一次、網站 data 一次——所以按下儲存要等很久。
+  // 現在只有瀏覽器資料庫是同步寫入(資料的正本),另外兩份檔案改成背景延後寫,
+  // 連續編輯多筆時也只會在最後寫一次。
+  let folderSyncTimer = null;
+  let folderSyncPending = false;
+  async function flushVehicleFolders(){
+    folderSyncPending = false;
+    const snapshot = vehicles.slice();   // 先定住當下的內容,背景寫入期間再改也不會混到
     if(vehicleDirHandle){
-      try{ await writeJsonFile(vehicleDirHandle, "vehicles.json", { vehicles, savedAt: new Date().toISOString() }); }
-      catch(e){ console.warn("寫入車輛資料夾失敗", e); }
+      try{ await writeJsonFile(vehicleDirHandle, "vehicles.json", { vehicles: snapshot, savedAt: new Date().toISOString() }); }
+      catch(e){ console.warn("寫入車輛資料夾失敗", e); toast("車輛資料夾寫入失敗,資料仍保存在瀏覽器裡。", "warn", 3600); }
     }
     // 綁定的編成資料夾就是網站的 data 時,順便更新網站用的輕量版車輛資料。
     // 這樣改完車輛不必再手動按一次「匯出上線資料」,直接 Push 就是最新的。
     if(formationDirHandle && formationDirHandle.name === "data"){
       try{
-        const slim = vehicles.map(v => {
+        const slim = snapshot.map(v => {
           const o = {};
           Object.keys(v).forEach(k => { if(k !== "img") o[k] = v[k]; });
           return o;
         });
         await writeJsonFile(formationDirHandle, "vehicles.json",
           { exportedAt: new Date().toISOString(), vehicles: slim });
-      }catch(e){ console.warn("寫入網站資料(data)失敗", e); }
+      }catch(e){ console.warn("寫入網站資料(data)失敗", e); toast("網站資料(data)寫入失敗。", "warn", 3600); }
     }
   }
+  function scheduleFolderSync(){
+    if(!vehicleDirHandle && !formationDirHandle) return;
+    folderSyncPending = true;
+    if(folderSyncTimer) clearTimeout(folderSyncTimer);
+    folderSyncTimer = setTimeout(() => { folderSyncTimer = null; flushVehicleFolders(); }, 1200);
+  }
+  async function persistVehicles(){
+    await storage.set(VEHICLES_KEY, JSON.stringify(vehicles), false);
+    scheduleFolderSync();
+  }
+  function flushFolderSyncNow(){
+    if(!folderSyncPending) return;
+    if(folderSyncTimer){ clearTimeout(folderSyncTimer); folderSyncTimer = null; }
+    flushVehicleFolders();
+  }
+  // 切到別的視窗或準備關閉時,立刻把還沒寫出去的那一次補上。
+  // visibilitychange 比 beforeunload 可靠,瀏覽器比較會讓它跑完。
+  document.addEventListener("visibilitychange", () => {
+    if(document.visibilityState === "hidden") flushFolderSyncNow();
+  });
+  window.addEventListener("beforeunload", flushFolderSyncNow);
 
   // 由檔案路徑算出固定不變的車輛編號。
   // 編號若用時間或亂數產生,兩台電腦各自掃描同一批圖片會得到不同編號,
@@ -1616,7 +1690,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   async function scanVehicleFolder(){
     if(!vehicleDirHandle){
-      alert("請先綁定車輛資料夾(用上方的「選擇工作資料夾」或「選擇／更換車輛資料夾」)。");
+      toast("請先綁定車輛資料夾（用上方的「選擇工作資料夾」或「選擇／更換車輛資料夾」）。", "err", 5000);
       return;
     }
     const btn = $("#btn-scan-vehicle-folder");
@@ -1669,7 +1743,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       if(stillNew.length) lines.push(`・${stillNew.length} 張是全新的圖片（會建立新紀錄）`);
       if(orphanPool.length) lines.push(`・${orphanPool.length} 筆資料庫紀錄找不到對應檔案（檔案已被刪除或移到資料夾外）`);
       if(!updatedImgs.length && !moved.length && !stillNew.length && !orphanPool.length){
-        alert(lines[0] + "\n沒有任何變動需要處理。");
+        toast(lines[0] + "\n沒有任何變動需要處理。");
         return;
       }
       lines.push("", "要套用以上變更嗎？");
@@ -1678,7 +1752,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       // 0) 換掉內容有變動的圖片(其他欄位一律不動)
       updatedImgs.forEach(({ v, dataUrl }) => { v.img = dataUrl; });
 
-      // 1) 更新搬移過的紀錄:只改路徑與從新路徑解析出的系列,其他欄位維持您手動填的內容
+      // 1) 更新搬移過的紀錄:改路徑與從新路徑解析出的系列,其他欄位維持您手動填的內容。
+      //    編號也會在下面一併對齊成「由新路徑算出來」的值,
+      //    否則別台電腦從零掃描會算出不同編號,編成就會對不上。
       moved.forEach(({ v, to }) => {
         const parsed = parseVehicleFromPath(to);
         v.sourcePath = to;
@@ -1712,19 +1788,109 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         }
       }
 
+      // 4) 讓所有紀錄的編號跟目前路徑一致,並同步修正編成裡的參照。
+      //    改過檔名的紀錄在這裡會被導正,兩台電腦之後算出來的編號才會相同。
+      btn.textContent = "對齊編號…";
+      const { remap, changed: idFixed } = realignVehicleIds();
+      if(idFixed) remapLiveCars(remap);
+      const fixedFormations = idFixed ? await remapFormationRefs(remap) : 0;
+
       reindexVehicles();
       await persistVehicles();
+      if(idFixed) await syncFormationsToFolder();
       renderCategoryNav();
       renderLibrary();
-      alert(`處理完成：\n・更新圖片 ${updatedImgs.length} 張\n・更新搬移 ${moved.length} 筆\n・新增 ${stillNew.length} 筆\n・刪除 ${removed} 筆`);
+      if(idFixed){ renderFormation(); }
+      if(idFixed && typeof refreshFormationResults === "function") refreshFormationResults();
+      showReport("掃描完成", [
+        `・更新圖片 ${updatedImgs.length} 張`,
+        `・更新搬移 ${moved.length} 筆`,
+        `・新增 ${stillNew.length} 筆`,
+        `・刪除 ${removed} 筆`,
+        idFixed ? `・對齊編號 ${idFixed} 筆（同步修正 ${fixedFormations} 個編成）` : null
+      ]);
     }catch(e){
-      alert("掃描失敗:" + e);
+      toast("掃描失敗：" + e, "err");
     }finally{
       btn.disabled = false; btn.textContent = oldText;
     }
   }
   // 把資料當成網頁內容輸出前一律跳脫。
   // 自己的資料沒問題,但匯入別人分享的檔案後,名稱欄位可能含有惡意內容。
+  // ---------- 浮動提示 ----------
+  // 儲存這類例行操作用這個取代彈出視窗,不用按確認、會自動消失。
+  // 真正需要使用者決定的事(確認刪除、衝突處理)仍然用 confirm/alert。
+  function toast(msg, kind, ms){
+    const area = document.getElementById("toast-area");
+    if(!area){ console.info(msg); return; }
+    const el = document.createElement("div");
+    el.className = "toast" + (kind ? " " + kind : "");
+    el.textContent = msg;
+    area.appendChild(el);
+    requestAnimationFrame(() => el.classList.add("show"));
+    setTimeout(() => {
+      el.classList.remove("show");
+      setTimeout(() => el.remove(), 250);
+    }, ms || (kind === "err" ? 4200 : 1900));
+  }
+
+  // 處理結果一行講不完時用這張卡:一樣會自動消失,不必按確認。
+  // 倒數條會走完,滑鼠移上去就暫停,也可以自己按 ✕ 關掉。
+  function showReport(title, body, kind, ms){
+    const area = document.getElementById("toast-area");
+    const text = Array.isArray(body) ? body.filter(x => x != null).join("\n") : String(body == null ? "" : body);
+    if(!area){ console.info(title + "\n" + text); return; }
+    // 行數越多就多給一點時間,最少 6 秒最多 20 秒
+    const lines = text.split("\n").length;
+    const life = ms || Math.min(20000, Math.max(6000, 3500 + lines * 1100));
+
+    const el = document.createElement("div");
+    el.className = "report" + (kind ? " " + kind : "");
+    const head = document.createElement("div");
+    head.className = "report-head";
+    const h = document.createElement("b"); h.textContent = title;
+    const close = document.createElement("button");
+    close.type = "button"; close.textContent = "✕"; close.title = "關閉";
+    head.appendChild(h); head.appendChild(close);
+    const bodyEl = document.createElement("div");
+    bodyEl.className = "report-body"; bodyEl.textContent = text;
+    const bar = document.createElement("div");
+    bar.className = "report-bar";
+    el.appendChild(head); el.appendChild(bodyEl); el.appendChild(bar);
+    area.appendChild(el);
+
+    let timer = null, left = life, startedAt = 0;
+    function dismiss(){
+      if(timer){ clearTimeout(timer); timer = null; }
+      el.classList.remove("show");
+      setTimeout(() => el.remove(), 250);
+    }
+    function start(){
+      startedAt = Date.now();
+      bar.style.transition = `transform ${left}ms linear`;
+      requestAnimationFrame(() => { bar.style.transform = "scaleX(0)"; });
+      timer = setTimeout(dismiss, left);
+    }
+    function pause(){
+      if(!timer) return;
+      clearTimeout(timer); timer = null;
+      left = Math.max(1200, left - (Date.now() - startedAt));
+      const w = bar.getBoundingClientRect().width || 0;
+      const full = el.getBoundingClientRect().width || 1;
+      bar.style.transition = "none";
+      bar.style.transform = `scaleX(${w / full})`;
+    }
+    el.addEventListener("mouseenter", pause);
+    el.addEventListener("mouseleave", () => { if(!timer) start(); });
+    close.addEventListener("click", dismiss);
+
+    requestAnimationFrame(() => {
+      el.classList.add("show");
+      bar.style.transform = "scaleX(1)";
+      requestAnimationFrame(start);
+    });
+  }
+
   function esc(v){
     return String(v == null ? "" : v)
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -2605,16 +2771,19 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       });
 
       if(removeIds.size === 0){
-        let msg = "檢查完成：沒有需要清理的重複紀錄。";
         if(sameImageFiles.length){
           const sample = sameImageFiles.slice(0, 5)
             .map(paths => "・" + paths.join("\n　 ")).join("\n");
-          msg += `\n\n不過有 ${sameImageFiles.length} 組「不同檔案、但圖片內容完全相同」：\n\n${sample}` +
-                 (sameImageFiles.length > 5 ? `\n…等共 ${sameImageFiles.length} 組` : "") +
-                 `\n\n這些檔案都還在資料夾裡,所以不會刪除(刪了下次掃描又會加回來)。\n` +
-                 `如果確定是多餘的,請直接在檔案總管裡刪掉檔案,再執行一次掃描。`;
+          showReport(`沒有需要清理的重複紀錄，但有 ${sameImageFiles.length} 組同圖不同檔`, [
+            sample,
+            sameImageFiles.length > 5 ? `…等共 ${sameImageFiles.length} 組` : null,
+            "",
+            "這些檔案都還在資料夾裡，所以不會刪除（刪了下次掃描又會加回來）。",
+            "如果確定是多餘的，請直接在檔案總管裡刪掉檔案，再掃描一次。"
+          ], "", 22000);
+        }else{
+          toast("檢查完成：沒有需要清理的重複紀錄。");
         }
-        alert(msg);
         return;
       }
 
@@ -2659,13 +2828,285 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       renderCategoryNav();
       renderLibrary();
       if(typeof refreshFormationResults === "function") refreshFormationResults();
-      alert(`清理完成：\n・刪除 ${removeIds.size} 筆重複紀錄\n・修正 ${affectedFormations} 個編成的車輛參照\n・目前共 ${vehicles.length} 輛車`);
+      showReport("清理完成", [
+        `・刪除 ${removeIds.size} 筆重複紀錄`,
+        `・修正 ${affectedFormations} 個編成的車輛參照`,
+        `・目前共 ${vehicles.length} 輛車`
+      ]);
     }catch(e){
-      alert("清理失敗：" + (e && e.message ? e.message : e));
+      toast("清理失敗：" + (e && e.message ? e.message : e), "err");
     }finally{
       btn.disabled = false; btn.textContent = oldText;
     }
   }
+  // ---------- 依車輛資料組出檔名 ----------
+  // 檔名格式(跟掃描時的解析規則互為正反):
+  //   型式-番代_塗裝_方向_寬度mm
+  // 番代、塗裝、方向都可以省略;寬度是預設的 3.8 公分時也省略。
+  function sanitizeFileStem(stem){
+    return String(stem || "")
+      .replace(/\\/g, "＼").replace(/\//g, "／").replace(/:/g, "：")
+      .replace(/\*/g, "＊").replace(/\?/g, "？").replace(/"/g, "＂")
+      .replace(/</g, "＜").replace(/>/g, "＞").replace(/\|/g, "｜")
+      .split("").filter(c => c.charCodeAt(0) >= 32).join("")
+      .replace(/[ .]+$/, "").trim();
+  }
+  function buildVehicleFileStem(v){
+    let stem = (v.modelCode || "").trim();
+    const variant = String(v.variantCode == null ? "" : v.variantCode).trim();
+    if(variant) stem += "-" + variant;
+    const tail = [];
+    const livery = (v.liveryName || "").trim();
+    if(livery) tail.push(livery);
+    const side = (v.side || "").trim().toUpperCase();
+    if(side === "L" || side === "R") tail.push(side);
+    const w = parseFloat(v.widthCm);
+    if(w > 0 && Math.abs(w - 3.8) > 0.001) tail.push(String(Math.round(w * 10)));
+    return sanitizeFileStem([stem].concat(tail).join("_"));
+  }
+  // 這輛車「應該」叫什麼檔名(含副檔名,沿用原本的副檔名)
+  function expectedFileName(v){
+    const stem = buildVehicleFileStem(v);
+    if(!stem) return "";
+    const cur = (v.sourcePath || "").split("/").pop() || "";
+    const m = cur.match(/\.[^.]+$/);
+    return stem + (m ? m[0] : ".png");
+  }
+  // 新檔名再解析回來要跟原本的資料一樣,否則不能改。
+  // 例如塗裝名剛好是純數字時會被當成寬度,那種檔名寧可不要產生。
+  function fileNameRoundTrips(v, name){
+    if(!name) return false;
+    const got = parseVehicleFromPath(name);
+    const norm = s => String(s == null ? "" : s).trim();
+    const w = parseFloat(v.widthCm) || 3.8;
+    const gotW = got.widthCm == null ? 3.8 : got.widthCm;
+    return norm(got.modelCode) === norm(buildVehicleFileStem({ modelCode: v.modelCode, variantCode: "" })) &&
+           norm(got.variantCode) === norm(v.variantCode) &&
+           norm(got.liveryName) === norm(sanitizeFileStem(v.liveryName)) &&
+           norm(got.side).toUpperCase() === norm(v.side).toUpperCase() &&
+           Math.abs(gotW - w) < 0.001;
+  }
+
+  // 這個路徑是不是已經被資料庫裡別的車佔用了(except 那幾筆不算)
+  function vehicleOwningPath(path, except){
+    const skip = new Set((except || []).map(x => x && x.id));
+    const key = String(path || "").toLowerCase();
+    return vehicles.find(v => v.sourcePath && !skip.has(v.id) &&
+                              v.sourcePath.toLowerCase() === key) || null;
+  }
+
+  async function moveFileHandle(dir, fh, fromName, toName){
+    if(typeof fh.move === "function"){ await fh.move(toName); return; }
+    // 舊版瀏覽器沒有 move():複製成新檔再刪掉舊的
+    const file = await fh.getFile();
+    const nh = await dir.getFileHandle(toName, { create: true });
+    const w = await nh.createWritable();
+    await w.write(file);
+    await w.close();
+    await dir.removeEntry(fromName);
+  }
+
+  // 把一組車的圖片檔名改成跟資料一致(通常一筆,左右成對時兩筆)。
+  // 做法是「先全部挪到暫時檔名,再放進最終位置」,這樣兩筆互換檔名也能成功;
+  // 在 Windows／macOS 這種不分大小寫的檔案系統上,只改大小寫同樣能過。
+  // 回傳 { done: [新檔名…], failed: [{ v, why }…] }
+  async function renameVehicleFiles(list){
+    const result = { done: [], failed: [] };
+    if(!vehicleDirHandle) return result;
+
+    const jobs = [];
+    for(const v of (list || [])){
+      if(!v || !v.sourcePath) continue;
+      const parts = v.sourcePath.split("/");
+      const curName = parts.pop();
+      const want = expectedFileName(v);
+      if(!want){ result.failed.push({ v, why: "型式空白，無法推算檔名" }); continue; }
+      if(want === curName) continue;                   // 已經一致
+      if(!fileNameRoundTrips(v, want)){
+        result.failed.push({ v, why: `「${want}」再讀回來會對不上` });
+        continue;
+      }
+      jobs.push({ v, dirPath: parts, curName, want });
+    }
+    if(!jobs.length) return result;
+
+    const dirCache = new Map();
+    async function dirFor(parts){
+      const key = parts.join("/");
+      if(dirCache.has(key)) return dirCache.get(key);
+      let dir = vehicleDirHandle;
+      for(const seg of parts) dir = await dir.getDirectoryHandle(seg, { create: false });
+      dirCache.set(key, dir);
+      return dir;
+    }
+
+    // 第一階段:把要改名的檔案挪到暫時檔名,空出目標位置
+    const staged = [];
+    const stamp = Date.now().toString(36);
+    for(const j of jobs){
+      try{
+        const dir = await dirFor(j.dirPath);
+        const tmp = "__改名中_" + stamp + "_" + staged.length + ".tmp";
+        const fh = await dir.getFileHandle(j.curName, { create: false });
+        await moveFileHandle(dir, fh, j.curName, tmp);
+        staged.push(Object.assign({ dir, tmp }, j));
+      }catch(e){
+        result.failed.push({ v: j.v, why: (e && e.message) ? e.message : String(e) });
+      }
+    }
+
+    // 第二階段:放進最終檔名;位置被別人佔住就退回原檔名
+    for(const s of staged){
+      let taken = false;
+      try{ await s.dir.getFileHandle(s.want, { create: false }); taken = true; }
+      catch(e){ /* 不存在才是正常的 */ }
+
+      if(taken){
+        let restored = true;
+        try{
+          const fh = await s.dir.getFileHandle(s.tmp, { create: false });
+          await moveFileHandle(s.dir, fh, s.tmp, s.curName);
+        }catch(e){ restored = false; }
+        const owner = vehicleOwningPath(s.dirPath.concat(s.want).join("/"), list);
+        result.failed.push({
+          v: s.v,
+          why: (owner
+                 ? `「${s.want}」已經是資料庫裡另一筆（${owner.modelCode || "未命名"}）的圖片，兩筆資料撞名`
+                 : `「${s.want}」資料夾裡已經有同名檔案，但它不在資料庫裡`) +
+               (restored ? "" : `；原檔案暫時叫 ${s.tmp}，請手動改回 ${s.curName}`)
+        });
+        continue;
+      }
+
+      try{
+        const fh = await s.dir.getFileHandle(s.tmp, { create: false });
+        await moveFileHandle(s.dir, fh, s.tmp, s.want);
+        s.v.sourcePath = s.dirPath.concat(s.want).join("/");
+        result.done.push(s.want);
+      }catch(e){
+        result.failed.push({ v: s.v, why: (e && e.message) ? e.message : String(e) });
+      }
+    }
+    return result;
+  }
+
+  // ---------- 同步檔名的預覽 ----------
+  // 有綁定車輛圖片資料夾(也就是本機版)時就自動改,不需要開關;
+  // 線上版拿不到資料夾,整段會自己跳過。
+  // 把表單上的欄位湊成一輛「暫時的車」,用來算應該叫什麼檔名
+  function formDraftVehicle(base){
+    return {
+      sourcePath: base ? base.sourcePath : "",
+      modelCode: $("#s-model").value.trim(),
+      variantCode: $("#s-variant").value.trim(),
+      liveryName: $("#s-livery").value.trim(),
+      side: $("#s-side").value.trim().toUpperCase(),
+      widthCm: parseFloat($("#s-width").value) || 3.8
+    };
+  }
+  function updateRenamePreview(){
+    const row = $("#s-rename-row");
+    if(!row) return;
+    const v = editingVehicleId ? vehiclesById[editingVehicleId] : null;
+    // 只有「本機版、修改既有紀錄、而且這筆有來源檔案」時才需要提示
+    if(!v || !v.sourcePath || !vehicleDirHandle){ row.style.display = "none"; return; }
+    row.style.display = "";
+    const curName = v.sourcePath.split("/").pop();
+    const want = expectedFileName(formDraftVehicle(v));
+    const el = $("#s-rename-preview");
+    if(!want){
+      el.textContent = "圖片檔名：" + curName + "（型式空白，無法推算新檔名）";
+    }else if(want === curName){
+      el.textContent = "圖片檔名：" + curName + "　（已經跟資料一致）";
+    }else if(!fileNameRoundTrips(formDraftVehicle(v), want)){
+      el.innerHTML = "圖片檔名：" + esc(curName) +
+        "<br><span style=\"color:#b06000;\">「" + esc(want) + "」再讀回來會對不上（例如塗裝名是純數字），儲存時不會改名。</span>";
+    }else{
+      // 先在記憶體裡查有沒有別筆資料已經用了這個檔名,不用等按下儲存才知道
+      const partner = sidePartnerOf[v.id];
+      const owner = vehicleOwningPath(
+        v.sourcePath.split("/").slice(0, -1).concat(want).join("/"),
+        partner ? [v, partner] : [v]
+      );
+      el.innerHTML = "圖片檔名：" + esc(curName) +
+        (owner
+          ? "<br><span style=\"color:#b06000;\">「" + esc(want) + "」已經是另一筆資料（" +
+            esc(owner.modelCode || "未命名") + (owner.liveryName ? "／" + esc(owner.liveryName) : "") +
+            "）的圖片，儲存時不會改名。</span>"
+          : "<br>儲存時一併改為：<b style=\"color:var(--accent);\">" + esc(want) + "</b>");
+    }
+  }
+  ["#s-model","#s-variant","#s-livery","#s-side","#s-width"].forEach(sel => {
+    const el = $(sel);
+    if(el) el.addEventListener("input", updateRenamePreview);
+  });
+
+  // 編號變動後,把「正在編輯但還沒存檔」的那張編成也一起改過來,
+  // 不然畫面上會突然出現「車輛已從資料庫移除」。
+  function remapLiveCars(remap){
+    if(!remap || !Object.keys(remap).length) return;
+    try{
+      if(!state || !Array.isArray(state.cars)) return;
+      state.cars.forEach(c => {
+        if(remap[c.vehicleId]) c.vehicleId = remap[c.vehicleId];
+        if(Array.isArray(c.containers)){
+          c.containers = c.containers.map(id => (id && remap[id]) ? remap[id] : id);
+        }
+      });
+    }catch(e){ /* 編成區還沒初始化就不用管 */ }
+  }
+
+  // 把編成裡指向舊編號的車廂改成新編號,回傳修正了幾個編成。
+  // 車廂本身與平車上的貨櫃都用車輛編號存,兩邊都要改。
+  async function remapFormationRefs(remap){
+    const keys = Object.keys(remap || {});
+    if(!keys.length) return 0;
+    const idx = await loadIndex();
+    let fixed = 0;
+    for(const f of idx){
+      try{
+        const res = await storage.get("formations:" + f.id, false);
+        if(!res) continue;
+        const data = JSON.parse(res.value);
+        let touched = false;
+        (data.cars || []).forEach(c => {
+          if(remap[c.vehicleId]){ c.vehicleId = remap[c.vehicleId]; touched = true; }
+          if(Array.isArray(c.containers)){
+            c.containers = c.containers.map(id => {
+              if(id && remap[id]){ touched = true; return remap[id]; }
+              return id;
+            });
+          }
+        });
+        if(touched){
+          await storage.set("formations:" + f.id, JSON.stringify(data), false);
+          fixed++;
+        }
+      }catch(e){ /* 略過讀不到的那筆 */ }
+    }
+    return fixed;
+  }
+
+  // 讓車輛編號回到「由目前路徑算出來」的狀態。
+  // 編號若跟路徑對不上(例如改過檔名),別台電腦從零掃描就會算出不同編號,
+  // 編成就會出現「車輛已從資料庫移除」。回傳 { remap, changed }。
+  function realignVehicleIds(){
+    const remap = {};
+    // 只有「沒有來源檔案」的紀錄需要保留原編號,其餘一律照路徑重算。
+    // 不能把所有現有編號都當成已佔用,否則一筆漂移的紀錄會擋住另一筆的正確編號。
+    const used = new Set(vehicles.filter(v => !v.sourcePath).map(v => v.id));
+    vehicles.forEach(v => {
+      if(!v.sourcePath) return;
+      const want = stableVehicleId(v.sourcePath);
+      if(v.id === want){ used.add(want); return; }
+      if(used.has(want)) return;             // 真的撞號(極少見)就保守跳過
+      remap[v.id] = want;
+      v.id = want;
+      used.add(want);
+    });
+    return { remap, changed: Object.keys(remap).length };
+  }
+
   // ---------- 統一車輛編號 ----------
   // 把編號改成由檔案路徑推算,讓每台電腦算出來都一致;
   // 編成裡指向舊編號的車廂會一併改成新編號,不會變成「車輛已移除」。
@@ -2674,56 +3115,32 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const oldText = btn.textContent;
     btn.disabled = true; btn.textContent = "處理中…";
     try{
-      const remap = {};
-      const taken = new Set(vehicles.map(v => v.id));
-      let changed = 0, skipped = 0;
-      vehicles.forEach(v => {
-        if(!v.sourcePath){ skipped++; return; }      // 手動新增、沒有來源檔案的維持原編號
-        const want = stableVehicleId(v.sourcePath);
-        if(v.id === want) return;
-        if(taken.has(want)){ skipped++; return; }     // 極少見的重複,保守跳過
-        taken.delete(v.id); taken.add(want);
-        remap[v.id] = want;
-        v.id = want;
-        changed++;
-      });
-
+      const noPath = vehicles.filter(v => !v.sourcePath).length;
+      const { remap, changed } = realignVehicleIds();
       if(!changed){
-        alert("檢查完成:所有車輛編號都已經是依路徑產生的,不需要調整。" +
-              (skipped ? `\\n(${skipped} 筆沒有來源檔案或編號衝突,維持原樣)` : ""));
+        toast("檢查完成：所有車輛編號都已經跟路徑一致，不需要調整。" +
+              (noPath ? `\n（${noPath} 筆沒有來源檔案，維持原編號）` : ""), "", 3200);
         return;
       }
-
-      // 編成裡的參照一起改
       btn.textContent = "更新編成…";
-      const idx = await loadIndex();
-      let fixedFormations = 0;
-      for(const f of idx){
-        try{
-          const res = await storage.get("formations:" + f.id, false);
-          if(!res) continue;
-          const data = JSON.parse(res.value);
-          let touched = false;
-          (data.cars || []).forEach(c => {
-            if(remap[c.vehicleId]){ c.vehicleId = remap[c.vehicleId]; touched = true; }
-          });
-          if(touched){
-            await storage.set("formations:" + f.id, JSON.stringify(data), false);
-            fixedFormations++;
-          }
-        }catch(e){ /* 略過讀不到的那筆 */ }
-      }
+      remapLiveCars(remap);
+      const fixedFormations = await remapFormationRefs(remap);
 
       reindexVehicles();
       await persistVehicles();
       await syncFormationsToFolder();
       renderLibrary();
+      renderFormation();
       if(typeof refreshFormationResults === "function") refreshFormationResults();
-      alert(`完成:\\n・${changed} 輛車改用依路徑產生的編號\\n・${fixedFormations} 個編成的參照已同步更新` +
-            (skipped ? `\\n・${skipped} 筆維持原樣(沒有來源檔案)` : "") +
-            `\\n\\n請在另一台電腦也執行一次,兩邊的編號就會一致。`);
+      showReport("車輛編號已統一", [
+        `・${changed} 輛車改用依路徑產生的編號`,
+        `・${fixedFormations} 個編成的參照已同步更新`,
+        noPath ? `・${noPath} 筆維持原樣（沒有來源檔案）` : null,
+        "",
+        "之後掃描資料夾時會自動保持一致，通常不需要再手動執行。"
+      ]);
     }catch(e){
-      alert("處理失敗:" + (e && e.message ? e.message : e));
+      toast("處理失敗：" + (e && e.message ? e.message : e), "err");
     }finally{
       btn.disabled = false; btn.textContent = oldText;
     }
@@ -2939,6 +3356,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     }else{
       pairHint.style.display = "none";
     }
+    updateRenamePreview();
     window.scrollTo({top:0, behavior:"smooth"});
   }
 
@@ -3099,6 +3517,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     singleFileDataUrl = null; editingVehicleId = null;
     singlePicker.reset();
     $("#s-pair-hint").style.display = "none";
+    $("#s-rename-row").style.display = "none";
     $("#s-save").textContent = "加入資料庫";
   }
   $("#s-save").addEventListener("click", async () => {
@@ -3115,6 +3534,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     addEditingCode();
     const productCodes = editingCodes.slice();
     const defaultProductCode = productCodes[0] || "";
+    let renameMsg = "";
     if(editingVehicleId){
       const v = vehiclesById[editingVehicleId];
       const partner = sidePartnerOf[v.id];
@@ -3134,6 +3554,18 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           note: $("#s-note").value.trim(), categories: singlePicker.cats.slice()
         });
       }
+      // 把圖片檔名改成跟資料一致(有左右兩面時兩張都改)。
+      // 只有綁了資料夾的本機版做得到,線上版會直接跳過。
+      if(vehicleDirHandle){
+        const r = await renameVehicleFiles(partner ? [v, partner] : [v]);
+        if(r.done.length) renameMsg = "，檔名已改為 " + r.done.join("、");
+        // 撞名是使用者得自己處理的事,所以用比較久的警示提示另外說明
+        if(r.failed.length){
+          renameMsg += "（檔名未更改）";
+          toast("檔名沒有更改：" + r.failed.map(x => x.why).join("；") + "。資料本身已經存好了。",
+                "err", 8000);
+        }
+      }
     }else{
       vehicles.push({
         id: "v_" + Date.now() + "_" + Math.random().toString(36).slice(2,7),
@@ -3143,11 +3575,21 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         note: $("#s-note").value.trim(), categories: singlePicker.cats.slice(), img: singleFileDataUrl
       });
     }
+    // 檔名動過的話,路徑算出來的編號也會變;編號永遠等於路徑算出來的值,
+    // 所以這裡重算一次,並讓編成(含平車上的貨櫃)跟著改。
+    const { remap, changed } = realignVehicleIds();
     reindexVehicles();
     await persistVehicles();
+    if(changed){
+      remapLiveCars(remap);
+      const fixed = await remapFormationRefs(remap);
+      if(fixed) await syncFormationsToFolder();
+      if(typeof refreshFormationResults === "function") refreshFormationResults();
+      renderFormation();
+    }
     renderLibrary();
     resetSingleForm();
-    alert("已儲存到車輛資料庫。");
+    toast("已儲存到車輛資料庫" + renameMsg);
   });
 
   // ---------- batch add ----------
@@ -3390,9 +3832,10 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         results.push(`✓ 編成庫（${idx.length} 筆）→ 下載（未綁定資料夾）`);
       }
 
-      alert(`備份完成（${stamp}）\n\n${results.join("\n")}\n\n車輛 ${vehicles.length} 輛、編成 ${idx.length} 筆`);
+      showReport(`備份完成（${stamp}）`,
+                 results.concat(["", `車輛 ${vehicles.length} 輛、編成 ${idx.length} 筆`]));
     }catch(e){
-      alert("備份失敗：" + (e && e.message ? e.message : e));
+      toast("備份失敗：" + (e && e.message ? e.message : e), "err");
     }finally{
       btn.disabled = false; btn.textContent = oldText;
     }
@@ -3701,11 +4144,101 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
   $("#btn-export-web").addEventListener("click", exportWebData);
 
-  // Ctrl+S / Cmd+S 快捷鍵
+  // ---------- 鍵盤快捷鍵 ----------
+  // 焦點在輸入欄位時一律不攔截,免得影響打字
+  function inTextField(){
+    const el = document.activeElement;
+    if(!el) return false;
+    const tag = el.tagName || "";
+    return ["INPUT", "TEXTAREA", "SELECT"].includes(tag) || el.isContentEditable;
+  }
+  // 目前操作列釘住的車廂,沒有就回 -1
+  function pinnedCarIdx(){
+    return (toolbarPinned && toolbarCar >= 0 && state.cars[toolbarCar]) ? toolbarCar : -1;
+  }
   document.addEventListener("keydown", (e) => {
-    if((e.ctrlKey || e.metaKey) && (e.key === "s" || e.key === "S")){
+    const ctrl = e.ctrlKey || e.metaKey;
+
+    // Ctrl+S:依目前所在的分頁決定儲存什麼
+    if(ctrl && !e.shiftKey && (e.key === "s" || e.key === "S")){
       e.preventDefault();
-      backupAll();
+      if(currentTab === "builder"){
+        const btn = document.querySelector('[data-role="save"]');
+        if(btn) btn.click();
+      }else if(currentTab === "vehicles"){
+        const btn = document.getElementById("s-save");
+        // 表單有填東西才存,避免誤觸存出一筆空白車輛
+        const hasContent = ($("#s-model").value || "").trim() || editingVehicleId;
+        if(btn && hasContent) btn.click();
+        else toast("車輛表單是空的,沒有東西可以儲存", "warn");
+      }else if(currentTab === "search" && pickedFormationId){
+        exportFormationById(pickedFormationId);   // 有選取編成時改成輸出那一筆的PNG
+      }else{
+        backupAll();     // 沒選取時維持原本的一鍵備份
+      }
+      return;
+    }
+
+    // ---- 編成資料庫搜尋分頁:操作選取中的那一筆 ----
+    if(currentTab === "search"){
+      if(inTextField()){
+        // 在搜尋框裡按 Esc:清掉關鍵字,不碰選取
+        if(e.key === "Escape"){ const el = $("#formation-search-input");
+          if(el && el.value){ e.preventDefault(); el.value = ""; refreshFormationResults(); } }
+        return;
+      }
+      if(e.key === "Escape"){ e.preventDefault(); setPickedFormation(null); return; }
+      if(e.key === "ArrowDown"){ e.preventDefault(); moveFormationPick(1); return; }
+      if(e.key === "ArrowUp"){ e.preventDefault(); moveFormationPick(-1); return; }
+      if(!pickedFormationId) return;
+      if(e.key === "Delete" || e.key === "Backspace"){
+        e.preventDefault();
+        const card = pickedFormationCard();
+        const label = card ? card.querySelector(".fc-title").textContent.trim() : "這個編成";
+        deleteFormationById(pickedFormationId, label);
+        return;
+      }
+      if(e.key === "Enter"){ e.preventDefault(); loadFormationIntoBuilder(pickedFormationId); return; }
+      return;
+    }
+
+    // 以下只在編成製作分頁、且沒有在打字時作用
+    if(currentTab !== "builder" || inTextField()) return;
+
+    // Shift+Ctrl+M:整列反轉(先判斷,免得被 Ctrl+M 接走)
+    if(ctrl && e.shiftKey && (e.key === "m" || e.key === "M")){
+      e.preventDefault();
+      const btn = document.getElementById("btn-reverse-formation");
+      if(btn) btn.click();
+      toast(state.reversed ? "整列反轉" : "恢復原方向");
+      return;
+    }
+
+    const idx = pinnedCarIdx();
+    if(idx < 0) return;          // 沒有選取車廂時,以下都不作用
+    const leftDelta = state.reversed ? 1 : -1;
+    const rightDelta = state.reversed ? -1 : 1;
+
+    // Ctrl+M:翻轉這節車
+    if(ctrl && (e.key === "m" || e.key === "M")){
+      e.preventDefault(); flipCar(idx); return;
+    }
+    // Ctrl+C:複製這節車(有選取文字時讓瀏覽器正常複製)
+    if(ctrl && (e.key === "c" || e.key === "C")){
+      const sel = window.getSelection && window.getSelection().toString();
+      if(sel) return;
+      e.preventDefault(); duplicateCar(idx); toast("已複製車廂"); return;
+    }
+    // ←／→:左右移動
+    if(e.key === "ArrowLeft"){
+      e.preventDefault(); moveCar(idx, leftDelta); return;
+    }
+    if(e.key === "ArrowRight"){
+      e.preventDefault(); moveCar(idx, rightDelta); return;
+    }
+    // Delete／Backspace:刪除這節車
+    if(e.key === "Delete" || e.key === "Backspace"){
+      e.preventDefault(); deleteCar(idx); return;
     }
   });
 
@@ -4517,15 +5050,15 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const leftDelta = state.reversed ? 1 : -1;
     const rightDelta = state.reversed ? -1 : 1;
     const acts = [
-      { key: "left",  label: "◀", title: "往左移", disabled: displayIdx === 0,
+      { key: "left",  label: "◀", title: "往左移（←）", disabled: displayIdx === 0,
         run: () => moveCar(realIdx, leftDelta) },
-      { key: "right", label: "▶", title: "往右移", disabled: displayIdx === state.cars.length - 1,
+      { key: "right", label: "▶", title: "往右移（→）", disabled: displayIdx === state.cars.length - 1,
         run: () => moveCar(realIdx, rightDelta) },
-      { key: "flip",  label: "⇋", title: "水平翻轉", hide: missing,
+      { key: "flip",  label: "⇋", title: "水平翻轉（Ctrl+M）", hide: missing,
         run: () => flipCar(realIdx) },
-      { key: "dup",   label: "⧉", title: "複製這節車廂", hide: missing,
+      { key: "dup",   label: "⧉", title: "複製這節車廂（Ctrl+C）", hide: missing,
         run: () => duplicateCar(realIdx) },
-      { key: "del",   label: "✕", title: "刪除這節車廂", cls: "del",
+      { key: "del",   label: "✕", title: "刪除這節車廂（Delete）", cls: "del",
         run: () => deleteCar(realIdx) }
     ];
     tb.innerHTML = "";
@@ -4825,7 +5358,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     renderCargoTable();
     renderContainerEditor();   // 編成有變動時,面板內容跟著更新
     renderLibrary();
-    alert(`已記錄:貨號 ${codeAdds.length} 筆、廠商 ${makerChanges.length} 筆。`);
+    toast(`已記錄　貨號 ${codeAdds.length} 筆・廠商 ${makerChanges.length} 筆`);
   });
 
   function renderCargoTable(){
@@ -5097,8 +5630,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       await refreshNicknameSuggestions();
       setRoleDisabled("delete", false);
       updateEditingHint();
-      alert("已儲存到編成資料庫。");
-    }catch(e){ alert("儲存失敗:" + e); }
+      toast("已儲存到編成資料庫");
+    }catch(e){ toast("儲存失敗：" + (e && e.message ? e.message : e), "err"); }
   });
 
   bindRole("delete", async () => {
@@ -5124,14 +5657,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   async function loadFormationIntoBuilder(id){
     try{
       const res = await storage.get("formations:" + id, false);
-      if(!res){ alert("找不到這筆編成資料。"); return; }
+      if(!res){ toast("找不到這筆編成資料。", "err"); return; }
       state = JSON.parse(res.value);
       migrateStateFields();
       normalizeCars();
       loadFieldsFromState(); renderFormation(); updateEditingHint();
       setRoleDisabled("delete", false);
       switchTab("builder");
-    }catch(e){ alert("讀取失敗:" + e); }
+    }catch(e){ toast("讀取失敗：" + e, "err"); }
   }
 
   // 直接從「編成資料庫搜尋」分頁的卡片輸出PNG,不用先切到「編成製作」分頁;
@@ -5140,14 +5673,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const savedState = state;
     try{
       const res = await storage.get("formations:" + id, false);
-      if(!res){ alert("找不到這筆編成資料。"); return; }
+      if(!res){ toast("找不到這筆編成資料。", "err"); return; }
       state = JSON.parse(res.value);
       migrateStateFields();
       normalizeCars();
-      if(state.cars.length === 0){ alert("這個編成沒有車廂,無法輸出。"); return; }
+      if(state.cars.length === 0){ toast("這個編成沒有車廂，無法輸出。", "err"); return; }
       await exportPng();
     }catch(e){
-      alert("輸出失敗:" + e);
+      toast("輸出失敗：" + e, "err");
     }finally{
       state = savedState;
     }
@@ -5729,6 +6262,62 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return terms.every(t => hay.includes(t));
   }
 
+  // ---------- 搜尋結果的選取狀態 ----------
+  // 選起來之後就能用鍵盤操作這一筆:Ctrl+S 輸出PNG、Delete 刪除、Enter 載入、↑↓ 換一筆。
+  let pickedFormationId = null;
+  let shownFormationIds = [];          // 目前畫面上的順序,換選取時要照這個走
+
+  function updateFormationKeyHint(){
+    const hint = $("#formation-key-hint");
+    if(!hint) return;
+    if(!pickedFormationId){ hint.style.display = "none"; return; }
+    hint.style.display = "block";   // CSS 預設是 none,要明確指定才會出現
+    hint.innerHTML = "已選取這筆編成：<b>Ctrl+S</b> 輸出PNG　<b>Delete</b> 刪除　" +
+                     "<b>Enter</b> 載入到編成製作　<b>↑ ↓</b> 換一筆　<b>Esc</b> 取消選取";
+  }
+  function setPickedFormation(id){
+    pickedFormationId = id || null;
+    $("#formation-results").querySelectorAll(".formation-card").forEach(c => {
+      c.classList.toggle("picked", !!id && c.dataset.fid === id);
+    });
+    updateFormationKeyHint();
+  }
+  function pickedFormationCard(){
+    if(!pickedFormationId) return null;
+    return $("#formation-results").querySelector(`.formation-card[data-fid="${pickedFormationId}"]`);
+  }
+  // 刪掉一筆之後接著選同一個位置的那筆,才能連續刪除。
+  // 位置要在重畫之前先記下來,重畫之後清單裡已經沒有那一筆了。
+  function pickFormationAt(i){
+    if(!shownFormationIds.length){ setPickedFormation(null); return; }
+    const n = Math.min(Math.max(i, 0), shownFormationIds.length - 1);
+    setPickedFormation(shownFormationIds[n]);
+    const el = pickedFormationCard();
+    if(el) el.scrollIntoView({ block: "nearest" });
+  }
+  function moveFormationPick(delta){
+    if(!shownFormationIds.length) return;
+    const i = shownFormationIds.indexOf(pickedFormationId);
+    const next = i < 0 ? 0 : Math.min(shownFormationIds.length - 1, Math.max(0, i + delta));
+    setPickedFormation(shownFormationIds[next]);
+    const el = pickedFormationCard();
+    if(el) el.scrollIntoView({ block: "nearest" });
+  }
+
+  async function deleteFormationById(id, label){
+    if(!confirm(`確定要刪除「${label}」這個編成嗎?`)) return false;
+    try{ await storage.delete("formations:" + id, false); }catch(e){}
+    const idx = await loadIndex();
+    await saveIndex(idx.filter(x => x.id !== id));
+    await syncFormationsToFolder();
+    const keep = pickedFormationId === id;
+    const at = shownFormationIds.indexOf(id);
+    await refreshFormationResults();
+    if(keep) pickFormationAt(at < 0 ? 0 : at);
+    toast("已刪除編成「" + label + "」");
+    return true;
+  }
+
   async function refreshFormationResults(){
     const list = await loadIndex();
     const q = $("#formation-search-input").value;
@@ -5736,13 +6325,18 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     $("#formation-count").textContent = `共 ${list.length} 筆編成　顯示 ${filtered.length} 筆`;
     const box = $("#formation-results");
     box.innerHTML = "";
+    shownFormationIds = filtered.map(f => f.id);
+    // 原本選的那筆被搜尋條件濾掉了就放掉選取
+    if(pickedFormationId && shownFormationIds.indexOf(pickedFormationId) < 0) pickedFormationId = null;
     if(filtered.length === 0){
       box.innerHTML = `<div class="no-result">沒有符合條件的編成</div>`;
+      updateFormationKeyHint();
       return;
     }
     filtered.forEach(f => {
       const card = document.createElement("div");
-      card.className = "formation-card";
+      card.className = "formation-card" + (f.id === pickedFormationId ? " picked" : "");
+      card.dataset.fid = f.id;
       const stationsText = (f.segments || [])
         .filter(s => s.from || s.to)
         .map(s => [s.nickname, [s.from, s.to].filter(Boolean).join(" → ")].filter(Boolean).join("："))
@@ -5766,18 +6360,19 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       card.querySelector('[data-act="share"]').addEventListener("click", async () => {
         try{
           const res = await storage.get("formations:" + f.id, false);
-          if(!res){ alert("找不到這筆編成資料。"); return; }
+          if(!res){ toast("找不到這筆編成資料。", "err"); return; }
           const data = JSON.parse(res.value);
           downloadShare(buildFormationShare(data), shareFileName("編成分享", (f.name || "編成").replace("●","")));
-        }catch(err){ alert("匯出失敗:" + err); }
+        }catch(err){ toast("匯出失敗：" + err, "err"); }
       });
-      card.querySelector('[data-act="del"]').addEventListener("click", async () => {
-        if(!confirm(`確定要刪除「${f.nickname || f.name}」這個編成嗎?`)) return;
-        try{ await storage.delete("formations:" + f.id, false); }catch(e){}
-        const idx = await loadIndex();
-        await saveIndex(idx.filter(x => x.id !== f.id));
-        await syncFormationsToFolder();
-        refreshFormationResults();
+      card.querySelector('[data-act="del"]').addEventListener("click", () => {
+        setPickedFormation(f.id);
+        deleteFormationById(f.id, f.nickname || f.name);
+      });
+      // 點卡片任何地方就選取它(按按鈕時不重複處理)
+      card.addEventListener("click", (e) => {
+        if(e.target.closest("button")) return;
+        setPickedFormation(f.id === pickedFormationId ? null : f.id);
       });
       box.appendChild(card);
 
@@ -5788,6 +6383,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         if(wrap) wrap.appendChild(strip);
       });
     });
+    updateFormationKeyHint();
   }
 
   // 搜尋結果的編成預覽:把車廂圖片照編成順序排成一列,
@@ -5967,5 +6563,6 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
 
 </script>
+<div id="toast-area"></div>
 </body>
 </html>
