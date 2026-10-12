@@ -40,7 +40,15 @@ if(location.protocol === "http:" || location.protocol === "https:"){
     --rail-red:#c0392b; --muted:#8a8578; --accent:#1a5fa8;
   }
   *{box-sizing:border-box;}
-  body{margin:0;font-family:"Noto Sans TC","Hiragino Sans","Yu Gothic","Segoe UI",sans-serif;background:var(--paper);color:var(--ink);}
+  body{margin:0;font-family:"Noto Sans TC","Hiragino Sans","Yu Gothic","Segoe UI",sans-serif;background:var(--paper);color:var(--ink);
+    /* 介面本身不給選取:拖曳排序、連點切換時才不會整片反白干擾版面。
+       真正需要選字的地方(輸入欄位、備註、說明文字)在下面個別開回來。 */
+    -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+    -webkit-tap-highlight-color:transparent;}
+  input,textarea,select,[contenteditable="true"],.selectable,.selectable *{
+    -webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;}
+  /* 輸入游標該有的樣子不要被上面的規則連帶改掉 */
+  input,textarea{cursor:auto;}
   .topbar{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:2px solid var(--ink);background:var(--paper);}
   .topbar .mark{width:10px;height:10px;background:var(--rail-red);border-radius:50%;}
   .topbar h1{font-size:16px;margin:0;letter-spacing:0.05em;font-weight:700;}
@@ -246,6 +254,20 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   #formation-key-hint{display:none;font-size:11px;color:var(--muted);background:#f6f7f4;
     border:1px solid var(--line);border-radius:6px;padding:6px 10px;margin-bottom:8px;line-height:1.6;}
   #formation-key-hint b{color:var(--ink);font-family:ui-monospace,Menlo,Consolas,monospace;}
+  /* 選取好幾筆時出現的批次操作列 */
+  #formation-bulk-bar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;
+    background:#1a1a1a;color:#fff;border-radius:7px;padding:7px 10px;margin-bottom:8px;}
+  #formation-bulk-bar #fbulk-count{font-size:12px;font-weight:700;margin-right:4px;}
+  #formation-bulk-bar .btn{margin:0;}
+  /* 公開／私人徽章:點一下就切換 */
+  .fc-vis{display:inline-block;vertical-align:2px;margin-right:6px;padding:1px 7px;border-radius:999px;
+    font-size:10.5px;font-weight:700;letter-spacing:.04em;cursor:pointer;user-select:none;
+    border:1px solid transparent;}
+  .fc-vis.pub{background:#e8f1e6;color:#2f6b2a;border-color:#c5ddc0;}
+  .fc-vis.pri{background:#efefec;color:#76736c;border-color:#dcdbd5;}
+  .fc-vis:hover{filter:brightness(.94);}
+  .formation-card.is-private{background:#faf9f6;}
+  .formation-card.is-private .fc-title{color:#5f5c55;}
   /* 編成預覽:車廂圖片排成一列,太長時在卡片內左右捲動,不會把按鈕擠出去 */
   /* 貨櫃裝載面板:固定在編成組成下方,槽位水平排列,窄螢幕可左右捲動 */
   #container-editor{border:1px solid var(--line);border-radius:8px;background:#fff;
@@ -408,10 +430,16 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small secondary" id="btn-unify-ids" style="flex:1;" title="讓車輛編號改由檔案路徑決定，兩台電腦算出來才會一致">統一車輛編號（多台電腦同步用）</button>
       </div>
       <div class="db-io-row">
-        <button class="btn small secondary" id="btn-export-vehicles">匯出車輛庫(JSON)</button>
-        <label class="btn small secondary" style="cursor:pointer;margin:0;">
-          匯入車輛庫
+        <button class="btn small secondary" id="btn-export-vehicles" style="flex:1;">匯出車輛庫(JSON)</button>
+      </div>
+      <div class="db-io-row">
+        <label class="btn small secondary" style="cursor:pointer;margin:0;flex:1;" title="清空目前的車輛資料庫，整個換成檔案裡的內容">
+          匯入已有資料庫
           <input type="file" id="import-vehicles-file" accept=".json,application/json" style="display:none;">
+        </label>
+        <label class="btn small secondary" style="cursor:pointer;margin:0;flex:1;" title="保留目前的車輛，只把檔案裡沒有的加進來">
+          ＋ 加入車輛
+          <input type="file" id="merge-vehicles-file" accept=".json,application/json" style="display:none;">
         </label>
       </div>
       <div class="db-io-row">
@@ -714,18 +742,34 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small" id="btn-pick-formation-folder">選擇／更換網站資料夾(data)</button>
         <span id="formation-folder-status" class="folder-badge unbound" style="margin:0;"><span class="dot"></span>未綁定</span>
         <button class="btn small secondary" id="btn-export-formations">匯出編成資料庫</button>
-        <label class="btn small secondary" style="cursor:pointer;margin:0;">
-          匯入編成資料庫
+        <label class="btn small secondary" style="cursor:pointer;margin:0;" title="清空目前的編成資料庫，整個換成檔案裡的內容">
+          匯入已有資料庫
           <input type="file" id="import-formations-file" accept=".json,application/json" style="display:none;">
         </label>
+        <label class="btn small secondary" style="cursor:pointer;margin:0;" title="保留目前的編成，只把檔案裡沒有的加進來">
+          ＋ 加入編成
+          <input type="file" id="merge-formations-file" accept=".json,application/json" style="display:none;">
+        </label>
       </div>
-      <div class="search-tab-bar" style="margin-top:8px;">
-        <input id="formation-search-input" placeholder="輸入關鍵字搜尋,例如「あさかぜ 20系」同時符合兩者才會出現">
+      <div class="search-tab-bar" style="margin-top:8px;display:flex;gap:6px;align-items:center;">
+        <input id="formation-search-input" placeholder="輸入關鍵字搜尋,例如「あさかぜ 20系」同時符合兩者才會出現" style="flex:1;">
+        <select id="formation-vis-filter" title="只有本機版看得到這個選項" style="font-family:inherit;font-size:12.5px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;background:#fff;">
+          <option value="all">全部</option>
+          <option value="public">只看公開</option>
+          <option value="private">只看私人</option>
+        </select>
       </div>
       <div id="formation-count" style="font-size:11.5px;color:var(--muted);margin-top:8px;"></div>
     </div>
     <div class="search-body">
       <div id="formation-key-hint"></div>
+      <div id="formation-bulk-bar" style="display:none;">
+        <span id="fbulk-count"></span>
+        <button class="btn small secondary" id="fbulk-public">設為公開</button>
+        <button class="btn small secondary" id="fbulk-private">設為私人</button>
+        <button class="btn small danger" id="fbulk-delete">刪除選取</button>
+        <button class="btn small secondary" id="fbulk-clear">取消選取</button>
+      </div>
       <div id="formation-results"></div>
     </div>
   </div>
@@ -1003,7 +1047,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261012-1940";
+  const APP_BUILD = "20261013-1640";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -2646,6 +2690,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         e.stopPropagation();
         openEditVehicle(v.id);
       });
+      // 在車輛資料庫分頁點兩下就直接進入編輯,不用特地瞄準那顆小鉛筆。
+      // 編成製作分頁不接管,那邊點兩下本來就是連續加兩節車。
+      item.addEventListener("dblclick", (e) => {
+        if(e.target.closest("[data-act]")) return;
+        if(currentTab !== "vehicles") return;
+        e.preventDefault();
+        openEditVehicle(v.id);
+      });
       item.querySelector('[data-act="del"]').addEventListener("click", async (e) => {
         e.stopPropagation();
         const partner = sidePartnerOf[v.id];
@@ -3715,7 +3767,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         toast("這個檔案裡沒有車輛資料（找不到 vehicles 欄位）。", "err");
         return;
       }
-      if(!confirm(`目前車輛資料庫有 ${vehicles.length} 輛車。匯入後會整個覆蓋成檔案中的 ${incoming.length} 輛車,確定要繼續嗎？`)) return;
+      if(!confirm(`目前的 ${vehicles.length} 輛車會被整個清空，換成檔案裡的 ${incoming.length} 輛車。\n` +
+                  `（想保留現有的車輛請改按「＋ 加入車輛」）\n\n確定要繼續嗎？`)) return;
 
       const backup = vehicles;
       vehicles = incoming;
@@ -3729,6 +3782,67 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         reindexVehicles();
         renderLibrary();
         toast("匯入失敗：" + (err && err.message ? err.message : err), "err");
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = "";
+  });
+
+  // ---------- 加入車輛(不清空現有資料) ----------
+  // 跟「匯入已有資料庫」的差別:這個只補檔案裡有、而自己沒有的那幾筆,
+  // 既有的紀錄一律不動,所以不會把自己手動填好的公司、貨號、分類蓋掉。
+  $("#merge-vehicles-file").addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onerror = () => toast("讀取檔案失敗，請再試一次。", "err");
+    reader.onload = async () => {
+      let payload;
+      try{ payload = JSON.parse(reader.result); }
+      catch(err){ toast("匯入失敗，這不是有效的JSON檔案。", "err"); return; }
+      const incoming = payload.vehicles || [];
+      if(!Array.isArray(incoming) || incoming.length === 0){
+        toast("這個檔案裡沒有車輛資料（找不到 vehicles 欄位）。", "err");
+        return;
+      }
+      // 編號一樣、或來源檔案路徑一樣,都算是已經有了
+      const haveId = new Set(vehicles.map(v => v.id));
+      const havePath = new Set(vehicles.map(v => (v.sourcePath || "").toLowerCase()).filter(Boolean));
+      const add = [];
+      let skipped = 0;
+      incoming.forEach(v => {
+        if(!v || !v.id) return;
+        const path = (v.sourcePath || "").toLowerCase();
+        if(haveId.has(v.id) || (path && havePath.has(path))){ skipped++; return; }
+        haveId.add(v.id);
+        if(path) havePath.add(path);
+        add.push(v);
+      });
+      if(!add.length){
+        toast(`這個檔案裡的 ${incoming.length} 輛車你已經全部都有了，沒有新增任何資料。`, "", 4200);
+        return;
+      }
+      if(!confirm(`要把 ${add.length} 輛車加進目前的資料庫嗎？\n` +
+                  `・現有的 ${vehicles.length} 輛車不會被刪除或覆蓋\n` +
+                  (skipped ? `・檔案裡另外 ${skipped} 輛你已經有了，會略過\n` : ""))) return;
+
+      const backup = vehicles;
+      vehicles = vehicles.concat(add);
+      reindexVehicles();
+      try{
+        await persistVehicles();
+        renderCategoryNav();
+        renderLibrary();
+        showReport("加入完成", [
+          `・新增 ${add.length} 輛車`,
+          skipped ? `・略過 ${skipped} 輛（已經有了）` : null,
+          `・目前共 ${vehicles.length} 輛車`
+        ]);
+      }catch(err){
+        vehicles = backup;
+        reindexVehicles();
+        renderLibrary();
+        toast("加入失敗：" + (err && err.message ? err.message : err), "err");
       }
     };
     reader.readAsText(file);
@@ -4193,8 +4307,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         const hasContent = ($("#s-model").value || "").trim() || editingVehicleId;
         if(btn && hasContent) btn.click();
         else toast("車輛表單是空的，沒有東西可以儲存。", "warn");
-      }else if(currentTab === "search" && pickedFormationId){
-        exportFormationById(pickedFormationId);   // 有選取編成時改成輸出那一筆的PNG
+      }else if(currentTab === "search" && pickedFormationId()){
+        exportFormationById(pickedFormationId());   // 剛好只選一筆時改成輸出那一筆的PNG
       }else{
         backupAll();     // 沒選取時維持原本的一鍵備份
       }
@@ -4209,18 +4323,31 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           if(el && el.value){ e.preventDefault(); el.value = ""; refreshFormationResults(); } }
         return;
       }
+      // Ctrl+A:把目前篩選出來的全部選起來(要先擋掉瀏覽器自己的全選)
+      if(ctrl && (e.key === "a" || e.key === "A")){
+        e.preventDefault();
+        pickedFormationIds = new Set(shownFormationIds);
+        formationAnchor = shownFormationIds[0] || null;
+        paintFormationPicks();
+        return;
+      }
       if(e.key === "Escape"){ e.preventDefault(); setPickedFormation(null); return; }
       if(e.key === "ArrowDown"){ e.preventDefault(); moveFormationPick(1); return; }
       if(e.key === "ArrowUp"){ e.preventDefault(); moveFormationPick(-1); return; }
-      if(!pickedFormationId) return;
+      if(!pickedFormationIds.size) return;
       if(e.key === "Delete" || e.key === "Backspace"){
-        e.preventDefault();
-        const card = pickedFormationCard();
-        const label = card ? card.querySelector(".fc-title").textContent.trim() : "這個編成";
-        deleteFormationById(pickedFormationId, label);
-        return;
+        e.preventDefault(); deleteSelectedFormations(); return;
       }
-      if(e.key === "Enter"){ e.preventDefault(); loadFormationIntoBuilder(pickedFormationId); return; }
+      // P／H:把選取的改成公開(Public)或私人(Hidden);線上版沒有這個概念
+      if(!IS_WEB && (e.key === "p" || e.key === "P")){
+        e.preventDefault(); setFormationVisibility([...pickedFormationIds], "public"); return;
+      }
+      if(!IS_WEB && (e.key === "h" || e.key === "H")){
+        e.preventDefault(); setFormationVisibility([...pickedFormationIds], "private"); return;
+      }
+      if(e.key === "Enter" && pickedFormationId()){
+        e.preventDefault(); loadFormationIntoBuilder(pickedFormationId()); return;
+      }
       return;
     }
 
@@ -4517,7 +4644,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   let state = {
     id: null, routeName: "", trainType: "",
     dateStr: "", trainInfo: "", segments: defaultSegments(),
-    company: "", region: "", notes: [""], cars: [], reversed: false, titleNote: ""
+    company: "", region: "", notes: [""], cars: [], reversed: false, titleNote: "",
+    visibility: "public"
   };
 
   const areaEl = $("#formation-area");
@@ -5001,6 +5129,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     if(state.trainInfo === undefined) state.trainInfo = state.trainNumber || "";
     if(state.routeName === undefined) state.routeName = "";
     if(state.trainType === undefined) state.trainType = "";
+    if(state.visibility !== "private") state.visibility = "public";
     if(!Array.isArray(state.segments)){
       // 從更早的版本(nickname1/2/3 + stationPairs,或最早期單一 nickname/from/to)遷移過來
       const oldPairs = Array.isArray(state.stationPairs) ? state.stationPairs : [];
@@ -5549,7 +5678,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       const res = await fetch(WEB_DATA_BASE + "formations.json", { cache: "no-cache" });
       if(!res.ok) return;
       const payload = await res.json();
-      const idx = payload.formationsIndex || [];
+      // 標成私人的那幾筆連收都不收,訪客的瀏覽器裡不會留下它們
+      const idx = (payload.formationsIndex || []).filter(isPublicFormation);
       if(!Array.isArray(idx) || !idx.length) return;
       // 合併:網站上的編成每次都以最新版為準(同 id 覆蓋),
       // 訪客自己在瀏覽器裡新建的編成(網站上沒有的 id)全部保留。
@@ -5596,6 +5726,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       dateStr: state.dateStr, trainInfo: state.trainInfo,
       segments: state.segments,
       company: state.company, region: state.region, notes: state.notes, titleNote: state.titleNote,
+      visibility: state.visibility === "private" ? "private" : "public",
       carModelsUsed: computeCarModelsUsed(),
       updatedAt: new Date().toISOString()
     };
@@ -5603,7 +5734,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   function updateEditingHint(){
     const hintEl = $("#editing-hint");
-    hintEl.textContent = state.id ? `目前正在編輯已儲存的編成:${buildTitleText()}` : "目前是尚未儲存的新編成";
+    const vis = (!IS_WEB && state.visibility === "private") ? "［私人］" : "";
+    hintEl.textContent = state.id ? `目前正在編輯已儲存的編成:${vis}${buildTitleText()}`
+                                  : `目前是尚未儲存的新編成${vis}`;
   }
 
   async function refreshNicknameSuggestions(){
@@ -5670,7 +5803,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     state = {
       id: null, routeName: "", trainType: "",
       dateStr: "", trainInfo: "", segments: defaultSegments(),
-      company: "", region: "", notes: [""], cars: [], reversed: false, titleNote: ""
+      company: "", region: "", notes: [""], cars: [], reversed: false, titleNote: "",
+      visibility: "public"
     };
     loadFieldsFromState(); renderFormation(); updateEditingHint();
     setRoleDisabled("delete", true);
@@ -6284,46 +6418,130 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return terms.every(t => hay.includes(t));
   }
 
-  // ---------- 搜尋結果的選取狀態 ----------
-  // 選起來之後就能用鍵盤操作這一筆:Ctrl+S 輸出PNG、Delete 刪除、Enter 載入、↑↓ 換一筆。
-  let pickedFormationId = null;
-  let shownFormationIds = [];          // 目前畫面上的順序,換選取時要照這個走
+  // ---------- 編成的公開／私人 ----------
+  // 用途不是保密(資料一樣會上傳、一樣會進備份),純粹是控制網站上給別人看到哪幾筆,
+  // 免得訪客打開看到一整片自己收藏用的編成。所以只在顯示層過濾,檔案結構不動。
+  // 沒有這個欄位的舊資料一律當成公開,行為跟以前一樣。
+  function isPublicFormation(f){ return !f || f.visibility !== "private"; }
 
+  // ---------- 搜尋結果的選取狀態(可複選) ----------
+  // 單擊=只選這筆、Ctrl/⌘+單擊=加選或取消、Shift+單擊=從上一次選的連選到這筆、Ctrl+A=全選。
+  // 跟車輛清單那邊的操作方式一致,不用另外記。
+  let pickedFormationIds = new Set();
+  let formationAnchor = null;          // Shift 連選的起點
+  let shownFormationIds = [];          // 目前畫面上的順序,連選與換選取都照這個走
+  let formationVisFilter = "all";      // all | public | private
+
+  function pickedFormationId(){        // 只選一筆時才有意義的那個編號
+    return pickedFormationIds.size === 1 ? [...pickedFormationIds][0] : null;
+  }
   function updateFormationKeyHint(){
     const hint = $("#formation-key-hint");
     if(!hint) return;
-    if(!pickedFormationId){ hint.style.display = "none"; return; }
+    const n = pickedFormationIds.size;
+    if(!n){ hint.style.display = "none"; return; }
     hint.style.display = "block";   // CSS 預設是 none,要明確指定才會出現
-    hint.innerHTML = "已選取這筆編成：<b>Ctrl+S</b> 輸出PNG　<b>Delete</b> 刪除　" +
-                     "<b>Enter</b> 載入到編成製作　<b>↑ ↓</b> 換一筆　<b>Esc</b> 取消選取";
+    const keys = n === 1
+      ? "<b>Ctrl+S</b> 輸出PNG　<b>Enter</b> 載入到編成製作　<b>Delete</b> 刪除　<b>↑ ↓</b> 換一筆"
+      : "<b>Delete</b> 一起刪除　<b>↑ ↓</b> 改成只選一筆";
+    const vis = IS_WEB ? "" :
+      `　<b>P</b> 設為公開　<b>H</b> 設為私人`;
+    hint.innerHTML = `已選取 ${n} 筆：${keys}${vis}　<b>Ctrl+A</b> 全選　<b>Esc</b> 取消選取`;
   }
-  function setPickedFormation(id){
-    pickedFormationId = id || null;
+  function paintFormationPicks(){
     $("#formation-results").querySelectorAll(".formation-card").forEach(c => {
-      c.classList.toggle("picked", !!id && c.dataset.fid === id);
+      c.classList.toggle("picked", pickedFormationIds.has(c.dataset.fid));
     });
     updateFormationKeyHint();
+    updateFormationBulkBar();
   }
-  function pickedFormationCard(){
-    if(!pickedFormationId) return null;
-    return $("#formation-results").querySelector(`.formation-card[data-fid="${pickedFormationId}"]`);
+  function setPickedFormation(id){
+    pickedFormationIds = id ? new Set([id]) : new Set();
+    formationAnchor = id || null;
+    paintFormationPicks();
   }
-  // 刪掉一筆之後接著選同一個位置的那筆,才能連續刪除。
+  function cardOfFormation(id){
+    return id ? $("#formation-results").querySelector(`.formation-card[data-fid="${id}"]`) : null;
+  }
+  // 點卡片:依照有沒有按 Ctrl／Shift 決定是取代、加選還是連選
+  function clickPickFormation(id, e){
+    const i = shownFormationIds.indexOf(id);
+    if(e && (e.ctrlKey || e.metaKey)){
+      if(pickedFormationIds.has(id)) pickedFormationIds.delete(id);
+      else pickedFormationIds.add(id);
+      formationAnchor = id;
+    }else if(e && e.shiftKey && formationAnchor && shownFormationIds.indexOf(formationAnchor) >= 0){
+      const a = shownFormationIds.indexOf(formationAnchor);
+      const [lo, hi] = a <= i ? [a, i] : [i, a];
+      for(let k = lo; k <= hi; k++) pickedFormationIds.add(shownFormationIds[k]);
+    }else{
+      // 已經只選著這一筆時再點一次就取消,維持原本的切換手感
+      const only = pickedFormationIds.size === 1 && pickedFormationIds.has(id);
+      pickedFormationIds = only ? new Set() : new Set([id]);
+      formationAnchor = only ? null : id;
+    }
+    paintFormationPicks();
+  }
+  // 刪掉之後接著選同一個位置的那筆,才能連續刪除。
   // 位置要在重畫之前先記下來,重畫之後清單裡已經沒有那一筆了。
   function pickFormationAt(i){
     if(!shownFormationIds.length){ setPickedFormation(null); return; }
     const n = Math.min(Math.max(i, 0), shownFormationIds.length - 1);
     setPickedFormation(shownFormationIds[n]);
-    const el = pickedFormationCard();
+    const el = cardOfFormation(shownFormationIds[n]);
     if(el) el.scrollIntoView({ block: "nearest" });
   }
   function moveFormationPick(delta){
     if(!shownFormationIds.length) return;
-    const i = shownFormationIds.indexOf(pickedFormationId);
+    const cur = pickedFormationIds.size ? [...pickedFormationIds][pickedFormationIds.size - 1] : null;
+    const i = cur ? shownFormationIds.indexOf(cur) : -1;
     const next = i < 0 ? 0 : Math.min(shownFormationIds.length - 1, Math.max(0, i + delta));
     setPickedFormation(shownFormationIds[next]);
-    const el = pickedFormationCard();
+    const el = cardOfFormation(shownFormationIds[next]);
     if(el) el.scrollIntoView({ block: "nearest" });
+  }
+
+  // 選取數量變動時,下方的批次操作列跟著出現／消失
+  function updateFormationBulkBar(){
+    const bar = $("#formation-bulk-bar");
+    if(!bar) return;
+    const n = pickedFormationIds.size;
+    if(IS_WEB || n === 0){ bar.style.display = "none"; return; }
+    bar.style.display = "flex";
+    $("#fbulk-count").textContent = `已選取 ${n} 筆`;
+  }
+
+  // 把選取的那幾筆改成公開或私人
+  async function setFormationVisibility(ids, vis){
+    const list = ids.filter(Boolean);
+    if(!list.length) return;
+    const want = new Set(list);
+    const idx = await loadIndex();
+    let changed = 0;
+    for(const f of idx){
+      if(!want.has(f.id)) continue;
+      const now = isPublicFormation(f) ? "public" : "private";
+      if(now === vis) continue;
+      f.visibility = vis;
+      // 編成本體也寫一份,匯出分享檔或換台電腦重建索引時才不會掉
+      try{
+        const res = await storage.get("formations:" + f.id, false);
+        if(res){
+          const data = JSON.parse(res.value);
+          data.visibility = vis;
+          await storage.set("formations:" + f.id, JSON.stringify(data), false);
+        }
+      }catch(e){ /* 讀不到就只改索引 */ }
+      changed++;
+    }
+    if(!changed){
+      toast(vis === "public" ? "選取的編成本來就都是公開的。" : "選取的編成本來就都是私人的。");
+      return;
+    }
+    await saveIndex(idx);
+    await syncFormationsToFolder();
+    await refreshFormationResults();
+    toast(`已把 ${changed} 筆編成設為${vis === "public" ? "公開" : "私人"}。`);
   }
 
   async function deleteFormationById(id, label){
@@ -6332,32 +6550,81 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const idx = await loadIndex();
     await saveIndex(idx.filter(x => x.id !== id));
     await syncFormationsToFolder();
-    const keep = pickedFormationId === id;
     const at = shownFormationIds.indexOf(id);
+    const keep = pickedFormationIds.has(id);
     await refreshFormationResults();
     if(keep) pickFormationAt(at < 0 ? 0 : at);
     toast("已刪除編成「" + label + "」");
     return true;
   }
 
+  // 一次刪掉選取的好幾筆,只問一次
+  async function deleteSelectedFormations(){
+    const ids = [...pickedFormationIds];
+    if(!ids.length) return;
+    if(ids.length === 1){
+      const card = cardOfFormation(ids[0]);
+      return deleteFormationById(ids[0], card ? card.querySelector(".fc-title").textContent.trim() : "這個編成");
+    }
+    if(!confirm(`確定要刪除選取的 ${ids.length} 筆編成嗎？這個動作沒辦法復原。`)) return;
+    const at = shownFormationIds.indexOf(ids[0]);
+    for(const id of ids){
+      try{ await storage.delete("formations:" + id, false); }catch(e){}
+    }
+    const idx = await loadIndex();
+    const gone = new Set(ids);
+    await saveIndex(idx.filter(x => !gone.has(x.id)));
+    await syncFormationsToFolder();
+    await refreshFormationResults();
+    pickFormationAt(at < 0 ? 0 : at);
+    toast(`已刪除 ${ids.length} 筆編成。`);
+  }
+
+  // 批次操作列與公開／私人篩選的接線。
+  // 這一整組只有本機版用得到,線上版直接把控制項藏起來,不會變成按不動的裝飾。
+  {
+    const on = (id, fn) => { const el = $("#" + id); if(el) el.addEventListener("click", fn); };
+    on("fbulk-public",  () => setFormationVisibility([...pickedFormationIds], "public"));
+    on("fbulk-private", () => setFormationVisibility([...pickedFormationIds], "private"));
+    on("fbulk-delete",  () => deleteSelectedFormations());
+    on("fbulk-clear",   () => setPickedFormation(null));
+    const sel = $("#formation-vis-filter");
+    if(sel) sel.addEventListener("change", () => {
+      formationVisFilter = sel.value;
+      refreshFormationResults();
+    });
+    if(IS_WEB && sel) sel.style.display = "none";
+  }
+
   async function refreshFormationResults(){
-    const list = await loadIndex();
+    const all = await loadIndex();
+    // 線上版只拿得到公開的那幾筆,訪客看到的就是你挑出來的範例編成
+    const list = IS_WEB ? all.filter(isPublicFormation) : all;
     const q = $("#formation-search-input").value;
-    const filtered = list.filter(f => matchesFormationSearch(f, q));
-    $("#formation-count").textContent = `共 ${list.length} 筆編成　顯示 ${filtered.length} 筆`;
+    let filtered = list.filter(f => matchesFormationSearch(f, q));
+    if(!IS_WEB && formationVisFilter === "public") filtered = filtered.filter(isPublicFormation);
+    if(!IS_WEB && formationVisFilter === "private") filtered = filtered.filter(f => !isPublicFormation(f));
+    const pub = list.filter(isPublicFormation).length;
+    $("#formation-count").textContent = `共 ${list.length} 筆編成　顯示 ${filtered.length} 筆` +
+      (IS_WEB ? "" : `　（公開 ${pub}／私人 ${list.length - pub}）`);
     const box = $("#formation-results");
     box.innerHTML = "";
     shownFormationIds = filtered.map(f => f.id);
-    // 原本選的那筆被搜尋條件濾掉了就放掉選取
-    if(pickedFormationId && shownFormationIds.indexOf(pickedFormationId) < 0) pickedFormationId = null;
+    // 被搜尋條件濾掉的那幾筆要從選取裡拿掉,不然會留下看不見的選取
+    const visible = new Set(shownFormationIds);
+    pickedFormationIds = new Set([...pickedFormationIds].filter(id => visible.has(id)));
+    if(formationAnchor && !visible.has(formationAnchor)) formationAnchor = null;
     if(filtered.length === 0){
       box.innerHTML = `<div class="no-result">沒有符合條件的編成</div>`;
       updateFormationKeyHint();
+      updateFormationBulkBar();
       return;
     }
     filtered.forEach(f => {
       const card = document.createElement("div");
-      card.className = "formation-card" + (f.id === pickedFormationId ? " picked" : "");
+      const isPub = isPublicFormation(f);
+      card.className = "formation-card" + (pickedFormationIds.has(f.id) ? " picked" : "") +
+                       (isPub ? "" : " is-private");
       card.dataset.fid = f.id;
       const stationsText = (f.segments || [])
         .filter(s => s.from || s.to)
@@ -6365,7 +6632,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         .join("　|　");
       card.innerHTML = `
         <div class="fc-main">
-          <div class="fc-title">${esc(f.name || "(未命名)")}</div>
+          <div class="fc-title">${IS_WEB ? "" :
+            `<span class="fc-vis ${isPub ? "pub" : "pri"}" data-act="vis" title="點一下切換公開／私人">${isPub ? "公開" : "私人"}</span>`
+          }${esc(f.name || "(未命名)")}</div>
           <div class="fc-meta">${esc(stationsText)}　${esc([f.dateStr, f.trainInfo, f.company, f.region].filter(Boolean).join(" / "))}</div>
           <div class="fc-cars">${esc((f.carModelsUsed || []).join("、"))}</div>
           <div class="fc-preview" style="margin-top:8px;"></div>
@@ -6377,6 +6646,13 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           <button class="btn small secondary" data-act="share">↗ 匯出編成</button>
         </div>
       `;
+      const visEl = card.querySelector('[data-act="vis"]');
+      if(visEl) visEl.addEventListener("click", (e) => {
+        e.stopPropagation();
+        // 這筆有在選取範圍裡就整批一起改,否則只改這一筆
+        const ids = pickedFormationIds.has(f.id) ? [...pickedFormationIds] : [f.id];
+        setFormationVisibility(ids, isPub ? "private" : "public");
+      });
       card.querySelector('[data-act="load"]').addEventListener("click", () => loadFormationIntoBuilder(f.id));
       card.querySelector('[data-act="export"]').addEventListener("click", () => exportFormationById(f.id));
       card.querySelector('[data-act="share"]').addEventListener("click", async () => {
@@ -6391,10 +6667,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         setPickedFormation(f.id);
         deleteFormationById(f.id, f.nickname || f.name);
       });
-      // 點卡片任何地方就選取它(按按鈕時不重複處理)
+
+      // 點卡片任何地方就選取它(按按鈕、點徽章時不重複處理)
       card.addEventListener("click", (e) => {
-        if(e.target.closest("button")) return;
-        setPickedFormation(f.id === pickedFormationId ? null : f.id);
+        if(e.target.closest("button") || e.target.closest("[data-act]")) return;
+        clickPickFormation(f.id, e);
       });
       box.appendChild(card);
 
@@ -6406,6 +6683,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       });
     });
     updateFormationKeyHint();
+    updateFormationBulkBar();
   }
 
   // 搜尋結果的編成預覽:把車廂圖片照編成順序排成一列,
@@ -6486,7 +6764,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         toast("這個檔案裡沒有編成資料（找不到 formationsIndex 欄位）。", "err");
         return;
       }
-      if(!confirm(`匯入後會整個覆蓋目前的編成資料庫,改成檔案中的 ${incoming.length} 筆編成,確定要繼續嗎？`)) return;
+      if(!confirm(`目前的編成資料庫會被整個清空，換成檔案裡的 ${incoming.length} 筆編成。\n` +
+                  `（想保留現有的編成請改按「＋ 加入編成」）\n\n確定要繼續嗎？`)) return;
       let done = 0;
       try{
         await saveIndex(incoming);
@@ -6506,6 +6785,112 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         toast(quotaLike
           ? `這台裝置的瀏覽器儲存空間不足，只成功匯入了 ${done} / ${incoming.length} 筆編成。`
           : `匯入時發生錯誤（已完成 ${done} / ${incoming.length} 筆）：` + (err && err.message ? err.message : err),
+          "err", 7000);
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = "";
+  });
+
+  // 編成的內容指紋:拿掉編號、把鍵排序之後再字串化,
+  // 所以同一個編成不管編號是什麼、欄位順序如何,算出來都一樣。
+  function formationSignature(data){
+    const norm = v => {
+      if(Array.isArray(v)) return v.map(norm);
+      if(v && typeof v === "object"){
+        const out = {};
+        Object.keys(v).sort().forEach(k => { if(k !== "id") out[k] = norm(v[k]); });
+        return out;
+      }
+      return v;
+    };
+    try{ return JSON.stringify(norm(data)); }
+    catch(e){ return Math.random().toString(36); }   // 算不出來就當成獨一無二的一筆
+  }
+
+  // ---------- 加入編成(不清空現有資料) ----------
+  // 編號撞到的時候要分兩種情況:內容一模一樣就是同一筆,略過;
+  // 內容不同代表是別人那邊改過的另一版,給它一個新編號兩邊都留著,不會覆蓋掉自己的。
+  $("#merge-formations-file").addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onerror = () => toast("讀取檔案失敗，請再試一次。", "err");
+    reader.onload = async () => {
+      let payload;
+      try{ payload = JSON.parse(reader.result); }
+      catch(err){ toast("匯入失敗，這不是有效的JSON檔案。", "err"); return; }
+      const incoming = payload.formationsIndex || [];
+      if(!Array.isArray(incoming) || incoming.length === 0){
+        toast("這個檔案裡沒有編成資料（找不到 formationsIndex 欄位）。", "err");
+        return;
+      }
+
+      const current = await loadIndex();
+      const haveIds = new Set(current.map(f => f.id));
+      // 先把自己現有的編成全部算成「內容指紋」。
+      // 不能只比編號:撞號時另存的那一筆編號已經換過,
+      // 同一個檔案再匯入一次就會又多一筆,變成每按一次就長一份。
+      const mineSigs = new Set();
+      for(const f of current){
+        try{
+          const res = await storage.get("formations:" + f.id, false);
+          if(res) mineSigs.add(formationSignature(JSON.parse(res.value)));
+        }catch(err){ /* 讀不到的那筆就當作沒有 */ }
+      }
+
+      const plan = [];            // { entry, data, renamed }
+      let same = 0, renamed = 0;
+      incoming.forEach(f => {
+        if(!f || !f.id) return;
+        const data = (payload.formationsData && payload.formationsData[f.id]) || null;
+        if(!data) return;
+        const sig = formationSignature(data);
+        if(mineSigs.has(sig)){ same++; return; }     // 內容已經有了(編號是不是一樣都無所謂)
+        mineSigs.add(sig);
+        if(haveIds.has(f.id)){
+          // 編號撞到但內容不同:改用新編號存成另一筆,兩邊都保留
+          const nid = "f_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
+          plan.push({ entry: Object.assign({}, f, { id: nid }),
+                      data: Object.assign({}, data, { id: nid }), renamed: true });
+          haveIds.add(nid);
+          renamed++;
+          return;
+        }
+        haveIds.add(f.id);
+        plan.push({ entry: f, data, renamed: false });
+      });
+
+      if(!plan.length){
+        toast(`這個檔案裡的 ${incoming.length} 筆編成你已經全部都有了，沒有新增任何資料。`, "", 4200);
+        return;
+      }
+      if(!confirm(`要把 ${plan.length} 筆編成加進目前的資料庫嗎？\n` +
+                  `・現有的 ${current.length} 筆編成不會被刪除或覆蓋\n` +
+                  (same ? `・檔案裡另外 ${same} 筆跟你的完全相同，會略過\n` : "") +
+                  (renamed ? `・其中 ${renamed} 筆的編號跟你現有的撞號，會另外存成新的一筆\n` : ""))) return;
+
+      let done = 0;
+      try{
+        for(const item of plan){
+          await storage.set("formations:" + item.entry.id, JSON.stringify(item.data), false);
+          done++;
+        }
+        await saveIndex(current.concat(plan.map(x => x.entry)));
+        await syncFormationsToFolder();
+        refreshFormationResults();
+        showReport("加入完成", [
+          `・新增 ${plan.length} 筆編成`,
+          same ? `・略過 ${same} 筆（內容完全相同）` : null,
+          renamed ? `・其中 ${renamed} 筆因為編號撞號，另外存成新的一筆` : null,
+          `・目前共 ${current.length + plan.length} 筆編成`
+        ]);
+      }catch(err){
+        refreshFormationResults();
+        const quotaLike = err && (err.name === "QuotaExceededError" || /quota|storage|exceeded/i.test(String(err)));
+        toast(quotaLike
+          ? `這台裝置的瀏覽器儲存空間不足，只成功加入了 ${done} / ${plan.length} 筆編成。`
+          : `加入時發生錯誤（已完成 ${done} / ${plan.length} 筆）：` + (err && err.message ? err.message : err),
           "err", 7000);
       }
     };

@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-11T17:32:45.767Z",
+  "exportedAt": "2026-10-12T17:42:44.650Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -4482,7 +4482,8 @@
       ],
       "productCodes": [
         "8549",
-        "10-1546"
+        "10-1546",
+        "8547"
       ]
     },
     {
@@ -4502,7 +4503,8 @@
         "01_JR 國鐵 / 01_客車 / 43系"
       ],
       "productCodes": [
-        "10-1546"
+        "10-1546",
+        "8548"
       ]
     },
     {
@@ -54452,8 +54454,8 @@
       ]
     },
     {
-      "id": "vp_s8fa5n1h3wgaz",
-      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/クハ126-100.png",
+      "id": "vp_cpbv4vemetet",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/クハ126-100_長野色.png",
       "series": "E127系",
       "modelCode": "クハ126",
       "variantCode": "100",
@@ -54469,12 +54471,131 @@
       ]
     },
     {
-      "id": "vp_ytz9qlv7ricd",
-      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/クモハE127-100.png",
+      "id": "vp_1nivjuhr2i1br",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/クモハE127-100_長野色.png",
       "series": "E127系",
       "modelCode": "クモハE127",
       "variantCode": "100",
       "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E127系"
+      ]
+    },
+    {
+      "id": "vp_16oq9d726fz1n",
+      "sourcePath": "01_JR 國鐵/01_客車/32-35系/マヌ34_30.png",
+      "series": "32-35系",
+      "modelCode": "マヌ34",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 01_客車 / 32-35系"
+      ]
+    },
+    {
+      "id": "vp_1ylvbuha91yfl",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/ET126-0_標準色.png",
+      "series": "E127系",
+      "modelCode": "ET126",
+      "variantCode": "0",
+      "liveryName": "標準色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E127系"
+      ]
+    },
+    {
+      "id": "vp_1r810hk4fib9s",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/ET127-0_標準色.png",
+      "series": "E127系",
+      "modelCode": "ET127",
+      "variantCode": "0",
+      "liveryName": "標準色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E127系"
+      ]
+    },
+    {
+      "id": "vp_11g6n8bqlgmbd",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/クハ126-0_2次新潟色.png",
+      "series": "E127系",
+      "modelCode": "クハ126",
+      "variantCode": "0",
+      "liveryName": "2次新潟色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E127系"
+      ]
+    },
+    {
+      "id": "vp_11dt0pv1tdqw01",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/クハ126-0_南武支線色.png",
+      "series": "E127系",
+      "modelCode": "クハ126",
+      "variantCode": "0",
+      "liveryName": "南武支線色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E127系"
+      ]
+    },
+    {
+      "id": "vp_clwzgd1swahnv",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/クモハE127-0_2次新潟色.png",
+      "series": "E127系",
+      "modelCode": "クモハE127",
+      "variantCode": "0",
+      "liveryName": "2次新潟色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 國鐵 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E127系"
+      ]
+    },
+    {
+      "id": "vp_q8afet407gkb",
+      "sourcePath": "01_JR 國鐵/03_電車/02_通勤形・近郊形/01_直流用/E127系/クモハE127-0_南武支線色.png",
+      "series": "E127系",
+      "modelCode": "クモハE127",
+      "variantCode": "0",
+      "liveryName": "南武支線色",
       "side": "",
       "company": "",
       "widthCm": 3.8,
