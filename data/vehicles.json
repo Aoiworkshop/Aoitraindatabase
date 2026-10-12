@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-12T19:15:41.942Z",
+  "exportedAt": "2026-10-12T19:27:31.816Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -54607,6 +54607,380 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E127系"
+      ]
+    },
+    {
+      "id": "vp_qrzjsendd6jk",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハE128-0_ピンク_L.png",
+      "series": "E129系",
+      "modelCode": "クモハE128",
+      "variantCode": "0",
+      "liveryName": "ピンク",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_qfdr3kn5rcvy",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハE128-0_ピンク_R.png",
+      "series": "E129系",
+      "modelCode": "クモハE128",
+      "variantCode": "0",
+      "liveryName": "ピンク",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_10dutgv8xue61",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハE128-100_ピンク_L.png",
+      "series": "E129系",
+      "modelCode": "クモハE128",
+      "variantCode": "100",
+      "liveryName": "ピンク",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_10190s18z0g3r",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハE128-100_ピンク_R.png",
+      "series": "E129系",
+      "modelCode": "クモハE128",
+      "variantCode": "100",
+      "liveryName": "ピンク",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_11wi8rz93ef3h",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハE129-0_ピンク_L.png",
+      "series": "E129系",
+      "modelCode": "クモハE129",
+      "variantCode": "0",
+      "liveryName": "ピンク",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1gjfm401x7x63u",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハE129-100_ピンク_R.png",
+      "series": "E129系",
+      "modelCode": "クモハE129",
+      "variantCode": "100",
+      "liveryName": "ピンク",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1c8fhmo1psaseo",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR111-100_ライナー色_L.png",
+      "series": "E129系",
+      "modelCode": "クモハSR111",
+      "variantCode": "100",
+      "liveryName": "ライナー色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1gw18a61wtai7o",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハE129-100_ピンク_L.png",
+      "series": "E129系",
+      "modelCode": "クモハE129",
+      "variantCode": "100",
+      "liveryName": "ピンク",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_11jwmlt8r419v",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハE129-0_ピンク_R.png",
+      "series": "E129系",
+      "modelCode": "クモハE129",
+      "variantCode": "0",
+      "liveryName": "ピンク",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1byhe3i1q28w5q",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR111-100_ライナー色_R.png",
+      "series": "E129系",
+      "modelCode": "クモハSR111",
+      "variantCode": "100",
+      "liveryName": "ライナー色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_l59ze1c565gm",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR111-200_一般色_R.png",
+      "series": "E129系",
+      "modelCode": "クモハSR111",
+      "variantCode": "200",
+      "liveryName": "一般色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1u43byt18deoq9",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR111-300_一般色_L.png",
+      "series": "E129系",
+      "modelCode": "クモハSR111",
+      "variantCode": "300",
+      "liveryName": "一般色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_38ml01c4l60o",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR111-200_一般色_L.png",
+      "series": "E129系",
+      "modelCode": "クモハSR111",
+      "variantCode": "200",
+      "liveryName": "一般色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1ulzzd718ncshb",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR111-300_一般色_R.png",
+      "series": "E129系",
+      "modelCode": "クモハSR111",
+      "variantCode": "300",
+      "liveryName": "一般色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1xvnibfun9ej",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR112-100_ライナー色_L.png",
+      "series": "E129系",
+      "modelCode": "クモハSR112",
+      "variantCode": "100",
+      "liveryName": "ライナー色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1ql2l9fxp9k5",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR112-100_ライナー色_R.png",
+      "series": "E129系",
+      "modelCode": "クモハSR112",
+      "variantCode": "100",
+      "liveryName": "ライナー色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1wxs3yvsu47eb",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR112-200_一般色_L.png",
+      "series": "E129系",
+      "modelCode": "クモハSR112",
+      "variantCode": "200",
+      "liveryName": "一般色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_1xic9zdt6el7x",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR112-200_一般色_R.png",
+      "series": "E129系",
+      "modelCode": "クモハSR112",
+      "variantCode": "200",
+      "liveryName": "一般色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_2wxel2dnklma",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR112-300_一般色_L.png",
+      "series": "E129系",
+      "modelCode": "クモハSR112",
+      "variantCode": "300",
+      "liveryName": "一般色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_3hhklkdzuzfw",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/クモハSR112-300_一般色_R.png",
+      "series": "E129系",
+      "modelCode": "クモハSR112",
+      "variantCode": "300",
+      "liveryName": "一般色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_zfu1pu14rpyvq",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/モハE128-0_ピンク.png",
+      "series": "E129系",
+      "modelCode": "モハE128",
+      "variantCode": "0",
+      "liveryName": "ピンク",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_ckzjn7auvwij",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E129系/モハE129-0_ピンク.png",
+      "series": "E129系",
+      "modelCode": "モハE129",
+      "variantCode": "0",
+      "liveryName": "ピンク",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
       ]
     }
   ]
