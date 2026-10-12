@@ -1079,12 +1079,12 @@
       "company": "",
       "region": "",
       "notes": [
-        ""
+        "後ろ3両は好摩で切り離し，花輪線へ直通して大館行きとなります。"
       ],
       "titleNote": "",
       "visibility": "public",
       "carModelsUsed": [
-        "ED75-700",
+        "ED75-0",
         "オハフ45",
         "オハ47",
         "オハ61",
@@ -1092,7 +1092,7 @@
         "キハ55",
         "キハユニ26"
       ],
-      "updatedAt": "2026-10-12T17:42:32.642Z"
+      "updatedAt": "2026-10-12T18:14:50.810Z"
     },
     {
       "id": "f_1789721515588",
@@ -4896,14 +4896,14 @@
       "company": "",
       "region": "",
       "notes": [
-        ""
+        "後ろ3両は好摩で切り離し，花輪線へ直通して大館行きとなります。"
       ],
       "cars": [
         {
-          "vehicleId": "vp_1g1vs7gyd4fou",
+          "vehicleId": "vp_71qe0buh2q2b",
           "flipped": false,
-          "attribute": "",
-          "productCode": "",
+          "attribute": "単",
+          "productCode": "7139",
           "setGroupId": ""
         },
         {
@@ -8783,5 +8783,5 @@
       "visibility": "private"
     }
   },
-  "savedAt": "2026-10-12T17:43:32.681Z"
+  "savedAt": "2026-10-12T18:19:29.743Z"
 }

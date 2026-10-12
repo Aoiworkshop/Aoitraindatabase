@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-12T17:42:44.650Z",
+  "exportedAt": "2026-10-12T18:19:34.222Z",
   "vehicles": [
     {
       "id": "vp_1w1wzppbqmh7d",
@@ -24675,9 +24675,12 @@
       "widthCm": 3,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "7139",
       "categories": [
         "03_機關車 / 03_電氣機關車 / ED75"
+      ],
+      "productCodes": [
+        "7139"
       ]
     },
     {
