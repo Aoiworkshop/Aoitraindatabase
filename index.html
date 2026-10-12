@@ -229,6 +229,9 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   .cargo-table input.group-input{width:80px;}
 
   /* ---- db backup row ---- */
+  /* 分類標籤(TAG)封存中:整組介面藏起來,資料與欄位都原樣保留。
+     要復活把 app.js 裡的 TAG_FEATURE 改成 true 即可。 */
+  body.tag-archived .tag-feature{display:none !important;}
   .db-io-row{display:flex;gap:6px;margin-bottom:10px;}
   .db-io-row .btn{flex:1;text-align:center;}
   .folder-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;padding:3px 9px;border-radius:10px;margin-bottom:12px;}
@@ -451,11 +454,11 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       </div>
       <datalist id="cat-list"></datalist>
 
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;">
+      <div class="tag-feature" style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;">
         <h2 style="margin:0;">標籤篩選（次要）</h2>
         <button class="btn small secondary" id="btn-toggle-tag-nav" style="padding:3px 8px;font-size:10.5px;">展開</button>
       </div>
-      <div id="tag-nav-wrap" style="display:none;">
+      <div id="tag-nav-wrap" class="tag-feature" style="display:none;">
         <div style="text-align:right;margin:4px 0;">
           <button class="btn small secondary" id="btn-toggle-cat-edit" style="padding:3px 8px;font-size:10.5px;">編輯分類樹</button>
         </div>
@@ -464,7 +467,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       </div>
 
       <div id="selection-bar" style="display:none;align-items:center;gap:6px;font-size:11px;margin-bottom:8px;flex-wrap:wrap;"></div>
-      <div id="batch-tag-panel" style="display:none;border:1px solid var(--line);border-radius:6px;padding:8px;margin-bottom:8px;background:#fafaf8;">
+      <div id="batch-tag-panel" class="tag-feature" style="display:none;border:1px solid var(--line);border-radius:6px;padding:8px;margin-bottom:8px;background:#fafaf8;">
         <div style="font-size:10.5px;color:var(--muted);margin-bottom:6px;">會用這裡選的標籤，整組覆寫掉選取車輛原本的分類標籤(不是附加)：</div>
         <div id="batch-tag-picker"></div>
         <div class="tags" id="batch-tag-tags"></div>
@@ -524,7 +527,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
               <div class="field"><label>車輛型式</label><input id="s-model" placeholder="例：クハ221"></div>
               <div class="field"><label>番代</label><input id="s-variant" placeholder="例：100"></div>
               <div class="field"><label>塗裝名稱</label><input id="s-livery" placeholder="例：湘南色"></div>
-              <div class="field"><label>目前所屬公司</label><input id="s-company" placeholder="例：JR西日本"></div>
+              <div class="field tag-feature"><label>目前所屬公司</label><input id="s-company" placeholder="例：JR西日本"></div>
               <div class="field"><label>車廂寬度（公分）</label><input id="s-width" placeholder="預設 3.8" value="3.8"></div>
               <div class="field"><label>方向（左右不對稱時填 L／R）</label><input id="s-side" placeholder="留白 / L / R"></div>
               <div class="field">
@@ -556,9 +559,9 @@ if(location.protocol === "http:" || location.protocol === "https:"){
                 <div id="s-code-list" class="tags" style="margin-top:6px;"></div>
               </div>
             </div>
-            <label style="font-size:10.5px;color:var(--muted);">分類標籤（公司可複選）</label>
-            <div id="s-cat-picker" style="border:1px solid var(--line);border-radius:6px;padding:10px;margin-bottom:8px;background:#fafaf8;"></div>
-            <div class="tags" id="s-cat-tags"></div>
+            <label class="tag-feature" style="font-size:10.5px;color:var(--muted);">分類標籤（公司可複選）</label>
+            <div id="s-cat-picker" class="tag-feature" style="border:1px solid var(--line);border-radius:6px;padding:10px;margin-bottom:8px;background:#fafaf8;"></div>
+            <div class="tags tag-feature" id="s-cat-tags"></div>
             <div class="field" style="margin-bottom:12px;"><label>備註</label><input id="s-note" placeholder="選填"></div>
             <div id="s-rename-row" style="display:none;background:#f6f7f4;border:1px solid var(--line);border-radius:6px;padding:8px 10px;margin-bottom:10px;line-height:1.6;font-size:11px;color:var(--muted);">
               <div id="s-rename-preview"></div>
@@ -573,11 +576,11 @@ if(location.protocol === "http:" || location.protocol === "https:"){
             </div>
             <div class="form-grid" style="grid-template-columns:repeat(2,1fr);">
               <div class="field"><label>車輛系列（套用到全部，可逐列修改）</label><input id="b-series" placeholder="例：221"></div>
-              <div class="field"><label>所屬公司（套用到全部，可逐列修改）</label><input id="b-company" placeholder="例：JR東日本"></div>
+              <div class="field tag-feature"><label>所屬公司（套用到全部，可逐列修改）</label><input id="b-company" placeholder="例：JR東日本"></div>
             </div>
-            <label style="font-size:10.5px;color:var(--muted);">套用到全部：分類標籤</label>
-            <div id="b-cat-picker" style="border:1px solid var(--line);border-radius:6px;padding:10px;margin-bottom:8px;background:#fafaf8;"></div>
-            <div class="tags" id="b-cat-tags"></div>
+            <label class="tag-feature" style="font-size:10.5px;color:var(--muted);">套用到全部：分類標籤</label>
+            <div id="b-cat-picker" class="tag-feature" style="border:1px solid var(--line);border-radius:6px;padding:10px;margin-bottom:8px;background:#fafaf8;"></div>
+            <div class="tags tag-feature" id="b-cat-tags"></div>
             <div style="overflow-x:auto;">
               <table class="cargo-table" id="batch-table">
                 <thead><tr><th>同上</th><th>圖片</th><th>車輛系列</th><th>車輛型式</th><th>番代</th><th>塗裝名稱</th><th>所屬公司</th><th>寬度(cm)</th><th></th></tr></thead>
@@ -971,6 +974,16 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   // 而不是只存在瀏覽器的 localStorage 裡,這樣整個資料夾可以打包搬走。
   let vehicleDirHandle = null;
   let formationDirHandle = null;
+  // ---------- 分類標籤(TAG)功能:已封存 ----------
+  // 封存原因:
+  //  1) 側欄主要的資料夾導覽是直接讀圖片路徑(vehicleFolders)算出來的,從頭到尾沒用到 categories,
+  //     所以 TAG 只服務「標籤篩選」那一個次要面板。
+  //  2) 掃描到檔案搬移時會用資料夾路徑整個覆寫 v.categories,手動貼的標籤會被無聲清掉,
+  //     也就是說這個欄位存的其實只是資料夾路徑的副本,留不住人工輸入。
+  // 作法是「藏起來」而不是刪掉:欄位、掃描時的自動寫入、Excel 欄位全部原樣保留,
+  // 所以資料不會掉,把下面這行改成 true 就整組回來。
+  const TAG_FEATURE = false;
+  if(!TAG_FEATURE) document.body.classList.add("tag-archived");
   const FS_SUPPORTED = !!window.showDirectoryPicker;
 
   // ---------- 線上版／本機版共用 ----------
@@ -1047,7 +1060,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261013-1640";
+  const APP_BUILD = "20261013-2050";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -2016,7 +2029,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     // 成對的車輛不用分別標 (L)/(R),改成標示「左右兩面」;
     // 只有單獨存在的 L 或 R(找不到另一面)才照實顯示
     const mark = hasSidePair(v) ? "（左右兩面）" : (v.side ? `(${v.side})` : "");
-    return [v.series, v.liveryName + mark, v.company].filter(s => s && s.trim()).join(" / ");
+    const parts = [v.series, v.liveryName + mark];
+    if(TAG_FEATURE) parts.push(v.company);     // 公司欄位跟著 TAG 一起封存
+    return parts.filter(s => s && s.trim()).join(" / ");
   }
 
   // 從「相對路徑 + 檔名」解析出初始欄位值。
@@ -2555,7 +2570,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     bar.style.display = "flex";
     bar.innerHTML = `
       <span>已選取 ${selectedVehicleIds.size} 輛</span>
-      <button class="btn small secondary" id="btn-batch-tag">批次加上分類標籤</button>
+      ${TAG_FEATURE ? `<button class="btn small secondary" id="btn-batch-tag">批次加上分類標籤</button>` : ""}
       <button class="btn small secondary" id="btn-export-selected">↗ 匯出選取的車輛</button>
       <button class="btn small danger" id="btn-delete-selected">刪除選取</button>
       <button class="btn small secondary" id="btn-clear-selection">取消選取</button>
@@ -2563,7 +2578,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     $("#btn-delete-selected").addEventListener("click", deleteSelectedVehicles);
     $("#btn-clear-selection").addEventListener("click", () => { selectedVehicleIds.clear(); renderLibrary(); });
     $("#btn-export-selected").addEventListener("click", exportSelectedVehicles);
-    $("#btn-batch-tag").addEventListener("click", () => {
+    if(TAG_FEATURE) $("#btn-batch-tag").addEventListener("click", () => {
       const panel = $("#batch-tag-panel");
       const showing = panel.style.display !== "none";
       if(showing){
@@ -2652,7 +2667,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         <img src="${vehicleImgSrc(v)}" alt="${vehicleLabel(v)}">
         <div class="meta">
           <div class="name">${esc(vehicleLabel(v))}</div>
-          <div class="cat">${esc(vehicleSubLabel(v) || (v.categories||[])[0] || "")}</div>
+          <div class="cat">${esc(vehicleSubLabel(v) || (TAG_FEATURE ? (v.categories||[])[0] : "") || "")}</div>
         </div>
         <div class="row-actions">
           <button data-act="edit" title="編輯">✎</button>
@@ -3203,14 +3218,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   $("#btn-scan-vehicle-folder").addEventListener("click", scanVehicleFolder);
 
-  $("#btn-toggle-tag-nav").addEventListener("click", () => {
+  if(TAG_FEATURE) $("#btn-toggle-tag-nav").addEventListener("click", () => {
     const wrap = $("#tag-nav-wrap");
     const showing = wrap.style.display !== "none";
     wrap.style.display = showing ? "none" : "";
     $("#btn-toggle-tag-nav").textContent = showing ? "展開" : "收合";
   });
 
-  $("#btn-toggle-cat-edit").addEventListener("click", () => {
+  if(TAG_FEATURE) $("#btn-toggle-cat-edit").addEventListener("click", () => {
     categoryEditMode = !categoryEditMode;
     $("#btn-toggle-cat-edit").textContent = categoryEditMode ? "完成編輯" : "編輯分類樹";
     $("#btn-toggle-cat-edit").classList.toggle("btn", categoryEditMode);
@@ -3219,6 +3234,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   });
 
   function renderCategoryNav(){
+    if(!TAG_FEATURE){ activeCategoryFilter = ""; categoryEditMode = false; return; }
     const container = $("#category-tree-nav");
     container.innerHTML = "";
 
@@ -3451,6 +3467,16 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   const COMPANY_LIST = Object.keys(CATEGORY_TREE);
 
   function createCatPicker(pickerSel, tagsSel, companySel){
+    // TAG 封存中:回傳一個不畫任何東西的空殼。
+    // cats 照樣存在,所以編輯既有車輛時原本的分類標籤會原封不動寫回去,資料不會掉。
+    if(!TAG_FEATURE){
+      const keep = { cats: [] };
+      return {
+        get cats(){ return keep.cats; },
+        set cats(v){ keep.cats = v; },
+        render(){}, reset(){ keep.cats = []; }
+      };
+    }
     const pickerEl = $(pickerSel);
     const tagsEl = $(tagsSel);
     const companyEl = companySel ? $(companySel) : null;
@@ -3537,7 +3563,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   const batchPicker = createCatPicker("#b-cat-picker", "#b-cat-tags", "#b-company");
   const batchTagPicker = createCatPicker("#batch-tag-picker", "#batch-tag-tags", null);
 
-  $("#btn-apply-batch-tag").addEventListener("click", async () => {
+  if(TAG_FEATURE) $("#btn-apply-batch-tag").addEventListener("click", async () => {
     if(batchTagPicker.cats.length === 0){
       toast("請先選至少一個分類標籤。", "err");
       $("#batch-tag-picker").scrollIntoView({ block: "center" });
@@ -3556,7 +3582,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     renderLibrary();
     toast(`已把 ${changed} 輛車的分類標籤覆寫成這一組。`);
   });
-  $("#btn-cancel-batch-tag").addEventListener("click", () => {
+  if(TAG_FEATURE) $("#btn-cancel-batch-tag").addEventListener("click", () => {
     $("#batch-tag-panel").style.display = "none";
   });
 
