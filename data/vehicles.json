@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-13T12:44:21.972Z",
+  "exportedAt": "2026-10-14T15:37:58.142Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -48520,12 +48520,12 @@
       ]
     },
     {
-      "id": "vp_1o31s3a1v9bsdc",
-      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ47系/キハ47-1000.png",
+      "id": "vp_1t3ar4ob5b73o",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ47系/キハ47-1000_首都圈色.png",
       "series": "キハ47系",
       "modelCode": "キハ47",
       "variantCode": "1000",
-      "liveryName": "",
+      "liveryName": "首都圈色",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -48534,7 +48534,10 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ47系"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": []
     },
     {
       "id": "vp_14re2xckd7jv2",
@@ -48724,12 +48727,12 @@
       ]
     },
     {
-      "id": "vp_n7ftw5168ew4z",
-      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ47系/キハ47-100_L.png",
+      "id": "vp_1rlhapn1bgqgxz",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ47系/キハ47-100_首都圈色_L.png",
       "series": "キハ47系",
       "modelCode": "キハ47",
       "variantCode": "100",
-      "liveryName": "",
+      "liveryName": "首都圈色",
       "side": "L",
       "company": "",
       "widthCm": 3.8,
@@ -48738,15 +48741,18 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ47系"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": []
     },
     {
-      "id": "vp_npcnt716kpg31",
-      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ47系/キハ47-100_R.png",
+      "id": "vp_1rq4jj91bfk8vt",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ47系/キハ47-100_首都圈色_R.png",
       "series": "キハ47系",
       "modelCode": "キハ47",
       "variantCode": "100",
-      "liveryName": "",
+      "liveryName": "首都圈色",
       "side": "R",
       "company": "",
       "widthCm": 3.8,
@@ -48755,7 +48761,10 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ47系"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": []
     },
     {
       "id": "vp_l1j69s12x63a",
@@ -48860,12 +48869,12 @@
       ]
     },
     {
-      "id": "vp_av1pir1vulchl",
-      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-1500.png",
+      "id": "vp_ej90l91cmg80b",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-1500_首都圈色.png",
       "series": "キハ48系",
       "modelCode": "キハ48",
       "variantCode": "1500",
-      "liveryName": "",
+      "liveryName": "首都圈色",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -48874,7 +48883,10 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ48系"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": []
     },
     {
       "id": "vp_1vqsox71u84jlb",
@@ -48894,12 +48906,12 @@
       ]
     },
     {
-      "id": "vp_1dzgr9t1v6n2l7",
-      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-500_L.png",
+      "id": "vp_cv2br31dxnnin",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-500_首都圈色_L.png",
       "series": "キハ48系",
       "modelCode": "キハ48",
       "variantCode": "500",
-      "liveryName": "",
+      "liveryName": "首都圈色",
       "side": "L",
       "company": "",
       "widthCm": 3.8,
@@ -48908,15 +48920,18 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ48系"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": []
     },
     {
-      "id": "vp_1ec2jyn1v9p2qt",
-      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-500_R.png",
+      "id": "vp_d50lsx1dnpdn5",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-500_首都圈色_R.png",
       "series": "キハ48系",
       "modelCode": "キハ48",
       "variantCode": "500",
-      "liveryName": "",
+      "liveryName": "首都圈色",
       "side": "R",
       "company": "",
       "widthCm": 3.8,
@@ -48925,7 +48940,10 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ48系"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": []
     },
     {
       "id": "vp_1qc7gty2fm75u",
@@ -54986,6 +55004,57 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / E129系"
+      ]
+    },
+    {
+      "id": "vp_ibz96z2qn2uz",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-1500_うみねこ.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "1500",
+      "liveryName": "うみねこ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_134egzt2aar7",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-500_うみねこ_L.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "500",
+      "liveryName": "うみねこ",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_12juazbekokt",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ48系/キハ48-500_うみねこ_R.png",
+      "series": "キハ48系",
+      "modelCode": "キハ48",
+      "variantCode": "500",
+      "liveryName": "うみねこ",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ48系"
       ]
     }
   ]
