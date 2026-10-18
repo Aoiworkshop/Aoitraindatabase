@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-14T15:37:58.142Z",
+  "exportedAt": "2026-10-18T17:18:33.970Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -3937,9 +3937,9 @@
       ]
     },
     {
-      "id": "vp_fqufck1eznpqk",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/オハ35_戦前型・茶.png",
-      "series": "32-35系",
+      "id": "vp_1fjsqd9zp97a1",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/オハ35_戦前型・茶.png",
+      "series": "オハ35系",
       "modelCode": "オハ35",
       "variantCode": "",
       "liveryName": "戦前型・茶",
@@ -3950,13 +3950,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / オハ35系"
       ]
     },
     {
-      "id": "vp_8obhm71ka54s1",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/オハ35形_戦後型・折妻・茶.png",
-      "series": "32-35系",
+      "id": "vp_1dzzxly1jb9hhk",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/オハ35形_戦後型・折妻・茶.png",
+      "series": "オハ35系",
       "modelCode": "オハ35形",
       "variantCode": "",
       "liveryName": "戦後型・折妻・茶",
@@ -3967,13 +3967,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / オハ35系"
       ]
     },
     {
-      "id": "vp_19219tz1ahc0l",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/オハニ36_茶.png",
-      "series": "32-35系",
+      "id": "vp_eugizywg23zy",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/オハニ36_茶.png",
+      "series": "オハ35系",
       "modelCode": "オハニ36",
       "variantCode": "",
       "liveryName": "茶",
@@ -3984,13 +3984,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / オハ35系"
       ]
     },
     {
-      "id": "vp_1xo0nez1rucmb9",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/オハ35形_戦後型・折妻・青.png",
-      "series": "32-35系",
+      "id": "vp_1pfzpj61rur224",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/オハ35形_戦後型・折妻・青.png",
+      "series": "オハ35系",
       "modelCode": "オハ35形",
       "variantCode": "",
       "liveryName": "戦後型・折妻・青",
@@ -4001,30 +4001,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / オハ35系"
       ]
     },
     {
-      "id": "vp_g4dlhxkfhe11",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/オハフ33.png",
-      "series": "32-35系",
-      "modelCode": "オハフ33",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ]
-    },
-    {
-      "id": "vp_xolrab1arx369",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/オハニ36_青.png",
-      "series": "32-35系",
+      "id": "vp_16ds822nwkjfe",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/オハニ36_青.png",
+      "series": "オハ35系",
       "modelCode": "オハニ36",
       "variantCode": "",
       "liveryName": "青",
@@ -4035,13 +4018,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / オハ35系"
       ]
     },
     {
-      "id": "vp_1umg8125sems6",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/オハフ33_戦後型・茶.png",
-      "series": "32-35系",
+      "id": "vp_1i88n0bg27hx7",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/オハフ33_戦後型・茶.png",
+      "series": "スハ32系",
       "modelCode": "オハフ33",
       "variantCode": "",
       "liveryName": "戦後型・茶",
@@ -4052,47 +4035,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / スハ32系"
       ]
     },
     {
-      "id": "vp_4iqhn6xhl8sm",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/スハ32.png",
-      "series": "32-35系",
-      "modelCode": "スハ32",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ]
-    },
-    {
-      "id": "vp_1l5v5uhlv420t",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/スハニ32.png",
-      "series": "32-35系",
-      "modelCode": "スハニ32",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ]
-    },
-    {
-      "id": "vp_w1pkc4jgpl76",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/スハニ32_青.png",
-      "series": "32-35系",
+      "id": "vp_1gu21rd1l3zawf",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/スハニ32_青.png",
+      "series": "スハ32系",
       "modelCode": "スハニ32",
       "variantCode": "",
       "liveryName": "青",
@@ -4103,13 +4052,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / スハ32系"
       ]
     },
     {
-      "id": "vp_llzc4cbk8jgw",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/マニ36_茶.png",
-      "series": "32-35系",
+      "id": "vp_1ysmoglq3w8zl",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マニ36_茶.png",
+      "series": "オハ35系",
       "modelCode": "マニ36",
       "variantCode": "",
       "liveryName": "茶",
@@ -4120,7 +4069,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-899",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / オハ35系"
       ],
       "productCodes": [
         "10-899",
@@ -4131,9 +4080,9 @@
       ]
     },
     {
-      "id": "vp_4isf2aegkrhu",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/オハフ33_戦後型・青.png",
-      "series": "32-35系",
+      "id": "vp_181iplr14kd1jz",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/オハフ33_戦後型・青.png",
+      "series": "スハ32系",
       "modelCode": "オハフ33",
       "variantCode": "",
       "liveryName": "戦後型・青",
@@ -4144,13 +4093,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / スハ32系"
       ]
     },
     {
-      "id": "vp_bqcxa11hchnth",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/マニ37_青.png",
-      "series": "32-35系",
+      "id": "vp_15wt3g0i2uaas",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マニ37_青.png",
+      "series": "オハ35系",
       "modelCode": "マニ37",
       "variantCode": "",
       "liveryName": "青",
@@ -4161,7 +4110,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1724",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / オハ35系"
       ],
       "productCodes": [
         "10-1724",
@@ -4169,9 +4118,9 @@
       ]
     },
     {
-      "id": "vp_5fyb5a1uezt2s",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スイロフ30.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1okxoqgw4fc7w",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スイロフ30.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スイロフ30",
       "variantCode": "",
       "liveryName": "",
@@ -4182,13 +4131,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_15qaiqq1269hj2",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スシ37.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1xxg7p01vsf51y",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スシ37.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スシ37",
       "variantCode": "",
       "liveryName": "",
@@ -4199,13 +4148,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_16gv3be12limc4",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スシ48.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1w5n89o1yd5bzw",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スシ48.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スシ48",
       "variantCode": "",
       "liveryName": "",
@@ -4216,7 +4165,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1546",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ],
       "productCodes": [
         "10-1546",
@@ -4224,9 +4173,9 @@
       ]
     },
     {
-      "id": "vp_esux7iai6wbs",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロ34_新二等帯.png",
-      "series": "32系雙重屋根",
+      "id": "vp_yi71zc1w67k1s",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ34_新二等帯.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロ34",
       "variantCode": "",
       "liveryName": "新二等帯",
@@ -4237,13 +4186,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1dr1fu829otau",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スハネ30.png",
-      "series": "32系雙重屋根",
+      "id": "vp_142gdraknpfb2",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハネ30.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロ34",
       "variantCode": "",
       "liveryName": "",
@@ -4254,13 +4203,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_m0qpai1x9q90o",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロフ30.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1cfdp3w18a4ksg",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロフ30.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロフ30",
       "variantCode": "",
       "liveryName": "",
@@ -4271,13 +4220,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_fo5kwkxcxl6g",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マイネ38.png",
-      "series": "32系雙重屋根",
+      "id": "vp_qnddmqh8q43k",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイネ38.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マイネ38",
       "variantCode": "",
       "liveryName": "",
@@ -4288,13 +4237,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1nxkidd6p3wup",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マイネフ38.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1p22qhj15bo1ih",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイネフ38.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マイネフ38",
       "variantCode": "",
       "liveryName": "",
@@ -4305,13 +4254,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1bki9gu1kq38ue",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マイロネフ37_R.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1vugm601yr1f7i",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイロネフ37_R.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マイロネフ37",
       "variantCode": "",
       "liveryName": "",
@@ -4322,13 +4271,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1b7wgs01kpi3a0",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マイロネフ37_L.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1vwg5uu1yynezk",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイロネフ37_L.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マイロネフ37",
       "variantCode": "",
       "liveryName": "",
@@ -4339,13 +4288,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_zuzm3j1psfbil",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マニ31.png",
-      "series": "32系雙重屋根",
+      "id": "vp_bvrk7dtn2o2d",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マニ31.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マニ31",
       "variantCode": "",
       "liveryName": "",
@@ -4356,13 +4305,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_oli5xo22n5pi",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マイロネフ38.png",
-      "series": "32系雙重屋根",
+      "id": "vp_xqemsa1u9k8ke",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイロネフ38.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マイロネフ38",
       "variantCode": "",
       "liveryName": "",
@@ -4373,13 +4322,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1xnpctu1b8o74w",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マユ31.png",
-      "series": "32系雙重屋根",
+      "id": "vp_gvss6c1evea54",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マユ31.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マユ31",
       "variantCode": "",
       "liveryName": "",
@@ -4390,13 +4339,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1rtkf022x6n6k",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マロネ37.png",
-      "series": "32系雙重屋根",
+      "id": "vp_6wb29018iacys",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マロネ37.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マロネ37",
       "variantCode": "",
       "liveryName": "",
@@ -4407,13 +4356,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_o80jigsxzt2a",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マロシ37.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1nn4ala160pmsa",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マロシ37.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マロシ37",
       "variantCode": "",
       "liveryName": "",
@@ -4424,13 +4373,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_cvlszr16gr28j",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マロネフ37.png",
-      "series": "32系雙重屋根",
+      "id": "vp_11abpg116i2qi3",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マロネフ37.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マロネフ37",
       "variantCode": "",
       "liveryName": "",
@@ -4441,13 +4390,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1ucegrm1obliti",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/オハ46_青.png",
-      "series": "43系",
+      "id": "vp_1sypeus12c6ela",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/オハ46_青.png",
+      "series": "スハ43系",
       "modelCode": "オハ46",
       "variantCode": "",
       "liveryName": "青",
@@ -4458,16 +4407,16 @@
       "defaultAttribute": "",
       "defaultProductCode": "5228",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ],
       "productCodes": [
         "5228"
       ]
     },
     {
-      "id": "vp_1a7b65f18ndxpj",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/オハ47_青.png",
-      "series": "43系",
+      "id": "vp_1i4k0s5v4cogv",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/オハ47_青.png",
+      "series": "スハ43系",
       "modelCode": "オハ47",
       "variantCode": "",
       "liveryName": "青",
@@ -4478,7 +4427,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "8549",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ],
       "productCodes": [
         "8549",
@@ -4487,9 +4436,9 @@
       ]
     },
     {
-      "id": "vp_lwc6es640gdo",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/オハフ45_青.png",
-      "series": "43系",
+      "id": "vp_1pd10v617qqhtg",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/オハフ45_青.png",
+      "series": "スハ43系",
       "modelCode": "オハフ45",
       "variantCode": "",
       "liveryName": "青",
@@ -4500,7 +4449,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1546",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ],
       "productCodes": [
         "10-1546",
@@ -4508,9 +4457,9 @@
       ]
     },
     {
-      "id": "vp_1bs20vks7r2ou",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/スハ43_茶.png",
-      "series": "43系",
+      "id": "vp_1venazq6vrb12",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハ43_茶.png",
+      "series": "スハ43系",
       "modelCode": "スハ43",
       "variantCode": "",
       "liveryName": "茶",
@@ -4521,13 +4470,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ]
     },
     {
-      "id": "vp_i81tkn435vfh",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/スハ44_茶.png",
-      "series": "43系",
+      "id": "vp_1n6nd5t1hs9gmt",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハ44_茶.png",
+      "series": "スハ43系",
       "modelCode": "スハ44",
       "variantCode": "",
       "liveryName": "茶",
@@ -4538,13 +4487,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ]
     },
     {
-      "id": "vp_ddn9c44hhuvs",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/スハフ42_茶.png",
-      "series": "43系",
+      "id": "vp_24cwk218jiwv4",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハフ42_茶.png",
+      "series": "スハ43系",
       "modelCode": "スハフ42",
       "variantCode": "",
       "liveryName": "茶",
@@ -4555,13 +4504,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ]
     },
     {
-      "id": "vp_3i0uht1a9rojh",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/スハフ43_青.png",
-      "series": "43系",
+      "id": "vp_1hdvbg7l5yeud",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハフ43_青.png",
+      "series": "スハ43系",
       "modelCode": "スハフ43",
       "variantCode": "",
       "liveryName": "青",
@@ -4572,7 +4521,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ]
     },
     {
@@ -4678,9 +4627,9 @@
       ]
     },
     {
-      "id": "vp_1lkqop31fepylf",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/オハ47_茶.png",
-      "series": "43系",
+      "id": "vp_1834y358kpwaj",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/オハ47_茶.png",
+      "series": "スハ43系",
       "modelCode": "オハ61",
       "variantCode": "",
       "liveryName": "茶",
@@ -4691,7 +4640,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "8521",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ],
       "productCodes": [
         "8521"
@@ -16070,8 +16019,8 @@
       ]
     },
     {
-      "id": "vp_2u1fvv1e4sd15",
-      "sourcePath": "04_貨物列車/01_有蓋車/ワラ1_急行色_26.png",
+      "id": "vp_hwr3h2k4eeiy",
+      "sourcePath": "04_貨物列車/01_有蓋車/ワラ1_急行帯_26.png",
       "series": "01_有蓋車",
       "modelCode": "ワラ1",
       "variantCode": "",
@@ -16427,8 +16376,8 @@
       ]
     },
     {
-      "id": "vp_1m06jej18lcn2d",
-      "sourcePath": "04_貨物列車/07_冷藏車/レ12000_26.png",
+      "id": "vp_1vzhmlu1xuluvq",
+      "sourcePath": "04_貨物列車/07_冷藏車/レ12000_白屋_26.png",
       "series": "07_冷藏車",
       "modelCode": "レ12000",
       "variantCode": "",
@@ -22444,84 +22393,9 @@
       ]
     },
     {
-      "id": "vp_12knu3m1h3c2iu",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/スハネ30_戦前型・茶_R.png",
-      "series": "32-35系",
-      "modelCode": "スハネ30",
-      "variantCode": "",
-      "liveryName": "戦前型・茶",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ]
-    },
-    {
-      "id": "vp_12dd96k1h2r32w",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/スハネ30_戦前型・茶_L.png",
-      "series": "32-35系",
-      "modelCode": "スハネ30",
-      "variantCode": "",
-      "liveryName": "戦前型・茶",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ]
-    },
-    {
-      "id": "vp_1me8p3s17euwzg",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/スハネ30_戦前型・青_L.png",
-      "series": "32-35系",
-      "modelCode": "スハネ30",
-      "variantCode": "",
-      "liveryName": "戦前型・青",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "10-1387",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ],
-      "productCodes": [
-        "10-1387",
-        "10-1388"
-      ]
-    },
-    {
-      "id": "vp_1mg8fba17k4moy",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/スハネ30_戦前型・青_R.png",
-      "series": "32-35系",
-      "modelCode": "スハネ30",
-      "variantCode": "",
-      "liveryName": "戦前型・青",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "10-1348",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ],
-      "productCodes": [
-        "10-1348"
-      ]
-    },
-    {
-      "id": "vp_9nhm5u5zuwv6",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/マユ35_茶.png",
-      "series": "32-35系",
+      "id": "vp_1td3id72nfj2r",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マユ35_茶.png",
+      "series": "オハ35系",
       "modelCode": "マユ35",
       "variantCode": "",
       "liveryName": "茶",
@@ -22532,16 +22406,16 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1388",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
+        "01_JR 国鉄 / 01_客車 / オハ35系"
       ],
       "productCodes": [
         "10-1388"
       ]
     },
     {
-      "id": "vp_2le0gqctjs22",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/マロネ41_茶.png",
-      "series": "43系",
+      "id": "vp_3k2fum1p6uslu",
+      "sourcePath": "01_JR 国鉄/01_客車/マロネ40形/マロネ41_茶.png",
+      "series": "マロネ40形",
       "modelCode": "マロネ41",
       "variantCode": "",
       "liveryName": "茶",
@@ -22552,13 +22426,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / マロネ40形"
       ]
     },
     {
-      "id": "vp_1a36ddqld1cmm",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/マロネ41_青.png",
-      "series": "43系",
+      "id": "vp_1pyhavu12g9pyu",
+      "sourcePath": "01_JR 国鉄/01_客車/マロネ40形/マロネ41_青.png",
+      "series": "マロネ40形",
       "modelCode": "マロネ41",
       "variantCode": "",
       "liveryName": "青",
@@ -22569,16 +22443,16 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1348",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / マロネ40形"
       ],
       "productCodes": [
         "10-1348"
       ]
     },
     {
-      "id": "vp_1g2607xz0yiaz",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/マロネ40_茶．緑二等帯_L.png",
-      "series": "43系",
+      "id": "vp_1rymm2hdeoz37",
+      "sourcePath": "01_JR 国鉄/01_客車/マロネ40形/マロネ40_茶．緑二等帯_L.png",
+      "series": "マロネ40形",
       "modelCode": "マロネ40",
       "variantCode": "",
       "liveryName": "茶．緑二等帯",
@@ -22589,13 +22463,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / マロネ40形"
       ]
     },
     {
-      "id": "vp_1g9grnnymb53p",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/マロネ40_茶．緑二等帯_R.png",
-      "series": "43系",
+      "id": "vp_1s0mc9zd9ffi5",
+      "sourcePath": "01_JR 国鉄/01_客車/マロネ40形/マロネ40_茶．緑二等帯_R.png",
+      "series": "マロネ40形",
       "modelCode": "マロネ40",
       "variantCode": "",
       "liveryName": "茶．緑二等帯",
@@ -22606,13 +22480,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / マロネ40形"
       ]
     },
     {
-      "id": "vp_1x0majkel17rw",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/マロネ40_茶．青二等帯_R.png",
-      "series": "43系",
+      "id": "vp_m46gsk1onxbac",
+      "sourcePath": "01_JR 国鉄/01_客車/マロネ40形/マロネ40_茶．青二等帯_R.png",
+      "series": "マロネ40形",
       "modelCode": "マロネ40",
       "variantCode": "",
       "liveryName": "茶．青二等帯",
@@ -22623,13 +22497,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / マロネ40形"
       ]
     },
     {
-      "id": "vp_1wqo70eeqaxhe",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/マロネ40_茶．青二等帯_L.png",
-      "series": "43系",
+      "id": "vp_lzjehm1ol01ru",
+      "sourcePath": "01_JR 国鉄/01_客車/マロネ40形/マロネ40_茶．青二等帯_L.png",
+      "series": "マロネ40形",
       "modelCode": "マロネ40",
       "variantCode": "",
       "liveryName": "茶．青二等帯",
@@ -22640,41 +22514,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
-      ]
-    },
-    {
-      "id": "vp_14mw7bgfbz8r6",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/マロネ40_青_L.png",
-      "series": "43系",
-      "modelCode": "マロネ40",
-      "variantCode": "",
-      "liveryName": "青",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
-      ]
-    },
-    {
-      "id": "vp_147n2j6fo9mks",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/マロネ40_青_R.png",
-      "series": "43系",
-      "modelCode": "マロネ40",
-      "variantCode": "",
-      "liveryName": "青",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / マロネ40形"
       ]
     },
     {
@@ -28490,26 +28330,9 @@
       ]
     },
     {
-      "id": "vp_bai7k7737d7z",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/スハフ32.png",
-      "series": "32-35系",
-      "modelCode": "スハフ32",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ]
-    },
-    {
-      "id": "vp_1jruji41h3ze0c",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロ33.png",
-      "series": "32系雙重屋根",
+      "id": "vp_7ogxez1sujnxx",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ32.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロ32",
       "variantCode": "",
       "liveryName": "",
@@ -28520,13 +28343,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1jprovx1h4hy99",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロ32.png",
-      "series": "32系雙重屋根",
+      "id": "vp_7qjlii1swbj4k",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ33.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロ33",
       "variantCode": "",
       "liveryName": "",
@@ -28537,13 +28360,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_17v4pzc103scym",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロ34_L.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1smk3oemgifza",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ34_L.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロ34",
       "variantCode": "",
       "liveryName": "",
@@ -28554,13 +28377,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1wnjtpcrizrly",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロシ38.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1xkp3zq1y6gq5q",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロシ38.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロシ38",
       "variantCode": "",
       "liveryName": "",
@@ -28571,13 +28394,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_m1emiz1xa8t9l",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロフ31.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1cg1mcd188d8ld",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロフ31.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロフ31",
       "variantCode": "",
       "liveryName": "",
@@ -28588,7 +28411,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
@@ -28609,9 +28432,9 @@
       ]
     },
     {
-      "id": "vp_1n2qrkk5luk6y",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/スハ43_青.png",
-      "series": "43系",
+      "id": "vp_qfegzmdlei5u",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハ43_青.png",
+      "series": "スハ43系",
       "modelCode": "スハ43",
       "variantCode": "",
       "liveryName": "青",
@@ -28622,13 +28445,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ]
     },
     {
-      "id": "vp_gfo64y1kguqbc",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/スハ45_青.png",
-      "series": "43系",
+      "id": "vp_1g87dz81n8qyr4",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハ45_青.png",
+      "series": "スハ43系",
       "modelCode": "スハ45",
       "variantCode": "",
       "liveryName": "青",
@@ -28639,13 +28462,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ]
     },
     {
-      "id": "vp_nn3ylc1vrffr0",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/スハフ42_青.png",
-      "series": "43系",
+      "id": "vp_1s80piu1g60ttw",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハフ42_青.png",
+      "series": "スハ43系",
       "modelCode": "スハフ42",
       "variantCode": "",
       "liveryName": "青",
@@ -28656,13 +28479,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ]
     },
     {
-      "id": "vp_1fvudwm51gvw6",
-      "sourcePath": "01_JR 国鉄/01_客車/43系/スハフ44_青.png",
-      "series": "43系",
+      "id": "vp_ccnwog1oy7sji",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハフ44_青.png",
+      "series": "スハ43系",
       "modelCode": "スハフ44",
       "variantCode": "",
       "liveryName": "青",
@@ -28673,7 +28496,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 43系"
+        "01_JR 国鉄 / 01_客車 / スハ43系"
       ]
     },
     {
@@ -35294,9 +35117,9 @@
       ]
     },
     {
-      "id": "vp_1lav29tscctzt",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スイテ39_富士.png",
-      "series": "32系雙重屋根",
+      "id": "vp_r8jily1k5c4ya",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スイテ38_富士.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スイテ38",
       "variantCode": "",
       "liveryName": "富士",
@@ -35307,13 +35130,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1ya84mt1msqosx",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スイテ48_燕.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1l57niv1ldeup",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スイテ39_富士.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スイテ48",
       "variantCode": "",
       "liveryName": "燕",
@@ -35324,13 +35147,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_4e7ek71604ks5",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スハニ31.png",
-      "series": "32系雙重屋根",
+      "id": "vp_ea0uch1ogfmf1",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハニ31.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スハニ31",
       "variantCode": "",
       "liveryName": "",
@@ -35341,13 +35164,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1090qjkdtyp6i",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スイテ38_富士.png",
-      "series": "32系雙重屋根",
+      "id": "vp_15gl9urprqgxl",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スイテ48_燕.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スイテ39",
       "variantCode": "",
       "liveryName": "富士",
@@ -35358,13 +35181,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_8uqp1f1ys1guf",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スハユ30_帯あり.png",
-      "series": "32系雙重屋根",
+      "id": "vp_410mtx95ncpb",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハユ30_帯あり.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スハユ30",
       "variantCode": "",
       "liveryName": "帯あり",
@@ -35375,13 +35198,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_ry26nqwmz8ia",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スハユ30_帯なし.png",
-      "series": "32系雙重屋根",
+      "id": "vp_ldnizk1pxwcmy",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハユ30_帯なし.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スハユ30",
       "variantCode": "",
       "liveryName": "帯なし",
@@ -35392,13 +35215,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_eeeo7d1bmhbwt",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロハ31_帯あり.png",
-      "series": "32系雙重屋根",
+      "id": "vp_c50o9rg4xk4l",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロハ31_帯あり.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロハ31",
       "variantCode": "",
       "liveryName": "帯あり",
@@ -35409,13 +35232,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_zzxqws11fwtbc",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロハ31_帯なし.png",
-      "series": "32系雙重屋根",
+      "id": "vp_110y7ca1tru69s",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロハ31_帯なし.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロハ31",
       "variantCode": "",
       "liveryName": "帯なし",
@@ -35426,13 +35249,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1nm5x1hvj0tuj",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロハフ30.png",
-      "series": "32系雙重屋根",
+      "id": "vp_r2snneohd6b",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロハフ30.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スロハフ30",
       "variantCode": "",
       "liveryName": "",
@@ -35443,13 +35266,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_1doyrqp29q69j",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スハネ31.png",
-      "series": "32系雙重屋根",
+      "id": "vp_140dpnrko7zjz",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハネ31.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スハネ31",
       "variantCode": "",
       "liveryName": "",
@@ -35460,13 +35283,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_17akjyu10be6m8",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/スロ34_R.png",
-      "series": "32系雙重屋根",
+      "id": "vp_1swi77kmfxaew",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ34_R.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "スハネ30",
       "variantCode": "",
       "liveryName": "",
@@ -35477,13 +35300,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
-      "id": "vp_nih3axpi8xpz",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マイテ49.png",
-      "series": "32系雙重屋根",
+      "id": "vp_hihfovh9kxb",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイテ49.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マイテ49",
       "variantCode": "",
       "liveryName": "",
@@ -35494,16 +35317,16 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1893",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ],
       "productCodes": [
         "10-1893"
       ]
     },
     {
-      "id": "vp_3ywasq1f1g3i0",
-      "sourcePath": "01_JR 国鉄/01_客車/32系雙重屋根/マシ38.png",
-      "series": "32系雙重屋根",
+      "id": "vp_i765oc1bqenr4",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マシ38.png",
+      "series": "スハ32系雙重屋根",
       "modelCode": "マシ38",
       "variantCode": "",
       "liveryName": "",
@@ -35514,7 +35337,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "01_JR 国鉄 / 01_客車 / 32系雙重屋根"
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
       ]
     },
     {
@@ -46581,8 +46404,8 @@
       ]
     },
     {
-      "id": "vp_1i0l3g8m5ff2u",
-      "sourcePath": "01_JR 国鉄/01_客車/10系/スユ15_青.png",
+      "id": "vp_y3eoiu1xwgv4c",
+      "sourcePath": "01_JR 国鉄/01_客車/10系/オユ15.png",
       "series": "10系",
       "modelCode": "スユ15",
       "variantCode": "",
@@ -54514,23 +54337,6 @@
       ]
     },
     {
-      "id": "vp_r9sih8109m8c2",
-      "sourcePath": "01_JR 国鉄/01_客車/32-35系/マヌ34_30.png",
-      "series": "32-35系",
-      "modelCode": "マヌ34",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 32-35系"
-      ]
-    },
-    {
       "id": "vp_5rhmke19jfo4m",
       "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/E127系/ET126-0_標準色.png",
       "series": "E127系",
@@ -55055,6 +54861,601 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ48系"
+      ]
+    },
+    {
+      "id": "vp_1o30fknz9674",
+      "sourcePath": "03_機関車/03_電気機関車/ED70/ED70-0_30.png",
+      "series": "ED70",
+      "modelCode": "ED70",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED70"
+      ]
+    },
+    {
+      "id": "vp_1p12wlj1mjlomj",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オニ70_茶.png",
+      "series": "70系",
+      "modelCode": "オニ70",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1724stl8qrkeh",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オハ70_三つ扉．茶.png",
+      "series": "70系",
+      "modelCode": "オハ70",
+      "variantCode": "",
+      "liveryName": "三つ扉．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1gmvn85yuxa65",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オハ70_片寄せ．茶.png",
+      "series": "70系",
+      "modelCode": "オハ70",
+      "variantCode": "",
+      "liveryName": "片寄せ．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1oyp70ldnzhwb",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オハ70_両扉．茶.png",
+      "series": "70系",
+      "modelCode": "オハ70",
+      "variantCode": "",
+      "liveryName": "両扉．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_boyhxbqfv9o1",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オハ71_スハ32種車．茶.png",
+      "series": "70系",
+      "modelCode": "オハ71",
+      "variantCode": "",
+      "liveryName": "スハ32種車．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1s3qansbop4di",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オハ71_スハ35種車．茶.png",
+      "series": "70系",
+      "modelCode": "オハ71",
+      "variantCode": "",
+      "liveryName": "スハ35種車．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_v7lnoof87olg",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オハ71_三つ扉．茶.png",
+      "series": "70系",
+      "modelCode": "オハ71",
+      "variantCode": "",
+      "liveryName": "三つ扉．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_15dq9bj1mtfciv",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オハユニ71_茶.png",
+      "series": "70系",
+      "modelCode": "オハユニ71",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_u1m2p44x8k3",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オユニ70_茶.png",
+      "series": "70系",
+      "modelCode": "オユニ70",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1frhatc1q6l2tu",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/オユニ71_茶.png",
+      "series": "70系",
+      "modelCode": "オユニ71",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_14hpigh1ikn9qz",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/スニ75_茶.png",
+      "series": "70系",
+      "modelCode": "スニ75",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1xc7uxng6s0l",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/スユ72_茶.png",
+      "series": "70系",
+      "modelCode": "スユ72",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_10qnhi1yda4c3",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/スユ70_茶.png",
+      "series": "70系",
+      "modelCode": "スユ70",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_s5j64w13uxq6a",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/スユニ72_茶.png",
+      "series": "70系",
+      "modelCode": "スユニ72",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_12cgj3m17s6zfi",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ71_茶.png",
+      "series": "70系",
+      "modelCode": "マニ71",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_rjmt2ptt1ig1",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ72_茶.png",
+      "series": "70系",
+      "modelCode": "マニ72",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1mmid96o0xi5s",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ74_茶_R.png",
+      "series": "70系",
+      "modelCode": "マニ74",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1mr5fk4oavlwu",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ74_茶_L.png",
+      "series": "70系",
+      "modelCode": "マニ74",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_137gubqzju97w",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ76_茶_L.png",
+      "series": "70系",
+      "modelCode": "マニ76",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_135h448z7jp9u",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ76_茶_R.png",
+      "series": "70系",
+      "modelCode": "マニ76",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1250u631gs008n",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ78_茶.png",
+      "series": "70系",
+      "modelCode": "マニ78",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_1mr8uilvq22un",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マユニ78_茶.png",
+      "series": "70系",
+      "modelCode": "マユニ78",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ]
+    },
+    {
+      "id": "vp_penxse16fn3hg",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/カニ38_茶.png",
+      "series": "オハ35系",
+      "modelCode": "カニ38",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ35系"
+      ]
+    },
+    {
+      "id": "vp_tjyy0x1t9amrv",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/オハフ33_茶.png",
+      "series": "スハ32系",
+      "modelCode": "オハフ33",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系"
+      ]
+    },
+    {
+      "id": "vp_1s7hdsd1ssvvkb",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/スハニ32_茶.png",
+      "series": "スハ32系",
+      "modelCode": "スハニ32",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系"
+      ]
+    },
+    {
+      "id": "vp_1nz4krqyxj372",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/スハ32_茶.png",
+      "series": "スハ32系",
+      "modelCode": "スハ32",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系"
+      ]
+    },
+    {
+      "id": "vp_11y2toy1hyam6w",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/スハネ30_戦前型・茶.png",
+      "series": "スハ32系",
+      "modelCode": "スハネ30",
+      "variantCode": "",
+      "liveryName": "戦前型・茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系"
+      ]
+    },
+    {
+      "id": "vp_1y6l0k3msulct",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/スハフ32_茶.png",
+      "series": "スハ32系",
+      "modelCode": "スハフ32",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系"
+      ]
+    },
+    {
+      "id": "vp_1x6ngom1c5n2nw",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/スハネ30_戦前型・青.png",
+      "series": "スハ32系",
+      "modelCode": "スハネ30",
+      "variantCode": "",
+      "liveryName": "戦前型・青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系"
+      ]
+    },
+    {
+      "id": "vp_utpc9yvnfwm4",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マロネロ38.png",
+      "series": "スハ32系雙重屋根",
+      "modelCode": "マロネロ38",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
+      ]
+    },
+    {
+      "id": "vp_1v8531k1xnwika",
+      "sourcePath": "01_JR 国鉄/01_客車/マロネ40形/マロネ40_青_L.png",
+      "series": "マロネ40形",
+      "modelCode": "マロネ40",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / マロネ40形"
+      ]
+    },
+    {
+      "id": "vp_1unkqie1xqts2s",
+      "sourcePath": "01_JR 国鉄/01_客車/マロネ40形/マロネ40_青_R.png",
+      "series": "マロネ40形",
+      "modelCode": "マロネ40",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / マロネ40形"
+      ]
+    },
+    {
+      "id": "vp_1qm4n1o1sa6eic",
+      "sourcePath": "04_貨物列車/01_有蓋車/ワム380000_白屋根_26.png",
+      "series": "01_有蓋車",
+      "modelCode": "ワム380000",
+      "variantCode": "",
+      "liveryName": "白屋根",
+      "side": "",
+      "company": "",
+      "widthCm": 2.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "04_貨物列車 / 01_有蓋車"
+      ]
+    },
+    {
+      "id": "vp_8sk2ihpp8ejh",
+      "sourcePath": "04_貨物列車/01_有蓋車/ワラ1_急行_26.png",
+      "series": "01_有蓋車",
+      "modelCode": "ワラ1",
+      "variantCode": "",
+      "liveryName": "急行",
+      "side": "",
+      "company": "",
+      "widthCm": 2.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "04_貨物列車 / 01_有蓋車"
       ]
     }
   ]
