@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-18T17:18:33.970Z",
+  "exportedAt": "2026-10-18T18:11:10.036Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -55456,6 +55456,57 @@
       "defaultProductCode": "",
       "categories": [
         "04_貨物列車 / 01_有蓋車"
+      ]
+    },
+    {
+      "id": "vp_fpkjxw98xczk",
+      "sourcePath": "01_JR 国鉄/01_客車/14系/オハテ12_SL大樹.png",
+      "series": "14系",
+      "modelCode": "オハテ12",
+      "variantCode": "",
+      "liveryName": "SL大樹",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 14系"
+      ]
+    },
+    {
+      "id": "vp_ofigqa1l4qgnu",
+      "sourcePath": "01_JR 国鉄/01_客車/14系/スハフ14_SL大樹.png",
+      "series": "14系",
+      "modelCode": "スハフ14",
+      "variantCode": "",
+      "liveryName": "SL大樹",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 14系"
+      ]
+    },
+    {
+      "id": "vp_1unplcj1ex5u2l",
+      "sourcePath": "01_JR 国鉄/01_客車/14系/スハフ15_SL大樹.png",
+      "series": "14系",
+      "modelCode": "スハフ15",
+      "variantCode": "",
+      "liveryName": "SL大樹",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 14系"
       ]
     }
   ]
