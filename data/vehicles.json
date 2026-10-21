@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-21T15:02:45.666Z",
+  "exportedAt": "2026-10-21T15:32:47.951Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -1782,23 +1782,6 @@
       "sourcePath": "01_JR 国鉄/01_客車/12系/オハ12.png",
       "series": "12系",
       "modelCode": "オハ12",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 12系"
-      ]
-    },
-    {
-      "id": "vp_3g9tgesoq6uo",
-      "sourcePath": "01_JR 国鉄/01_客車/12系/オハフ13.png",
-      "series": "12系",
-      "modelCode": "オハフ13",
       "variantCode": "",
       "liveryName": "",
       "side": "",
@@ -3771,23 +3754,6 @@
       "sourcePath": "01_JR 国鉄/01_客車/31系/オハフ30.png",
       "series": "31系",
       "modelCode": "オハフ30",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 31系"
-      ]
-    },
-    {
-      "id": "vp_131nap5cvpoiv",
-      "sourcePath": "01_JR 国鉄/01_客車/31系/オロ30.png",
-      "series": "31系",
-      "modelCode": "オロ31",
       "variantCode": "",
       "liveryName": "",
       "side": "",
@@ -10639,23 +10605,6 @@
       ]
     },
     {
-      "id": "vp_1xlx1uqx4twdy",
-      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/211系/サハ210-0_東海道線.png",
-      "series": "211系",
-      "modelCode": "サハ210",
-      "variantCode": "0",
-      "liveryName": "東海道線",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 211系"
-      ]
-    },
-    {
       "id": "vp_1syuu751pizu97",
       "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/211系/サロ211-0_東海道線.png",
       "series": "211系",
@@ -16206,9 +16155,9 @@
       ]
     },
     {
-      "id": "vp_8q3lrf1q46u89",
-      "sourcePath": "04_貨物列車/03_平車/コム1_白_26.png",
-      "series": "03_平車",
+      "id": "vp_g9i3uu1ngqdd4",
+      "sourcePath": "04_貨物列車/03_長物車/コム1_白_26.png",
+      "series": "03_長物車",
       "modelCode": "コム1",
       "variantCode": "",
       "liveryName": "白",
@@ -16219,13 +16168,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 03_平車"
+        "04_貨物列車 / 03_長物車"
       ]
     },
     {
-      "id": "vp_1mzhvrby9v4od",
-      "sourcePath": "04_貨物列車/03_平車/コム1_緑_26.png",
-      "series": "03_平車",
+      "id": "vp_111jpd62wjl0c",
+      "sourcePath": "04_貨物列車/03_長物車/コム1_緑_26.png",
+      "series": "03_長物車",
       "modelCode": "コム1",
       "variantCode": "",
       "liveryName": "緑",
@@ -16236,13 +16185,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 03_平車"
+        "04_貨物列車 / 03_長物車"
       ]
     },
     {
-      "id": "vp_q1hfjv9iq6cr",
-      "sourcePath": "04_貨物列車/03_平車/チ1_26.png",
-      "series": "03_平車",
+      "id": "vp_c17rau1psi3o8",
+      "sourcePath": "04_貨物列車/03_長物車/チ1_26.png",
+      "series": "03_長物車",
       "modelCode": "チ1",
       "variantCode": "",
       "liveryName": "",
@@ -16253,13 +16202,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 03_平車"
+        "04_貨物列車 / 03_長物車"
       ]
     },
     {
-      "id": "vp_p2ldb1kiuptj",
-      "sourcePath": "04_貨物列車/03_平車/チキ4500.png",
-      "series": "03_平車",
+      "id": "vp_zmth68p1gm0u",
+      "sourcePath": "04_貨物列車/03_長物車/チキ4500.png",
+      "series": "03_長物車",
       "modelCode": "チキ4500",
       "variantCode": "",
       "liveryName": "",
@@ -16270,13 +16219,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 03_平車"
+        "04_貨物列車 / 03_長物車"
       ]
     },
     {
-      "id": "vp_1nman201rthieg",
-      "sourcePath": "04_貨物列車/03_平車/チサ1600_26.png",
-      "series": "03_平車",
+      "id": "vp_19xlvsl1r2sh0v",
+      "sourcePath": "04_貨物列車/03_長物車/チサ1600_26.png",
+      "series": "03_長物車",
       "modelCode": "チサ1600",
       "variantCode": "",
       "liveryName": "",
@@ -16287,13 +16236,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 03_平車"
+        "04_貨物列車 / 03_長物車"
       ]
     },
     {
-      "id": "vp_i65ktb1nfd50l",
-      "sourcePath": "04_貨物列車/06_斗車/セキ3000_26.png",
-      "series": "06_斗車",
+      "id": "vp_1rzhvz51nh1xhd",
+      "sourcePath": "04_貨物列車/06_ホッパ車/セキ3000_26.png",
+      "series": "06_ホッパ車",
       "modelCode": "セキ6000",
       "variantCode": "",
       "liveryName": "",
@@ -16304,13 +16253,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 06_斗車"
+        "04_貨物列車 / 06_ホッパ車"
       ]
     },
     {
-      "id": "vp_1tlmn3t1jm1k4p",
-      "sourcePath": "04_貨物列車/06_斗車/セム8000_26.png",
-      "series": "06_斗車",
+      "id": "vp_4fe45j10vl3dp",
+      "sourcePath": "04_貨物列車/06_ホッパ車/セム8000_26.png",
+      "series": "06_ホッパ車",
       "modelCode": "セム8000",
       "variantCode": "",
       "liveryName": "",
@@ -16321,13 +16270,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 06_斗車"
+        "04_貨物列車 / 06_ホッパ車"
       ]
     },
     {
-      "id": "vp_rh9vnr1ro9ffr",
-      "sourcePath": "04_貨物列車/06_斗車/ホキ1100.png",
-      "series": "06_斗車",
+      "id": "vp_1umfkqh2uzhaz",
+      "sourcePath": "04_貨物列車/06_ホッパ車/ホキ1100.png",
+      "series": "06_ホッパ車",
       "modelCode": "ホキ1100",
       "variantCode": "",
       "liveryName": "",
@@ -16338,13 +16287,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 06_斗車"
+        "04_貨物列車 / 06_ホッパ車"
       ]
     },
     {
-      "id": "vp_vwi6xrydxidd",
-      "sourcePath": "04_貨物列車/06_斗車/ホキ800.png",
-      "series": "06_斗車",
+      "id": "vp_15geqox199nzp9",
+      "sourcePath": "04_貨物列車/06_ホッパ車/ホキ800.png",
+      "series": "06_ホッパ車",
       "modelCode": "ホキ800",
       "variantCode": "",
       "liveryName": "",
@@ -16355,13 +16304,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 06_斗車"
+        "04_貨物列車 / 06_ホッパ車"
       ]
     },
     {
-      "id": "vp_1l8sye5jpg3ih",
-      "sourcePath": "04_貨物列車/06_斗車/ホキ2200_36.png",
-      "series": "06_斗車",
+      "id": "vp_3khdura8dep1",
+      "sourcePath": "04_貨物列車/06_ホッパ車/ホキ2200_36.png",
+      "series": "06_ホッパ車",
       "modelCode": "ホキ2200",
       "variantCode": "",
       "liveryName": "",
@@ -16372,7 +16321,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 06_斗車"
+        "04_貨物列車 / 06_ホッパ車"
       ]
     },
     {
@@ -16468,9 +16417,9 @@
       ]
     },
     {
-      "id": "vp_qslbkm1carcem",
-      "sourcePath": "04_貨物列車/08_守車/ヨ5000_26.png",
-      "series": "08_守車",
+      "id": "vp_86u788br7bjs",
+      "sourcePath": "04_貨物列車/08_車掌車/ヨ5000_26.png",
+      "series": "08_車掌車",
       "modelCode": "ヨ5000",
       "variantCode": "",
       "liveryName": "",
@@ -16481,13 +16430,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 08_守車"
+        "04_貨物列車 / 08_車掌車"
       ]
     },
     {
-      "id": "vp_5q2wd12qqhsh",
-      "sourcePath": "04_貨物列車/08_守車/ヨ6000_26.png",
-      "series": "08_守車",
+      "id": "vp_14bkuxn9o4g7r",
+      "sourcePath": "04_貨物列車/08_車掌車/ヨ6000_26.png",
+      "series": "08_車掌車",
       "modelCode": "ヨ6000",
       "variantCode": "",
       "liveryName": "",
@@ -16498,13 +16447,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 08_守車"
+        "04_貨物列車 / 08_車掌車"
       ]
     },
     {
-      "id": "vp_jt2fvfen62an",
-      "sourcePath": "04_貨物列車/08_守車/ヨ8000_26.png",
-      "series": "08_守車",
+      "id": "vp_q8l4wlvwl2ux",
+      "sourcePath": "04_貨物列車/08_車掌車/ヨ8000_26.png",
+      "series": "08_車掌車",
       "modelCode": "ヨ8000",
       "variantCode": "",
       "liveryName": "",
@@ -16515,7 +16464,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 08_守車"
+        "04_貨物列車 / 08_車掌車"
       ]
     },
     {
@@ -24830,8 +24779,8 @@
       ]
     },
     {
-      "id": "vp_15cun5r11h749d",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ10600/タキ10600_明星セメント_L.png",
+      "id": "vp_9lcac5x9o0ip",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ10600/タキ10600_明星セメント_L.png",
       "series": "タキ10600",
       "modelCode": "タキ10600",
       "variantCode": "",
@@ -24843,12 +24792,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ10600"
+        "04_貨物列車 / 05_タンク車 / タキ10600"
       ]
     },
     {
-      "id": "vp_1kddcfmmkkmpo",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ35000/タキ35000_日本オイルターミナル色_R.png",
+      "id": "vp_1yc9a8o1jzarxo",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ35000/タキ35000_日本オイルターミナル色_R.png",
       "series": "タキ35000",
       "modelCode": "タキ35000",
       "variantCode": "",
@@ -24860,12 +24809,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ35000"
+        "04_貨物列車 / 05_タンク車 / タキ35000"
       ]
     },
     {
-      "id": "vp_1ksmnqkmpucf6",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ35000/タキ35000_日本オイルターミナル色_L.png",
+      "id": "vp_1ye90g61jn0e42",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ35000/タキ35000_日本オイルターミナル色_L.png",
       "series": "タキ35000",
       "modelCode": "タキ35000",
       "variantCode": "",
@@ -24877,15 +24826,15 @@
       "defaultAttribute": "",
       "defaultProductCode": "8050-2",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ35000"
+        "04_貨物列車 / 05_タンク車 / タキ35000"
       ],
       "productCodes": [
         "8050-2"
       ]
     },
     {
-      "id": "vp_1fjj1u4hrlfcu",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ35000/タキ35000_日本石油_L.png",
+      "id": "vp_tl6pd2d7a5f2",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ35000/タキ35000_日本石油_L.png",
       "series": "タキ35000",
       "modelCode": "タキ35000",
       "variantCode": "",
@@ -24897,15 +24846,15 @@
       "defaultAttribute": "",
       "defaultProductCode": "8050-3",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ35000"
+        "04_貨物列車 / 05_タンク車 / タキ35000"
       ],
       "productCodes": [
         "8050-3"
       ]
     },
     {
-      "id": "vp_qz0go91fmn99",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ35000/タキ35000_日本陸運産業色_L.png",
+      "id": "vp_2f7dz78lnjgt",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ35000/タキ35000_日本陸運産業色_L.png",
       "series": "タキ35000",
       "modelCode": "タキ35000",
       "variantCode": "",
@@ -24917,15 +24866,15 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-554",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ35000"
+        "04_貨物列車 / 05_タンク車 / タキ35000"
       ],
       "productCodes": [
         "10-554"
       ]
     },
     {
-      "id": "vp_1f49x1uhz790g",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ35000/タキ35000_日本石油_R.png",
+      "id": "vp_tj6z5kcxbvjk",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ35000/タキ35000_日本石油_R.png",
       "series": "タキ35000",
       "modelCode": "タキ35000",
       "variantCode": "",
@@ -24937,12 +24886,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ35000"
+        "04_貨物列車 / 05_タンク車 / タキ35000"
       ]
     },
     {
-      "id": "vp_dw7xdljgu3ul",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ35000/タキ35000_日本石油輸送色_R.png",
+      "id": "vp_1eo4us318ffhm5",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ35000/タキ35000_日本石油輸送色_R.png",
       "series": "タキ35000",
       "modelCode": "タキ35000",
       "variantCode": "",
@@ -24954,15 +24903,15 @@
       "defaultAttribute": "",
       "defaultProductCode": "8050-1",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ35000"
+        "04_貨物列車 / 05_タンク車 / タキ35000"
       ],
       "productCodes": [
         "8050-1"
       ]
     },
     {
-      "id": "vp_qeg4531kw6ub",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ35000/タキ35000_日本陸運産業色_R.png",
+      "id": "vp_27wmjh89d5n7",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ35000/タキ35000_日本陸運産業色_R.png",
       "series": "タキ35000",
       "modelCode": "タキ35000",
       "variantCode": "",
@@ -24974,12 +24923,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ35000"
+        "04_貨物列車 / 05_タンク車 / タキ35000"
       ]
     },
     {
-      "id": "vp_dy7nl3jm3tk3",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ35000/タキ35000_日本石油輸送色_L.png",
+      "id": "vp_1f3e63118353sj",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ35000/タキ35000_日本石油輸送色_L.png",
       "series": "タキ35000",
       "modelCode": "タキ35000",
       "variantCode": "",
@@ -24991,12 +24940,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ35000"
+        "04_貨物列車 / 05_タンク車 / タキ35000"
       ]
     },
     {
-      "id": "vp_12nyaj419bjvai",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_後期形．日本石油輸送_L_36.png",
+      "id": "vp_h3658a1kovtp6",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_後期形．日本石油輸送_L_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -25008,12 +24957,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_igv4vql4if6w",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本オイルターミナル色_L_36.png",
+      "id": "vp_1rcjgea12qi8de",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本オイルターミナル色_R_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -25025,12 +24974,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_wz367o17t9ynm",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本オイルターミナル色．帯なし_R_36.png",
+      "id": "vp_t4kxz4ub6pqw",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本オイルターミナル色．帯なし_L_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -25042,12 +24991,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_6pl2zc56l2p2",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本オイルターミナル．青_L_36.png",
+      "id": "vp_1pn3m9ep1pu6u",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本オイルターミナル．青_L_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -25059,12 +25008,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_1xuwmz1k4zahr",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本オイルターミナル．緑_L_36.png",
+      "id": "vp_1879i351697rwv",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本オイルターミナル．緑_L_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -25076,12 +25025,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_1fmsmcz1ui932n",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本石油輸送 ENEOS・エコレールマーク付_L_36.png",
+      "id": "vp_ncpurrcbjmkh",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本石油輸送 ENEOS・エコレールマーク付_R_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -25093,12 +25042,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_1jlv1sf95373b",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本石油輸送_L_36.png",
+      "id": "vp_16evsth10decjb",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本石油輸送_L_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -25110,12 +25059,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_1o24c4515m46x3",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_米軍燃料輸送列車_L_36.png",
+      "id": "vp_bd02ynefwbnb",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_米軍燃料輸送列車_L_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -25127,12 +25076,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_165a8o3195f8ih",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ18600/タサ18600_日本陸運産業_L.png",
+      "id": "vp_eanvh3fsvbw7",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ18600/タサ18600_日本陸運産業_R.png",
       "series": "タキ18600",
       "modelCode": "タサ18600",
       "variantCode": "",
@@ -25144,12 +25093,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ18600"
+        "04_貨物列車 / 05_タンク車 / タキ18600"
       ]
     },
     {
-      "id": "vp_4ji4k713mpy0t",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_セメントターミナル_R_36.png",
+      "id": "vp_1q8dz3x8uhu31",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_セメントターミナル_R_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25161,12 +25110,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_d84ocp12teb6r",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_セメントターミナル_L_36.png",
+      "id": "vp_zgvbc3wvnqz7",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_セメントターミナル_L_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25178,12 +25127,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_1m54v748b7zqg",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_三菱鉱業セメント_L_36.png",
+      "id": "vp_1ikf38a1vthfbs",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_三菱鉱業セメント_L_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25195,12 +25144,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_1dn2n1q8t5gxe",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_三菱鉱業セメント_R_36.png",
+      "id": "vp_uymf2c17gxcsi",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_三菱鉱業セメント_R_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25212,12 +25161,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_12snt4e19jm6aw",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_住友セメント_R_36.png",
+      "id": "vp_aue70kuox114",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_住友セメント_R_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25229,12 +25178,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_1baq19s12wapiq",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_住友セメント_L_36.png",
+      "id": "vp_wugo621y82sv6",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_住友セメント_L_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25246,12 +25195,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_zk8iiu1d8zytm",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_太平洋セメント_L_36.png",
+      "id": "vp_1edx9ws4c7ddm",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_太平洋セメント_L_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25263,12 +25212,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_xtuie01u4ro40",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_太平洋セメント_R_36.png",
+      "id": "vp_blnv761velkww",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_太平洋セメント_R_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25280,12 +25229,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_knnfz1vr4f5h",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_日本セメント_L_36.png",
+      "id": "vp_wzmdtj10nt8rp",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_日本セメント_L_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25297,12 +25246,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_1sx2v9fv97h57",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_日本セメント_R_36.png",
+      "id": "vp_15oewix1p0duaj",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_日本セメント_R_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25314,12 +25263,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_1p2n38a15orgec",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_日立セメント_L_36.png",
+      "id": "vp_18jrdpsmyjr90",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_日立セメント_L_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25331,12 +25280,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_11guf2caeocuu",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1900/タキ1900_日立セメント_R_36.png",
+      "id": "vp_11n3er211usmp2",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1900/タキ1900_日立セメント_R_36.png",
       "series": "タキ1900",
       "modelCode": "タキ1900",
       "variantCode": "",
@@ -25348,12 +25297,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1900"
+        "04_貨物列車 / 05_タンク車 / タキ1900"
       ]
     },
     {
-      "id": "vp_75qxh1nxdafn",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ19550/タキ19550_日本石油輸送_L.png",
+      "id": "vp_1ih3ctbxhuf8j",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ19550/タキ19550_日本石油輸送_L.png",
       "series": "タキ19550",
       "modelCode": "タキ19550",
       "variantCode": "",
@@ -25365,12 +25314,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ19550"
+        "04_貨物列車 / 05_タンク車 / タキ19550"
       ]
     },
     {
-      "id": "vp_1d7ndt91m5mzn3",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ243000/タキ243000_日本オイルターミナル・青_L_36.png",
+      "id": "vp_96myyv13hslvj",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ243000/タキ243000_日本オイルターミナル・青_L_36.png",
       "series": "タキ243000",
       "modelCode": "タキ243000",
       "variantCode": "",
@@ -25382,12 +25331,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ243000"
+        "04_貨物列車 / 05_タンク車 / タキ243000"
       ]
     },
     {
-      "id": "vp_af806r1da4yoh",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ243000/タキ243000_日本オイルターミナル・青_R_36.png",
+      "id": "vp_7g2zx5nvf1z5",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ243000/タキ243000_日本オイルターミナル・青_R_36.png",
       "series": "タキ243000",
       "modelCode": "タキ243000",
       "variantCode": "",
@@ -25399,12 +25348,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ243000"
+        "04_貨物列車 / 05_タンク車 / タキ243000"
       ]
     },
     {
-      "id": "vp_1r7tpads1k3cz",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ243000/タキ243000_日本石油輸送・緑_L_36.png",
+      "id": "vp_17fkhv342loz",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ243000/タキ243000_日本石油輸送・緑_L_36.png",
       "series": "タキ243000",
       "modelCode": "タキ243000",
       "variantCode": "",
@@ -25416,12 +25365,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ243000"
+        "04_貨物列車 / 05_タンク車 / タキ243000"
       ]
     },
     {
-      "id": "vp_e6y3dn1009xst",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ243000/タキ243000_日本石油輸送・緑_R_36.png",
+      "id": "vp_1fxsoxd1b40qrx",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ243000/タキ243000_日本石油輸送・緑_R_36.png",
       "series": "タキ243000",
       "modelCode": "タキ243000",
       "variantCode": "",
@@ -25433,12 +25382,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ243000"
+        "04_貨物列車 / 05_タンク車 / タキ243000"
       ]
     },
     {
-      "id": "vp_1614zse1pjke1k",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ25000/タキ25000_ニヤクコーポレーション_L.png",
+      "id": "vp_78gn7o7fjxgo",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ25000/タキ25000_ニヤクコーポレーション_L.png",
       "series": "タキ25000",
       "modelCode": "タキ25000",
       "variantCode": "",
@@ -25450,12 +25399,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ25000"
+        "04_貨物列車 / 05_タンク車 / タキ25000"
       ]
     },
     {
-      "id": "vp_ptp29j1j3lvqz",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ25000/タキ25000_日本陸運産業色_R.png",
+      "id": "vp_1xsu81vw13wyd",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ25000/タキ25000_日本陸運産業色_L.png",
       "series": "タキ25000",
       "modelCode": "タキ25000",
       "variantCode": "",
@@ -25467,12 +25416,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ25000"
+        "04_貨物列車 / 05_タンク車 / タキ25000"
       ]
     },
     {
-      "id": "vp_11oirc7nd5djv",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ25000/タキ25000_日本石油輸送色_L.png",
+      "id": "vp_vayivh30dtyj",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ25000/タキ25000_日本石油輸送色_L.png",
       "series": "タキ25000",
       "modelCode": "タキ25000",
       "variantCode": "",
@@ -25484,12 +25433,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ25000"
+        "04_貨物列車 / 05_タンク車 / タキ25000"
       ]
     },
     {
-      "id": "vp_nygs1v3e9w87",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ25000/タキ25000_日通商事_R.png",
+      "id": "vp_a86co91pcqok7",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ25000/タキ25000_日通商事_R.png",
       "series": "タキ25000",
       "modelCode": "タキ25000",
       "variantCode": "",
@@ -25501,12 +25450,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ25000"
+        "04_貨物列車 / 05_タンク車 / タキ25000"
       ]
     },
     {
-      "id": "vp_197q5fk1s383sm",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ29300/タキ29300_前期型・古河機械金属_L_36.png",
+      "id": "vp_147vyt02cu6ms",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ29300/タキ29300_前期型・古河機械金属_R_36.png",
       "series": "タキ29300",
       "modelCode": "タキ29300",
       "variantCode": "",
@@ -25518,12 +25467,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ29300"
+        "04_貨物列車 / 05_タンク車 / タキ29300"
       ]
     },
     {
-      "id": "vp_hlvgki1vlbnyy",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ29300/タキ29300_後期型・日本陸運産業_L_36.png",
+      "id": "vp_nxpnbc1fi3g16",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ29300/タキ29300_後期型・日本陸運産業_L_36.png",
       "series": "タキ29300",
       "modelCode": "タキ29300",
       "variantCode": "",
@@ -25535,12 +25484,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ29300"
+        "04_貨物列車 / 05_タンク車 / タキ29300"
       ]
     },
     {
-      "id": "vp_c4du6k9redow",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ29300/タキ29300_銀．東亞合成_L_36.png",
+      "id": "vp_13flequi7965c",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ29300/タキ29300_銀．東亞合成_L_36.png",
       "series": "タキ29300",
       "modelCode": "タキ29300",
       "variantCode": "",
@@ -25552,12 +25501,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ29300"
+        "04_貨物列車 / 05_タンク車 / タキ29300"
       ]
     },
     {
-      "id": "vp_1jy6jkl15zrgp3",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ29300/タキ29300_黒．同和鉱業_L_36.png",
+      "id": "vp_3dqeynfrosdz",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ29300/タキ29300_黒．同和鉱業_L_36.png",
       "series": "タキ29300",
       "modelCode": "タキ29300",
       "variantCode": "",
@@ -25569,12 +25518,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ29300"
+        "04_貨物列車 / 05_タンク車 / タキ29300"
       ]
     },
     {
-      "id": "vp_1h51gz21etomac",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_ニヤクコーポレーション_L.png",
+      "id": "vp_5fj538ecf9lw",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_ニヤクコーポレーション_L.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25586,12 +25535,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_1gsfusw1f8ba6i",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_ニヤクコーポレーション_R.png",
+      "id": "vp_5aw2sae9i03e",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_ニヤクコーポレーション_R.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25603,12 +25552,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_9fohu4fahimi",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_日本石油_L.png",
+      "id": "vp_1ian95y1jzxq4a",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_日本石油_L.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25620,12 +25569,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_19ln5et1bk8cmz",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_日本陸運産業_R.png",
+      "id": "vp_gfddn3e31iej",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_日本陸運産業_R.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25637,12 +25586,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_1a4362h84csw9",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_日本石油輸送色_R.png",
+      "id": "vp_izi2kzowbmyh",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_日本石油輸送色_R.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25654,12 +25603,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_3lkh80cj3j2a",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_米タン_L.png",
+      "id": "vp_7r9m6cee32wc",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_米タン_R.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25671,12 +25620,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_1a62prb7p6dyv",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_日本石油輸送色_L.png",
+      "id": "vp_jer7d9oxhv0n",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_日本石油輸送色_L.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25688,12 +25637,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_90f6j6evuolw",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_日本石油_R.png",
+      "id": "vp_1i8nph41k2uzms",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_日本石油_R.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25705,12 +25654,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_19h033v1bn4wud",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_日本陸運産業_L.png",
+      "id": "vp_g2rrgxdodz2t",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_日本陸運産業_L.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -25722,12 +25671,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_1uph8fl5wgveh",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_シルバー．日本石油輸送_L_36.png",
+      "id": "vp_w17qhn1viubk9",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_シルバー．日本石油輸送_L_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25739,12 +25688,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_cld5hsipdyju",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_後期形．日本石油輸送_L_36.png",
+      "id": "vp_1rsrm4a12qnouy",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_後期形．日本石油輸送_L_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25756,12 +25705,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_434yfi16qjvg0",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_後期形．日本石油輸送_R_36.png",
+      "id": "vp_15sj61wursksg",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_後期形．日本石油輸送_R_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25773,12 +25722,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_1nsz8dr183bedj",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_シルバー．日本石油輸送_R_36.png",
+      "id": "vp_8fl18l1nk9stz",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_シルバー．日本石油輸送_R_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25790,12 +25739,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_8awgac12uzvsi",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_日本オイルターミナル色．帯なし_R_36.png",
+      "id": "vp_2qjnrypj2w76",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_日本オイルターミナル色．帯なし_R_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25807,12 +25756,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_1x1ajwz11brqqz",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_青．日本石油輸送_L_36.png",
+      "id": "vp_1ygaxtl1vaee57",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_青．日本石油輸送_L_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25824,12 +25773,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_z71ngtuoab11",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_青．日本石油輸送_R_36.png",
+      "id": "vp_15kvzb16xtsmd",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_青．日本石油輸送_R_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25841,12 +25790,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_1wnikjx1qpmggl",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_黒．日本石油輸送_R_36.png",
+      "id": "vp_1j6xqp39uotr9",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_黒．日本石油輸送_R_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25858,12 +25807,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_vgnf0z1xd3w6j",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_黒．日本石油輸送_L_36.png",
+      "id": "vp_1hgjqk9y79fa3",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_黒．日本石油輸送_L_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25875,12 +25824,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_14qbf6y19ibcko",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ43000/タキ43000_日本オイルターミナル色．帯なし_L_36.png",
+      "id": "vp_k286o01dvmyqg",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ43000/タキ43000_日本オイルターミナル色．帯なし_L_36.png",
       "series": "タキ43000",
       "modelCode": "タキ43000",
       "variantCode": "",
@@ -25892,12 +25841,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ43000"
+        "04_貨物列車 / 05_タンク車 / タキ43000"
       ]
     },
     {
-      "id": "vp_1hge5e81lpqj3i",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ5200/タキ5200_L.png",
+      "id": "vp_y5fs3e1qnh4pq",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ5200/タキ5200_L.png",
       "series": "タキ5200",
       "modelCode": "タキ5200",
       "variantCode": "",
@@ -25909,12 +25858,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ5200"
+        "04_貨物列車 / 05_タンク車 / タキ5200"
       ]
     },
     {
-      "id": "vp_j5grrf1ngekp5",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ5450/タキ5450_L_26.png",
+      "id": "vp_o4x97l1s57a0p",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ5450/タキ5450_L_26.png",
       "series": "タキ5450",
       "modelCode": "タキ5450",
       "variantCode": "",
@@ -25926,12 +25875,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ5450"
+        "04_貨物列車 / 05_タンク車 / タキ5450"
       ]
     },
     {
-      "id": "vp_1g4vqfi1q4lnpa",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ5450/タキ5450_日本石油輸送_L_26.png",
+      "id": "vp_1r1vmuc1cococu",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ5450/タキ5450_日本石油輸送_L_26.png",
       "series": "タキ5450",
       "modelCode": "タキ5450",
       "variantCode": "",
@@ -25943,12 +25892,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ5450"
+        "04_貨物列車 / 05_タンク車 / タキ5450"
       ]
     },
     {
-      "id": "vp_16q1yzhz0e31h",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ5450/タキ5450_東亞合成_R_26.png",
+      "id": "vp_uap84pjvqhez",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ5450/タキ5450_東亞合成_L_26.png",
       "series": "タキ5450",
       "modelCode": "タキ5450",
       "variantCode": "",
@@ -25960,12 +25909,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ5450"
+        "04_貨物列車 / 05_タンク車 / タキ5450"
       ]
     },
     {
-      "id": "vp_ejzvw61fzq6u2",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ9900/タキ9900_日本石油_L_36.png",
+      "id": "vp_1arnk9o2bn0i2",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ9900/タキ9900_日本石油_L_36.png",
       "series": "タキ9900",
       "modelCode": "タキ9900",
       "variantCode": "",
@@ -25977,12 +25926,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ9900"
+        "04_貨物列車 / 05_タンク車 / タキ9900"
       ]
     },
     {
-      "id": "vp_uhdzg19hvl23",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ9900/タキ9900_日本石油輸送_R_36.png",
+      "id": "vp_33q6yt1mit31x",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ9900/タキ9900_日本石油輸送_L_36.png",
       "series": "タキ9900",
       "modelCode": "タキ9900",
       "variantCode": "",
@@ -25994,12 +25943,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ9900"
+        "04_貨物列車 / 05_タンク車 / タキ9900"
       ]
     },
     {
-      "id": "vp_1kj2z001iig6j0",
-      "sourcePath": "04_貨物列車/05_油罐車/タサ5700/タサ5700_L.png",
+      "id": "vp_i0vvq21u4nmgs",
+      "sourcePath": "04_貨物列車/05_タンク車/タサ5700/タサ5700_L.png",
       "series": "タサ5700",
       "modelCode": "タサ5700",
       "variantCode": "",
@@ -26011,12 +25960,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タサ5700"
+        "04_貨物列車 / 05_タンク車 / タサ5700"
       ]
     },
     {
-      "id": "vp_1qxhedl1srt5rf",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_イエロー_L_26.png",
+      "id": "vp_96rwrngvnth7",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_イエロー_L_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -26028,12 +25977,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_xwnzro6f52ng",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_グレー_L_26.png",
+      "id": "vp_10zo3um11jgtx8",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_グレー_L_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -26045,12 +25994,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_apmq84106b3e8",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_シルバー_L_26.png",
+      "id": "vp_n52t66bt10u8",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_シルバー_L_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -26062,12 +26011,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_cabvsi10vj9g2",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_ホワイト_R_26.png",
+      "id": "vp_1idjyiu14a86u0",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_ホワイト_L_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -26079,12 +26028,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_lxub214z92vk",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_日本石油輸送_L_26.png",
+      "id": "vp_1qoh1501lgxwgw",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_日本石油輸送_L_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -26096,7 +26045,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
@@ -27477,23 +27426,6 @@
       ]
     },
     {
-      "id": "vp_1catk3w1b4mwha",
-      "sourcePath": "01_JR 国鉄/01_客車/12系/スハフ12.png",
-      "series": "12系",
-      "modelCode": "オハフ13",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 12系"
-      ]
-    },
-    {
       "id": "vp_t08n9bk7y4sf",
       "sourcePath": "01_JR 国鉄/01_客車/14系/オハ14-500_白帯.png",
       "series": "14系",
@@ -28293,23 +28225,6 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 01_客車 / 24系"
-      ]
-    },
-    {
-      "id": "vp_133pysocwvy12",
-      "sourcePath": "01_JR 国鉄/01_客車/31系/オロ31.png",
-      "series": "31系",
-      "modelCode": "オロ31",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 31系"
       ]
     },
     {
@@ -29461,23 +29376,6 @@
       "modelCode": "クハ210",
       "variantCode": "3000",
       "liveryName": "高崎車両センター",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 211系"
-      ]
-    },
-    {
-      "id": "vp_dzmhfs1dritba",
-      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/211系/サハ210-3000_高崎車両センター.png",
-      "series": "211系",
-      "modelCode": "サハ210",
-      "variantCode": "0",
-      "liveryName": "東海道線",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -32269,8 +32167,8 @@
       ]
     },
     {
-      "id": "vp_vrgaha1xcps6o",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_後期形．日本石油輸送_R_36.png",
+      "id": "vp_1sinhyc1cq0pmo",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_後期形．日本石油輸送_R_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -32282,12 +32180,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_pk3fhkeh6yeq",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本オイルターミナル色_R_36.png",
+      "id": "vp_koo97g1r37kjc",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本オイルターミナル色_L_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -32299,12 +32197,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_1uzweay1eglffs",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本オイルターミナル色．帯なし_L_36.png",
+      "id": "vp_a7682m5ymn7m",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本オイルターミナル色．帯なし_R_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -32316,12 +32214,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_a1pa4m1pbg984",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本オイルターミナル．青_R_36.png",
+      "id": "vp_rsupt81kbsxqc",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本オイルターミナル．青_R_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -32333,12 +32231,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_1dd6ag516jeeox",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本オイルターミナル．緑_R_36.png",
+      "id": "vp_zp79xr1s2a0tt",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本オイルターミナル．緑_R_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -32350,12 +32248,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_hsdqzxa4swa9",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本石油輸送 ENEOS・エコレールマーク付_R_36.png",
+      "id": "vp_lm5vq1ksdp8f",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本石油輸送 ENEOS・エコレールマーク付_L_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -32367,12 +32265,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_1qij0r515zhzq1",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_日本石油輸送_R_36.png",
+      "id": "vp_1sey9yz1fhcwqx",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_日本石油輸送_R_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -32384,12 +32282,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_lgf91n3f9ny1",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ1000/タキ1000_米軍燃料輸送列車_R_36.png",
+      "id": "vp_uaesv5tjuvux",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ1000/タキ1000_米軍燃料輸送列車_R_36.png",
       "series": "タキ1000",
       "modelCode": "タキ1000",
       "variantCode": "",
@@ -32401,12 +32299,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ1000"
+        "04_貨物列車 / 05_タンク車 / タキ1000"
       ]
     },
     {
-      "id": "vp_15msqox11r5e4v",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ10600/タキ10600_明星セメント_R.png",
+      "id": "vp_a38xqjx220qn",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ10600/タキ10600_明星セメント_R.png",
       "series": "タキ10600",
       "modelCode": "タキ10600",
       "variantCode": "",
@@ -32418,12 +32316,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ10600"
+        "04_貨物列車 / 05_タンク車 / タキ10600"
       ]
     },
     {
-      "id": "vp_15xznr1196lgkn",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ18600/タサ18600_日本陸運産業_R.png",
+      "id": "vp_ev81hlg870g9",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ18600/タサ18600_日本陸運産業_L.png",
       "series": "タキ18600",
       "modelCode": "タサ18600",
       "variantCode": "",
@@ -32435,12 +32333,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ18600"
+        "04_貨物列車 / 05_タンク車 / タキ18600"
       ]
     },
     {
-      "id": "vp_7nnkvfo9nudp",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ19550/タキ19550_日本石油輸送_R.png",
+      "id": "vp_1ir1gchxckvnh",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ19550/タキ19550_日本石油輸送_R.png",
       "series": "タキ19550",
       "modelCode": "タキ19550",
       "variantCode": "",
@@ -32452,12 +32350,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ19550"
+        "04_貨物列車 / 05_タンク車 / タキ19550"
       ]
     },
     {
-      "id": "vp_15ojdm81pk5jly",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ25000/タキ25000_ニヤクコーポレーション_R.png",
+      "id": "vp_73tkwq6yktdi",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ25000/タキ25000_ニヤクコーポレーション_R.png",
       "series": "タキ25000",
       "modelCode": "タキ25000",
       "variantCode": "",
@@ -32469,12 +32367,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ25000"
+        "04_貨物列車 / 05_タンク車 / タキ25000"
       ]
     },
     {
-      "id": "vp_11mj7ndng7dph",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ25000/タキ25000_日本石油輸送色_R.png",
+      "id": "vp_uvpe372lqamt",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ25000/タキ25000_日本石油輸送色_R.png",
       "series": "タキ25000",
       "modelCode": "タキ25000",
       "variantCode": "",
@@ -32486,12 +32384,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ25000"
+        "04_貨物列車 / 05_タンク車 / タキ25000"
       ]
     },
     {
-      "id": "vp_qe98a11j6ifyd",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ25000/タキ25000_日本陸運産業色_L.png",
+      "id": "vp_1xljn4twfra5n",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ25000/タキ25000_日本陸運産業色_R.png",
       "series": "タキ25000",
       "modelCode": "タキ25000",
       "variantCode": "",
@@ -32503,12 +32401,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ25000"
+        "04_貨物列車 / 05_タンク車 / タキ25000"
       ]
     },
     {
-      "id": "vp_nr60m53d3u3d",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ25000/タキ25000_日通商事_L.png",
+      "id": "vp_9nm6nr1puc3mx",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ25000/タキ25000_日通商事_L.png",
       "series": "タキ25000",
       "modelCode": "タキ25000",
       "variantCode": "",
@@ -32520,12 +32418,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ25000"
+        "04_貨物列車 / 05_タンク車 / タキ25000"
       ]
     },
     {
-      "id": "vp_qabfj2vhlcys",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ29300/タキ29300_前期型・古河機械金属_R_36.png",
+      "id": "vp_1m6vqia3ouh2",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ29300/タキ29300_前期型・古河機械金属_L_36.png",
       "series": "タキ29300",
       "modelCode": "タキ29300",
       "variantCode": "",
@@ -32537,12 +32435,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ29300"
+        "04_貨物列車 / 05_タンク車 / タキ29300"
       ]
     },
     {
-      "id": "vp_19yycfw1nmgjwg",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ29300/タキ29300_後期型・日本陸運産業_R_36.png",
+      "id": "vp_gunbme1we0ey8",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ29300/タキ29300_後期型・日本陸運産業_R_36.png",
       "series": "タキ29300",
       "modelCode": "タキ29300",
       "variantCode": "",
@@ -32554,12 +32452,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ29300"
+        "04_貨物列車 / 05_タンク車 / タキ29300"
       ]
     },
     {
-      "id": "vp_ixvporaygeyh",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ29300/タキ29300_黒．同和鉱業_R_36.png",
+      "id": "vp_kpexupnq9b49",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ29300/タキ29300_黒．同和鉱業_R_36.png",
       "series": "タキ29300",
       "modelCode": "タキ29300",
       "variantCode": "",
@@ -32571,12 +32469,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ29300"
+        "04_貨物列車 / 05_タンク車 / タキ29300"
       ]
     },
     {
-      "id": "vp_18d2ij61rwqqdm",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ29300/タキ29300_銀．東亞合成_R_36.png",
+      "id": "vp_103n6igj0q2m2",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ29300/タキ29300_銀．東亞合成_R_36.png",
       "series": "タキ29300",
       "modelCode": "タキ29300",
       "variantCode": "",
@@ -32588,12 +32486,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ29300"
+        "04_貨物列車 / 05_タンク車 / タキ29300"
       ]
     },
     {
-      "id": "vp_3y63e6cdtzh8",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ3000/タキ3000_米タン_R.png",
+      "id": "vp_7mmjvee1sp2q",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ3000/タキ3000_米タン_L.png",
       "series": "タキ3000",
       "modelCode": "タキ3000",
       "variantCode": "",
@@ -32605,12 +32503,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ3000"
+        "04_貨物列車 / 05_タンク車 / タキ3000"
       ]
     },
     {
-      "id": "vp_1hszrke1lfsfcg",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ5200/タキ5200_R.png",
+      "id": "vp_ya2uec1qv2ydc",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ5200/タキ5200_R.png",
       "series": "タキ5200",
       "modelCode": "タキ5200",
       "variantCode": "",
@@ -32622,12 +32520,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ5200"
+        "04_貨物列車 / 05_タンク車 / タキ5200"
       ]
     },
     {
-      "id": "vp_1k5lmqd1fhu83b",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ5450/タキ5450_R_26.png",
+      "id": "vp_6t8qbjvaxr0n",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ5450/タキ5450_R_26.png",
       "series": "タキ5450",
       "modelCode": "タキ5450",
       "variantCode": "",
@@ -32639,12 +32537,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ5450"
+        "04_貨物列車 / 05_タンク車 / タキ5450"
       ]
     },
     {
-      "id": "vp_fyjb7n1ncyuor",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ5450/タキ5450_東亞合成_L_26.png",
+      "id": "vp_n7mwfrd891p1",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ5450/タキ5450_東亞合成_R_26.png",
       "series": "タキ5450",
       "modelCode": "タキ5450",
       "variantCode": "",
@@ -32656,12 +32554,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ5450"
+        "04_貨物列車 / 05_タンク車 / タキ5450"
       ]
     },
     {
-      "id": "vp_1n1dqhc1ybg4xo",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ5450/タキ5450_日本石油輸送_R_26.png",
+      "id": "vp_fmk916zqfp64",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ5450/タキ5450_日本石油輸送_R_26.png",
       "series": "タキ5450",
       "modelCode": "タキ5450",
       "variantCode": "",
@@ -32673,12 +32571,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ5450"
+        "04_貨物列車 / 05_タンク車 / タキ5450"
       ]
     },
     {
-      "id": "vp_n8mfoo180v2rk",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ9900/タキ9900_日本石油_R_36.png",
+      "id": "vp_k04whuqcy70w",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ9900/タキ9900_日本石油_R_36.png",
       "series": "タキ9900",
       "modelCode": "タキ9900",
       "variantCode": "",
@@ -32690,12 +32588,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ9900"
+        "04_貨物列車 / 05_タンク車 / タキ9900"
       ]
     },
     {
-      "id": "vp_lz5sdr1d10ns5",
-      "sourcePath": "04_貨物列車/05_油罐車/タキ9900/タキ9900_日本石油輸送_L_36.png",
+      "id": "vp_p3yn171m0w51n",
+      "sourcePath": "04_貨物列車/05_タンク車/タキ9900/タキ9900_日本石油輸送_R_36.png",
       "series": "タキ9900",
       "modelCode": "タキ9900",
       "variantCode": "",
@@ -32707,12 +32605,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タキ9900"
+        "04_貨物列車 / 05_タンク車 / タキ9900"
       ]
     },
     {
-      "id": "vp_1kvol661i65spe",
-      "sourcePath": "04_貨物列車/05_油罐車/タサ5700/タサ5700_R.png",
+      "id": "vp_i5j4jo1u9xc6a",
+      "sourcePath": "04_貨物列車/05_タンク車/タサ5700/タサ5700_R.png",
       "series": "タサ5700",
       "modelCode": "タサ5700",
       "variantCode": "",
@@ -32724,12 +32622,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タサ5700"
+        "04_貨物列車 / 05_タンク車 / タサ5700"
       ]
     },
     {
-      "id": "vp_1i8ovo71t9v79x",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_イエロー_R_26.png",
+      "id": "vp_zyakjh1rk73lx",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_イエロー_R_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -32741,12 +32639,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_1vxn6rujd21u6",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_グレー_R_26.png",
+      "id": "vp_1jx2tr4tcmcou",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_グレー_R_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -32758,12 +32656,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_1dh12ek10dgimg",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_ホワイト_L_26.png",
+      "id": "vp_1f1frdk8s4n2a",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_ホワイト_R_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -32775,12 +32673,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_ybfee2jaje3u",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_シルバー_R_26.png",
+      "id": "vp_u1kt80cmcnoa",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_シルバー_R_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -32792,12 +32690,12 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_7ifucwo3hdl6",
-      "sourcePath": "04_貨物列車/05_油罐車/タム500/タム500_日本石油輸送_R_26.png",
+      "id": "vp_dnfgbe1ma9jay",
+      "sourcePath": "04_貨物列車/05_タンク車/タム500/タム500_日本石油輸送_R_26.png",
       "series": "タム500",
       "modelCode": "タム500",
       "variantCode": "",
@@ -32809,13 +32707,13 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 05_油罐車 / タム500"
+        "04_貨物列車 / 05_タンク車 / タム500"
       ]
     },
     {
-      "id": "vp_pgaizeytmjpg",
-      "sourcePath": "04_貨物列車/06_斗車/セキ6000_26.png",
-      "series": "06_斗車",
+      "id": "vp_1w4r5es1shbaew",
+      "sourcePath": "04_貨物列車/06_ホッパ車/セキ6000_26.png",
+      "series": "06_ホッパ車",
       "modelCode": "セキ3000",
       "variantCode": "",
       "liveryName": "",
@@ -32826,7 +32724,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 06_斗車"
+        "04_貨物列車 / 06_ホッパ車"
       ]
     },
     {
@@ -43474,9 +43372,9 @@
       ]
     },
     {
-      "id": "vp_1m7ixqf1osq6rr",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ10000_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_19gh5sj13r4zsz",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ10000_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ10000",
       "variantCode": "",
       "liveryName": "",
@@ -43487,7 +43385,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "8002",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43498,9 +43396,9 @@
       ]
     },
     {
-      "id": "vp_2t47d31p9z87b",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ100_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_hpnu6r1oaiugz",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ100_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ100",
       "variantCode": "",
       "liveryName": "",
@@ -43511,7 +43409,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "92862",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43520,9 +43418,9 @@
       ]
     },
     {
-      "id": "vp_1r66rag1ceqaiu",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ101_36.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_8hpdksaftcfe",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ101_36.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ101",
       "variantCode": "",
       "liveryName": "",
@@ -43533,7 +43431,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "92862",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43542,9 +43440,9 @@
       ]
     },
     {
-      "id": "vp_exstcb1l2tcf7",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ102_36.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_vafhlr1cugc4n",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ102_36.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ102",
       "variantCode": "",
       "liveryName": "",
@@ -43555,7 +43453,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "98071",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43565,9 +43463,9 @@
       ]
     },
     {
-      "id": "vp_1hisp1f15wa67f",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ104_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1213ehj8n3ujj",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ104_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ104",
       "variantCode": "",
       "liveryName": "",
@@ -43578,7 +43476,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1421",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43589,9 +43487,9 @@
       ]
     },
     {
-      "id": "vp_5f8a9018ahxfy",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ103_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_kbrx2o66r5ka",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ103_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ103",
       "variantCode": "",
       "liveryName": "",
@@ -43602,7 +43500,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "98071",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43612,9 +43510,9 @@
       ]
     },
     {
-      "id": "vp_16lgskit0g91o",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ105_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_sp5r7atwfu3k",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ105_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ105",
       "variantCode": "",
       "liveryName": "",
@@ -43625,7 +43523,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1983",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43635,9 +43533,9 @@
       ]
     },
     {
-      "id": "vp_1slzypqu1eklu",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ106_グレー_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1rw8w8am9aghq",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ106_グレー_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ106",
       "variantCode": "",
       "liveryName": "グレー",
@@ -43648,7 +43546,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1478",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43660,9 +43558,9 @@
       ]
     },
     {
-      "id": "vp_16o1sy4xfntks",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ106_青_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_pf0nx4ev3hoo",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ106_青_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ106",
       "variantCode": "",
       "liveryName": "青",
@@ -43673,16 +43571,16 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
       "productCodes": []
     },
     {
-      "id": "vp_1k4wrxc8s7g9e",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ107_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_14n7hdgpjv52e",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ107_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ107",
       "variantCode": "",
       "liveryName": "",
@@ -43693,7 +43591,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1433",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43705,9 +43603,9 @@
       ]
     },
     {
-      "id": "vp_t396s18vipun",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ250000_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_17yond16o7z8r",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ250000_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ250000",
       "variantCode": "",
       "liveryName": "",
@@ -43718,7 +43616,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "8741",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43728,9 +43626,9 @@
       ]
     },
     {
-      "id": "vp_w4w1sbzs9er",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ200_26.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1avyhy715cgjjb",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ200_26.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ200",
       "variantCode": "",
       "liveryName": "",
@@ -43741,7 +43639,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "8042",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43753,9 +43651,9 @@
       ]
     },
     {
-      "id": "vp_10ihrps1nc1hze",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ350000_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1dsd0787asnty",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ350000_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ350000",
       "variantCode": "",
       "liveryName": "",
@@ -43766,7 +43664,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "8743",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43776,9 +43674,9 @@
       ]
     },
     {
-      "id": "vp_wokddv63w5m3",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ50000_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1yzfq53neuz1b",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ50000_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ50000",
       "variantCode": "",
       "liveryName": "",
@@ -43789,7 +43687,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "10-1317",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43801,9 +43699,9 @@
       ]
     },
     {
-      "id": "vp_1mo2hli1mugres",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ5500_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_d1q14yaqgsdk",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ5500_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ5500",
       "variantCode": "",
       "liveryName": "",
@@ -43814,7 +43712,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "8059-1",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43827,9 +43725,9 @@
       ]
     },
     {
-      "id": "vp_4g5l2q1mf3db4",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキフ10000_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1qx6gx29nuci4",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキフ10000_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキフ10000",
       "variantCode": "",
       "liveryName": "",
@@ -43840,7 +43738,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "8003",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -43850,9 +43748,9 @@
       ]
     },
     {
-      "id": "vp_1flx4qn1j69jaj",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ90_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1f8xomjp12hy7",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ90_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ90",
       "variantCode": "",
       "liveryName": "",
@@ -43863,16 +43761,16 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
       "productCodes": []
     },
     {
-      "id": "vp_tz45fa3hhack",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキフ50000_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_11e7wki1slgfgo",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキフ50000_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキフ50000",
       "variantCode": "",
       "liveryName": "",
@@ -43883,7 +43781,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "2784",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -45439,9 +45337,9 @@
       ]
     },
     {
-      "id": "vp_6cru1tpefhqn",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ10000_改造_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_76j48l1hr7ty3",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ10000_改造_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ10000",
       "variantCode": "",
       "liveryName": "38_改造",
@@ -45452,7 +45350,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "A3114",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -45462,9 +45360,9 @@
       ]
     },
     {
-      "id": "vp_24yjfp1qsvk4z",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ50000_改造_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1dwkylt1f5vws7",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ50000_改造_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ50000",
       "variantCode": "",
       "liveryName": "38_改造",
@@ -45475,16 +45373,16 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
       "productCodes": []
     },
     {
-      "id": "vp_w9c39s144fxky",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキ5500_改造_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_x2g3essa07x2",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ5500_改造_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキ5500",
       "variantCode": "",
       "liveryName": "38_改造",
@@ -45495,16 +45393,16 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
       "productCodes": []
     },
     {
-      "id": "vp_lxmad0sivan2",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキフ10000_改造_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_16rd5b43mh0xm",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキフ10000_改造_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキフ10000",
       "variantCode": "",
       "liveryName": "38_改造",
@@ -45515,7 +45413,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "A3114",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -45524,9 +45422,9 @@
       ]
     },
     {
-      "id": "vp_19ycjqo1fooiqq",
-      "sourcePath": "04_貨物列車/04_貨櫃平車/コキフ50000_改造_38.png",
-      "series": "04_貨櫃平車",
+      "id": "vp_1baxw1ebceeu",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキフ50000_改造_38.png",
+      "series": "04_コンテナ車",
       "modelCode": "コキフ50000",
       "variantCode": "",
       "liveryName": "38_改造",
@@ -45537,7 +45435,7 @@
       "defaultAttribute": "",
       "defaultProductCode": "",
       "categories": [
-        "04_貨物列車 / 04_貨櫃平車"
+        "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
@@ -55507,6 +55405,159 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 01_客車 / 14系"
+      ]
+    },
+    {
+      "id": "vp_131nap5cvpoiv",
+      "sourcePath": "01_JR 国鉄/01_客車/31系/オロ30.png",
+      "series": "31系",
+      "modelCode": "オロ30",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 31系"
+      ]
+    },
+    {
+      "id": "vp_133pysocwvy12",
+      "sourcePath": "01_JR 国鉄/01_客車/31系/オロ31.png",
+      "series": "31系",
+      "modelCode": "オロ31",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 31系"
+      ]
+    },
+    {
+      "id": "vp_1catk3w1b4mwha",
+      "sourcePath": "01_JR 国鉄/01_客車/12系/スハフ12.png",
+      "series": "12系",
+      "modelCode": "スハフ12",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 12系"
+      ]
+    },
+    {
+      "id": "vp_3g9tgesoq6uo",
+      "sourcePath": "01_JR 国鉄/01_客車/12系/オハフ13.png",
+      "series": "12系",
+      "modelCode": "オハフ13",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 12系"
+      ]
+    },
+    {
+      "id": "vp_dzmhfs1dritba",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/211系/サハ210-3000_高崎車両センター.png",
+      "series": "211系",
+      "modelCode": "サハ210",
+      "variantCode": "3000",
+      "liveryName": "高崎車両センター",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 211系"
+      ]
+    },
+    {
+      "id": "vp_1xlx1uqx4twdy",
+      "sourcePath": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/211系/サハ210-0_東海道線.png",
+      "series": "211系",
+      "modelCode": "サハ210",
+      "variantCode": "0",
+      "liveryName": "東海道線",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 02_通勤形・近郊形 / 01_直流用 / 211系"
+      ]
+    },
+    {
+      "id": "vp_k1lj3rzwxhy5",
+      "sourcePath": "04_貨物列車/03_長物車/ク5000.png",
+      "series": "03_長物車",
+      "modelCode": "ク5000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "04_貨物列車 / 03_長物車"
+      ]
+    },
+    {
+      "id": "vp_rx3f7nnw6ivj",
+      "sourcePath": "04_貨物列車/03_長物車/ク5000_JR貨物2色塗装.png",
+      "series": "03_長物車",
+      "modelCode": "ク5000",
+      "variantCode": "",
+      "liveryName": "JR貨物2色塗装",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "04_貨物列車 / 03_長物車"
+      ]
+    },
+    {
+      "id": "vp_1zcvi5hj9kz3",
+      "sourcePath": "04_貨物列車/03_長物車/ク5000_トリコロールカラー.png",
+      "series": "03_長物車",
+      "modelCode": "ク5000",
+      "variantCode": "",
+      "liveryName": "トリコロールカラー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "04_貨物列車 / 03_長物車"
       ]
     }
   ]
