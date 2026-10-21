@@ -483,7 +483,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small" id="btn-scan-vehicle-folder" style="flex:1;" title="フォルダをスキャンして新しい画像を登録します">データ同期</button>
       </div>
       <div class="db-io-row">
-        <button class="btn small secondary" id="btn-dedupe-vehicles" style="flex:1;" title="同じ画像が複数のレコードになっているものを整理します">被る排除</button>
+        <button class="btn small secondary" id="btn-dedupe-vehicles" style="flex:1;" title="ファイルがフォルダから無くなったのに残っているレコードを整理します。画像が同じでも形式・番台が違うものは正常なデータとして扱い、報告しません。">重複整理</button>
       </div>
       <div class="db-io-row">
         <button class="btn small secondary" id="btn-unify-ids" style="flex:1;" title="車両IDをファイルパスから決めるようにして、どのパソコンでも同じIDになるようにします">ID同期</button>
@@ -1124,7 +1124,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261013-JA12";
+  const APP_BUILD = "20261021-ALIAS3";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -1657,9 +1657,92 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return side === "R" && hasSidePair(v);
   }
 
+  // ---------- 車輛編號別名表 ----------
+  // 車輛編號是由檔案路徑算出來的,所以一改檔名就會換成另一個編號。
+  // 本機的編成會在改名當下一併修好,但這些地方修不到:
+  //   ・以前匯出的 JSON 備份      ・另一台電腦的瀏覽器
+  //   ・已經發佈到網站上的編成    ・訪客瀏覽器裡留下的舊資料
+  // 這張表把「舊編號 → 新編號」永久記下來,上面那些地方讀到舊編號時
+  // 一樣能解析回現在的車,不會再出現「車両がデータベースから削除」。
+  const ALIAS_KEY = "settings:vehicleAliases";
+  let vehicleAliases = {};
+
+  // 沿著別名鏈往下找最終的編號。
+  // 資料壞掉形成循環時會在上限處停下來,不會卡成無限迴圈。
+  function resolveVehicleId(id){
+    let cur = id;
+    for(let i = 0; i < 16; i++){
+      const next = vehicleAliases[cur];
+      if(!next || next === cur) return cur;
+      cur = next;
+    }
+    return cur;
+  }
+
+  async function loadVehicleAliases(){
+    // 線上版先試網站上的 data/aliases.json,訪客才解析得到舊編號
+    if(IS_WEB){
+      try{
+        const res = await fetch(WEB_DATA_BASE + "aliases.json", { cache: "no-cache" });
+        if(res.ok){
+          const payload = await res.json();
+          const map = (payload && payload.aliases) || payload;
+          if(map && typeof map === "object") vehicleAliases = map;
+        }
+      }catch(e){ /* 網站上沒這個檔就跳過 */ }
+    }
+    try{
+      const res = await storage.get(ALIAS_KEY, false);
+      if(res){
+        const local = JSON.parse(res.value);
+        // 本機的紀錄比較新,蓋在網站版那份上面
+        if(local && typeof local === "object"){
+          vehicleAliases = Object.assign({}, vehicleAliases, local);
+        }
+      }
+    }catch(e){ /* 讀不到就從空的開始 */ }
+  }
+
+  // 記下一批「舊編號 → 新編號」。
+  // 順便把鏈壓平(X→A 而 A→B 就直接寫成 X→B),免得改名改久了要一直往下查。
+  // 把別名表寫進網站的 data 資料夾,訪客與別台電腦才解析得到舊編號。
+  // 檔案很小(一筆大約 30 bytes),所以每次改名都重寫沒有負擔。
+  async function syncAliasesToFolder(){
+    if(!formationDirHandle) return;
+    try{
+      await writeJsonFile(formationDirHandle, "aliases.json",
+        { aliases: vehicleAliases, savedAt: new Date().toISOString() });
+    }catch(e){ console.warn("別名表の書き出しに失敗しました", e); }
+  }
+
+  async function recordVehicleAliases(remap){
+    const pairs = Object.keys(remap || {}).filter(k => remap[k] && remap[k] !== k);
+    if(!pairs.length) return 0;
+    pairs.forEach(oldId => { vehicleAliases[oldId] = remap[oldId]; });
+    Object.keys(vehicleAliases).forEach(k => {
+      const end = resolveVehicleId(k);
+      if(end !== vehicleAliases[k]) vehicleAliases[k] = end;
+    });
+    // 自己指自己沒有意義,清掉
+    Object.keys(vehicleAliases).forEach(k => { if(vehicleAliases[k] === k) delete vehicleAliases[k]; });
+    try{ await storage.set(ALIAS_KEY, JSON.stringify(vehicleAliases), false); }
+    catch(e){ console.warn("別名表の保存に失敗しました", e); }
+    syncAliasesToFolder().catch(() => {});
+    reindexVehicles();
+    return pairs.length;
+  }
+
   function reindexVehicles(){
     vehiclesById = {};
     vehicles.forEach(v => vehiclesById[v.id] = v);
+    // 把別名一起掛進查表:舊編號直接指到現在的那台車。
+    // 這樣全部既有的 vehiclesById[...] 查表程式碼都不必改,
+    // 舊備份、別台電腦、網站上的編成讀進來就自動對上。
+    Object.keys(vehicleAliases).forEach(oldId => {
+      if(vehiclesById[oldId]) return;        // 這個編號還有真正的車在用,不能蓋掉
+      const target = vehiclesById[resolveVehicleId(oldId)];
+      if(target) vehiclesById[oldId] = target;
+    });
     rebuildSidePairs();
   }
   async function loadVehicles(){
@@ -1739,7 +1822,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       try{
         const slim = snapshot.map(v => {
           const o = {};
-          Object.keys(v).forEach(k => { if(k !== "img") o[k] = v[k]; });
+          // img 是圖片本體(線上版改用逐檔讀取),imgHash 只有本機掃描比對用得到
+          Object.keys(v).forEach(k => { if(k !== "img" && k !== "imgHash") o[k] = v[k]; });
           return o;
         });
         await writeJsonFile(formationDirHandle, "vehicles.json",
@@ -1809,6 +1893,205 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     });
   }
 
+  // ---------- 檔案指紋 ----------
+  // 以前判斷「圖片有沒有變」是把每個檔案讀成 base64 字串再整串比對。
+  // 三千輛的時候每次掃描要生出二十幾MB的字串,一萬輛會變成七八十MB,
+  // 手機或記憶體緊的機器會直接當掉。改成比對 SHA-256 雜湊:
+  // 判斷力完全一樣,但每台車只留 64 個字元。
+  const HASH_OK = !!(typeof crypto !== "undefined" && crypto.subtle && crypto.subtle.digest);
+
+  async function sha256Hex(buf){
+    const d = await crypto.subtle.digest("SHA-256", buf);
+    return Array.from(new Uint8Array(d)).map(b => b.toString(16).padStart(2, "0")).join("");
+  }
+  async function fileHash(handle){
+    const file = await handle.getFile();
+    return await sha256Hex(await file.arrayBuffer());
+  }
+  // 舊紀錄還沒有雜湊,從已經存在資料庫裡的 base64 圖片補算一次,之後就不用再算
+  async function hashOfDataUrl(dataUrl){
+    const i = String(dataUrl || "").indexOf(",");
+    if(i < 0) return "";
+    const bin = atob(dataUrl.slice(i + 1));
+    const bytes = new Uint8Array(bin.length);
+    for(let k = 0; k < bin.length; k++) bytes[k] = bin.charCodeAt(k);
+    return await sha256Hex(bytes.buffer);
+  }
+  async function ensureVehicleHash(v){
+    if(v.imgHash) return v.imgHash;
+    if(!v.img) return "";
+    try{ v.imgHash = await hashOfDataUrl(v.img); }catch(e){ v.imgHash = ""; }
+    return v.imgHash;
+  }
+
+  // ---------- 檔名相似度(配對推薦用) ----------
+  // Dice 係數:看兩個檔名共用多少連續兩字。完全無關的車會接近 0,
+  // 只補了番台或改了塗裝名的同一台車會很高。
+  function normNameForMatch(s){
+    return String(s || "").replace(/\.[a-z0-9]+$/i, "")
+      .replace(/[_\-\s().（）]/g, "").toLowerCase();
+  }
+  function nameSimilarity(a, b){
+    a = normNameForMatch(a); b = normNameForMatch(b);
+    if(!a || !b) return 0;
+    if(a === b) return 1;
+    const bigrams = t => {
+      const set = new Set();
+      for(let i = 0; i < t.length - 1; i++) set.add(t.slice(i, i + 2));
+      if(!set.size) set.add(t);
+      return set;
+    };
+    const A = bigrams(a), B = bigrams(b);
+    let inter = 0;
+    A.forEach(x => { if(B.has(x)) inter++; });
+    return 2 * inter / (A.size + B.size);
+  }
+  function dirOf(path){
+    const i = String(path || "").lastIndexOf("/");
+    return i < 0 ? "" : path.slice(0, i);
+  }
+  function baseOf(path){
+    const i = String(path || "").lastIndexOf("/");
+    return i < 0 ? String(path || "") : path.slice(i + 1);
+  }
+  // 推薦分數:檔名相似度為主,同一個資料夾(同系列)再加分
+  function pairScore(orphan, file){
+    const s = nameSimilarity(baseOf(orphan.sourcePath), baseOf(file.relPath));
+    const sameDir = dirOf(orphan.sourcePath) === dirOf(file.relPath) ? 0.15 : 0;
+    return Math.min(1, s + sameDir);
+  }
+
+  // ---------- 孤兒配對視窗 ----------
+  // 「重畫圖片 + 同時改檔名」的時候,舊紀錄跟新檔案在程式眼裡毫無關聯
+  // (路徑不同、內容也不同),所以沒辦法自動判斷。這個視窗把兩邊並排,
+  // 依檔名相似度推薦配對,最後由使用者按下確認 —— 不會猜錯,
+  // 而且配好之後舊編號會寫進別名表,編成就會自己接回來。
+  // 視窗完全用 JS 動態產生,所以不必在 HTML 裡預留標籤。
+  function askOrphanPairing(orphanPool, stillNew){
+    return new Promise(resolve => {
+      const pairs = [];                      // { v, f }
+      const back = document.createElement("div");
+      back.id = "orphan-pair-modal";
+      back.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:400;"
+        + "display:flex;align-items:center;justify-content:center;padding:16px;";
+      const box = document.createElement("div");
+      box.style.cssText = "background:#fff;color:var(--ink);border-radius:10px;"
+        + "max-width:860px;width:100%;max-height:86vh;display:flex;flex-direction:column;"
+        + "box-shadow:0 10px 40px rgba(0,0,0,.4);overflow:hidden;";
+
+      const head = document.createElement("div");
+      head.style.cssText = "padding:14px 16px;border-bottom:1px solid var(--line);";
+      head.innerHTML = `<div style="font-weight:700;font-size:15px;">対応付けの確認</div>`
+        + `<div style="font-size:12px;opacity:.8;margin-top:5px;line-height:1.6;">`
+        + `ファイルが見つからないレコードが ${orphanPool.length} 件、`
+        + `新しいファイルが ${stillNew.length} 件あります。<br>`
+        + `同じ車両を描き直して名前も変えた場合は、ここで対応付けると`
+        + `<b>編成の参照がそのまま引き継がれます</b>。<br>`
+        + `別の車両どうしなら「新規として扱う」のままにしてください。</div>`;
+
+      const body = document.createElement("div");
+      body.style.cssText = "padding:10px 16px;overflow:auto;flex:1;";
+
+      // 推薦順:分數高的排前面,讓使用者先處理最像的
+      const ranked = orphanPool.map(v => {
+        const cands = stillNew.map(sn => ({ sn, score: pairScore(v, sn.f) }))
+          .sort((a, b) => b.score - a.score);
+        return { v, cands, best: cands.length ? cands[0].score : 0 };
+      }).sort((a, b) => b.best - a.best);
+
+      const selects = [];
+      ranked.forEach(({ v, cands, best }) => {
+        const row = document.createElement("div");
+        row.style.cssText = "display:flex;gap:10px;align-items:center;padding:8px 0;"
+          + "border-bottom:1px dashed var(--line);";
+
+        const thumb = document.createElement("div");
+        thumb.style.cssText = "width:76px;height:44px;flex:0 0 auto;display:flex;"
+          + "align-items:center;justify-content:center;background:#f3f3f3;border-radius:4px;overflow:hidden;";
+        if(v.img){
+          const im = document.createElement("img");
+          im.src = v.img;
+          im.style.cssText = "max-width:100%;max-height:100%;object-fit:contain;";
+          thumb.appendChild(im);
+        }else{
+          thumb.textContent = "—";
+        }
+
+        const info = document.createElement("div");
+        info.style.cssText = "flex:1 1 auto;min-width:0;font-size:12px;line-height:1.5;";
+        info.innerHTML = `<div style="font-weight:700;">${esc(vehicleLabel(v) || "（名称なし）")}</div>`
+          + `<div style="opacity:.7;word-break:break-all;">${esc(v.sourcePath || "")}</div>`;
+
+        const sel = document.createElement("select");
+        sel.style.cssText = "flex:0 0 300px;max-width:46%;font-size:12px;padding:4px;";
+        const none = document.createElement("option");
+        none.value = ""; none.textContent = "新規として扱う（対応付けない）";
+        sel.appendChild(none);
+        cands.forEach(({ sn, score }) => {
+          const op = document.createElement("option");
+          op.value = sn.f.relPath;
+          op.textContent = `${Math.round(score * 100)}%　${baseOf(sn.f.relPath)}`;
+          sel.appendChild(op);
+        });
+        // 很像的時候先幫他選好,但還是要使用者按下確認才會生效
+        if(best >= 0.62 && cands.length) sel.value = cands[0].sn.f.relPath;
+
+        row.appendChild(thumb); row.appendChild(info); row.appendChild(sel);
+        body.appendChild(row);
+        selects.push({ v, sel });
+      });
+
+      const foot = document.createElement("div");
+      foot.style.cssText = "padding:12px 16px;border-top:1px solid var(--line);"
+        + "display:flex;gap:8px;justify-content:flex-end;align-items:center;";
+      const warn = document.createElement("div");
+      warn.style.cssText = "font-size:11px;opacity:.75;margin-right:auto;";
+      const skip = document.createElement("button");
+      skip.type = "button"; skip.textContent = "全部スキップ";
+      skip.className = "btn small secondary";
+      const ok = document.createElement("button");
+      ok.type = "button"; ok.textContent = "対応付けて続行";
+      ok.className = "btn small";
+
+      const refreshWarn = () => {
+        const used = {};
+        let dup = 0, n = 0;
+        selects.forEach(({ sel }) => {
+          if(!sel.value) return;
+          n++;
+          if(used[sel.value]) dup++;
+          used[sel.value] = true;
+        });
+        warn.textContent = dup
+          ? `同じファイルを ${dup} 箇所で選んでいます。先に直してください。`
+          : (n ? `${n} 件を対応付けます` : "対応付けなし");
+        warn.style.color = dup ? "var(--rail-red)" : "";
+        ok.disabled = dup > 0;
+      };
+      selects.forEach(({ sel }) => sel.addEventListener("change", refreshWarn));
+      refreshWarn();
+
+      const close = result => { back.remove(); document.removeEventListener("keydown", onKey); resolve(result); };
+      const onKey = e => { if(e.key === "Escape") close([]); };
+      skip.addEventListener("click", () => close([]));
+      ok.addEventListener("click", () => {
+        selects.forEach(({ v, sel }) => {
+          if(!sel.value) return;
+          const sn = stillNew.find(x => x.f.relPath === sel.value);
+          if(sn) pairs.push({ v, sn });
+        });
+        close(pairs);
+      });
+      back.addEventListener("click", e => { if(e.target === back) close([]); });
+      document.addEventListener("keydown", onKey);
+
+      foot.appendChild(warn); foot.appendChild(skip); foot.appendChild(ok);
+      box.appendChild(head); box.appendChild(body); box.appendChild(foot);
+      back.appendChild(box);
+      document.body.appendChild(back);
+    });
+  }
+
   async function scanVehicleFolder(){
     if(!vehicleDirHandle){
       toast("先に車両フォルダを連携してください（上の「メインフォルダーを選択」または「フォルダを選択」から）。", "err", 5000);
@@ -1827,25 +2110,88 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       // 磁碟上有、資料庫沒紀錄過這個路徑的 → 可能是新檔案,也可能是被搬過來的舊檔案
       const unknownFiles = found.filter(f => !knownPaths.has(f.relPath));
 
-      // 先比對內容,判斷「路徑變了但其實是同一張圖」= 搬移/改名,直接更新既有紀錄的路徑,
-      // 不要重新建一筆(避免搬動資料夾之後資料庫出現重複)
-      const moved = [];
-      const stillNew = [];
-      const orphanPool = orphans.slice();
-      for(const f of unknownFiles){
-        const dataUrl = await fileToDataUrl(f.handle);
-        const hitIdx = orphanPool.findIndex(v => v.img === dataUrl);
-        if(hitIdx >= 0){
-          const v = orphanPool[hitIdx];
-          orphanPool.splice(hitIdx, 1);
-          moved.push({ v, from: v.sourcePath, to: f.relPath });
-        }else{
-          stillNew.push({ f, dataUrl });
+      // 先把磁碟上每個檔案的指紋算出來(整個掃描只算一次,
+      // 搬移判定與「圖片有沒有被重畫」兩邊共用)
+      btn.textContent = "照合中…";
+      const hashByPath = {};
+      if(HASH_OK){
+        let n = 0;
+        for(const f of found){
+          try{ hashByPath[f.relPath] = await fileHash(f.handle); }catch(e){ /* 讀不到就當沒有指紋 */ }
+          if(++n % 200 === 0) btn.textContent = `照合中… ${n}/${found.length}`;
         }
       }
 
+      // 內容一樣但路徑變了 = 搬移/改名,直接更新既有紀錄的路徑,
+      // 不要重新建一筆(避免搬動資料夾之後資料庫出現重複)
+      // 舊紀錄還沒有指紋的,這次會順便補算。就算最後沒有套用任何變更,
+      // 補算的結果也要存下來,不然每次掃描都得把三千筆 base64 重新算一遍。
+      let hashFilled = 0;
+      const vhash = async v => {
+        if(v.imgHash) return v.imgHash;
+        const h = await ensureVehicleHash(v);
+        if(h) hashFilled++;
+        return h;
+      };
+
+      const moved = [];
+      const stillNew = [];
+      const orphanPool = orphans.slice();
+      if(HASH_OK){
+        const byHash = new Map();
+        for(const v of orphanPool){
+          const h = await vhash(v);
+          if(h && !byHash.has(h)) byHash.set(h, v);
+        }
+        for(const f of unknownFiles){
+          const h = hashByPath[f.relPath];
+          const v = h ? byHash.get(h) : null;
+          const at = v ? orphanPool.indexOf(v) : -1;
+          if(at >= 0){
+            byHash.delete(h);
+            orphanPool.splice(at, 1);
+            moved.push({ v, from: v.sourcePath, to: f.relPath, hash: h });
+          }else{
+            stillNew.push({ f, dataUrl: null, hash: h || "" });
+          }
+        }
+      }else{
+        // crypto.subtle 不能用的環境(極少見)就退回原本的整串比對
+        for(const f of unknownFiles){
+          const dataUrl = await fileToDataUrl(f.handle);
+          const hitIdx = orphanPool.findIndex(v => v.img === dataUrl);
+          if(hitIdx >= 0){
+            const v = orphanPool[hitIdx];
+            orphanPool.splice(hitIdx, 1);
+            moved.push({ v, from: v.sourcePath, to: f.relPath, hash: "" });
+          }else{
+            stillNew.push({ f, dataUrl, hash: "" });
+          }
+        }
+      }
+
+      // 兩邊都還有剩 = 可能是「重畫圖片 + 同時改檔名」。
+      // 這種情況程式沒有線索可以自動配對,所以問使用者。
+      let paired = 0;
+      if(orphanPool.length && stillNew.length){
+        btn.textContent = "対応付けの確認…";
+        const pairs = await askOrphanPairing(orphanPool, stillNew);
+        pairs.forEach(({ v, sn }) => {
+          const oi = orphanPool.indexOf(v);
+          const si = stillNew.indexOf(sn);
+          if(oi < 0 || si < 0) return;
+          orphanPool.splice(oi, 1);
+          stillNew.splice(si, 1);
+          // 配對成功的就當成「搬移 + 圖片換了」,
+          // 所以要連圖片一起更新,不能只改路徑
+          moved.push({ v, from: v.sourcePath, to: sn.f.relPath, hash: sn.hash,
+                       handle: sn.f.handle, redrawn: true });
+          paired++;
+        });
+      }
+
       // 路徑一樣、但圖片內容變了 → 您重新做過圖並用同檔名覆蓋回資料夾。
-      // 這種情況只換圖片,其他欄位(型式/番代/塗裝/公司/寬度/貨號/分類標籤)全部保留。
+      // 這種情況只換圖片,其他欄位(型式/番代/塗裝/寬度/貨號/分類標籤)全部保留。
       btn.textContent = "画像を照合中…";
       const byPath = {};
       vehicles.forEach(v => { if(v.sourcePath) byPath[v.sourcePath] = v; });
@@ -1853,49 +2199,79 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       for(const f of found){
         const v = byPath[f.relPath];
         if(!v) continue;
-        const dataUrl = await fileToDataUrl(f.handle);
-        if(v.img !== dataUrl) updatedImgs.push({ v, dataUrl });
+        if(HASH_OK){
+          const h = hashByPath[f.relPath];
+          const cur = await vhash(v);
+          if(h && h !== cur) updatedImgs.push({ v, handle: f.handle, hash: h });
+        }else{
+          const dataUrl = await fileToDataUrl(f.handle);
+          if(v.img !== dataUrl) updatedImgs.push({ v, dataUrl, hash: "" });
+        }
       }
       btn.textContent = "スキャン中…";
 
       const lines = [`スキャン完了：ディスク上に ${found.length} 枚の画像が見つかりました。`];
       if(updatedImgs.length) lines.push(`・${updatedImgs.length} 枚は画像の中身が更新されています（画像だけ差し替え、他の項目は保持）`);
       if(moved.length) lines.push(`・${moved.length} 枚は移動／名前変更と判定しました（既存のレコードを更新し、重複登録はしません）`);
+      if(paired) lines.push(`　うち ${paired} 件は手動で対応付けたものです（編成の参照を引き継ぎます）`);
       if(stillNew.length) lines.push(`・${stillNew.length} 枚は新規の画像です（新しいレコードを作ります）`);
       if(orphanPool.length) lines.push(`・${orphanPool.length} 件のレコードに対応するファイルがありません（削除されたか、フォルダ外に移動）`);
       if(!updatedImgs.length && !moved.length && !stillNew.length && !orphanPool.length){
+        if(hashFilled) await persistVehicles();        // 補算的指紋留下來
         toast(lines[0] + "\n処理が必要な変更はありません。");
         return;
       }
       lines.push("", "以上の変更を適用しますか？");
-      if(!confirm(lines.join("\n"))) return;
+      if(!confirm(lines.join("\n"))){
+        if(hashFilled) await persistVehicles();        // 取消也一樣,指紋不用重算
+        return;
+      }
 
-      // 0) 換掉內容有變動的圖片(其他欄位一律不動)
-      updatedImgs.forEach(({ v, dataUrl }) => { v.img = dataUrl; });
+      // 0) 換掉內容有變動的圖片(其他欄位一律不動)。
+      //    指紋比對階段故意不讀 base64,所以真的要換的這幾張才在這裡讀。
+      btn.textContent = "画像を更新中…";
+      for(const u of updatedImgs){
+        const dataUrl = u.dataUrl || (u.handle ? await fileToDataUrl(u.handle) : "");
+        if(!dataUrl) continue;
+        u.v.img = dataUrl;
+        u.v.imgHash = u.hash || await hashOfDataUrl(dataUrl);
+      }
 
       // 1) 更新搬移過的紀錄:改路徑與從新路徑解析出的系列,其他欄位維持您手動填的內容。
       //    編號也會在下面一併對齊成「由新路徑算出來」的值,
       //    否則別台電腦從零掃描會算出不同編號,編成就會對不上。
-      moved.forEach(({ v, to }) => {
-        const parsed = parseVehicleFromPath(to);
-        v.sourcePath = to;
-        if(parsed.series) v.series = parsed.series;
-        v.categories = parsed.folders.length ? [parsed.folders.join(" / ")] : [];
-      });
+      for(const m of moved){
+        const parsed = parseVehicleFromPath(m.to);
+        m.v.sourcePath = m.to;
+        if(parsed.series) m.v.series = parsed.series;
+        m.v.categories = parsed.folders.length ? [parsed.folders.join(" / ")] : [];
+        if(m.hash) m.v.imgHash = m.hash;
+        // 手動配對的是「重畫過」的車,圖片也要換成新檔案
+        if(m.redrawn && m.handle){
+          try{
+            const dataUrl = await fileToDataUrl(m.handle);
+            m.v.img = dataUrl;
+            if(!m.hash) m.v.imgHash = await hashOfDataUrl(dataUrl);
+          }catch(e){ console.warn("対応付けた画像の読み込みに失敗しました", m.to, e); }
+        }
+      }
 
       // 2) 建立全新的紀錄
-      stillNew.forEach(({ f, dataUrl }) => {
-        const parsed = parseVehicleFromPath(f.relPath);
+      btn.textContent = "新規レコードを作成中…";
+      for(const sn of stillNew){
+        const dataUrl = sn.dataUrl || await fileToDataUrl(sn.f.handle);
+        const parsed = parseVehicleFromPath(sn.f.relPath);
         vehicles.push({
-          id: stableVehicleId(f.relPath),
-          sourcePath: f.relPath,
+          id: stableVehicleId(sn.f.relPath),
+          sourcePath: sn.f.relPath,
           series: parsed.series, modelCode: parsed.modelCode, variantCode: parsed.variantCode || "",
           liveryName: parsed.liveryName, side: parsed.side, company: "",
           widthCm: parsed.widthCm || 3.8, note: "", defaultAttribute: "", defaultProductCode: "",
           categories: parsed.folders.length ? [parsed.folders.join(" / ")] : [],
-          img: dataUrl
+          img: dataUrl,
+          imgHash: sn.hash || await hashOfDataUrl(dataUrl)
         });
-      });
+      }
 
       // 3) 找不到檔案的孤兒紀錄,另外問一次要不要刪除(預設保留,避免誤刪)
       let removed = 0;
@@ -1911,6 +2287,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
       // 4) 讓所有紀錄的編號跟目前路徑一致,並同步修正編成裡的參照。
       //    改過檔名的紀錄在這裡會被導正,兩台電腦之後算出來的編號才會相同。
+      //    remapFormationRefs 會把這批「舊編號→新編號」永久寫進別名表,
+      //    所以舊的 JSON 備份、別台電腦、網站上的編成之後也解析得到。
       btn.textContent = "IDを揃えています…";
       const { remap, changed: idFixed } = realignVehicleIds();
       if(idFixed) remapLiveCars(remap);
@@ -1926,6 +2304,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       showReport("スキャン完了", [
         `・画像を更新 ${updatedImgs.length} 枚`,
         `・移動を反映 ${moved.length} 件`,
+        paired ? `　うち手動で対応付け ${paired} 件（編成の参照を引き継ぎました）` : null,
         `・新規追加 ${stillNew.length} 件`,
         `・削除 ${removed} 件`,
         idFixed ? `・IDを揃えた ${idFixed} 件（編成 ${fixedFormations} 件の参照も修正）` : null
@@ -2834,21 +3213,56 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   // ---------- 清理重複車輛 ----------
-  // 情境:資料夾改名後重新掃描,同一張圖被建了新舊兩筆紀錄(舊的路徑已失效)。
-  // 做法:把「圖片內容完全相同」的紀錄視為同一輛車,保留一筆、刪掉其餘,
-  // 並把編成裡指向被刪紀錄的車廂,自動改指向保留的那一筆。
+  // 這個功能現在只負責一件事:「檔案已經不在資料夾裡,但紀錄還留著」的殘留紀錄。
+  // 以前它的主要用途是處理「改名後重新掃描產生新舊兩筆」,
+  // 但掃描本身已經用指紋判斷搬移/改名、配不上的也會跳出配對視窗,
+  // 所以那種殘留基本上不會再產生,這裡只是用來清掉舊資料留下來的。
+  //
+  // 重要:圖片完全一樣但形式/番台不同是正常的(機電改造之類的車,外觀沒變),
+  // 所以「檔案都還在、只是圖一樣」的那些一律不報告,否則整張清單都是雜訊。
+  // 只有連形式/番台/塗裝/方向都一致,才當成真的是重複檔案。
   async function dedupeVehicles(){
     const btn = $("#btn-dedupe-vehicles");
     const oldText = btn.textContent;
     btn.disabled = true; btn.textContent = "確認中…";
     try{
-      // 依圖片內容分組
+      // 依圖片指紋分組。以前是直接拿 base64 當 Map 的 key,
+      // 三千輛等於要雜湊二十幾MB的字串,改用 64 字元的指紋快得多。
+      btn.textContent = "画像を照合中…";
+      let filled = 0;
+      if(HASH_OK){
+        for(const v of vehicles){
+          if(!v.imgHash && v.img){ await ensureVehicleHash(v); filled++; }
+        }
+        if(filled) await persistVehicles();
+      }
+      const imgKeyOf = v => HASH_OK ? (v.imgHash || "") : (v.img || "");
+
+      // 先只按圖片分組,目的只是統計「圖一樣但形式/番台不同」有幾輛。
+      // 這些是機電改造之類外觀相同的正常資料,只回報數量,絕對不動它們。
+      const byArt = new Map();
+      vehicles.forEach(v => {
+        const k = imgKeyOf(v);
+        if(!k) return;
+        if(!byArt.has(k)) byArt.set(k, []);
+        byArt.get(k).push(v);
+      });
+      let sameArtDifferentName = 0;
+      byArt.forEach(list => {
+        if(list.length < 2) return;
+        if(new Set(list.map(vehicleMatchKey)).size > 1) sameArtDifferentName += list.length;
+      });
+
+      // 真正的判斷單位:圖片指紋 + 形式/番台/塗裝/方向 全部一致才算同一輛車。
+      // 只靠圖片一樣是不夠的 —— 外觀相同但形式不同的車會被接錯,
+      // 而且沒綁定資料夾時那條路徑會直接刪到只剩一筆,屬於會掉資料的錯誤。
       const groups = new Map();
       vehicles.forEach(v => {
-        const k = v.img || "";
+        const k = imgKeyOf(v);
         if(!k) return;
-        if(!groups.has(k)) groups.set(k, []);
-        groups.get(k).push(v);
+        const key = k + "\u0001" + vehicleMatchKey(v);
+        if(!groups.has(key)) groups.set(key, []);
+        groups.get(key).push(v);
       });
 
       // 若有綁定資料夾,先查出哪些路徑真的還存在,優先保留檔案還在的那筆
@@ -2864,7 +3278,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       const removeIds = new Set();
       const remap = {};           // 被刪掉的id → 保留下來的id
       let groupCount = 0;
-      const sameImageFiles = [];  // 檔案都還在、只是圖片長得一樣 → 不能刪
+      const sameImageFiles = [];  // 同一輛車有好幾個檔案都還在 → 真的重複,但不自動刪
       groups.forEach(list => {
         if(list.length < 2) return;
         // 有填較多資料的優先保留
@@ -2885,8 +3299,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           const live = sorted.filter(v => v.sourcePath && livePaths.has(v.sourcePath));
           const dead = sorted.filter(v => !(v.sourcePath && livePaths.has(v.sourcePath)));
           if(live.length >= 2){
-            // 好幾個不同的檔案,內容剛好一樣 → 這是資料夾裡真的有重複的圖,
-            // 不是資料庫的問題,交給使用者自己決定要不要整理檔案
+            // 同一輛車(圖與名稱都一致)卻有好幾個檔案都還在 →
+            // 是資料夾裡真的放了重複的檔案,不是資料庫的問題,交給使用者自己決定
             sameImageFiles.push(live.map(v => v.sourcePath));
           }
           if(live.length >= 1){
@@ -2915,6 +3329,10 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
             "これらのファイルはフォルダ内に残っているため削除しません（消しても次のスキャンで戻ってきます）。",
             "不要だと判断できる場合は、エクスプローラーでファイルを削除してからもう一度スキャンしてください。"
           ], "", 22000);
+        }else if(sameArtDifferentName){
+          toast(`確認完了：整理が必要な重複はありません。\n`
+              + `（画像が同じでも形式・番台が違う ${sameArtDifferentName} 両は、`
+              + `機電改造などで外観が同じ正常なデータとして扱いました）`, "", 5200);
         }else{
           toast("確認完了：整理が必要な重複はありません。");
         }
@@ -2940,10 +3358,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       }
 
       const msg = [
-        `重複が ${groupCount} 組見つかりました（画像の中身が同じ）。`,
+        `重複が ${groupCount} 組見つかりました（画像・形式・番台がすべて同じ）。`,
         `・「ファイルがフォルダにもう無い」余分なレコード ${removeIds.size} 件を削除します`,
         `・ファイルが残っているレコードはすべて保持し、削除しません`,
-        sameImageFiles.length ? `・ほかに、ファイルは別だが画像が同じものが ${sameImageFiles.length} 組あります。これらも削除しません` : "",
+        sameImageFiles.length ? `・ほかに、同じ車両のファイルが複数ある組が ${sameImageFiles.length} 組あります。これらも削除しません` : "",
+        sameArtDifferentName ? `・画像が同じでも形式・番台が違う ${sameArtDifferentName} 両は正常なデータとして除外しました` : "",
         affectedFormations ? `・編成 ${affectedFormations} 件は残したレコードを参照するよう自動で付け替えます（「車両が削除されました」になりません）` : "・影響を受ける編成はありません",
         "",
         "事前のバックアップを推奨します。実行してもよろしいですか？"
@@ -2955,6 +3374,10 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         await storage.set("formations:" + fix.id, JSON.stringify(fix.data), false);
       }
       if(fixes.length) await syncFormationsToFolder();
+
+      // 刪掉的編號要永久記進別名表。這裡本來是直接改本機的編成就結束,
+      // 所以舊的 JSON 備份、別台電腦、網站上的編成仍然指著被刪掉的編號。
+      await recordVehicleAliases(remap);
 
       vehicles = vehicles.filter(v => !removeIds.has(v.id));
       reindexVehicles();
@@ -3195,6 +3618,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   async function remapFormationRefs(remap){
     const keys = Object.keys(remap || {});
     if(!keys.length) return 0;
+    // 先把這批改名永久記進別名表,再去修本機的編成。
+    // 本機修好是為了效率,別名表才是讓舊備份/別台電腦/網站也能對上的那一層。
+    await recordVehicleAliases(remap);
     const idx = await loadIndex();
     let fixed = 0;
     for(const f of idx){
@@ -4310,12 +4736,6 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   // 用「標題 + 車輛排列(含翻轉、屬性、貨號)」當作編成的識別特徵,
   // 兩筆特徵相同就視為同一個編成
-  function formationSignature(data){
-    const cars = (data.cars || []).map(c =>
-      [c.vehicleId, c.flipped ? "F" : "", c.attribute || "", c.productCode || "", c.setGroupId || ""].join("~")
-    ).join("|");
-    return buildTitleTextOf(data) + "//" + (data.reversed ? "R" : "") + "//" + cars;
-  }
   async function findDuplicateFormation(data){
     const sig = formationSignature(data);
     const idx = await loadIndex();
@@ -4401,10 +4821,10 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         if(!ok) return;
       }
 
-      // 車輛:去掉 img 這個大欄位
+      // 車輛:去掉 img(圖片本體,網站改用逐檔讀取)與 imgHash(只有本機掃描用得到)
       const slimVehicles = vehicles.map(v => {
         const o = {};
-        Object.keys(v).forEach(k => { if(k !== "img") o[k] = v[k]; });
+        Object.keys(v).forEach(k => { if(k !== "img" && k !== "imgHash") o[k] = v[k]; });
         return o;
       });
       const vehBlob = new Blob(
@@ -4424,23 +4844,33 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         [JSON.stringify({ exportedAt: new Date().toISOString(), formationsIndex: idx, formationsData: data })],
         { type: "application/json" });
 
+      // 別名表:車輛改名過的舊編號 → 現在的編號。
+      // 這個檔案少了的話,訪客與別台電腦開舊編成就會出現「車両が見つかりません」。
+      const aliasCount = Object.keys(vehicleAliases).length;
+      const alBlob = new Blob(
+        [JSON.stringify({ exportedAt: new Date().toISOString(), aliases: vehicleAliases })],
+        { type: "application/json" });
+
       downloadBlob("vehicles.json", vehBlob);
       setTimeout(() => downloadBlob("formations.json", fmBlob), 400);
+      setTimeout(() => downloadBlob("aliases.json", alBlob), 800);
 
       const mb = n => (n / 1024 / 1024).toFixed(2);
       setTimeout(() => {
-        showReport("2つのファイルを作成しました", [
+        showReport("3つのファイルを作成しました", [
           `・vehicles.json（${mb(vehBlob.size)} MB、${slimVehicles.length} 両）`,
           `・formations.json（${mb(fmBlob.size)} MB、${idx.length} 件の編成）`,
+          `・aliases.json（${aliasCount} 件のID別名。古い編成の参照を救うために必要）`,
           "",
           "サイトにアップするときのフォルダ構成：",
           "　index.html",
           "　data/vehicles.json",
           "　data/formations.json",
+          "　data/aliases.json",
           "　01_車輛資料/…（画像フォルダまるごと）",
           "　00_必要資料/…（属性バッジ画像。フォントはアップ不要）"
         ], "", 25000);
-      }, 800);
+      }, 1200);
     }catch(e){
       toast("書き出しに失敗しました：" + (e && e.message ? e.message : e), "err");
     }finally{
@@ -5283,12 +5713,66 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     renderNoteLines();
   });
 
+  // ---------- 編成參照的名稱快照 ----------
+  // 每一節車除了編號之外,再存一份「當時那台車是誰」的快照。
+  // 車輛被重畫又改名而對不上編號時,就不會只剩一個紅框,
+  // 而是看得到原本是哪一台,也才有辦法手動修回來或自動配對。
+  function vehicleRefSnapshot(v){
+    if(!v) return null;
+    const o = {};
+    if(v.modelCode) o.m = v.modelCode;
+    if(v.variantCode) o.v = v.variantCode;
+    if(v.liveryName) o.l = v.liveryName;
+    if(v.side) o.s = v.side;
+    if(v.series) o.e = v.series;
+    if(v.sourcePath) o.p = v.sourcePath;
+    return Object.keys(o).length ? o : null;
+  }
+  // 快照要顯示成什麼字
+  function refLabel(ref){
+    if(!ref) return "";
+    const head = [ref.m, ref.v].filter(Boolean).join("-");
+    if(head) return head;
+    if(ref.l) return ref.l;
+    return ref.p ? ref.p.split("/").pop().replace(/\.[a-z]+$/i, "") : "";
+  }
+  // 用快照去比對現在資料庫裡的車(編號對不上時的最後一道救援)。
+  // 只有欄位完全一致才算,所以不會亂配。
+  function findVehicleBySnapshot(ref){
+    if(!ref) return null;
+    const key = [ref.e, ref.m, ref.v, ref.l, (ref.s || "").toUpperCase()]
+      .map(x => (x || "").trim()).join("\u0001");
+    return vehicles.find(v => vehicleMatchKey(v) === key) || null;
+  }
+  // 救回來的參照要記進別名表,但 normalizeCarEntry 是同步的,
+  // 所以先排隊,等整個編成處理完再一次寫入。
+  let pendingRefRepairs = {};
+  async function flushRefRepairs(){
+    const remap = pendingRefRepairs;
+    pendingRefRepairs = {};
+    if(!Object.keys(remap).length) return 0;
+    return await recordVehicleAliases(remap);
+  }
+
   function normalizeCarEntry(e){
     if(typeof e === "string") return { vehicleId: e, flipped: false, attribute: "", productCode: "", setGroupId: "" };
     const o = {
       vehicleId: e.vehicleId, flipped: !!e.flipped,
       attribute: e.attribute || "", productCode: e.productCode || "", setGroupId: e.setGroupId || ""
     };
+    // 編號查不到車時,用快照比對一次;配得上就當場把編號接回去並記進別名表
+    let live = vehiclesById[o.vehicleId];
+    if(!live && e.vref){
+      const hit = findVehicleBySnapshot(e.vref);
+      if(hit){
+        if(o.vehicleId && o.vehicleId !== hit.id) pendingRefRepairs[o.vehicleId] = hit.id;
+        o.vehicleId = hit.id;
+        live = hit;
+      }
+    }
+    // 車還在就把快照更新成最新的,之後改名也追得到;車不在就保留原本那份
+    const snap = vehicleRefSnapshot(live) || (e.vref || null);
+    if(snap) o.vref = snap;
     // 只有實際裝了貨櫃的車廂才會帶這兩個欄位,其他車廂不會多存東西
     if(Array.isArray(e.containers) && e.containers.length){
       o.containers = e.containers.slice();
@@ -5296,7 +5780,13 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     }
     return o;
   }
-  function normalizeCars(){ state.cars = (state.cars || []).map(normalizeCarEntry); }
+  function normalizeCars(){
+    state.cars = (state.cars || []).map(normalizeCarEntry);
+    // 用快照救回來的參照,背景寫進別名表(不擋畫面)
+    if(Object.keys(pendingRefRepairs).length){
+      flushRefRepairs().catch(e => console.warn("参照の修復記録に失敗しました", e));
+    }
+  }
 
   function migrateStateFields(){
     if(state.reversed === undefined) state.reversed = false;
@@ -5482,8 +5972,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         attachCarToolbar(slot, ri, idx, true);
 
         const gone = document.createElement("div");
-        gone.style.cssText = "border:1.5px dashed var(--rail-red);border-radius:6px;height:99px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:10px;color:var(--rail-red);padding:4px;line-height:1.4;";
-        gone.innerHTML = "車両が<br>データベース<br>から削除";
+        gone.style.cssText = "border:1.5px dashed var(--rail-red);border-radius:6px;height:99px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:10px;color:var(--rail-red);padding:4px;line-height:1.4;";
+        // 有名稱快照就把原本是哪一台顯示出來,才有辦法手動補回去
+        const goneLabel = refLabel(entry.vref);
+        gone.innerHTML = goneLabel
+          ? `<div style="font-weight:700;font-size:11px;word-break:break-all;">${esc(goneLabel)}</div>` +
+            `<div style="margin-top:3px;opacity:.85;">画像が<br>見つかりません</div>`
+          : "車両が<br>データベース<br>から削除";
+        if(entry.vref && entry.vref.p) gone.title = entry.vref.p;
 
         const numGone = document.createElement("div");
         numGone.style.cssText = "margin-top:4px;text-align:center;font-size:11px;color:var(--rail-red);";
@@ -5799,9 +6295,15 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   });
 
   $("#btn-remove-missing").addEventListener("click", () => {
-    const missing = state.cars.filter(e => !vehiclesById[e.vehicleId]).length;
+    const gone = state.cars.filter(e => !vehiclesById[e.vehicleId]);
+    const missing = gone.length;
     if(!missing) return;
-    if(!confirm(`「車両がデータベースから削除されています」の ${missing} 両を、この編成から取り除きますか？`)) return;
+    // 刪掉之前先把是哪幾台列出來,不然使用者看不到紅框裡是什麼就按下去了
+    const names = gone.slice(0, 12).map(e => "・" + (refLabel(e.vref) || "（名称不明）")).join("\n");
+    const more = missing > 12 ? `\n…ほか ${missing - 12} 両` : "";
+    if(!confirm(`次の ${missing} 両をこの編成から取り除きます：\n\n${names}${more}\n\n`
+                + `※ 車両を描き直して名前も変えた場合は、「車両フォルダをスキャン」で\n`
+                + `　 対応付けすると復活できることがあります。`)) return;
     state.cars = state.cars.filter(e => vehiclesById[e.vehicleId]);
     renderFormation();
   });
@@ -5884,6 +6386,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     try{
       await writeJsonFile(formationDirHandle, "formations.json", { formationsIndex: idx, formationsData: data, savedAt: new Date().toISOString() });
     }catch(e){ console.warn("寫入編成資料夾失敗", e); }
+    // 別名表一起寫出去。改名當下如果還沒綁資料夾,別名只會留在瀏覽器裡,
+    // 這裡補寫一次就能讓它跟著編成資料一起進到 data/ 資料夾。
+    await syncAliasesToFolder();
   }
 
   function computeCarModelsUsed(){
@@ -6975,7 +7480,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       if(Array.isArray(v)) return v.map(norm);
       if(v && typeof v === "object"){
         const out = {};
-        Object.keys(v).sort().forEach(k => { if(k !== "id") out[k] = norm(v[k]); });
+        // id:每次匯出都不同  vref:車輛名稱的快照(推導資料,不是編輯內容)
+        Object.keys(v).sort().forEach(k => {
+          if(k === "id" || k === "vref") return;
+          out[k] = norm(v[k]);
+        });
         return out;
       }
       return v;
@@ -7088,6 +7597,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     await step("車両フォルダの再連携", () => tryReconnectFolder("vehicle"));
     await step("編成フォルダの再連携", () => tryReconnectFolder("formation"));
     await step("図面フォルダの再連携", tryReconnectDrawingsFolder);
+    await step("別名表の読み込み", loadVehicleAliases);
     await step("車両データの読み込み", loadVehicles);
     setLoad(60, "編成データを読み込み中…");
     await step("オンライン編成データの読み込み", loadWebFormations);
