@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-21T15:32:47.951Z",
+  "exportedAt": "2026-10-22T17:51:06.130Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -55558,6 +55558,3865 @@
       "defaultProductCode": "",
       "categories": [
         "04_貨物列車 / 03_長物車"
+      ]
+    },
+    {
+      "id": "vp_1disqo6mrr2ts",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20000系/SP20000_復興塗裝_R.png",
+      "series": "20000系",
+      "modelCode": "SP20000",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20000系"
+      ]
+    },
+    {
+      "id": "vp_1dgt0gon1pcpa",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20000系/SP20000_復興塗裝_L.png",
+      "series": "20000系",
+      "modelCode": "SP20000",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20000系"
+      ]
+    },
+    {
+      "id": "vp_stsizh1v8tj51",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20000系/SP20000_莒興塗裝_R.png",
+      "series": "20000系",
+      "modelCode": "SP20000",
+      "variantCode": "",
+      "liveryName": "莒興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20000系"
+      ]
+    },
+    {
+      "id": "vp_t13af71v5rizf",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20000系/SP20000_莒興塗裝_L.png",
+      "series": "20000系",
+      "modelCode": "SP20000",
+      "variantCode": "",
+      "liveryName": "莒興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20000系"
+      ]
+    },
+    {
+      "id": "vp_wk8y8j28ep9h",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20000系/SPK20000_復興塗裝_L.png",
+      "series": "20000系",
+      "modelCode": "SPK20000",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20000系"
+      ]
+    },
+    {
+      "id": "vp_6n6cwm1b652wy",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20000系/SPK20000_莒興塗裝_R.png",
+      "series": "20000系",
+      "modelCode": "SPK20000",
+      "variantCode": "",
+      "liveryName": "莒興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20000系"
+      ]
+    },
+    {
+      "id": "vp_77qpfs1b0vd7g",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20000系/SPK20000_莒興塗裝_L.png",
+      "series": "20000系",
+      "modelCode": "SPK20000",
+      "variantCode": "",
+      "liveryName": "莒興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20000系"
+      ]
+    },
+    {
+      "id": "vp_wzi9jh25hyqj",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20000系/SPK20000_復興塗裝_R.png",
+      "series": "20000系",
+      "modelCode": "SPK20000",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20000系"
+      ]
+    },
+    {
+      "id": "vp_1tffvgzf1l0q9",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2000系/SPK2000_復興塗裝_L.png",
+      "series": "2000系",
+      "modelCode": "SPK2000",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_1tup099fbjalr",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2000系/SPK2000_復興塗裝_R.png",
+      "series": "2000系",
+      "modelCode": "SPK2000",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_1m4kk1e7uajfq",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2000系/SPK2100_復興塗裝_L.png",
+      "series": "2000系",
+      "modelCode": "SPK2100",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_1mjtoto7tpdvc",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2000系/SPK2100_復興塗裝_R.png",
+      "series": "2000系",
+      "modelCode": "SPK2100",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_v6k9g317sekoh",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20200系/SPK20200_復興塗裝_L.png",
+      "series": "20200系",
+      "modelCode": "SPK20200",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20200系"
+      ]
+    },
+    {
+      "id": "vp_vltkr1182cofj",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20200系/SPK20200_復興塗裝_R.png",
+      "series": "20200系",
+      "modelCode": "SPK20200",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20200系"
+      ]
+    },
+    {
+      "id": "vp_2il1g2cgjr9k",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20200系/SPK21200_復興塗裝_L.png",
+      "series": "20200系",
+      "modelCode": "SPK21200",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20200系"
+      ]
+    },
+    {
+      "id": "vp_2xu68cbzkn6e",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/20200系/SPK21200_復興塗裝_R.png",
+      "series": "20200系",
+      "modelCode": "SPK21200",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 20200系"
+      ]
+    },
+    {
+      "id": "vp_1tkfh6d13eyxht",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2200系/SPK2150_復興塗裝_L.png",
+      "series": "2200系",
+      "modelCode": "SPK2150",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2200系"
+      ]
+    },
+    {
+      "id": "vp_1u2cb3f13ox18v",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2200系/SPK2150_復興塗裝_R.png",
+      "series": "2200系",
+      "modelCode": "SPK2150",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2200系"
+      ]
+    },
+    {
+      "id": "vp_i2k3f115462vn",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2200系/SPK2200_復興塗裝_R.png",
+      "series": "2200系",
+      "modelCode": "SPK2200",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2200系"
+      ]
+    },
+    {
+      "id": "vp_hnas4315ggmtp",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2200系/SPK2200_復興塗裝_L.png",
+      "series": "2200系",
+      "modelCode": "SPK2200",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2200系"
+      ]
+    },
+    {
+      "id": "vp_tdlwxf12reb47",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2300系/SPK2300_復興塗裝_L.png",
+      "series": "2300系",
+      "modelCode": "SPK2300",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2300系"
+      ]
+    },
+    {
+      "id": "vp_tsv88d12q8321",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/2300系/SPK2300_復興塗裝_R.png",
+      "series": "2300系",
+      "modelCode": "SPK2300",
+      "variantCode": "",
+      "liveryName": "復興塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 2300系"
+      ]
+    },
+    {
+      "id": "vp_qc43ze14wngqk",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/32700系/SPK32700_平快塗裝_L.png",
+      "series": "32700系",
+      "modelCode": "SPK32700",
+      "variantCode": "",
+      "liveryName": "平快塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 32700系"
+      ]
+    },
+    {
+      "id": "vp_pu7gl0151x6g2",
+      "sourcePath": "07_海外車輌/台灣/客車/復興號/32700系/SPK32700_平快塗裝_R.png",
+      "series": "32700系",
+      "modelCode": "SPK32700",
+      "variantCode": "",
+      "liveryName": "平快塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 復興號 / 32700系"
+      ]
+    },
+    {
+      "id": "vp_1kkodisnh2wgg",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/1000系/PPC1400_L.png",
+      "series": "1000系",
+      "modelCode": "PPC1400",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 1000系"
+      ]
+    },
+    {
+      "id": "vp_1l2l7funr107i",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/1000系/PPC1400_R.png",
+      "series": "1000系",
+      "modelCode": "PPC1400",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 1000系"
+      ]
+    },
+    {
+      "id": "vp_1vl1xgm1rmljia",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/1000系/PPH1300_R.png",
+      "series": "1000系",
+      "modelCode": "PPH1300",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 1000系"
+      ]
+    },
+    {
+      "id": "vp_1vj2drs1rhbtss",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/1000系/PPH1300_L.png",
+      "series": "1000系",
+      "modelCode": "PPH1300",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 1000系"
+      ]
+    },
+    {
+      "id": "vp_1kw15fd17nt1y1",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/1000系/PPT1000_R.png",
+      "series": "1000系",
+      "modelCode": "PPT1000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 1000系"
+      ]
+    },
+    {
+      "id": "vp_cf4ef8xq18te",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/1000系/PPT2000_L.png",
+      "series": "1000系",
+      "modelCode": "PPT2000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 1000系"
+      ]
+    },
+    {
+      "id": "vp_1ky0vmv17oz42v",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/1000系/PPT1000_L.png",
+      "series": "1000系",
+      "modelCode": "PPT1000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 1000系"
+      ]
+    },
+    {
+      "id": "vp_cahc4axkrj3w",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/1000系/PPT2000_R.png",
+      "series": "1000系",
+      "modelCode": "PPT2000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 1000系"
+      ]
+    },
+    {
+      "id": "vp_1x5bpz179uok5",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/2000系/PPD2000_L.png",
+      "series": "2000系",
+      "modelCode": "PPD2000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_2hphqh17oi7vv",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/2000系/PPD2000_R.png",
+      "series": "2000系",
+      "modelCode": "PPD2000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_19kjm7219qvegg",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/2000系/PPM2000_L.png",
+      "series": "2000系",
+      "modelCode": "PPM2000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_1o8gn4t1kyvngf",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/2000系/PPP2000_R.png",
+      "series": "2000系",
+      "modelCode": "PPP2000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_19uhpq81a0toby",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/2000系/PPM2000_R.png",
+      "series": "2000系",
+      "modelCode": "PPM2000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_1ofrekj1l6hh41",
+      "sourcePath": "07_海外車輌/台灣/客車/自強號/2000系/PPP2000_L.png",
+      "series": "2000系",
+      "modelCode": "PPP2000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 自強號 / 2000系"
+      ]
+    },
+    {
+      "id": "vp_1p8h4s21q6c30a",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/BK32950/BK32950_復原原塗裝_L.png",
+      "series": "BK32950",
+      "modelCode": "BK32950",
+      "variantCode": "",
+      "liveryName": "復原原塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / BK32950"
+      ]
+    },
+    {
+      "id": "vp_1pnq9kc1q99in8",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/BK32950/BK32950_復原原塗裝_R.png",
+      "series": "BK32950",
+      "modelCode": "BK32950",
+      "variantCode": "",
+      "liveryName": "復原原塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / BK32950"
+      ]
+    },
+    {
+      "id": "vp_1gfd7xau93ggi",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/BK32950/BK32950_莒光塗裝_R.png",
+      "series": "BK32950",
+      "modelCode": "BK32950",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / BK32950"
+      ]
+    },
+    {
+      "id": "vp_1gpbhz4uldua4",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/BK32950/BK32950_莒光塗裝_L.png",
+      "series": "BK32950",
+      "modelCode": "BK32950",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / BK32950"
+      ]
+    },
+    {
+      "id": "vp_33rvz8zh2dam",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/DC32750/DC32750_原塗裝_L.png",
+      "series": "DC32750",
+      "modelCode": "DC32750",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / DC32750"
+      ]
+    },
+    {
+      "id": "vp_2z4n5mz749jk",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/DC32750/DC32750_原塗裝_R.png",
+      "series": "DC32750",
+      "modelCode": "DC32750",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / DC32750"
+      ]
+    },
+    {
+      "id": "vp_16fcflh11oywzp",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/DC32750/DC32750_速簡餐車_L.png",
+      "series": "DC32750",
+      "modelCode": "DC32750",
+      "variantCode": "",
+      "liveryName": "速簡餐車",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / DC32750"
+      ]
+    },
+    {
+      "id": "vp_49s9olk5oh25",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/DC32750/SP32773_莒光塗裝_L.png",
+      "series": "DC32750",
+      "modelCode": "SP32773",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / DC32750"
+      ]
+    },
+    {
+      "id": "vp_16x92zv11m26nv",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/DC32750/DC32750_速簡餐車_R.png",
+      "series": "DC32750",
+      "modelCode": "DC32750",
+      "variantCode": "",
+      "liveryName": "速簡餐車",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / DC32750"
+      ]
+    },
+    {
+      "id": "vp_4557dnkay6rn",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/DC32750/SP32773_莒光塗裝_R.png",
+      "series": "DC32750",
+      "modelCode": "SP32773",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / DC32750"
+      ]
+    },
+    {
+      "id": "vp_b8h1yc10p0rm",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/DC32850/DC32850_原塗裝_L.png",
+      "series": "DC32850",
+      "modelCode": "DC32850",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / DC32850"
+      ]
+    },
+    {
+      "id": "vp_b3tt4qvfh6k",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/DC32850/DC32850_原塗裝_R.png",
+      "series": "DC32850",
+      "modelCode": "DC32850",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / DC32850"
+      ]
+    },
+    {
+      "id": "vp_l6n2nq1588cso",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/EGK32300/BK32350_莒光塗裝.png",
+      "series": "EGK32300",
+      "modelCode": "BK32350",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / EGK32300"
+      ]
+    },
+    {
+      "id": "vp_xoud9v1vnqnat",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/EGK32300/EGK32300_莒光塗裝.png",
+      "series": "EGK32300",
+      "modelCode": "EGK32300",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / EGK32300"
+      ]
+    },
+    {
+      "id": "vp_1kw7f8y5guqdy",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/EGK32300/EGK32300_観光塗裝.png",
+      "series": "EGK32300",
+      "modelCode": "EGK32300",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / EGK32300"
+      ]
+    },
+    {
+      "id": "vp_mhqmwwv4m1p8",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP1000/FP1000_莒光塗裝_L.png",
+      "series": "FP1000",
+      "modelCode": "FP1000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP1000"
+      ]
+    },
+    {
+      "id": "vp_m7sjdqv9vreq",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP1000/FP1000_莒光塗裝_R.png",
+      "series": "FP1000",
+      "modelCode": "FP1000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP1000"
+      ]
+    },
+    {
+      "id": "vp_1b2yk2316b5b37",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP1000/FPK1000_莒光塗裝_L.png",
+      "series": "FP1000",
+      "modelCode": "FPK1000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP1000"
+      ]
+    },
+    {
+      "id": "vp_1al1q51165vldp",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP1000/FPK1000_莒光塗裝_R.png",
+      "series": "FP1000",
+      "modelCode": "FPK1000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP1000"
+      ]
+    },
+    {
+      "id": "vp_1vt5m3uk90a30",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP1000/FPK1100_莒光塗裝_L.png",
+      "series": "FP1000",
+      "modelCode": "FPK1100",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP1000"
+      ]
+    },
+    {
+      "id": "vp_1vb8ypgjwpw9e",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP1000/FPK1100_莒光塗裝_R.png",
+      "series": "FP1000",
+      "modelCode": "FPK1100",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP1000"
+      ]
+    },
+    {
+      "id": "vp_1fxw8n41ehp55s",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10000/FP10000_莒光塗裝_L.png",
+      "series": "FP10000",
+      "modelCode": "FP10000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10000"
+      ]
+    },
+    {
+      "id": "vp_1fnxyla1ea3bi6",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10000/FP10000_莒光塗裝_R.png",
+      "series": "FP10000",
+      "modelCode": "FP10000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10000"
+      ]
+    },
+    {
+      "id": "vp_1tjh1klcg5q3v",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10000/FPK10000_莒光塗裝_R.png",
+      "series": "FP10000",
+      "modelCode": "FPK10000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10000"
+      ]
+    },
+    {
+      "id": "vp_1787ed0ava81a",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10000/FPK11000_莒光塗裝_R.png",
+      "series": "FP10000",
+      "modelCode": "FPK11000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10000"
+      ]
+    },
+    {
+      "id": "vp_1u1dvhnc1i6s5",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10000/FPK10000_莒光塗裝_L.png",
+      "series": "FP10000",
+      "modelCode": "FPK10000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10000"
+      ]
+    },
+    {
+      "id": "vp_17q48a2alc4a8",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10000/FPK11000_莒光塗裝_L.png",
+      "series": "FP10000",
+      "modelCode": "FPK11000",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10000"
+      ]
+    },
+    {
+      "id": "vp_5hy6amzzlrni",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10100/FP10100_莒光塗裝_R.png",
+      "series": "FP10100",
+      "modelCode": "FP10100",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10100"
+      ]
+    },
+    {
+      "id": "vp_5rwgcg1077rfk",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10100/FP10100_莒光塗裝_L.png",
+      "series": "FP10100",
+      "modelCode": "FP10100",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10100"
+      ]
+    },
+    {
+      "id": "vp_15yjr0rarchvv",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10100/FPK10100_莒光塗裝_L.png",
+      "series": "FP10100",
+      "modelCode": "FPK10100",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10100"
+      ]
+    },
+    {
+      "id": "vp_15gmx3pacp4vp",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10100/FPK10100_莒光塗裝_R.png",
+      "series": "FP10100",
+      "modelCode": "FPK10100",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10100"
+      ]
+    },
+    {
+      "id": "vp_1tmqy6s18o9gik",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10100/FPK11100_莒光塗裝_R.png",
+      "series": "FP10100",
+      "modelCode": "FPK11100",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10100"
+      ]
+    },
+    {
+      "id": "vp_1u4ns3u18tj03m",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10100/FPK11100_莒光塗裝_L.png",
+      "series": "FP10100",
+      "modelCode": "FPK11100",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10100"
+      ]
+    },
+    {
+      "id": "vp_wf828w1omlpzy",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP1016/FP1016_莒光塗裝_L.png",
+      "series": "FP1016",
+      "modelCode": "FP1016",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP1016"
+      ]
+    },
+    {
+      "id": "vp_w59ypq1ou7ps0",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP1016/FP1016_莒光塗裝_R.png",
+      "series": "FP1016",
+      "modelCode": "FP1016",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP1016"
+      ]
+    },
+    {
+      "id": "vp_ne8tpn12g55nx",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10200/FPK10200_莒光塗裝_L.png",
+      "series": "FP10200",
+      "modelCode": "FPK10200",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10200"
+      ]
+    },
+    {
+      "id": "vp_mwc6b9123urub",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10200/FPK10200_莒光塗裝_R.png",
+      "series": "FP10200",
+      "modelCode": "FPK10200",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10200"
+      ]
+    },
+    {
+      "id": "vp_1p8fqga14ms56c",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10200/FPK11200_莒光塗裝_L.png",
+      "series": "FP10200",
+      "modelCode": "FPK11200",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10200"
+      ]
+    },
+    {
+      "id": "vp_1oqj31w151et2i",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10200/FPK11200_莒光塗裝_R.png",
+      "series": "FP10200",
+      "modelCode": "FPK11200",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10200"
+      ]
+    },
+    {
+      "id": "vp_1y9zde3ghf6dn",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10200/FPK11300_莒光塗裝_L.png",
+      "series": "FP10200",
+      "modelCode": "FPK11300",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10200"
+      ]
+    },
+    {
+      "id": "vp_1xs2jh1g2rtdh",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10200/FPK11300_莒光塗裝_R.png",
+      "series": "FP10200",
+      "modelCode": "FPK11300",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10200"
+      ]
+    },
+    {
+      "id": "vp_dlt1rfblhbit",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10400/FPK10400_莒光塗裝_L.png",
+      "series": "FP10400",
+      "modelCode": "FPK10400",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10400"
+      ]
+    },
+    {
+      "id": "vp_c8dze2afupgw",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10400/FPK11400_莒光塗裝_L.png",
+      "series": "FP10400",
+      "modelCode": "FPK11400",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10400"
+      ]
+    },
+    {
+      "id": "vp_d3w7udc04oq3",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10400/FPK10400_莒光塗裝_R.png",
+      "series": "FP10400",
+      "modelCode": "FPK10400",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10400"
+      ]
+    },
+    {
+      "id": "vp_bqh5h0apszce",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10400/FPK11400_莒光塗裝_R.png",
+      "series": "FP10400",
+      "modelCode": "FPK11400",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10400"
+      ]
+    },
+    {
+      "id": "vp_16fp5gx9p15vj",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10400/PBK10400_莒光塗裝_R.png",
+      "series": "FP10400",
+      "modelCode": "PBK10400",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10400"
+      ]
+    },
+    {
+      "id": "vp_16sarn39wmzj5",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10400/PBK10400_莒光塗裝_L.png",
+      "series": "FP10400",
+      "modelCode": "PBK10400",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10400"
+      ]
+    },
+    {
+      "id": "vp_oshj4v1omvn2r",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/BCK10600_莒光塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "BCK10600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_10sjq66rtt96k",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/BCK10700_莒光塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "BCK10700",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_p2fmo11oz670t",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/BCK10600_莒光塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "BCK10600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_112i080rz2srm",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/BCK10700_莒光塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "BCK10700",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_amvoqc6s7dry",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/BCK10700_鳴日塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "BCK10700",
+      "variantCode": "",
+      "liveryName": "鳴日塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_b4sine6zt7fk",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/BCK10700_鳴日塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "BCK10700",
+      "variantCode": "",
+      "liveryName": "鳴日塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_h1q4cg1vkiq02",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/DC10500_10501．鳴日塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "DC10500",
+      "variantCode": "",
+      "liveryName": "10501．鳴日塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_grs0ta1vf96f0",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/DC10500_10501．鳴日塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "DC10500",
+      "variantCode": "",
+      "liveryName": "10501．鳴日塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_14mcx8hl2sstr",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/DC10500_10511．鳴日塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "DC10500",
+      "variantCode": "",
+      "liveryName": "10511．鳴日塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_14cen6nksuiy9",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/DC10500_10511．鳴日塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "DC10500",
+      "variantCode": "",
+      "liveryName": "10511．鳴日塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_qos9u91t5c5o9",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/DC10500_莒光塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "DC10500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_r1dw0f1t6i7lz",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/DC10500_莒光塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "DC10500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_m3volh14bexm9",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/DC10500_鳴日塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "DC10500",
+      "variantCode": "",
+      "liveryName": "鳴日塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_nf9n9nqficcj",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/FPK10500_莒光塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "FPK10500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_lz8frv14ld1db",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/DC10500_鳴日塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "DC10500",
+      "variantCode": "",
+      "liveryName": "鳴日塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_13nkv1013kcr1g",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/FPK11500_莒光塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "FPK11500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_145hoy213hfhiy",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/FPK11500_莒光塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "FPK11500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_mxctclqa8srh",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/FPK10500_莒光塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "FPK10500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_165kkij1il7h5v",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/PC10500_莒光塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "PC10500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_16a7tc51ifxxkt",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/PC10500_莒光塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "PC10500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_689g7j1e4i2rn",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/PC10500_鳴日塗裝_L.png",
+      "series": "FP10500",
+      "modelCode": "PC10500",
+      "variantCode": "",
+      "liveryName": "鳴日塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_5vnu1d1dz8j6l",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10500/PC10500_鳴日塗裝_R.png",
+      "series": "FP10500",
+      "modelCode": "PC10500",
+      "variantCode": "",
+      "liveryName": "鳴日塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10500"
+      ]
+    },
+    {
+      "id": "vp_5nl1g63oy9ai",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10600/BCK10600_鳴日塗裝_L.png",
+      "series": "FP10600",
+      "modelCode": "BCK10600",
+      "variantCode": "",
+      "liveryName": "鳴日塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10600"
+      ]
+    },
+    {
+      "id": "vp_6857go3abf9w",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10600/BCK10600_鳴日塗裝_R.png",
+      "series": "FP10600",
+      "modelCode": "BCK10600",
+      "variantCode": "",
+      "liveryName": "鳴日塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10600"
+      ]
+    },
+    {
+      "id": "vp_10etc391iu0e7n",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10600/FPK10600_莒光塗裝_R.png",
+      "series": "FP10600",
+      "modelCode": "FPK10600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10600"
+      ]
+    },
+    {
+      "id": "vp_17b9xyidhc2i4",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10600/FPK11600_莒光塗裝_L.png",
+      "series": "FP10600",
+      "modelCode": "FPK11600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10600"
+      ]
+    },
+    {
+      "id": "vp_16tdak4d51ik2",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10600/FPK11600_莒光塗裝_R.png",
+      "series": "FP10600",
+      "modelCode": "FPK11600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10600"
+      ]
+    },
+    {
+      "id": "vp_10wpzhn1j6as19",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/FP10600/FPK10600_莒光塗裝_L.png",
+      "series": "FP10600",
+      "modelCode": "FPK10600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / FP10600"
+      ]
+    },
+    {
+      "id": "vp_a82ni8b61jrw",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK10500/PBK10500_莒光塗裝_L.png",
+      "series": "PBK10500",
+      "modelCode": "PBK10500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK10500"
+      ]
+    },
+    {
+      "id": "vp_9y4jz2bbb3cy",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK10500/PBK10500_莒光塗裝_R.png",
+      "series": "PBK10500",
+      "modelCode": "PBK10500",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK10500"
+      ]
+    },
+    {
+      "id": "vp_16rl3r21y7nxfc",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32600/PBK32600_莒光塗裝_R.png",
+      "series": "PBK32600",
+      "modelCode": "PBK32600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32600"
+      ]
+    },
+    {
+      "id": "vp_171jdsw1y892zq",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32600/PBK32600_莒光塗裝_L.png",
+      "series": "PBK32600",
+      "modelCode": "PBK32600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32600"
+      ]
+    },
+    {
+      "id": "vp_17dey4k1ncu6ag",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32800/PBK32800_原塗裝_L.png",
+      "series": "PBK32800",
+      "modelCode": "PBK32800",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32800"
+      ]
+    },
+    {
+      "id": "vp_jc5v9a1mcm6qs",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32800/PBK32800_莒光塗裝_R.png",
+      "series": "PBK32800",
+      "modelCode": "PBK32800",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32800"
+      ]
+    },
+    {
+      "id": "vp_178rpay1ndf5qe",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32800/PBK32800_原塗裝_R.png",
+      "series": "PBK32800",
+      "modelCode": "PBK32800",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32800"
+      ]
+    },
+    {
+      "id": "vp_jm3ysg1m9or3u",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32800/PBK32800_莒光塗裝_L.png",
+      "series": "PBK32800",
+      "modelCode": "PBK32800",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32800"
+      ]
+    },
+    {
+      "id": "vp_nahlicshcezm",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32850/PBK32850_原塗裝_L.png",
+      "series": "PBK32850",
+      "modelCode": "PBK32850",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32850"
+      ]
+    },
+    {
+      "id": "vp_n5ucoqsc2pa4",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32850/PBK32850_原塗裝_R.png",
+      "series": "PBK32850",
+      "modelCode": "PBK32850",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32850"
+      ]
+    },
+    {
+      "id": "vp_7l2gjkmqi3g0",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32850/PBK32850_莒光塗裝_L.png",
+      "series": "PBK32850",
+      "modelCode": "PBK32850",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32850"
+      ]
+    },
+    {
+      "id": "vp_136zokfpwi4ix",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32850/PBK32850_観光塗裝_R.png",
+      "series": "PBK32850",
+      "modelCode": "PBK32850",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32850"
+      ]
+    },
+    {
+      "id": "vp_7b46hqn0gdbi",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32850/PBK32850_莒光塗裝_R.png",
+      "series": "PBK32850",
+      "modelCode": "PBK32850",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32850"
+      ]
+    },
+    {
+      "id": "vp_13gxs3lpewpg7",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/PBK32850/PBK32850_観光塗裝_L.png",
+      "series": "PBK32850",
+      "modelCode": "PBK32850",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / PBK32850"
+      ]
+    },
+    {
+      "id": "vp_1mgsmgw1e6aaao",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32600/SP32600_莒光塗裝_L.png",
+      "series": "SP32600",
+      "modelCode": "SP32600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32600"
+      ]
+    },
+    {
+      "id": "vp_1m6ucf21dyoaim",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32600/SP32600_莒光塗裝_R.png",
+      "series": "SP32600",
+      "modelCode": "SP32600",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32600"
+      ]
+    },
+    {
+      "id": "vp_apxsap1pix7f7",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32700/SP32700_観光塗裝_L.png",
+      "series": "SP32700",
+      "modelCode": "SP32700",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32700"
+      ]
+    },
+    {
+      "id": "vp_afzorj1pv7l8t",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32700/SP32700_観光塗裝_R.png",
+      "series": "SP32700",
+      "modelCode": "SP32700",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32700"
+      ]
+    },
+    {
+      "id": "vp_x2bwa5x5ubw7",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/PC32700_更新車_L.png",
+      "series": "SP32720",
+      "modelCode": "PC32700",
+      "variantCode": "",
+      "liveryName": "更新車",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_wn2rhvxl0qtl",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/PC32700_更新車_R.png",
+      "series": "SP32720",
+      "modelCode": "PC32700",
+      "variantCode": "",
+      "liveryName": "更新車",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_1cus1rg10ml0z2",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/PC32700_莒光塗裝_R.png",
+      "series": "SP32720",
+      "modelCode": "PC32700",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_1cfiwz610cmx80",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/PC32700_莒光塗裝_L.png",
+      "series": "SP32720",
+      "modelCode": "PC32700",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_hl7wla14l1lli",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/SP32720_両鉄車_L.png",
+      "series": "SP32720",
+      "modelCode": "SP32720",
+      "variantCode": "",
+      "liveryName": "両鉄車",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_m8upw1n6h0l9",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/SP32720_新観光塗裝_L.png",
+      "series": "SP32720",
+      "modelCode": "SP32720",
+      "variantCode": "",
+      "liveryName": "新観光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_hv66n41520jk8",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/SP32720_両鉄車_R.png",
+      "series": "SP32720",
+      "modelCode": "SP32720",
+      "variantCode": "",
+      "liveryName": "両鉄車",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_1naluwq1chuspo",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/SP32720_原塗裝_R.png",
+      "series": "SP32720",
+      "modelCode": "SP32720",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_1nf93qc1cn4caq",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/SP32720_原塗裝_L.png",
+      "series": "SP32720",
+      "modelCode": "SP32720",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_mlgikvnbqk6b",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/SP32720_新観光塗裝_R.png",
+      "series": "SP32720",
+      "modelCode": "SP32720",
+      "variantCode": "",
+      "liveryName": "新観光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_pl7ayo1gtvgw",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/SP32720_莒光塗裝_L.png",
+      "series": "SP32720",
+      "modelCode": "SP32720",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_pb90wu1qs5ce",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32720/SP32720_莒光塗裝_R.png",
+      "series": "SP32720",
+      "modelCode": "SP32720",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32720"
+      ]
+    },
+    {
+      "id": "vp_i6kytadq08lu",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32750/SP32750_両鉄車_L.png",
+      "series": "SP32750",
+      "modelCode": "SP32750",
+      "variantCode": "",
+      "liveryName": "両鉄車",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32750"
+      ]
+    },
+    {
+      "id": "vp_igj8v4e2amfg",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32750/SP32750_両鉄車_R.png",
+      "series": "SP32750",
+      "modelCode": "SP32750",
+      "variantCode": "",
+      "liveryName": "両鉄車",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32750"
+      ]
+    },
+    {
+      "id": "vp_9bw8i91cuplbl",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32750/SP32750_新観光塗裝_L.png",
+      "series": "SP32750",
+      "modelCode": "SP32750",
+      "variantCode": "",
+      "liveryName": "新観光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32750"
+      ]
+    },
+    {
+      "id": "vp_9oi1731d4np2n",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32750/SP32750_新観光塗裝_R.png",
+      "series": "SP32750",
+      "modelCode": "SP32750",
+      "variantCode": "",
+      "liveryName": "新観光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32750"
+      ]
+    },
+    {
+      "id": "vp_s5rwlc526h3w",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32750/SP32750_莒光塗裝_L.png",
+      "series": "SP32750",
+      "modelCode": "SP32750",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32750"
+      ]
+    },
+    {
+      "id": "vp_b6isqp1dgihqr",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32750/SP32750_観光塗裝_L.png",
+      "series": "SP32750",
+      "modelCode": "SP32750",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32750"
+      ]
+    },
+    {
+      "id": "vp_awkp7j1dssvkd",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32750/SP32750_観光塗裝_R.png",
+      "series": "SP32750",
+      "modelCode": "SP32750",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32750"
+      ]
+    },
+    {
+      "id": "vp_rvtmji57g6te",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32750/SP32750_莒光塗裝_R.png",
+      "series": "SP32750",
+      "modelCode": "SP32750",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32750"
+      ]
+    },
+    {
+      "id": "vp_11be3bl4krst5",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SA32800_莒光塗裝_L.png",
+      "series": "SP32800",
+      "modelCode": "SA32800",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_11nzphr4lxuxz",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SA32800_莒光塗裝_R.png",
+      "series": "SP32800",
+      "modelCode": "SA32800",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_8ow3z44rjguk",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SP32800_両鉄車_R.png",
+      "series": "SP32800",
+      "modelCode": "SP32800",
+      "variantCode": "",
+      "liveryName": "両鉄車",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_8extxa4f930y",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SP32800_両鉄車_L.png",
+      "series": "SP32800",
+      "modelCode": "SP32800",
+      "variantCode": "",
+      "liveryName": "両鉄車",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_47eiof1d8szan",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SP32800_新観光塗裝_R.png",
+      "series": "SP32800",
+      "modelCode": "SP32800",
+      "variantCode": "",
+      "liveryName": "新観光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_3uspzl1cyuvjl",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SP32800_新観光塗裝_L.png",
+      "series": "SP32800",
+      "modelCode": "SP32800",
+      "variantCode": "",
+      "liveryName": "新観光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_14og0g01oyk2sc",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SP32800_莒光塗裝_L.png",
+      "series": "SP32800",
+      "modelCode": "SP32800",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_14ehqe61p3tshu",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SP32800_莒光塗裝_R.png",
+      "series": "SP32800",
+      "modelCode": "SP32800",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_1kaj8u91x20p5f",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SP32800_観光塗裝_L.png",
+      "series": "SP32800",
+      "modelCode": "SP32800",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_1k0l5b31xeb2z1",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32800/SP32800_観光塗裝_R.png",
+      "series": "SP32800",
+      "modelCode": "SP32800",
+      "variantCode": "",
+      "liveryName": "観光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32800"
+      ]
+    },
+    {
+      "id": "vp_1lcm8robr13bi",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32850/SP32850_原塗裝_L.png",
+      "series": "SP32850",
+      "modelCode": "SP32850",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32850"
+      ]
+    },
+    {
+      "id": "vp_1l7z6gqbh2tg0",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32850/SP32850_原塗裝_R.png",
+      "series": "SP32850",
+      "modelCode": "SP32850",
+      "variantCode": "",
+      "liveryName": "原塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32850"
+      ]
+    },
+    {
+      "id": "vp_194fc4e1jwitky",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32850/SP32850_莒光塗裝_R.png",
+      "series": "SP32850",
+      "modelCode": "SP32850",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32850"
+      ]
+    },
+    {
+      "id": "vp_19edfnk1jr99zw",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32850/SP32850_莒光塗裝_L.png",
+      "series": "SP32850",
+      "modelCode": "SP32850",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32850"
+      ]
+    },
+    {
+      "id": "vp_ifq1xc1w9k330",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32950/SP32950_莒光塗裝_L.png",
+      "series": "SP32950",
+      "modelCode": "SP32950",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32950"
+      ]
+    },
+    {
+      "id": "vp_i5rrvi1wetssi",
+      "sourcePath": "07_海外車輌/台灣/客車/莒光號/SP32950/SP32950_莒光塗裝_R.png",
+      "series": "SP32950",
+      "modelCode": "SP32950",
+      "variantCode": "",
+      "liveryName": "莒光塗裝",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 客車 / 莒光號 / SP32950"
+      ]
+    },
+    {
+      "id": "vp_30ct01kt9lu0",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R100_橘色_L.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R100",
+      "variantCode": "",
+      "liveryName": "橘色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_kx07e1kcahqu",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R100_橘色_R.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R100",
+      "variantCode": "",
+      "liveryName": "橘色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_usv0mh1arxcbr",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R100_海軍藍_L.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R100",
+      "variantCode": "",
+      "liveryName": "海軍藍",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_1r90vin1i9znyr",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R150_橘色_R.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R150",
+      "variantCode": "",
+      "liveryName": "橘色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_u8ao3b1aqr49l",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R100_海軍藍_R.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R100",
+      "variantCode": "",
+      "liveryName": "海軍藍",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_1qwf2tt1ima7wt",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R150_橘色_L.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R150",
+      "variantCode": "",
+      "liveryName": "橘色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_ywl9wv1w9jylt",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R180_橘色.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R180",
+      "variantCode": "",
+      "liveryName": "橘色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_13zgklo1cmepwg",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R150_海軍藍_L.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R150",
+      "variantCode": "",
+      "liveryName": "海軍藍",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_13k79aq1cesq4e",
+      "sourcePath": "07_海外車輌/台灣/機関車/ディーゼル機関車/R150_海軍藍_R.png",
+      "series": "ディーゼル機関車",
+      "modelCode": "R150",
+      "variantCode": "",
+      "liveryName": "海軍藍",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / ディーゼル機関車"
+      ]
+    },
+    {
+      "id": "vp_7iii5hoornu9",
+      "sourcePath": "07_海外車輌/台灣/機関車/電気機関車/E1000_L.png",
+      "series": "電気機関車",
+      "modelCode": "E1000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / 電気機関車"
+      ]
+    },
+    {
+      "id": "vp_8381l1bbj8bx",
+      "sourcePath": "07_海外車輌/台灣/機関車/電気機関車/E200.png",
+      "series": "電気機関車",
+      "modelCode": "E200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / 電気機関車"
+      ]
+    },
+    {
+      "id": "vp_7dv9bvoypxpr",
+      "sourcePath": "07_海外車輌/台灣/機関車/電気機関車/E1000_R.png",
+      "series": "電気機関車",
+      "modelCode": "E1000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / 電気機関車"
+      ]
+    },
+    {
+      "id": "vp_1esyc5f14oefor",
+      "sourcePath": "07_海外車輌/台灣/機関車/電気機関車/E400.png",
+      "series": "電気機関車",
+      "modelCode": "E400",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / 電気機関車"
+      ]
+    },
+    {
+      "id": "vp_1r2anehf8u5jx",
+      "sourcePath": "07_海外車輌/台灣/機関車/電気機関車/E200_鳴日色.png",
+      "series": "電気機関車",
+      "modelCode": "E200",
+      "variantCode": "",
+      "liveryName": "鳴日色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / 電気機関車"
+      ]
+    },
+    {
+      "id": "vp_1n0nqbo1up3egc",
+      "sourcePath": "07_海外車輌/台灣/機関車/電気機関車/E300.png",
+      "series": "電気機関車",
+      "modelCode": "E300",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / 電気機関車"
+      ]
+    },
+    {
+      "id": "vp_up9ywyp0uju2",
+      "sourcePath": "07_海外車輌/台灣/機関車/電気機関車/E500.png",
+      "series": "電気機関車",
+      "modelCode": "E500",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / 電気機関車"
+      ]
+    },
+    {
+      "id": "vp_1lmnypr1rgvndf",
+      "sourcePath": "07_海外車輌/台灣/機関車/電気機関車/E400_鳴日色.png",
+      "series": "電気機関車",
+      "modelCode": "E400",
+      "variantCode": "",
+      "liveryName": "鳴日色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 機関車 / 電気機関車"
+      ]
+    },
+    {
+      "id": "vp_1acfdmbu3e7s7",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU100/ED100.png",
+      "series": "EMU100",
+      "modelCode": "ED100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU100"
+      ]
+    },
+    {
+      "id": "vp_11ygeg71dx8sz7",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU100/EP100.png",
+      "series": "EMU100",
+      "modelCode": "EP100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU100"
+      ]
+    },
+    {
+      "id": "vp_g1gm1v717ybb",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU100/ET100.png",
+      "series": "EMU100",
+      "modelCode": "ET100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU100"
+      ]
+    },
+    {
+      "id": "vp_w396myccbpzg",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU100/EM100.png",
+      "series": "EMU100",
+      "modelCode": "EM100",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU100"
+      ]
+    },
+    {
+      "id": "vp_buu2vfkrswm3",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU1200/EM200.png",
+      "series": "EMU1200",
+      "modelCode": "EM200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU1200"
+      ]
+    },
+    {
+      "id": "vp_e1nu3dcqriq3",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU1200/EMC1200.png",
+      "series": "EMU1200",
+      "modelCode": "EMC1200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU1200"
+      ]
+    },
+    {
+      "id": "vp_1e0hzsm1w0v9lw",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU1200/EP200.png",
+      "series": "EMU1200",
+      "modelCode": "EP200",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU1200"
+      ]
+    },
+    {
+      "id": "vp_lorpj01if4bv4",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ED3001_緑.png",
+      "series": "EMU3000",
+      "modelCode": "ED3001",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1atskp51wra8ed",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ED3001_赤.png",
+      "series": "EMU3000",
+      "modelCode": "ED3001",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_7kcewv18kdbbn",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ED3001_青.png",
+      "series": "EMU3000",
+      "modelCode": "ED3001",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_12i3mx61fb8016",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ED3002_赤.png",
+      "series": "EMU3000",
+      "modelCode": "ED3002",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1oq5itb14pvk4f",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ED3002_緑.png",
+      "series": "EMU3000",
+      "modelCode": "ED3002",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_hzx7ngr4800s",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ED3002_青.png",
+      "series": "EMU3000",
+      "modelCode": "ED3002",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_imdy9h1txf0bd",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3001_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EM3001",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_19f6y2o5cyu3w",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3001_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EM3001",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_68hk521g9f656",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3001_青.png",
+      "series": "EMU3000",
+      "modelCode": "EM3001",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_158iybamu2xy",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3002_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EM3002",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_18dan7nukt4gj",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3002_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EM3002",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_x3b6451yer70l",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3002_青.png",
+      "series": "EMU3000",
+      "modelCode": "EM3002",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1p9gq7r1l19ts7",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3003_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EM3003",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1h8egqc1b9isro",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3003_青.png",
+      "series": "EMU3000",
+      "modelCode": "EM3003",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1sfn5z6fysis2",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3003_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EM3003",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_7z1lio1mqrie4",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3004_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EM3004",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1ui3qnnb3e3q7",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3004_青.png",
+      "series": "EMU3000",
+      "modelCode": "EM3004",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_rzz6wh3axftp",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3005_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EM3005",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_fz96o51gcxn8p",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3004_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EM3004",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_101lpfo1vzgelk",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3005_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EM3005",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_fm2ss2qs6lem",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3005_青.png",
+      "series": "EMU3000",
+      "modelCode": "EM3005",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1em46ya8ljq3e",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3006_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EM3006",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_yzpeknmxqbxr",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3006_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EM3006",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1h4wbu0z4erd0",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3001_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EP3001",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_595inl7a3r6h",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EM3006_青.png",
+      "series": "EMU3000",
+      "modelCode": "EM3006",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_32khct1qs9fe9",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3001_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EP3001",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_ou0l0reusbxj",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3001_青.png",
+      "series": "EMU3000",
+      "modelCode": "EP3001",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_l56357lf5zlv",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3002_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EP3002",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_dcqzmm192tdfa",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3002_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EP3002",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_pynnqg1ny78cg",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3002_青.png",
+      "series": "EMU3000",
+      "modelCode": "EP3002",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_148hre5tw076",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3003_緑.png",
+      "series": "EMU3000",
+      "modelCode": "EP3003",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1sbiiu7tfo4yf",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3003_赤.png",
+      "series": "EMU3000",
+      "modelCode": "EP3003",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1hgulll4eh5hx",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ET3001_赤.png",
+      "series": "EMU3000",
+      "modelCode": "ET3001",
+      "variantCode": "",
+      "liveryName": "赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_wcrcvg1sudc00",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ET3001_緑.png",
+      "series": "EMU3000",
+      "modelCode": "ET3001",
+      "variantCode": "",
+      "liveryName": "緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_5tkjmx189eqo1",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/EP3003_青.png",
+      "series": "EMU3000",
+      "modelCode": "EP3003",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_etyc1b1fq8dxf",
+      "sourcePath": "07_海外車輌/台灣/電車/EMU3000/ET3001_青.png",
+      "series": "EMU3000",
+      "modelCode": "ET3001",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "07_海外車輌 / 台灣 / 電車 / EMU3000"
       ]
     }
   ]
