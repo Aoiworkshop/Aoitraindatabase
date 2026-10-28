@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-22T17:51:06.130Z",
+  "exportedAt": "2026-10-23T18:24:53.330Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -5276,23 +5276,6 @@
       ],
       "productCodes": [
         "97240"
-      ]
-    },
-    {
-      "id": "vp_1emc3jb19njiwn",
-      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ400系/キハ400-500_お座敷.png",
-      "series": "キハ400系",
-      "modelCode": "キハ400",
-      "variantCode": "500",
-      "liveryName": "お座敷",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ400系"
       ]
     },
     {
@@ -13963,23 +13946,6 @@
       ]
     },
     {
-      "id": "vp_97z4g219sgj90",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サロ153-900_東海色.png",
-      "series": "153系",
-      "modelCode": "サロ153",
-      "variantCode": "900",
-      "liveryName": "東海色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
-      ]
-    },
-    {
       "id": "vp_tojco21uavdjo",
       "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サハ153-200_湘南色.png",
       "series": "153系",
@@ -13994,465 +13960,6 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
-      ]
-    },
-    {
-      "id": "vp_14350vz151w217",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サロ153_湘南色.png",
-      "series": "153系",
-      "modelCode": "サロ153",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
-      ]
-    },
-    {
-      "id": "vp_nxgkp7a2xmwv",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ152_湘南色.png",
-      "series": "153系",
-      "modelCode": "モハ152",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
-      ]
-    },
-    {
-      "id": "vp_wyrwvd11tz8c7",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/クハ155_修学旅行色.png",
-      "series": "155系",
-      "modelCode": "クハ155",
-      "variantCode": "",
-      "liveryName": "修学旅行色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
-      ]
-    },
-    {
-      "id": "vp_l7vc7bcux7y3",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/クハ155_湘南色.png",
-      "series": "155系",
-      "modelCode": "クハ155",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
-      ]
-    },
-    {
-      "id": "vp_9tfzhg1e24vh6",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/モハ155_修学旅行色.png",
-      "series": "155系",
-      "modelCode": "モハ155",
-      "variantCode": "",
-      "liveryName": "修学旅行色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
-      ]
-    },
-    {
-      "id": "vp_s491yddee80v",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/モハ154_修学旅行色.png",
-      "series": "155系",
-      "modelCode": "モハ154",
-      "variantCode": "",
-      "liveryName": "修学旅行色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
-      ]
-    },
-    {
-      "id": "vp_u1w0i31cdlek3",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/モハ154_湘南色.png",
-      "series": "155系",
-      "modelCode": "モハ154",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
-      ]
-    },
-    {
-      "id": "vp_31nz0qxik7si",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/モハ155_湘南色.png",
-      "series": "155系",
-      "modelCode": "モハ155",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
-      ]
-    },
-    {
-      "id": "vp_1fqyk749pjbyo",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/クモハ157_国鉄色_L.png",
-      "series": "157系",
-      "modelCode": "クモハ157",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
-      ]
-    },
-    {
-      "id": "vp_1fh0a5a9zhfpq",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/クモハ157_国鉄色_R.png",
-      "series": "157系",
-      "modelCode": "クモハ157",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
-      ]
-    },
-    {
-      "id": "vp_pn8apg1q8tm7o",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/クロ157_御召色_L.png",
-      "series": "157系",
-      "modelCode": "クロ157",
-      "variantCode": "",
-      "liveryName": "御召色",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
-      ]
-    },
-    {
-      "id": "vp_1vwmomh1mghdzj",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/サロ157_国鉄色.png",
-      "series": "157系",
-      "modelCode": "サロ157",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
-      ]
-    },
-    {
-      "id": "vp_q54y3u1qnga3u",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/クロ157_御召色_R.png",
-      "series": "157系",
-      "modelCode": "クロ157",
-      "variantCode": "",
-      "liveryName": "御召色",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
-      ]
-    },
-    {
-      "id": "vp_1bp4u8t4vkshn",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/モハ156_国鉄色.png",
-      "series": "157系",
-      "modelCode": "モハ156",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
-      ]
-    },
-    {
-      "id": "vp_ih61t41iom1ew",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/クハ159_修学旅行_L.png",
-      "series": "159系",
-      "modelCode": "クハ159",
-      "variantCode": "",
-      "liveryName": "修学旅行",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
-      ]
-    },
-    {
-      "id": "vp_ge3u9w10piyx0",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/クハ159_修学旅行色_R.png",
-      "series": "159系",
-      "modelCode": "クハ159",
-      "variantCode": "",
-      "liveryName": "修学旅行色",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
-      ]
-    },
-    {
-      "id": "vp_coudrnvjfir5",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/サハ159_修学旅行色.png",
-      "series": "159系",
-      "modelCode": "サハ159",
-      "variantCode": "",
-      "liveryName": "修学旅行色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
-      ]
-    },
-    {
-      "id": "vp_7ambad1s61vd3",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/モハ158_修学旅行色.png",
-      "series": "159系",
-      "modelCode": "モハ158",
-      "variantCode": "",
-      "liveryName": "修学旅行色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
-      ]
-    },
-    {
-      "id": "vp_g1upptzijyz1",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/クハ161_国鉄色.png",
-      "series": "161系",
-      "modelCode": "クハ161",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
-      ]
-    },
-    {
-      "id": "vp_fhumbh1eq2qa5",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/モハ160_国鉄色.png",
-      "series": "161系",
-      "modelCode": "モハ160",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
-      ]
-    },
-    {
-      "id": "vp_8t3aykzr45hg",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/モハ161_国鉄色.png",
-      "series": "161系",
-      "modelCode": "モハ161",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
-      ]
-    },
-    {
-      "id": "vp_nk3c4f1um6lsr",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/モロ160_国鉄色.png",
-      "series": "161系",
-      "modelCode": "モロ160",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
-      ]
-    },
-    {
-      "id": "vp_48qsf281gwm2",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/モロ161_国鉄色.png",
-      "series": "161系",
-      "modelCode": "モロ161",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
-      ]
-    },
-    {
-      "id": "vp_ke6kvb1skxzj9",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165_湘南色.png",
-      "series": "165系",
-      "modelCode": "クハ165",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
-      ]
-    },
-    {
-      "id": "vp_1ubb5bgaztx4c",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165_湘南色_L.png",
-      "series": "165系",
-      "modelCode": "サロ165",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
-      ]
-    },
-    {
-      "id": "vp_1tw1u0ianjjaq",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165_湘南色_R.png",
-      "series": "165系",
-      "modelCode": "サロ165",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
-      ]
-    },
-    {
-      "id": "vp_1cn21gr1jykab1",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164_湘南色.png",
-      "series": "165系",
-      "modelCode": "モハ164",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
       ]
     },
     {
@@ -14480,23 +13987,6 @@
       "variantCode": "",
       "liveryName": "修学旅行色",
       "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
-      ]
-    },
-    {
-      "id": "vp_74iqg7ben789",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/クハ167_湘南色.png",
-      "series": "167系",
-      "modelCode": "クハ167",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
       "company": "",
       "widthCm": 3.8,
       "note": "",
@@ -17182,57 +16672,6 @@
       "defaultProductCode": "",
       "categories": [
         "03_機関車 / 03_電気機関車 / EF10"
-      ]
-    },
-    {
-      "id": "vp_116k7apj079w9",
-      "sourcePath": "03_機関車/03_電気機関車/EF13/EF13.png",
-      "series": "EF13",
-      "modelCode": "EF13",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 03_電気機関車 / EF13"
-      ]
-    },
-    {
-      "id": "vp_1odjkc11m5wwod",
-      "sourcePath": "03_機関車/03_電気機関車/EF15/EF15.png",
-      "series": "EF15",
-      "modelCode": "EF15",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 03_電気機関車 / EF15"
-      ]
-    },
-    {
-      "id": "vp_7acntds4mv67",
-      "sourcePath": "03_機関車/03_電気機関車/EF16/EF16.png",
-      "series": "EF16",
-      "modelCode": "EF16",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 03_電気機関車 / EF16"
       ]
     },
     {
@@ -29979,57 +29418,6 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 151系"
-      ]
-    },
-    {
-      "id": "vp_1krsthm1c10eda",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ153_湘南色.png",
-      "series": "153系",
-      "modelCode": "モハ153",
-      "variantCode": "",
-      "liveryName": "湘南色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
-      ]
-    },
-    {
-      "id": "vp_64py3o2cbyea",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/モハ159_修学旅行色.png",
-      "series": "159系",
-      "modelCode": "モハ159",
-      "variantCode": "",
-      "liveryName": "修学旅行色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
-      ]
-    },
-    {
-      "id": "vp_17mnvkjyqt9kn",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/サシ161_国鉄色.png",
-      "series": "161系",
-      "modelCode": "サシ161",
-      "variantCode": "",
-      "liveryName": "国鉄色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
       ]
     },
     {
@@ -59417,6 +58805,3049 @@
       "defaultProductCode": "",
       "categories": [
         "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_16ltny8ulbwn2",
+      "sourcePath": "01_JR 国鉄/02_気動車/02_準急形・急行形/キハ56系/キハ56-550_お座敷車_R.png",
+      "series": "キハ56系",
+      "modelCode": "キハ56",
+      "variantCode": "550",
+      "liveryName": "お座敷車",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 02_気動車 / 02_準急形・急行形 / キハ56系"
+      ]
+    },
+    {
+      "id": "vp_16bvkf2usxqao",
+      "sourcePath": "01_JR 国鉄/02_気動車/02_準急形・急行形/キハ56系/キハ56-550_お座敷車_L.png",
+      "series": "キハ56系",
+      "modelCode": "キハ56",
+      "variantCode": "550",
+      "liveryName": "お座敷車",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 02_気動車 / 02_準急形・急行形 / キハ56系"
+      ]
+    },
+    {
+      "id": "vp_z7m4ke1g1x6b0",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ400系/キハ400-500_お座敷車_L.png",
+      "series": "キハ400系",
+      "modelCode": "キハ400",
+      "variantCode": "500",
+      "liveryName": "お座敷車",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ400系"
+      ]
+    },
+    {
+      "id": "vp_zhk83k1fpmmcy",
+      "sourcePath": "01_JR 国鉄/02_気動車/01_一般型/キハ400系/キハ400-500_お座敷車_R.png",
+      "series": "キハ400系",
+      "modelCode": "キハ400",
+      "variantCode": "500",
+      "liveryName": "お座敷車",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 02_気動車 / 01_一般型 / キハ400系"
+      ]
+    },
+    {
+      "id": "vp_462ul676isx",
+      "sourcePath": "03_機関車/03_電気機関車/ED10/ED10_30.png",
+      "series": "ED10",
+      "modelCode": "ED10",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED10"
+      ]
+    },
+    {
+      "id": "vp_749bylt5z3pz",
+      "sourcePath": "03_機関車/03_電気機関車/ED11/ED11_30.png",
+      "series": "ED11",
+      "modelCode": "ED11",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED11"
+      ]
+    },
+    {
+      "id": "vp_gp3gh7141xv87",
+      "sourcePath": "03_機関車/03_電気機関車/ED12/ED12_36.png",
+      "series": "ED12",
+      "modelCode": "ED12",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED12"
+      ]
+    },
+    {
+      "id": "vp_j4qu8dp99eu3",
+      "sourcePath": "03_機関車/03_電気機関車/ED13/ED13_30.png",
+      "series": "ED13",
+      "modelCode": "ED13",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED13"
+      ]
+    },
+    {
+      "id": "vp_vln4h9a9efch",
+      "sourcePath": "03_機関車/03_電気機関車/ED14/ED14_30.png",
+      "series": "ED14",
+      "modelCode": "ED14",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED14"
+      ]
+    },
+    {
+      "id": "vp_12lqdl91k0xibz",
+      "sourcePath": "03_機関車/03_電気機関車/ED15/ED15_30.png",
+      "series": "ED15",
+      "modelCode": "ED15",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED15"
+      ]
+    },
+    {
+      "id": "vp_1c6ki3vdu889j",
+      "sourcePath": "03_機関車/03_電気機関車/ED16/ED16_36.png",
+      "series": "ED16",
+      "modelCode": "ED16",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED16"
+      ]
+    },
+    {
+      "id": "vp_1em7vv11y2ntuj",
+      "sourcePath": "03_機関車/03_電気機関車/ED17/ED17_30.png",
+      "series": "ED17",
+      "modelCode": "ED17",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED17"
+      ]
+    },
+    {
+      "id": "vp_e1fmy516i8dld",
+      "sourcePath": "03_機関車/03_電気機関車/ED18/ED18_30.png",
+      "series": "ED18",
+      "modelCode": "ED18",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED18"
+      ]
+    },
+    {
+      "id": "vp_eo38ul6f5x37",
+      "sourcePath": "03_機関車/03_電気機関車/ED20/ED20_30.png",
+      "series": "ED20",
+      "modelCode": "ED20",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED20"
+      ]
+    },
+    {
+      "id": "vp_cqrhm5v56re9",
+      "sourcePath": "03_機関車/03_電気機関車/ED21/ED21_30.png",
+      "series": "ED21",
+      "modelCode": "ED21",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED21"
+      ]
+    },
+    {
+      "id": "vp_1sjxh71h8a4yr",
+      "sourcePath": "03_機関車/03_電気機関車/ED22/ED22_30.png",
+      "series": "ED22",
+      "modelCode": "ED22",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED22"
+      ]
+    },
+    {
+      "id": "vp_1qmrict12czeyl",
+      "sourcePath": "03_機関車/03_電気機関車/ED23/ED23_30.png",
+      "series": "ED23",
+      "modelCode": "ED23",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED23"
+      ]
+    },
+    {
+      "id": "vp_1a6w51n1hfaxkd",
+      "sourcePath": "03_機関車/03_電気機関車/ED24/ED24_36.png",
+      "series": "ED24",
+      "modelCode": "ED24",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED24"
+      ]
+    },
+    {
+      "id": "vp_1888j8t1n6bn7t",
+      "sourcePath": "03_機関車/03_電気機関車/ED25/ED25_30.png",
+      "series": "ED25",
+      "modelCode": "ED25",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED25"
+      ]
+    },
+    {
+      "id": "vp_p0agul1rfs26z",
+      "sourcePath": "03_機関車/03_電気機関車/ED26/ED26_30.png",
+      "series": "ED26",
+      "modelCode": "ED26",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED26"
+      ]
+    },
+    {
+      "id": "vp_n34i0d1skp1x9",
+      "sourcePath": "03_機関車/03_電気機関車/ED27/ED27_30.png",
+      "series": "ED27",
+      "modelCode": "ED27",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED27"
+      ]
+    },
+    {
+      "id": "vp_slcsy513p0kib",
+      "sourcePath": "03_機関車/03_電気機関車/ED28/ED28_30.png",
+      "series": "ED28",
+      "modelCode": "ED28",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED28"
+      ]
+    },
+    {
+      "id": "vp_qo11pp1haohtd",
+      "sourcePath": "03_機関車/03_電気機関車/ED29/ED29_30.png",
+      "series": "ED29",
+      "modelCode": "ED29",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED29"
+      ]
+    },
+    {
+      "id": "vp_1l0c1pn1ah29dn",
+      "sourcePath": "03_機関車/03_電気機関車/ED30/ED30_36.png",
+      "series": "ED30",
+      "modelCode": "ED30",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED30"
+      ]
+    },
+    {
+      "id": "vp_10ottvv4apwbh",
+      "sourcePath": "03_機関車/03_電気機関車/ED31/ED31_36.png",
+      "series": "ED31",
+      "modelCode": "ED31",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED31"
+      ]
+    },
+    {
+      "id": "vp_y9htgr1odyucz",
+      "sourcePath": "03_機関車/03_電気機関車/ED32/ED32_36.png",
+      "series": "ED32",
+      "modelCode": "ED32",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED32"
+      ]
+    },
+    {
+      "id": "vp_hfd6st18uvk2t",
+      "sourcePath": "03_機関車/03_電気機関車/ED34/ED34_30.png",
+      "series": "ED34",
+      "modelCode": "ED34",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED34"
+      ]
+    },
+    {
+      "id": "vp_1tpn71pwmuukd",
+      "sourcePath": "03_機関車/03_電気機関車/ED36/ED36_30.png",
+      "series": "ED36",
+      "modelCode": "ED36",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED36"
+      ]
+    },
+    {
+      "id": "vp_1cqa4lp7qsqzf",
+      "sourcePath": "03_機関車/03_電気機関車/ED40/ED40_30.png",
+      "series": "ED40",
+      "modelCode": "ED40",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED40"
+      ]
+    },
+    {
+      "id": "vp_1i1cmlh7jfn5",
+      "sourcePath": "03_機関車/03_電気機関車/ED41/ED41_30.png",
+      "series": "ED41",
+      "modelCode": "ED41",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED41"
+      ]
+    },
+    {
+      "id": "vp_1rpna4r1dd42bx",
+      "sourcePath": "03_機関車/03_電気機関車/ED42/ED42_36.png",
+      "series": "ED42",
+      "modelCode": "ED42",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED42"
+      ]
+    },
+    {
+      "id": "vp_1y1o6a316h8pst",
+      "sourcePath": "03_機関車/03_電気機関車/ED44/ED44_36.png",
+      "series": "ED44",
+      "modelCode": "ED44",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED44"
+      ]
+    },
+    {
+      "id": "vp_mtfktn1fv0n9z",
+      "sourcePath": "03_機関車/03_電気機関車/ED45/ED45_36.png",
+      "series": "ED45",
+      "modelCode": "ED45",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED45"
+      ]
+    },
+    {
+      "id": "vp_dyllsb1clkpgt",
+      "sourcePath": "03_機関車/03_電気機関車/ED46/ED46_36.png",
+      "series": "ED46",
+      "modelCode": "ED46",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED46"
+      ]
+    },
+    {
+      "id": "vp_ieistp5d2tax",
+      "sourcePath": "03_機関車/03_電気機関車/ED50/ED50_30.png",
+      "series": "ED50",
+      "modelCode": "ED50",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED50"
+      ]
+    },
+    {
+      "id": "vp_pfxpzf16808eh",
+      "sourcePath": "03_機関車/03_電気機関車/ED51/ED51_36.png",
+      "series": "ED51",
+      "modelCode": "ED51",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED51"
+      ]
+    },
+    {
+      "id": "vp_yy4bvx1qj4xgx",
+      "sourcePath": "03_機関車/03_電気機関車/ED52/ED52_30.png",
+      "series": "ED52",
+      "modelCode": "ED52",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED52"
+      ]
+    },
+    {
+      "id": "vp_11gferv1bl5ftp",
+      "sourcePath": "03_機関車/03_電気機関車/ED53/ED53_36.png",
+      "series": "ED53",
+      "modelCode": "ED53",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED53"
+      ]
+    },
+    {
+      "id": "vp_13pwui3fqot73",
+      "sourcePath": "03_機関車/03_電気機関車/ED54/ED54_36.png",
+      "series": "ED54",
+      "modelCode": "ED54",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED54"
+      ]
+    },
+    {
+      "id": "vp_1aq03m36trx2p",
+      "sourcePath": "03_機関車/03_電気機関車/ED55/ED55_36.png",
+      "series": "ED55",
+      "modelCode": "ED55",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED55"
+      ]
+    },
+    {
+      "id": "vp_1k9ik2zq5i34n",
+      "sourcePath": "03_機関車/03_電気機関車/ED56/ED56_36.png",
+      "series": "ED56",
+      "modelCode": "ED56",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED56"
+      ]
+    },
+    {
+      "id": "vp_1mqhsejbbnen1",
+      "sourcePath": "03_機関車/03_電気機関車/ED57/ED57_36.png",
+      "series": "ED57",
+      "modelCode": "ED57",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED57"
+      ]
+    },
+    {
+      "id": "vp_wyfytp147wq9f",
+      "sourcePath": "03_機関車/03_電気機関車/ED60/ED60_30.png",
+      "series": "ED60",
+      "modelCode": "ED60",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED60"
+      ]
+    },
+    {
+      "id": "vp_v147l91xfrhkh",
+      "sourcePath": "03_機関車/03_電気機関車/ED61/ED61_30.png",
+      "series": "ED61",
+      "modelCode": "ED61",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED61"
+      ]
+    },
+    {
+      "id": "vp_3ac91e14a5sqg",
+      "sourcePath": "03_機関車/03_電気機関車/ED62/ED62_14号機．浜松工場_30.png",
+      "series": "ED62",
+      "modelCode": "ED62",
+      "variantCode": "",
+      "liveryName": "14号機．浜松工場",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED62"
+      ]
+    },
+    {
+      "id": "vp_1vkhrst1dhb93j",
+      "sourcePath": "03_機関車/03_電気機関車/ED62/ED62_JR貨物更新色_30.png",
+      "series": "ED62",
+      "modelCode": "ED62",
+      "variantCode": "",
+      "liveryName": "JR貨物更新色",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED62"
+      ]
+    },
+    {
+      "id": "vp_bt6571w703rf",
+      "sourcePath": "03_機関車/03_電気機関車/ED62/ED62_30.png",
+      "series": "ED62",
+      "modelCode": "ED62",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / ED62"
+      ]
+    },
+    {
+      "id": "vp_fgv6b57eiwwn",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/クハ153-0_新快速色.png",
+      "series": "153系",
+      "modelCode": "クハ153",
+      "variantCode": "0",
+      "liveryName": "新快速色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_nz2amsfqc6ug",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/クハ153-500_新快速色.png",
+      "series": "153系",
+      "modelCode": "クハ153",
+      "variantCode": "500",
+      "liveryName": "新快速色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_ac4b221d5qg8w",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/クハ153-0_湘南色.png",
+      "series": "153系",
+      "modelCode": "クハ153",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_7vwcm91snbacn",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サハ153-100_湘南色.png",
+      "series": "153系",
+      "modelCode": "サハ153",
+      "variantCode": "100",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_5sgk4g40mmyu",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サハ153-0_湘南色.png",
+      "series": "153系",
+      "modelCode": "サハ153",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_1yx36mv1uofh3x",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サハシ153-0_湘南色.png",
+      "series": "153系",
+      "modelCode": "サハシ153",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_nmsi0g1b7rinu",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サロ152-0_湘南色．青帯.png",
+      "series": "153系",
+      "modelCode": "サロ152",
+      "variantCode": "0",
+      "liveryName": "湘南色．青帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_1pt7k41184j1pl",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サロ153-0_湘南色．青帯.png",
+      "series": "153系",
+      "modelCode": "サロ153",
+      "variantCode": "0",
+      "liveryName": "湘南色．青帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_bh77m3183wcql",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サロ153-900_湘南色.png",
+      "series": "153系",
+      "modelCode": "サロ153",
+      "variantCode": "900",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_uadiv11iuq713",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ152-0_新快速色.png",
+      "series": "153系",
+      "modelCode": "モハ152",
+      "variantCode": "0",
+      "liveryName": "新快速色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_7mtwty4wqsw0",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ152-0_湘南色.png",
+      "series": "153系",
+      "modelCode": "モハ152",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_a9ssonz9813h",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ153-0_湘南色.png",
+      "series": "153系",
+      "modelCode": "モハ153",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_15c3rmk5lxij4",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ153-0_新快速色.png",
+      "series": "153系",
+      "modelCode": "モハ153",
+      "variantCode": "0",
+      "liveryName": "新快速色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ]
+    },
+    {
+      "id": "vp_phml01ir9q7k",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/クハ155-0_修学旅行色.png",
+      "series": "155系",
+      "modelCode": "クハ155",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
+      ]
+    },
+    {
+      "id": "vp_qpw4ni1m6jg1e",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/サハ155-0_修学旅行色.png",
+      "series": "155系",
+      "modelCode": "サハ155",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
+      ]
+    },
+    {
+      "id": "vp_1dedhdmozmsd0",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/クハ155-0_湘南色.png",
+      "series": "155系",
+      "modelCode": "クハ155",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
+      ]
+    },
+    {
+      "id": "vp_3fqdcwo5jy8q",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/サハ155-0_湘南色.png",
+      "series": "155系",
+      "modelCode": "サハ155",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
+      ]
+    },
+    {
+      "id": "vp_f0ktva1yeufto",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/モハ154-0_湘南色.png",
+      "series": "155系",
+      "modelCode": "モハ154",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
+      ]
+    },
+    {
+      "id": "vp_1lu3s0o213xig",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/モハ154-0_修学旅行色.png",
+      "series": "155系",
+      "modelCode": "モハ154",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
+      ]
+    },
+    {
+      "id": "vp_17rat951xqtwtl",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/モハ155-0_修学旅行色.png",
+      "series": "155系",
+      "modelCode": "モハ155",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
+      ]
+    },
+    {
+      "id": "vp_2dhfqvq6q6a1",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/155系/モハ155-0_湘南色.png",
+      "series": "155系",
+      "modelCode": "モハ155",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 155系"
+      ]
+    },
+    {
+      "id": "vp_cz64xpo1q9ln",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/クモハ157-0_国鉄色_L.png",
+      "series": "157系",
+      "modelCode": "クモハ157",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
+      ]
+    },
+    {
+      "id": "vp_d6gpuro4n04l",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/クモハ157-0_国鉄色_R.png",
+      "series": "157系",
+      "modelCode": "クモハ157",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
+      ]
+    },
+    {
+      "id": "vp_1utdrnt670grb",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/クロ157-0_御召色_L.png",
+      "series": "157系",
+      "modelCode": "クロ157",
+      "variantCode": "0",
+      "liveryName": "御召色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
+      ]
+    },
+    {
+      "id": "vp_1yukvqusqjvmi",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/サハ157-0_国鉄色.png",
+      "series": "157系",
+      "modelCode": "サハ157",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
+      ]
+    },
+    {
+      "id": "vp_1u8tf4n6olvu1",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/クロ157-0_御召色_R.png",
+      "series": "157系",
+      "modelCode": "クロ157",
+      "variantCode": "0",
+      "liveryName": "御召色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
+      ]
+    },
+    {
+      "id": "vp_1131di81x3jtc0",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/モハ156-0_国鉄色.png",
+      "series": "157系",
+      "modelCode": "モハ156",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
+      ]
+    },
+    {
+      "id": "vp_173wvv81vwamr0",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/157系/サロ157-0_国鉄色.png",
+      "series": "157系",
+      "modelCode": "サロ157",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 157系"
+      ]
+    },
+    {
+      "id": "vp_11fw0ah1b5jvq7",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/クハ159-0_修学旅行色_R.png",
+      "series": "159系",
+      "modelCode": "クハ159",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
+      ]
+    },
+    {
+      "id": "vp_11hvjzb1bd5pdt",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/クハ159-0_修学旅行色_L.png",
+      "series": "159系",
+      "modelCode": "クハ159",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
+      ]
+    },
+    {
+      "id": "vp_cuxel5uylpq9",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/モハ159-0_修学旅行色.png",
+      "series": "159系",
+      "modelCode": "モハ159",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
+      ]
+    },
+    {
+      "id": "vp_bxnimw5tk63k",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/モハ158-0_修学旅行色.png",
+      "series": "159系",
+      "modelCode": "モハ158",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
+      ]
+    },
+    {
+      "id": "vp_11a1vy1v7wvhu",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/159系/サハ159-0_修学旅行色.png",
+      "series": "159系",
+      "modelCode": "サハ159",
+      "variantCode": "0",
+      "liveryName": "修学旅行色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 159系"
+      ]
+    },
+    {
+      "id": "vp_1lklgi4jtgcmy",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/クハ161-0_国鉄色.png",
+      "series": "161系",
+      "modelCode": "クハ161",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
+      ]
+    },
+    {
+      "id": "vp_11f2r2lml61w",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/サシ161-0_国鉄色.png",
+      "series": "161系",
+      "modelCode": "サシ161",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
+      ]
+    },
+    {
+      "id": "vp_ndqa76pqk2n4",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/モロ160-0_国鉄色.png",
+      "series": "161系",
+      "modelCode": "モロ160",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
+      ]
+    },
+    {
+      "id": "vp_vwg1a9yv87iv",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/モハ161-0_国鉄色.png",
+      "series": "161系",
+      "modelCode": "モハ161",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
+      ]
+    },
+    {
+      "id": "vp_5e2plv1mhl7n1",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/モロ161-0_国鉄色.png",
+      "series": "161系",
+      "modelCode": "モロ161",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
+      ]
+    },
+    {
+      "id": "vp_1pvuohs1e7ud2y",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/161系/モハ160-0_国鉄色.png",
+      "series": "161系",
+      "modelCode": "モハ160",
+      "variantCode": "0",
+      "liveryName": "国鉄色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 161系"
+      ]
+    },
+    {
+      "id": "vp_1leluorp8l7f",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ164-0_湘南色.png",
+      "series": "165系",
+      "modelCode": "クハ164",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_vzun08vftwny",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165-0_新前橋モントレー.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "0",
+      "liveryName": "新前橋モントレー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_6mw8l92fguxt",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165-800_ムーンライト．茶.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1ybr4aj16ntacv",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165-200_上沼垂ムーンライト.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "200",
+      "liveryName": "上沼垂ムーンライト",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_6ksi6yh61v7q",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165-800_ムーンライト．緑.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_yiv6qifb1shy",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165-0_湘南色.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_7fjovj1sdulir",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165-800_ムーンライト．赤.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1sjhpxo1cm1uaw",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165_新快速色.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "",
+      "liveryName": "新快速色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_w3muzxuazkfx",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165-800_三鷹色.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "800",
+      "liveryName": "三鷹色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_11c23f7jdnn67",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クハ165-900_湘南色.png",
+      "series": "165系",
+      "modelCode": "クハ165",
+      "variantCode": "900",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_19jw722z41toi",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモハ165-0_新前橋モントレー.png",
+      "series": "165系",
+      "modelCode": "クモハ165",
+      "variantCode": "0",
+      "liveryName": "新前橋モントレー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_182cwo1wct3fm",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモハ165-0_湘南色.png",
+      "series": "165系",
+      "modelCode": "クモハ165",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_m2mj7e1tjej40",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモハ165-100_上沼垂ムーンライト.png",
+      "series": "165系",
+      "modelCode": "クモハ165",
+      "variantCode": "100",
+      "liveryName": "上沼垂ムーンライト",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1p0olso1f62zdm",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモハ165-800_ムーンライト．緑.png",
+      "series": "165系",
+      "modelCode": "クモハ165",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1wtw85bg74vx",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモハ165-800_ムーンライト．茶.png",
+      "series": "165系",
+      "modelCode": "クモハ165",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1wnso31p3mhtb",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモハ165-800_ムーンライト．赤.png",
+      "series": "165系",
+      "modelCode": "クモハ165",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_mxpobze3oikx",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモハ165-800_三鷹色.png",
+      "series": "165系",
+      "modelCode": "クモハ165",
+      "variantCode": "800",
+      "liveryName": "三鷹色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_v2hc9dgut4tn",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモハ165-900_湘南色.png",
+      "series": "165系",
+      "modelCode": "クモハ165",
+      "variantCode": "900",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_w04m4m1tzvq48",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クモロ165-0_なのはな.png",
+      "series": "165系",
+      "modelCode": "クモロ165",
+      "variantCode": "0",
+      "liveryName": "なのはな",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_3gozt0l53op8",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/クロ165-0_なのはな.png",
+      "series": "165系",
+      "modelCode": "クロ165",
+      "variantCode": "0",
+      "liveryName": "なのはな",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1s538cvgjsd73",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サハ164_湘南色_L.png",
+      "series": "165系",
+      "modelCode": "サハ164",
+      "variantCode": "",
+      "liveryName": "湘南色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1571jcw1s2xt04",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サハ165-0_湘南色.png",
+      "series": "165系",
+      "modelCode": "サハ165",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_vio535gsbdyd",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サハ165-100_湘南色.png",
+      "series": "165系",
+      "modelCode": "サハ165",
+      "variantCode": "100",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_qwlf50af019g",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サハシ165-0_湘南色_L.png",
+      "series": "165系",
+      "modelCode": "サハシ165",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_ijvbht1ly5rmr",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サハシ165-50_湘南色_L.png",
+      "series": "165系",
+      "modelCode": "サハシ165",
+      "variantCode": "50",
+      "liveryName": "湘南色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_pseap6lbqxv2",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ163_湘南色_L.png",
+      "series": "165系",
+      "modelCode": "サロ163",
+      "variantCode": "",
+      "liveryName": "湘南色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1yd30s81qiv9j2",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165-0_湘南色．帯あり_L.png",
+      "series": "165系",
+      "modelCode": "サロ165",
+      "variantCode": "0",
+      "liveryName": "湘南色．帯あり",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_pahnasl1snzk",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ163_湘南色_R.png",
+      "series": "165系",
+      "modelCode": "サロ163",
+      "variantCode": "",
+      "liveryName": "湘南色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1yf2kh21qqh36o",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165-0_湘南色．帯あり_R.png",
+      "series": "165系",
+      "modelCode": "サロ165",
+      "variantCode": "0",
+      "liveryName": "湘南色．帯あり",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1qkc2hf1wezsyl",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165-0_湘南色．帯なし_R.png",
+      "series": "165系",
+      "modelCode": "サロ165",
+      "variantCode": "0",
+      "liveryName": "湘南色．帯なし",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1loxrwnvfsz8x",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165_新快速色_L.png",
+      "series": "165系",
+      "modelCode": "サロ165",
+      "variantCode": "",
+      "liveryName": "新快速色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1qzl79p1wk9io3",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165-0_湘南色．帯なし_L.png",
+      "series": "165系",
+      "modelCode": "サロ165",
+      "variantCode": "0",
+      "liveryName": "湘南色．帯なし",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1lmy1p5vpr94f",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165_新快速色_R.png",
+      "series": "165系",
+      "modelCode": "サロ165",
+      "variantCode": "",
+      "liveryName": "新快速色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_s4ri2cnzd70m",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-0_新前橋モントレー.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "0",
+      "liveryName": "新前橋モントレー",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_nd58ra2swnz2",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-0_湘南色.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1h2qtub1r1fb2z",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-500_湘南色.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "500",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_a1434m137anvy",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-800_ムーンライト．緑.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．緑",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_j3biy915qcjk9",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-800_ムーンライト．茶.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1c8imar1djkyj",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-800_ムーンライト．赤.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "800",
+      "liveryName": "ムーンライト．赤",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_1dym43h20v7fx",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-800_上沼垂ムーンライト.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "800",
+      "liveryName": "上沼垂ムーンライト",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_u5zsm9ko8e39",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-800_三鷹色.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "800",
+      "liveryName": "三鷹色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_4m3esepz3xsm",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-800_湘南色.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "800",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_sibqfz1spk8c7",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164-900_湘南色.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "900",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_mrlwlcmcuohc",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ164_新快速色.png",
+      "series": "165系",
+      "modelCode": "モハ164",
+      "variantCode": "",
+      "liveryName": "新快速色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_13zie6v18h6qz7",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モハ165-0_湘南色.png",
+      "series": "165系",
+      "modelCode": "モハ165",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_iimpj41h0nwfs",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/モロ164-800_なのはな.png",
+      "series": "165系",
+      "modelCode": "モロ164",
+      "variantCode": "800",
+      "liveryName": "なのはな",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 165系"
+      ]
+    },
+    {
+      "id": "vp_yvk3op1unf4cx",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/クハ167_メルヘン色.png",
+      "series": "167系",
+      "modelCode": "クハ167",
+      "variantCode": "",
+      "liveryName": "メルヘン色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_1xsnz9m1rh0zzq",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/クハ167_湘南色_R.png",
+      "series": "167系",
+      "modelCode": "クハ167",
+      "variantCode": "",
+      "liveryName": "湘南色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_1xarbv81ry042w",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/クハ167_湘南色_L.png",
+      "series": "167系",
+      "modelCode": "クハ167",
+      "variantCode": "",
+      "liveryName": "湘南色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_j2bhne780d8m",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/クハ167_田町アコモ車_L.png",
+      "series": "167系",
+      "modelCode": "クハ167",
+      "variantCode": "",
+      "liveryName": "田町アコモ車",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_pn19t1ab7spl",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/モハ166_メルヘン色.png",
+      "series": "167系",
+      "modelCode": "モハ166",
+      "variantCode": "",
+      "liveryName": "メルヘン色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_j6yjyc77f7o8",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/クハ167_田町アコモ車_R.png",
+      "series": "167系",
+      "modelCode": "クハ167",
+      "variantCode": "",
+      "liveryName": "田町アコモ車",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_1713ip1d8ogrv",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/モハ166_田町アコモ車.png",
+      "series": "167系",
+      "modelCode": "モハ166",
+      "variantCode": "",
+      "liveryName": "田町アコモ車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_17kqf6s1g1bhpk",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/モハ167_メルヘン色.png",
+      "series": "167系",
+      "modelCode": "モハ167",
+      "variantCode": "",
+      "liveryName": "メルヘン色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_1y0nhvo15nyiu4",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/167系/モハ167_田町アコモ車.png",
+      "series": "167系",
+      "modelCode": "モハ167",
+      "variantCode": "",
+      "liveryName": "田町アコモ車",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 167系"
+      ]
+    },
+    {
+      "id": "vp_1nda4zg156929c",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/クハ169_かもしか_L.png",
+      "series": "169系",
+      "modelCode": "クハ169",
+      "variantCode": "",
+      "liveryName": "かもしか",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_1nkkpwi15g760e",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/クハ169_かもしか_R.png",
+      "series": "169系",
+      "modelCode": "クハ169",
+      "variantCode": "",
+      "liveryName": "かもしか",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_v747801ho2tnc",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/クハ169_旧信州色.png",
+      "series": "169系",
+      "modelCode": "クハ169",
+      "variantCode": "",
+      "liveryName": "旧信州色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_461wfy9ujpak",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/クモハ169_かもしか_L.png",
+      "series": "169系",
+      "modelCode": "クモハ169",
+      "variantCode": "",
+      "liveryName": "かもしか",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_4fzzz49i95ci",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/クモハ169_かもしか_R.png",
+      "series": "169系",
+      "modelCode": "クモハ169",
+      "variantCode": "",
+      "liveryName": "かもしか",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_1kym0z51fth01t",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/クハ169_長野色.png",
+      "series": "169系",
+      "modelCode": "クハ169",
+      "variantCode": "",
+      "liveryName": "長野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_1eite8iqrykto",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/クモハ169_旧信州色.png",
+      "series": "169系",
+      "modelCode": "クモハ169",
+      "variantCode": "",
+      "liveryName": "旧信州色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_1bebo8j9rcpz1",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/クモハ169_長野色.png",
+      "series": "169系",
+      "modelCode": "クモハ169",
+      "variantCode": "",
+      "liveryName": "長野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_igl94n16gu4bz",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/サハ165-0_かもしか_L.png",
+      "series": "169系",
+      "modelCode": "サハ165",
+      "variantCode": "0",
+      "liveryName": "かもしか",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_j15lnt166vugh",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/サハ165-0_かもしか_R.png",
+      "series": "169系",
+      "modelCode": "サハ165",
+      "variantCode": "0",
+      "liveryName": "かもしか",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_nqa7tmybl3co",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/サハ165-0_長野色.png",
+      "series": "169系",
+      "modelCode": "サハ165",
+      "variantCode": "0",
+      "liveryName": "長野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_13pop2cnwqcn0",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/サハシ169-0_湘南色_L.png",
+      "series": "169系",
+      "modelCode": "サハシ169",
+      "variantCode": "0",
+      "liveryName": "湘南色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_11buaau1gza55k",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/サロ169-0_湘南色．帯あり_R.png",
+      "series": "169系",
+      "modelCode": "サロ169",
+      "variantCode": "0",
+      "liveryName": "湘南色．帯あり",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_fhwsmo1kvhfuo",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/モハ168_かもしか_L.png",
+      "series": "169系",
+      "modelCode": "モハ168",
+      "variantCode": "",
+      "liveryName": "かもしか",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_119uqm01gzvapy",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/サロ169-0_湘南色．帯あり_L.png",
+      "series": "169系",
+      "modelCode": "サロ169",
+      "variantCode": "0",
+      "liveryName": "湘南色．帯あり",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_fuilbi1knvm72",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/モハ168_かもしか_R.png",
+      "series": "169系",
+      "modelCode": "モハ168",
+      "variantCode": "",
+      "liveryName": "かもしか",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_inavz01lw8g14",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/モハ168_旧信州色.png",
+      "series": "169系",
+      "modelCode": "モハ168",
+      "variantCode": "",
+      "liveryName": "旧信州色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_2fkpq516fuss1",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/169系/モハ168_長野色.png",
+      "series": "169系",
+      "modelCode": "モハ168",
+      "variantCode": "",
+      "liveryName": "長野色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 169系"
+      ]
+    },
+    {
+      "id": "vp_1yw5md6hqjdkc",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/371系/クモハ371-0.png",
+      "series": "371系",
+      "modelCode": "クモハ371",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 371系"
+      ]
+    },
+    {
+      "id": "vp_hqrg1njw9rl9",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/371系/クモハ371-100.png",
+      "series": "371系",
+      "modelCode": "クモハ371",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 371系"
+      ]
+    },
+    {
+      "id": "vp_1fwsl0gktrsda",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/371系/サロ371-0.png",
+      "series": "371系",
+      "modelCode": "サロ371",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 371系"
+      ]
+    },
+    {
+      "id": "vp_3hkm5q1alc4kg",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/371系/サロハ371-100.png",
+      "series": "371系",
+      "modelCode": "サロハ371",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 371系"
+      ]
+    },
+    {
+      "id": "vp_c5142d1utpg9z",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/371系/モハ370-100.png",
+      "series": "371系",
+      "modelCode": "モハ370",
+      "variantCode": "100",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 371系"
+      ]
+    },
+    {
+      "id": "vp_g3kr4kp9arja",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/371系/モハ370-0.png",
+      "series": "371系",
+      "modelCode": "モハ370",
+      "variantCode": "0",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 371系"
+      ]
+    },
+    {
+      "id": "vp_12mn7h311c2f8h",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/371系/モハ371-200.png",
+      "series": "371系",
+      "modelCode": "モハ371",
+      "variantCode": "200",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 371系"
+      ]
+    },
+    {
+      "id": "vp_4y92c77wjcmh",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/373系/クハ372_L.png",
+      "series": "373系",
+      "modelCode": "クハ372",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 373系"
+      ]
+    },
+    {
+      "id": "vp_5it8cp7exrfb",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/373系/クハ372_R.png",
+      "series": "373系",
+      "modelCode": "クハ372",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 373系"
+      ]
+    },
+    {
+      "id": "vp_1e2uagkkzi6wa",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/373系/クモハ373_L.png",
+      "series": "373系",
+      "modelCode": "クモハ373",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 373系"
+      ]
+    },
+    {
+      "id": "vp_98b1z31vkydaj",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/373系/サハ373.png",
+      "series": "373系",
+      "modelCode": "サハ373",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 373系"
+      ]
+    },
+    {
+      "id": "vp_1ekr4dmkkvcvo",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/373系/クモハ373_R.png",
+      "series": "373系",
+      "modelCode": "クモハ373",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 373系"
+      ]
+    },
+    {
+      "id": "vp_18nb1iwdltgke",
+      "sourcePath": "03_機関車/03_電気機関車/EF11/EF11_茶.png",
+      "series": "EF11",
+      "modelCode": "EF11",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / EF11"
+      ]
+    },
+    {
+      "id": "vp_1npeb6gyp935s",
+      "sourcePath": "03_機関車/03_電気機関車/EF12/EF12_茶.png",
+      "series": "EF12",
+      "modelCode": "EF12",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / EF12"
+      ]
+    },
+    {
+      "id": "vp_1bghkfs1jk0s42",
+      "sourcePath": "03_機関車/03_電気機関車/EF13/EF13_茶.png",
+      "series": "EF13",
+      "modelCode": "EF13",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / EF13"
+      ]
+    },
+    {
+      "id": "vp_18eaxco79rlog",
+      "sourcePath": "03_機関車/03_電気機関車/EF14/EF14_茶.png",
+      "series": "EF14",
+      "modelCode": "EF14",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / EF14"
+      ]
+    },
+    {
+      "id": "vp_yuj37cigwk6e",
+      "sourcePath": "03_機関車/03_電気機関車/EF15/EF15_茶.png",
+      "series": "EF15",
+      "modelCode": "EF15",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / EF15"
+      ]
+    },
+    {
+      "id": "vp_900yvs16x0mdk",
+      "sourcePath": "03_機関車/03_電気機関車/EF16/EF16_茶.png",
+      "series": "EF16",
+      "modelCode": "EF16",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / EF16"
+      ]
+    },
+    {
+      "id": "vp_3q2oby1jdu7ii",
+      "sourcePath": "03_機関車/03_電気機関車/EF30/EF30_銀.png",
+      "series": "EF30",
+      "modelCode": "EF30",
+      "variantCode": "",
+      "liveryName": "銀",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / EF30"
+      ]
+    },
+    {
+      "id": "vp_12lo9qw1h3jh14",
+      "sourcePath": "03_機関車/03_電気機関車/EF50/EF50_茶.png",
+      "series": "EF50",
+      "modelCode": "EF50",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 03_電気機関車 / EF50"
       ]
     }
   ]
