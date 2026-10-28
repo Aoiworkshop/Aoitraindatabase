@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-28T16:37:54.763Z",
+  "exportedAt": "2026-10-28T17:11:14.205Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -61874,6 +61874,210 @@
       "modelCode": "カヤ21",
       "variantCode": "",
       "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_1merk8bw6dge1",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/オハ14-700_ホリデーパル_L.png",
+      "series": "20系",
+      "modelCode": "オハ14",
+      "variantCode": "700",
+      "liveryName": "ホリデーパル",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_1lwuqb9w7jibr",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/オハ14-700_ホリデーパル_R.png",
+      "series": "20系",
+      "modelCode": "オハ14",
+      "variantCode": "700",
+      "liveryName": "ホリデーパル",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_7s3zct1tr3c7h",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/カヤ21_ホリデーパル_L.png",
+      "series": "20系",
+      "modelCode": "カヤ21",
+      "variantCode": "",
+      "liveryName": "ホリデーパル",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_7zeqsj1tess9f",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/カヤ21_ホリデーパル_R.png",
+      "series": "20系",
+      "modelCode": "カヤ21",
+      "variantCode": "",
+      "liveryName": "ホリデーパル",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_1l8qpa318yy3c7",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/ナハネ20_ホリデーパル_L.png",
+      "series": "20系",
+      "modelCode": "ナハネ20",
+      "variantCode": "",
+      "liveryName": "ホリデーパル",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_1lddy3p18xs17d",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/ナハネ20_ホリデーパル_R.png",
+      "series": "20系",
+      "modelCode": "ナハネ20",
+      "variantCode": "",
+      "liveryName": "ホリデーパル",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_1h6t9ccexdx4y",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/ナハネフ22_ホリデーパル_L.png",
+      "series": "20系",
+      "modelCode": "ナハネフ22",
+      "variantCode": "",
+      "liveryName": "ホリデーパル",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_a6eale1xl7xn8",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/ナハネフ23_L.png",
+      "series": "20系",
+      "modelCode": "ナハネフ23",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_1grk4k2es47fg",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/ナハネフ22_ホリデーパル_R.png",
+      "series": "20系",
+      "modelCode": "ナハネフ22",
+      "variantCode": "",
+      "liveryName": "ホリデーパル",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_9z3poc1xzurnu",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/ナハネフ23_R.png",
+      "series": "20系",
+      "modelCode": "ナハネフ23",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_v1xzjh1dgbwl9",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/ナハネフ23_ホリデーパル_L.png",
+      "series": "20系",
+      "modelCode": "ナハネフ23",
+      "variantCode": "",
+      "liveryName": "ホリデーパル",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_umour71dllg6b",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/ナハネフ23_ホリデーパル_R.png",
+      "series": "20系",
+      "modelCode": "ナハネフ23",
+      "variantCode": "",
+      "liveryName": "ホリデーパル",
       "side": "R",
       "company": "",
       "widthCm": 3.8,

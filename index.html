@@ -1124,7 +1124,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261021-ALIAS3";
+  const APP_BUILD = "20261028-STA1";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -3473,7 +3473,12 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
     const jobs = [];
     for(const v of (list || [])){
-      if(!v || !v.sourcePath) continue;
+      if(!v) continue;
+      if(!v.sourcePath){
+        // 以前這裡直接 continue,呼叫端無從得知「為什麼檔名沒變」
+        result.failed.push({ v, why: `「${vehicleLabel(v) || "名称未設定"}」は画像ファイルのパスが無いため、ファイル名を変更できません` });
+        continue;
+      }
       const parts = v.sourcePath.split("/");
       const curName = parts.pop();
       const want = expectedFileName(v);
@@ -3565,12 +3570,30 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const row = $("#s-rename-row");
     if(!row) return;
     const v = editingVehicleId ? vehiclesById[editingVehicleId] : null;
-    // 只有「本機版、修改既有紀錄、而且這筆有來源檔案」時才需要提示
-    if(!v || !v.sourcePath || !vehicleDirHandle){ row.style.display = "none"; return; }
+    // 線上版沒有檔案可以改,新增車輛時也還沒有檔案,這兩種才真的不需要提示
+    if(IS_WEB || !v){ row.style.display = "none"; return; }
     row.style.display = "";
-    const curName = v.sourcePath.split("/").pop();
-    const want = expectedFileName(formDraftVehicle(v));
     const el = $("#s-rename-preview");
+    const want = expectedFileName(formDraftVehicle(v));
+
+    // 以下兩種情況「改不了」。以前是把整列隱藏,畫面上一個字都沒有,
+    // 看起來跟「沒有檔名同步這個功能」一模一樣,所以改成明講。
+    if(!v.sourcePath){
+      el.innerHTML = "<span style=\"color:#b06000;\">このレコードには画像ファイルのパスがありません"
+        + "（以前に手動で追加した車両など）。データは保存できますが、ファイル名は同期できません。"
+        + "<br>画像を車両フォルダに入れて「データ同期」を実行すると、パスが付いて同期できるようになります。</span>";
+      return;
+    }
+    const curName = v.sourcePath.split("/").pop();
+    if(!vehicleDirHandle){
+      const willDiffer = want && want !== curName;
+      el.innerHTML = "画像ファイル名：" + esc(curName)
+        + "<br><span style=\"color:#b06000;\">車両フォルダが未連携のため、保存してもファイル名は変更されません"
+        + (willDiffer ? "（本来は「" + esc(want) + "」になります）" : "")
+        + "。<br>ブラウザーを開き直すとフォルダの許可が切れるため、"
+        + "「基本設定」からフォルダをもう一度選び直してください。</span>";
+      return;
+    }
     if(!want){
       el.textContent = "画像ファイル名：" + curName + "（形式が空欄のため、新しいファイル名を決められません）";
     }else if(want === curName){
@@ -4224,6 +4247,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           toast("ファイル名を変更できませんでした：" + r.failed.map(x => x.why).join("；") + "。データ自体は保存済みです。",
                 "err", 8000);
         }
+      }else if(!IS_WEB && v.sourcePath && expectedFileName(v) !== v.sourcePath.split("/").pop()){
+        // 資料夾沒連結時以前是整段靜靜跳過,檔名與資料就這樣脫鉤了
+        renameMsg = "（車両フォルダが未連携のため、ファイル名は変更していません）";
+        toast("データは保存しましたが、車両フォルダが未連携のためファイル名は変更できませんでした。\n"
+            + "「基本設定」からフォルダを選び直すと、次回の保存時に同期されます。", "warn", 7000);
       }
     }else{
       vehicles.push({
@@ -4716,7 +4744,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       `【${vehicleLabel(c.v)}】\n` + c.diffs.map(d => `　${d.label}：${fmt(d.from)} → ${fmt(d.to)}`).join("\n"));
     const more = changes.length > 10 ? `\n\n…ほか、全 ${changes.length} 両に差分があります` : "";
     const skip = notFound.length ? `\n\n（ほかに ${notFound.length} 件は対応する車両が見つからないためスキップします）` : "";
-    if(!confirm(`要套用以下修改嗎?\n\n${lines.join("\n\n")}${more}${skip}`)) return;
+    // 型式／番台／塗装／方向／幅はファイル名の構成要素なので、
+    // それを変える差分があるときは画像ファイル名も一緒に変わることを先に伝える
+    const NAME_FIELDS = ["modelCode", "variantCode", "liveryName", "side", "widthCm"];
+    const touchesName = changes.some(c => c.diffs.some(d => NAME_FIELDS.includes(d.k)));
+    const renameNote = (touchesName && vehicleDirHandle)
+      ? "\n\n※ 型式・番台・塗装・方向・幅の変更にあわせて、画像ファイル名も同期します。"
+      : (touchesName ? "\n\n※ 車両フォルダが未連携のため、画像ファイル名は変更されません（データのみ更新）。" : "");
+    if(!confirm(`要套用以下修改嗎?\n\n${lines.join("\n\n")}${more}${skip}${renameNote}`)) return;
 
     changes.forEach(({ v, diffs }) => diffs.forEach(d => {
       if(d.k === "productCodes"){
@@ -4728,10 +4763,48 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         v[d.k] = d.to;
       }
     }));
+
+    // 這條路徑以前只改資料就結束,所以會讓三邊脫鉤:
+    // 檔名還是舊的、編號還是從舊路徑算出來的,要等下次掃描才一次跳動。
+    // 現在跟單筆編輯走同一套流程。
+    let renameMsg = "";
+    if(vehicleDirHandle){
+      // 左右成對的車也要一起改,不然兩面的檔名會對不上而配對失效
+      const targets = [];
+      changes.forEach(({ v }) => {
+        if(!targets.includes(v)) targets.push(v);
+        const partner = sidePartnerOf[v.id];
+        if(partner && !targets.includes(partner)) targets.push(partner);
+      });
+      const r = await renameVehicleFiles(targets);
+      if(r.done.length) renameMsg = `\n・画像ファイル名を ${r.done.length} 件変更しました`;
+      if(r.failed.length){
+        renameMsg += `\n・${r.failed.length} 件はファイル名を変更できませんでした`;
+        toast("一部のファイル名を変更できませんでした：\n"
+            + r.failed.slice(0, 5).map(x => "・" + x.why).join("\n")
+            + (r.failed.length > 5 ? `\n…ほか ${r.failed.length - 5} 件` : "")
+            + "\nデータ自体は保存済みです。", "err", 9000);
+      }
+    }
+
+    // 檔名が動いた分だけIDも変わるので、編成の参照もあわせて直す
+    const { remap, changed: idFixed } = realignVehicleIds();
     reindexVehicles();
     await persistVehicles();
+    if(idFixed){
+      remapLiveCars(remap);
+      const fixed = await remapFormationRefs(remap);
+      if(fixed) await syncFormationsToFolder();
+      if(typeof refreshFormationResults === "function") refreshFormationResults();
+      renderFormation();
+      renameMsg += `\n・IDを揃えた ${idFixed} 件（編成 ${fixed} 件の参照も修正）`;
+    }
     renderLibrary();
-    toast(`${changes.length} 両の情報を更新しました。`);
+    if(renameMsg){
+      showReport(`${changes.length} 両の情報を更新しました`, renameMsg.split("\n").filter(Boolean));
+    }else{
+      toast(`${changes.length} 両の情報を更新しました。`);
+    }
   }
 
   // 用「標題 + 車輛排列(含翻轉、屬性、貨號)」當作編成的識別特徵,
@@ -5644,8 +5717,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         <div><label>愛称の開始車番</label><input data-k="fromPos" value="${esc(seg.fromPos || "")}" placeholder="任意"></div>
         <div><label>愛称の終了車番</label><input data-k="toPos" value="${esc(seg.toPos || "")}" placeholder="任意"></div>
       `;
-      block.appendChild(row);
-
+      // (這裡以前多呼叫了一次 block.appendChild(row),row 已經加過了,是多餘的)
       block.appendChild(posRow);
 
       block.querySelectorAll("input").forEach(inp => {
@@ -6823,24 +6895,30 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
       // 貼在分割線旁邊時留一點空隙,不要跟分割線黏在一起
       const DIV_PAD = 0.08 * scale;
-      // 出發側
-      if(fromCommon){
-        if(froms.length) drawLeftArrowText(leftEdge, froms.join("・"));
-      }else{
-        segList.forEach((seg, i) => {
-          if(!seg.from) return;
-          const x = segLo(i) + (i === 0 ? 0 : DIV_PAD);
-          drawLeftArrowText(x, withNick(seg, seg.from, "from"));
-        });
-      }
-      // 終點側
+      // 左右兩側畫哪一邊:
+      // 編成表的車頭畫在左邊、往右接車,所以列車是朝左行進。
+      // 因此「終着駅(要去哪)」畫在左邊、「始発駅(從哪來)」畫在右邊,
+      // 兩側的箭頭都朝外,讀起來就是「←終着駅 …… 始発駅→」。
+      // 輸入欄位的左右排列也是終着駅在左、始発駅在右,兩邊一致。
+      // (以前這裡是相反的:始発駅畫在左、終着駅畫在右,跟輸入欄位對不上)
+      // 左側 = 終着駅
       if(toCommon){
-        if(tos.length) drawTextRightArrow(rightEdge, tos.join("・"));
+        if(tos.length) drawLeftArrowText(leftEdge, tos.join("・"));
       }else{
         segList.forEach((seg, i) => {
           if(!seg.to) return;
+          const x = segLo(i) + (i === 0 ? 0 : DIV_PAD);
+          drawLeftArrowText(x, withNick(seg, seg.to, "to"));
+        });
+      }
+      // 右側 = 始発駅
+      if(fromCommon){
+        if(froms.length) drawTextRightArrow(rightEdge, froms.join("・"));
+      }else{
+        segList.forEach((seg, i) => {
+          if(!seg.from) return;
           const x = segHi(i) - (i === segList.length - 1 ? 0 : DIV_PAD);
-          drawTextRightArrow(x, withNick(seg, seg.to, "to"));
+          drawTextRightArrow(x, withNick(seg, seg.from, "from"));
         });
       }
       // 兩側都共通、但愛稱不同時,愛稱在各自區段置中顯示
