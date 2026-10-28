@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-23T18:24:53.330Z",
+  "exportedAt": "2026-10-28T16:37:54.763Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -61848,6 +61848,40 @@
       "defaultProductCode": "",
       "categories": [
         "03_機関車 / 03_電気機関車 / EF50"
+      ]
+    },
+    {
+      "id": "vp_1gi3cfmak8t1g",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/カヤ21_L.png",
+      "series": "20系",
+      "modelCode": "カヤ21",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
+      ]
+    },
+    {
+      "id": "vp_1gxcnqkahbjiy",
+      "sourcePath": "01_JR 国鉄/01_客車/20系/カヤ21_R.png",
+      "series": "20系",
+      "modelCode": "カヤ21",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 20系"
       ]
     }
   ]
