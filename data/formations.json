@@ -784,7 +784,7 @@
         "スハネフ14-500",
         "キハ182-0"
       ],
-      "updatedAt": "2026-10-13T12:48:35.631Z"
+      "updatedAt": "2026-10-28T17:15:38.215Z"
     },
     {
       "id": "f_1789719247525",
@@ -4446,42 +4446,86 @@
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": ""
+          "setGroupId": "A",
+          "vref": {
+            "m": "キハ183",
+            "v": "200",
+            "l": "とかち色",
+            "s": "L",
+            "e": "キハ183系",
+            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キハ183-200_とかち色_L.png"
+          }
         },
         {
           "vehicleId": "vp_14wmf0im9w5rw",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": ""
+          "setGroupId": "A",
+          "vref": {
+            "m": "キロハ182",
+            "l": "とかち色",
+            "e": "キハ183系",
+            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キロハ182_とかち色.png"
+          }
         },
         {
           "vehicleId": "vp_19w3g0a1n3l8p2",
           "flipped": true,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": ""
+          "setGroupId": "A",
+          "vref": {
+            "m": "スハネフ14",
+            "v": "500",
+            "e": "キハ183系",
+            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/スハネフ14-500.png"
+          }
         },
         {
           "vehicleId": "vp_5dvqsfpgsdw3",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": ""
+          "setGroupId": "A",
+          "vref": {
+            "m": "キハ182",
+            "v": "0",
+            "l": "とかち色",
+            "s": "R",
+            "e": "キハ183系",
+            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キハ182-0_とかち色_R.png"
+          }
         },
         {
           "vehicleId": "vp_5dvqsfpgsdw3",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": ""
+          "setGroupId": "A",
+          "vref": {
+            "m": "キハ182",
+            "v": "0",
+            "l": "とかち色",
+            "s": "R",
+            "e": "キハ183系",
+            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キハ182-0_とかち色_R.png"
+          }
         },
         {
           "vehicleId": "vp_7xyf7g1mckuve",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": ""
+          "setGroupId": "A",
+          "vref": {
+            "m": "キハ183",
+            "v": "200",
+            "l": "とかち色",
+            "s": "R",
+            "e": "キハ183系",
+            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キハ183-200_とかち色_R.png"
+          }
         }
       ],
       "reversed": false,
@@ -9029,5 +9073,5 @@
       "titleNote": ""
     }
   },
-  "savedAt": "2026-10-28T17:11:00.447Z"
+  "savedAt": "2026-10-28T17:15:38.233Z"
 }
