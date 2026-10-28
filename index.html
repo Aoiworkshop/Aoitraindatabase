@@ -41,14 +41,65 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   }
   *{box-sizing:border-box;}
   body{margin:0;font-family:"Noto Sans TC","Hiragino Sans","Yu Gothic","Segoe UI",sans-serif;background:var(--paper);color:var(--ink);
-    /* 介面本身不給選取:拖曳排序、連點切換時才不會整片反白干擾版面。
-       真正需要選字的地方(輸入欄位、備註、說明文字)在下面個別開回來。 */
-    -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+    /* 版面上的文字原則上可以複製(log、報告訊息、說明文字、欄位標籤、表格內容…)。
+       不給選取的只有「會拖曳或點選操作」的地方 —— 否則:
+         ・編成預覽拖曳換位置會刷出一片反白
+         ・編成氣泡 Shift 連選會變成延伸文字選取範圍
+         ・車輛卡片雙擊編輯會先把詞選起來
+       清單寫在下面的 :where(...) 規則裡。 */
+    -webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;
     -webkit-tap-highlight-color:transparent;}
+
+  /* 不可選取的操作面。用 :where() 包起來讓它的優先度為 0,
+     這樣下面「輸入欄位與 .selectable 一律可選」那條就一定贏得過它,
+     不必靠 !important。 */
+  :where(
+    h1, h2, h3, h4, .drawer-head b, .side-h,          /* 區塊小標題 */
+    .tabbar, .tabbar *,                                /* 分頁按鈕 */
+    button, .btn, label.btn, .yn-group, .yn-group *,   /* 按鈕類 */
+    #preview-wrap, #preview-wrap *,                    /* 編成預覽(拖曳換位置) */
+    #car-toolbar, #car-toolbar *,                      /* 車廂浮動工具列 */
+    .car-item, .car-item *,                            /* 車輛卡片(點選加入、雙擊編輯) */
+    .formation-card, .formation-card *,                /* 編成氣泡(Shift/Ctrl 連選) */
+    .cat-nav-row, .cat-nav-row *,                      /* 分類導覽(點選切換) */
+    .cat-picker-crumb, .cat-picker-options,
+    .cat-picker-crumb *, .cat-picker-options *,
+    #tools-tab, #tools-tab *                           /* 抽屜的索引標籤 */
+  ){
+    -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+
+  /* 圖片:不給選取,也不要被拖出半透明的幽靈影像 */
+  img{-webkit-user-select:none;-moz-user-select:none;user-select:none;
+    -webkit-user-drag:none;user-drag:none;}
+
+  /* 輸入欄位與明確標成可選的區域,一律可以選取(優先度高於上面的 :where) */
   input,textarea,select,[contenteditable="true"],.selectable,.selectable *{
     -webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;}
   /* 輸入游標該有的樣子不要被上面的規則連帶改掉 */
   input,textarea{cursor:auto;}
+  /* ---- 編成組成區塊上下的資訊列(就地顯示,刻意做薄) ---- */
+  .fp-title{font-size:12px;font-weight:700;color:var(--ink);line-height:1.3;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:2px;}
+  .fp-title.empty{color:var(--muted);font-weight:400;}
+  .fp-station{display:flex;align-items:baseline;gap:8px;font-size:11px;
+    color:var(--ink);line-height:1.3;margin-bottom:3px;}
+  .fp-station .mid{flex:1;text-align:center;color:var(--accent);font-size:10.5px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .fp-station .end{white-space:nowrap;}
+  .fp-station .ph{color:var(--muted);}
+  .fp-sets{display:flex;margin-top:2px;height:7px;}
+  .fp-sets .run{border-top:1.5px solid var(--ink);border-left:1.5px solid var(--ink);
+    border-right:1.5px solid var(--ink);height:7px;box-sizing:border-box;}
+  .fp-sets .run span{display:block;font-size:8px;color:var(--muted);text-align:center;
+    margin-top:-1px;line-height:1;}
+  .fp-codes{display:flex;font-size:9.5px;color:var(--muted);line-height:1.25;}
+  .fp-codes .cell{text-align:center;overflow:hidden;}
+  .fp-codes .attr{color:var(--accent);font-weight:700;}
+  body.hide-fp-info .fp-title,
+  body.hide-fp-info .fp-station,
+  body.hide-fp-info .fp-sets,
+  body.hide-fp-info .fp-codes{display:none;}
+
   .topbar{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:2px solid var(--ink);background:var(--paper);}
   .topbar .mark{width:10px;height:10px;background:var(--rail-red);border-radius:50%;}
   .topbar h1{font-size:16px;margin:0;letter-spacing:0.05em;font-weight:700;}
@@ -677,6 +728,11 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small secondary" id="btn-reverse-formation" type="button" title="編成の前後を入れ替えます。車両の順番・向き・区間がすべて左右逆になります（Ctrl+Shift+M）">⇄ 編成反転</button>
         <span id="reverse-hint" style="font-size:11px;color:var(--accent);display:none;">現在は反転表示</span>
         <button class="btn small danger" id="btn-remove-missing" type="button" style="display:none;">移除失效車廂</button>
+        <span style="flex:1"></span>
+        <label style="font-size:11px;color:var(--muted);display:flex;align-items:center;gap:4px;cursor:pointer;white-space:nowrap;"
+               title="タイトル・始発/終着駅・品番・セット線を編成の上下に表示します">
+          <input type="checkbox" id="chk-formation-info" checked style="margin:0;">情報を表示
+        </label>
       </div>
       <div id="formation-area"></div>
       <div id="car-toolbar"></div>
@@ -1124,7 +1180,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261028-STA1";
+  const APP_BUILD = "20261029-INF1";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -5598,7 +5654,29 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     // 完全沒有填任何標題資訊時,連開頭的「●」也不要輸出
     return body.trim() ? `●${body.trimStart()}` : "";
   }
-  function updateTitlePreview(){ $("#title-preview").textContent = buildTitleText(); }
+  function updateTitlePreview(){
+    $("#title-preview").textContent = buildTitleText();
+    renderFormationInfo();
+  }
+
+  // 起訖站摘要:跟輸出用的規則一致(整列反轉時出發與終點互換),
+  // 但只做「左邊顯示什麼、右邊顯示什麼」,不做輸出那種逐段定位。
+  // 用途是讓人一眼看出有沒有打錯,不是取代輸出。
+  function stationSummary(){
+    const raw = (state.segments || []).filter(s =>
+      (s.nickname || "").trim() || (s.from || "").trim() || (s.to || "").trim());
+    const segs = (state.reversed ? raw.slice().reverse() : raw).map(s => ({
+      nickname: (s.nickname || "").trim(),
+      from: state.reversed ? (s.to || "").trim() : (s.from || "").trim(),
+      to:   state.reversed ? (s.from || "").trim() : (s.to || "").trim()
+    }));
+    // 左邊是終着駅、右邊是始発駅(車頭在左,列車朝左行進)
+    return {
+      left: uniq(segs.map(s => s.to).filter(Boolean)),
+      right: uniq(segs.map(s => s.from).filter(Boolean)),
+      nicks: uniq(segs.map(s => s.nickname).filter(Boolean))
+    };
+  }
 
   // ---------- 和曆 → 西元 轉換 ----------
   // 每個年號的元年起始日(年、月、日)與結束日,用來驗證輸入的日期是否落在該年號範圍內
@@ -6007,6 +6085,115 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   });
   window.addEventListener("scroll", () => { if(toolbarCar >= 0) hideCarToolbar(); }, true);
 
+  // 「情報を表示」的開關。關掉就只剩車輛那一排,版面跟以前一樣。
+  const FP_INFO_KEY = "settings:showFormationInfo";
+  async function loadFormationInfoPref(){
+    let on = true;
+    try{
+      const r = await storage.get(FP_INFO_KEY, false);
+      if(r && r.value === "0") on = false;
+    }catch(e){ /* 讀不到就用預設的開啟 */ }
+    const cb = $("#chk-formation-info");
+    if(cb) cb.checked = on;
+    document.body.classList.toggle("hide-fp-info", !on);
+  }
+  (function bindFormationInfoToggle(){
+    const cb = $("#chk-formation-info");
+    if(!cb) return;
+    cb.addEventListener("change", async () => {
+      document.body.classList.toggle("hide-fp-info", !cb.checked);
+      try{ await storage.set(FP_INFO_KEY, cb.checked ? "1" : "0", false); }catch(e){}
+    });
+  })();
+
+  // 編成組成區塊的上下資訊列:標題、起訖站、套組標註線、分類＋品番。
+  // 刻意做得很薄,而且可以用「情報を表示」關掉 —— 這一區跟車輛預覽共用版面,
+  // 不是另外開一塊大圖,所以不會把畫面吃光。
+  function renderFormationInfo(){
+    const wrap = document.getElementById("preview-wrap");
+    if(!wrap) return;
+    wrap.querySelectorAll(".fp-title,.fp-station,.fp-sets,.fp-codes").forEach(e => e.remove());
+    const row = wrap.querySelector(":scope > div");      // 車輛那一排
+    if(!row) return;
+    const slots = [...row.querySelectorAll(".car-slot")];
+    if(!slots.length) return;
+    const GAP = 6;
+    const widths = slots.map(el => parseFloat(el.style.width) || el.offsetWidth || 76);
+    const totalW = widths.reduce((a, b) => a + b, 0) + GAP * (widths.length - 1);
+    const px = n => n + "px";
+
+    // ---- 標題 ----
+    const title = document.createElement("div");
+    title.className = "fp-title";
+    const t = buildTitleText();
+    title.textContent = t || "（タイトル未入力）";
+    if(!t) title.classList.add("empty");
+    title.style.maxWidth = px(Math.max(totalW, 200));
+    title.title = t;
+
+    // ---- 起訖站 ----
+    const sum = stationSummary();
+    const st = document.createElement("div");
+    st.className = "fp-station";
+    st.style.width = px(totalW);
+    const mk = (cls, html) => { const d = document.createElement("div"); d.className = cls; d.innerHTML = html; return d; };
+    st.appendChild(mk("end", sum.left.length
+      ? `←&thinsp;${esc(sum.left.join("・"))}`
+      : `<span class="ph">←&thinsp;終着駅</span>`));
+    st.appendChild(mk("mid", sum.nicks.length >= 2 ? esc(sum.nicks.map(n => `「${n}」`).join(" ")) : ""));
+    st.appendChild(mk("end", sum.right.length
+      ? `${esc(sum.right.join("・"))}&thinsp;→`
+      : `<span class="ph">始発駅&thinsp;→</span>`));
+
+    wrap.insertBefore(st, row);
+    wrap.insertBefore(title, st);
+
+    // ---- 套組標註線:連續同一個セット記号的車廂連成一條 ----
+    const entries = displayCars().map(dc => dc.entry);
+    const sets = document.createElement("div");
+    sets.className = "fp-sets";
+    sets.style.width = px(totalW);
+    let i = 0, anySet = false;
+    while(i < entries.length){
+      const g = (entries[i] && entries[i].setGroupId || "").trim();
+      let j = i;
+      while(j + 1 < entries.length &&
+            ((entries[j + 1].setGroupId || "").trim() === g)) j++;
+      const w = widths.slice(i, j + 1).reduce((a, b) => a + b, 0) + GAP * (j - i);
+      const cell = document.createElement("div");
+      cell.style.width = px(w);
+      if(i > 0) cell.style.marginLeft = px(GAP);
+      if(g){
+        cell.className = "run";
+        cell.innerHTML = `<span>${esc(g)}</span>`;
+        anySet = true;
+      }
+      sets.appendChild(cell);
+      i = j + 1;
+    }
+
+    // ---- 分類＋品番 ----
+    const codes = document.createElement("div");
+    codes.className = "fp-codes";
+    codes.style.width = px(totalW);
+    let anyCode = false;
+    entries.forEach((e, k) => {
+      const cell = document.createElement("div");
+      cell.className = "cell";
+      cell.style.width = px(widths[k]);
+      if(k > 0) cell.style.marginLeft = px(GAP);
+      const attr = (e.attribute || "").trim();
+      const code = (e.productCode || "").trim();
+      if(attr || code) anyCode = true;
+      cell.innerHTML = (attr ? `<span class="attr">${esc(attr)}</span><br>` : "") + esc(code);
+      cell.title = [attr, code].filter(Boolean).join(" / ");
+      codes.appendChild(cell);
+    });
+
+    if(anySet) wrap.appendChild(sets);
+    if(anyCode) wrap.appendChild(codes);
+  }
+
   function renderFormation(){
     hideCarToolbar();
     areaEl.innerHTML = "";
@@ -6186,6 +6373,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     });
     wrap.appendChild(row);
     areaEl.appendChild(wrap);
+    renderFormationInfo();
     renderCargoTable();
     renderContainerEditor();   // 編成有變動時,貨櫃面板跟著更新
     restorePinnedToolbar();
@@ -6278,7 +6466,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       const sel = document.createElement("select");
       sel.innerHTML = `<option value="">（無）</option>` + ATTR_KEYS.map(k => `<option value="${k}">${k}</option>`).join("");
       sel.value = entry.attribute || "";
-      sel.addEventListener("change", () => { entry.attribute = sel.value; });
+      sel.addEventListener("change", () => { entry.attribute = sel.value; renderFormationInfo(); });
       tdAttr.appendChild(sel);
       tr.appendChild(tdAttr);
 
@@ -6295,7 +6483,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       codeInput.autocomplete = "off";
       const known = productCodesOf(v);
       // 只更新這個編成用的值;要存進車輛的預設資料,請按下方的「記錄產品資訊」
-      codeInput.addEventListener("input", () => { entry.productCode = codeInput.value; });
+      codeInput.addEventListener("input", () => { entry.productCode = codeInput.value; renderFormationInfo(); });
       codeWrap.appendChild(codeInput);
 
       if(known.length){
@@ -6311,6 +6499,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           showCodePicker(pick, known, entry.productCode || "", async (chosen) => {
             entry.productCode = chosen;
             codeInput.value = chosen;
+            renderFormationInfo();
             if(v && rememberProductCode(v.id, chosen)) await persistVehicles();
           });
         });
@@ -6324,7 +6513,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       groupInput.className = "group-input";
       groupInput.value = entry.setGroupId || "";
       groupInput.placeholder = "例：A";
-      groupInput.addEventListener("input", () => { entry.setGroupId = groupInput.value; });
+      groupInput.addEventListener("input", () => { entry.setGroupId = groupInput.value; renderFormationInfo(); });
       tdGroup.appendChild(groupInput);
       tr.appendChild(tdGroup);
 
@@ -7682,6 +7871,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     setLoad(70, "画面を整えています…");
     await step("種別リストの読み込み", loadTrainTypes);
     await step("並び順設定の読み込み", loadSortMode);
+    await step("編成情報表示の設定", loadFormationInfoPref);
     await step("分類導覽", () => renderCategoryNav());
     await step("属性メニュー", () => {
       $("#s-attr").innerHTML = `<option value="">（無）</option>` + ATTR_KEYS.map(k => `<option value="${k}">${k}</option>`).join("");

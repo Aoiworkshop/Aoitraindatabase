@@ -42,7 +42,7 @@
         "モハ103-1000",
         "サハ103-1000"
       ],
-      "updatedAt": "2026-10-13T12:44:55.048Z"
+      "updatedAt": "2026-10-28T17:48:14.151Z"
     },
     {
       "id": "f_1789525314979",
@@ -2293,7 +2293,7 @@
         ""
       ],
       "titleNote": "",
-      "visibility": "private",
+      "visibility": "public",
       "carModelsUsed": [
         "コキフ10000",
         "コキ10000"
@@ -2630,70 +2630,138 @@
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1743E",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/クハ103_常磐快速.png"
+          }
         },
         {
           "vehicleId": "vp_19sq9lh1j11fv1",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ103",
+            "v": "1000",
+            "l": "営団千代田線",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103-1000_営団千代田線.png"
+          }
         },
         {
           "vehicleId": "vp_t5if61un37g6",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "サハ103",
+            "v": "1000",
+            "l": "営団千代田線",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103-1000_営団千代田線.png"
+          }
         },
         {
           "vehicleId": "vp_19sq9lh1j11fv1",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ103",
+            "v": "1000",
+            "l": "営団千代田線",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103-1000_営団千代田線.png"
+          }
         },
         {
           "vehicleId": "vp_t5if61un37g6",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "サハ103",
+            "v": "1000",
+            "l": "営団千代田線",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103-1000_営団千代田線.png"
+          }
         },
         {
           "vehicleId": "vp_19sq9lh1j11fv1",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "モハ103",
+            "v": "1000",
+            "l": "営団千代田線",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103-1000_営団千代田線.png"
+          }
         },
         {
           "vehicleId": "vp_t5if61un37g6",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "サハ103",
+            "v": "1000",
+            "l": "営団千代田線",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103-1000_営団千代田線.png"
+          }
         },
         {
           "vehicleId": "vp_19sq9lh1j11fv1",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "モハ103",
+            "v": "1000",
+            "l": "営団千代田線",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103-1000_営団千代田線.png"
+          }
         },
         {
           "vehicleId": "vp_t5if61un37g6",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "サハ103",
+            "v": "1000",
+            "l": "営団千代田線",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103-1000_営団千代田線.png"
+          }
         },
         {
           "vehicleId": "vp_1k7848nr199m3",
           "flipped": true,
           "attribute": "基Set",
           "productCode": "10-1743E",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/クハ103_常磐快速.png"
+          }
         }
       ],
       "reversed": false,
@@ -8405,7 +8473,7 @@
       ],
       "reversed": false,
       "titleNote": "",
-      "visibility": "private"
+      "visibility": "public"
     },
     "f_1790989426993": {
       "id": "f_1790989426993",
@@ -9073,5 +9141,5 @@
       "titleNote": ""
     }
   },
-  "savedAt": "2026-10-28T17:15:38.233Z"
+  "savedAt": "2026-10-28T17:56:16.585Z"
 }
