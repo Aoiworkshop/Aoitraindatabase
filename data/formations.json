@@ -110,15 +110,15 @@
       "notes": [
         ""
       ],
+      "titleNote": "",
+      "visibility": "private",
       "carModelsUsed": [
         "クモハ103",
-        "モハ102",
+        "サハ103",
         "クハ103",
-        "モハ103",
-        "サハ103"
+        "モハ103"
       ],
-      "updatedAt": "2026-09-16T02:23:15.905Z",
-      "visibility": "private"
+      "updatedAt": "2026-10-29T07:34:27.373Z"
     },
     {
       "id": "f_1789525505513",
@@ -2587,6 +2587,238 @@
         "スハネフ14"
       ],
       "updatedAt": "2026-10-13T12:43:32.967Z"
+    },
+    {
+      "id": "f_1793256068560",
+      "name": "●特急「草津．あかぎ」(2012年～2015年)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2012年～2015年",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "草津．あかぎ",
+          "from": "上野",
+          "fromPos": "",
+          "to": "万座鹿沢口．前橋",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "visibility": "private",
+      "carModelsUsed": [
+        "クハ185-200",
+        "サロ185-200",
+        "モハ184-200",
+        "モハ185-200"
+      ],
+      "updatedAt": "2026-10-29T06:41:08.562Z"
+    },
+    {
+      "id": "f_1793260434982",
+      "name": "●特急「踊り子」(1981～1999頃)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1981～1999頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "踊り子",
+          "from": "東京",
+          "fromPos": "1",
+          "to": "伊豆急下田",
+          "toPos": "10"
+        },
+        {
+          "nickname": "踊り子",
+          "from": "東京",
+          "fromPos": "11",
+          "to": "修善寺",
+          "toPos": "15"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "visibility": "public",
+      "carModelsUsed": [
+        "クハ185-0",
+        "モハ184-0",
+        "モハ185-0",
+        "サロ185-0",
+        "クハ185-100",
+        "サハ185-0"
+      ],
+      "updatedAt": "2026-10-29T07:56:36.433Z"
+    },
+    {
+      "id": "f_1793260724386",
+      "name": "●湘南ライナー／おはようライナー高尾／ホームライナー高尾(1996年頃)",
+      "routeName": "湘南ライナー／おはようライナー高尾／ホームライナー高尾",
+      "trainType": "",
+      "dateStr": "1996年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "東京．新宿",
+          "fromPos": "1",
+          "to": "小田原．高尾",
+          "toPos": "10"
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "visibility": "private",
+      "carModelsUsed": [
+        "クハ185-0",
+        "モハ184-0",
+        "モハ185-0",
+        "サロ185-0",
+        "クハ185-100"
+      ],
+      "updatedAt": "2026-10-29T08:03:32.071Z"
+    },
+    {
+      "id": "f_1793260837416",
+      "name": "●急行「伊豆」(1978年10月～1981年9月)",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1978年10月～1981年9月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "伊豆",
+          "from": "東京",
+          "fromPos": "1",
+          "to": "伊東．伊豆急下田",
+          "toPos": "10"
+        },
+        {
+          "nickname": "伊豆",
+          "from": "東京",
+          "fromPos": "11",
+          "to": "修善寺",
+          "toPos": "15"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "visibility": "private",
+      "carModelsUsed": [
+        "クハ153-0",
+        "モハ152-0",
+        "モハ153-0",
+        "サロ165-0",
+        "サハ153-0"
+      ],
+      "updatedAt": "2026-10-29T08:07:49.117Z"
+    },
+    {
+      "id": "f_1793261415237",
+      "name": "●特急「はまかいじ」(2017年頃)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2017年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "はまかいじ",
+          "from": "松本",
+          "fromPos": "",
+          "to": "横浜",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "visibility": "private",
+      "carModelsUsed": [
+        "クハ185-200",
+        "モハ184-200",
+        "モハ185-200",
+        "クハ185-300"
+      ],
+      "updatedAt": "2026-10-29T08:10:15.240Z"
+    },
+    {
+      "id": "f_1793261981006",
+      "name": "●快速「ムーンライトながら」(2017年頃)",
+      "routeName": "",
+      "trainType": "快速",
+      "dateStr": "2017年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "ムーンライトながら",
+          "from": "松本",
+          "fromPos": "",
+          "to": "横浜",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "",
+      "visibility": "private",
+      "carModelsUsed": [
+        "クハ185-200",
+        "モハ184-200",
+        "モハ185-200",
+        "クハ185-300"
+      ],
+      "updatedAt": "2026-10-29T08:19:41.008Z"
     }
   ],
   "formationsData": {
@@ -2836,73 +3068,135 @@
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1743E",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "クモハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/クモハ103_常磐快速.png"
+          }
         },
         {
           "vehicleId": "vp_1o3dcj11dlv609",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1743E",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "サハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103_常磐快速.png"
+          }
         },
         {
           "vehicleId": "vp_1k7848nr199m3",
           "flipped": true,
           "attribute": "基Set",
           "productCode": "10-1743E",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/クハ103_常磐快速.png"
+          }
         },
         {
           "vehicleId": "vp_hwcl9f1rphzz",
           "flipped": false,
-          "attribute": "Set",
+          "attribute": "増SetB",
           "productCode": "10-1743G",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ103",
+            "l": "中央快速色",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103_中央快速色.png"
+          }
         },
         {
           "vehicleId": "vp_1kzrpbo94bj7s",
           "flipped": false,
-          "attribute": "Set",
+          "attribute": "増SetB",
           "productCode": "10-1743G",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "サハ103",
+            "l": "中央快速色",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103_中央快速色.png"
+          }
         },
         {
           "vehicleId": "vp_1o3dcj11dlv609",
           "flipped": false,
           "attribute": "単",
           "productCode": "10-1744E",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "サハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103_常磐快速.png"
+          }
         },
         {
           "vehicleId": "vp_1o3dcj11dlv609",
           "flipped": false,
           "attribute": "単",
           "productCode": "10-1744E",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "サハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103_常磐快速.png"
+          }
         },
         {
           "vehicleId": "vp_jbxe8q1eeqifk",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1743E",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "モハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103_常磐快速.png"
+          }
         },
         {
           "vehicleId": "vp_1o3dcj11dlv609",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1743E",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "サハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103_常磐快速.png"
+          }
         },
         {
           "vehicleId": "vp_1k7848nr199m3",
           "flipped": true,
           "attribute": "増Set",
           "productCode": "10-1743E",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "クハ103",
+            "l": "常磐快速",
+            "e": "103系",
+            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/クハ103_常磐快速.png"
+          }
         }
       ],
-      "visibility": "private"
+      "visibility": "private",
+      "reversed": false,
+      "titleNote": ""
     },
     "f_1789525505513": {
       "id": "f_1789525505513",
@@ -9027,7 +9321,1103 @@
       "reversed": false,
       "visibility": "private",
       "titleNote": ""
+    },
+    "f_1793256068560": {
+      "id": "f_1793256068560",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2012年～2015年",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "草津．あかぎ",
+          "from": "上野",
+          "fromPos": "",
+          "to": "万座鹿沢口．前橋",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_btnloh1jjfwr3",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98691",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "200",
+            "l": "国鉄特急色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-200_国鉄特急色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_5wbqq2xfp436",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98691",
+          "setGroupId": "A",
+          "vref": {
+            "m": "サロ185",
+            "v": "200",
+            "l": "国鉄特急色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/サロ185-200_国鉄特急色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_8l38fy1smegli",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98691",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ184",
+            "v": "200",
+            "l": "国鉄特急色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-200_国鉄特急色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_w2v39b1klvh2v",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98691",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ185",
+            "v": "200",
+            "l": "国鉄特急色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-200_国鉄特急色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_8l38fy1smegli",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98691",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ184",
+            "v": "200",
+            "l": "国鉄特急色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-200_国鉄特急色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_w2v39b1klvh2v",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98691",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ185",
+            "v": "200",
+            "l": "国鉄特急色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-200_国鉄特急色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_bjpi5b1j9ht01",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98691",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "200",
+            "l": "国鉄特急色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-200_国鉄特急色_L.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "",
+      "visibility": "private"
+    },
+    "f_1793260434982": {
+      "id": "f_1793260434982",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1981～1999頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "踊り子",
+          "from": "東京",
+          "fromPos": "1",
+          "to": "伊豆急下田",
+          "toPos": "10"
+        },
+        {
+          "nickname": "踊り子",
+          "from": "東京",
+          "fromPos": "11",
+          "to": "修善寺",
+          "toPos": "15"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_i56tp2lk73ua",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-0_踊り子色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_9xjbft1bymt63",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ184",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1lwbafclv4c1s",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1w8jt0d1x4ukqf",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "サロ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/サロ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1w8jt0d1x4ukqf",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "サロ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/サロ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_9xjbft1bymt63",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ184",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1lwbafclv4c1s",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_9xjbft1bymt63",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ184",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1lwbafclv4c1s",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1gl0rmx109skf3",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "100",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_踊り子色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i56tp2lk73ua",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97242",
+          "setGroupId": "C",
+          "vref": {
+            "m": "クハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-0_踊り子色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_et82bj1o3jcxh",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97242",
+          "setGroupId": "C",
+          "vref": {
+            "m": "サハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/サハ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_9xjbft1bymt63",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97242",
+          "setGroupId": "C",
+          "vref": {
+            "m": "モハ184",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1lwbafclv4c1s",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97242",
+          "setGroupId": "C",
+          "vref": {
+            "m": "モハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1gl0rmx109skf3",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97242",
+          "setGroupId": "C",
+          "vref": {
+            "m": "クハ185",
+            "v": "100",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_踊り子色_L.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "",
+      "visibility": "public"
+    },
+    "f_1793260724386": {
+      "id": "f_1793260724386",
+      "routeName": "湘南ライナー／おはようライナー高尾／ホームライナー高尾",
+      "trainType": "",
+      "dateStr": "1996年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "",
+          "from": "東京．新宿",
+          "fromPos": "1",
+          "to": "小田原．高尾",
+          "toPos": "10"
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_i56tp2lk73ua",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-0_踊り子色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_9xjbft1bymt63",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ184",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1lwbafclv4c1s",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1w8jt0d1x4ukqf",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "サロ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/サロ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1w8jt0d1x4ukqf",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "サロ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/サロ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_9xjbft1bymt63",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ184",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1lwbafclv4c1s",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_9xjbft1bymt63",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ184",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1lwbafclv4c1s",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97243",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ185",
+            "v": "0",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-0_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1gl0rmx109skf3",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97241",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "100",
+            "l": "踊り子色",
+            "s": "R",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_踊り子色_R.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "",
+      "visibility": "private"
+    },
+    "f_1793260837416": {
+      "id": "f_1793260837416",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1978年10月～1981年9月",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "伊豆",
+          "from": "東京",
+          "fromPos": "1",
+          "to": "伊東．伊豆急下田",
+          "toPos": "10"
+        },
+        {
+          "nickname": "伊豆",
+          "from": "東京",
+          "fromPos": "11",
+          "to": "修善寺",
+          "toPos": "15"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_ac4b221d5qg8w",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97612",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/クハ153-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_7mtwty4wqsw0",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97612",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ152",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ152-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_a9ssonz9813h",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97612",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ153-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1qkc2hf1wezsyl",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97612",
+          "setGroupId": "A",
+          "vref": {
+            "m": "サロ165",
+            "v": "0",
+            "l": "湘南色．帯なし",
+            "s": "L",
+            "e": "165系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165-0_湘南色．帯なし_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1qkc2hf1wezsyl",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97614",
+          "setGroupId": "B",
+          "vref": {
+            "m": "サロ165",
+            "v": "0",
+            "l": "湘南色．帯なし",
+            "s": "L",
+            "e": "165系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/165系/サロ165-0_湘南色．帯なし_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_7mtwty4wqsw0",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97612",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ152",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ152-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_a9ssonz9813h",
+          "flipped": false,
+          "attribute": "基SetA",
+          "productCode": "97612",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ153-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_7mtwty4wqsw0",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97614",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ152",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ152-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_a9ssonz9813h",
+          "flipped": false,
+          "attribute": "増Set",
+          "productCode": "97614",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ153-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_ac4b221d5qg8w",
+          "flipped": true,
+          "attribute": "基SetA",
+          "productCode": "97612",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/クハ153-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_ac4b221d5qg8w",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97613",
+          "setGroupId": "C",
+          "vref": {
+            "m": "クハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/クハ153-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_a9ssonz9813h",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97613",
+          "setGroupId": "C",
+          "vref": {
+            "m": "モハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ153-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_7mtwty4wqsw0",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97613",
+          "setGroupId": "C",
+          "vref": {
+            "m": "モハ152",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/モハ152-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_5sgk4g40mmyu",
+          "flipped": false,
+          "attribute": "基SetB",
+          "productCode": "97613",
+          "setGroupId": "C",
+          "vref": {
+            "m": "サハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/サハ153-0_湘南色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_ac4b221d5qg8w",
+          "flipped": true,
+          "attribute": "基SetB",
+          "productCode": "97613",
+          "setGroupId": "C",
+          "vref": {
+            "m": "クハ153",
+            "v": "0",
+            "l": "湘南色",
+            "e": "153系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/153系/クハ153-0_湘南色.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "",
+      "visibility": "private"
+    },
+    "f_1793261415237": {
+      "id": "f_1793261415237",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "2017年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "はまかいじ",
+          "from": "松本",
+          "fromPos": "",
+          "to": "横浜",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_1goy0pg5ejfd0",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "200",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-200_踊り子色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_10ucc4r1sfs3c1",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ184",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i2n8p61n1bg3q",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ185",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_10ucc4r1sfs3c1",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ184",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i2n8p61n1bg3q",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ185",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_wm25uz9dpked",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "300",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_踊り子色_L.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "",
+      "visibility": "private"
+    },
+    "f_1793261981006": {
+      "id": "f_1793261981006",
+      "routeName": "",
+      "trainType": "快速",
+      "dateStr": "2017年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "ムーンライトながら",
+          "from": "松本",
+          "fromPos": "",
+          "to": "横浜",
+          "toPos": ""
+        },
+        {
+          "nickname": "",
+          "from": "",
+          "fromPos": "",
+          "to": "",
+          "toPos": ""
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_1goy0pg5ejfd0",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "200",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-200_踊り子色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_10ucc4r1sfs3c1",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ184",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i2n8p61n1bg3q",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ185",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_10ucc4r1sfs3c1",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ184",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i2n8p61n1bg3q",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "モハ185",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_wm25uz9dpked",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98880",
+          "setGroupId": "A",
+          "vref": {
+            "m": "クハ185",
+            "v": "300",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_踊り子色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1goy0pg5ejfd0",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98881",
+          "setGroupId": "B",
+          "vref": {
+            "m": "クハ185",
+            "v": "200",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-200_踊り子色_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_10ucc4r1sfs3c1",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98881",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ184",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i2n8p61n1bg3q",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98881",
+          "setGroupId": "B",
+          "vref": {
+            "m": "モハ185",
+            "v": "200",
+            "l": "踊り子色",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-200_踊り子色.png"
+          }
+        },
+        {
+          "vehicleId": "vp_wm25uz9dpked",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98881",
+          "setGroupId": "B",
+          "vref": {
+            "m": "クハ185",
+            "v": "300",
+            "l": "踊り子色",
+            "s": "L",
+            "e": "185系",
+            "p": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_踊り子色_L.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "",
+      "visibility": "private"
     }
   },
-  "savedAt": "2026-10-29T06:35:50.717Z"
+  "savedAt": "2026-10-29T08:24:29.106Z"
 }

@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-29T06:36:02.994Z",
+  "exportedAt": "2026-10-29T08:00:39.990Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -13528,13 +13528,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98691",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
       ],
       "containerFt": "",
       "isFlatcar": false,
-      "productCodes": []
+      "productCodes": [
+        "98691"
+      ]
     },
     {
       "id": "vp_bjpi5b1j9ht01",
@@ -13548,13 +13550,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98691",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
       ],
       "containerFt": "",
       "isFlatcar": false,
-      "productCodes": []
+      "productCodes": [
+        "98691"
+      ]
     },
     {
       "id": "vp_fq9i335j0jl1",
@@ -13681,16 +13685,22 @@
       "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-0_踊り子色_L.png",
       "series": "185系",
       "modelCode": "クハ185",
-      "variantCode": "",
+      "variantCode": "0",
       "liveryName": "踊り子色",
       "side": "L",
       "company": "",
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97241",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": [
+        "97241",
+        "97242"
       ]
     },
     {
@@ -13698,7 +13708,7 @@
       "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-0_踊り子色_R.png",
       "series": "185系",
       "modelCode": "クハ185",
-      "variantCode": "",
+      "variantCode": "0",
       "liveryName": "踊り子色",
       "side": "R",
       "company": "",
@@ -13708,7 +13718,10 @@
       "defaultProductCode": "",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": []
     },
     {
       "id": "vp_5wbqq2xfp436",
@@ -13722,13 +13735,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98691",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
       ],
       "containerFt": "",
       "isFlatcar": false,
-      "productCodes": []
+      "productCodes": [
+        "98691"
+      ]
     },
     {
       "id": "vp_hx1z81hnsx8c",
@@ -13775,16 +13790,22 @@
       "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/サロ185-0_踊り子色.png",
       "series": "185系",
       "modelCode": "サロ185",
-      "variantCode": "",
+      "variantCode": "0",
       "liveryName": "踊り子色",
       "side": "",
       "company": "",
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97243",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": [
+        "97243",
+        "97241"
       ]
     },
     {
@@ -13839,13 +13860,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98691",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
       ],
       "containerFt": "",
       "isFlatcar": false,
-      "productCodes": []
+      "productCodes": [
+        "98691"
+      ]
     },
     {
       "id": "vp_mnsfy9187y19h",
@@ -13892,16 +13915,23 @@
       "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ184-0_踊り子色.png",
       "series": "185系",
       "modelCode": "モハ184",
-      "variantCode": "",
+      "variantCode": "0",
       "liveryName": "踊り子色",
       "side": "",
       "company": "",
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97243",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": [
+        "97243",
+        "97241",
+        "97242"
       ]
     },
     {
@@ -13916,13 +13946,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "98691",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
       ],
       "containerFt": "",
       "isFlatcar": false,
-      "productCodes": []
+      "productCodes": [
+        "98691"
+      ]
     },
     {
       "id": "vp_n1uy7l1hh0111",
@@ -13969,16 +14001,23 @@
       "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/モハ185-0_踊り子色.png",
       "series": "185系",
       "modelCode": "モハ185",
-      "variantCode": "",
+      "variantCode": "0",
       "liveryName": "踊り子色",
       "side": "",
       "company": "",
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97243",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ],
+      "containerFt": "",
+      "isFlatcar": false,
+      "productCodes": [
+        "97243",
+        "97241",
+        "97242"
       ]
     },
     {
@@ -53333,9 +53372,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97613",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ],
+      "productCodes": [
+        "97613"
       ]
     },
     {
@@ -53367,9 +53409,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97613",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ],
+      "productCodes": [
+        "97613"
       ]
     },
     {
@@ -53486,9 +53531,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97613",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ],
+      "productCodes": [
+        "97613"
       ]
     },
     {
@@ -53520,9 +53568,12 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "97613",
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 153系"
+      ],
+      "productCodes": [
+        "97613"
       ]
     },
     {
@@ -62737,6 +62788,302 @@
       "defaultProductCode": "",
       "categories": [
         "07_海外車輌 / 台灣 / 電車 / EMU3000"
+      ]
+    },
+    {
+      "id": "vp_1krwuq816pspka",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_新幹線リレー色_R.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "100",
+      "liveryName": "新幹線リレー色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_tfeku71dlpblh",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_湘南ブロック色_L.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "100",
+      "liveryName": "湘南ブロック色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_tpcuw11e0coln",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_湘南ブロック色_R.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "100",
+      "liveryName": "湘南ブロック色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_1l4inf216b5vjo",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_新幹線リレー色_L.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "100",
+      "liveryName": "新幹線リレー色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_1g0gf3r10hee2p",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_踊り子色_L.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "100",
+      "liveryName": "踊り子色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_1gl0rmx109skf3",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-100_踊り子色_R.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "100",
+      "liveryName": "踊り子色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "97241",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ],
+      "productCodes": [
+        "97241",
+        "97242"
+      ]
+    },
+    {
+      "id": "vp_2g46fr1rco2k5",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_エクスプレス185_L.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "エクスプレス185",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_30ocg91rrbfkb",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_エクスプレス185_R.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "エクスプレス185",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_1kjcs5c1wt9sq2",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_国鉄特急色_L.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "国鉄特急色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_1k9eom61wen4tw",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_国鉄特急色_R.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "国鉄特急色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_13vnzik1a8tj7e",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_新幹線リレー色_L.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "新幹線リレー色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_1u4dtvhwv6ga3",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_湘南ブロック色_L.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "湘南ブロック色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_13geuqa1abqspw",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_新幹線リレー色_R.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "新幹線リレー色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_1uboesjwgiwyd",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_湘南ブロック色_R.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "湘南ブロック色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_w45bxx9asu2j",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_踊り子色_L.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "踊り子色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_wm25uz9dpked",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/クハ185-300_踊り子色_R.png",
+      "series": "185系",
+      "modelCode": "クハ185",
+      "variantCode": "300",
+      "liveryName": "踊り子色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ]
+    },
+    {
+      "id": "vp_et82bj1o3jcxh",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/185系/サハ185-0_踊り子色.png",
+      "series": "185系",
+      "modelCode": "サハ185",
+      "variantCode": "0",
+      "liveryName": "踊り子色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "97242",
+      "categories": [
+        "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 185系"
+      ],
+      "productCodes": [
+        "97242"
       ]
     }
   ]

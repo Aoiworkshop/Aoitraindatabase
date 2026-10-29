@@ -318,6 +318,12 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   .cargo-table select,.cargo-table input{width:100%;font-family:inherit;font-size:12px;padding:4px 6px;border:1px solid var(--line);border-radius:4px;}
   .cargo-table input.code-input{width:110px;}
   .cargo-table input.group-input{width:80px;}
+  /* 同じセット記号の車両から自動で入った欄位を一瞬だけ光らせる */
+  .cargo-table input.auto-filled{animation:autofill-flash .9s ease-out;}
+  @keyframes autofill-flash{
+    0%{background:#fff2b8;box-shadow:0 0 0 2px #ffd54a inset;}
+    100%{background:#fff;box-shadow:none;}
+  }
 
   /* ---- db backup row ---- */
   /* 分類標籤(TAG)封存中:整組介面藏起來,資料與欄位都原樣保留。
@@ -801,6 +807,10 @@ if(location.protocol === "http:" || location.protocol === "https:"){
 
       <div class="panel">
         <div class="panel-head"><h3>模型品番情報</h3></div>
+        <div style="font-size:10.5px;color:var(--muted);line-height:1.6;margin:0 0 6px 2px;">
+          セット記号が同じ車両は同じ製品とみなし、<b>分類と品番を自動でそろえます</b>。<br>
+          どれか1両に入れれば同じ記号の車両すべてに反映されます（記号が空欄の車両は対象外）。
+        </div>
         <div style="overflow-x:auto;">
           <table class="cargo-table" id="cargo-table">
             <thead><tr><th>号車</th><th>形式</th><th>分類</th><th>品番</th><th>セット記号</th></tr></thead>
@@ -1180,7 +1190,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261029-FLD1";
+  const APP_BUILD = "20261029-SET1";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -5309,18 +5319,106 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   // ---------- 貨號屬性標籤規格(固定8種,尺寸單位:公分) ----------
+  // 屬性徽章。這裡是刻意寫死的 —— 種類固定、幾乎不會再動,
+  // 寫死才能把每一種的尺寸與配色調到跟輸出的版面一致。
+  //
+  // 尺寸單位是公分(w/h 是徽章框、fw/fh 是文字撐滿的範圍)。
+  //
+  // 注意:徽章不能隨便加寬。輸出時「徽章＋品番」是以車輛中心為準置中的
+  // 一整塊(白底 = 徽章 + 0.2 間隙 + 品番 2.0 + 0.4 內距),
+  // 所以 1.6cm 的徽章就已經是 4.2cm 寬,比 3.8cm 的車廂還寬一點。
+  // 再加寬就會蓋到隔壁車廂的品番。
+  // A~D 因此跟母版一樣用 1.6,文字會被壓窄一點(drawFittedText 會自動撐滿框),
+  // 做徽章圖片時也照 1.6 x 1.0 做就好。
+  //
+  // 基本編成與增節編成各自有「無記號 + A~D」五種,
+  // 顏色沿用各自的母色(基=藍、増=綠),方便一眼分辨是哪一組。
   const ATTRS = {
-    "単":   { bg: "#ffffff", border: "#000000", text: "#000000", w: 1.0, h: 1.0, fw: 0.8, fh: 0.8 },
-    "Set":  { bg: "#231815", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
-    "基Set":{ bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
-    "増Set":{ bg: "#009944", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
-    "KA":   { bg: "#274835", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
-    "TO":   { bg: "#1A3576", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
-    "MA":   { bg: "#E60012", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
-    "GM":   { bg: "#02834B", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 }
+    "単":    { bg: "#ffffff", border: "#000000", text: "#000000", w: 1.0, h: 1.0, fw: 0.8, fh: 0.8 },
+    "Set":   { bg: "#231815", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
+    "基Set": { bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "基SetA":{ bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "基SetB":{ bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "基SetC":{ bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "基SetD":{ bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "増Set": { bg: "#009944", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "増SetA":{ bg: "#009944", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "増SetB":{ bg: "#009944", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "増SetC":{ bg: "#009944", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "増SetD":{ bg: "#009944", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "KA":    { bg: "#274835", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
+    "TO":    { bg: "#1A3576", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
+    "MA":    { bg: "#E60012", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
+    "GM":    { bg: "#02834B", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 }
   };
   const ATTR_KEYS = Object.keys(ATTRS);
-  // 「単/Set/基Set/増Set」描述的是這個編成裡的套組狀態,每次都不一樣,不適合當預設;
+
+  // 下拉選單的分組。16 種攤平列出來很難掃,照用途分三組好找。
+  // 沒列進來的鍵會自動補在最後,所以之後往 ATTRS 加東西不會從選單裡消失。
+  const ATTR_GROUPS = [
+    ["単独", ["単"]],
+    ["セット", ["Set", "基Set", "基SetA", "基SetB", "基SetC", "基SetD",
+                "増Set", "増SetA", "増SetB", "増SetC", "増SetD"]],
+    ["メーカー", ["KA", "TO", "MA", "GM"]]
+  ];
+  function attrSelectHtml(){
+    const listed = new Set();
+    let html = `<option value="">（無）</option>`;
+    ATTR_GROUPS.forEach(([label, keys]) => {
+      const ks = keys.filter(k => ATTRS[k]);
+      if(!ks.length) return;
+      ks.forEach(k => listed.add(k));
+      html += `<optgroup label="${esc(label)}">`
+            + ks.map(k => `<option value="${esc(k)}">${esc(k)}</option>`).join("")
+            + `</optgroup>`;
+    });
+    const rest = ATTR_KEYS.filter(k => !listed.has(k));
+    if(rest.length){
+      html += `<optgroup label="その他">`
+            + rest.map(k => `<option value="${esc(k)}">${esc(k)}</option>`).join("")
+            + `</optgroup>`;
+    }
+    return html;
+  }
+
+  // ---------- セット記号でまとめる ----------
+  // 前提:セット記号が同じ車両は同じ製品 → 分類と品番も同じ。
+  // だから片方に入れたら同じ記号の車両すべてにそろえる。
+  // 記号が空欄の車両は「どの組にも属さない」ので対象外。
+  function setGroupMembers(entry){
+    const g = (entry && entry.setGroupId || "").trim();
+    if(!g) return [];
+    return (state.cars || []).filter(e => (e.setGroupId || "").trim() === g);
+  }
+  // 自分の値を同じ組のほかの車両に広げる(明示的に入力した値なので上書きでよい)
+  function pushToSetGroup(entry, keys){
+    const members = setGroupMembers(entry);
+    if(members.length < 2) return 0;
+    let n = 0;
+    members.forEach(e => {
+      if(e === entry) return;
+      keys.forEach(k => {
+        if((e[k] || "") !== (entry[k] || "")){ e[k] = entry[k] || ""; n++; }
+      });
+    });
+    return n;
+  }
+  // 組に入るとき:すでに組に値があれば受け取る。無ければ自分の値を組に広げる。
+  function joinSetGroup(entry){
+    const others = setGroupMembers(entry).filter(e => e !== entry);
+    if(!others.length) return 0;
+    let n = 0;
+    ["attribute", "productCode"].forEach(k => {
+      const src = others.find(e => (e[k] || "").trim());
+      if(src){
+        if((entry[k] || "") !== src[k]){ entry[k] = src[k]; n++; }
+      }else if((entry[k] || "").trim()){
+        others.forEach(e => { if((e[k] || "") !== entry[k]){ e[k] = entry[k]; n++; } });
+      }
+    });
+    return n;
+  }
+  // 「単/Set/基Set〜基SetD/増Set〜増SetD」描述的是這個編成裡的套組狀態,每次都不一樣,不適合當預設;
   // 「KA/TO/MA/GM」是產品的製造廠商,屬於車輛本身的固定資訊,才會被記錄起來。
   const MAKER_ATTRS = ["KA", "TO", "MA", "GM"];
   // 若「00_必要資料」資料夾裡有跟屬性同名的圖片檔,優先用圖片取代畫布畫的色塊
@@ -6500,7 +6598,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         const k = v.id + "\u0001" + code;
         if(!seen.has(k)){ seen.add(k); codeAdds.push({ v, code }); }
       }
-      // 只記廠商;套組類(単/Set/基Set/増Set)每個編成都不一樣,不寫入預設
+      // 只記廠商;套組類(単/Set/基Set〜D/増Set〜D)每個編成都不一樣,不寫入預設
       const attr = (c.attribute || "").trim();
       if(MAKER_ATTRS.includes(attr) && (v.defaultAttribute || "") !== attr){
         const k = v.id + "\u0001A";
@@ -6536,9 +6634,31 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     toast(`記録しました　品番 ${codeAdds.length} 件・メーカー ${makerChanges.length} 件`);
   });
 
+  // 表格每一列的欄位控制項。同組連動時要把值寫進「別的列」,
+  // 但不能整個表格重畫——重畫會把正在打字的游標弄掉。
+  let cargoRows = [];
+  function syncCargoUI(){
+    const focused = document.activeElement;
+    cargoRows.forEach(r => {
+      if(r.sel !== focused && r.sel.value !== (r.entry.attribute || "")) r.sel.value = r.entry.attribute || "";
+      if(r.codeInput !== focused && r.codeInput.value !== (r.entry.productCode || "")){
+        r.codeInput.value = r.entry.productCode || "";
+        flashCell(r.codeInput);
+      }
+      if(r.groupInput !== focused && r.groupInput.value !== (r.entry.setGroupId || "")) r.groupInput.value = r.entry.setGroupId || "";
+    });
+  }
+  // 被自動帶入的欄位閃一下,不然使用者不知道別的列也變了
+  function flashCell(el){
+    el.classList.remove("auto-filled");
+    void el.offsetWidth;
+    el.classList.add("auto-filled");
+  }
+
   function renderCargoTable(){
     const body = $("#cargo-table-body");
     body.innerHTML = "";
+    cargoRows = [];
     // 跟著畫面的顯示順序走,整列反轉時表格的順序與車號也會一致
     displayCars().forEach((dc, idx) => {
       const entry = dc.entry;
@@ -6556,9 +6676,14 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
       const tdAttr = document.createElement("td");
       const sel = document.createElement("select");
-      sel.innerHTML = `<option value="">（無）</option>` + ATTR_KEYS.map(k => `<option value="${k}">${k}</option>`).join("");
+      sel.innerHTML = attrSelectHtml();
       sel.value = entry.attribute || "";
-      sel.addEventListener("change", () => { entry.attribute = sel.value; renderFormationInfo(); });
+      sel.addEventListener("change", () => {
+        entry.attribute = sel.value;
+        pushToSetGroup(entry, ["attribute"]);   // 同じセット記号の車両にそろえる
+        syncCargoUI();
+        renderFormationInfo();
+      });
       tdAttr.appendChild(sel);
       tr.appendChild(tdAttr);
 
@@ -6575,7 +6700,12 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       codeInput.autocomplete = "off";
       const known = productCodesOf(v);
       // 只更新這個編成用的值;要存進車輛的預設資料,請按下方的「記錄產品資訊」
-      codeInput.addEventListener("input", () => { entry.productCode = codeInput.value; renderFormationInfo(); });
+      codeInput.addEventListener("input", () => {
+        entry.productCode = codeInput.value;
+        pushToSetGroup(entry, ["productCode"]);
+        syncCargoUI();
+        renderFormationInfo();
+      });
       codeWrap.appendChild(codeInput);
 
       if(known.length){
@@ -6591,6 +6721,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
           showCodePicker(pick, known, entry.productCode || "", async (chosen) => {
             entry.productCode = chosen;
             codeInput.value = chosen;
+            pushToSetGroup(entry, ["productCode"]);
+            syncCargoUI();
             renderFormationInfo();
             if(v && rememberProductCode(v.id, chosen)) await persistVehicles();
           });
@@ -6605,10 +6737,21 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       groupInput.className = "group-input";
       groupInput.value = entry.setGroupId || "";
       groupInput.placeholder = "例：A";
-      groupInput.addEventListener("input", () => { entry.setGroupId = groupInput.value; renderFormationInfo(); });
+      groupInput.addEventListener("input", () => {
+        entry.setGroupId = groupInput.value;
+        renderFormationInfo();           // 線框はすぐ追従させる
+      });
+      groupInput.addEventListener("change", () => {
+        entry.setGroupId = groupInput.value;
+        joinSetGroup(entry);             // 組に入った時点で分類・品番をそろえる
+        syncCargoUI();
+        renderFormationInfo();
+      });
+      groupInput.addEventListener("keydown", (e) => { if(e.key === "Enter") groupInput.blur(); });
       tdGroup.appendChild(groupInput);
       tr.appendChild(tdGroup);
 
+      cargoRows.push({ entry, sel, codeInput, groupInput });
       body.appendChild(tr);
     });
   }
@@ -7966,7 +8109,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     await step("編成情報表示の設定", loadFormationInfoPref);
     await step("分類導覽", () => renderCategoryNav());
     await step("属性メニュー", () => {
-      $("#s-attr").innerHTML = `<option value="">（無）</option>` + ATTR_KEYS.map(k => `<option value="${k}">${k}</option>`).join("");
+      $("#s-attr").innerHTML = attrSelectHtml();
     });
     await step("車両一覧", () => renderLibrary());
     await step("フォームの初期化", () => resetSingleForm());
