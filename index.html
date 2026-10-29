@@ -65,7 +65,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
     .cat-picker-crumb, .cat-picker-options,
     .cat-picker-crumb *, .cat-picker-options *,
     #tools-tab, #tools-tab *,                          /* 抽屜的索引標籤 */
-    #builder-bar-tab, #builder-bar-tab *               /* 編成操作バーの頁簽 */
+    #builder-bar-tab, #builder-bar-tab *               /* ツールバーの頁簽 */
   ){
     -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 
@@ -105,7 +105,9 @@ if(location.protocol === "http:" || location.protocol === "https:"){
      高さは --chrome-h で一元管理し、本体の height:calc(100vh - ...) もこれを見る。
      ここを変えたら数値は1か所だけ直せばよい。 */
   :root{ --chrome-h:44px; }
-  .topbar{display:flex;align-items:stretch;gap:0;padding:0 16px;height:var(--chrome-h);
+  /* 高さは内容に任せる。--chrome-h は JS が「測った結果」を書き込む出力側なので、
+     ここで height に使うと自分の測定値で自分の高さが決まる循環になる。 */
+  .topbar{display:flex;align-items:stretch;gap:0;padding:0 16px;min-height:42px;
     border-bottom:2px solid var(--ink);background:var(--paper);}
   .topbar .mark{width:9px;height:9px;background:var(--rail-red);border-radius:50%;align-self:center;flex-shrink:0;}
   .topbar h1{font-size:14px;margin:0 14px 0 9px;letter-spacing:0.04em;font-weight:700;
@@ -127,6 +129,28 @@ if(location.protocol === "http:" || location.protocol === "https:"){
     font-size:9.5px;line-height:15px;text-align:center;margin-right:5px;flex-shrink:0;
   }
   .tabbar button.active .stage-no{background:var(--rail-red);}
+
+  /* 1行に収まらないときだけ、頁簽を2行目に落とす。
+     判定は JS(layoutHeader)が実寸でやる:幅を決め打ちすると、
+     右の連携バッジが「オンライン版・○○両・v…」のように伸び縮みするぶん外れる。
+     --chrome-h も実測値を入れ直すので、2行になっても本体の高さがズレない。 */
+  body.header-wrap .topbar{flex-wrap:wrap;height:auto;align-items:center;
+    padding-top:5px;padding-bottom:0;row-gap:2px;}
+  /* 2行目を増やさないため、1行目(標題＋バッジ)は縮めて収める。
+     縮むのは主にバッジ側:バッジは押せばそのまま基本設定が開くし、
+     省略された全文は title に残る。標題は min-width ぶんは必ず見える。 */
+  /* flex の折り返しは「縮める前」の幅で決まるので、標題の基準幅を 0 にして
+     1行目(標題＋バッジ)が勝手に2行に割れないようにする。そのうえで標題が余白を取る。
+     バッジは押せばそのまま基本設定が開き、省略された全文は title に残るので、
+     足りないぶんはバッジ側が省略を引き受ける。 */
+  body.header-wrap .topbar h1{flex:1 1 0;min-width:0;overflow:hidden;text-overflow:ellipsis;}
+  body.header-wrap .topbar .topbar-spacer{flex:0 0 0 !important;}
+  body.header-wrap .topbar .folder-badge{flex:0 1 auto;max-width:46%;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  body.header-wrap .tabbar{order:9;flex-basis:100%;width:100%;
+    overflow-x:auto;scrollbar-width:none;}
+  body.header-wrap .tabbar::-webkit-scrollbar{display:none;}
+  body.header-wrap .tabbar button{padding:7px 12px;}
 
   .layout{display:grid;grid-template-columns:300px 1fr;height:calc(100vh - var(--chrome-h));}
   .layout.no-sidebar{grid-template-columns:1fr;}
@@ -289,8 +313,16 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   .tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px;min-height:20px;}
   .tag-chip{font-size:11px;background:#eef3fa;border:1px solid #cfe0f2;color:var(--accent);padding:3px 8px;border-radius:12px;display:flex;align-items:center;gap:5px;}
   .tag-chip button{border:none;background:none;color:var(--accent);cursor:pointer;font-size:11px;padding:0;line-height:1;}
-  .file-drop{border:1.5px dashed var(--line);border-radius:8px;padding:16px;text-align:center;font-size:12.5px;color:var(--muted);margin-bottom:12px;}
-  .file-drop input{margin-top:8px;}
+  /* 説明・ボタン・選んだファイル名を縦に積む。
+     以前は <br> とインライン要素だけで並べていたので、
+     ファイル名が長いときにボタンへ重なって読めなくなっていた。 */
+  .file-drop{border:1.5px dashed var(--line);border-radius:8px;padding:14px 16px;text-align:center;
+    font-size:12.5px;color:var(--muted);margin-bottom:12px;
+    display:flex;flex-direction:column;align-items:center;gap:9px;}
+  .file-drop .fd-text{line-height:1.6;}
+  .file-drop .fd-pick{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;
+    max-width:100%;}
+  .file-drop .fd-pick .btn{margin:0;flex-shrink:0;}
   .batch-list{display:flex;flex-direction:column;gap:8px;margin-bottom:12px;}
   #batch-table img{width:40px;display:block;}
   #batch-table td{vertical-align:middle;}
@@ -343,7 +375,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   .side-h{margin:14px 0 6px;font-size:11px;font-weight:700;color:var(--muted);
     letter-spacing:.06em;border-bottom:1px solid var(--line);padding-bottom:4px;}
   /* 自前のファイル選択ボタンの横に出すファイル名 */
-  .file-pick-name{display:inline-block;margin-left:8px;font-size:11px;color:var(--muted);
+  .file-pick-name{display:inline-block;font-size:11px;color:var(--muted);
     max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
   /* はい／いいえ の2択ボタン(中身は checkbox のまま) */
   .yn-group{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;}
@@ -418,7 +450,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   /* ---- 編成製作:工具列與編成組成固定,其餘內容自己捲動 ---- */
   #tab-builder{display:flex;flex-direction:column;height:100%;min-height:0;overflow:hidden;}
   .builder-head{flex-shrink:0;background:var(--paper,#faf9f6);padding-bottom:8px;border-bottom:1px solid var(--line);}
-  /* 編成操作バー:上に巻き上げて、小さな頁簽だけ残す。
+  /* ツールバー:上に巻き上げて、小さな頁簽だけ残す。
      max-height は折り返しても余裕がある値(ボタン8個が縦積みでも約310px)。 */
   #builder-bar .toolbar{max-height:400px;overflow:hidden;
     transition:max-height .22s cubic-bezier(.4,0,.2,1),opacity .15s,margin-bottom .22s;}
@@ -492,13 +524,9 @@ if(location.protocol === "http:" || location.protocol === "https:"){
     .station-pair-row{grid-template-columns:1fr;gap:4px;}
     .toolbar{gap:6px;}
     .toolbar .btn{flex:1 1 auto;}
-    :root{ --chrome-h:40px; }
     .topbar{padding:0 10px;}
-    .topbar h1{font-size:12px;margin:0 8px 0 7px;max-width:34vw;overflow:hidden;
-      text-overflow:ellipsis;white-space:nowrap;}
-    .tabbar{overflow-x:auto;scrollbar-width:none;}
-    .tabbar::-webkit-scrollbar{display:none;}
-    .tabbar button{padding:0 9px;font-size:11.5px;}
+    .topbar h1{font-size:12.5px;margin:0 8px 0 7px;}
+    .tabbar button{padding:0 10px;font-size:11.5px;}
   }
 
   /* 視窗變窄時,搜尋分頁的按鈕改成垂直排列 */
@@ -523,7 +551,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
 <!-- 線上版載入畫面:放在最前面,程式還沒下載完就能先顯示 -->
 <div id="web-loading" style="display:none;">
   <div class="wl-box">
-    <div class="wl-title" id="wl-title">読み込み中</div>
+    <div class="wl-title" id="wl-title">読み込み中…</div>
     <div class="wl-bar"><div class="wl-fill" id="wl-fill"></div></div>
     <div class="wl-row">
       <span id="wl-text">プログラムをダウンロード中…</span>
@@ -547,7 +575,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
     <button class="tab-btn" data-tab="builder"><span class="stage-no">2</span>編成作成</button>
     <button class="tab-btn" data-tab="search"><span class="stage-no">3</span>編成データベース</button>
   </nav>
-  <span style="flex:1"></span>
+  <span class="topbar-spacer" style="flex:1"></span>
   <button type="button" id="root-folder-status" class="folder-badge unbound"
           title="クリックすると基本設定（フォルダ連携・バックアップ）を開きます"><span class="dot"></span>0/4 連携済み</button>
 </div>
@@ -563,12 +591,20 @@ if(location.protocol === "http:" || location.protocol === "https:"){
     <b>基本設定</b>
     <button type="button" id="tools-close" title="閉じる（Esc）">✕</button>
   </div>
-      <h3 class="side-h" style="margin-top:2px;">全体</h3>
+      <h3 class="side-h" style="margin-top:2px;">表示言語</h3>
+      <div class="db-io-row">
+        <select id="ui-lang" style="flex:1;font-family:inherit;font-size:12px;padding:5px 7px;border:1px solid var(--line);border-radius:5px;">
+          <option value="ja">日本語</option>
+          <option value="zh">繁體中文</option>
+        </select>
+      </div>
+
+      <h3 class="side-h">全体</h3>
       <div class="db-io-row">
         <button class="btn small" id="btn-pick-root-folder" style="flex:1;" title="いちばん上の管理用フォルダを一度選ぶと、その下の 01_不公開資料 と 02_發布用 を自動で連携します">メインフォルダーを選択</button>
       </div>
       <div class="db-io-row">
-        <button class="btn small" id="btn-backup-all" style="flex:1;" title="車両JSON・車両Excel・編成JSONをまとめて書き出します（Ctrl+S）">💾 バックアップ</button>
+        <button class="btn small" id="btn-backup-all" style="flex:1;" title="車両JSON・車両Excel・編成JSONをまとめて書き出します（Ctrl+S）">💾 データベース全体をバックアップ</button>
       </div>
       <div class="db-io-row">
         <button class="btn small secondary" id="btn-export-web" style="flex:1;" title="サイトにアップする軽量版データを作ります（画像は含みません）">🌐 公開用データ書き出し</button>
@@ -596,7 +632,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
 
       <h3 class="side-h">JSONから読み込み</h3>
       <div class="db-io-row">
-        <button class="btn small secondary" id="btn-export-vehicles" style="flex:1;">書き出し</button>
+        <button class="btn small secondary" id="btn-export-vehicles" style="flex:1;" title="車両データだけを1つのJSONにします（編成は含みません）">車両だけ書き出し</button>
       </div>
       <div class="db-io-row">
         <label class="btn small secondary" style="cursor:pointer;margin:0;flex:1;" title="今の車両データベースを空にして、ファイルの内容にまるごと入れ替えます">
@@ -649,7 +685,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div class="list-head">
         <h2 style="margin:0 0 8px;">車両一覧</h2>
         <div class="search-box">
-          <input id="search-text" placeholder="形式・塗装などで検索（ローマ字も可、例 ohanefu）">
+          <input id="search-text" placeholder="形式・塗装で検索（ローマ字可）">
         </div>
         <div style="display:flex;align-items:center;gap:6px;margin-top:6px;">
           <span style="font-size:10.5px;color:var(--muted);flex-shrink:0;">並び順</span>
@@ -674,20 +710,24 @@ if(location.protocol === "http:" || location.protocol === "https:"){
     <div id="tab-vehicles">
       <div class="panel">
         <div class="panel-head">
-          <h3>ステップ1　＋ 車両をデータベースに追加</h3>
-          <button class="btn small secondary" id="btn-toggle-panel">折りたたみ／展開</button>
+          <h3 id="add-panel-title">ステップ1　＋ 車両を追加</h3>
         </div>
         <div id="add-panel-body">
-          <div class="mode-tabs">
-            <button id="tab-single" class="active">個別追加（詳細入力）</button>
-            <button id="tab-batch">一括読み込み（複数画像）</button>
-          </div>
-
-          <div id="single-mode">
+          <!-- 詳細フォームは「既存の車両を編集するとき」だけ出す。
+               新規追加は下の「追加車両」1本に統一した（1枚でも複数枚でも同じ流れ）。 -->
+          <div id="single-mode" style="display:none;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+              <b style="font-size:12.5px;">車両を編集</b>
+              <span style="flex:1"></span>
+              <button class="btn small secondary" id="btn-back-to-add" type="button">← 追加車両に戻る</button>
+            </div>
             <div id="s-pair-hint" style="display:none;font-size:11px;color:var(--accent);background:#eef3fa;border:1px solid #cfe0f2;border-radius:6px;padding:7px 9px;margin-bottom:10px;line-height:1.5;"></div>
             <div class="file-drop">
-              車両画像を1枚選んでください（PNG／JPG、PPTから出力したものを推奨）
-              <br><label class="btn small" style="cursor:pointer;margin:8px 0 0;">ファイルを選択<input type="file" id="single-file" accept="image/*" style="display:none;"></label><span id="single-file-name" class="file-pick-name"></span>
+              <div class="fd-text">車両画像を1枚選んでください</div>
+              <div class="fd-pick">
+                <label class="btn small" style="cursor:pointer;">ファイルを選択<input type="file" id="single-file" accept="image/*" style="display:none;"></label>
+                <span id="single-file-name" class="file-pick-name"></span>
+              </div>
             </div>
             <div class="form-grid">
               <div class="field"><label>系列</label><input id="s-series" placeholder="例：221系"></div>
@@ -720,7 +760,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
                 <select id="s-attr" style="width:100%;font-family:inherit;font-size:12.5px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;"></select>
               </div>
               <div class="field" style="grid-column:1/-1;">
-                <label>品番リスト（メーカー・商品ごとに複数可）</label>
+                <label>品番リスト</label>
                 <div style="display:flex;gap:4px;">
                   <input id="s-code" placeholder="例：10-0000" style="flex:1;">
                   <button class="btn small secondary" id="btn-add-code" type="button">＋ 追加</button>
@@ -728,35 +768,37 @@ if(location.protocol === "http:" || location.protocol === "https:"){
                 <div id="s-code-list" class="tags" style="margin-top:6px;"></div>
               </div>
             </div>
-            <label class="tag-feature" style="font-size:10.5px;color:var(--muted);">分類タグ（会社は複数選択可）</label>
+            <label class="tag-feature" style="font-size:10.5px;color:var(--muted);">分類タグ</label>
             <div id="s-cat-picker" class="tag-feature" style="border:1px solid var(--line);border-radius:6px;padding:10px;margin-bottom:8px;background:#fafaf8;"></div>
             <div class="tags tag-feature" id="s-cat-tags"></div>
-            <div class="field" style="margin-bottom:12px;"><label>備考</label><input id="s-note" placeholder="任意"></div>
+            <div class="field" style="margin-bottom:12px;"><label>備考</label><input id="s-note"></div>
             <div id="s-rename-row" style="display:none;background:#f6f7f4;border:1px solid var(--line);border-radius:6px;padding:8px 10px;margin-bottom:10px;line-height:1.6;font-size:11px;color:var(--muted);">
               <div id="s-rename-preview"></div>
             </div>
             <button class="btn" id="s-save" title="Ctrl+S">データベースに追加</button>
           </div>
 
-          <div id="batch-mode" style="display:none;">
+          <div id="batch-mode">
             <div class="file-drop">
-              画像を一度に複数選ぶと、ファイル名から項目を作ります。下の一覧で系列・形式・番台・塗装・会社を行ごとに入力できます
-              <br><label class="btn small" style="cursor:pointer;margin:8px 0 0;">ファイルを選択<input type="file" id="batch-files" accept="image/*" multiple style="display:none;"></label><span id="batch-files-name" class="file-pick-name"></span>
+              <div class="fd-text">画像をアップロード</div>
+              <div class="fd-pick">
+                <label class="btn small" style="cursor:pointer;">ファイルを選択<input type="file" id="batch-files" accept="image/*" multiple style="display:none;"></label>
+                <span id="batch-files-name" class="file-pick-name"></span>
+              </div>
             </div>
             <div class="form-grid" style="grid-template-columns:repeat(2,1fr);">
-              <div class="field"><label>系列（全体に適用、行ごとに変更可）</label><input id="b-series" placeholder="例：221系"></div>
-              <div class="field tag-feature"><label>所属会社（全体に適用、行ごとに変更可）</label><input id="b-company" placeholder="例：JR東日本"></div>
+              <div class="field"><label>系列（全体に適用）</label><input id="b-series" placeholder="例：221系"></div>
             </div>
             <label class="tag-feature" style="font-size:10.5px;color:var(--muted);">全体に適用：分類タグ</label>
             <div id="b-cat-picker" class="tag-feature" style="border:1px solid var(--line);border-radius:6px;padding:10px;margin-bottom:8px;background:#fafaf8;"></div>
             <div class="tags tag-feature" id="b-cat-tags"></div>
             <div style="overflow-x:auto;">
               <table class="cargo-table" id="batch-table">
-                <thead><tr><th>同上</th><th>画像</th><th>系列</th><th>形式</th><th>番台</th><th>塗装名</th><th>所属会社</th><th>車体幅(cm)</th><th></th></tr></thead>
+                <thead><tr><th>同上</th><th>画像</th><th>形式</th><th>番台</th><th>塗装名</th><th>向き</th><th>車体幅（cm）</th><th></th></tr></thead>
                 <tbody id="batch-list"></tbody>
               </table>
             </div>
-            <button class="btn" id="b-save" disabled>すべてデータベースに追加</button>
+            <button class="btn" id="b-save" disabled>データベースに追加</button>
           </div>
         </div>
       </div>
@@ -781,8 +823,8 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small bar-mini" data-role="save" title="編成データベースに保存／更新（Ctrl+S）">💾 保存</button>
         <button class="btn small secondary bar-mini" data-role="export" title="PNG画像を出力">PNG出力</button>
         <span style="flex:1"></span>
-        <button type="button" id="builder-bar-tab" title="編成操作バーを開閉します（Ctrl+Shift+T）">
-          <span class="chev">⌃</span><span class="txt">編成操作</span>
+        <button type="button" id="builder-bar-tab" title="ツールバーを開閉します（Ctrl+Shift+T）">
+          <span class="chev">⌃</span><span class="txt">ツールバー</span>
         </button>
       </div>
       </div>
@@ -795,7 +837,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small danger" id="btn-remove-missing" type="button" style="display:none;">移除失效車廂</button>
         <span style="flex:1"></span>
         <label style="font-size:11px;color:var(--muted);display:flex;align-items:center;gap:4px;cursor:pointer;white-space:nowrap;"
-               title="タイトル・始発/終着駅・品番・セット線を編成の上下に表示します">
+               title="タイトル・始発/終着駅・品番・セットを編成の上下に表示します">
           <input type="checkbox" id="chk-formation-info" checked style="margin:0;">情報を表示
         </label>
       </div>
@@ -808,14 +850,14 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div class="panel">
         <div class="panel-head"><h3>2. タイトル情報</h3></div>
         <div class="field-grid" style="grid-template-columns:repeat(4,1fr);">
-          <div class="field"><label>路線名（任意）</label><input id="f-routename" placeholder="例：（空欄可）"></div>
+          <div class="field"><label>路線名</label><input id="f-routename" placeholder="例：（空欄可）"></div>
           <div class="field">
             <label>種別</label>
             <div style="display:flex;gap:4px;">
               <select id="f-traintype" style="flex:1;font-family:inherit;font-size:13px;padding:7px 9px;border:1px solid var(--line);border-radius:5px;"></select>
               <button class="btn small secondary" id="btn-add-traintype" type="button" title="よく使う種別をリストに追加">＋</button>
             </div>
-            <input id="f-traintype-custom" placeholder="または種別を直接入力" style="margin-top:4px;">
+            <input id="f-traintype-custom" placeholder="その他の種別" style="margin-top:4px;">
           </div>
           <div class="field">
             <label>日付</label>
@@ -866,9 +908,8 @@ if(location.protocol === "http:" || location.protocol === "https:"){
 
       <div class="panel">
         <div class="panel-head"><h3>模型品番情報</h3></div>
-        <div style="font-size:10.5px;color:var(--muted);line-height:1.6;margin:0 0 6px 2px;">
-          セット記号が同じ車両は同じ製品とみなし、<b>分類と品番を自動でそろえます</b>。<br>
-          どれか1両に入れれば同じ記号の車両すべてに反映されます（記号が空欄の車両は対象外）。
+        <div style="font-size:10.5px;color:var(--muted);margin:0 0 6px 2px;">
+          セット記号が同じ車両は、分類と品番が自動でそろいます。
         </div>
         <div style="overflow-x:auto;">
           <table class="cargo-table" id="cargo-table">
@@ -884,12 +925,12 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div class="panel">
         <div class="panel-head"><h3>5. フォント設定</h3></div>
         <div class="db-io-row" style="max-width:520px;margin-bottom:4px;">
-          <button class="btn small" id="btn-pick-assets-folder" style="flex:1;">バッジ素材フォルダを選択（00_必要資料）</button>
+          <button class="btn small" id="btn-pick-assets-folder" style="flex:1;">フォルダを選択（00_必要資料）</button>
         </div>
         <span id="assets-folder-status" class="folder-badge unbound"><span class="dot"></span>未連携</span>
         <div class="toolbar" style="margin-bottom:8px;">
           <div class="field" style="flex:1;max-width:260px;">
-            <label>タイトル／駅名のフォント</label>
+            <label>タイトルのフォント</label>
             <input id="f-font-title" placeholder="既定: Adobe Heiti Std R" value="Adobe Heiti Std R">
           </div>
           <label class="btn small secondary" style="cursor:pointer;">
@@ -900,7 +941,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         </div>
         <div class="toolbar">
           <div class="field" style="flex:1;max-width:260px;">
-            <label>車番ラベルのフォント</label>
+            <label>車番のフォント</label>
             <input id="f-font-carlabel" placeholder="既定: Yu Gothic UI Semibold" value="Yu Gothic UI Semibold">
           </div>
           <label class="btn small secondary" style="cursor:pointer;">
@@ -931,9 +972,9 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   <div class="main search-main">
     <div class="search-head">
       <div class="search-tools">
-        <button class="btn small" id="btn-pick-formation-folder">サイトデータフォルダ(data)を選択</button>
+        <button class="btn small" id="btn-pick-formation-folder">サイトデータフォルダ（data）を選択</button>
         <span id="formation-folder-status" class="folder-badge unbound" style="margin:0;"><span class="dot"></span>未連携</span>
-        <button class="btn small secondary" id="btn-export-formations">編成データベースを書き出し</button>
+        <button class="btn small secondary" id="btn-export-formations" title="編成データだけを1つのJSONにします（車両は含みません）">編成だけ書き出し</button>
         <label class="btn small secondary" style="cursor:pointer;margin:0;" title="今の編成データベースを空にして、ファイルの内容にまるごと入れ替えます">
           読み込み
           <input type="file" id="import-formations-file" accept=".json,application/json" style="display:none;">
@@ -944,7 +985,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         </label>
       </div>
       <div class="search-tab-bar" style="margin-top:8px;display:flex;gap:6px;align-items:center;">
-        <input id="formation-search-input" placeholder="キーワードで検索（例「あさかぜ 20系」両方に一致したものだけ表示）" style="flex:1;">
+        <input id="formation-search-input" placeholder="キーワードで検索" style="flex:1;">
         <select id="formation-vis-filter" title="この項目はローカル版のみ表示されます" style="font-family:inherit;font-size:12.5px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;background:#fff;">
           <option value="all">すべて</option>
           <option value="public">公開のみ</option>
@@ -1016,6 +1057,449 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
 </script>
 <script id="app-logic">
+/* ==========================================================================
+   介面文字對照表（日本語 → 繁體中文 / 台灣用語）
+   --------------------------------------------------------------------------
+   這個檔案是從 Excel 產生的，不要直接手改。
+     匯出 Excel：python3 tools/i18n_export.py
+     寫回這裡　：python3 tools/i18n_import.py 對照表.xlsx
+   產生時間：2026-10-29 18:11
+   中文欄留空的句子不會收進表裡，畫面上維持日文顯示。
+   ========================================================================== */
+window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
+
+  /* ---------- 載入畫面 ---------- */
+  "読み込み中…": "載入中…",
+  "プログラムをダウンロード中…": "正在下載程式…",
+
+  /* ---------- 標題列・分頁 ---------- */
+  "車両データ": "車輛資料",
+  "編成作成": "編成製作",
+  "編成データベース": "編成資料庫",
+  "連携済み": "已連結",
+
+  /* ---------- 基本設定（抽屜） ---------- */
+  "基本設定": "基本設定",
+  "全体": "整體",
+  "メインフォルダーを選択": "選擇主資料夾",
+  "💾 データベース全体をバックアップ": "💾 備份全部資料庫",
+  "🌐 公開用データ書き出し": "🌐 匯出公開用資料",
+  "📥 共有ファイル読み込み": "📥 讀取分享檔",
+  "車両フォルダ": "車輛資料夾",
+  "フォルダを選択": "選擇資料夾",
+  "データー整理": "資料整理",
+  "データ同期": "資料同步",
+  "重複整理": "整理重複",
+  "ID同期": "ID 同步",
+  "JSONから読み込み": "從 JSON 讀取",
+  "EXCELから読み込み": "從 EXCEL 讀取",
+  "車両だけ書き出し": "只匯出車輛",
+  "編成だけ書き出し": "只匯出編成",
+  "読み込み": "讀取",
+  "書き出し": "匯出",
+  "追加": "追加",
+  "未連携": "未連結",
+
+  /* ---------- 車輛清單・搜尋 ---------- */
+  "車両一覧": "車輛一覽",
+  "並び順": "排序",
+  "形式順": "依形式",
+  "追加順": "依加入順序",
+  "タグ絞り込み（補助）": "標籤篩選（輔助）",
+  "分類ツリーを編集": "編輯分類樹",
+  "ここで選んだタグで、選択中の車両の分類タグをまるごと上書きします（追加ではありません）：": "會用這裡選的標籤，整個覆蓋掉所選車輛的分類標籤（不是追加）：",
+  "選択中の車両に適用": "套用到所選車輛",
+  "キャンセル": "取消",
+  "選択を解除": "取消選取",
+  "選択中を削除": "刪除所選",
+
+  /* ---------- 車輛追加・編輯 ---------- */
+  "ステップ1　＋ 車両を追加": "步驟1　＋ 追加車輛",
+  "車両を編集": "編輯車輛",
+  "← 追加車両に戻る": "← 回到追加車輛",
+  "車両画像を1枚選んでください": "請選一張車輛圖片",
+  "ファイルを選択": "選擇檔案",
+  "画像をアップロード": "上傳圖片",
+  "例：": "例：",
+  "系列（全体に適用）": "系列（套用到全部）",
+  "全体に適用：分類タグ": "套用到全部：分類標籤",
+  "系列": "系列",
+  "形式": "形式",
+  "番台": "番台",
+  "塗装名": "塗裝名",
+  "向き": "方向",
+  "車体幅（cm）": "車體寬（cm）",
+  "車体幅（cm）": "車體寬（cm）",
+  "画像": "圖片",
+  "同上": "同上",
+  "向き（左右非対称なら L／R）": "方向（左右不對稱就填L／R）",
+  "コンテナサイズ（コンテナのみ）": "貨櫃尺寸（僅貨櫃）",
+  "（コンテナではない）": "（不是貨櫃）",
+  "コンテナ車かどうか": "是否為貨櫃車",
+  "はい": "是",
+  "いいえ": "否",
+  "既定の属性": "預設屬性",
+  "品番リスト": "品番清單",
+  "分類タグ": "分類標籤",
+  "備考": "備註",
+  "データベースに追加": "加入資料庫",
+  "変更を保存": "儲存變更",
+  "＋ 追加": "＋ 追加",
+
+  /* ---------- 編成操作列 ---------- */
+  "ツールバー": "工具列",
+  "＋ 新規編成": "＋ 新增編成",
+  "⧉ 編成を複製": "⧉ 複製編成",
+  "編成を保存": "儲存編成",
+  "編成を削除": "刪除編成",
+  "全車両を外す": "移除全部車輛",
+  "PNG画像を出力": "輸出 PNG 圖片",
+  "PNG出力": "輸出 PNG",
+  "💾 保存": "💾 儲存",
+  "↗ 書き出し": "↗ 匯出",
+
+  /* ---------- 編成組成 ---------- */
+  "データベースの車両をクリックすると編成に追加されます": "點一下資料庫裡的車輛就會加進編成",
+  "ドラッグで順番変更、ダブルクリックで塗装を切り替え": "拖曳可調整順序，雙擊可切換塗裝",
+  "1. 編成組成": "1. 編成組成",
+  "⇄ 編成反転": "⇄ 編成反轉",
+  "現在は反転表示": "目前為反轉顯示",
+  "情報を表示": "顯示資訊",
+  "2. タイトル情報": "2. 標題資訊",
+  "未保存の新しい編成です": "尚未儲存的新編成",
+  "保存済みの編成を編集中:": "正在編輯已儲存的編成：",
+  "［私人］": "［私人］",
+  "路線名": "路線名",
+  "列車番号などの情報": "列車番號等資訊",
+  "補足（タイトルの後ろに付きます）": "補充（接在標題後面）",
+  "3. 運行概要": "3. 運行概要",
+  "愛称": "愛稱",
+  "列車の愛称を入力": "輸入列車愛稱",
+  "愛称の開始車番": "愛稱的起始車號",
+  "愛称の終了車番": "愛稱的結束車號",
+  "✕ 削除する": "✕ 刪除資訊",
+  "終着駅": "終點站",
+  "始発駅": "起點站",
+  "＋ 行を追加": "＋ 新增一列",
+  "（最大6組、1組が愛称／分割区間に対応します）": "（最多 6 組，一組對應一個愛稱／分割區間）",
+  "4. 補足情報": "4. 補充資訊",
+  "運営会社": "營運公司",
+  "運行エリア": "運行區域",
+
+  /* ---------- 模型品番情報 ---------- */
+  "模型品番情報": "模型品番資訊",
+  "セット記号が同じ車両は、分類と品番が自動でそろいます。": "分組記號相同的車輛，分類與品番會自動統一。",
+  "号車": "車序",
+  "分類": "分類",
+  "品番": "品番",
+  "セット記号": "分組",
+  "（無）": "（無）",
+  "単独": "單獨",
+  "セット": "套組",
+  "メーカー": "廠牌",
+  "その他": "其他",
+  "製品情報を記録": "記錄商品資訊",
+
+  /* ---------- 字型設定 ---------- */
+  "5. フォント設定": "5. 字型設定",
+  "フォルダを選択（00_必要資料）": "選擇資料夾（00_必要資料）",
+  "タイトルのフォント": "標題字型",
+  "車番のフォント": "車號字型",
+  "手動アップロード（都度）": "手動上傳（每次）",
+
+  /* ---------- 編成資料庫 ---------- */
+  "サイトデータフォルダ（data）を選択": "選擇網站資料夾（data）",
+  "すべて": "全部",
+  "公開のみ": "僅公開",
+  "非公開のみ": "僅非公開",
+  "公開にする": "設為公開",
+  "非公開にする": "設為非公開",
+  "編成作成に読み込み": "載入到編成製作",
+  "クリックで公開／非公開を切り替え": "按一下可切換公開／非公開",
+  "全 {A} 件の編成　表示 {B} 件": "共 {A} 筆編成　顯示 {B} 筆",
+  "　（公開 {P}／非公開 {Q}）": "　（公開 {P}／非公開 {Q}）",
+  "メインフォルダーを連携しますか？": "要連結主資料夾嗎？",
+  "あとで": "稍後",
+
+  /* ---------- placeholder ---------- */
+  "形式・塗装で検索（ローマ字可）": "搜尋形式或塗裝（可用羅馬字）",
+  "例：クハ221": "例：クハ221",
+  "その他の種別": "其他種別",
+  "例：501D。上り2302D": "例：501D。上行2302D",
+  "運営会社を入力": "輸入營運公司",
+  "運行エリアを入力": "輸入運行區域",
+  "キーワードで検索": "用關鍵字搜尋",
+
+  /* ---------- title（滑鼠提示） ---------- */
+  "クリックすると基本設定（フォルダ連携・バックアップ）を開きます": "按一下會打開基本設定（資料夾連結、備份）",
+  "基本設定を開く（Esc で閉じる）": "打開基本設定（Esc 關閉）",
+  "閉じる（Esc）": "關閉（Esc）",
+  "いちばん上の管理用フォルダを一度選ぶと、その下の 01_不公開資料 と 02_發布用 を自動で連携します": "選一次最上層的管理資料夾，底下的 01_不公開資料 與 02_發布用 就會自動連結",
+  "車両JSON・車両Excel・編成JSONをまとめて書き出します（Ctrl+S）": "一次匯出車輛JSON、車輛Excel、編成JSON（Ctrl+S）",
+  "サイトにアップする軽量版データを作ります（画像は含みません）": "產生要上傳到網站的輕量版資料（不含圖片）",
+  "他の人が共有した車両・編成ファイルを読み込みます": "讀取別人分享的車輛、編成檔",
+  "フォルダをスキャンして新しい画像を登録します": "掃描資料夾，把新圖片登錄進來",
+  "ファイルがフォルダから無くなったのに残っているレコードを整理します。画像が同じでも形式・番台が違うものは正常なデータとして扱い、報告しません。": "整理「檔案已經不在資料夾、資料卻還留著」的紀錄。圖片相同但形式、番台不同的會當成正常資料，不會回報。",
+  "車両IDをファイルパスから決めるようにして、どのパソコンでも同じIDになるようにします": "改用檔案路徑決定車輛ID，讓每台電腦算出來的ID都一樣",
+  "車両データだけを1つのJSONにします（編成は含みません）": "只把車輛資料存成一個 JSON（不含編成）",
+  "編成データだけを1つのJSONにします（車両は含みません）": "只把編成資料存成一個 JSON（不含車輛）",
+  "今の車両データベースを空にして、ファイルの内容にまるごと入れ替えます": "清空現在的車輛資料庫，整個換成檔案裡的內容",
+  "今の車両を残したまま、ファイルにしかないものだけを足します": "保留現在的車輛，只補上檔案裡才有的",
+  "今の編成データベースを空にして、ファイルの内容にまるごと入れ替えます": "清空現在的編成資料庫，整個換成檔案裡的內容",
+  "今の編成を残したまま、ファイルにしかないものだけを足します": "保留現在的編成，只補上檔案裡才有的",
+  "編成データベースに保存／更新（Ctrl+S）": "儲存／更新到編成資料庫（Ctrl+S）",
+  "この編成を編成データベースから削除": "從編成資料庫刪掉這筆編成",
+  "編成から車両をすべて外します": "把編成裡的車輛全部移除",
+  "この編成を共有ファイル（テキストのみ、画像なし）として書き出します": "把這筆編成匯出成分享檔（純文字，不含圖片）",
+  "ツールバーを開閉します（Ctrl+Shift+T）": "開關工具列（Ctrl+Shift+T）",
+  "ツールバーを畳む（Ctrl+Shift+T）": "收起工具列（Ctrl+Shift+T）",
+  "ツールバーを開く（Ctrl+Shift+T）": "展開工具列（Ctrl+Shift+T）",
+  "編成の前後を入れ替えます。車両の順番・向き・区間がすべて左右逆になります（Ctrl+Shift+M）": "把編成的前後對調。車輛順序、方向、區間全部左右相反（Ctrl+Shift+M）",
+  "タイトル・始発/終着駅・品番・セットを編成の上下に表示します": "在編成上下顯示標題、起訖站、品番、套組",
+  "よく使う種別をリストに追加": "把常用的種別加進清單",
+  "上の表の品番とメーカーを車両データベースに保存します（セットは記録されません）": "把上面表格的品番與廠商存進車輛資料庫（分組記號不會記錄）",
+  "この項目はローカル版のみ表示されます": "這個項目只有本機版才會顯示",
+  "この車両に登録済みの品番から選ぶ": "從這輛車已登錄的品番裡挑",
+  "このフォルダ配下の車両レコードをすべて削除": "刪除這個資料夾底下的所有車輛紀錄",
+  "データはサイトから直接読み込むため、フォルダ連携は不要です。": "資料直接從網站讀取，不需要連結資料夾。",
+  " 車両画像　": " 車輛圖片　",
+  " バッジ素材　": " 徽章素材　",
+  " サイトデータ　": " 網站資料　",
+  " フォント　　": " 字型　　　",
+  " 編成図出力　": " 編成圖輸出",
+  " 図面作成　　": " 圖面製作　",
+  "オンライン版・": "線上版・",
+  "オンラインデータの読み込みに失敗：": "線上資料讀取失敗：",
+
+  /* ---------- 語言切換本身 ---------- */
+  "表示言語": "顯示語言",
+  "日本語": "日本語",
+  "繁體中文": "繁體中文",
+
+  /* ---------- 瀏覽器・環境 ---------- */
+  "このブラウザーはフォルダ連携に対応していません。パソコン版の Chrome か Edge をご利用いただくか、「編成データベースの書き出し／読み込み」で手動バックアップしてください。": "這個瀏覽器不支援資料夾連結。請改用電腦版的 Chrome 或 Edge，或是用「編成資料庫的匯出／讀取」手動備份。",
+  "このブラウザーはフォルダ連携に対応していません。パソコン版の Chrome か Edge をご利用いただくか、「車両ライブラリの書き出し／読み込み」で手動バックアップしてください。": "這個瀏覽器不支援資料夾連結。請改用電腦版的 Chrome 或 Edge，或是用「車輛庫的匯出／讀取」手動備份。",
+  "このブラウザーはフォルダ連携に対応していません。パソコン版の Chrome か Edge をご利用いただくか、「手動アップロード（都度）」をご利用ください。": "這個瀏覽器不支援資料夾連結。請改用電腦版的 Chrome 或 Edge，或是用「手動上傳（每次）」。",
+  "このブラウザーはフォルダ連携に対応していません。パソコン版の Chrome か Edge をご利用いただくか、下の各タブのボタンで個別に指定してください。": "這個瀏覽器不支援資料夾連結。請改用電腦版的 Chrome 或 Edge，或是用下面各分頁的按鈕個別指定。",
+  "この端末ではブラウザーのデータベース機能が使えません。": "這台裝置無法使用瀏覽器的資料庫功能。",
+  "この端末のブラウザー保存容量が不足しているため、": "這台裝置的瀏覽器儲存空間不足，",
+  "「メモリモード」に自動で切り替えました：": "已自動切換成「記憶體模式」：",
+  "・今読み込んでいるデータの閲覧・編成作成・PNG出力は通常どおり行えます": "・目前已載入的資料，瀏覽、編成製作、PNG 輸出都照常可用",
+  "・ただしページを閉じたり再読み込みすると保持されず、JSONの読み込みが必要です": "・但關掉或重新載入頁面就不會留著，需要重新讀取 JSON",
+  "ブラウザーが新しいタブをブロックしました。ポップアップを許可してからもう一度お試しください。": "瀏覽器擋掉了新分頁。請允許彈出視窗後再試一次。",
+  "画像を新しいタブで開きました。長押しでアルバムに保存できます。": "已在新分頁開啟圖片。長按就能存到相簿。",
+
+  /* ---------- 資料夾連結 ---------- */
+  "先に車両フォルダを連携してください（上の「メインフォルダーを選択」または「フォルダを選択」から）。": "請先連結車輛資料夾（從上面的「選擇主資料夾」或「選擇資料夾」）。",
+  "フォルダの読み書き権限が得られなかったため、連携を中止しました。": "沒有取得資料夾的讀寫權限，已中止連結。",
+  "フォルダの読み取り権限が得られなかったため、連携を中止しました。": "沒有取得資料夾的讀取權限，已中止連結。",
+  "フォルダの選択に失敗しました：": "選擇資料夾失敗：",
+  "メインフォルダーの設定が完了しました": "主資料夾設定完成",
+  "メインフォルダー：": "主資料夾：",
+  "件は見つかりません": "筆找不到",
+  "」を連携しました・": "」已連結・",
+  "」を連携しました": "」已連結",
+  "車両フォルダ「": "車輛資料夾「",
+  "編成フォルダ「": "編成資料夾「",
+  "」フォルダに出力しました": "」資料夾",
+  "車両フォルダへの書き込みに失敗しました。データはブラウザー内に残っています。": "寫入車輛資料夾失敗。資料還留在瀏覽器裡。",
+  "サイトデータ（data）への書き込みに失敗しました。": "寫入網站資料夾（data）失敗。",
+  "「基本設定」からフォルダを選び直すと、次回の保存時に同期されます。": "從「基本設定」重新選一次資料夾，下次儲存時就會同步。",
+  "データは保存しましたが、車両フォルダが未連携のためファイル名は変更できませんでした。": "資料已儲存，但車輛資料夾沒有連結，所以檔名沒有改。",
+
+  /* ---------- 掃描・同步 ---------- */
+  "スキャン完了": "掃描完成",
+  "スキャンに失敗しました：": "掃描失敗：",
+  "・新規追加": "・新增",
+  "・既存の": "・既有的",
+  "・画像を更新": "・更新圖片",
+  "・移動を反映": "・反映移動",
+  "・重複レコードを": "・重複紀錄",
+  "うちファイル名に合わせて車両データも更新": "其中依檔名一併更新了車輛資料",
+  "うちファイル名が曖昧で車両データは未変更": "其中檔名不明確，車輛資料未變更",
+  "うち手動で対応付け": "其中手動對應",
+  "件は、フォルダ内に対応する画像ファイルがありません：": "筆在資料夾裡找不到對應的圖檔：",
+  "これらのファイルはフォルダ内に残っているため削除しません（消しても次のスキャンで戻ってきます）。": "這些檔案還在資料夾裡，所以不刪除（刪了下次掃描還是會回來）。",
+  "不要だと判断できる場合は、エクスプローラーでファイルを削除してからもう一度スキャンしてください。": "如果確定不需要，請先在檔案總管刪掉檔案，再掃描一次。",
+  "これらのレコードをデータベースから削除しますか？": "要把這些紀錄從資料庫刪掉嗎？",
+  "対応付けすると復活できることがあります。": "做好對應之後有機會救回來。",
+  "件は、あなたのデータベースに見つかりません：": "筆在你的資料庫裡找不到：",
+  "処理が必要な変更はありません。": "沒有需要處理的變更。",
+  "照合完了：更新が必要な箇所はありません": "比對完成：沒有需要更新的地方",
+
+  /* ---------- 整理重複・ID ---------- */
+  "確認完了：整理が必要な重複はありません。": "檢查完成：沒有需要整理的重複。",
+  "整理が必要な重複はありませんが、画像が同じでファイルが別のものが": "沒有需要整理的重複，不過圖片相同但檔案不同的有",
+  "組あります": "組",
+  "（画像が同じでも形式・番台が違う": "（圖片相同但形式、番台不同的",
+  "機電改造などで外観が同じ正常なデータとして扱いました）": "視為機電改造等外觀相同的正常資料）",
+  "整理に失敗しました：": "整理失敗：",
+  "確認完了：すべての車両IDがパスと一致しています。調整は不要です。": "檢查完成：所有車輛ID都和路徑一致，不需要調整。",
+  "車両IDを統一しました": "車輛ID已統一",
+  "両をパスから生成したIDに変更": "輛改成由路徑產生的ID",
+  "件の参照も修正）": "筆參照）",
+  "件の参照も更新": "筆參照也更新了",
+  "件の車両参照を修正": "筆車輛參照已修正",
+  "・IDを揃えた": "・已統一ID",
+  "件はソースファイルが無いため、IDはそのままです）": "筆因為沒有來源檔，ID維持原樣）",
+  "件はそのまま（ソースファイルが無いため）": "筆維持原樣（因為沒有來源檔）",
+  "以降はフォルダのスキャン時に自動で揃うため、通常は手動実行の必要はありません。": "之後掃描資料夾時會自動統一，平常不需要手動執行。",
+  "両にソースファイルのパスがありません（多くは以前に手動で追加したものです）。": "輛沒有來源檔路徑（多半是以前手動加進來的）。",
+  "先に画像を車両フォルダへ入れて「データ同期」を実行することをおすすめします。": "建議先把圖片放進車輛資料夾，再執行「資料同步」。",
+  "これらの車両はサイト上で画像が表示されません。": "這些車輛在網站上不會顯示圖片。",
+  "※ 車両を描き直して名前も変えた場合は、「車両フォルダをスキャン」で": "※ 如果把車輛重畫又改了名字，請用「掃描車輛資料夾」",
+
+  /* ---------- 車輛的新增・編輯・刪除 ---------- */
+  "車両画像を1枚選んでください。": "請選一張車輛圖片。",
+  "形式だけでも入力してください。": "至少要填形式。",
+  "読み込める画像がありません。": "沒有可以讀取的圖片。",
+  "分類タグを1つ以上選んでください。": "請至少選一個分類標籤。",
+  "車両フォームが空のため、保存するものがありません。": "車輛表單是空的，沒有東西可以儲存。",
+  "車両データベースに保存しました": "已儲存到車輛資料庫",
+  "車両をコピーしました": "已複製車輛",
+  "両をデータベースに読み込みました。": "輛已讀入資料庫。",
+  "両を追加": "輛已追加",
+  "」をデータベースから削除してもよろしいですか？": "」從資料庫刪掉嗎？",
+  "両をデータベースから削除してもよろしいですか？（編成で使用中の車両は残りますが、ライブラリからは選べなくなります）": "輛從資料庫刪掉嗎？（編成裡正在用的車輛會留著，但車輛庫裡就選不到了）",
+  "（データベースから外すだけで、ディスク上の画像ファイルは削除されません）": "（只是從資料庫移除，硬碟上的圖檔不會被刪掉）",
+  "件の車両レコードを削除してもよろしいですか？": "筆車輛紀錄刪掉嗎？",
+  "」配下の": "」底下的",
+  "選択中の": "所選的",
+  "両の分類タグをこの組み合わせで上書きしました。": "輛的分類標籤已用這個組合覆蓋。",
+  "両の情報を更新しました。": "輛的資訊已更新。",
+  "両の情報を更新しました": "輛的資訊已更新",
+  "ファイル名を変更できませんでした：": "檔名改不了：",
+  "一部のファイル名を変更できませんでした：": "有部分檔名改不了：",
+
+  /* ---------- 分類樹 ---------- */
+  "この名前は既に存在します。": "這個名字已經有了。",
+  "」を削除してもよろしいですか？（配下の子分類も含みます。このタグが付いた車両は削除されませんが、タグは無効な古いデータになります）": "」刪掉嗎？（包含底下的子分類。帶這個標籤的車輛不會被刪，但標籤會變成無效的舊資料）",
+  "」を削除してもよろしいですか？（配下の子分類も含みます）": "」刪掉嗎？（包含底下的子分類）",
+  "」を削除してもよろしいですか？": "」刪掉嗎？",
+
+  /* ---------- 編成 ---------- */
+  "車両を1両以上追加してから保存してください。": "請先加入至少一輛車再儲存。",
+  "編成にまだ車両がありません。": "編成裡還沒有車輛。",
+  "この編成には車両がないため、出力できません。": "這筆編成沒有車輛，無法輸出。",
+  "先に編成を組んでから出力してください。": "請先組好編成再輸出。",
+  "編成内の車両がすべてデータベースから削除されているため、出力できません。": "編成裡的車輛全部都已從資料庫刪除，無法輸出。",
+  "コピーできる内容がありません。": "沒有可以複製的內容。",
+  "書き出せる編成がありません。": "沒有可以匯出的編成。",
+  "編成データベースに保存しました": "已儲存到編成資料庫",
+  "この編成データが見つかりません。": "找不到這筆編成資料。",
+  "この編成を編成データベースから削除してもよろしいですか？": "要把這筆編成從編成資料庫刪掉嗎？",
+  "編成を削除しました「": "已刪除編成「",
+  "件の編成を削除してもよろしいですか？この操作は元に戻せません。": "筆編成刪掉嗎？這個動作無法復原。",
+  "件の編成を削除しました。": "筆編成已刪除。",
+  "編成データベースに、内容が同じ編成が既にあります：": "編成資料庫裡已經有內容相同的編成：",
+  "このまま書き出しますか？": "還是要照這樣匯出嗎？",
+  "件の編成を": "筆編成",
+  "にしました。": "。",
+  "選択中の編成は、もともとすべて公開です。": "所選的編成本來就全部是公開。",
+  "選択中の編成は、もともとすべて非公開です。": "所選的編成本來就全部是非公開。",
+  "両をこの編成から取り除きます：": "輛要從這個編成移除：",
+  "（「キャンセル」で残します。あとで個別に対応できます）": "（按「取消」就保留，之後可以個別處理）",
+  "続行してもよろしいですか？": "要繼續嗎？",
+  "向きを元に戻す": "把方向改回來",
+
+  /* ---------- 模型品番 ---------- */
+  "次の情報を車両データベースに記録しますか？": "要把下面的資訊記錄到車輛資料庫嗎？",
+  "記録が必要な新しい情報はありません。": "沒有需要記錄的新資訊。",
+  "（品番は登録済みです）": "（已經登錄過品番）",
+  "記録しました　品番": "已記錄　品番",
+  "件・メーカー": "筆・廠商",
+
+  /* ---------- 匯入・匯出 ---------- */
+  "読み込みに失敗しました。有効なJSONファイルではありません。": "讀取失敗。這不是有效的 JSON 檔。",
+  "有効な共有ファイルではありません（JSONの形式が不正です）。": "這不是有效的分享檔（JSON 格式不正確）。",
+  "ファイルの読み込みに失敗しました。もう一度お試しください。": "讀取檔案失敗，請再試一次。",
+  "このファイルを認識できません。": "無法辨識這個檔案。",
+  "「車両を書き出し／編成を書き出し」で作った共有ファイルを選んでください。": "請選用「匯出車輛／匯出編成」做出來的分享檔。",
+  "このファイルに編成データがありません。": "這個檔案裡沒有編成資料。",
+  "このファイルに車両データがありません。": "這個檔案裡沒有車輛資料。",
+  "このファイルは編成データベースのバックアップですが、中身が0件です。": "這個檔案是編成資料庫的備份，但裡面是 0 筆。",
+  "このファイルは車両データベースのバックアップですが、中身が0件です。": "這個檔案是車輛資料庫的備份，但裡面是 0 筆。",
+  "共有用の編成ファイルとして読み込みます。": "以分享用的編成檔讀取。",
+  "共有用の編成ファイルとして追加します。": "以分享用的編成檔追加。",
+  "共有用の車両ファイルとして読み込みます。": "以分享用的車輛檔讀取。",
+  "共有用の車両ファイルとして追加します。": "以分享用的車輛檔追加。",
+  "このファイルの": "這個檔案的",
+  "両はすべて登録済みのため、追加されたものはありません。": "輛全部都已經登錄過，沒有新增任何東西。",
+  "件の編成はすべて登録済みのため、追加されたものはありません。": "筆編成全部都已經登錄過，沒有新增任何東西。",
+  "件の車両データはすべて現在のデータと同じで、更新は不要です。": "筆車輛資料和現在的完全相同，不需要更新。",
+  "件の車両データは、すべて現在のデータと同じです。": "筆車輛資料和現在的完全相同。",
+  "両を現在のデータベースに追加しますか？": "輛要加進現在的資料庫嗎？",
+  "件の編成を現在のデータベースに追加しますか？": "筆編成要加進現在的資料庫嗎？",
+  "両をすべて消去し、ファイル内の": "輛全部清除，換成檔案裡的",
+  "両に入れ替えます。": "輛。",
+  "現在の編成データベースをすべて消去し、ファイル内の": "清空現在的編成資料庫，換成檔案裡的",
+  "件の編成に入れ替えます。": "筆編成。",
+  "（今の車両を残したい場合は「追加」を使ってください）": "（想保留現在的車輛就用「追加」）",
+  "（今の編成を残したい場合は「追加」を使ってください）": "（想保留現在的編成就用「追加」）",
+  "読み込み完了。全": "讀取完成。共",
+  "件の編成です。": "筆編成。",
+  "両です。": "輛。",
+  "件しか読み込めませんでした。": "筆。",
+  "件しか追加できませんでした。": "筆。",
+  "読み込み中にエラーが発生しました（": "讀取時發生錯誤（",
+  "追加中にエラーが発生しました（": "追加時發生錯誤（",
+  "件まで完了）：": "筆完成）：",
+  "。データ自体は保存済みです。": "。資料本身已經存好了。",
+  "データ自体は保存済みです。": "資料本身已經存好了。",
+  "両は登録済みのためスキップします": "輛已經登錄過，跳過",
+  "両をスキップ（登録済み）": "輛跳過（已登錄）",
+  "件をスキップ（内容がまったく同じ）": "筆跳過（內容完全相同）",
+  "件は内容がまったく同じためスキップします": "筆內容完全相同，跳過",
+  "両は削除も上書きもされません": "輛不會被刪除也不會被覆蓋",
+  "件の編成は削除も上書きもされません": "筆編成不會被刪除也不會被覆蓋",
+  "・ファイル内の他の": "・檔案裡其他的",
+  "件はIDが既存のものと重複するため、別の新しいレコードとして保存します": "筆因為ID和既有的重複，會存成另一筆新紀錄",
+  "件はIDが重複したため、別の新しいレコードとして保存": "筆因為ID重複，存成另一筆新紀錄",
+  "「OK」＝ そのレコードを上書き（保存すると既存のレコードが更新されます）": "「確定」＝ 覆蓋那筆紀錄（儲存後會更新既有的紀錄）",
+  "「OK」でフォルダ側のデータを使い、「キャンセル」で今のデータを上書きします。": "按「確定」用資料夾裡的資料，按「取消」用現在的資料覆蓋過去。",
+  "「OK」でフォルダ側のデータを使い、「キャンセル」で今画面にあるデータを上書きします。": "按「確定」用資料夾裡的資料，按「取消」用現在畫面上的資料覆蓋過去。",
+  "このフォルダには既に formations.json（": "這個資料夾裡已經有 formations.json（",
+  "このフォルダには既に vehicles.json（": "這個資料夾裡已經有 vehicles.json（",
+  "件の編成）があります。": "筆編成）。",
+  "両）があります。": "輛）。",
+  "「編成作成」に読み込みました": "已載入到「編成製作」",
+  "内容を確認して「編成データベースに保存／更新」を押すと、新しい編成として保存します。": "確認內容後按「儲存／更新到編成資料庫」，就會存成一筆新的編成。",
+  "内容を確認して「編成データベースに保存／更新」を押すと、元の編成を上書きします。": "確認內容後按「儲存／更新到編成資料庫」，就會覆蓋原本的編成。",
+  "先に車両一覧で書き出したい車両を選んでください。": "請先在車輛一覽裡選要匯出的車輛。",
+  "車両データベースが空のため、書き出すものがありません。": "車輛資料庫是空的，沒有東西可以匯出。",
+
+  /* ---------- Excel ---------- */
+  "Excelの読み込みに失敗しました。ファイル形式をご確認ください：": "讀取 Excel 失敗，請確認檔案格式：",
+  "既存の車両IDに一致する行がありませんでした。Excelのid列が変更または消去されている可能性があるため、読み込みを中止しました。": "沒有任何一列對得上既有的車輛ID。Excel 的 id 欄可能被改過或清掉了，所以中止讀取。",
+  "両が更新対象として一致しました。": "輛比對成功，會被更新。",
+  "行は対応する車両IDが見つからないためスキップします。この更新を適用しますか？": "列找不到對應的車輛ID，會跳過。要套用這次更新嗎？",
+  "両のテキスト項目を更新しました。": "輛的文字欄位已更新。",
+
+  /* ---------- 備份・輸出 ---------- */
+  "バックアップ完了（": "備份完成（",
+  "バックアップに失敗しました：": "備份失敗：",
+  "3つのファイルを作成しました": "已建立 3 個檔案",
+  "サイトにアップするときのフォルダ構成：": "上傳到網站時的資料夾結構：",
+  "01_車輛資料/…（画像フォルダまるごと）": "01_車輛資料/…（整個圖片資料夾）",
+  "00_必要資料/…（属性バッジ画像。フォントはアップ不要）": "00_必要資料/…（屬性徽章圖片。字型不用上傳）",
+  "・vehicles.json（": "・vehicles.json（",
+  "・formations.json（": "・formations.json（",
+  "・aliases.json（": "・aliases.json（",
+  "件のID別名。古い編成の参照を救うために必要）": "筆ID別名。舊編成的參照要靠它才救得回來）",
+  "両・編成": "輛・編成",
+  "・現在 全": "・目前共",
+  "…ほか、全": "…等，共",
+  "・編成を": "・編成",
+  "出力に失敗しました：": "輸出失敗：",
+  "書き出しに失敗しました：": "匯出失敗：",
+  "読み込みに失敗しました：": "讀取失敗：",
+  "保存に失敗しました：": "儲存失敗：",
+  "追加に失敗しました：": "追加失敗：",
+  "処理に失敗しました：": "處理失敗："
+});
+
+</script>
+<script>
 (function(){
   "use strict";
 
@@ -1200,7 +1684,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const h = document.getElementById("site-name");
     if(h) h.textContent = SITE_NAME;
     const w = document.getElementById("wl-title");
-    if(w) w.textContent = SITE_NAME + "　読み込み中";
+    if(w) w.textContent = SITE_NAME + "　読み込み中…";
   })();
   // 線上版資料的載入結果,手機上沒有主控台,所以顯示在頂部徽章
   let webLoadStatus = "未読み込み";
@@ -1249,7 +1733,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261029-HDR1";
+  const APP_BUILD = "20261030-TR3";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -1412,16 +1896,17 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
 
   function updateRootFolderStatus(){
     const el = $("#root-folder-status");
+    if(typeof scheduleHeaderLayout === "function") scheduleHeaderLayout();
     if(IS_WEB){
       const ok = webLoadStatus === "ok";
       el.classList.toggle("bound", ok);
       el.classList.toggle("unbound", !ok);
-      el.innerHTML = ok
+      el.innerHTML = trMsg(ok
         ? `<span class="dot"></span>オンライン版・${vehicles.length} 両・v${APP_BUILD}`
-        : `<span class="dot"></span>オンラインデータの読み込みに失敗：${webLoadStatus}・v${APP_BUILD}`;
-      el.title = ok
+        : `<span class="dot"></span>オンラインデータの読み込みに失敗：${webLoadStatus}・v${APP_BUILD}`);
+      el.title = trMsg(ok
         ? "データはサイトから直接読み込むため、フォルダ連携は不要です。"
-        : `${WEB_DATA_BASE}vehicles.json を読み込めません。今表示しているのはブラウザー内のデータです。`;
+        : `${WEB_DATA_BASE}vehicles.json を読み込めません。今表示しているのはブラウザー内のデータです。`);
       return;
     }
     const all = [vehicleDirHandle, assetsDirHandle, formationDirHandle,
@@ -1429,15 +1914,15 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const bound = all.filter(Boolean).length;
     el.classList.toggle("bound", bound > 0);
     el.classList.toggle("unbound", bound === 0);
-    el.innerHTML = `<span class="dot"></span>${bound}/${all.length} 連携済み`;
-    el.title = [
+    el.innerHTML = `<span class="dot"></span>${bound}/${all.length} ` + tr("連携済み");
+    el.title = trMsg([
       (vehicleDirHandle ? "✓" : "✕") + " 車両画像　02_發布用/01_車輛資料",
       (assetsDirHandle ? "✓" : "✕") + " バッジ素材　02_發布用/00_必要資料",
       (formationDirHandle ? "✓" : "✕") + " サイトデータ　02_發布用/data",
       (fontsDirHandle ? "✓" : "✕") + " フォント　　01_不公開資料/00_字形檔案",
       (pngDirHandle ? "✓" : "✕") + " 編成図出力　01_不公開資料/02_編成圖片存檔",
       (drawingsDirHandle ? "✓" : "✕") + " 図面作成　　01_不公開資料/01_圖面製作區"
-    ].join("\n");
+    ].join("\n"));
   }
 
   // 線上版隱藏只有本機才用得到的功能(資料夾綁定、掃描、匯出上線資料)
@@ -1953,7 +2438,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         });
         await writeJsonFile(formationDirHandle, "vehicles.json",
           { exportedAt: new Date().toISOString(), vehicles: slim });
-      }catch(e){ console.warn("サイトデータ(data)への書き込みに失敗しました", e); toast("サイトデータ(data)への書き込みに失敗しました。", "warn", 3600); }
+      }catch(e){ console.warn("サイトデータ（data）への書き込みに失敗しました", e); toast("サイトデータ（data）への書き込みに失敗しました。", "warn", 3600); }
     }
   }
   function scheduleFolderSync(){
@@ -2535,6 +3020,119 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   // 把資料當成網頁內容輸出前一律跳脫。
   // 自己的資料沒問題,但匯入別人分享的檔案後,名稱欄位可能含有惡意內容。
   // ---------- 浮動提示 ----------
+  // ================= 介面語言 =================
+  // 作法:程式裡的字維持日文原樣,畫面要顯示時才查對照表換成中文。
+  // 這樣切回日文完全不用改程式,只要把語言設定切回去即可,
+  // 對照表少了哪一句也只是那一句維持日文,不會壞掉。
+  const LANG_KEY = "settings:uiLang";
+  const I18N = (typeof window !== "undefined" && window.UI_ZH_TABLE) || {};
+  // 長句優先:短句是長句的一部分時,先換長的才不會把長句切碎
+  const I18N_KEYS = Object.keys(I18N).sort((a, b) => b.length - a.length);
+  let uiLang = "ja";
+
+  // 整句完全相同才換。畫面上的資料(車號、編成名)不會剛好等於一整句介面文字,
+  // 所以這個比對方式不會動到使用者的資料。
+  function tr(s){
+    if(uiLang !== "zh") return s;
+    const k = (s == null ? "" : String(s)).trim();
+    return (k && I18N[k]) ? I18N[k] : s;
+  }
+  // 訊息類(toast / confirm / 報告卡)是程式自己組出來的字,
+  // 中間會夾變數,所以允許以「句」為單位做替換。
+  function trMsg(s){
+    if(uiLang !== "zh" || s == null) return s;
+    let out = String(s);
+    const whole = I18N[out.trim()];
+    if(whole) return whole;
+    for(const k of I18N_KEYS){
+      if(k.length >= 4 && out.indexOf(k) >= 0) out = out.split(k).join(I18N[k]);
+    }
+    return out;
+  }
+  // confirm / alert 在這個檔案裡被直接呼叫了幾十次。
+  // 在這個作用域裡同名宣告,就等於一次把全部接過來,不用逐處修改。
+  function confirm(msg){ return window.confirm(trMsg(msg)); }
+  function alert(msg){ return window.alert(trMsg(msg)); }
+
+  // 畫面上的節點:只換文字節點與 placeholder / title,不碰 input 的 value。
+  const I18N_SKIP = new Set(["SCRIPT", "STYLE", "TEXTAREA"]);
+  function applyI18nTo(root){
+    if(uiLang !== "zh" || !root || !I18N_KEYS.length) return;
+    if(root.nodeType === 1){
+      // 編成預覽整塊都是使用者的資料,不翻譯
+      if(root.id === "preview-wrap" || root.closest("#preview-wrap")) return;
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT, {
+        acceptNode(n){
+          if(n.nodeType === 1){
+            if(I18N_SKIP.has(n.tagName) || n.id === "preview-wrap") return NodeFilter.FILTER_REJECT;
+            return NodeFilter.FILTER_ACCEPT;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      });
+      let n = root.nodeType === 1 ? root : null;
+      const els = [], texts = [];
+      if(n) els.push(n);
+      while((n = walker.nextNode())){ (n.nodeType === 1 ? els : texts).push(n); }
+      texts.forEach(t => {
+        const k = t.nodeValue.trim();
+        if(k && I18N[k]) t.nodeValue = t.nodeValue.replace(k, I18N[k]);
+      });
+      els.forEach(e => {
+        ["placeholder", "title", "label", "aria-label", "alt"].forEach(a => {
+          const v = e.getAttribute && e.getAttribute(a);
+          if(v && I18N[v.trim()]) e.setAttribute(a, I18N[v.trim()]);
+        });
+      });
+    }else if(root.nodeType === 3){
+      const k = root.nodeValue.trim();
+      if(k && I18N[k]) root.nodeValue = root.nodeValue.replace(k, I18N[k]);
+    }
+  }
+  // 畫面是動態長出來的,所以新節點進來時再翻一次。
+  // 用 rAF 合併,避免一次大量重畫時反覆跑。
+  function startI18nObserver(){
+    if(uiLang !== "zh") return;
+    let queue = [], scheduled = false;
+    const flush = () => {
+      scheduled = false;
+      const items = queue; queue = [];
+      items.forEach(applyI18nTo);
+    };
+    new MutationObserver(muts => {
+      muts.forEach(m => {
+        if(m.type === "attributes"){
+          const el = m.target, a = m.attributeName;
+          const v = el.getAttribute && el.getAttribute(a);
+          if(v && I18N[v.trim()]) el.setAttribute(a, I18N[v.trim()]);
+          return;
+        }
+        if(m.addedNodes) m.addedNodes.forEach(n => queue.push(n));
+      });
+      if(queue.length && !scheduled){ scheduled = true; requestAnimationFrame(flush); }
+    }).observe(document.body, { childList: true, subtree: true,
+                                attributes: true, attributeFilter: ["title", "placeholder"] });
+  }
+  async function loadUiLang(){
+    try{
+      const r = await storage.get(LANG_KEY, false);
+      if(r && r.value === "zh") uiLang = "zh";
+    }catch(e){ /* 讀不到就維持日文 */ }
+    const sel = $("#ui-lang");
+    if(sel) sel.value = uiLang;
+    document.documentElement.lang = (uiLang === "zh") ? "zh-Hant-TW" : "ja";
+    applyI18nTo(document.body);
+    startI18nObserver();
+  }
+  (function bindUiLang(){
+    const sel = $("#ui-lang");
+    if(!sel) return;
+    sel.addEventListener("change", async () => {
+      try{ await storage.set(LANG_KEY, sel.value, false); }catch(e){}
+      location.reload();        // 一次換乾淨,比逐一還原可靠
+    });
+  })();
+
   // 儲存這類例行操作用這個取代彈出視窗,不用按確認、會自動消失。
   // 真正需要使用者決定的事(確認刪除、衝突處理)仍然用 confirm/alert。
   function toast(msg, kind, ms){
@@ -2542,7 +3140,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     if(!area){ console.info(msg); return; }
     const el = document.createElement("div");
     el.className = "toast" + (kind ? " " + kind : "");
-    el.textContent = msg;
+    el.textContent = trMsg(msg);
     area.appendChild(el);
     requestAnimationFrame(() => el.classList.add("show"));
     setTimeout(() => {
@@ -2555,7 +3153,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   // 倒數條會走完,滑鼠移上去就暫停,也可以自己按 ✕ 關掉。
   function showReport(title, body, kind, ms){
     const area = document.getElementById("toast-area");
-    const text = Array.isArray(body) ? body.filter(x => x != null).join("\n") : String(body == null ? "" : body);
+    const text = trMsg(Array.isArray(body) ? body.filter(x => x != null).join("\n") : String(body == null ? "" : body));
+    title = trMsg(title);
     if(!area){ console.info(title + "\n" + text); return; }
     // 行數越多就多給一點時間,最少 6 秒最多 20 秒
     const lines = text.split("\n").length;
@@ -4192,26 +4791,22 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     window.scrollTo({top:0, behavior:"smooth"});
   }
 
-  // ---------- add panel: tabs ----------
-  const tabSingle = $("#tab-single");
-  const tabBatch = $("#tab-batch");
+  // ---------- add panel ----------
+  // 追加は「追加車両」1本。1枚でも複数枚でも同じ流れで、ファイル名から項目を起こす。
+  // 詳細フォーム(single-mode)は既存車両を編集するときだけ前に出す。
   const singleModeEl = $("#single-mode");
   const batchModeEl = $("#batch-mode");
   function setMode(mode){
-    if(mode === "single"){
-      tabSingle.classList.add("active"); tabBatch.classList.remove("active");
-      singleModeEl.style.display = ""; batchModeEl.style.display = "none";
-    }else{
-      tabBatch.classList.add("active"); tabSingle.classList.remove("active");
-      batchModeEl.style.display = ""; singleModeEl.style.display = "none";
-    }
+    const editing = (mode === "single");
+    singleModeEl.style.display = editing ? "" : "none";
+    batchModeEl.style.display = editing ? "none" : "";
+    const t = $("#add-panel-title");
+    if(t) t.textContent = editing ? "車両を編集" : "ステップ1　＋ 車両を追加";
   }
-  tabSingle.addEventListener("click", () => setMode("single"));
-  tabBatch.addEventListener("click", () => setMode("batch"));
-  $("#btn-toggle-panel").addEventListener("click", () => {
-    const body = $("#add-panel-body");
-    body.style.display = body.style.display === "none" ? "" : "none";
-  });
+  (function bindBackToAdd(){
+    const b = $("#btn-back-to-add");
+    if(b) b.addEventListener("click", () => { resetSingleForm(); setMode("batch"); });
+  })();
 
   // ---------- single add ----------
   let singleFileDataUrl = null;
@@ -4366,7 +4961,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   }
 
   const singlePicker = createCatPicker("#s-cat-picker", "#s-cat-tags", "#s-company");
-  const batchPicker = createCatPicker("#b-cat-picker", "#b-cat-tags", "#b-company");
+  const batchPicker = createCatPicker("#b-cat-picker", "#b-cat-tags", null);
   const batchTagPicker = createCatPicker("#batch-tag-picker", "#batch-tag-tags", null);
 
   if(TAG_FEATURE) $("#btn-apply-batch-tag").addEventListener("click", async () => {
@@ -4505,15 +5100,19 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     listEl.innerHTML = "";
     $("#b-save").disabled = files.length === 0;
     const defaultSeries = $("#b-series").value.trim();
-    const defaultCompany = $("#b-company").value.trim();
     files.forEach((file, idx) => {
       const reader = new FileReader();
       reader.onload = () => {
-        const guess = file.name.replace(/\.[a-zA-Z0-9]+$/, "");
+        // フォルダ連携のスキャンと同じ解析器を使う。
+        // 「形式-番台_塗装_L/R_幅(mm)」を1か所でしか解釈しないので、
+        // 手で足した車両とスキャンで入った車両で結果がズレない。
+        const g = parseVehicleFromPath(file.name);
         batchItems[idx] = {
           dataUrl: reader.result,
-          series: defaultSeries, modelCode: guess, variantCode: "",
-          liveryName: "", company: defaultCompany, widthCm: "3.8"
+          series: defaultSeries,
+          modelCode: g.modelCode || "", variantCode: g.variantCode || "",
+          liveryName: g.liveryName || "", side: g.side || "",
+          widthCm: String(g.widthCm != null ? g.widthCm : 3.8)
         };
         renderBatchList();
       };
@@ -4529,12 +5128,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       row.innerHTML = `
         <td style="text-align:center;"><input type="checkbox" data-role="same-above" ${idx === 0 ? "disabled" : ""}></td>
         <td><img src="${item.dataUrl}"></td>
-        <td><input data-k="series" value="${esc(item.series || "")}" placeholder="例：221"></td>
         <td><input data-k="modelCode" value="${esc(item.modelCode || "")}" placeholder="例：クハ221"></td>
-        <td><input data-k="variantCode" value="${esc(item.variantCode || "")}" placeholder="例：100"></td>
+        <td><input data-k="variantCode" value="${esc(item.variantCode || "")}" placeholder="例：100" style="width:62px;"></td>
         <td><input data-k="liveryName" value="${esc(item.liveryName || "")}" placeholder="例：湘南色"></td>
-        <td><input data-k="company" value="${esc(item.company || "")}" placeholder="例：JR西日本"></td>
-        <td><input data-k="widthCm" value="${esc(item.widthCm || "3.8")}" placeholder="3.8" style="width:52px;"></td>
+        <td><input data-k="side" value="${esc(item.side || "")}" placeholder="L / R" style="width:52px;"></td>
+        <td><input data-k="widthCm" value="${esc(item.widthCm || "3.8")}" placeholder="3.8" style="width:56px;"></td>
         <td><button class="remove" data-idx="${idx}">✕</button></td>
       `;
       row.querySelectorAll("input[data-k]").forEach(inp => {
@@ -4547,10 +5145,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         while(prevIdx >= 0 && !batchItems[prevIdx]) prevIdx--;
         if(prevIdx >= 0){
           const prev = batchItems[prevIdx];
+          // 向きは L/R で必ず違うのでコピーしない
           Object.assign(batchItems[idx], {
             series: prev.series || "",
             variantCode: prev.variantCode || "", liveryName: prev.liveryName || "",
-            company: prev.company || "", widthCm: prev.widthCm || "3.8"
+            widthCm: prev.widthCm || "3.8"
           });
         }
         renderBatchList();
@@ -4563,12 +5162,16 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     const cats = batchPicker.cats.slice();
     const valid = batchItems.filter(Boolean);
     if(valid.length === 0){ toast("読み込める画像がありません。", "err"); return; }
+    // 系列は保存する瞬間に読む。画像を選んでから系列を入れる順番でも効くようにするため
+    // (以前は画像を選んだ時点の値しか見ていなかったので、あとから入れても無視されていた)。
+    const defSeries = ($("#b-series").value || "").trim();
     valid.forEach(item => {
       vehicles.push({
         id: "v_" + Date.now() + "_" + Math.random().toString(36).slice(2,7),
         modelCode: item.modelCode || "名称未設定",
-        series: item.series || "", variantCode: item.variantCode || "",
-        liveryName: item.liveryName || "", company: item.company || "",
+        series: item.series || defSeries, variantCode: item.variantCode || "",
+        liveryName: item.liveryName || "", company: "",
+        side: (item.side || "").trim().toUpperCase(),
         widthCm: parseFloat(item.widthCm) || 3.8,
         note: "", categories: cats.slice(), img: item.dataUrl
       });
@@ -4602,9 +5205,19 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       let payload;
       try{ payload = JSON.parse(reader.result); }
       catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
+      const info = classifyPayload(payload);
+      if(info.kind === "share-vehicle"){
+        toast("共有用の車両ファイルとして読み込みます。", "info");
+        await importSharedVehicles(payload);
+        return;
+      }
+      if(info.kind !== "vehicle-db"){
+        toast(wrongSlotMessage(info.kind, "vehicle"), "err", 6000);
+        return;
+      }
       const incoming = payload.vehicles || [];
-      if(!Array.isArray(incoming) || incoming.length === 0){
-        toast("このファイルに車両データがありません（vehicles 項目が見つかりません）。", "err");
+      if(incoming.length === 0){
+        toast("このファイルは車両データベースのバックアップですが、中身が0件です。", "err", 5000);
         return;
       }
       if(!confirm(`現在の ${vehicles.length} 両をすべて消去し、ファイル内の ${incoming.length} 両に入れ替えます。\n` +
@@ -4640,9 +5253,19 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       let payload;
       try{ payload = JSON.parse(reader.result); }
       catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
+      const info = classifyPayload(payload);
+      if(info.kind === "share-vehicle"){
+        toast("共有用の車両ファイルとして追加します。", "info");
+        await importSharedVehicles(payload);
+        return;
+      }
+      if(info.kind !== "vehicle-db"){
+        toast(wrongSlotMessage(info.kind, "vehicle"), "err", 6000);
+        return;
+      }
       const incoming = payload.vehicles || [];
-      if(!Array.isArray(incoming) || incoming.length === 0){
-        toast("このファイルに車両データがありません（vehicles 項目が見つかりません）。", "err");
+      if(incoming.length === 0){
+        toast("このファイルは車両データベースのバックアップですが、中身が0件です。", "err", 5000);
         return;
       }
       // 編號一樣、或來源檔案路徑一樣,都算是已經有了
@@ -4918,6 +5541,36 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     toast("このファイルを認識できません。\n「車両を書き出し／編成を書き出し」で作った共有ファイルを選んでください。", "err", 5000);
   }
 
+  // ファイルの中身を見て種類を当てる。
+  // 「編成を書き出し」が2か所にあり(共有ファイル ↗書き出し / 編成データベースの書き出し)、
+  // 出てくるJSONの形が別物なので、入れる口を間違えると
+  // 「formationsIndex が見つかりません」とだけ言われて行き止まりになっていた。
+  // どの口に入れても中身で判断し、違う種類なら正しい行き先を名指しする。
+  function classifyPayload(p){
+    if(!p || typeof p !== "object") return { kind: "unknown" };
+    const fmt = p["格式"] || p.format;
+    if(fmt === SHARE_FORMATION) return { kind: "share-formation" };
+    if(fmt === SHARE_VEHICLE)   return { kind: "share-vehicle" };
+    if(Array.isArray(p.formationsIndex)) return { kind: "formation-db", count: p.formationsIndex.length };
+    if(Array.isArray(p.vehicles))        return { kind: "vehicle-db", count: p.vehicles.length };
+    return { kind: "unknown" };
+  }
+  const PAYLOAD_LABEL = {
+    "share-formation": "共有用の編成ファイル（↗書き出しで作ったもの）",
+    "share-vehicle":   "共有用の車両ファイル（車両の書き出しで作ったもの）",
+    "formation-db":    "編成データベースのバックアップ",
+    "vehicle-db":      "車両データベースのバックアップ"
+  };
+  // want = "formation" / "vehicle"。合わないときに「どこへ入れればよいか」を返す。
+  function wrongSlotMessage(kind, want){
+    const what = PAYLOAD_LABEL[kind];
+    if(!what) return "このファイルの種類が分かりません。別名で保存されたJSONか、別のアプリのファイルかもしれません。";
+    if(want === "formation"){
+      return `これは${what}です。\n基本設定の「車両」の読み込み／追加に入れてください。`;
+    }
+    return `これは${what}です。\n編成データベースの読み込み／追加に入れてください。`;
+  }
+
   const SHARE_FIELDS = [
     ["series","車輛系列"],["modelCode","車輛型式"],["variantCode","番代"],
     ["liveryName","塗裝名稱"],["side","方向"],["company","所屬公司"],
@@ -5189,7 +5842,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       e.preventDefault(); setToolsDrawer(false); return;
     }
 
-    // Ctrl+Shift+T:編成操作バーの開閉(編成作成タブだけ)
+    // Ctrl+Shift+T:ツールバーの開閉(編成作成タブだけ)
     if(ctrl && e.shiftKey && (e.key === "t" || e.key === "T") && currentTab === "builder"){
       e.preventDefault(); toggleBuilderBar(); return;
     }
@@ -6015,7 +6668,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         const del = document.createElement("button");
         del.type = "button"; del.className = "btn small secondary";
         del.style.cssText = "padding:2px 8px;font-size:10.5px;";
-        del.textContent = "✕ この組を削除";
+        del.textContent = tr("✕ 削除する");
         del.addEventListener("click", () => {
           state.segments.splice(idx, 1);
           renderStationPairs(); updateTitlePreview();
@@ -6046,8 +6699,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       posRow.className = "station-pair-row";
       posRow.style.gridTemplateColumns = "1fr 1fr";
       posRow.innerHTML = `
-        <div><label>愛称の開始車番</label><input data-k="fromPos" value="${esc(seg.fromPos || "")}" placeholder="任意"></div>
-        <div><label>愛称の終了車番</label><input data-k="toPos" value="${esc(seg.toPos || "")}" placeholder="任意"></div>
+        <div><label>愛称の開始車番</label><input data-k="fromPos" value="${esc(seg.fromPos || "")}"></div>
+        <div><label>愛称の終了車番</label><input data-k="toPos" value="${esc(seg.toPos || "")}"></div>
       `;
       // (這裡以前多呼叫了一次 block.appendChild(row),row 已經加過了,是多餘的)
       block.appendChild(posRow);
@@ -6351,13 +7004,13 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     if(cb) cb.checked = on;
     document.body.classList.toggle("hide-fp-info", !on);
   }
-  // 編成操作バーの開閉。版面を最大化したい人は畳んだまま使えるよう、設定として覚える。
+  // ツールバーの開閉。版面を最大化したい人は畳んだまま使えるよう、設定として覚える。
   // 畳んでいても「保存」「PNG」は頁簽の横に小さく残るし、下側の操作バーと Ctrl+S も生きている。
   const BAR_KEY = "settings:showBuilderBar";
   function setBuilderBar(open){
     document.body.classList.toggle("builder-bar-closed", !open);
     const t = $("#builder-bar-tab");
-    if(t) t.title = (open ? "編成操作バーを畳む" : "編成操作バーを開く") + "（Ctrl+Shift+T）";
+    if(t) t.title = tr(open ? "ツールバーを畳む（Ctrl+Shift+T）" : "ツールバーを開く（Ctrl+Shift+T）");
   }
   async function loadBuilderBarPref(){
     let open = true;
@@ -6372,6 +7025,34 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     setBuilderBar(open);
     try{ await storage.set(BAR_KEY, open ? "1" : "0", false); }catch(e){}
   }
+  // ヘッダーが1行に収まるかを実寸で測り、収まらなければ頁簽を2行目に落とす。
+  // 右端の連携バッジは中身が伸び縮みする(「オンライン版・○○両・v…」)ので、
+  // 幅を決め打ちした @media では判定できない。
+  // ついでに --chrome-h を実測値で更新する。本体の高さはこれを見ているので、
+  // 1行でも2行でも隙間や二重スクロールが出ない。
+  let headerRaf = 0;
+  function layoutHeader(){
+    const bar = document.querySelector(".topbar");
+    if(!bar) return;
+    // まず1行の状態に戻してから測る(折り返した状態では溢れが検出できない)
+    document.body.classList.remove("header-wrap");
+    const overflow = bar.scrollWidth > bar.clientWidth + 1;
+    document.body.classList.toggle("header-wrap", overflow);
+    const h = Math.round(bar.getBoundingClientRect().height);
+    if(h > 0) document.documentElement.style.setProperty("--chrome-h", h + "px");
+  }
+  function scheduleHeaderLayout(){
+    if(headerRaf) return;
+    headerRaf = requestAnimationFrame(() => { headerRaf = 0; layoutHeader(); });
+  }
+  (function bindHeaderLayout(){
+    window.addEventListener("resize", scheduleHeaderLayout);
+    const bar = document.querySelector(".topbar");
+    if(bar && window.ResizeObserver) new ResizeObserver(scheduleHeaderLayout).observe(bar);
+    // フォントが後から入ると文字幅が変わるので、読み終わってからもう一度測る
+    if(document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleHeaderLayout).catch(() => {});
+  })();
+
   // 連携バッジは状態表示であると同時に、基本設定への入口にもする。
   // フォルダ系のボタンを抽屜へ移したので、バッジが赤いときの行き先がすぐ分かるようにする。
   (function bindFolderBadge(){
@@ -6704,7 +7385,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     });
 
     if(!codeAdds.length && !makerChanges.length){
-      toast("記録が必要な新しい情報はありません。\n（品番が登録済みか、入力がセット記号のためです。セットは既定として保存されません）", "", 4200);
+      toast("記録が必要な新しい情報はありません。\n（品番は登録済みです）", "", 4200);
       return;
     }
     const lines = [];
@@ -7009,8 +7690,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
   function updateEditingHint(){
     const hintEl = $("#editing-hint");
     const vis = (!IS_WEB && state.visibility === "private") ? "［私人］" : "";
-    hintEl.textContent = state.id ? `保存済みの編成を編集中:${vis}${buildTitleText()}`
-                                  : `未保存の新しい編成です${vis}`;
+    hintEl.textContent = trMsg(state.id ? `保存済みの編成を編集中:${vis}${buildTitleText()}`
+                                        : `未保存の新しい編成です${vis}`);
   }
 
   async function refreshNicknameSuggestions(){
@@ -7885,8 +8566,15 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     if(!IS_WEB && formationVisFilter === "public") filtered = filtered.filter(isPublicFormation);
     if(!IS_WEB && formationVisFilter === "private") filtered = filtered.filter(f => !isPublicFormation(f));
     const pub = list.filter(isPublicFormation).length;
-    $("#formation-count").textContent = `全 ${list.length} 件の編成　表示 ${filtered.length} 件` +
-      (IS_WEB ? "" : `　（公開 ${pub}／非公開 ${list.length - pub}）`);
+    // 数字を {} で逃がしてから訳す。文を丸ごと1句として扱えるので、
+    // 「件」「全」のような短い語を単独で置換しなくて済む（誤爆しない）。
+    let cnt = tr("全 {A} 件の編成　表示 {B} 件")
+                .replace("{A}", list.length).replace("{B}", filtered.length);
+    if(!IS_WEB){
+      cnt += tr("　（公開 {P}／非公開 {Q}）")
+               .replace("{P}", pub).replace("{Q}", list.length - pub);
+    }
+    $("#formation-count").textContent = cnt;
     const box = $("#formation-results");
     box.innerHTML = "";
     shownFormationIds = filtered.map(f => f.id);
@@ -8039,9 +8727,20 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       let payload;
       try{ payload = JSON.parse(reader.result); }
       catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
+      const info = classifyPayload(payload);
+      if(info.kind === "share-formation"){
+        // ↗書き出しで作った1編成。これも編成なので、そのまま取り込む。
+        toast("共有用の編成ファイルとして読み込みます。", "info");
+        await importSharedFormation(payload);
+        return;
+      }
+      if(info.kind !== "formation-db"){
+        toast(wrongSlotMessage(info.kind, "formation"), "err", 6000);
+        return;
+      }
       const incoming = payload.formationsIndex || [];
-      if(!Array.isArray(incoming) || incoming.length === 0){
-        toast("このファイルに編成データがありません（formationsIndex 項目が見つかりません）。", "err");
+      if(incoming.length === 0){
+        toast("このファイルは編成データベースのバックアップですが、中身が0件です。", "err", 5000);
         return;
       }
       if(!confirm(`現在の編成データベースをすべて消去し、ファイル内の ${incoming.length} 件の編成に入れ替えます。\n` +
@@ -8104,9 +8803,19 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       let payload;
       try{ payload = JSON.parse(reader.result); }
       catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
+      const info = classifyPayload(payload);
+      if(info.kind === "share-formation"){
+        toast("共有用の編成ファイルとして追加します。", "info");
+        await importSharedFormation(payload);
+        return;
+      }
+      if(info.kind !== "formation-db"){
+        toast(wrongSlotMessage(info.kind, "formation"), "err", 6000);
+        return;
+      }
       const incoming = payload.formationsIndex || [];
-      if(!Array.isArray(incoming) || incoming.length === 0){
-        toast("このファイルに編成データがありません（formationsIndex 項目が見つかりません）。", "err");
+      if(incoming.length === 0){
+        toast("このファイルは編成データベースのバックアップですが、中身が0件です。", "err", 5000);
         return;
       }
 
@@ -8204,7 +8913,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     await step("種別リストの読み込み", loadTrainTypes);
     await step("並び順設定の読み込み", loadSortMode);
     await step("編成情報表示の設定", loadFormationInfoPref);
-    await step("編成操作バーの設定", loadBuilderBarPref);
+    await step("ツールバーの設定", loadBuilderBarPref);
+    await step("表示言語", loadUiLang);
+    await step("ヘッダーの行数", layoutHeader);
     await step("分類導覽", () => renderCategoryNav());
     await step("属性メニュー", () => {
       $("#s-attr").innerHTML = attrSelectHtml();
@@ -8220,7 +8931,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     await step("線上版字型", waitWebFonts);
     await step("線上版徽章圖片", loadWebBadgeImages);
     await step("初始分頁", () => {
-      setMode("single");
+      setMode("batch");
       switchTab("vehicles", true);
       // 記下起始狀態,之後的操作才有東西可以退回
       try{ history.replaceState(navSnapshot(), ""); }catch(e){}
