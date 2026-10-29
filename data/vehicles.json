@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-29T08:43:11.573Z",
+  "exportedAt": "2026-10-29T08:49:54.110Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -32853,13 +32853,16 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "A3114",
       "categories": [
         "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "A3114",
+        "2757"
+      ]
     },
     {
       "id": "vp_hpnu6r1oaiugz",
@@ -55045,13 +55048,15 @@
       "widthCm": 3.8,
       "note": "",
       "defaultAttribute": "",
-      "defaultProductCode": "",
+      "defaultProductCode": "A3114",
       "categories": [
         "04_貨物列車 / 04_コンテナ車"
       ],
       "containerFt": "",
       "isFlatcar": true,
-      "productCodes": []
+      "productCodes": [
+        "A3114"
+      ]
     },
     {
       "id": "vp_e67zsgyq8wpm",
