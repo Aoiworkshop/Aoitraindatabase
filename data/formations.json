@@ -42,7 +42,7 @@
         "モハ103-1000",
         "サハ103-1000"
       ],
-      "updatedAt": "2026-10-28T17:48:14.151Z"
+      "updatedAt": "2026-10-13T12:44:55.048Z"
     },
     {
       "id": "f_1789525314979",
@@ -784,7 +784,7 @@
         "スハネフ14-500",
         "キハ182-0"
       ],
-      "updatedAt": "2026-10-28T17:15:38.215Z"
+      "updatedAt": "2026-10-13T12:48:35.631Z"
     },
     {
       "id": "f_1789719247525",
@@ -2293,7 +2293,7 @@
         ""
       ],
       "titleNote": "",
-      "visibility": "public",
+      "visibility": "private",
       "carModelsUsed": [
         "コキフ10000",
         "コキ10000"
@@ -2630,138 +2630,70 @@
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1743E",
-          "setGroupId": "A",
-          "vref": {
-            "m": "クハ103",
-            "l": "常磐快速",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/クハ103_常磐快速.png"
-          }
+          "setGroupId": "A"
         },
         {
           "vehicleId": "vp_19sq9lh1j11fv1",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "B",
-          "vref": {
-            "m": "モハ103",
-            "v": "1000",
-            "l": "営団千代田線",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103-1000_営団千代田線.png"
-          }
+          "setGroupId": "B"
         },
         {
           "vehicleId": "vp_t5if61un37g6",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "B",
-          "vref": {
-            "m": "サハ103",
-            "v": "1000",
-            "l": "営団千代田線",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103-1000_営団千代田線.png"
-          }
+          "setGroupId": "B"
         },
         {
           "vehicleId": "vp_19sq9lh1j11fv1",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "B",
-          "vref": {
-            "m": "モハ103",
-            "v": "1000",
-            "l": "営団千代田線",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103-1000_営団千代田線.png"
-          }
+          "setGroupId": "B"
         },
         {
           "vehicleId": "vp_t5if61un37g6",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "B",
-          "vref": {
-            "m": "サハ103",
-            "v": "1000",
-            "l": "営団千代田線",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103-1000_営団千代田線.png"
-          }
+          "setGroupId": "B"
         },
         {
           "vehicleId": "vp_19sq9lh1j11fv1",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "C",
-          "vref": {
-            "m": "モハ103",
-            "v": "1000",
-            "l": "営団千代田線",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103-1000_営団千代田線.png"
-          }
+          "setGroupId": "C"
         },
         {
           "vehicleId": "vp_t5if61un37g6",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "C",
-          "vref": {
-            "m": "サハ103",
-            "v": "1000",
-            "l": "営団千代田線",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103-1000_営団千代田線.png"
-          }
+          "setGroupId": "C"
         },
         {
           "vehicleId": "vp_19sq9lh1j11fv1",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "C",
-          "vref": {
-            "m": "モハ103",
-            "v": "1000",
-            "l": "営団千代田線",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/モハ103-1000_営団千代田線.png"
-          }
+          "setGroupId": "C"
         },
         {
           "vehicleId": "vp_t5if61un37g6",
           "flipped": false,
           "attribute": "TO",
           "productCode": "98284",
-          "setGroupId": "C",
-          "vref": {
-            "m": "サハ103",
-            "v": "1000",
-            "l": "営団千代田線",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/サハ103-1000_営団千代田線.png"
-          }
+          "setGroupId": "C"
         },
         {
           "vehicleId": "vp_1k7848nr199m3",
           "flipped": true,
           "attribute": "基Set",
           "productCode": "10-1743E",
-          "setGroupId": "A",
-          "vref": {
-            "m": "クハ103",
-            "l": "常磐快速",
-            "e": "103系",
-            "p": "01_JR 国鉄/03_電車/02_通勤形・近郊形/01_直流用/103系/クハ103_常磐快速.png"
-          }
+          "setGroupId": "A"
         }
       ],
       "reversed": false,
@@ -4514,86 +4446,42 @@
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": "A",
-          "vref": {
-            "m": "キハ183",
-            "v": "200",
-            "l": "とかち色",
-            "s": "L",
-            "e": "キハ183系",
-            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キハ183-200_とかち色_L.png"
-          }
+          "setGroupId": ""
         },
         {
           "vehicleId": "vp_14wmf0im9w5rw",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": "A",
-          "vref": {
-            "m": "キロハ182",
-            "l": "とかち色",
-            "e": "キハ183系",
-            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キロハ182_とかち色.png"
-          }
+          "setGroupId": ""
         },
         {
           "vehicleId": "vp_19w3g0a1n3l8p2",
           "flipped": true,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": "A",
-          "vref": {
-            "m": "スハネフ14",
-            "v": "500",
-            "e": "キハ183系",
-            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/スハネフ14-500.png"
-          }
+          "setGroupId": ""
         },
         {
           "vehicleId": "vp_5dvqsfpgsdw3",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": "A",
-          "vref": {
-            "m": "キハ182",
-            "v": "0",
-            "l": "とかち色",
-            "s": "R",
-            "e": "キハ183系",
-            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キハ182-0_とかち色_R.png"
-          }
+          "setGroupId": ""
         },
         {
           "vehicleId": "vp_5dvqsfpgsdw3",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": "A",
-          "vref": {
-            "m": "キハ182",
-            "v": "0",
-            "l": "とかち色",
-            "s": "R",
-            "e": "キハ183系",
-            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キハ182-0_とかち色_R.png"
-          }
+          "setGroupId": ""
         },
         {
           "vehicleId": "vp_7xyf7g1mckuve",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92812",
-          "setGroupId": "A",
-          "vref": {
-            "m": "キハ183",
-            "v": "200",
-            "l": "とかち色",
-            "s": "R",
-            "e": "キハ183系",
-            "p": "01_JR 国鉄/02_気動車/03_特急形/キハ183系/キハ183-200_とかち色_R.png"
-          }
+          "setGroupId": ""
         }
       ],
       "reversed": false,
@@ -8473,7 +8361,7 @@
       ],
       "reversed": false,
       "titleNote": "",
-      "visibility": "public"
+      "visibility": "private"
     },
     "f_1790989426993": {
       "id": "f_1790989426993",
@@ -9141,5 +9029,5 @@
       "titleNote": ""
     }
   },
-  "savedAt": "2026-10-28T17:56:16.585Z"
+  "savedAt": "2026-10-29T06:35:50.717Z"
 }

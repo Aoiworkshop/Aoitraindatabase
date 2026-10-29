@@ -1180,7 +1180,7 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261029-INF1";
+  const APP_BUILD = "20261029-FLD1";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -2148,6 +2148,72 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
     });
   }
 
+  // 檔名改掉之後,資料庫的欄位要不要跟著改?
+  //
+  // ・只是搬資料夾(檔名沒變) → 不動欄位。使用者手填的內容要保留。
+  // ・檔名本身變了          → 以檔名為準重新解析型式/番台/塗裝/方向/寬度。
+  //
+  // 第二種如果不做,資料庫會留著舊的番台與塗裝,而下次按「儲存」時
+  // renameVehicleFiles 會拿這些舊欄位組出舊檔名,把你剛改好的檔案改回去 ——
+  // 等於資料庫把你的改名吐回來。
+  //
+  // 不會形成迴圈:更新後「欄位組出來的檔名」等於「現在的檔名」,
+  // 所以 renameVehicleFiles 會判定 want === curName 而直接跳過,不再改名。
+  // 為了保證這一點,這裡會先把欄位組回檔名驗證一次(fileNameRoundTrips),
+  // 對不上就不動欄位,只回報,避免把資料改成跟檔案互相矛盾的狀態。
+  function planNameFieldUpdates(v, newPath){
+    const base = p => String(p || "").split("/").pop();
+    const oldName = base(v.sourcePath);
+    const newName = base(newPath);
+    if(!newName || oldName === newName) return null;      // 只是搬資料夾
+
+    const parsed = parseVehicleFromPath(newPath);
+    if(!parsed.modelCode) return { ambiguous: "ファイル名から型式が読み取れません" };
+
+    const w = parsed.widthCm;
+    // 檔名裡的數字會被當成寬度(mm)。像「形式_2000」這種會算出 200 公分,
+    // 顯然不是車寬,這種就不要拿去蓋掉資料。
+    if(w != null && (w < 0.5 || w > 10)){
+      return { ambiguous: `ファイル名の「${Math.round(w * 10)}」を幅として読むと ${w}cm になります` };
+    }
+    const next = {
+      modelCode: parsed.modelCode,
+      variantCode: parsed.variantCode || "",
+      liveryName: parsed.liveryName || "",
+      side: (parsed.side || "").toUpperCase(),
+      widthCm: w == null ? 3.8 : w
+    };
+    // 組回去必須等於現在的檔名,否則這個檔名有歧義
+    if(!fileNameRoundTrips(Object.assign({}, v, next), newName)){
+      return { ambiguous: "ファイル名を読み戻すと項目がずれます" };
+    }
+    // 再確認一次「用這些欄位組出來的檔名」跟現在的檔名完全一樣。
+    // 不一樣的話(例如檔名開頭多一個底線)欄位本身是對的,
+    // 但下一次儲存時 renameVehicleFiles 會把檔案悄悄改成正規化的名字。
+    // 與其讓檔案在使用者沒預期的時候被改名,不如先回報,請他自己把檔名改對。
+    const rebuilt = buildVehicleFileStem(Object.assign({}, v, next));
+    const bare = newName.replace(/\.[^.]+$/, "");
+    if(rebuilt !== bare){
+      return { ambiguous: `このファイル名は保存時に「${rebuilt}」へ正規化されます（先にファイル名を直してください）` };
+    }
+    const diffs = [];
+    Object.keys(next).forEach(k => {
+      if(k === "widthCm"){
+        const a = parseFloat(v[k]); const b = next[k];
+        if(Math.abs((isNaN(a) ? 3.8 : a) - b) > 0.001) diffs.push({ k, from: isNaN(a) ? 3.8 : a, to: b });
+      }else{
+        const a = String(v[k] == null ? "" : v[k]).trim();
+        if(a !== String(next[k]).trim()) diffs.push({ k, from: a, to: next[k] });
+      }
+    });
+    return diffs.length ? { next, diffs } : null;
+  }
+
+  const NAME_FIELD_LABEL = {
+    modelCode: "型式", variantCode: "番台", liveryName: "塗装",
+    side: "方向", widthCm: "幅(cm)"
+  };
+
   async function scanVehicleFolder(){
     if(!vehicleDirHandle){
       toast("先に車両フォルダを連携してください（上の「メインフォルダーを選択」または「フォルダを選択」から）。", "err", 5000);
@@ -2246,6 +2312,11 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         });
       }
 
+      // 改名的那幾筆:先算出「欄位要怎麼跟著改」,好列在確認視窗裡
+      moved.forEach(m => { m.fields = planNameFieldUpdates(m.v, m.to); });
+      const fieldSync = moved.filter(m => m.fields && m.fields.diffs);
+      const fieldAmbiguous = moved.filter(m => m.fields && m.fields.ambiguous);
+
       // 路徑一樣、但圖片內容變了 → 您重新做過圖並用同檔名覆蓋回資料夾。
       // 這種情況只換圖片,其他欄位(型式/番代/塗裝/寬度/貨號/分類標籤)全部保留。
       btn.textContent = "画像を照合中…";
@@ -2269,6 +2340,22 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       const lines = [`スキャン完了：ディスク上に ${found.length} 枚の画像が見つかりました。`];
       if(updatedImgs.length) lines.push(`・${updatedImgs.length} 枚は画像の中身が更新されています（画像だけ差し替え、他の項目は保持）`);
       if(moved.length) lines.push(`・${moved.length} 枚は移動／名前変更と判定しました（既存のレコードを更新し、重複登録はしません）`);
+      if(fieldSync.length){
+        lines.push(`・うち ${fieldSync.length} 件はファイル名が変わっているため、車両データもファイル名に合わせます：`);
+        fieldSync.slice(0, 6).forEach(m => {
+          const d = m.fields.diffs
+            .map(x => `${NAME_FIELD_LABEL[x.k] || x.k} ${x.from || "(空)"}→${x.to || "(空)"}`)
+            .join("、");
+          lines.push(`　　${m.to.split("/").pop()}：${d}`);
+        });
+        if(fieldSync.length > 6) lines.push(`　　…ほか ${fieldSync.length - 6} 件`);
+      }
+      if(fieldAmbiguous.length){
+        lines.push(`・うち ${fieldAmbiguous.length} 件はファイル名が曖昧なため、車両データは変更しません（下に理由）`);
+        fieldAmbiguous.slice(0, 4).forEach(m => {
+          lines.push(`　　${m.to.split("/").pop()}：${m.fields.ambiguous}`);
+        });
+      }
       if(paired) lines.push(`　うち ${paired} 件は手動で対応付けたものです（編成の参照を引き継ぎます）`);
       if(stillNew.length) lines.push(`・${stillNew.length} 枚は新規の画像です（新しいレコードを作ります）`);
       if(orphanPool.length) lines.push(`・${orphanPool.length} 件のレコードに対応するファイルがありません（削除されたか、フォルダ外に移動）`);
@@ -2301,6 +2388,9 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
         m.v.sourcePath = m.to;
         if(parsed.series) m.v.series = parsed.series;
         m.v.categories = parsed.folders.length ? [parsed.folders.join(" / ")] : [];
+        // 檔名本身變了 → 型式/番台/塗裝/方向/寬度 以檔名為準,
+        // 這樣資料庫與檔名才會一致,下次儲存時不會把檔案改回舊名
+        if(m.fields && m.fields.next) Object.assign(m.v, m.fields.next);
         if(m.hash) m.v.imgHash = m.hash;
         // 手動配對的是「重畫過」的車,圖片也要換成新檔案
         if(m.redrawn && m.handle){
@@ -2360,6 +2450,8 @@ if(xr(e,"index.xml"))throw new Error("Unsupported NUMBERS 09 file");throw new Er
       showReport("スキャン完了", [
         `・画像を更新 ${updatedImgs.length} 枚`,
         `・移動を反映 ${moved.length} 件`,
+        fieldSync.length ? `　うちファイル名に合わせて車両データも更新 ${fieldSync.length} 件` : null,
+        fieldAmbiguous.length ? `　うちファイル名が曖昧で車両データは未変更 ${fieldAmbiguous.length} 件` : null,
         paired ? `　うち手動で対応付け ${paired} 件（編成の参照を引き継ぎました）` : null,
         `・新規追加 ${stillNew.length} 件`,
         `・削除 ${removed} 件`,
