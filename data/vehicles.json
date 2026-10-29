@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-29T08:00:39.990Z",
+  "exportedAt": "2026-10-29T08:43:11.573Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -54954,8 +54954,8 @@
       ]
     },
     {
-      "id": "vp_19gh5sj13r4zsz",
-      "sourcePath": "04_貨物列車/04_コンテナ車/コキ10000_38.png",
+      "id": "vp_1jrohuvovuop9",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ10000.png",
       "series": "04_コンテナ車",
       "modelCode": "コキ10000",
       "variantCode": "",
@@ -54968,11 +54968,14 @@
       "defaultProductCode": "",
       "categories": [
         "04_貨物列車 / 04_コンテナ車"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
     },
     {
-      "id": "vp_1rw8w8am9aghq",
-      "sourcePath": "04_貨物列車/04_コンテナ車/コキ106_グレー_38.png",
+      "id": "vp_1wtocvy1ggtr4i",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ106_グレー.png",
       "series": "04_コンテナ車",
       "modelCode": "コキ106",
       "variantCode": "",
@@ -54985,11 +54988,14 @@
       "defaultProductCode": "",
       "categories": [
         "04_貨物列車 / 04_コンテナ車"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
     },
     {
-      "id": "vp_1dwkylt1f5vws7",
-      "sourcePath": "04_貨物列車/04_コンテナ車/コキ50000_改造_38.png",
+      "id": "vp_1l5m7np1stoys1",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ50000_改造.png",
       "series": "04_コンテナ車",
       "modelCode": "コキ50000",
       "variantCode": "",
@@ -55002,11 +55008,14 @@
       "defaultProductCode": "",
       "categories": [
         "04_貨物列車 / 04_コンテナ車"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
     },
     {
-      "id": "vp_x2g3essa07x2",
-      "sourcePath": "04_貨物列車/04_コンテナ車/コキ5500_改造_38.png",
+      "id": "vp_aemky8hyphbu",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキ5500_改造.png",
       "series": "04_コンテナ車",
       "modelCode": "コキ5500",
       "variantCode": "",
@@ -55019,11 +55028,14 @@
       "defaultProductCode": "",
       "categories": [
         "04_貨物列車 / 04_コンテナ車"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
     },
     {
-      "id": "vp_16rd5b43mh0xm",
-      "sourcePath": "04_貨物列車/04_コンテナ車/コキフ10000_改造_38.png",
+      "id": "vp_l3b438b1i6u6",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキフ10000_改造.png",
       "series": "04_コンテナ車",
       "modelCode": "コキフ10000",
       "variantCode": "",
@@ -55036,11 +55048,14 @@
       "defaultProductCode": "",
       "categories": [
         "04_貨物列車 / 04_コンテナ車"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
     },
     {
-      "id": "vp_1baxw1ebceeu",
-      "sourcePath": "04_貨物列車/04_コンテナ車/コキフ50000_改造_38.png",
+      "id": "vp_e67zsgyq8wpm",
+      "sourcePath": "04_貨物列車/04_コンテナ車/コキフ50000_改造.png",
       "series": "04_コンテナ車",
       "modelCode": "コキフ50000",
       "variantCode": "",
@@ -55053,7 +55068,10 @@
       "defaultProductCode": "",
       "categories": [
         "04_貨物列車 / 04_コンテナ車"
-      ]
+      ],
+      "containerFt": "",
+      "isFlatcar": true,
+      "productCodes": []
     },
     {
       "id": "vp_1sinhyc1cq0pmo",
