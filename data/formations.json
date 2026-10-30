@@ -2819,6 +2819,45 @@
         "コキ10000"
       ],
       "updatedAt": "2026-10-29T08:58:41.321Z"
+    },
+    {
+      "id": "f_1793349249064",
+      "name": "●急行「雲仙・西海」(1975年～1978年頃)",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1975年～1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "雲仙",
+          "from": "新大阪",
+          "fromPos": "1",
+          "to": "長崎",
+          "toPos": "7"
+        },
+        {
+          "nickname": "西海",
+          "from": "新大阪",
+          "fromPos": "8",
+          "to": "佐世保",
+          "toPos": "13"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "「雲仙」「西海」：けん引機は、新大阪～下関がEF58形、下関~門司がEF30形、門司～長崎がED76形でした。",
+        "この編成では、＜98584＞前期形セットを2セット使用します。"
+      ],
+      "titleNote": "",
+      "visibility": "public",
+      "carModelsUsed": [
+        "マニ37",
+        "スハフ14",
+        "オハ14",
+        "オハフ15"
+      ],
+      "updatedAt": "2026-10-30T08:35:03.319Z"
     }
   ],
   "formationsData": {
@@ -10567,7 +10606,214 @@
       "reversed": false,
       "titleNote": "",
       "visibility": "public"
+    },
+    "f_1793349249064": {
+      "id": "f_1793349249064",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1975年～1978年頃",
+      "trainInfo": "",
+      "segments": [
+        {
+          "nickname": "雲仙",
+          "from": "新大阪",
+          "fromPos": "1",
+          "to": "長崎",
+          "toPos": "7"
+        },
+        {
+          "nickname": "西海",
+          "from": "新大阪",
+          "fromPos": "8",
+          "to": "佐世保",
+          "toPos": "13"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        "「雲仙」「西海」：けん引機は、新大阪～下関がEF58形、下関~門司がEF30形、門司～長崎がED76形でした。",
+        "この編成では、＜98584＞前期形セットを2セット使用します。"
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_15wt3g0i2uaas",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9554",
+          "setGroupId": "",
+          "vref": {
+            "m": "マニ37",
+            "l": "青",
+            "e": "オハ35系",
+            "p": "01_JR 国鉄/01_客車/オハ35系/マニ37_青.png"
+          }
+        },
+        {
+          "vehicleId": "vp_jymv3myjwdua",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98584",
+          "setGroupId": "A",
+          "vref": {
+            "m": "スハフ14",
+            "l": "白帯",
+            "s": "L",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/スハフ14_白帯_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_xn280716nwkul",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98584",
+          "setGroupId": "A",
+          "vref": {
+            "m": "オハ14",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14_白帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_xn280716nwkul",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9553",
+          "setGroupId": "",
+          "vref": {
+            "m": "オハ14",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14_白帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_xn280716nwkul",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9553",
+          "setGroupId": "",
+          "vref": {
+            "m": "オハ14",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14_白帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_xn280716nwkul",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98584",
+          "setGroupId": "A",
+          "vref": {
+            "m": "オハ14",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14_白帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_sv9i0ugvydje",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98584",
+          "setGroupId": "A",
+          "vref": {
+            "m": "オハフ15",
+            "l": "白帯",
+            "s": "L",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハフ15_白帯_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_jymv3myjwdua",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98584",
+          "setGroupId": "B",
+          "vref": {
+            "m": "スハフ14",
+            "l": "白帯",
+            "s": "L",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/スハフ14_白帯_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_xn280716nwkul",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98584",
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハ14",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14_白帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_xn280716nwkul",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9553",
+          "setGroupId": "",
+          "vref": {
+            "m": "オハ14",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14_白帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_xn280716nwkul",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "9553",
+          "setGroupId": "",
+          "vref": {
+            "m": "オハ14",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14_白帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_xn280716nwkul",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98584",
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハ14",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14_白帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_sv9i0ugvydje",
+          "flipped": false,
+          "attribute": "Set",
+          "productCode": "98584",
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハフ15",
+            "l": "白帯",
+            "s": "L",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハフ15_白帯_L.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "",
+      "visibility": "public"
     }
   },
-  "savedAt": "2026-10-30T08:18:21.096Z"
+  "savedAt": "2026-10-30T08:35:03.334Z"
 }
