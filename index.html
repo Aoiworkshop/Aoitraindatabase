@@ -987,7 +987,6 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div class="search-tools">
         <button class="btn small" id="btn-pick-formation-folder">サイトデータフォルダ（data）を選択</button>
         <span id="formation-folder-status" class="folder-badge unbound" style="margin:0;"><span class="dot"></span>未連携</span>
-        <button class="btn small secondary" id="btn-fm-export" title="選択中の編成を書き出します（編成作成の「↗ 書き出し」と同じもの）">書き出し</button>
         <button class="btn small secondary" id="btn-fm-export-all" title="すべての編成を1つのファイルにします">全体を書き出し</button>
         <label class="btn small secondary" style="cursor:pointer;margin:0;" title="書き出したファイルを読み込みます">
           読み込み
@@ -1105,7 +1104,6 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   "車両 {N} 両": "車輛 {N} 輛",
   "編成 {N} 件": "編成 {N} 筆",
   "・": "、",
-  "書き出す編成を1件だけ選んでください。": "請只選一筆要匯出的編成。",
   "このファイルの種類が分かりません。別のアプリのファイルかもしれません。": "無法辨識這個檔案的種類，可能是別的程式的檔案。",
   "このファイルには取り込めるデータがありません。": "這個檔案裡沒有可以匯入的資料。",
   "車両と編成をまとめて1つのファイルにします（Ctrl+S）": "把車輛與編成一起存成一個檔案（Ctrl+S）",
@@ -1113,7 +1111,6 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   "書き出したファイルを読み込みます": "讀取匯出的檔案",
   "選択中の車両を書き出します": "匯出選取的車輛",
   "すべての車両を1つのファイルにします": "把所有車輛存成一個檔案",
-  "選択中の編成を書き出します（編成作成の「↗ 書き出し」と同じもの）": "匯出選取的編成（跟編成製作的「↗ 匯出」是同一個功能）",
   "すべての編成を1つのファイルにします": "把所有編成存成一個檔案",
   "メインフォルダーを選択": "選擇主資料夾",
   "💾 データベース全体をバックアップ": "💾 備份全部資料庫",
@@ -1776,7 +1773,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261030-IO1";
+  const APP_BUILD = "20261030-IO2";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -2263,6 +2260,11 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       $("#tab-vehicles").style.display = tab === "vehicles" ? "" : "none";
       $("#tab-builder").style.display = tab === "builder" ? "" : "none";
     }
+    // 側欄は「車両データ」と「編成作成」で共用している。
+    // 匯出入の列は車両データ専用なので、編成作成では隠す(編成の書き出しと紛れるため)。
+    document.querySelectorAll(".sidebar-list .io-row").forEach(el => {
+      el.style.display = (tab === "vehicles") ? "" : "none";
+    });
     if(tab === "search") refreshFormationResults();
     if(typeof renderLibrary === "function") renderLibrary();
     if(changed && !fromNav) pushNavState();
@@ -8920,7 +8922,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           <button class="btn small secondary" data-act="load">編成作成に読み込み</button>
           <button class="btn small danger" data-act="del">削除</button>
           <button class="btn small" data-act="export" style="background:#1a1a1a;color:#fff;border-color:#1a1a1a;">PNG画像を出力</button>
-          <button class="btn small secondary" data-act="share">↗ 編成を書き出し</button>
+          <button class="btn small secondary" data-act="share">↗ 書き出し</button>
         </div>
       `;
       const visEl = card.querySelector('[data-act="vis"]');
@@ -9013,17 +9015,6 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   // ---------- formation DB backup ----------
   // 編成分頁:選取的那一筆 / 全部。
   // 「書き出し」は編成作成の ↗ とまったく同じもの(exportFormationShareById)。
-  $("#btn-fm-export").addEventListener("click", async () => {
-    const id = pickedFormationId();
-    if(!id){ toast("書き出す編成を1件だけ選んでください。", "err"); return; }
-    try{
-      const res = await storage.get("formations:" + id, false);
-      if(!res){ toast("この編成データが見つかりません。", "err"); return; }
-      const data = JSON.parse(res.value);
-      downloadShare(buildFormationShare(data),
-                    shareFileName("編成共有", buildTitleTextOf(data).replace("●", "")));
-    }catch(e){ toast("書き出しに失敗しました：" + (e && e.message ? e.message : e), "err"); }
-  });
   $("#btn-fm-export-all").addEventListener("click", async () => {
     const payload = await formationPayload();
     if(!payload.formationsIndex.length){ toast("書き出せる編成がありません。", "err"); return; }

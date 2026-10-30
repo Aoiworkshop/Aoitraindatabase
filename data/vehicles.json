@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-30T05:27:41.068Z",
+  "exportedAt": "2026-10-30T08:18:32.756Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -1434,23 +1434,6 @@
       ]
     },
     {
-      "id": "vp_41z3noqvlbze",
-      "sourcePath": "01_JR 国鉄/01_客車/10系/オハネ13_青_R.png",
-      "series": "10系",
-      "modelCode": "オハネ17",
-      "variantCode": "",
-      "liveryName": "青",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 10系"
-      ]
-    },
-    {
       "id": "vp_1nuzxemwjbwlk",
       "sourcePath": "01_JR 国鉄/01_客車/10系/オハネ17_青_L.png",
       "series": "10系",
@@ -1688,40 +1671,6 @@
         "10-1450",
         "10-1623",
         "10-1624"
-      ]
-    },
-    {
-      "id": "vp_1k0pyjh1u0admr",
-      "sourcePath": "01_JR 国鉄/01_客車/10系/ナハネ10_茶_L.png",
-      "series": "10系",
-      "modelCode": "ナハネ11",
-      "variantCode": "",
-      "liveryName": "茶",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 10系"
-      ]
-    },
-    {
-      "id": "vp_mzu37d1w9bub3",
-      "sourcePath": "01_JR 国鉄/01_客車/10系/ナハネ10_青_L.png",
-      "series": "10系",
-      "modelCode": "ナハネ11",
-      "variantCode": "",
-      "liveryName": "青",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 10系"
       ]
     },
     {
@@ -35667,23 +35616,6 @@
       ]
     },
     {
-      "id": "vp_jbi8cz11zjirn",
-      "sourcePath": "01_JR 国鉄/01_客車/10系/ナハフ11_青.png",
-      "series": "10系",
-      "modelCode": "ナハフ11",
-      "variantCode": "",
-      "liveryName": "青",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 10系"
-      ]
-    },
-    {
       "id": "vp_3g9tgesoq6uo",
       "sourcePath": "01_JR 国鉄/01_客車/12系/オハフ13.png",
       "series": "12系",
@@ -63107,6 +63039,74 @@
       ],
       "productCodes": [
         "97242"
+      ]
+    },
+    {
+      "id": "vp_41z3noqvlbze",
+      "sourcePath": "01_JR 国鉄/01_客車/10系/オハネ13_青_R.png",
+      "series": "10系",
+      "modelCode": "オハネ13",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 10系"
+      ]
+    },
+    {
+      "id": "vp_1k0pyjh1u0admr",
+      "sourcePath": "01_JR 国鉄/01_客車/10系/ナハネ10_茶_L.png",
+      "series": "10系",
+      "modelCode": "ナハネ10",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 10系"
+      ]
+    },
+    {
+      "id": "vp_mzu37d1w9bub3",
+      "sourcePath": "01_JR 国鉄/01_客車/10系/ナハネ10_青_L.png",
+      "series": "10系",
+      "modelCode": "ナハネ10",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 10系"
+      ]
+    },
+    {
+      "id": "vp_jbi8cz11zjirn",
+      "sourcePath": "01_JR 国鉄/01_客車/10系/ナハフ11_青.png",
+      "series": "10系",
+      "modelCode": "ナハフ11",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 10系"
       ]
     }
   ]
