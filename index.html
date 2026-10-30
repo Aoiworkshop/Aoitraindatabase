@@ -386,6 +386,18 @@ if(location.protocol === "http:" || location.protocol === "https:"){
   .yn-group button.on{background:var(--ink);color:#fff;}
   .db-io-row{display:flex;gap:6px;margin-bottom:10px;}
   .db-io-row .btn{flex:1;text-align:center;}
+  /* 讀取檔案後問「替換還是補足」的小視窗 */
+  .io-ask{position:fixed;inset:0;z-index:10001;background:rgba(32,32,30,.46);
+    display:flex;align-items:center;justify-content:center;padding:20px;}
+  .io-ask-box{background:#fff;border-radius:10px;padding:18px 20px;max-width:420px;width:100%;
+    box-shadow:0 10px 40px rgba(0,0,0,.25);}
+  .io-ask-msg{font-size:13px;line-height:1.7;margin-bottom:14px;white-space:pre-wrap;}
+  .io-ask-btns{display:flex;flex-direction:column;gap:6px;}
+  .io-ask-btns .btn{margin:0;width:100%;text-align:center;}
+
+  /* 各分頁底部的資料匯出入列 */
+  .io-row{display:flex;gap:4px;margin:10px 0 0;}
+  .io-row .btn{flex:1;margin:0;cursor:pointer;text-align:center;padding:4px 2px;font-size:10.5px;}
   .folder-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;padding:3px 9px;border-radius:10px;margin-bottom:12px;}
   .folder-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor;flex-shrink:0;}
   .folder-badge.bound{background:#e6f4ea;color:#1a7a34;}
@@ -603,14 +615,21 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div class="db-io-row">
         <button class="btn small" id="btn-pick-root-folder" style="flex:1;" title="いちばん上の管理用フォルダを一度選ぶと、その下の 01_不公開資料 と 02_發布用 を自動で連携します">メインフォルダーを選択</button>
       </div>
+
+      <h3 class="side-h">データベース</h3>
       <div class="db-io-row">
-        <button class="btn small" id="btn-backup-all" style="flex:1;" title="車両JSON・車両Excel・編成JSONをまとめて書き出します（Ctrl+S）">💾 データベース全体をバックアップ</button>
+        <button class="btn small" id="btn-backup-all" style="flex:1;" title="車両と編成をまとめて1つのファイルにします（Ctrl+S）">💾 全体を書き出し</button>
       </div>
+      <div class="db-io-row">
+        <label class="btn small secondary" style="cursor:pointer;margin:0;flex:1;" title="書き出したファイルを読み込みます。車両・編成・共有ファイルのどれでも、中身を見て自動で判別します">
+          📥 読み込み
+          <input type="file" id="import-all-file" accept=".json,application/json" style="display:none;">
+        </label>
+      </div>
+
+      <h3 class="side-h">サイト公開</h3>
       <div class="db-io-row">
         <button class="btn small secondary" id="btn-export-web" style="flex:1;" title="サイトにアップする軽量版データを作ります（画像は含みません）">🌐 公開用データ書き出し</button>
-      </div>
-      <div class="db-io-row">
-        <label class="btn small secondary" style="cursor:pointer;margin:0;flex:1;" title="他の人が共有した車両・編成ファイルを読み込みます">📥 共有ファイル読み込み<input type="file" id="import-share-file" accept=".json,application/json" style="display:none;"></label>
       </div>
 
       <h3 class="side-h">車両フォルダ</h3>
@@ -630,22 +649,7 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         <button class="btn small secondary" id="btn-unify-ids" style="flex:1;" title="車両IDをファイルパスから決めるようにして、どのパソコンでも同じIDになるようにします">ID同期</button>
       </div>
 
-      <h3 class="side-h">JSONから読み込み</h3>
-      <div class="db-io-row">
-        <button class="btn small secondary" id="btn-export-vehicles" style="flex:1;" title="車両データだけを1つのJSONにします（編成は含みません）">車両だけ書き出し</button>
-      </div>
-      <div class="db-io-row">
-        <label class="btn small secondary" style="cursor:pointer;margin:0;flex:1;" title="今の車両データベースを空にして、ファイルの内容にまるごと入れ替えます">
-          読み込み
-          <input type="file" id="import-vehicles-file" accept=".json,application/json" style="display:none;">
-        </label>
-        <label class="btn small secondary" style="cursor:pointer;margin:0;flex:1;" title="今の車両を残したまま、ファイルにしかないものだけを足します">
-          追加
-          <input type="file" id="merge-vehicles-file" accept=".json,application/json" style="display:none;">
-        </label>
-      </div>
-
-      <h3 class="side-h">EXCELから読み込み</h3>
+      <h3 class="side-h">EXCEL</h3>
       <div class="db-io-row">
         <button class="btn small secondary" id="btn-export-vehicles-excel">書き出し</button>
         <label class="btn small secondary" style="cursor:pointer;margin:0;">
@@ -697,6 +701,15 @@ if(location.protocol === "http:" || location.protocol === "https:"){
         </div>
         <div id="folder-crumb" style="margin:8px 0 0;"></div>
         <div id="car-count" style="font-size:10.5px;color:var(--muted);margin:8px 0 0;"></div>
+        <!-- 分頁本身就代表「車両」なので、ボタン名に「車両の」は付けない -->
+        <div class="io-row">
+          <button class="btn small secondary" id="btn-veh-export" title="選択中の車両を書き出します">書き出し</button>
+          <button class="btn small secondary" id="btn-veh-export-all" title="すべての車両を1つのファイルにします">全体を書き出し</button>
+          <label class="btn small secondary" title="書き出したファイルを読み込みます">
+            読み込み
+            <input type="file" id="import-veh-file" accept=".json,application/json" style="display:none;">
+          </label>
+        </div>
       </div>
       <div class="list-body">
         <div id="car-library" style="padding-bottom:62px;"></div>
@@ -974,14 +987,11 @@ if(location.protocol === "http:" || location.protocol === "https:"){
       <div class="search-tools">
         <button class="btn small" id="btn-pick-formation-folder">サイトデータフォルダ（data）を選択</button>
         <span id="formation-folder-status" class="folder-badge unbound" style="margin:0;"><span class="dot"></span>未連携</span>
-        <button class="btn small secondary" id="btn-export-formations" title="編成データだけを1つのJSONにします（車両は含みません）">編成だけ書き出し</button>
-        <label class="btn small secondary" style="cursor:pointer;margin:0;" title="今の編成データベースを空にして、ファイルの内容にまるごと入れ替えます">
+        <button class="btn small secondary" id="btn-fm-export" title="選択中の編成を書き出します（編成作成の「↗ 書き出し」と同じもの）">書き出し</button>
+        <button class="btn small secondary" id="btn-fm-export-all" title="すべての編成を1つのファイルにします">全体を書き出し</button>
+        <label class="btn small secondary" style="cursor:pointer;margin:0;" title="書き出したファイルを読み込みます">
           読み込み
-          <input type="file" id="import-formations-file" accept=".json,application/json" style="display:none;">
-        </label>
-        <label class="btn small secondary" style="cursor:pointer;margin:0;" title="今の編成を残したまま、ファイルにしかないものだけを足します">
-          ＋ 追加
-          <input type="file" id="merge-formations-file" accept=".json,application/json" style="display:none;">
+          <input type="file" id="import-fm-file" accept=".json,application/json" style="display:none;">
         </label>
       </div>
       <div class="search-tab-bar" style="margin-top:8px;display:flex;gap:6px;align-items:center;">
@@ -1081,27 +1091,44 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   /* ---------- 基本設定（抽屜） ---------- */
   "基本設定": "基本設定",
   "全体": "整體",
+  "データベース": "資料庫",
+  "サイト公開": "網站發布",
+  "EXCEL": "EXCEL",
+  "💾 全体を書き出し": "💾 整體匯出",
+  "📥 読み込み": "📥 匯入",
+  "全体を書き出し": "整體匯出",
+  "読み込み": "匯入",
+  "書き出し": "匯出",
+  "置き換え（今のデータは消えます）": "替換（原資料消失）",
+  "補足（今のデータは残ります）": "補足（原資料保留）",
+  "このファイルには {X} が入っています。どう取り込みますか？": "這個檔案裡有 {X}。要怎麼匯入？",
+  "車両 {N} 両": "車輛 {N} 輛",
+  "編成 {N} 件": "編成 {N} 筆",
+  "・": "、",
+  "書き出す編成を1件だけ選んでください。": "請只選一筆要匯出的編成。",
+  "このファイルの種類が分かりません。別のアプリのファイルかもしれません。": "無法辨識這個檔案的種類，可能是別的程式的檔案。",
+  "このファイルには取り込めるデータがありません。": "這個檔案裡沒有可以匯入的資料。",
+  "車両と編成をまとめて1つのファイルにします（Ctrl+S）": "把車輛與編成一起存成一個檔案（Ctrl+S）",
+  "書き出したファイルを読み込みます。車両・編成・共有ファイルのどれでも、中身を見て自動で判別します": "讀取匯出的檔案。車輛、編成、分享檔都可以，會看內容自動判斷",
+  "書き出したファイルを読み込みます": "讀取匯出的檔案",
+  "選択中の車両を書き出します": "匯出選取的車輛",
+  "すべての車両を1つのファイルにします": "把所有車輛存成一個檔案",
+  "選択中の編成を書き出します（編成作成の「↗ 書き出し」と同じもの）": "匯出選取的編成（跟編成製作的「↗ 匯出」是同一個功能）",
+  "すべての編成を1つのファイルにします": "把所有編成存成一個檔案",
   "メインフォルダーを選択": "選擇主資料夾",
   "💾 データベース全体をバックアップ": "💾 備份全部資料庫",
   "🌐 公開用データ書き出し": "🌐 匯出公開用資料",
-  "📥 共有ファイル読み込み": "📥 讀取分享檔",
   "車両フォルダ": "車輛資料夾",
   "フォルダを選択": "選擇資料夾",
   "データー整理": "資料整理",
   "データ同期": "資料同步",
   "重複整理": "整理重複",
   "ID同期": "ID 同步",
-  "JSONから読み込み": "從 JSON 讀取",
-  "EXCELから読み込み": "從 EXCEL 讀取",
-  "車両だけ書き出し": "只匯出車輛",
-  "編成だけ書き出し": "只匯出編成",
-  "読み込み": "讀取",
-  "書き出し": "匯出",
-  "追加": "追加",
   "未連携": "未連結",
 
   /* ---------- 車輛清單・搜尋 ---------- */
   "車両一覧": "車輛一覽",
+  "全 {A} 両　表示 {B} 両": "共 {A} 輛　顯示 {B} 輛",
   "並び順": "排序",
   "形式順": "依形式",
   "追加順": "依加入順序",
@@ -1128,7 +1155,6 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   "番台": "番台",
   "塗装名": "塗裝名",
   "向き": "方向",
-  "車体幅（cm）": "車體寬（cm）",
   "車体幅（cm）": "車體寬（cm）",
   "画像": "圖片",
   "同上": "同上",
@@ -1181,6 +1207,8 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   "終着駅": "終點站",
   "始発駅": "起點站",
   "＋ 行を追加": "＋ 新增一列",
+  "（タイトル未入力）": "（無標題）",
+  "検索中（すべてのフォルダが対象）": "搜尋中（所有資料夾）",
   "（最大6組、1組が愛称／分割区間に対応します）": "（最多 6 組，一組對應一個愛稱／分割區間）",
   "4. 補足情報": "4. 補充資訊",
   "運営会社": "營運公司",
@@ -1199,6 +1227,21 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   "メーカー": "廠牌",
   "その他": "其他",
   "製品情報を記録": "記錄商品資訊",
+
+  /* ---------- 貨櫃裝載 ---------- */
+  "コンテナ積載": "貨櫃裝載",
+  "コンテナを積む": "裝載貨櫃",
+  "（改造：4か所・12ftのみ）": "（改造：4 格・僅 12ft）",
+  "閉じる": "關閉",
+  "✕ 外す": "✕ 清除",
+  "積載不可": "無法裝載",
+  "この位置にはコンテナを積めません": "這個位置放不了貨櫃",
+  "位置 {N} を変更…（現在：{X}）": "變更位置 {N}…（目前：{X}）",
+  "位置 {N} に積めるコンテナ": "位置 {N} 可放的貨櫃",
+  "コンテナを検索…": "搜尋貨櫃…",
+  "該当するコンテナがありません": "找不到符合的貨櫃",
+  "塗装を切り替え": "切換塗裝",
+  "（塗装未入力）": "（未填塗裝）",
 
   /* ---------- 字型設定 ---------- */
   "5. フォント設定": "5. 字型設定",
@@ -1733,7 +1776,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     return { res, data: JSON.parse(new TextDecoder("utf-8").decode(buf)) };
   }
   // 版本標記:用來確認手機是否載入了最新的 index.html(而不是瀏覽器快取的舊版)
-  const APP_BUILD = "20261030-TR3";
+  const APP_BUILD = "20261030-IO1";
 
   // 取得一輛車實際要顯示的圖片來源
   function vehicleImgSrc(v){
@@ -2234,6 +2277,8 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
 
   // ================= vehicle DB =================
   const VEHICLES_KEY = "vehicles:all";
+  // 線上版:前回サイトに載っていた車両 id。サイトから消えた車両の復活を防ぐために使う。
+  const WEB_SITE_IDS_KEY = "settings:webSiteIds";
   let vehicles = [];
   let vehiclesById = {};
 
@@ -2376,10 +2421,36 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           const payload = payloadDl;
           const list = payload.vehicles || payload;
           if(Array.isArray(list) && list.length){
-            vehicles = list;
+            // 以前はここで vehicles = list として即 return していたので、
+            // 訪客が自分で足した車両は保存されていても次回に読まれず、消えたように見えていた。
+            // 編成側(loadWebFormations)と同じやり方に揃える:
+            // ・同じ id があればサイト側が最新なので勝つ
+            // ・サイトに無い id(＝訪客が自分で足した車両)はそのまま残す
+            // サイトのファイルには一切書き戻さないので、公開データは読み取り専用のまま。
+            let mine = [];
+            try{
+              const res2 = await storage.get(VEHICLES_KEY, false);
+              const local = res2 ? JSON.parse(res2.value) : [];
+              const siteIds = new Set(list.map(v => v && v.id));
+              // 「前回サイトに載っていた id」も覚えておく。これが無いと、
+              // サイト側から消した車両がブラウザーに残り続け、
+              // 「サイトに無い＝訪客が足した車両」と誤判定して復活してしまう。
+              let prevSiteIds = new Set();
+              try{
+                const r3 = await storage.get(WEB_SITE_IDS_KEY, false);
+                if(r3) prevSiteIds = new Set(JSON.parse(r3.value) || []);
+              }catch(e){ /* 初回は空でよい */ }
+              if(Array.isArray(local)){
+                mine = local.filter(v => v && v.id && !siteIds.has(v.id) && !prevSiteIds.has(v.id));
+              }
+              try{ await storage.set(WEB_SITE_IDS_KEY, JSON.stringify([...siteIds]), false); }
+              catch(e){ /* 覚えられなくても動作はする */ }
+            }catch(e){ /* 読めなければサイトの分だけで動く */ }
+            vehicles = list.concat(mine);
             reindexVehicles();
             webLoadStatus = "ok";
-            console.info(`サイトから ${list.length} 両を読み込みました。`);
+            console.info(`サイトから ${list.length} 両を読み込みました。` +
+                         (mine.length ? `（この端末で追加した ${mine.length} 両を保持）` : ""));
             return;
           }
           webLoadStatus = "ファイルに車両データがありません";
@@ -3034,7 +3105,12 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   // 所以這個比對方式不會動到使用者的資料。
   function tr(s){
     if(uiLang !== "zh") return s;
-    const k = (s == null ? "" : String(s)).trim();
+    const raw = (s == null ? "" : String(s));
+    // まず素のまま引く。trim() は全角スペース（　）も落とすので、
+    // 「コンテナ積載　」のように末尾の全角スペースごと登録した句が
+    // trim 後のキーでは引けなくなる。素→trim の順で両方見る。
+    if(I18N[raw]) return I18N[raw];
+    const k = raw.trim();
     return (k && I18N[k]) ? I18N[k] : s;
   }
   // 訊息類(toast / confirm / 報告卡)是程式自己組出來的字,
@@ -3064,7 +3140,8 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT, {
         acceptNode(n){
           if(n.nodeType === 1){
-            if(I18N_SKIP.has(n.tagName) || n.id === "preview-wrap") return NodeFilter.FILTER_REJECT;
+            if(I18N_SKIP.has(n.tagName) || n.id === "preview-wrap"
+               || (n.classList && n.classList.contains("i18n-data"))) return NodeFilter.FILTER_REJECT;
             return NodeFilter.FILTER_ACCEPT;
           }
           return NodeFilter.FILTER_ACCEPT;
@@ -3764,7 +3841,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     if(!el) return;
     el.innerHTML = "";
     if(searchTextEl.value.trim()){
-      el.innerHTML = `<div class="nav-here" style="color:var(--accent);">検索中（すべてのフォルダが対象）</div>`;
+      el.innerHTML = `<div class="nav-here" style="color:var(--accent);">${esc(tr("検索中（すべてのフォルダが対象）"))}</div>`;
       return;
     }
 
@@ -3877,7 +3954,8 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     const searching = !!searchTextEl.value.trim();
     const list = sortVehicleList(vehicles.filter(matchesFilter));
     const subFolders = searching ? [] : subFoldersOfCurrent();
-    carCountEl.textContent = `全 ${vehicles.length} 両　表示 ${list.length} 両`;
+    carCountEl.textContent = tr("全 {A} 両　表示 {B} 両")
+      .replace("{A}", vehicles.length).replace("{B}", list.length);
     updateSelectionBar();
     libEl.innerHTML = "";
 
@@ -5188,23 +5266,113 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   });
 
   // ---------- vehicle DB backup ----------
-  $("#btn-export-vehicles").addEventListener("click", () => {
-    const payload = { exportedAt: new Date().toISOString(), vehicles };
-    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url; a.download = "vehicle-db-backup-" + new Date().toISOString().slice(0,10) + ".json";
-    a.click(); URL.revokeObjectURL(url);
+  // 車輛分頁:選取的 / 全部
+  $("#btn-veh-export").addEventListener("click", exportSelectedVehicles);
+  $("#btn-veh-export-all").addEventListener("click", () => {
+    if(!vehicles.length){ toast("車両データベースが空のため、書き出すものがありません。", "err"); return; }
+    exportJson(`備份_車輛庫_${stampToday()}.json`, vehiclePayload());
   });
-  $("#import-vehicles-file").addEventListener("change", (e) => {
-    const file = e.target.files[0];
+
+  // ---------- 加入車輛(不清空現有資料) ----------
+  // 跟「匯入已有資料庫」的差別:這個只補檔案裡有、而自己沒有的那幾筆,
+  // 既有的紀錄一律不動,所以不會把自己手動填好的公司、貨號、分類蓋掉。
+
+
+  // ---------- 匯入／匯出的統一入口 ----------
+  // 以前「讀取」和「追加」是兩顆按鈕,但使用者通常要打開檔案才知道裡面是什麼,
+  // 所以改成一顆「讀み込み」,讀完說明內容之後再問要替換還是補足。
+  function askReplaceOrMerge(message){
+    return new Promise(resolve => {
+      document.querySelectorAll(".io-ask").forEach(el => el.remove());
+      const back = document.createElement("div");
+      back.className = "io-ask";
+      back.innerHTML = `
+        <div class="io-ask-box">
+          <div class="io-ask-msg"></div>
+          <div class="io-ask-btns">
+            <button type="button" class="btn small danger" data-v="replace"></button>
+            <button type="button" class="btn small" data-v="merge"></button>
+            <button type="button" class="btn small secondary" data-v=""></button>
+          </div>
+        </div>`;
+      back.querySelector(".io-ask-msg").textContent = message;
+      const [rep, mer, can] = back.querySelectorAll("button");
+      rep.textContent = tr("置き換え（今のデータは消えます）");
+      mer.textContent = tr("補足（今のデータは残ります）");
+      can.textContent = tr("キャンセル");
+      const done = v => { back.remove(); document.removeEventListener("keydown", esc); resolve(v); };
+      const esc = ev => { if(ev.key === "Escape") done(""); };
+      back.querySelectorAll("button").forEach(b => b.addEventListener("click", () => done(b.dataset.v)));
+      back.addEventListener("click", ev => { if(ev.target === back) done(""); });
+      document.addEventListener("keydown", esc);
+      document.body.appendChild(back);
+      mer.focus();
+    });
+  }
+
+  // 讀一個檔案,看內容決定要怎麼處理。放錯分頁也沒關係,以內容為準。
+  async function importAnyFile(file){
     if(!file) return;
-    const reader = new FileReader();
-    reader.onerror = () => toast("ファイルの読み込みに失敗しました。もう一度お試しください。", "err");
-    reader.onload = async () => {
-      let payload;
-      try{ payload = JSON.parse(reader.result); }
-      catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
+    let payload;
+    try{ payload = JSON.parse(await file.text()); }
+    catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
+    const info = classifyPayload(payload);
+    if(info.kind === "share-vehicle"){ await importSharedVehicles(payload); return; }
+    if(info.kind === "share-formation"){ await importSharedFormation(payload); return; }
+
+    const hasVeh = Array.isArray(payload.vehicles) && payload.vehicles.length;
+    const hasFm  = Array.isArray(payload.formationsIndex) && payload.formationsIndex.length;
+    if(!hasVeh && !hasFm){
+      toast(info.kind === "unknown"
+        ? "このファイルの種類が分かりません。別のアプリのファイルかもしれません。"
+        : "このファイルには取り込めるデータがありません。", "err", 5000);
+      return;
+    }
+    const parts = [];
+    if(hasVeh) parts.push(tr("車両 {N} 両").replace("{N}", payload.vehicles.length));
+    if(hasFm)  parts.push(tr("編成 {N} 件").replace("{N}", payload.formationsIndex.length));
+    const mode = await askReplaceOrMerge(
+      tr("このファイルには {X} が入っています。どう取り込みますか？").replace("{X}", parts.join(tr("・"))));
+    if(!mode) return;
+    if(hasVeh) await (mode === "replace" ? applyVehicleReplace(payload) : applyVehicleMerge(payload));
+    if(hasFm)  await (mode === "replace" ? applyFormationReplace(payload) : applyFormationMerge(payload));
+  }
+  function bindImport(sel){
+    const el = $(sel);
+    if(!el) return;
+    el.addEventListener("change", async (e) => {
+      const f = e.target.files && e.target.files[0];
+      e.target.value = "";
+      await importAnyFile(f);
+    });
+  }
+  ["#import-all-file", "#import-veh-file", "#import-fm-file"].forEach(bindImport);
+
+  // 匯出:整體備份與單獨匯出用同一種格式,只有檔名不同,
+  // 所以讀回來的時候兩者完全等價。
+  function exportJson(name, payload){
+    downloadBlob(name, new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" }));
+  }
+  const stampToday = () => new Date().toISOString().slice(0, 10);
+  function vehiclePayload(){ return { exportedAt: new Date().toISOString(), vehicles }; }
+  async function formationPayload(){
+    const formationsIndex = await loadIndex();
+    const formationsData = {};
+    for(const f of formationsIndex){
+      try{
+        const res = await storage.get("formations:" + f.id, false);
+        if(res) formationsData[f.id] = JSON.parse(res.value);
+      }catch(e){ /* 略過單筆失敗 */ }
+    }
+    return { exportedAt: new Date().toISOString(), formationsIndex, formationsData };
+  }
+
+  // ---------- 匯入:把原本四個事件處理器的本體抽成函式 ----------
+  // 以前每個入口各自綁一個 <input type=file>,所以同樣的邏輯有四份。
+  // 現在入口只負責讀檔與分類,實際要做的事都呼叫下面這四個。
+
+  async function applyVehicleReplace(payload){
+
       const info = classifyPayload(payload);
       if(info.kind === "share-vehicle"){
         toast("共有用の車両ファイルとして読み込みます。", "info");
@@ -5236,23 +5404,10 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         renderLibrary();
         toast("読み込みに失敗しました：" + (err && err.message ? err.message : err), "err");
       }
-    };
-    reader.readAsText(file);
-    e.target.value = "";
-  });
+  }
 
-  // ---------- 加入車輛(不清空現有資料) ----------
-  // 跟「匯入已有資料庫」的差別:這個只補檔案裡有、而自己沒有的那幾筆,
-  // 既有的紀錄一律不動,所以不會把自己手動填好的公司、貨號、分類蓋掉。
-  $("#merge-vehicles-file").addEventListener("change", (e) => {
-    const file = e.target.files[0];
-    if(!file) return;
-    const reader = new FileReader();
-    reader.onerror = () => toast("ファイルの読み込みに失敗しました。もう一度お試しください。", "err");
-    reader.onload = async () => {
-      let payload;
-      try{ payload = JSON.parse(reader.result); }
-      catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
+  async function applyVehicleMerge(payload){
+
       const info = classifyPayload(payload);
       if(info.kind === "share-vehicle"){
         toast("共有用の車両ファイルとして追加します。", "info");
@@ -5307,10 +5462,137 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         renderLibrary();
         toast("追加に失敗しました：" + (err && err.message ? err.message : err), "err");
       }
-    };
-    reader.readAsText(file);
-    e.target.value = "";
-  });
+  }
+
+  async function applyFormationReplace(payload){
+
+      const info = classifyPayload(payload);
+      if(info.kind === "share-formation"){
+        // ↗書き出しで作った1編成。これも編成なので、そのまま取り込む。
+        toast("共有用の編成ファイルとして読み込みます。", "info");
+        await importSharedFormation(payload);
+        return;
+      }
+      if(info.kind !== "formation-db"){
+        toast(wrongSlotMessage(info.kind, "formation"), "err", 6000);
+        return;
+      }
+      const incoming = payload.formationsIndex || [];
+      if(incoming.length === 0){
+        toast("このファイルは編成データベースのバックアップですが、中身が0件です。", "err", 5000);
+        return;
+      }
+      if(!confirm(`現在の編成データベースをすべて消去し、ファイル内の ${incoming.length} 件の編成に入れ替えます。\n` +
+                  `（今の編成を残したい場合は「追加」を使ってください）\n\n続行してもよろしいですか？`)) return;
+      let done = 0;
+      try{
+        await saveIndex(incoming);
+        for(const f of incoming){
+          const data = payload.formationsData && payload.formationsData[f.id];
+          if(data) await storage.set("formations:" + f.id, JSON.stringify(data), false);
+          done++;
+        }
+        await syncFormationsToFolder();
+        resetState();
+        refreshFormationResults();
+        toast(`読み込み完了。全 ${incoming.length} 件の編成です。`);
+      }catch(err){
+        resetState();
+        refreshFormationResults();
+        const quotaLike = err && (err.name === "QuotaExceededError" || /quota|storage|exceeded/i.test(String(err)));
+        toast(quotaLike
+          ? `この端末のブラウザー保存容量が不足しているため、${done} / ${incoming.length} 件しか読み込めませんでした。`
+          : `読み込み中にエラーが発生しました（${done} / ${incoming.length} 件まで完了）：` + (err && err.message ? err.message : err),
+          "err", 7000);
+      }
+  }
+
+  async function applyFormationMerge(payload){
+
+      const info = classifyPayload(payload);
+      if(info.kind === "share-formation"){
+        toast("共有用の編成ファイルとして追加します。", "info");
+        await importSharedFormation(payload);
+        return;
+      }
+      if(info.kind !== "formation-db"){
+        toast(wrongSlotMessage(info.kind, "formation"), "err", 6000);
+        return;
+      }
+      const incoming = payload.formationsIndex || [];
+      if(incoming.length === 0){
+        toast("このファイルは編成データベースのバックアップですが、中身が0件です。", "err", 5000);
+        return;
+      }
+
+      const current = await loadIndex();
+      const haveIds = new Set(current.map(f => f.id));
+      // 先把自己現有的編成全部算成「內容指紋」。
+      // 不能只比編號:撞號時另存的那一筆編號已經換過,
+      // 同一個檔案再匯入一次就會又多一筆,變成每按一次就長一份。
+      const mineSigs = new Set();
+      for(const f of current){
+        try{
+          const res = await storage.get("formations:" + f.id, false);
+          if(res) mineSigs.add(formationSignature(JSON.parse(res.value)));
+        }catch(err){ /* 讀不到的那筆就當作沒有 */ }
+      }
+
+      const plan = [];            // { entry, data, renamed }
+      let same = 0, renamed = 0;
+      incoming.forEach(f => {
+        if(!f || !f.id) return;
+        const data = (payload.formationsData && payload.formationsData[f.id]) || null;
+        if(!data) return;
+        const sig = formationSignature(data);
+        if(mineSigs.has(sig)){ same++; return; }     // 內容已經有了(編號是不是一樣都無所謂)
+        mineSigs.add(sig);
+        if(haveIds.has(f.id)){
+          // 編號撞到但內容不同:改用新編號存成另一筆,兩邊都保留
+          const nid = "f_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
+          plan.push({ entry: Object.assign({}, f, { id: nid }),
+                      data: Object.assign({}, data, { id: nid }), renamed: true });
+          haveIds.add(nid);
+          renamed++;
+          return;
+        }
+        haveIds.add(f.id);
+        plan.push({ entry: f, data, renamed: false });
+      });
+
+      if(!plan.length){
+        toast(`このファイルの ${incoming.length} 件の編成はすべて登録済みのため、追加されたものはありません。`, "", 4200);
+        return;
+      }
+      if(!confirm(`${plan.length} 件の編成を現在のデータベースに追加しますか？\n` +
+                  `・既存の ${current.length} 件の編成は削除も上書きもされません\n` +
+                  (same ? `・ファイル内の他の ${same} 件は内容がまったく同じためスキップします\n` : "") +
+                  (renamed ? `・うち ${renamed} 件はIDが既存のものと重複するため、別の新しいレコードとして保存します\n` : ""))) return;
+
+      let done = 0;
+      try{
+        for(const item of plan){
+          await storage.set("formations:" + item.entry.id, JSON.stringify(item.data), false);
+          done++;
+        }
+        await saveIndex(current.concat(plan.map(x => x.entry)));
+        await syncFormationsToFolder();
+        refreshFormationResults();
+        showReport("追加完了", [
+          `・編成を ${plan.length} 件追加`,
+          same ? `・${same} 件をスキップ（内容がまったく同じ）` : null,
+          renamed ? `・うち ${renamed} 件はIDが重複したため、別の新しいレコードとして保存` : null,
+          `・現在 全 ${current.length + plan.length} 件の編成`
+        ]);
+      }catch(err){
+        refreshFormationResults();
+        const quotaLike = err && (err.name === "QuotaExceededError" || /quota|storage|exceeded/i.test(String(err)));
+        toast(quotaLike
+          ? `この端末のブラウザー保存容量が不足しているため、${done} / ${plan.length} 件しか追加できませんでした。`
+          : `追加中にエラーが発生しました（${done} / ${plan.length} 件まで完了）：` + (err && err.message ? err.message : err),
+          "err", 7000);
+      }
+  }
 
   // ---------- Excel(文字欄位)匯出/匯入 ----------
   const EXCEL_COLS = [
@@ -5578,6 +5860,17 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     ["productCodes","貨號清單"],["categories","分類標籤"]
   ];
   const sameVal = (a, b) => JSON.stringify(a ?? "") === JSON.stringify(b ?? "");
+  // 品番は「あるものを並べた一覧」なので、取り込みは置き換えではなく和集合にする。
+  // 置き換えだと、相手のファイルが古いときにこちらで後から足した品番が消える。
+  // 和集合なら取り込む順番を気にしなくてよく、衝突そのものが起きない。
+  function unionCodes(cur, add){
+    const out = (cur || []).map(c => String(c || "").trim()).filter(Boolean);
+    (add || []).forEach(c => {
+      const t = String(c || "").trim();
+      if(t && !out.includes(t)) out.push(t);
+    });
+    return out;
+  }
 
   async function importSharedVehicles(payload){
     const incoming = payload["資料"] || payload.data || [];
@@ -5590,7 +5883,10 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       SHARE_FIELDS.forEach(([k, label]) => {
         if(!(k in ref)) return;
         const cur = k === "productCodes" ? productCodesOf(v) : v[k];
-        if(!sameVal(cur, ref[k])) diffs.push({ k, label, from: cur, to: ref[k] });
+        // 品番は和集合にしてから比べる。相手が持っていない品番をこちらが持っていても
+        // 「差分あり」にならないので、確認画面に実際には変わらない行が出ない。
+        const to = k === "productCodes" ? unionCodes(cur, ref[k]) : ref[k];
+        if(!sameVal(cur, to)) diffs.push({ k, label, from: cur, to });
       });
       if(diffs.length) changes.push({ v, diffs });
     });
@@ -5625,8 +5921,9 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
 
     changes.forEach(({ v, diffs }) => diffs.forEach(d => {
       if(d.k === "productCodes"){
+        // d.to は上で和集合済み
         v.productCodes = Array.isArray(d.to) ? d.to.slice() : [];
-        v.defaultProductCode = v.productCodes[0] || "";
+        if(!v.defaultProductCode) v.defaultProductCode = v.productCodes[0] || "";
       }else if(d.k === "categories"){
         v.categories = Array.isArray(d.to) ? d.to.slice() : [];
       }else{
@@ -6338,13 +6635,18 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     head.className = "ce-head";
     const title = document.createElement("span");
     title.style.cssText = "font-size:12px;font-weight:700;";
-    title.textContent = `コンテナ積載　${vehicleLabel(flat)}` + (d.rebuilt ? "（改造：4か所・12ftのみ）" : "");
+    title.textContent = tr("コンテナ積載");
+    const flatName = document.createElement("span");
+    flatName.className = "i18n-data";
+    flatName.textContent = "　" + vehicleLabel(flat);
+    title.appendChild(flatName);
+    if(d.rebuilt) title.appendChild(document.createTextNode(tr("（改造：4か所・12ftのみ）")));
     const hint = document.createElement("span");
     hint.style.cssText = "flex:1;";
     const closeBtn = document.createElement("button");
     closeBtn.type = "button"; closeBtn.className = "btn small secondary";
     closeBtn.style.cssText = "padding:2px 10px;font-size:10.5px;";
-    closeBtn.textContent = "閉じる";
+    closeBtn.textContent = tr("閉じる");
     closeBtn.addEventListener("click", closeContainerEditor);
     head.appendChild(title); head.appendChild(hint); head.appendChild(closeBtn);
     box.appendChild(head);
@@ -6382,7 +6684,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         nm.textContent = containerFtOf(cv);
         card.appendChild(nm);
         const del = document.createElement("button");
-        del.type = "button"; del.textContent = "✕ 清除";
+        del.type = "button"; del.textContent = tr("✕ 外す");
         del.style.cssText = "border:none;background:none;color:var(--rail-red);cursor:pointer;font-size:9.5px;padding:0;";
         del.addEventListener("click", (ev) => {
           ev.stopPropagation();
@@ -6401,10 +6703,10 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           const sub = document.createElement("div");
           sub.className = "ce-name";
           sub.style.color = "var(--muted)";
-          sub.textContent = "積載不可";
+          sub.textContent = tr("積載不可");
           card.appendChild(sub);
         }
-        if(!usable) card.title = "この位置にはコンテナを積めません";
+        if(!usable) card.title = tr("この位置にはコンテナを積めません");
       }
 
       // 空的槽位點了就挑貨櫃;已經放了的點一下也能直接換成別的,不必先清除
@@ -6422,12 +6724,13 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       const label = document.createElement("div");
       label.style.cssText = "font-size:12.5px;font-weight:700;margin-bottom:6px;";
       label.textContent = slots[ceSlot - 1]
-        ? `位置 ${ceSlot} を変更…（現在：${vehicleLabel(vehiclesById[slots[ceSlot - 1]]) || "?"}）`
-        : `槽位 ${ceSlot} 可放的貨櫃`;
+        ? tr("位置 {N} を変更…（現在：{X}）").replace("{N}", ceSlot)
+            .replace("{X}", vehicleLabel(vehiclesById[slots[ceSlot - 1]]) || "?")
+        : tr("位置 {N} に積めるコンテナ").replace("{N}", ceSlot);
       pick.appendChild(label);
 
       const filter = document.createElement("input");
-      filter.placeholder = "搜尋貨櫃…";
+      filter.placeholder = tr("コンテナを検索…");
       filter.style.cssText = "width:100%;max-width:340px;font-size:13px;padding:6px 9px;border:1px solid var(--line);border-radius:5px;margin-bottom:8px;";
       pick.appendChild(filter);
 
@@ -6448,7 +6751,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           return hay.includes(q) || (qr && vehicleRoma(c).includes(qr));
         }).slice(0, 80);
         if(!cands.length){
-          list.innerHTML = `<div style="font-size:12px;color:var(--muted);">找不到符合的貨櫃</div>`;
+          list.innerHTML = `<div style="font-size:12px;color:var(--muted);">${esc(tr("該当するコンテナがありません"))}</div>`;
           return;
         }
         cands.forEach(c => {
@@ -6485,7 +6788,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
 
     const head = document.createElement("div");
     head.style.cssText = "font-size:10px;color:var(--muted);padding:2px 4px 6px;";
-    head.textContent = "切換塗裝";
+    head.textContent = tr("塗装を切り替え");
     menu.appendChild(head);
 
     variants.forEach(x => {
@@ -6498,7 +6801,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       thumb.style.cssText = "width:56px;display:block;flex-shrink:0;";
       const label = document.createElement("span");
       label.style.cssText = "font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;";
-      label.textContent = (x.liveryName || "(未填塗裝)") + (isCur ? "　✓" : "");
+      label.textContent = (x.liveryName || tr("（塗装未入力）")) + (isCur ? "　✓" : "");
       item.appendChild(thumb); item.appendChild(label);
       item.addEventListener("mouseenter", () => { if(!isCur) item.style.background = "#f3f7fc"; });
       item.addEventListener("mouseleave", () => { if(!isCur) item.style.background = ""; });
@@ -7094,7 +7397,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     const title = document.createElement("div");
     title.className = "fp-title";
     const t = buildTitleText();
-    title.textContent = t || "（タイトル未入力）";
+    title.textContent = t || tr("（タイトル未入力）");
     if(!t) title.classList.add("empty");
     title.style.maxWidth = px(Math.max(totalW, 200));
     title.title = t;
@@ -7234,7 +7537,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         cbtn.type = "button";
         const cnt = (entry.containers || []).length;
         cbtn.textContent = cnt ? `📦${cnt}` : "📦";
-        cbtn.title = "裝載貨櫃";
+        cbtn.title = tr("コンテナを積む");
         cbtn.style.cssText = "position:absolute;bottom:2px;right:2px;z-index:3;border:1px solid var(--line);" +
           "background:rgba(255,255,255,.9);border-radius:3px;cursor:pointer;font-size:9px;padding:0 3px;";
         cbtn.addEventListener("click", (ev) => {
@@ -7703,11 +8006,17 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
 
   bindRole("new", () => resetState());
   bindRole("share", exportCurrentFormation);
-  $("#import-share-file").addEventListener("change", async (e) => {
-    const f = e.target.files && e.target.files[0];
-    e.target.value = "";
-    if(f) await importShareFile(f);
-  });
+  // 共有ファイル専用の入口は廃止(各分頁の「読み込み」が中身で判別する)。
+  // 要素が残っている場合だけ念のため繋いでおく。
+  (function bindLegacyShareInput(){
+    const el = document.getElementById("import-share-file");
+    if(!el) return;
+    el.addEventListener("change", async (e) => {
+      const f = e.target.files && e.target.files[0];
+      e.target.value = "";
+      if(f) await importAnyFile(f);
+    });
+  })();
 
   // 複製編成:保留所有內容,但清掉 id,讓它變成「尚未儲存的新編成」。
   // 這樣按儲存時才會產生新的 id,原本那筆編成完全不受影響;
@@ -8702,73 +9011,23 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   $("#formation-search-input").addEventListener("input", refreshFormationResults);
 
   // ---------- formation DB backup ----------
-  $("#btn-export-formations").addEventListener("click", async () => {
-    const formationsIndex = await loadIndex();
-    const formationsData = {};
-    for(const f of formationsIndex){
-      try{
-        const res = await storage.get("formations:" + f.id, false);
-        if(res) formationsData[f.id] = JSON.parse(res.value);
-      }catch(e){}
-    }
-    const payload = { exportedAt: new Date().toISOString(), formationsIndex, formationsData };
-    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url; a.download = "formation-db-backup-" + new Date().toISOString().slice(0,10) + ".json";
-    a.click(); URL.revokeObjectURL(url);
+  // 編成分頁:選取的那一筆 / 全部。
+  // 「書き出し」は編成作成の ↗ とまったく同じもの(exportFormationShareById)。
+  $("#btn-fm-export").addEventListener("click", async () => {
+    const id = pickedFormationId();
+    if(!id){ toast("書き出す編成を1件だけ選んでください。", "err"); return; }
+    try{
+      const res = await storage.get("formations:" + id, false);
+      if(!res){ toast("この編成データが見つかりません。", "err"); return; }
+      const data = JSON.parse(res.value);
+      downloadShare(buildFormationShare(data),
+                    shareFileName("編成共有", buildTitleTextOf(data).replace("●", "")));
+    }catch(e){ toast("書き出しに失敗しました：" + (e && e.message ? e.message : e), "err"); }
   });
-  $("#import-formations-file").addEventListener("change", (e) => {
-    const file = e.target.files[0];
-    if(!file) return;
-    const reader = new FileReader();
-    reader.onerror = () => toast("ファイルの読み込みに失敗しました。もう一度お試しください。", "err");
-    reader.onload = async () => {
-      let payload;
-      try{ payload = JSON.parse(reader.result); }
-      catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
-      const info = classifyPayload(payload);
-      if(info.kind === "share-formation"){
-        // ↗書き出しで作った1編成。これも編成なので、そのまま取り込む。
-        toast("共有用の編成ファイルとして読み込みます。", "info");
-        await importSharedFormation(payload);
-        return;
-      }
-      if(info.kind !== "formation-db"){
-        toast(wrongSlotMessage(info.kind, "formation"), "err", 6000);
-        return;
-      }
-      const incoming = payload.formationsIndex || [];
-      if(incoming.length === 0){
-        toast("このファイルは編成データベースのバックアップですが、中身が0件です。", "err", 5000);
-        return;
-      }
-      if(!confirm(`現在の編成データベースをすべて消去し、ファイル内の ${incoming.length} 件の編成に入れ替えます。\n` +
-                  `（今の編成を残したい場合は「追加」を使ってください）\n\n続行してもよろしいですか？`)) return;
-      let done = 0;
-      try{
-        await saveIndex(incoming);
-        for(const f of incoming){
-          const data = payload.formationsData && payload.formationsData[f.id];
-          if(data) await storage.set("formations:" + f.id, JSON.stringify(data), false);
-          done++;
-        }
-        await syncFormationsToFolder();
-        resetState();
-        refreshFormationResults();
-        toast(`読み込み完了。全 ${incoming.length} 件の編成です。`);
-      }catch(err){
-        resetState();
-        refreshFormationResults();
-        const quotaLike = err && (err.name === "QuotaExceededError" || /quota|storage|exceeded/i.test(String(err)));
-        toast(quotaLike
-          ? `この端末のブラウザー保存容量が不足しているため、${done} / ${incoming.length} 件しか読み込めませんでした。`
-          : `読み込み中にエラーが発生しました（${done} / ${incoming.length} 件まで完了）：` + (err && err.message ? err.message : err),
-          "err", 7000);
-      }
-    };
-    reader.readAsText(file);
-    e.target.value = "";
+  $("#btn-fm-export-all").addEventListener("click", async () => {
+    const payload = await formationPayload();
+    if(!payload.formationsIndex.length){ toast("書き出せる編成がありません。", "err"); return; }
+    exportJson(`備份_編成庫_${stampToday()}.json`, payload);
   });
 
   // 編成的內容指紋:拿掉編號、把鍵排序之後再字串化,
@@ -8794,102 +9053,6 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   // ---------- 加入編成(不清空現有資料) ----------
   // 編號撞到的時候要分兩種情況:內容一模一樣就是同一筆,略過;
   // 內容不同代表是別人那邊改過的另一版,給它一個新編號兩邊都留著,不會覆蓋掉自己的。
-  $("#merge-formations-file").addEventListener("change", (e) => {
-    const file = e.target.files[0];
-    if(!file) return;
-    const reader = new FileReader();
-    reader.onerror = () => toast("ファイルの読み込みに失敗しました。もう一度お試しください。", "err");
-    reader.onload = async () => {
-      let payload;
-      try{ payload = JSON.parse(reader.result); }
-      catch(err){ toast("読み込みに失敗しました。有効なJSONファイルではありません。", "err"); return; }
-      const info = classifyPayload(payload);
-      if(info.kind === "share-formation"){
-        toast("共有用の編成ファイルとして追加します。", "info");
-        await importSharedFormation(payload);
-        return;
-      }
-      if(info.kind !== "formation-db"){
-        toast(wrongSlotMessage(info.kind, "formation"), "err", 6000);
-        return;
-      }
-      const incoming = payload.formationsIndex || [];
-      if(incoming.length === 0){
-        toast("このファイルは編成データベースのバックアップですが、中身が0件です。", "err", 5000);
-        return;
-      }
-
-      const current = await loadIndex();
-      const haveIds = new Set(current.map(f => f.id));
-      // 先把自己現有的編成全部算成「內容指紋」。
-      // 不能只比編號:撞號時另存的那一筆編號已經換過,
-      // 同一個檔案再匯入一次就會又多一筆,變成每按一次就長一份。
-      const mineSigs = new Set();
-      for(const f of current){
-        try{
-          const res = await storage.get("formations:" + f.id, false);
-          if(res) mineSigs.add(formationSignature(JSON.parse(res.value)));
-        }catch(err){ /* 讀不到的那筆就當作沒有 */ }
-      }
-
-      const plan = [];            // { entry, data, renamed }
-      let same = 0, renamed = 0;
-      incoming.forEach(f => {
-        if(!f || !f.id) return;
-        const data = (payload.formationsData && payload.formationsData[f.id]) || null;
-        if(!data) return;
-        const sig = formationSignature(data);
-        if(mineSigs.has(sig)){ same++; return; }     // 內容已經有了(編號是不是一樣都無所謂)
-        mineSigs.add(sig);
-        if(haveIds.has(f.id)){
-          // 編號撞到但內容不同:改用新編號存成另一筆,兩邊都保留
-          const nid = "f_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
-          plan.push({ entry: Object.assign({}, f, { id: nid }),
-                      data: Object.assign({}, data, { id: nid }), renamed: true });
-          haveIds.add(nid);
-          renamed++;
-          return;
-        }
-        haveIds.add(f.id);
-        plan.push({ entry: f, data, renamed: false });
-      });
-
-      if(!plan.length){
-        toast(`このファイルの ${incoming.length} 件の編成はすべて登録済みのため、追加されたものはありません。`, "", 4200);
-        return;
-      }
-      if(!confirm(`${plan.length} 件の編成を現在のデータベースに追加しますか？\n` +
-                  `・既存の ${current.length} 件の編成は削除も上書きもされません\n` +
-                  (same ? `・ファイル内の他の ${same} 件は内容がまったく同じためスキップします\n` : "") +
-                  (renamed ? `・うち ${renamed} 件はIDが既存のものと重複するため、別の新しいレコードとして保存します\n` : ""))) return;
-
-      let done = 0;
-      try{
-        for(const item of plan){
-          await storage.set("formations:" + item.entry.id, JSON.stringify(item.data), false);
-          done++;
-        }
-        await saveIndex(current.concat(plan.map(x => x.entry)));
-        await syncFormationsToFolder();
-        refreshFormationResults();
-        showReport("追加完了", [
-          `・編成を ${plan.length} 件追加`,
-          same ? `・${same} 件をスキップ（内容がまったく同じ）` : null,
-          renamed ? `・うち ${renamed} 件はIDが重複したため、別の新しいレコードとして保存` : null,
-          `・現在 全 ${current.length + plan.length} 件の編成`
-        ]);
-      }catch(err){
-        refreshFormationResults();
-        const quotaLike = err && (err.name === "QuotaExceededError" || /quota|storage|exceeded/i.test(String(err)));
-        toast(quotaLike
-          ? `この端末のブラウザー保存容量が不足しているため、${done} / ${plan.length} 件しか追加できませんでした。`
-          : `追加中にエラーが発生しました（${done} / ${plan.length} 件まで完了）：` + (err && err.message ? err.message : err),
-          "err", 7000);
-      }
-    };
-    reader.readAsText(file);
-    e.target.value = "";
-  });
 
   // ================= init =================
   async function init(){
