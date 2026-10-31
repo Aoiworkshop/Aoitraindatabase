@@ -1535,7 +1535,74 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   "読み込みに失敗しました：": "讀取失敗：",
   "保存に失敗しました：": "儲存失敗：",
   "追加に失敗しました：": "追加失敗：",
-  "処理に失敗しました：": "處理失敗："
+  "処理に失敗しました：": "處理失敗：",
+
+  /* ---------- 同步:比對新舊檔案的視窗 ---------- */
+  "ファイルの対応付け": "比對新舊檔案",
+  "対応付けの確認…": "比對新舊檔案…",
+  "ファイルが見つからないレコードが {A} 件、新しいファイルが {B} 件あります。":
+    "有 {A} 筆紀錄找不到檔案，另外有 {B} 個新檔案。",
+  "同じ車両を描き直して名前も変えた場合は、ここで対応付けると編成の参照がそのまま引き継がれます。":
+    "同一輛車重畫之後又改了檔名的話，在這裡對應起來，編成的參照就會自動接過去。",
+  "別の車両どうしなら「新規として扱う」のままにしてください。":
+    "不是同一輛車就保持「當成新車」。",
+  "⚠ 以下の {N} 両が同じファイルを選んでいます。直すまで続行できません：":
+    "⚠ 下面 {N} 輛選到同一個檔案，修好才能繼續：",
+  "同じフォルダの候補だけを表示": "只列出同資料夾的候選",
+  "他のフォルダも探す": "連其他資料夾一起找",
+  "同じフォルダに新しいファイルはありません → 新規として扱います":
+    "同資料夾裡沒有新檔案 → 會當成新車",
+  "新規として扱う（対応付けない）": "當成新車（不對應）",
+  "ファイル名が同じ": "檔名完全相同",
+  "よく似ている": "很像",
+  "少し似ている": "有點像",
+  "あまり似ていない": "不太像",
+  "（名称なし）": "（沒有名稱）",
+  "問題のある行を上に": "把有問題的排到最前面",
+  "{N} 件を対応付けます": "要對應 {N} 輛",
+  "対応付けなし": "沒有要對應的",
+  "今回の同期をやめる（何もしない）": "放棄這次同步（什麼都不做）",
+  "すべて新規として扱う": "全部當成新車",
+  "対応付けて続行": "套用對應並繼續",
+  "今回の同期をやめました。データベースは変更していません。":
+    "已放棄這次同步，資料庫沒有任何變動。",
+
+  /* ---------- 同步:掃描結果摘要 ---------- */
+  "スキャン中…": "掃描中…",
+  "照合中…": "比對中…",
+  "照合中… {A}/{B}": "比對中… {A}/{B}",
+  "画像を照合中…": "比對圖片中…",
+  "スキャン完了：ディスク上に {N} 枚の画像が見つかりました。":
+    "掃描完成：在磁碟上找到 {N} 張圖片。",
+  "・{N} 枚は画像の中身が更新されています（画像だけ差し替え、他の項目は保持）":
+    "・{N} 張的圖片內容有更新（只換圖片，其他項目保留）",
+  "・{N} 枚は移動／名前変更と判定しました（既存のレコードを更新し、重複登録はしません）":
+    "・{N} 張判定為搬移／改名（更新原有紀錄，不會重複登錄）",
+  "・うち {N} 件はファイル名が変わっているため、車両データもファイル名に合わせます：":
+    "・其中 {N} 筆因為檔名變了，車輛資料也會跟著改成檔名的內容：",
+  "・うち {N} 件はファイル名が曖昧なため、車両データは変更しません（下に理由）":
+    "・其中 {N} 筆檔名不明確，車輛資料不動（原因如下）",
+  "うち {N} 件は手動で対応付けたものです（編成の参照を引き継ぎます）":
+    "其中 {N} 筆是手動對應的（編成的參照會接過去）",
+  "・{N} 枚は新規の画像です（新しいレコードを作ります）":
+    "・{N} 張是新圖片（會建立新紀錄）",
+  "・{N} 件のレコードに対応するファイルがありません（削除されたか、フォルダ外に移動）":
+    "・{N} 筆紀錄找不到對應的檔案（被刪掉，或移到資料夾外）",
+  "以上の変更を適用しますか？": "要套用以上的變更嗎？",
+  "…ほか {N} 件": "…其他還有 {N} 筆",
+  "(空)": "(空)",
+  "ファイル名から型式が読み取れません": "檔名裡讀不出型式",
+  "ファイル名を読み戻すと項目がずれます": "把檔名讀回來會讓欄位錯位",
+  "このファイル名は保存時に「{A}」へ正規化されます（先にファイル名を直してください）":
+    "這個檔名儲存時會被正規化成「{A}」（請先改檔名）",
+  "ファイル名の「{A}」を幅として読むと {B}cm になります":
+    "把檔名裡的「{A}」當寬度讀的話會變成 {B}cm",
+  "幅(cm)": "寬度(cm)",
+
+  /* ---------- 重複整理:手填欄位的接手 ---------- */
+  "所属会社": "所屬會社",
+  "メモ": "備註",
+  "・手入力の項目で引き継ぐものはありません": "・沒有需要接手的手填項目"
 });
 
 </script>
@@ -2637,11 +2704,34 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     const i = String(path || "").lastIndexOf("/");
     return i < 0 ? String(path || "") : path.slice(i + 1);
   }
-  // 推薦分數:檔名相似度為主,同一個資料夾(同系列)再加分
-  function pairScore(orphan, file){
-    const s = nameSimilarity(baseOf(orphan.sourcePath), baseOf(file.relPath));
-    const sameDir = dirOf(orphan.sourcePath) === dirOf(file.relPath) ? 0.15 : 0;
-    return Math.min(1, s + sameDir);
+  // 相似度的分級。只給一個百分比很難判斷「這到底算不算同一台」,
+  // 所以同時給一句話。百分比純粹是檔名的 Dice 係數,不再加任何修正
+  // ——以前會因為「同資料夾 +0.15」而膨脹,看起來很像其實不像。
+  function scoreBand(s){
+    if(s >= 0.999) return "ファイル名が同じ";
+    if(s >= 0.75)  return "よく似ている";
+    if(s >= 0.50)  return "少し似ている";
+    return "あまり似ていない";
+  }
+  // 候選名單。預設只找「同一個資料夾(同系列)」的新檔案:
+  // 221系的車幾乎不可能變成225系,跨資料夾撈只會製造誤選的機會。
+  // 真的搬過資料夾時再打開「他のフォルダも探す」。
+  function candidatesFor(orphan, stillNew, crossDir){
+    const d = dirOf(orphan.sourcePath);
+    const pool = crossDir ? stillNew
+                          : stillNew.filter(sn => dirOf(sn.f.relPath) === d);
+    return pool
+      .map(sn => ({ sn, score: nameSimilarity(baseOf(orphan.sourcePath),
+                                              baseOf(sn.f.relPath)) }))
+      .sort((a, b) => b.score - a.score);
+  }
+  // 自動預選的條件。以前只要 0.62 就幫你選好,太鬆了。
+  // 現在要「夠像」而且「明顯比第二名像」,否則一律不選,交給人判斷。
+  const AUTOPICK_MIN = 0.75, AUTOPICK_LEAD = 0.15;
+  function autoPick(cands){
+    if(!cands.length || cands[0].score < AUTOPICK_MIN) return "";
+    if(cands.length > 1 && cands[0].score - cands[1].score < AUTOPICK_LEAD) return "";
+    return cands[0].sn.f.relPath;
   }
 
   // ---------- 孤兒配對視窗 ----------
@@ -2650,128 +2740,251 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   // 依檔名相似度推薦配對,最後由使用者按下確認 —— 不會猜錯,
   // 而且配好之後舊編號會寫進別名表,編成就會自己接回來。
   // 視窗完全用 JS 動態產生,所以不必在 HTML 裡預留標籤。
+  //
+  // 回傳 { action, pairs }:
+  //   "apply" … 套用下面挑好的對應,然後繼續同步
+  //   "new"   … 全部當成新車(不對應),然後繼續同步
+  //   "abort" … 放棄這次同步,什麼都不做(Esc / 點背景 / 關視窗也是這個)
   function askOrphanPairing(orphanPool, stillNew){
     return new Promise(resolve => {
-      const pairs = [];                      // { v, f }
       const back = document.createElement("div");
       back.id = "orphan-pair-modal";
       back.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:400;"
         + "display:flex;align-items:center;justify-content:center;padding:16px;";
       const box = document.createElement("div");
       box.style.cssText = "background:#fff;color:var(--ink);border-radius:10px;"
-        + "max-width:860px;width:100%;max-height:86vh;display:flex;flex-direction:column;"
+        + "max-width:900px;width:100%;max-height:86vh;display:flex;flex-direction:column;"
         + "box-shadow:0 10px 40px rgba(0,0,0,.4);overflow:hidden;";
 
       const head = document.createElement("div");
       head.style.cssText = "padding:14px 16px;border-bottom:1px solid var(--line);";
-      head.innerHTML = `<div style="font-weight:700;font-size:15px;">対応付けの確認</div>`
+      head.innerHTML = `<div style="font-weight:700;font-size:15px;">`
+        + `${esc(tr("ファイルの対応付け"))}</div>`
         + `<div style="font-size:12px;opacity:.8;margin-top:5px;line-height:1.6;">`
-        + `ファイルが見つからないレコードが ${orphanPool.length} 件、`
-        + `新しいファイルが ${stillNew.length} 件あります。<br>`
-        + `同じ車両を描き直して名前も変えた場合は、ここで対応付けると`
-        + `<b>編成の参照がそのまま引き継がれます</b>。<br>`
-        + `別の車両どうしなら「新規として扱う」のままにしてください。</div>`;
+        + esc(tr("ファイルが見つからないレコードが {A} 件、新しいファイルが {B} 件あります。")
+                .replace("{A}", orphanPool.length).replace("{B}", stillNew.length))
+        + `<br>`
+        + esc(tr("同じ車両を描き直して名前も変えた場合は、ここで対応付けると編成の参照がそのまま引き継がれます。"))
+        + `<br>`
+        + esc(tr("別の車両どうしなら「新規として扱う」のままにしてください。"))
+        + `</div>`;
+
+      // ---- 選項列:要不要跨資料夾找 ----
+      const optRow = document.createElement("div");
+      optRow.style.cssText = "padding:8px 16px;border-bottom:1px solid var(--line);"
+        + "display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:12px;";
+      const crossLbl = document.createElement("label");
+      crossLbl.style.cssText = "display:flex;gap:5px;align-items:center;cursor:pointer;";
+      const crossCb = document.createElement("input");
+      crossCb.type = "checkbox";
+      crossLbl.appendChild(crossCb);
+      crossLbl.appendChild(document.createTextNode(tr("他のフォルダも探す")));
+      const scopeNote = document.createElement("span");
+      scopeNote.style.cssText = "opacity:.7;";
+      const sortBtn = document.createElement("button");
+      sortBtn.type = "button"; sortBtn.className = "btn small secondary";
+      sortBtn.textContent = tr("問題のある行を上に");
+      sortBtn.style.marginLeft = "auto";
+      optRow.appendChild(crossLbl); optRow.appendChild(scopeNote); optRow.appendChild(sortBtn);
+
+      // ---- 擋住繼續的那幾列,直接列出來 ----
+      const banner = document.createElement("div");
+      banner.style.cssText = "display:none;padding:9px 16px;background:#fdeaea;"
+        + "border-bottom:1px solid var(--line);font-size:12px;line-height:1.6;"
+        + "color:var(--rail-red);";
 
       const body = document.createElement("div");
       body.style.cssText = "padding:10px 16px;overflow:auto;flex:1;";
 
-      // 推薦順:分數高的排前面,讓使用者先處理最像的
-      const ranked = orphanPool.map(v => {
-        const cands = stillNew.map(sn => ({ sn, score: pairScore(v, sn.f) }))
-          .sort((a, b) => b.score - a.score);
-        return { v, cands, best: cands.length ? cands[0].score : 0 };
-      }).sort((a, b) => b.best - a.best);
+      // ---- 資料:一列一輛找不到檔案的車 ----
+      const items = orphanPool.map(v => ({ v, pick: "", cands: [], best: 0 }));
+      let crossDir = false;
 
-      const selects = [];
-      ranked.forEach(({ v, cands, best }) => {
-        const row = document.createElement("div");
-        row.style.cssText = "display:flex;gap:10px;align-items:center;padding:8px 0;"
-          + "border-bottom:1px dashed var(--line);";
-
-        const thumb = document.createElement("div");
-        thumb.style.cssText = "width:76px;height:44px;flex:0 0 auto;display:flex;"
-          + "align-items:center;justify-content:center;background:#f3f3f3;border-radius:4px;overflow:hidden;";
-        if(v.img){
-          const im = document.createElement("img");
-          im.src = v.img;
-          im.style.cssText = "max-width:100%;max-height:100%;object-fit:contain;";
-          thumb.appendChild(im);
-        }else{
-          thumb.textContent = "—";
-        }
-
-        const info = document.createElement("div");
-        info.style.cssText = "flex:1 1 auto;min-width:0;font-size:12px;line-height:1.5;";
-        info.innerHTML = `<div style="font-weight:700;">${esc(vehicleLabel(v) || "（名称なし）")}</div>`
-          + `<div style="opacity:.7;word-break:break-all;">${esc(v.sourcePath || "")}</div>`;
-
-        const sel = document.createElement("select");
-        sel.style.cssText = "flex:0 0 300px;max-width:46%;font-size:12px;padding:4px;";
-        const none = document.createElement("option");
-        none.value = ""; none.textContent = "新規として扱う（対応付けない）";
-        sel.appendChild(none);
-        cands.forEach(({ sn, score }) => {
-          const op = document.createElement("option");
-          op.value = sn.f.relPath;
-          op.textContent = `${Math.round(score * 100)}%　${baseOf(sn.f.relPath)}`;
-          sel.appendChild(op);
+      function recalc(){
+        items.forEach(it => {
+          it.cands = candidatesFor(it.v, stillNew, crossDir);
+          it.best = it.cands.length ? it.cands[0].score : 0;
+          // 候選範圍變了,原本選的可能已經不在名單裡
+          if(it.pick && !it.cands.some(c => c.sn.f.relPath === it.pick)) it.pick = "";
         });
-        // 很像的時候先幫他選好,但還是要使用者按下確認才會生效
-        if(best >= 0.62 && cands.length) sel.value = cands[0].sn.f.relPath;
+      }
+      function applyAutoPick(){
+        items.forEach(it => { it.pick = autoPick(it.cands); });
+      }
+      function dupMap(){
+        const by = {};
+        items.forEach(it => { if(it.pick) (by[it.pick] = by[it.pick] || []).push(it); });
+        Object.keys(by).forEach(k => { if(by[k].length < 2) delete by[k]; });
+        return by;
+      }
+      // 排序:擋住繼續的排最前面,再來是有候選的,最後是只能當新車的。
+      // 跟GUI的表格同一個想法 —— 不處理就不能往下走的先看到。
+      function sortItems(){
+        const dup = dupMap();
+        const bad = new Set();
+        Object.keys(dup).forEach(k => dup[k].forEach(it => bad.add(it)));
+        const rank = it => bad.has(it) ? 0 : (it.cands.length ? 1 : 2);
+        items.sort((a, b) => (rank(a) - rank(b)) || (b.best - a.best));
+      }
 
-        row.appendChild(thumb); row.appendChild(info); row.appendChild(sel);
-        body.appendChild(row);
-        selects.push({ v, sel });
-      });
+      function render(){
+        body.textContent = "";
+        const dup = dupMap();
+        const bad = new Set();
+        Object.keys(dup).forEach(k => dup[k].forEach(it => bad.add(it)));
+
+        items.forEach(it => {
+          const v = it.v;
+          const row = document.createElement("div");
+          row.style.cssText = "display:flex;gap:10px;align-items:center;padding:8px 6px;"
+            + "border-bottom:1px dashed var(--line);"
+            + (bad.has(it) ? "background:#fdeaea;border-radius:4px;" : "");
+
+          const thumb = document.createElement("div");
+          thumb.style.cssText = "width:76px;height:44px;flex:0 0 auto;display:flex;"
+            + "align-items:center;justify-content:center;background:#f3f3f3;"
+            + "border-radius:4px;overflow:hidden;";
+          if(v.img){
+            const im = document.createElement("img");
+            im.src = v.img;
+            im.style.cssText = "max-width:100%;max-height:100%;object-fit:contain;";
+            thumb.appendChild(im);
+          }else{
+            thumb.textContent = "—";
+          }
+
+          const info = document.createElement("div");
+          info.style.cssText = "flex:1 1 auto;min-width:0;font-size:12px;line-height:1.5;";
+          // 車名與路徑是使用者的資料,標成 i18n-data 不讓翻譯器碰
+          info.innerHTML = `<div style="font-weight:700;" class="i18n-data">`
+            + `${esc(vehicleLabel(v) || tr("（名称なし）"))}</div>`
+            + `<div style="opacity:.7;word-break:break-all;" class="i18n-data">`
+            + `${esc(v.sourcePath || "")}</div>`;
+
+          const right = document.createElement("div");
+          right.style.cssText = "flex:0 0 330px;max-width:48%;";
+          if(!it.cands.length){
+            const na = document.createElement("div");
+            na.style.cssText = "font-size:12px;opacity:.75;";
+            na.textContent = tr("同じフォルダに新しいファイルはありません → 新規として扱います");
+            right.appendChild(na);
+          }else{
+            const sel = document.createElement("select");
+            sel.style.cssText = "width:100%;font-size:12px;padding:4px;";
+            const none = document.createElement("option");
+            none.value = ""; none.textContent = tr("新規として扱う（対応付けない）");
+            sel.appendChild(none);
+            it.cands.forEach(({ sn, score }) => {
+              const op = document.createElement("option");
+              op.value = sn.f.relPath;
+              op.textContent = `${tr(scoreBand(score))} ${Math.round(score * 100)}%　`
+                + baseOf(sn.f.relPath);
+              sel.appendChild(op);
+            });
+            sel.value = it.pick;
+            sel.addEventListener("change", () => { it.pick = sel.value; refresh(); });
+            right.appendChild(sel);
+          }
+
+          row.appendChild(thumb); row.appendChild(info); row.appendChild(right);
+          body.appendChild(row);
+        });
+      }
 
       const foot = document.createElement("div");
       foot.style.cssText = "padding:12px 16px;border-top:1px solid var(--line);"
-        + "display:flex;gap:8px;justify-content:flex-end;align-items:center;";
+        + "display:flex;gap:8px;justify-content:flex-end;align-items:center;flex-wrap:wrap;";
       const warn = document.createElement("div");
-      warn.style.cssText = "font-size:11px;opacity:.75;margin-right:auto;";
-      const skip = document.createElement("button");
-      skip.type = "button"; skip.textContent = "全部スキップ";
-      skip.className = "btn small secondary";
+      warn.style.cssText = "font-size:11px;opacity:.85;margin-right:auto;";
+      const abort = document.createElement("button");
+      abort.type = "button"; abort.className = "btn small secondary";
+      abort.textContent = tr("今回の同期をやめる（何もしない）");
+      const asNew = document.createElement("button");
+      asNew.type = "button"; asNew.className = "btn small secondary";
+      asNew.textContent = tr("すべて新規として扱う");
       const ok = document.createElement("button");
-      ok.type = "button"; ok.textContent = "対応付けて続行";
-      ok.className = "btn small";
+      ok.type = "button"; ok.className = "btn small";
+      ok.textContent = tr("対応付けて続行");
 
-      const refreshWarn = () => {
-        const used = {};
-        let dup = 0, n = 0;
-        selects.forEach(({ sel }) => {
-          if(!sel.value) return;
-          n++;
-          if(used[sel.value]) dup++;
-          used[sel.value] = true;
-        });
-        warn.textContent = dup
-          ? `同じファイルを ${dup} 箇所で選んでいます。先に直してください。`
-          : (n ? `${n} 件を対応付けます` : "対応付けなし");
-        warn.style.color = dup ? "var(--rail-red)" : "";
-        ok.disabled = dup > 0;
-      };
-      selects.forEach(({ sel }) => sel.addEventListener("change", refreshWarn));
-      refreshWarn();
+      function refresh(){
+        const dup = dupMap();
+        const keys = Object.keys(dup);
+        const n = items.filter(it => it.pick).length;
+        if(keys.length){
+          let rows = 0;
+          keys.forEach(k => { rows += dup[k].length; });
+          const lines = keys.slice(0, 6).map(k =>
+            "・" + dup[k].map(it => vehicleLabel(it.v) || tr("（名称なし）")).join(" / ")
+            + " → " + baseOf(k));
+          if(keys.length > 6) lines.push(tr("…ほか {N} 件").replace("{N}", keys.length - 6));
+          banner.textContent = "";
+          const t = document.createElement("div");
+          t.style.fontWeight = "700";
+          t.textContent = tr("⚠ 以下の {N} 両が同じファイルを選んでいます。直すまで続行できません：")
+                            .replace("{N}", rows);
+          banner.appendChild(t);
+          lines.forEach(L => {
+            const d = document.createElement("div");
+            d.className = "i18n-data";
+            d.textContent = "　" + L;
+            banner.appendChild(d);
+          });
+          banner.style.display = "";
+        }else{
+          banner.style.display = "none";
+        }
+        warn.textContent = n ? tr("{N} 件を対応付けます").replace("{N}", n)
+                             : tr("対応付けなし");
+        warn.style.color = "";
+        ok.disabled = keys.length > 0;
+        scopeNote.textContent = crossDir
+          ? ""
+          : tr("同じフォルダの候補だけを表示");
+        render();
+      }
 
-      const close = result => { back.remove(); document.removeEventListener("keydown", onKey); resolve(result); };
-      const onKey = e => { if(e.key === "Escape") close([]); };
-      skip.addEventListener("click", () => close([]));
-      ok.addEventListener("click", () => {
-        selects.forEach(({ v, sel }) => {
-          if(!sel.value) return;
-          const sn = stillNew.find(x => x.f.relPath === sel.value);
-          if(sn) pairs.push({ v, sn });
-        });
-        close(pairs);
+      crossCb.addEventListener("change", () => {
+        crossDir = crossCb.checked;
+        recalc();
+        refresh();
       });
-      back.addEventListener("click", e => { if(e.target === back) close([]); });
+      sortBtn.addEventListener("click", () => { sortItems(); refresh(); });
+
+      const close = result => {
+        back.remove();
+        document.removeEventListener("keydown", onKey);
+        resolve(result);
+      };
+      // Esc／點背景／關視窗一律當成「放棄這次同步」。
+      // 以前這幾個等於「全部當新車」,等於沒按清楚就把一堆車重複匯進資料庫。
+      const onKey = e => { if(e.key === "Escape") close({ action: "abort", pairs: [] }); };
+      abort.addEventListener("click", () => close({ action: "abort", pairs: [] }));
+      asNew.addEventListener("click", () => close({ action: "new", pairs: [] }));
+      ok.addEventListener("click", () => {
+        const pairs = [];
+        items.forEach(it => {
+          if(!it.pick) return;
+          const sn = stillNew.find(x => x.f.relPath === it.pick);
+          if(sn) pairs.push({ v: it.v, sn });
+        });
+        close({ action: "apply", pairs });
+      });
+      back.addEventListener("click", e => {
+        if(e.target === back) close({ action: "abort", pairs: [] });
+      });
       document.addEventListener("keydown", onKey);
 
-      foot.appendChild(warn); foot.appendChild(skip); foot.appendChild(ok);
-      box.appendChild(head); box.appendChild(body); box.appendChild(foot);
+      foot.appendChild(warn); foot.appendChild(abort);
+      foot.appendChild(asNew); foot.appendChild(ok);
+      box.appendChild(head); box.appendChild(optRow); box.appendChild(banner);
+      box.appendChild(body); box.appendChild(foot);
       back.appendChild(box);
       document.body.appendChild(back);
+
+      recalc();
+      applyAutoPick();
+      sortItems();
+      refresh();
     });
   }
 
@@ -2801,7 +3014,8 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     // 檔名裡的數字會被當成寬度(mm)。像「形式_2000」這種會算出 200 公分,
     // 顯然不是車寬,這種就不要拿去蓋掉資料。
     if(w != null && (w < 0.5 || w > 10)){
-      return { ambiguous: `ファイル名の「${Math.round(w * 10)}」を幅として読むと ${w}cm になります` };
+      return { ambiguous: tr("ファイル名の「{A}」を幅として読むと {B}cm になります")
+                             .replace("{A}", Math.round(w * 10)).replace("{B}", w) };
     }
     const next = {
       modelCode: parsed.modelCode,
@@ -2821,7 +3035,8 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     const rebuilt = buildVehicleFileStem(Object.assign({}, v, next));
     const bare = newName.replace(/\.[^.]+$/, "");
     if(rebuilt !== bare){
-      return { ambiguous: `このファイル名は保存時に「${rebuilt}」へ正規化されます（先にファイル名を直してください）` };
+      return { ambiguous: tr("このファイル名は保存時に「{A}」へ正規化されます（先にファイル名を直してください）")
+                             .replace("{A}", rebuilt) };
     }
     const diffs = [];
     Object.keys(next).forEach(k => {
@@ -2848,7 +3063,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     }
     const btn = $("#btn-scan-vehicle-folder");
     const oldText = btn.textContent;
-    btn.disabled = true; btn.textContent = "スキャン中…";
+    btn.disabled = true; btn.textContent = tr("スキャン中…");
     try{
       const found = await collectImageFiles(vehicleDirHandle, "", []);
       const foundPaths = new Set(found.map(f => f.relPath));
@@ -2861,13 +3076,14 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
 
       // 先把磁碟上每個檔案的指紋算出來(整個掃描只算一次,
       // 搬移判定與「圖片有沒有被重畫」兩邊共用)
-      btn.textContent = "照合中…";
+      btn.textContent = tr("照合中…");
       const hashByPath = {};
       if(HASH_OK){
         let n = 0;
         for(const f of found){
           try{ hashByPath[f.relPath] = await fileHash(f.handle); }catch(e){ /* 讀不到就當沒有指紋 */ }
-          if(++n % 200 === 0) btn.textContent = `照合中… ${n}/${found.length}`;
+          if(++n % 200 === 0) btn.textContent = tr("照合中… {A}/{B}")
+            .replace("{A}", n).replace("{B}", found.length);
         }
       }
 
@@ -2923,9 +3139,17 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       // 這種情況程式沒有線索可以自動配對,所以問使用者。
       let paired = 0;
       if(orphanPool.length && stillNew.length){
-        btn.textContent = "対応付けの確認…";
-        const pairs = await askOrphanPairing(orphanPool, stillNew);
-        pairs.forEach(({ v, sn }) => {
+        btn.textContent = tr("対応付けの確認…");
+        const res = await askOrphanPairing(orphanPool, stillNew);
+        if(res.action === "abort"){
+          // 放棄這次同步:資料庫一個字都不動。
+          // 只有「補算出來的圖片指紋」會留下來 —— 那是既有資料的快取,
+          // 不是這次掃描的結果,丟掉只會讓下次重算一遍。
+          if(hashFilled) await persistVehicles();
+          toast(trMsg("今回の同期をやめました。データベースは変更していません。"));
+          return;
+        }
+        res.pairs.forEach(({ v, sn }) => {
           const oi = orphanPool.indexOf(v);
           const si = stillNew.indexOf(sn);
           if(oi < 0 || si < 0) return;
@@ -2946,7 +3170,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
 
       // 路徑一樣、但圖片內容變了 → 您重新做過圖並用同檔名覆蓋回資料夾。
       // 這種情況只換圖片,其他欄位(型式/番代/塗裝/寬度/貨號/分類標籤)全部保留。
-      btn.textContent = "画像を照合中…";
+      btn.textContent = tr("画像を照合中…");
       const byPath = {};
       vehicles.forEach(v => { if(v.sourcePath) byPath[v.sourcePath] = v; });
       const updatedImgs = [];
@@ -2962,36 +3186,58 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           if(v.img !== dataUrl) updatedImgs.push({ v, dataUrl, hash: "" });
         }
       }
-      btn.textContent = "スキャン中…";
+      btn.textContent = tr("スキャン中…");
 
-      const lines = [`スキャン完了：ディスク上に ${found.length} 枚の画像が見つかりました。`];
-      if(updatedImgs.length) lines.push(`・${updatedImgs.length} 枚は画像の中身が更新されています（画像だけ差し替え、他の項目は保持）`);
-      if(moved.length) lines.push(`・${moved.length} 枚は移動／名前変更と判定しました（既存のレコードを更新し、重複登録はしません）`);
+      // 這一段是「程式自己組出來、中間夾變數」的句子。
+      // 以前直接寫成樣板字串,翻譯器只能用「找子字串換掉」的方式硬換,
+      // 數字夾在中間的句子常常換不乾淨 → 改成 tr() 取整句樣板再填數字,
+      // 中日文都是同一條路徑,不會有一邊漏翻的狀況。
+      const L = (k, map) => {
+        let t = tr(k);
+        if(map) Object.keys(map).forEach(ph => { t = t.split(ph).join(map[ph]); });
+        return t;
+      };
+      const lines = [L("スキャン完了：ディスク上に {N} 枚の画像が見つかりました。",
+                       { "{N}": found.length })];
+      if(updatedImgs.length) lines.push(
+        L("・{N} 枚は画像の中身が更新されています（画像だけ差し替え、他の項目は保持）",
+          { "{N}": updatedImgs.length }));
+      if(moved.length) lines.push(
+        L("・{N} 枚は移動／名前変更と判定しました（既存のレコードを更新し、重複登録はしません）",
+          { "{N}": moved.length }));
       if(fieldSync.length){
-        lines.push(`・うち ${fieldSync.length} 件はファイル名が変わっているため、車両データもファイル名に合わせます：`);
+        lines.push(L("・うち {N} 件はファイル名が変わっているため、車両データもファイル名に合わせます：",
+                     { "{N}": fieldSync.length }));
         fieldSync.slice(0, 6).forEach(m => {
           const d = m.fields.diffs
-            .map(x => `${NAME_FIELD_LABEL[x.k] || x.k} ${x.from || "(空)"}→${x.to || "(空)"}`)
+            .map(x => `${tr(NAME_FIELD_LABEL[x.k] || x.k)} ${x.from || tr("(空)")}→${x.to || tr("(空)")}`)
             .join("、");
           lines.push(`　　${m.to.split("/").pop()}：${d}`);
         });
-        if(fieldSync.length > 6) lines.push(`　　…ほか ${fieldSync.length - 6} 件`);
+        if(fieldSync.length > 6)
+          lines.push("　　" + L("…ほか {N} 件", { "{N}": fieldSync.length - 6 }));
       }
       if(fieldAmbiguous.length){
-        lines.push(`・うち ${fieldAmbiguous.length} 件はファイル名が曖昧なため、車両データは変更しません（下に理由）`);
+        lines.push(L("・うち {N} 件はファイル名が曖昧なため、車両データは変更しません（下に理由）",
+                     { "{N}": fieldAmbiguous.length }));
         fieldAmbiguous.slice(0, 4).forEach(m => {
-          lines.push(`　　${m.to.split("/").pop()}：${m.fields.ambiguous}`);
+          lines.push(`　　${m.to.split("/").pop()}：${trMsg(m.fields.ambiguous)}`);
         });
       }
-      if(paired) lines.push(`　うち ${paired} 件は手動で対応付けたものです（編成の参照を引き継ぎます）`);
-      if(stillNew.length) lines.push(`・${stillNew.length} 枚は新規の画像です（新しいレコードを作ります）`);
-      if(orphanPool.length) lines.push(`・${orphanPool.length} 件のレコードに対応するファイルがありません（削除されたか、フォルダ外に移動）`);
+      if(paired) lines.push(
+        "　" + L("うち {N} 件は手動で対応付けたものです（編成の参照を引き継ぎます）",
+                 { "{N}": paired }));
+      if(stillNew.length) lines.push(
+        L("・{N} 枚は新規の画像です（新しいレコードを作ります）", { "{N}": stillNew.length }));
+      if(orphanPool.length) lines.push(
+        L("・{N} 件のレコードに対応するファイルがありません（削除されたか、フォルダ外に移動）",
+          { "{N}": orphanPool.length }));
       if(!updatedImgs.length && !moved.length && !stillNew.length && !orphanPool.length){
         if(hashFilled) await persistVehicles();        // 補算的指紋留下來
-        toast(lines[0] + "\n処理が必要な変更はありません。");
+        toast(lines[0] + "\n" + tr("処理が必要な変更はありません。"));
         return;
       }
-      lines.push("", "以上の変更を適用しますか？");
+      lines.push("", tr("以上の変更を適用しますか？"));
       if(!confirm(lines.join("\n"))){
         if(hashFilled) await persistVehicles();        // 取消也一樣,指紋不用重算
         return;
@@ -4117,6 +4363,41 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   // 重要:圖片完全一樣但形式/番台不同是正常的(機電改造之類的車,外觀沒變),
   // 所以「檔案都還在、只是圖一樣」的那些一律不報告,否則整張清單都是雜訊。
   // 只有連形式/番台/塗裝/方向都一致,才當成真的是重複檔案。
+  // 「檔名裡沒有、只能手填」的欄位。重複整理要刪掉一筆的時候,
+  // 這些一定要先搬到保留下來的那一筆上,否則會無聲地弄丟資料 ——
+  // 掃描新建的紀錄這幾欄一律是空的,而被刪掉的舊紀錄才有你填的內容。
+  const HAND_FIELDS = ["company", "note", "defaultAttribute", "defaultProductCode"];
+  const HAND_FIELD_LABEL = {
+    company: "所属会社", note: "メモ", defaultAttribute: "属性",
+    defaultProductCode: "品番", productCodes: "品番リスト", categories: "分類"
+  };
+  // 回傳搬過去的欄位名稱清單(空陣列 = 沒有東西要搬)
+  function mergeHandFields(keep, drop){
+    const moved = [];
+    if(!keep || !drop || keep === drop) return moved;
+    HAND_FIELDS.forEach(k => {
+      const from = String(drop[k] == null ? "" : drop[k]).trim();
+      const to = String(keep[k] == null ? "" : keep[k]).trim();
+      // 只補空的,絕不覆蓋保留那筆已經有的內容
+      if(from && !to){ keep[k] = drop[k]; moved.push(k); }
+    });
+    // 品番清單與分類是可以並存的,取聯集
+    const uniq = (a, b) => {
+      const out = [], seen = new Set();
+      [].concat(a || [], b || []).forEach(x => {
+        const key = String(x == null ? "" : x).trim();
+        if(!key || seen.has(key)) return;
+        seen.add(key); out.push(x);
+      });
+      return out;
+    };
+    const pc = uniq(keep.productCodes, drop.productCodes);
+    if(pc.length > (keep.productCodes || []).length){ keep.productCodes = pc; moved.push("productCodes"); }
+    const ct = uniq(keep.categories, drop.categories);
+    if(ct.length > (keep.categories || []).length){ keep.categories = ct; moved.push("categories"); }
+    return moved;
+  }
+
   async function dedupeVehicles(){
     const btn = $("#btn-dedupe-vehicles");
     const oldText = btn.textContent;
@@ -4124,7 +4405,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     try{
       // 依圖片指紋分組。以前是直接拿 base64 當 Map 的 key,
       // 三千輛等於要雜湊二十幾MB的字串,改用 64 字元的指紋快得多。
-      btn.textContent = "画像を照合中…";
+      btn.textContent = tr("画像を照合中…");
       let filled = 0;
       if(HASH_OK){
         for(const v of vehicles){
@@ -4235,6 +4516,23 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         return;
       }
 
+      // 統計「刪掉的那筆帶著手填資料」的件數,寫進確認訊息裡。
+      // 這是真正會掉資料的地方,所以要先讓人看到。
+      const byIdNow = {};
+      vehicles.forEach(v => { byIdNow[v.id] = v; });
+      const handMoves = [];
+      Object.keys(remap).forEach(oldId => {
+        const drop = byIdNow[oldId], keep = byIdNow[remap[oldId]];
+        if(!drop || !keep) return;
+        const probe = Object.assign({}, keep);
+        const moved = mergeHandFields(probe, drop);
+        if(moved.length) handMoves.push({ oldId, moved });
+      });
+      const handFieldCount = {};
+      handMoves.forEach(h => h.moved.forEach(k => {
+        handFieldCount[k] = (handFieldCount[k] || 0) + 1;
+      }));
+
       // 統計會受影響的編成
       btn.textContent = "編成を確認中…";
       const idx = await loadIndex();
@@ -4260,6 +4558,11 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         sameImageFiles.length ? `・ほかに、同じ車両のファイルが複数ある組が ${sameImageFiles.length} 組あります。これらも削除しません` : "",
         sameArtDifferentName ? `・画像が同じでも形式・番台が違う ${sameArtDifferentName} 両は正常なデータとして除外しました` : "",
         affectedFormations ? `・編成 ${affectedFormations} 件は残したレコードを参照するよう自動で付け替えます（「車両が削除されました」になりません）` : "・影響を受ける編成はありません",
+        handMoves.length
+          ? `・削除するレコードが持っていた手入力の項目 ${handMoves.length} 件は、残すレコードへ引き継ぎます：\n`
+            + "　　" + Object.keys(handFieldCount)
+                .map(k => `${HAND_FIELD_LABEL[k] || k} ${handFieldCount[k]} 件`).join("、")
+          : "・手入力の項目で引き継ぐものはありません",
         "",
         "事前のバックアップを推奨します。実行してもよろしいですか？"
       ].join("\n");
@@ -4275,6 +4578,13 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       // 所以舊的 JSON 備份、別台電腦、網站上的編成仍然指著被刪掉的編號。
       await recordVehicleAliases(remap);
 
+      // 先把手填的欄位搬到保留下來的那一筆,再刪。順序反了就救不回來了。
+      let handMoved = 0;
+      Object.keys(remap).forEach(oldId => {
+        const drop = byIdNow[oldId], keep = byIdNow[remap[oldId]];
+        if(mergeHandFields(keep, drop).length) handMoved++;
+      });
+
       vehicles = vehicles.filter(v => !removeIds.has(v.id));
       reindexVehicles();
       await persistVehicles();
@@ -4284,6 +4594,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       showReport("整理完了", [
         `・重複レコードを ${removeIds.size} 件削除`,
         `・編成 ${affectedFormations} 件の車両参照を修正`,
+        handMoved ? `・手入力の項目を ${handMoved} 件引き継ぎました（品番・メモ・属性・所属会社・分類）` : null,
         `・現在 全 ${vehicles.length} 両`
       ]);
     }catch(e){
