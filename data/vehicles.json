@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-31T16:59:18.178Z",
+  "exportedAt": "2026-11-03T14:09:41.278Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -32554,40 +32554,6 @@
       "modelCode": "オロネ10",
       "variantCode": "",
       "liveryName": "茶．帯入り",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 10系"
-      ]
-    },
-    {
-      "id": "vp_o6yd0m1bwm41c",
-      "sourcePath": "01_JR 国鉄/01_客車/10系/オロネ10_青．帯入り.png",
-      "series": "10系",
-      "modelCode": "オロネ10",
-      "variantCode": "",
-      "liveryName": "青．帯入り",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 10系"
-      ]
-    },
-    {
-      "id": "vp_1q97lqt1a84lz5",
-      "sourcePath": "01_JR 国鉄/01_客車/10系/オロネ10_青．帯入り_L.png",
-      "series": "10系",
-      "modelCode": "オロネ10",
-      "variantCode": "",
-      "liveryName": "青．帯入り",
       "side": "L",
       "company": "",
       "widthCm": 3.8,
