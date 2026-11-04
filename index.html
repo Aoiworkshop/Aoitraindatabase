@@ -1602,7 +1602,31 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   /* ---------- 重複整理:手填欄位的接手 ---------- */
   "所属会社": "所屬會社",
   "メモ": "備註",
-  "・手入力の項目で引き継ぐものはありません": "・沒有需要接手的手填項目"
+  "・手入力の項目で引き継ぐものはありません": "・沒有需要接手的手填項目",
+
+  /* ---------- L/R 付け忘れの検査 ---------- */
+  "L/R の確認": "L/R 檢查",
+  "【{A}】{N} 組": "【{A}】{N} 組",
+  "スキャン後の確認": "掃描後的檢查",
+  "読み込み後の確認": "讀取後的檢查",
+  "追加後の確認": "追加後的檢查",
+  "L/R の付け忘れと思われる車両が {N} 組あります": "可能忘記標 L/R 的車輛有 {N} 組",
+  "L/R の付け方を確認したい車両が {N} 組あります": "想請你確認 L/R 標法的車輛有 {N} 組",
+  "片側だけ (L)/(R) が付いていて、もう片方が無印": "只有一邊標了 (L)/(R)，另一邊沒標",
+  "同じ車なのに無印のレコードが2件以上": "同一輛車卻有兩筆以上都沒標",
+  "(L) か (R) が2件以上あります": "(L) 或 (R) 有兩筆以上",
+  "片側だけ存在（もう片方が無い）": "只有一邊（找不到另一邊）",
+  "無印": "沒標",
+  "（ファイルなし）": "（沒有檔案）",
+  "　　→ 画像が同じなので、L/R ではなく同じ絵のファイルが2つある可能性があります":
+    "　　→ 圖片一樣，所以可能不是 L/R，而是同一張圖有兩個檔案",
+  "　　→ 無印のほうに ({A}) を付けると左右の組になります":
+    "　　→ 沒標的那筆加上 ({A}) 就會湊成左右一組",
+  "　　→ ({A}) が無いので単独の車として扱われます（左右反転で表示）":
+    "　　→ 因為沒有 ({A})，會被當成單獨一輛（用左右翻轉顯示）",
+  "　…ほか {N} 組": "　…其他還有 {N} 組",
+  "直すときは、ファイル名に (L) / (R) を足してから、もう一度スキャンしてください。":
+    "要修的話，請在檔名加上 (L) / (R)，然後重新掃描一次。"
 });
 
 </script>
@@ -2375,6 +2399,119 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     });
   }
   function hasSidePair(v){ return !!(v && sidePartnerOf[v.id]); }
+
+  // ---------- L/R 的付け忘れ検査 ----------
+  // 同じ車なのに片方だけ (L) を書いて、もう片方のファイル名に何も書かなかった、
+  // というミスを見つける。この状態だと:
+  //   ・(L) のほうは相手が見つからないので「単独の車」＝左右反転できる1両
+  //   ・無印のほうも「単独の車」＝左右反転できる1両
+  // となり、同じ車が2両として並んでしまう(どちらも反転扱いなので気づきにくい)。
+  //
+  // グループの単位は 系列＋型式＋番台＋塗装。所属会社と幅は入れない ——
+  // 会社は手入力なので片方だけ空のことがあり、それで組が割れると
+  // 肝心の付け忘れを見逃してしまう。
+  function sideGroupKey(v){
+    return [v.series, v.modelCode, v.variantCode, v.liveryName]
+      .map(x => String(x == null ? "" : x).trim().toLowerCase()).join("\u0001");
+  }
+  function sideOf(v){ return String(v && v.side == null ? "" : v.side).trim().toUpperCase(); }
+
+  // 回傳 [{kind, members, L, R, N, suggest, sameImage}]
+  //   kind:
+  //     "missing-side"  片側だけ標記あり＋無印が存在 → 付け忘れの可能性が高い
+  //     "lonely-side"   片側だけ標記あり＋相手が居ない → 単独扱いになっている
+  //     "both-unmarked" 無印が2件以上 → どちらが L/R か分からない
+  //     "odd"           L または R が2件以上など、想定外の組み合わせ
+  function findSideIssues(list){
+    const src = Array.isArray(list) ? list : vehicles;
+    const groups = new Map();
+    src.forEach(v => {
+      if(!v) return;
+      const k = sideGroupKey(v);
+      if(!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(v);
+    });
+    const out = [];
+    groups.forEach(members => {
+      const L = members.filter(v => sideOf(v) === "L");
+      const R = members.filter(v => sideOf(v) === "R");
+      const N = members.filter(v => sideOf(v) !== "L" && sideOf(v) !== "R");
+      // 正常なかたち:
+      //   ・L と R が1件ずつ(無印なし) → ちゃんと組になっている
+      //   ・無印が1件だけ(L/Rなし)     → 片面しか無い車。左右反転で使う正常なデータ
+      if(L.length === 1 && R.length === 1 && N.length === 0) return;
+      if(L.length === 0 && R.length === 0 && N.length === 1) return;
+      if(members.length === 1 && N.length === 0 && L.length + R.length === 1){
+        out.push({ kind: "lonely-side", members, L, R, N, suggest: L.length ? "R" : "L" });
+        return;
+      }
+      const one = (L.length === 1 && R.length === 0) || (R.length === 1 && L.length === 0);
+      if(one && N.length >= 1){
+        // 画像が同じなら「同じ絵のファイルが2つある」だけ＝重複整理の話で、
+        // L/R の付け忘れではない。左右の絵は本来ちがうはずなので、
+        // 画像がちがうときほど付け忘れの可能性が高い。
+        const marked = L.length ? L[0] : R[0];
+        const key = v => (v.imgHash || v.img || "");
+        const sameImage = N.some(v => key(v) && key(v) === key(marked));
+        out.push({ kind: "missing-side", members, L, R, N,
+                   suggest: L.length ? "R" : "L", sameImage });
+        return;
+      }
+      if(one && N.length === 0){
+        out.push({ kind: "lonely-side", members, L, R, N, suggest: L.length ? "R" : "L" });
+        return;
+      }
+      if(L.length === 0 && R.length === 0 && N.length >= 2){
+        out.push({ kind: "both-unmarked", members, L, R, N, suggest: "" });
+        return;
+      }
+      out.push({ kind: "odd", members, L, R, N, suggest: "" });
+    });
+    // 付け忘れの可能性が高いものを先に、同じ種類なら名前順
+    const rank = { "missing-side": 0, "both-unmarked": 1, "odd": 2, "lonely-side": 3 };
+    out.sort((a, b) => (rank[a.kind] - rank[b.kind])
+      || sideGroupKey(a.members[0]).localeCompare(sideGroupKey(b.members[0])));
+    return out;
+  }
+
+  const SIDE_ISSUE_HEAD = {
+    "missing-side": "片側だけ (L)/(R) が付いていて、もう片方が無印",
+    "both-unmarked": "同じ車なのに無印のレコードが2件以上",
+    "odd": "(L) か (R) が2件以上あります",
+    "lonely-side": "片側だけ存在（もう片方が無い）"
+  };
+  // 報告用の行。limit を超えた分は件数だけ出す。
+  function sideIssueLines(issues, limit){
+    const max = limit || 8;
+    const lines = [];
+    const byKind = {};
+    issues.forEach(d => { (byKind[d.kind] = byKind[d.kind] || []).push(d); });
+    ["missing-side", "both-unmarked", "odd", "lonely-side"].forEach(kind => {
+      const list = byKind[kind];
+      if(!list || !list.length) return;
+      lines.push(tr("【{A}】{N} 組")
+                   .replace("{A}", tr(SIDE_ISSUE_HEAD[kind]))
+                   .replace("{N}", list.length));
+      list.slice(0, max).forEach(d => {
+        const v0 = d.members[0];
+        lines.push(`　${vehicleLabel(v0)}　${v0.series || ""} / ${v0.liveryName || ""}`);
+        d.members.forEach(v => {
+          const mark = sideOf(v) ? `(${sideOf(v)})` : tr("無印");
+          lines.push(`　　${mark}　${v.sourcePath || tr("（ファイルなし）")}`);
+        });
+        if(kind === "missing-side"){
+          lines.push(d.sameImage
+            ? tr("　　→ 画像が同じなので、L/R ではなく同じ絵のファイルが2つある可能性があります")
+            : tr("　　→ 無印のほうに ({A}) を付けると左右の組になります").replace("{A}", d.suggest));
+        }else if(kind === "lonely-side"){
+          lines.push(tr("　　→ ({A}) が無いので単独の車として扱われます（左右反転で表示）")
+                       .replace("{A}", d.suggest));
+        }
+      });
+      if(list.length > max) lines.push(tr("　…ほか {N} 組").replace("{N}", list.length - max));
+    });
+    return lines;
+  }
   // 同一對裡固定用 L 當清單上的代表項目
   function isPairSecondary(v){
     const side = (v.side || "").trim().toUpperCase();
@@ -3235,11 +3372,16 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       if(!updatedImgs.length && !moved.length && !stillNew.length && !orphanPool.length){
         if(hashFilled) await persistVehicles();        // 補算的指紋留下來
         toast(lines[0] + "\n" + tr("処理が必要な変更はありません。"));
+        // L/R の付け忘れは「今回ファイルが変わったか」とは無関係。
+        // 定期スキャンは何も変わらないのが普通なので、
+        // ここで return してしまうと検査が一度も走らない。
+        reportSideIssues("L/R の確認");
         return;
       }
       lines.push("", tr("以上の変更を適用しますか？"));
       if(!confirm(lines.join("\n"))){
         if(hashFilled) await persistVehicles();        // 取消也一樣,指紋不用重算
+        reportSideIssues("L/R の確認");               // 取消しても検査結果は見せる
         return;
       }
 
@@ -3320,6 +3462,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       renderLibrary();
       if(idFixed){ renderFormation(); }
       if(idFixed && typeof refreshFormationResults === "function") refreshFormationResults();
+      reportSideIssues("スキャン後の確認");
       showReport("スキャン完了", [
         `・画像を更新 ${updatedImgs.length} 枚`,
         `・移動を反映 ${moved.length} 件`,
@@ -4398,6 +4541,28 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     return moved;
   }
 
+  // L/R の付け忘れを報告する。見つかれば true。
+  // スキャン後・重複整理・車両データベースの読み込み後 ——
+  // 「データベースがまとめて動いたあと」に必ず通るようにしてある。
+  // strongOnly = true のときは「片側だけ存在（もう片方が無い）」を出さない。
+  // 片面しか描いていない車は正常なデータなので、起動のたびに出すと
+  // 報告そのものを読み飛ばすようになってしまう。
+  function reportSideIssues(title, strongOnly){
+    let issues = [];
+    try{ issues = findSideIssues(vehicles); }catch(e){ return false; }
+    if(strongOnly) issues = issues.filter(d => d.kind !== "lonely-side");
+    if(!issues.length) return false;
+    const strong = issues.filter(d => d.kind === "missing-side").length;
+    const head = strong
+      ? tr("L/R の付け忘れと思われる車両が {N} 組あります").replace("{N}", strong)
+      : tr("L/R の付け方を確認したい車両が {N} 組あります").replace("{N}", issues.length);
+    showReport(title, [head, ""].concat(sideIssueLines(issues)).concat([
+      "",
+      tr("直すときは、ファイル名に (L) / (R) を足してから、もう一度スキャンしてください。")
+    ]), strong ? "warn" : "", 25000);
+    return true;
+  }
+
   async function dedupeVehicles(){
     const btn = $("#btn-dedupe-vehicles");
     const oldText = btn.textContent;
@@ -4495,7 +4660,13 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         }
       });
 
+      // 重複が無くても L/R の付け忘れは別の話なので、必ず検査する
+      const sideFound = reportSideIssues("L/R の確認");
       if(removeIds.size === 0){
+        if(sideFound){
+          // L/R の報告を出したので、ここで「問題なし」を重ねて出さない
+          return;
+        }
         if(sameImageFiles.length){
           const sample = sameImageFiles.slice(0, 5)
             .map(paths => "・" + paths.join("\n　 ")).join("\n");
@@ -4591,6 +4762,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       renderCategoryNav();
       renderLibrary();
       if(typeof refreshFormationResults === "function") refreshFormationResults();
+      reportSideIssues("L/R の確認");
       showReport("整理完了", [
         `・重複レコードを ${removeIds.size} 件削除`,
         `・編成 ${affectedFormations} 件の車両参照を修正`,
@@ -5711,6 +5883,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         await persistVehicles();
         renderLibrary();
         toast(`読み込み完了。全 ${incoming.length} 両です。`);
+        setTimeout(() => reportSideIssues("読み込み後の確認"), 600);
       }catch(err){
         vehicles = backup;
         reindexVehicles();
@@ -5769,6 +5942,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           skipped ? `・${skipped} 両をスキップ（登録済み）` : null,
           `・現在 全 ${vehicles.length} 両`
         ]);
+        setTimeout(() => reportSideIssues("追加後の確認"), 600);
       }catch(err){
         vehicles = backup;
         reindexVehicles();
@@ -6663,6 +6837,14 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   const ATTRS = {
     "単":    { bg: "#ffffff", border: "#000000", text: "#000000", w: 1.0, h: 1.0, fw: 0.8, fh: 0.8 },
     "Set":   { bg: "#231815", border: null,      text: "#ffffff", w: 1.2, h: 1.0, fw: 1.0, fh: 0.8 },
+    // SetA〜SetD は Set と同じ色、幅は基Set と同じ 1.6cm。
+    // 「Set」は3文字なので 1.2cm で足りるが、「SetA」は4文字あるので
+    // 基Set(これも4文字)と同じ幅にしないと文字が潰れる。
+    // 1.6cm より広げるのは不可 —— 隣の車両の品番に被る。
+    "SetA":  { bg: "#231815", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "SetB":  { bg: "#231815", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "SetC":  { bg: "#231815", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
+    "SetD":  { bg: "#231815", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
     "基Set": { bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
     "基SetA":{ bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
     "基SetB":{ bg: "#00419B", border: null,      text: "#ffffff", w: 1.6, h: 1.0, fw: 1.4, fh: 0.8 },
@@ -6680,11 +6862,12 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   };
   const ATTR_KEYS = Object.keys(ATTRS);
 
-  // 下拉選單的分組。16 種攤平列出來很難掃,照用途分三組好找。
+  // 下拉選單的分組。二十種攤平列出來很難掃,照用途分三組好找。
   // 沒列進來的鍵會自動補在最後,所以之後往 ATTRS 加東西不會從選單裡消失。
   const ATTR_GROUPS = [
     ["単独", ["単"]],
-    ["セット", ["Set", "基Set", "基SetA", "基SetB", "基SetC", "基SetD",
+    ["セット", ["Set", "SetA", "SetB", "SetC", "SetD",
+                "基Set", "基SetA", "基SetB", "基SetC", "基SetD",
                 "増Set", "増SetA", "増SetB", "増SetC", "増SetD"]],
     ["メーカー", ["KA", "TO", "MA", "GM"]]
   ];
@@ -9391,6 +9574,12 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     await step("編成の初期化", () => resetState());
     await step("重新連結必要資料夾", tryReconnectAssetsFolder);
     await step("愛称サジェスト", refreshNicknameSuggestions);
+    // 起動時にも L/R の付け忘れを見る。スキャンや読み込みをしないと
+    // 一度も検査されないので、既にデータベースへ入っているぶんが
+    // いつまでも見つからなかった。
+    // 誤差の大きい「片側だけ存在」は起動時には出さない —— 片面しか無い車は
+    // 正常なデータなので、毎回出すと報告そのものを読まなくなる。
+    await step("L/Rの確認", () => reportSideIssues("L/R の確認", true));
     await step("フォルダの状態", () => updateRootFolderStatus());
     await step("線上版介面", applyWebModeUI);
     await step("線上版字型", waitWebFonts);
