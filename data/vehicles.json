@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-05T02:42:43.721Z",
+  "exportedAt": "2026-11-05T02:54:00.880Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -49119,23 +49119,6 @@
       "modelCode": "スハフ43",
       "variantCode": "",
       "liveryName": "青",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ43系"
-      ]
-    },
-    {
-      "id": "vp_1n6nd5t1hs9gmt",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スハ44_茶.png",
-      "series": "スハ43系",
-      "modelCode": "スハ44",
-      "variantCode": "",
-      "liveryName": "茶",
       "side": "",
       "company": "",
       "widthCm": 3.8,
