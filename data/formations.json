@@ -712,11 +712,11 @@
         "オシ25-900",
         "オハフ25-900",
         "オロネ25-900",
-        "オハネフ24-500",
-        "オハネフ25-0",
+        "オハネ24-0",
+        "オハネフ24",
         "カニ24-500"
       ],
-      "updatedAt": "2026-10-13T12:47:31.511Z"
+      "updatedAt": "2026-11-05T03:52:55.613Z"
     },
     {
       "id": "f_1789717383107",
@@ -1078,12 +1078,11 @@
         "ED75-0",
         "オハフ45",
         "オハ47",
-        "オハ61",
         "キハ52",
         "キハ55",
         "キハユニ26"
       ],
-      "updatedAt": "2026-10-13T12:51:46.113Z"
+      "updatedAt": "2026-11-05T03:52:30.179Z"
     },
     {
       "id": "f_1789721515588",
@@ -1189,13 +1188,13 @@
         ""
       ],
       "titleNote": "",
+      "visibility": "private",
       "carModelsUsed": [
         "キユニ26",
         "キハ58",
         "キハ28"
       ],
-      "updatedAt": "2026-10-07T16:14:09.216Z",
-      "visibility": "private"
+      "updatedAt": "2026-11-05T03:51:51.048Z"
     },
     {
       "id": "f_1789721747387",
@@ -1297,14 +1296,15 @@
       "notes": [
         ""
       ],
+      "titleNote": "",
+      "visibility": "private",
       "carModelsUsed": [
         "キハ58",
         "キハ52",
         "キハユニ26",
         "キハ55"
       ],
-      "updatedAt": "2026-09-18T09:00:02.373Z",
-      "visibility": "private"
+      "updatedAt": "2026-11-05T03:50:39.451Z"
     },
     {
       "id": "f_1789722063858",
@@ -1710,11 +1710,11 @@
       "titleNote": "",
       "visibility": "private",
       "carModelsUsed": [
-        "EF66",
+        "EF66-0",
         "レサ10000",
         "レムフ10000"
       ],
-      "updatedAt": "2026-10-13T12:52:53.944Z"
+      "updatedAt": "2026-11-05T03:53:15.477Z"
     },
     {
       "id": "f_1789753503831",
@@ -2218,13 +2218,13 @@
         ""
       ],
       "titleNote": "",
+      "visibility": "private",
       "carModelsUsed": [
         "DD51-800",
         "DD51",
         "コキ50000"
       ],
-      "updatedAt": "2026-10-02T17:59:55.792Z",
-      "visibility": "private"
+      "updatedAt": "2026-11-05T03:49:59.198Z"
     },
     {
       "id": "f_1790964502942",
@@ -2262,7 +2262,7 @@
         "コキ107",
         "コキ106"
       ],
-      "updatedAt": "2026-10-13T12:57:18.229Z"
+      "updatedAt": "2026-11-05T03:50:18.564Z"
     },
     {
       "id": "f_1790989426993",
@@ -2382,15 +2382,15 @@
       "carModelsUsed": [
         "EF64-1000",
         "オハネフ25-100",
-        "オハネ25-0",
-        "オハネ24-0",
+        "オハネ25-100",
+        "オハネ24-500",
         "オハネフ24-0",
         "オハネ24-550",
         "オロネ24-500",
-        "オハネフ24",
+        "オハネフ25-0",
         "カニ24-0"
       ],
-      "updatedAt": "2026-10-13T12:57:59.858Z"
+      "updatedAt": "2026-11-05T03:53:46.300Z"
     },
     {
       "id": "f_1791125104320",
@@ -2430,10 +2430,11 @@
         "オハネ24-550",
         "オハネフ25-100",
         "オハネ24-0",
+        "オハネ25-200",
         "オハネ25-100",
         "オハネフ25-200"
       ],
-      "updatedAt": "2026-10-13T12:58:07.161Z"
+      "updatedAt": "2026-11-05T03:53:53.964Z"
     },
     {
       "id": "f_1791701845744",
@@ -4658,88 +4659,176 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_1vmq3wfivh2ep",
+          "vehicleId": "vp_1qqkg8m17cc60e",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "EF81",
+            "l": "95．レインボー色",
+            "e": "EF81",
+            "p": "03_機関車/03_電気機関車/F級/EF81/EF81_95．レインボー色.png"
+          }
         },
         {
           "vehicleId": "vp_qck8c31grg61l",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92792",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "オシ25",
+            "v": "900",
+            "l": "夢空間",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オシ25-900_夢空間.png"
+          }
         },
         {
           "vehicleId": "vp_3ko1qehznzq",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92792",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "オハフ25",
+            "v": "900",
+            "l": "夢空間",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハフ25-900_夢空間.png"
+          }
         },
         {
           "vehicleId": "vp_1c88u10bvv6zg",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92792",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "オロネ25",
+            "v": "900",
+            "l": "夢空間",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オロネ25-900_夢空間.png"
+          }
         },
         {
           "vehicleId": "vp_4drfd4j9i1yk",
           "flipped": false,
           "attribute": "単",
           "productCode": "9532",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハネ24",
+            "v": "0",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-0_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_4drfd4j9i1yk",
           "flipped": false,
           "attribute": "単",
           "productCode": "9532",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハネ24",
+            "v": "0",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-0_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_4drfd4j9i1yk",
           "flipped": false,
           "attribute": "単",
           "productCode": "9532",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハネ24",
+            "v": "0",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-0_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_n06jc01oy5t6a",
           "flipped": false,
           "attribute": "単",
           "productCode": "9529",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネフ24",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネフ24_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_4drfd4j9i1yk",
           "flipped": false,
           "attribute": "単",
           "productCode": "9532",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハネ24",
+            "v": "0",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-0_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_4drfd4j9i1yk",
           "flipped": false,
           "attribute": "単",
           "productCode": "9530",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ24",
+            "v": "0",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-0_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_n06jc01oy5t6a",
           "flipped": false,
           "attribute": "単",
           "productCode": "9531",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネフ24",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネフ24_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_1p28zn61tjwc1u",
           "flipped": true,
           "attribute": "Set",
           "productCode": "92397",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "カニ24",
+            "v": "500",
+            "l": "505．金帯",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/カニ24-500_505．金帯_36.png"
+          }
         }
       ],
       "reversed": false,
@@ -5371,60 +5460,108 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_sguusfud475f",
+          "vehicleId": "vp_1e8yn2mm15s3o",
           "flipped": false,
           "attribute": "単",
           "productCode": "7139",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "ED75",
+            "v": "0",
+            "l": "前期形",
+            "e": "ED75",
+            "p": "03_機関車/03_電気機関車/D級/ED75/ED75-0_前期形_30.png"
+          }
         },
         {
           "vehicleId": "vp_1pd10v617qqhtg",
           "flipped": false,
           "attribute": "単",
           "productCode": "8548",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハフ45",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/オハフ45_青.png"
+          }
         },
         {
           "vehicleId": "vp_1i4k0s5v4cogv",
           "flipped": false,
           "attribute": "単",
           "productCode": "8549",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハ47",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/オハ47_青.png"
+          }
         },
         {
           "vehicleId": "vp_1i4k0s5v4cogv",
           "flipped": false,
           "attribute": "単",
           "productCode": "8547",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハ47",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/オハ47_青.png"
+          }
         },
         {
           "vehicleId": "vp_1834y358kpwaj",
           "flipped": false,
           "attribute": "単",
           "productCode": "8521",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハ47",
+            "l": "茶",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/オハ47_茶.png"
+          }
         },
         {
           "vehicleId": "vp_b50p6n1erq3mv",
           "flipped": false,
           "attribute": "単",
           "productCode": "9444",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハ52",
+            "e": "キハ20系",
+            "p": "01_JR 国鉄/02_気動車/01_一般型/キハ20系/キハ52.png"
+          }
         },
         {
           "vehicleId": "vp_1ewgivg11qsx4q",
           "flipped": false,
           "attribute": "単",
           "productCode": "9462",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハ55",
+            "s": "L",
+            "e": "キハ55系",
+            "p": "01_JR 国鉄/02_気動車/02_準急形・急行形/キハ55系/キハ55_L.png"
+          }
         },
         {
           "vehicleId": "vp_iu8voc1r9pvw4",
           "flipped": false,
           "attribute": "単",
           "productCode": "7425",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハユニ26",
+            "s": "R",
+            "e": "キハ20系",
+            "p": "01_JR 国鉄/02_気動車/01_一般型/キハ20系/キハユニ26_R.png"
+          }
         }
       ],
       "reversed": false,
@@ -5612,28 +5749,54 @@
           "flipped": false,
           "attribute": "単",
           "productCode": "7426",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キユニ26",
+            "e": "キハ20系",
+            "p": "01_JR 国鉄/02_気動車/01_一般型/キハ20系/キユニ26.png"
+          }
         },
         {
-          "vehicleId": "vp_1cleep01b6rbc8",
+          "vehicleId": "vp_ajfn4nlko7fd",
           "flipped": false,
-          "attribute": "単",
+          "attribute": "",
           "productCode": "7430",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハ58",
+            "l": "冷改車",
+            "s": "L",
+            "e": "キハ58系",
+            "p": "01_JR 国鉄/02_気動車/02_準急形・急行形/キハ58系/キハ58_冷改車_L.png"
+          }
         },
         {
-          "vehicleId": "vp_9sbzyb1q5oz0d",
-          "flipped": true,
-          "attribute": "単",
+          "vehicleId": "vp_i7t2cuefk8sy",
+          "flipped": false,
+          "attribute": "",
           "productCode": "7432",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハ28",
+            "l": "冷改車",
+            "s": "L",
+            "e": "キハ58系",
+            "p": "01_JR 国鉄/02_気動車/02_準急形・急行形/キハ58系/キハ28_冷改車_L.png"
+          }
         },
         {
-          "vehicleId": "vp_1cleep01b6rbc8",
-          "flipped": true,
-          "attribute": "単",
+          "vehicleId": "vp_b3zzntllu9k7",
+          "flipped": false,
+          "attribute": "",
           "productCode": "7431",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハ58",
+            "l": "冷改車",
+            "s": "L",
+            "e": "キハ58系",
+            "p": "01_JR 国鉄/02_気動車/02_準急形・急行形/キハ58系/キハ58_冷改車_L.png"
+          }
         }
       ],
       "reversed": false,
@@ -5797,36 +5960,61 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_1cleep01b6rbc8",
+          "vehicleId": "vp_ajfn4nlko7fd",
           "flipped": false,
-          "attribute": "単",
-          "productCode": "7431",
-          "setGroupId": ""
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "キハ58",
+            "l": "冷改車",
+            "s": "L",
+            "e": "キハ58系",
+            "p": "01_JR 国鉄/02_気動車/02_準急形・急行形/キハ58系/キハ58_冷改車_L.png"
+          }
         },
         {
           "vehicleId": "vp_b50p6n1erq3mv",
           "flipped": false,
           "attribute": "単",
           "productCode": "8458",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハ52",
+            "e": "キハ20系",
+            "p": "01_JR 国鉄/02_気動車/01_一般型/キハ20系/キハ52.png"
+          }
         },
         {
           "vehicleId": "vp_iu8voc1r9pvw4",
           "flipped": false,
           "attribute": "単",
           "productCode": "7425",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハユニ26",
+            "s": "R",
+            "e": "キハ20系",
+            "p": "01_JR 国鉄/02_気動車/01_一般型/キハ20系/キハユニ26_R.png"
+          }
         },
         {
           "vehicleId": "vp_1eh7e3611tqcro",
           "flipped": false,
           "attribute": "単",
           "productCode": "9462",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "キハ55",
+            "s": "R",
+            "e": "キハ55系",
+            "p": "01_JR 国鉄/02_気動車/02_準急形・急行形/キハ55系/キハ55_R.png"
+          }
         }
       ],
       "reversed": false,
-      "visibility": "private"
+      "visibility": "private",
+      "titleNote": ""
     },
     "f_1789722063858": {
       "id": "f_1789722063858",
@@ -6629,102 +6817,174 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_nx3kd2oij2tc",
+          "vehicleId": "vp_18yalrf1vqxym3",
           "flipped": false,
-          "attribute": "単",
-          "productCode": "7142",
-          "setGroupId": ""
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "EF66",
+            "v": "0",
+            "l": "後期形",
+            "e": "EF66",
+            "p": "03_機関車/03_電気機関車/F級/EF66/EF66-0_後期形_36.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "98723",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "98723",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "98723",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "98723",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "98723",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "98723",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "98723",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "98724",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "98724",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "98724",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "98724",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_1vbkec77dw5l9",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "98724",
-          "setGroupId": "C"
+          "setGroupId": "C",
+          "vref": {
+            "m": "レサ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レサ10000.png"
+          }
         },
         {
           "vehicleId": "vp_18zus9j9i4vt9",
           "flipped": true,
           "attribute": "基Set",
           "productCode": "98723",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "レムフ10000",
+            "e": "07_冷藏車",
+            "p": "04_貨物列車/07_冷藏車/レムフ10000.png"
+          }
         }
       ],
       "reversed": false,
@@ -7873,25 +8133,41 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_11ophlt76qedb",
+          "vehicleId": "vp_fc0xratd2tn4",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "DD51",
+            "v": "800",
+            "e": "DD51",
+            "p": "03_機関車/02_ディーゼル機関車/DD51/DD51-800.png"
+          }
         },
         {
-          "vehicleId": "vp_khzr948q3ss4",
+          "vehicleId": "vp_1lp1lsjegpdsz",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "DD51",
+            "e": "DD51",
+            "p": "03_機関車/02_ディーゼル機関車/DD51/DD51.png"
+          }
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_qja4x4v94wty",
             "vp_199zbdnj674b",
@@ -7902,144 +8178,204 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_199zbdnj674b",
             "vp_xmk4y31iab0sr",
             "vp_199zbdnj674b",
             "vp_xmk4y31iab0sr",
             "vp_xmk4y31iab0sr"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_xmk4y31iab0sr",
             "vp_xmk4y31iab0sr",
             "vp_xmk4y31iab0sr",
             "vp_xmk4y31iab0sr",
             "vp_xmk4y31iab0sr"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_199zbdnj674b",
             "vp_199zbdnj674b",
             "vp_199zbdnj674b",
             "vp_199zbdnj674b",
             "vp_199zbdnj674b"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_xmk4y31iab0sr",
             "vp_xmk4y31iab0sr",
             "vp_xmk4y31iab0sr",
             "vp_xmk4y31iab0sr",
             "vp_mrci4wm5tmgw"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_13cz8ziq6tjxa",
             "vp_199zbdnj674b",
             "vp_mrci4wm5tmgw",
             "vp_13cz8ziq6tjxa",
             "vp_199zbdnj674b"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_14xyrnurxchj6",
             "vp_7pvif8o4kuwe",
             "vp_7pvif8o4kuwe",
             "vp_7pvif8o4kuwe",
             "vp_7pvif8o4kuwe"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_199zbdnj674b",
             "vp_7pvif8o4kuwe",
             "vp_7pvif8o4kuwe",
             "vp_14xyrnurxchj6",
             "vp_14xyrnurxchj6"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_7pvif8o4kuwe",
             "vp_7pvif8o4kuwe",
             "vp_14xyrnurxchj6",
             "vp_7pvif8o4kuwe",
             "vp_14xyrnurxchj6"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_14xyrnurxchj6",
             "vp_7pvif8o4kuwe",
             "vp_14xyrnurxchj6",
             "vp_7pvif8o4kuwe",
             "vp_14xyrnurxchj6"
-          ]
+          ],
+          "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1yzfq53neuz1b",
+          "vehicleId": "vp_16zh0tf1bdrt6x",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1317",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ50000",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ50000.png"
+          },
           "containers": [
             "vp_199zbdnj674b",
             "vp_199zbdnj674b",
             "vp_xmk4y31iab0sr",
             "vp_199zbdnj674b",
             "vp_xmk4y31iab0sr"
-          ]
+          ],
+          "containerAlign": "left"
         }
       ],
       "reversed": false,
@@ -8075,18 +8411,29 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_1mmrdbr6ecixv",
+          "vehicleId": "vp_vng7ok10nybd6",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "EF210",
+            "v": "100",
+            "e": "EF210",
+            "p": "03_機関車/03_電気機関車/F級/EF210/EF210-100_36.png"
+          }
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8097,11 +8444,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_14n7hdgpjv52e",
+          "vehicleId": "vp_1stzs099kwsq",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1433",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ107",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ107.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8112,11 +8464,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8127,11 +8484,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_14n7hdgpjv52e",
+          "vehicleId": "vp_1stzs099kwsq",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1433",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ107",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ107.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8142,11 +8504,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8157,11 +8524,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8172,11 +8544,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_14n7hdgpjv52e",
+          "vehicleId": "vp_1stzs099kwsq",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1433",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ107",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ107.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8187,11 +8564,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8202,11 +8584,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8217,11 +8604,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_14n7hdgpjv52e",
+          "vehicleId": "vp_1stzs099kwsq",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1433",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ107",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ107.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8232,11 +8624,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8247,11 +8644,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8262,11 +8664,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_14n7hdgpjv52e",
+          "vehicleId": "vp_1stzs099kwsq",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1433",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ107",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ107.png"
+          },
           "containers": [
             "vp_18dyox439i22o",
             null,
@@ -8277,11 +8684,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_14n7hdgpjv52e",
+          "vehicleId": "vp_1stzs099kwsq",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1433",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ107",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ107.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8292,11 +8704,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_14n7hdgpjv52e",
+          "vehicleId": "vp_1stzs099kwsq",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1433",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ107",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ107.png"
+          },
           "containers": [
             null,
             null,
@@ -8307,11 +8724,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8322,11 +8744,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8337,11 +8764,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8352,11 +8784,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8367,11 +8804,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8382,11 +8824,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": true,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8402,6 +8849,12 @@
           "attribute": "",
           "productCode": "10-1478",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ106",
+            "l": "グレー",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ106_グレー.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8412,11 +8865,16 @@
           "containerAlign": "left"
         },
         {
-          "vehicleId": "vp_1213ehj8n3ujj",
+          "vehicleId": "vp_1pfh4398zsp5",
           "flipped": false,
           "attribute": "",
           "productCode": "10-1421",
           "setGroupId": "",
+          "vref": {
+            "m": "コキ104",
+            "e": "04_コンテナ車",
+            "p": "04_貨物列車/04_コンテナ車/コキ104.png"
+          },
           "containers": [
             "vp_1kmduhwp5z40c",
             null,
@@ -8652,74 +9110,152 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_6hj3nt1l1kcxb",
+          "vehicleId": "vp_1dc7gvuc03qpc",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "EF64",
+            "v": "1000",
+            "l": "後期型・青",
+            "e": "EF64",
+            "p": "03_機関車/03_電気機関車/F級/EF64/EF64-1000_後期型・青_36.png"
+          }
         },
         {
           "vehicleId": "vp_zjp3y59g9qpz",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネフ25",
+            "v": "100",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネフ25-100_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_1vfm5ag1ticcko",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ25",
+            "v": "100",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ25-100_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_1l0ctgtzdacr3",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ24",
+            "v": "500",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-500_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_7xqrgssksgpo",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネフ24",
+            "v": "0",
+            "l": "銀帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネフ24-0_銀帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_njjincn0wp72",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ24",
+            "v": "550",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-550_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_njjincn0wp72",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ24",
+            "v": "550",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-550_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_3y32q78hmged",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オロネ24",
+            "v": "500",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オロネ24-500_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_pmos9o11cfym8",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネフ25",
+            "v": "0",
+            "l": "金帯",
+            "s": "L",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネフ25-0_金帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_1wm19jsv8rrs8",
           "flipped": true,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "カニ24",
+            "v": "0",
+            "l": "銀帯",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/カニ24-0_銀帯_36.png"
+          }
         }
       ],
       "reversed": false,
@@ -8755,81 +9291,166 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_6hj3nt1l1kcxb",
+          "vehicleId": "vp_1dc7gvuc03qpc",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "EF64",
+            "v": "1000",
+            "l": "後期型・青",
+            "e": "EF64",
+            "p": "03_機関車/03_電気機関車/F級/EF64/EF64-1000_後期型・青_36.png"
+          }
         },
         {
           "vehicleId": "vp_75fmck18iz08c",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "カニ24",
+            "v": "100",
+            "l": "白帯",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/カニ24-100_白帯_36.png"
+          }
         },
         {
           "vehicleId": "vp_mq8fsu1pag6zw",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネフ24",
+            "l": "金帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネフ24_金帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_zhjbj613kcq8e",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "スロネ24",
+            "v": "500",
+            "l": "金帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/スロネ24-500_金帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_myz646mqyfbk",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ24",
+            "v": "550",
+            "l": "金帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-550_金帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_myz646mqyfbk",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ24",
+            "v": "550",
+            "l": "金帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-550_金帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_zqzvdv9f3os9",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネフ25",
+            "v": "100",
+            "l": "金帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネフ25-100_金帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_n5qawq1awdn4u",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ24",
+            "v": "0",
+            "l": "白帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ24-0_白帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_4bjr2cs2emlg",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ25",
+            "v": "200",
+            "l": "銀帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ25-200_銀帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_1uv1sra1t1d8hi",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネ25",
+            "v": "100",
+            "l": "金帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネ25-100_金帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_spuim8tqlzh8",
           "flipped": false,
           "attribute": "",
           "productCode": "",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハネフ25",
+            "v": "200",
+            "l": "金帯",
+            "s": "R",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハネフ25-200_金帯_R.png"
+          }
         }
       ],
       "reversed": false,
@@ -10241,7 +10862,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "基SetA",
           "productCode": "A3114",
@@ -10260,7 +10881,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "基SetA",
           "productCode": "A3114",
@@ -10279,7 +10900,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "基SetA",
           "productCode": "A3114",
@@ -10298,7 +10919,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": true,
           "attribute": "基SetA",
           "productCode": "A3114",
@@ -10317,7 +10938,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "基SetA",
           "productCode": "A3114",
@@ -10336,7 +10957,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": true,
           "attribute": "基SetA",
           "productCode": "A3114",
@@ -10355,7 +10976,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "単",
           "productCode": "2757",
@@ -10374,7 +10995,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": true,
           "attribute": "単",
           "productCode": "2757",
@@ -10393,7 +11014,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "単",
           "productCode": "2757",
@@ -10412,7 +11033,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "単",
           "productCode": "2757",
@@ -10431,7 +11052,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": true,
           "attribute": "単",
           "productCode": "2757",
@@ -10450,7 +11071,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "単",
           "productCode": "2757",
@@ -10469,7 +11090,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "基SetB",
           "productCode": "A3114",
@@ -10488,7 +11109,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "基SetB",
           "productCode": "A3114",
@@ -10507,7 +11128,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": true,
           "attribute": "基SetB",
           "productCode": "A3114",
@@ -10526,7 +11147,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": false,
           "attribute": "基SetB",
           "productCode": "A3114",
@@ -10545,7 +11166,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": true,
           "attribute": "基SetB",
           "productCode": "A3114",
@@ -10564,7 +11185,7 @@
           ]
         },
         {
-          "vehicleId": "vp_76j48l1hr7ty3",
+          "vehicleId": "vp_1e8j3cx1v6tpx1",
           "flipped": true,
           "attribute": "基SetB",
           "productCode": "A3114",
@@ -10815,5 +11436,5 @@
       "visibility": "public"
     }
   },
-  "savedAt": "2026-11-05T02:42:40.913Z"
+  "savedAt": "2026-11-05T03:53:53.981Z"
 }

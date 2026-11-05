@@ -1599,6 +1599,27 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     "把檔名裡的「{A}」當寬度讀的話會變成 {B}cm",
   "幅(cm)": "寬度(cm)",
 
+  /* ---------- 檔名與資料庫的雙向同步 ---------- */
+  "ファイル名とデータを照合中…": "比對檔名與資料中…",
+  "ファイル名に合わせています…": "正在依檔名修正資料…",
+  "ファイル名を変更しています…": "正在修改檔名…",
+  "・{N} 件はファイル名に合わせて車両データを更新します（ファイルが正）":
+    "・{N} 筆依檔名更新車輛資料（以檔案為準）",
+  "うち {N} 件は基準が無いため、ファイル名を正として合わせます":
+    "其中 {N} 筆沒有比對基準，一律以檔名為準",
+  "・{N} 件はデータベースの内容に合わせてファイル名を変更します":
+    "・{N} 筆依資料庫內容修改檔名",
+  "・{N} 件はファイル名とデータの両方が変わっているため、どちらも変更しません":
+    "・{N} 筆檔名與資料兩邊都改過，兩邊都不動",
+  "（データ側は {A} を想定／前回一致時は {B}）":
+    "（資料庫想要 {A}／上次一致時是 {B}）",
+  "・{N} 件はファイル名が曖昧なため、車両データは変更しません":
+    "・{N} 筆檔名不明確，車輛資料不動",
+  "・ファイル名に合わせて車両データを更新 {N} 件": "・依檔名更新車輛資料 {N} 筆",
+  "・データベースに合わせてファイル名を変更 {N} 件": "・依資料庫修改檔名 {N} 筆",
+  "・ファイル名を変更できなかったもの {N} 件": "・無法修改檔名的有 {N} 筆",
+  "・両方変わっていて保留 {N} 件": "・兩邊都改過而保留 {N} 筆",
+
   /* ---------- 重複整理:手填欄位的接手 ---------- */
   "所属会社": "所屬會社",
   "メモ": "備註",
@@ -3135,9 +3156,11 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   // 對不上就不動欄位,只回報,避免把資料改成跟檔案互相矛盾的狀態。
   function planNameFieldUpdates(v, newPath){
     const base = p => String(p || "").split("/").pop();
-    const oldName = base(v.sourcePath);
     const newName = base(newPath);
-    if(!newName || oldName === newName) return null;      // 只是搬資料夾
+    // 以前這裡是「檔名沒變就直接放棄」,因為當初只服務「檔案被搬移」的情況。
+    // 但資料庫與檔名脫鉤時,檔名往往是沒變的那一邊 —— 那才是最需要修的。
+    // 最後本來就會比對 diffs,一致時仍然回傳 null,所以拿掉這個提前結束是安全的。
+    if(!newName) return null;
 
     const parsed = parseVehicleFromPath(newPath);
     if(!parsed.modelCode) return { ambiguous: "ファイル名から型式が読み取れません" };
@@ -3297,6 +3320,36 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
 
       // 改名的那幾筆:先算出「欄位要怎麼跟著改」,好列在確認視窗裡
       moved.forEach(m => { m.fields = planNameFieldUpdates(m.v, m.to); });
+
+      // ---- 檔名與資料庫的雙向同步(路徑沒變的那一批)----
+      // 搬移過的檔案,檔名本來就是被改過的,上面已經按「檔案為準」處理了。
+      // 這裡處理的是「路徑沒變、但欄位跟檔名不一致」——以前完全沒人管的那一批,
+      // 也就是資料庫與資料夾脫鉤最常見的來源。
+      btn.textContent = tr("ファイル名とデータを照合中…");
+      const byPathNow = {};
+      vehicles.forEach(v => { if(v.sourcePath) byPathNow[v.sourcePath] = v; });
+      const movedSet = new Set(moved.map(m => m.v));
+      const syncFile2Db = [], syncDb2File = [], syncConflict = [],
+            syncAmbiguous = [], syncBackfill = [];
+      for(const f of found){
+        const v = byPathNow[f.relPath];
+        if(!v || movedSet.has(v)) continue;
+        const pl = planTwoWaySync(v, f.relPath);
+        if(pl.dir === SYNC_SAME){
+          // 兩邊一致:只要把「上次一致時的檔名」補上,之後才判斷得出誰被改過
+          if(v.nameSyncedAs !== pl.cur) syncBackfill.push({ v, cur: pl.cur });
+          continue;
+        }
+        if(pl.dir === SYNC_DB2FILE){
+          syncDb2File.push({ v, want: pl.want, cur: pl.cur });
+        }else if(pl.dir === SYNC_CONFLICT){
+          syncConflict.push({ v, want: pl.want, cur: pl.cur, agreed: pl.agreed });
+        }else if(pl.plan && pl.plan.ambiguous){
+          syncAmbiguous.push({ v, cur: pl.cur, why: pl.plan.ambiguous });
+        }else if(pl.plan && pl.plan.next){
+          syncFile2Db.push({ v, cur: pl.cur, plan: pl.plan, firstRun: !!pl.firstRun });
+        }
+      }
       const fieldSync = moved.filter(m => m.fields && m.fields.diffs);
       const fieldAmbiguous = moved.filter(m => m.fields && m.fields.ambiguous);
 
@@ -3356,6 +3409,45 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           lines.push(`　　${m.to.split("/").pop()}：${trMsg(m.fields.ambiguous)}`);
         });
       }
+      if(syncFile2Db.length){
+        lines.push(L("・{N} 件はファイル名に合わせて車両データを更新します（ファイルが正）",
+                     { "{N}": syncFile2Db.length }));
+        const first = syncFile2Db.filter(x => x.firstRun).length;
+        if(first) lines.push("　" + L("うち {N} 件は基準が無いため、ファイル名を正として合わせます",
+                                      { "{N}": first }));
+        syncFile2Db.slice(0, 6).forEach(x => {
+          const d = x.plan.diffs
+            .map(y => `${tr(NAME_FIELD_LABEL[y.k] || y.k)} ${y.from || tr("(空)")}→${y.to || tr("(空)")}`)
+            .join("、");
+          lines.push(`　　${x.cur}：${d}`);
+        });
+        if(syncFile2Db.length > 6)
+          lines.push("　　" + L("…ほか {N} 件", { "{N}": syncFile2Db.length - 6 }));
+      }
+      if(syncDb2File.length){
+        lines.push(L("・{N} 件はデータベースの内容に合わせてファイル名を変更します",
+                     { "{N}": syncDb2File.length }));
+        syncDb2File.slice(0, 6).forEach(x => lines.push(`　　${x.cur} → ${x.want}`));
+        if(syncDb2File.length > 6)
+          lines.push("　　" + L("…ほか {N} 件", { "{N}": syncDb2File.length - 6 }));
+      }
+      if(syncConflict.length){
+        lines.push(L("・{N} 件はファイル名とデータの両方が変わっているため、どちらも変更しません",
+                     { "{N}": syncConflict.length }));
+        syncConflict.slice(0, 6).forEach(x =>
+          lines.push(`　　${x.cur}　` + L("（データ側は {A} を想定／前回一致時は {B}）",
+                                          { "{A}": x.want, "{B}": x.agreed })));
+        if(syncConflict.length > 6)
+          lines.push("　　" + L("…ほか {N} 件", { "{N}": syncConflict.length - 6 }));
+      }
+      if(syncAmbiguous.length){
+        lines.push(L("・{N} 件はファイル名が曖昧なため、車両データは変更しません",
+                     { "{N}": syncAmbiguous.length }));
+        syncAmbiguous.slice(0, 4).forEach(x =>
+          lines.push(`　　${x.cur}：${trMsg(x.why)}`));
+        if(syncAmbiguous.length > 4)
+          lines.push("　　" + L("…ほか {N} 件", { "{N}": syncAmbiguous.length - 4 }));
+      }
       if(paired) lines.push(
         "　" + L("うち {N} 件は手動で対応付けたものです（編成の参照を引き継ぎます）",
                  { "{N}": paired }));
@@ -3364,7 +3456,15 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       if(orphanPool.length) lines.push(
         L("・{N} 件のレコードに対応するファイルがありません（削除されたか、フォルダ外に移動）",
           { "{N}": orphanPool.length }));
-      if(!updatedImgs.length && !moved.length && !stillNew.length && !orphanPool.length){
+      const syncTouches = syncFile2Db.length + syncDb2File.length;
+      if(!updatedImgs.length && !moved.length && !stillNew.length && !orphanPool.length
+         && !syncTouches && !syncConflict.length && !syncAmbiguous.length){
+        // 只有「補基準」的話沒有任何實質變更,但基準還是要存下來,
+        // 否則下一次同期又會判斷不出誰被改過
+        if(syncBackfill.length){
+          syncBackfill.forEach(x => { x.v.nameSyncedAs = x.cur; });
+          await persistVehicles();
+        }
         if(hashFilled) await persistVehicles();        // 補算的指紋留下來
         toast(lines[0] + "\n" + tr("処理が必要な変更はありません。"));
         return;
@@ -3392,10 +3492,32 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         const parsed = parseVehicleFromPath(m.to);
         m.v.sourcePath = m.to;
         if(parsed.series) m.v.series = parsed.series;
-        m.v.categories = parsed.folders.length ? [parsed.folders.join(" / ")] : [];
+        // 分類取聯集,不要覆寫 —— 以前這裡是直接指派,
+        // 所以車輛換資料夾時,手動加上去的額外分類會被默默清掉。
+        {
+          const fromPath = parsed.folders.length ? [parsed.folders.join(" / ")] : [];
+          const keep = (m.v.categories || []).filter(c => String(c || "").trim());
+          const seen = new Set(), union = [];
+          fromPath.concat(keep).forEach(c => {
+            const k = String(c).trim();
+            if(!k || seen.has(k)) return;
+            seen.add(k); union.push(c);
+          });
+          m.v.categories = union;
+        }
         // 檔名本身變了 → 型式/番台/塗裝/方向/寬度 以檔名為準,
         // 這樣資料庫與檔名才會一致,下次儲存時不會把檔案改回舊名
-        if(m.fields && m.fields.next) Object.assign(m.v, m.fields.next);
+        if(m.fields && m.fields.next){
+          Object.assign(m.v, m.fields.next);
+          // 這一刻兩邊一致,記下基準
+          m.v.nameSyncedAs = baseName(m.to);
+        }else if(m.fields && m.fields.ambiguous){
+          // 欄位沒有套用 → 兩邊仍然不一致,不能記基準,
+          // 否則下次會誤判成「資料庫被改過」而去改檔名
+          delete m.v.nameSyncedAs;
+        }else{
+          m.v.nameSyncedAs = baseName(m.to);
+        }
         if(m.hash) m.v.imgHash = m.hash;
         // 手動配對的是「重畫過」的車,圖片也要換成新檔案
         if(m.redrawn && m.handle){
@@ -3420,7 +3542,9 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           widthCm: parsed.widthCm || 3.8, note: "", defaultAttribute: "", defaultProductCode: "",
           categories: parsed.folders.length ? [parsed.folders.join(" / ")] : [],
           img: dataUrl,
-          imgHash: sn.hash || await hashOfDataUrl(dataUrl)
+          imgHash: sn.hash || await hashOfDataUrl(dataUrl),
+          // 剛從檔名建出來的,兩邊當然一致
+          nameSyncedAs: baseName(sn.f.relPath)
         });
       }
 
@@ -3434,6 +3558,30 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           vehicles = vehicles.filter(v => !removeIds.has(v.id));
           removed = orphanPool.length;
         }
+      }
+
+      // 3.5) 檔名與資料庫的雙向同步
+      //      先做「檔名 → 資料庫」,再做「資料庫 → 檔名」。
+      //      順序不能反:改檔名會換掉路徑,路徑一換編號就變,
+      //      所以要在 realignVehicleIds() 之前全部做完。
+      if(syncBackfill.length){
+        syncBackfill.forEach(x => { x.v.nameSyncedAs = x.cur; });
+      }
+      if(syncFile2Db.length){
+        btn.textContent = tr("ファイル名に合わせています…");
+        syncFile2Db.forEach(x => {
+          Object.assign(x.v, x.plan.next);
+          x.v.nameSyncedAs = x.cur;        // 這一刻兩邊一致
+        });
+      }
+      let renamedByDb = 0, renameFailed = [];
+      if(syncDb2File.length){
+        btn.textContent = tr("ファイル名を変更しています…");
+        // 一次全部交給 renameVehicleFiles:它會先把要改的檔案挪到暫存名,
+        // 再放進最終位置,所以兩筆互換檔名(L↔R)也能成功。
+        const r = await renameVehicleFiles(syncDb2File.map(x => x.v));
+        renamedByDb = r.done.length;
+        renameFailed = r.failed.map(f => f.why);
       }
 
       // 4) 讓所有紀錄的編號跟目前路徑一致,並同步修正編成裡的參照。
@@ -3454,6 +3602,13 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       if(idFixed && typeof refreshFormationResults === "function") refreshFormationResults();
       showReport("スキャン完了", [
         `・画像を更新 ${updatedImgs.length} 枚`,
+        syncFile2Db.length ? L("・ファイル名に合わせて車両データを更新 {N} 件",
+                               { "{N}": syncFile2Db.length }) : null,
+        renamedByDb ? L("・データベースに合わせてファイル名を変更 {N} 件",
+                        { "{N}": renamedByDb }) : null,
+        renameFailed.length ? L("・ファイル名を変更できなかったもの {N} 件",
+                                { "{N}": renameFailed.length }) : null,
+        syncConflict.length ? L("・両方変わっていて保留 {N} 件", { "{N}": syncConflict.length }) : null,
         `・移動を反映 ${moved.length} 件`,
         fieldSync.length ? `　うちファイル名に合わせて車両データも更新 ${fieldSync.length} 件` : null,
         fieldAmbiguous.length ? `　うちファイル名が曖昧で車両データは未変更 ${fieldAmbiguous.length} 件` : null,
@@ -4878,7 +5033,10 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     for(const j of jobs){
       try{
         const dir = await dirFor(j.dirPath);
-        const tmp = "__改名中_" + stamp + "_" + staged.length + ".tmp";
+        // 檔名刻意只用 ASCII:改名中的暫存檔名要是含了非 ASCII 字元,
+      // 某些檔案系統／瀏覽器後端處理起來會出問題(實測 Chromium 的 OPFS
+      // 碰到含日文的檔名,原生 move() 會讓渲染程序直接崩潰)。
+      const tmp = "__renaming_" + stamp + "_" + staged.length + ".tmp";
         const fh = await dir.getFileHandle(j.curName, { create: false });
         await moveFileHandle(dir, fh, j.curName, tmp);
         staged.push(Object.assign({ dir, tmp }, j));
@@ -4914,12 +5072,77 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         const fh = await s.dir.getFileHandle(s.tmp, { create: false });
         await moveFileHandle(s.dir, fh, s.tmp, s.want);
         s.v.sourcePath = s.dirPath.concat(s.want).join("/");
+        // 這一刻資料庫與檔名是一致的,記下來當作下次三方比較的基準
+        s.v.nameSyncedAs = s.want;
         result.done.push(s.want);
       }catch(e){
         result.failed.push({ v: s.v, why: (e && e.message) ? e.message : String(e) });
       }
     }
     return result;
+  }
+
+  // ---------- 檔名與資料庫的三方比較 ----------
+  // 五個欄位(形式／番台／塗裝／方向／車體寬)由檔名決定,而且是雙向的:
+  // 改檔名要動資料庫,改資料庫要動檔名。
+  // 問題是同期的那一刻只看得到「現在的檔名」與「現在的欄位」,
+  // 兩邊不一致時無從得知是哪一邊被改過 —— 猜錯就會把人家的修改蓋掉。
+  //
+  // 所以每筆紀錄多記一個 nameSyncedAs:「上次兩邊一致時的檔名」。
+  // 有了這個基準就能三方比較,不必猜:
+  //
+  //   欄位組出的檔名 want ／ 現在的檔名 cur ／ 上次一致時 agreed
+  //     want === cur              → 兩邊一致,只要把 agreed 補上
+  //     agreed === cur            → 檔案沒動過 → 是資料庫被改了 → 去改檔名
+  //     agreed === want           → 欄位沒動過 → 是檔名被改了 → 去改欄位
+  //     其他(兩邊都動過/沒有基準) → 不自作主張
+  //
+  // 最後一種分兩類:
+  //   ・agreed 不存在(舊資料、剛從JSON匯入) → 照「檔案為準」把欄位對過去,
+  //     但會列進確認視窗,不會默默發生
+  //   ・agreed 存在而兩邊都變了 → 真的衝突,兩邊都不動,列出來請人決定
+  //     (這種情況選任一邊都等於丟掉另一邊的修改)
+  const SYNC_SAME = "same", SYNC_DB2FILE = "db2file",
+        SYNC_FILE2DB = "file2db", SYNC_CONFLICT = "conflict";
+  function baseName(p){ return String(p == null ? "" : p).split("/").pop(); }
+
+  // 回傳 { dir, want, cur, plan?, why? }
+  //   dir: 上面四個常數之一
+  //   plan: file2db 時是 planNameFieldUpdates() 的結果(含 next / diffs / ambiguous)
+  function planTwoWaySync(v, curPath){
+    const cur = baseName(curPath || (v && v.sourcePath));
+    const out = { dir: SYNC_SAME, cur, want: "" };
+    if(!v || !cur) return out;
+    const want = expectedFileName(v);
+    out.want = want;
+    if(!want){
+      // 型式が空欄 → 檔名を決められない。ファイル側から読むしかない
+      out.dir = SYNC_FILE2DB;
+      out.plan = planNameFieldUpdates(v, curPath || v.sourcePath);
+      out.firstRun = !v.nameSyncedAs;
+      return out;
+    }
+    if(want === cur) return out;                       // 一致
+    const agreed = String(v.nameSyncedAs || "");
+    if(agreed && agreed === cur){
+      out.dir = SYNC_DB2FILE;                          // 檔案沒動 → 資料庫被改了
+      return out;
+    }
+    if(agreed && agreed === want){
+      out.dir = SYNC_FILE2DB;                          // 欄位沒動 → 檔名被改了
+      out.plan = planNameFieldUpdates(v, curPath || v.sourcePath);
+      return out;
+    }
+    if(!agreed){
+      // 基準が無い(旧データ)→「ファイルが正」に従う
+      out.dir = SYNC_FILE2DB;
+      out.firstRun = true;
+      out.plan = planNameFieldUpdates(v, curPath || v.sourcePath);
+      return out;
+    }
+    out.dir = SYNC_CONFLICT;                           // 両方変わっている
+    out.agreed = agreed;
+    return out;
   }
 
   // ---------- 同步檔名的預覽 ----------
