@@ -6767,7 +6767,7 @@
           "setGroupId": "A"
         },
         {
-          "vehicleId": "vp_1pyhavu12g9pyu",
+          "vehicleId": "vp_176gg8qaapye4",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1348",
@@ -10815,5 +10815,5 @@
       "visibility": "public"
     }
   },
-  "savedAt": "2026-11-05T01:47:39.697Z"
+  "savedAt": "2026-11-05T02:42:40.913Z"
 }
