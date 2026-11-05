@@ -4977,15 +4977,40 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
                               v.sourcePath.toLowerCase() === key) || null;
   }
 
+  // move() 能不能用,要試過才知道。
+  // 以前這裡只檢查「有沒有 move 這個方法」,但有些環境是「方法存在、
+  // 呼叫時才丟錯」——Chromium 在使用者自己挑選的資料夾上就會丟
+  //   NotAllowedError: The request is not allowed by the user agent
+  //   or the platform in the current context.
+  // 這種環境下改名會永遠失敗,而且下面那條退路完全走不到。
+  // 所以改成「先試 move(),失敗就走退路」,而且只有在退路真的成功時
+  // 才把 move() 標記成不能用(避免把個別檔案的失敗誤判成環境不支援)。
+  let moveApiUsable = true;
   async function moveFileHandle(dir, fh, fromName, toName){
-    if(typeof fh.move === "function"){ await fh.move(toName); return; }
-    // 舊版瀏覽器沒有 move():複製成新檔再刪掉舊的
-    const file = await fh.getFile();
-    const nh = await dir.getFileHandle(toName, { create: true });
-    const w = await nh.createWritable();
-    await w.write(file);
-    await w.close();
-    await dir.removeEntry(fromName);
+    let moveErr = null;
+    if(moveApiUsable && typeof fh.move === "function"){
+      try{
+        await fh.move(toName);
+        return;
+      }catch(e){ moveErr = e; }
+    }
+    // 退路:複製成新檔再刪掉舊的
+    try{
+      const file = await fh.getFile();
+      const nh = await dir.getFileHandle(toName, { create: true });
+      const w = await nh.createWritable();
+      await w.write(file);
+      await w.close();
+      await dir.removeEntry(fromName);
+      if(moveErr){
+        // move() 不行但退路可以 → 這個環境的 move() 不能用,之後直接走退路
+        moveApiUsable = false;
+        console.info("この環境では move() が使えないため、コピー＋削除に切り替えました", moveErr);
+      }
+    }catch(e2){
+      // 兩條路都失敗:回報 move() 的原始錯誤,訊息比較具體
+      throw moveErr || e2;
+    }
   }
 
   // 把一組車的圖片檔名改成跟資料一致(通常一筆,左右成對時兩筆)。
