@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-05T03:57:53.767Z",
+  "exportedAt": "2026-11-05T09:58:57.345Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -24679,312 +24679,6 @@
       "nameSyncedAs": "オハネ15-350_白帯.png"
     },
     {
-      "id": "vp_sfkpsxxrqlbp",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スハ33000.png",
-      "series": "スハ30000",
-      "modelCode": "スハ33000",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スハ33000.png"
-    },
-    {
-      "id": "vp_1prr8g21hj85ka",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロ30750.png",
-      "series": "スハ30000",
-      "modelCode": "スロ30750",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロ30750.png"
-    },
-    {
-      "id": "vp_kysk6t8cs0kj",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロフ31100.png",
-      "series": "スハ30000",
-      "modelCode": "スロフ31100",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロフ31100.png"
-    },
-    {
-      "id": "vp_glbzoh1xzrp2p",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スイテ37000_富士_L.png",
-      "series": "スハ32000",
-      "modelCode": "スイテ37000",
-      "variantCode": "",
-      "liveryName": "富士",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スイテ37000_富士_L.png"
-    },
-    {
-      "id": "vp_gbdpmn1y9pstr",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スイテ37000_富士_R.png",
-      "series": "スハ32000",
-      "modelCode": "スイテ37000",
-      "variantCode": "",
-      "liveryName": "富士",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スイテ37000_富士_R.png"
-    },
-    {
-      "id": "vp_gy6f1v1p4yp77",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スイロフ30550.png",
-      "series": "スハ32000",
-      "modelCode": "スイロフ30550",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スイロフ30550.png"
-    },
-    {
-      "id": "vp_xz36n01d2jsn8",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スシ37740.png",
-      "series": "スハ32000",
-      "modelCode": "スシ37740",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スシ37740.png"
-    },
-    {
-      "id": "vp_3ordqf1remazl",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スニ36500.png",
-      "series": "スハ32000",
-      "modelCode": "スニ36500",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スニ36500.png"
-    },
-    {
-      "id": "vp_nlr1eyx97keg",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スロ30800.png",
-      "series": "スハ32000",
-      "modelCode": "スロ30800",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スロ30800.png"
-    },
-    {
-      "id": "vp_11175tf1ibvdnv",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スハフ34200.png",
-      "series": "スハ32000",
-      "modelCode": "スハフ34200",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スハフ34200.png"
-    },
-    {
-      "id": "vp_1gp3tc4w5xkbm",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スハ32600.png",
-      "series": "スハ32000",
-      "modelCode": "スハ32600",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スハ32600.png"
-    },
-    {
-      "id": "vp_l6i7mv1xifgtv",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マイネ37100.png",
-      "series": "スハ32000",
-      "modelCode": "マイネ37100",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マイネ37100.png"
-    },
-    {
-      "id": "vp_1mjhioiaba8xk",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マイネフ37230.png",
-      "series": "スハ32000",
-      "modelCode": "マイネフ37230",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マイネフ37230.png"
-    },
-    {
-      "id": "vp_1dsw93h11hblu9",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スロハ31450.png",
-      "series": "スハ32000",
-      "modelCode": "スロハ31450",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スロハ31450.png"
-    },
-    {
-      "id": "vp_fiu9frc4oqob",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マイロネフ37280_L.png",
-      "series": "スハ32000",
-      "modelCode": "マイロネフ37280",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マイロネフ37280_L.png"
-    },
-    {
-      "id": "vp_fgupqxbq1do5",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マイロネフ37280_R.png",
-      "series": "スハ32000",
-      "modelCode": "マイロネフ37280",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マイロネフ37280_R.png"
-    },
-    {
-      "id": "vp_nyc2n8sgout",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マロネフ37500.png",
-      "series": "スハ32000",
-      "modelCode": "マロネフ37500",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マロネフ37500.png"
-    },
-    {
       "id": "vp_18x45anat3c91",
       "sourcePath": "01_JR 国鉄/01_客車/10系/オシ17_茶_L.png",
       "series": "10系",
@@ -33497,294 +33191,6 @@
         "08_貨物 / コンテナ / 40ft"
       ],
       "nameSyncedAs": "40ft-ハイキューブコンテナ_川崎汽船.png"
-    },
-    {
-      "id": "vp_1yso57zzzhurl",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロ30960.png",
-      "series": "スハ30000",
-      "modelCode": "スロ30960",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロ30960.png"
-    },
-    {
-      "id": "vp_dfl93l1s65qed",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロフ31050.png",
-      "series": "スハ30000",
-      "modelCode": "スロフ31050",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロフ31050.png"
-    },
-    {
-      "id": "vp_1ugof8oawtbuq",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロ30800.png",
-      "series": "スハ30000",
-      "modelCode": "スロ30800",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロ30800.png"
-    },
-    {
-      "id": "vp_34vzsyuq8bze",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロ31120.png",
-      "series": "スハ30000",
-      "modelCode": "スロ31120",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロ31120.png"
-    },
-    {
-      "id": "vp_1pz1aa5db0jid",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロ30850.png",
-      "series": "スハ30000",
-      "modelCode": "スロ30850",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロ30850.png"
-    },
-    {
-      "id": "vp_oizww119fow2x",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロ31000.png",
-      "series": "スハ30000",
-      "modelCode": "スロ31000",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロ31000.png"
-    },
-    {
-      "id": "vp_152k08mm235y8",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロフ31200.png",
-      "series": "スハ30000",
-      "modelCode": "スロフ31200",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロフ31200.png"
-    },
-    {
-      "id": "vp_15qz0ibmhxern",
-      "sourcePath": "00_鉄道省/01_客車/スハ30000/スロフ31250.png",
-      "series": "スハ30000",
-      "modelCode": "スロフ31250",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ30000"
-      ],
-      "nameSyncedAs": "スロフ31250.png"
-    },
-    {
-      "id": "vp_thrug1iu0xlx",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スニ36650.png",
-      "series": "スハ32000",
-      "modelCode": "スニ36650",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スニ36650.png"
-    },
-    {
-      "id": "vp_1gpcjyb1a0ic6n",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スロ31000.png",
-      "series": "スハ32000",
-      "modelCode": "スロ31000",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スロ31000.png"
-    },
-    {
-      "id": "vp_xb679c1ikwo3g",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/スロ30750.png",
-      "series": "スハ32000",
-      "modelCode": "スロ30750",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "スロ30750.png"
-    },
-    {
-      "id": "vp_lv0apw1xyc9hy",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マイネ37130.png",
-      "series": "スハ32000",
-      "modelCode": "マイネ37130",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マイネ37130.png"
-    },
-    {
-      "id": "vp_1xiug181fc3nic",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マロネ37300.png",
-      "series": "スハ32000",
-      "modelCode": "マロネ37300",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マロネ37300.png"
-    },
-    {
-      "id": "vp_1og0i7l9t15zt",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マイネフ37200.png",
-      "series": "スハ32000",
-      "modelCode": "マイネフ37200",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マイネフ37200.png"
-    },
-    {
-      "id": "vp_1l3ftkszr4ok0",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マロネフ37350.png",
-      "series": "スハ32000",
-      "modelCode": "マロネフ37350",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マロネフ37350.png"
-    },
-    {
-      "id": "vp_55fi4a6e9h76",
-      "sourcePath": "00_鉄道省/01_客車/スハ32000/マロネフ37550.png",
-      "series": "スハ32000",
-      "modelCode": "マロネフ37550",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "00_鉄道省 / 01_客車 / スハ32000"
-      ],
-      "nameSyncedAs": "マロネフ37550.png"
     },
     {
       "id": "vp_1dtcgov1jvwil9",
@@ -50761,24 +50167,6 @@
       "nameSyncedAs": "マニ71_茶.png"
     },
     {
-      "id": "vp_1mr5fk4oavlwu",
-      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ74_茶_L.png",
-      "series": "70系",
-      "modelCode": "マニ74",
-      "variantCode": "",
-      "liveryName": "茶",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 70系"
-      ],
-      "nameSyncedAs": "マニ74_茶_L.png"
-    },
-    {
       "id": "vp_137gubqzju97w",
       "sourcePath": "01_JR 国鉄/01_客車/70系/マニ76_茶_L.png",
       "series": "70系",
@@ -50849,24 +50237,6 @@
         "01_JR 国鉄 / 01_客車 / 70系"
       ],
       "nameSyncedAs": "マユニ78_茶.png"
-    },
-    {
-      "id": "vp_1mmid96o0xi5s",
-      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ74_茶_R.png",
-      "series": "70系",
-      "modelCode": "マニ74",
-      "variantCode": "",
-      "liveryName": "茶",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 70系"
-      ],
-      "nameSyncedAs": "マニ74_茶_R.png"
     },
     {
       "id": "vp_1fjsqd9zp97a1",
@@ -51193,636 +50563,6 @@
       "nameSyncedAs": "スハニ32_青.png"
     },
     {
-      "id": "vp_r8jily1k5c4ya",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スイテ38_富士.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スイテ38",
-      "variantCode": "",
-      "liveryName": "富士",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スイテ38_富士.png"
-    },
-    {
-      "id": "vp_1l57niv1ldeup",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スイテ39_富士.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スイテ39",
-      "variantCode": "",
-      "liveryName": "富士",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スイテ39_富士.png"
-    },
-    {
-      "id": "vp_1okxoqgw4fc7w",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スイロフ30.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スイロフ30",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スイロフ30.png"
-    },
-    {
-      "id": "vp_1w5n89o1yd5bzw",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スシ48.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スシ48",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スシ48.png"
-    },
-    {
-      "id": "vp_ea0uch1ogfmf1",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハニ31.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スハニ31",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スハニ31.png"
-    },
-    {
-      "id": "vp_1xxg7p01vsf51y",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スシ37.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スシ37",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スシ37.png"
-    },
-    {
-      "id": "vp_15gl9urprqgxl",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スイテ48_燕.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スイテ48",
-      "variantCode": "",
-      "liveryName": "燕",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スイテ48_燕.png"
-    },
-    {
-      "id": "vp_140dpnrko7zjz",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハネ31.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スハネ31",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スハネ31.png"
-    },
-    {
-      "id": "vp_142gdraknpfb2",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハネ30.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スハネ30",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スハネ30.png"
-    },
-    {
-      "id": "vp_410mtx95ncpb",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハユ30_帯あり.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スハユ30",
-      "variantCode": "",
-      "liveryName": "帯あり",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スハユ30_帯あり.png"
-    },
-    {
-      "id": "vp_7ogxez1sujnxx",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ32.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロ32",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロ32.png"
-    },
-    {
-      "id": "vp_7qjlii1swbj4k",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ33.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロ33",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロ33.png"
-    },
-    {
-      "id": "vp_ldnizk1pxwcmy",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スハユ30_帯なし.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スハユ30",
-      "variantCode": "",
-      "liveryName": "帯なし",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スハユ30_帯なし.png"
-    },
-    {
-      "id": "vp_1smk3oemgifza",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ34_L.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロ34",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロ34_L.png"
-    },
-    {
-      "id": "vp_1swi77kmfxaew",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ34_R.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロ34",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロ34_R.png"
-    },
-    {
-      "id": "vp_yi71zc1w67k1s",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロ34_新二等帯.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロ34",
-      "variantCode": "",
-      "liveryName": "新二等帯",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロ34_新二等帯.png"
-    },
-    {
-      "id": "vp_c50o9rg4xk4l",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロハ31_帯あり.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロハ31",
-      "variantCode": "",
-      "liveryName": "帯あり",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロハ31_帯あり.png"
-    },
-    {
-      "id": "vp_1xkp3zq1y6gq5q",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロシ38.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロシ38",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロシ38.png"
-    },
-    {
-      "id": "vp_110y7ca1tru69s",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロハ31_帯なし.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロハ31",
-      "variantCode": "",
-      "liveryName": "帯なし",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロハ31_帯なし.png"
-    },
-    {
-      "id": "vp_r2snneohd6b",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロハフ30.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロハフ30",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロハフ30.png"
-    },
-    {
-      "id": "vp_1cfdp3w18a4ksg",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロフ30.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロフ30",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロフ30.png"
-    },
-    {
-      "id": "vp_1cg1mcd188d8ld",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/スロフ31.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "スロフ31",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "スロフ31.png"
-    },
-    {
-      "id": "vp_hihfovh9kxb",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイテ49.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マイテ49",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マイテ49.png"
-    },
-    {
-      "id": "vp_qnddmqh8q43k",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイネ38.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マイネ38",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マイネ38.png"
-    },
-    {
-      "id": "vp_1p22qhj15bo1ih",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイネフ38.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マイネフ38",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マイネフ38.png"
-    },
-    {
-      "id": "vp_1vwg5uu1yynezk",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイロネフ37_L.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マイロネフ37",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "L",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マイロネフ37_L.png"
-    },
-    {
-      "id": "vp_1vugm601yr1f7i",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイロネフ37_R.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マイロネフ37",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "R",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マイロネフ37_R.png"
-    },
-    {
-      "id": "vp_xqemsa1u9k8ke",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイロネフ38.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マイロネフ38",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マイロネフ38.png"
-    },
-    {
-      "id": "vp_bvrk7dtn2o2d",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マニ31.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マニ31",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マニ31.png"
-    },
-    {
-      "id": "vp_gvss6c1evea54",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マユ31.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マユ31",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マユ31.png"
-    },
-    {
-      "id": "vp_1nn4ala160pmsa",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マロシ37.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マロシ37",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マロシ37.png"
-    },
-    {
-      "id": "vp_11abpg116i2qi3",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マロネフ37.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マロネフ37",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マロネフ37.png"
-    },
-    {
-      "id": "vp_utpc9yvnfwm4",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マロネロ38.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マロネロ38",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マロネロ38.png"
-    },
-    {
-      "id": "vp_6wb29018iacys",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マロネ37.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マロネ37",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マロネ37.png"
-    },
-    {
-      "id": "vp_i765oc1bqenr4",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マシ38.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マシ38",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マシ38.png"
-    },
-    {
       "id": "vp_1sypeus12c6ela",
       "sourcePath": "01_JR 国鉄/01_客車/スハ43系/オハ46_青.png",
       "series": "スハ43系",
@@ -52010,12 +50750,12 @@
       "nameSyncedAs": "スハフ42_茶.png"
     },
     {
-      "id": "vp_ec7g2h1k5i3x5",
-      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マロネ40_茶．緑二等帯_L.png",
+      "id": "vp_1jil8bh1msq6k3",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マロネ40_茶．淡緑帯_L.png",
       "series": "オハ35系",
       "modelCode": "マロネ40",
       "variantCode": "",
-      "liveryName": "茶．緑二等帯",
+      "liveryName": "茶．淡緑帯",
       "side": "L",
       "company": "",
       "widthCm": 3.8,
@@ -52025,7 +50765,7 @@
       "categories": [
         "01_JR 国鉄 / 01_客車 / オハ35系"
       ],
-      "nameSyncedAs": "マロネ40_茶．緑二等帯_L.png"
+      "nameSyncedAs": "マロネ40_茶．淡緑帯_L.png"
     },
     {
       "id": "vp_f9s5x6hrm2sk",
@@ -52046,12 +50786,12 @@
       "nameSyncedAs": "マロネ40_茶．青二等帯_L.png"
     },
     {
-      "id": "vp_ee769z1k6obzb",
-      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マロネ40_茶．緑二等帯_R.png",
+      "id": "vp_1jpvt8j1n50qi5",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マロネ40_茶．淡緑帯_R.png",
       "series": "オハ35系",
       "modelCode": "マロネ40",
       "variantCode": "",
-      "liveryName": "茶．緑二等帯",
+      "liveryName": "茶．淡緑帯",
       "side": "R",
       "company": "",
       "widthCm": 3.8,
@@ -52061,7 +50801,7 @@
       "categories": [
         "01_JR 国鉄 / 01_客車 / オハ35系"
       ],
-      "nameSyncedAs": "マロネ40_茶．緑二等帯_R.png"
+      "nameSyncedAs": "マロネ40_茶．淡緑帯_R.png"
     },
     {
       "id": "vp_fef884hoon5m",
@@ -52118,12 +50858,12 @@
       "nameSyncedAs": "マロネ40_青_R.png"
     },
     {
-      "id": "vp_ueg82m1mpxhvc",
-      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マロネ41_茶.png",
+      "id": "vp_74gbzja0mkd3",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マロネ41_茶．淡緑帯.png",
       "series": "オハ35系",
       "modelCode": "マロネ41",
       "variantCode": "",
-      "liveryName": "茶",
+      "liveryName": "茶．淡緑帯",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -52133,15 +50873,15 @@
       "categories": [
         "01_JR 国鉄 / 01_客車 / オハ35系"
       ],
-      "nameSyncedAs": "マロネ41_茶.png"
+      "nameSyncedAs": "マロネ41_茶．淡緑帯.png"
     },
     {
-      "id": "vp_176gg8qaapye4",
-      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マロネ41_青.png",
+      "id": "vp_18nbyizu25wyz",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マロネ41_青．淡緑帯.png",
       "series": "オハ35系",
       "modelCode": "マロネ41",
       "variantCode": "",
-      "liveryName": "青",
+      "liveryName": "青．淡緑帯",
       "side": "",
       "company": "",
       "widthCm": 3.8,
@@ -52151,7 +50891,7 @@
       "categories": [
         "01_JR 国鉄 / 01_客車 / オハ35系"
       ],
-      "nameSyncedAs": "マロネ41_青.png"
+      "nameSyncedAs": "マロネ41_青．淡緑帯.png"
     },
     {
       "id": "vp_ibz96z2qn2uz",
@@ -70277,42 +69017,6 @@
       "nameSyncedAs": "スハニ35_青大将色.png"
     },
     {
-      "id": "vp_mv9l6p1jniahd",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイテ39_茶.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マイテ39",
-      "variantCode": "",
-      "liveryName": "茶",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マイテ39_茶.png"
-    },
-    {
-      "id": "vp_1gkl8ty12xolne",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系雙重屋根/マイテ39_青大将色.png",
-      "series": "スハ32系雙重屋根",
-      "modelCode": "マイテ39",
-      "variantCode": "",
-      "liveryName": "青大将色",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / スハ32系雙重屋根"
-      ],
-      "nameSyncedAs": "マイテ39_青大将色.png"
-    },
-    {
       "id": "vp_1bs29nq13v1mai",
       "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スハ44_茶.png",
       "series": "スハ44系",
@@ -70347,6 +69051,4131 @@
         "01_JR 国鉄 / 01_客車 / スハ44系"
       ],
       "nameSyncedAs": "スハ44_青大将色.png"
+    },
+    {
+      "id": "vp_4aj3m01ntvx0q",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スハ33000_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スハ33000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スハ33000_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1eqxzqw13efv42",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ30750_ぶどう色1号_L.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ30750",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ30750_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_1esxjfq1396bj0",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ30750_ぶどう色1号_R.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ30750",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ30750_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_1xxa2ht1xn7h37",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ30800_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ30800",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ30800_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_4g6jxhjoa3a9",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ30750_ぶどう色1号．二重屋根_L.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ30750",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．二重屋根",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ30750_ぶどう色1号．二重屋根_L.png"
+    },
+    {
+      "id": "vp_4bjb3vjgo3i7",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ30750_ぶどう色1号．二重屋根_R.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ30750",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．二重屋根",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ30750_ぶどう色1号．二重屋根_R.png"
+    },
+    {
+      "id": "vp_10x3ulgxnp5qa",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ30850_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ30850",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ30850_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_15oaze01r39cna",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ31000_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ31000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ31000_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1tg6ssr1y9lo8b",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ31120_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ31120",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ31120_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_18m5mdi1ofonge",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロ30960_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロ30960",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロ30960_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_j6ropmsum1aa",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロフ31250_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロフ31250",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロフ31250_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1lp277g1eotgde",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロフ31100_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロフ31100",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロフ31100_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_11o5j6ntqex37",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロフ31200_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロフ31200",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロフ31200_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_qxeu1k1drcths",
+      "sourcePath": "00_鉄道省/01_客車/スハ30000系/スロフ31050_ぶどう色1号.png",
+      "series": "スハ30000系",
+      "modelCode": "スロフ31050",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ30000系",
+        "00_鉄道省 / 01_客車 / 30000系"
+      ],
+      "nameSyncedAs": "スロフ31050_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_s1l6rd7yhrjp",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37000_ぶどう色1号．富士_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．富士",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スイテ37000_ぶどう色1号．富士_L.png"
+    },
+    {
+      "id": "vp_1hbepohgrp3rb",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイ38_茶.png",
+      "series": "スハ32000系",
+      "modelCode": "スイ38",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スイ38_茶.png"
+    },
+    {
+      "id": "vp_1ud1zf31rtsiav",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37040_ぶどう色1号．燕_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37040",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．燕",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スイテ37040_ぶどう色1号．燕_L.png"
+    },
+    {
+      "id": "vp_o79co25zv9tw",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スシ37700_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スシ37700",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スシ37700_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_h95y8917pfju9",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37020_ぶどう色1号．燕_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37020",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．燕",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スイテ37020_ぶどう色1号．燕_L.png"
+    },
+    {
+      "id": "vp_nzyl8c5wy0be",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スシ37700_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スシ37700",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スシ37700_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_l9b8nc2hmnaq",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スニ36650_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スニ36650",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スニ36650_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_pxvyml1qku54b",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハ32600_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スハ32600",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スハ32600_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_u4ezamlb1pci",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スニ36500_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スニ36500",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スニ36500_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_jzrkbqrgqmpa",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハフ34200_ぶどう色1号．帯なし.png",
+      "series": "スハ32000系",
+      "modelCode": "スハフ34200",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スハフ34200_ぶどう色1号．帯なし.png"
+    },
+    {
+      "id": "vp_p4ejat18skicr",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハユ35300_ぶどう色1号．帯なし.png",
+      "series": "スハ32000系",
+      "modelCode": "スハユ35300",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スハユ35300_ぶどう色1号．帯なし.png"
+    },
+    {
+      "id": "vp_1x0u1bg1lf0rta",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハユ35300_ぶどう色1号．赤帯.png",
+      "series": "スハ32000系",
+      "modelCode": "スハユ35300",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．赤帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スハユ35300_ぶどう色1号．赤帯.png"
+    },
+    {
+      "id": "vp_b207pg4plwik",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スロハ31450_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スロハ31450",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スロハ31450_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1k5z7d21lh64ki",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイ38_茶.png",
+      "series": "スハ32000系",
+      "modelCode": "マイ38",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マイ38_茶.png"
+    },
+    {
+      "id": "vp_145bgfjpl417t",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイシ37900_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マイシ37900",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マイシ37900_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_1ojlrko84ccjo",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スロハ31450_ぶどう色1号．帯なし.png",
+      "series": "スハ32000系",
+      "modelCode": "スロハ31450",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スロハ31450_ぶどう色1号．帯なし.png"
+    },
+    {
+      "id": "vp_13spu9dp3ig0n",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイシ37900_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マイシ37900",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マイシ37900_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_bho5u71gq6t7x",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マシ37850_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マシ37850",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マシ37850_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_b52d5d1gdwfeb",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マシ37850_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マシ37850",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マシ37850_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_wvre0b11m5cth",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マニ36700_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マニ36700",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マニ36700_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1qrcffuu23p74",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マニ36710_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マニ36710",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マニ36710_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_pmgpes17w2gzw",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マユ36050_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マユ36050",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マユ36050_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_imo5vn1pgcrkb",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロシ37950_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マロシ37950",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マロシ37950_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_5fwxqwufk61o",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロシ37900_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マロシ37900",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "マロシ37900_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_1b800c71pe72zf",
+      "sourcePath": "01_JR 国鉄/01_客車/70系/マニ74_茶.png",
+      "series": "70系",
+      "modelCode": "マニ74",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / 70系"
+      ],
+      "nameSyncedAs": "マニ74_茶.png"
+    },
+    {
+      "id": "vp_15h177nb5pwml",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オハ31_茶．赤帯.png",
+      "series": "オハ31系",
+      "modelCode": "オハ31",
+      "variantCode": "",
+      "liveryName": "茶．赤帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オハ31_茶．赤帯.png"
+    },
+    {
+      "id": "vp_15udb1i1buzqha",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オハ34_茶．赤帯.png",
+      "series": "オハ31系",
+      "modelCode": "オハ34",
+      "variantCode": "",
+      "liveryName": "茶．赤帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オハ34_茶．赤帯.png"
+    },
+    {
+      "id": "vp_igh4qx3vdjgb",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オハニ30_茶．赤帯.png",
+      "series": "オハ31系",
+      "modelCode": "オハニ30",
+      "variantCode": "",
+      "liveryName": "茶．赤帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オハニ30_茶．赤帯.png"
+    },
+    {
+      "id": "vp_p8iobb1wy1rad",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オハフ30_茶．赤帯.png",
+      "series": "オハ31系",
+      "modelCode": "オハフ30",
+      "variantCode": "",
+      "liveryName": "茶．赤帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オハフ30_茶．赤帯.png"
+    },
+    {
+      "id": "vp_10wnln78iu1h5",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オロ30_茶．青二等帯.png",
+      "series": "オハ31系",
+      "modelCode": "オロ30",
+      "variantCode": "",
+      "liveryName": "茶．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オロ30_茶．青二等帯.png"
+    },
+    {
+      "id": "vp_1ambjst1mqzmn7",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/スユ30_茶.png",
+      "series": "オハ31系",
+      "modelCode": "スユ30",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "スユ30_茶.png"
+    },
+    {
+      "id": "vp_9s7zee1ij1kyc",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/スユニ30_茶.png",
+      "series": "オハ31系",
+      "modelCode": "スユニ30",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "スユニ30_茶.png"
+    },
+    {
+      "id": "vp_1kyq56k1py1v38",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オロハ30_茶．青二等帯.png",
+      "series": "オハ31系",
+      "modelCode": "オロハ30",
+      "variantCode": "",
+      "liveryName": "茶．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オロハ30_茶．青二等帯.png"
+    },
+    {
+      "id": "vp_1c5ywud1gzqa97",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/カニ37_茶.png",
+      "series": "オハ31系",
+      "modelCode": "カニ37",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "カニ37_茶.png"
+    },
+    {
+      "id": "vp_i9sjci11yutue",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オロ31_茶．青二等帯.png",
+      "series": "オハ31系",
+      "modelCode": "オロ31",
+      "variantCode": "",
+      "liveryName": "茶．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オロ31_茶．青二等帯.png"
+    },
+    {
+      "id": "vp_qa5cri53xv20",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/マシ35_茶.png",
+      "series": "スハ32系",
+      "modelCode": "マシ35",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系"
+      ],
+      "nameSyncedAs": "マシ35_茶.png"
+    },
+    {
+      "id": "vp_1hfpco13mkivw",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/オハ34_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "オハ34",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "オハ34_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_s884o8pszga4",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/オロ35_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "オロ35",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "オロ35_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_rnns52pgowc2",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/オロ35_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "オロ35",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "オロ35_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_c61ilrw3szrn",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/オロ35_ぶどう色2号．新二等帯.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "オロ35",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．新二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "オロ35_ぶどう色2号．新二等帯.png"
+    },
+    {
+      "id": "vp_h8q9vc1oymsfs",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/オロ36_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "オロ36",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "オロ36_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1estr7d1bnikmp",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/オロ40_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "オロ40",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "オロ40_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_56a6x4tl506u",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/オロフ33_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "オロフ33",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "オロフ33_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_itmx21v50jwj",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スイテ38_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スイテ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スイテ38_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_6fv6rkk584ay",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スイテ48_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スイテ48",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スイテ48_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_ivmgqvuzqu71",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スイテ38_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スイテ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スイテ38_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1t5vajg7jt2cc",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スイロフ30_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スイロフ30",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スイロフ30_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_65x38ejqlges",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スイテ48_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スイテ48",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スイテ48_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_fr0ppl1c9eb6p",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スエ31_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スエ31",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スエ31_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1xlkko31pd5c63",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ37_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スシ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スシ37_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_155lccr68gx1l",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ48_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スシ48",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スシ48_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1xe9t8d1pg7cbp",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ37_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スシ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スシ37_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_k44iizxsu8kf",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スニ30_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スニ30",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スニ30_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_14nooyd5tai47",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ48_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スシ48",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スシ48_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1lo6gy21fsem2q",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハシ38_ぶどう色2_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハシ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハシ38_ぶどう色2_R.png"
+    },
+    {
+      "id": "vp_8z4g40moh67q",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハ32_ぶどう色2号．二重屋根.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハ32",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．二重屋根",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハ32_ぶどう色2号．二重屋根.png"
+    },
+    {
+      "id": "vp_r96cbnifpv2j",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハシ38_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハシ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハシ38_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_xbwpxh1dt7qr5",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハニ31_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハニ31",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハニ31_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1ntlmcwdifnpi",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハネ31_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハネ31",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハネ31_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1o67f1qdhuo9k",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハネ31_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハネ31",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハネ31_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1arxsro1ylos42",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハフ32_ぶどう色2号．帯なし.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハフ32",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハフ32_ぶどう色2号．帯なし.png"
+    },
+    {
+      "id": "vp_1ouoyb9qv5yhx",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハユ30_ぶどう色2号．帯なし.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハユ30",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハユ30_ぶどう色2号．帯なし.png"
+    },
+    {
+      "id": "vp_ckezsc1autexw",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハユ30_ぶどう色2号．赤帯.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハユ30",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．赤帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハユ30_ぶどう色2号．赤帯.png"
+    },
+    {
+      "id": "vp_1dxcbfz19v13en",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロ32_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロ32",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロ32_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1hr6vuv7sxnf",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロ34_ぶどう色2号．二重屋根_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロ34",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．二重屋根",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロ34_ぶどう色2号．二重屋根_L.png"
+    },
+    {
+      "id": "vp_hxqsb24ds4eg",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロ33_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロ33",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロ33_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_19fdf5r18njcqn",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロハ31_ぶどう色2号．帯なし.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロハ31",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロハ31_ぶどう色2号．帯なし.png"
+    },
+    {
+      "id": "vp_3zq0bqwloyvq",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロハフ30_ぶどう色2号．淡緑帯.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロハフ30",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロハフ30_ぶどう色2号．淡緑帯.png"
+    },
+    {
+      "id": "vp_1tadv4aypr1u2",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロハ31_ぶどう色2号．帯あり.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロハ31",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．帯あり",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロハ31_ぶどう色2号．帯あり.png"
+    },
+    {
+      "id": "vp_1hz2i0pkyoocp",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロフ31_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロフ31",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロフ31_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1hp7c61auxt1",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロ34_ぶどう色2号．二重屋根_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロ34",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．二重屋根",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロ34_ぶどう色2号．二重屋根_R.png"
+    },
+    {
+      "id": "vp_meupp41ipfeei",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロフ30_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロフ30",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロフ30_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_mfgpjuduupdg",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロフ32_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロフ32",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロフ32_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1q9z6kk1n7i32y",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイ38_青大将色.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイ38",
+      "variantCode": "",
+      "liveryName": "青大将色",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイ38_青大将色.png"
+    },
+    {
+      "id": "vp_1j1eb0fwrpnux",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ39_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ39",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ39_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1jbcejlwcdzav",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ39_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ39",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ39_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1pn7thq163jj5c",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ39_青大将色_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ39",
+      "variantCode": "",
+      "liveryName": "青大将色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ39_青大将色_R.png"
+    },
+    {
+      "id": "vp_1f36im01di8oli",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ49_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ49_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1f562au1dhnj14",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ49_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ49_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_6mxh3r1wh435j",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ49_ぶどう色2号．淡緑帯_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．淡緑帯",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ49_ぶどう色2号．淡緑帯_R.png"
+    },
+    {
+      "id": "vp_77htmx1wwfrpl",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ49_ぶどう色2号．淡緑帯_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．淡緑帯",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ49_ぶどう色2号．淡緑帯_L.png"
+    },
+    {
+      "id": "vp_1pam0sw16dhmwe",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ39_青大将色_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ39",
+      "variantCode": "",
+      "liveryName": "青大将色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ39_青大将色_L.png"
+    },
+    {
+      "id": "vp_q2csif1lbk2ut",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ49_青大将色_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ49",
+      "variantCode": "",
+      "liveryName": "青大将色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ49_青大将色_L.png"
+    },
+    {
+      "id": "vp_1i5q0va1cora8w",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイネ29_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイネ29",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイネ29_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_qmx51l1lq7fuz",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ49_青大将色_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイテ49",
+      "variantCode": "",
+      "liveryName": "青大将色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイテ49_青大将色_R.png"
+    },
+    {
+      "id": "vp_1v8n95mvr81hu",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイネ37_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイネ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイネ37_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1vdabgkw3ifbg",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイネ37_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイネ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイネ37_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_xhb9h13fas27",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイネ38_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイネ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイネ38_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_xz83e335cob5",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイネ38_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイネ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイネ38_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_8f4ed8pvwk3e",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイネフ37_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイネフ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイネフ37_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1d4lcgw639rwy",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイネフ38_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイネフ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイネフ38_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1cun8xq6fk5qk",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイネフ38_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイネフ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイネフ38_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_18gdu821nnf2wo",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイロネフ37_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイロネフ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイロネフ37_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_ly2b59eaknfd",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイロネフ38_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイロネフ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイロネフ38_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_18939b01no08h2",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイロネフ37_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイロネフ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイロネフ37_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_liszubebqpk7",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイロネフ38_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マイロネフ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マイロネフ38_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_174keejqla5yt",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ38_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マシ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マシ38_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_16mnr05qzxj63",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ38_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マシ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マシ38_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1qk5pr08qouzo",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マニ31.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マニ31",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マニ31.png"
+    },
+    {
+      "id": "vp_9zurfy1nfi8yu",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マニ32_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マニ32",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マニ32_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_149vkcicxkw16",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マハシ49_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マハシ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マハシ49_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_142kzfgciy850",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マハシ49_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マハシ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マハシ49_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_q6fukg1121fd8",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マユ31_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マユ31",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マユ31_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1imk4hy16s4kf8",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロシ38_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロシ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロシ38_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1ikkkt416p7awq",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロシ38_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロシ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロシ38_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1ic7m3zjqlyx1",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネ29_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネ29",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネ29_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_15f20v4cow3me",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネ37_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネ37_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1mz1k2t30c5h3",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネ48_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネ48",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネ48_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1mueb973fikeh",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネ48_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネ48",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネ48_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_a0fdoaqia8a8",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ29-100_ぶどう色2号．淡緑帯_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ29",
+      "variantCode": "100",
+      "liveryName": "ぶどう色2号．淡緑帯",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ29-100_ぶどう色2号．淡緑帯_R.png"
+    },
+    {
+      "id": "vp_s1fjyt1wwbzod",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ37_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ37",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ37_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_1du39blbnj233",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ49_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ49_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1e6ovhrbdks7l",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ49_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ49_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1qvg52n1pll5h1",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネロ38_青．淡緑帯.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネロ38",
+      "variantCode": "",
+      "liveryName": "青．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネロ38_青．淡緑帯.png"
+    },
+    {
+      "id": "vp_m73x0z12j71ff",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネロ38_ぶどう色2号．淡緑帯.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネロ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネロ38_ぶどう色2号．淡緑帯.png"
+    },
+    {
+      "id": "vp_ov1htd1a0fmqt",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スロ52_青．淡緑帯.png",
+      "series": "スハ43系",
+      "modelCode": "スロ52",
+      "variantCode": "",
+      "liveryName": "青．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ43系"
+      ],
+      "nameSyncedAs": "スロ52_青．淡緑帯.png"
+    },
+    {
+      "id": "vp_be49udzsdf6p",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ43系/スロ52_茶．淡緑帯.png",
+      "series": "スハ43系",
+      "modelCode": "スロ52",
+      "variantCode": "",
+      "liveryName": "茶．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ43系"
+      ],
+      "nameSyncedAs": "スロ52_茶．淡緑帯.png"
+    },
+    {
+      "id": "vp_2g3r83c1m8j7",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スシ37800_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スシ37800",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系",
+        "00_鉄道省 / 01_客車 / 32000系"
+      ],
+      "nameSyncedAs": "スシ37800_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_8z6h5u1e2b4sk",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ28_青大将色_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スシ28",
+      "variantCode": "",
+      "liveryName": "青大将色",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スシ28_青大将色_L.png"
+    },
+    {
+      "id": "vp_8rvpq41dzdva2",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ28_青大将色_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スシ28",
+      "variantCode": "",
+      "liveryName": "青大将色",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スシ28_青大将色_R.png"
+    },
+    {
+      "id": "vp_jew41vt8wrwd",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハシ29_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハシ29",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハシ29_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_j7lcm5te6bhf",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スハシ29_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スハシ29",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スハシ29_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_ntyjbd1q83tnb",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29_青_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マシ29",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マシ29_青_R.png"
+    },
+    {
+      "id": "vp_n9e6s71qpp8q1",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29_青_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マシ29",
+      "variantCode": "",
+      "liveryName": "青",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マシ29_青_L.png"
+    },
+    {
+      "id": "vp_yet01719axjtr",
+      "sourcePath": "00_鉄道省/01_客車/オハ32000系/オハ32000_ぶどう色1号.png",
+      "series": "オハ32000系",
+      "modelCode": "オハ32000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / オハ32000系"
+      ],
+      "nameSyncedAs": "オハ32000_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1bg1q4w1gulg50",
+      "sourcePath": "00_鉄道省/01_客車/オハ32000系/オハニ35500.png",
+      "series": "オハ32000系",
+      "modelCode": "オハニ35500",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / オハ32000系"
+      ],
+      "nameSyncedAs": "オハニ35500.png"
+    },
+    {
+      "id": "vp_t1m4m01e4hal6",
+      "sourcePath": "00_鉄道省/01_客車/オハ32000系/オハフ34000_ぶどう色1号.png",
+      "series": "オハ32000系",
+      "modelCode": "オハフ34000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / オハ32000系"
+      ],
+      "nameSyncedAs": "オハフ34000_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_12br3eu1lgz7yq",
+      "sourcePath": "00_鉄道省/01_客車/オハ32000系/オロハ31300_ぶどう色1号.png",
+      "series": "オハ32000系",
+      "modelCode": "オロハ31300",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / オハ32000系"
+      ],
+      "nameSyncedAs": "オロハ31300_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_10a4al5311kxn",
+      "sourcePath": "00_鉄道省/01_客車/オハ32000系/スハ33000_ぶどう色1号.png",
+      "series": "オハ32000系",
+      "modelCode": "スハ33000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / オハ32000系"
+      ],
+      "nameSyncedAs": "スハ33000_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1i8t9k71eugedj",
+      "sourcePath": "00_鉄道省/01_客車/オハ32000系/スユ36000.png",
+      "series": "オハ32000系",
+      "modelCode": "スユ36000",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / オハ32000系"
+      ],
+      "nameSyncedAs": "スユ36000.png"
+    },
+    {
+      "id": "vp_76vxql1kl9h0t",
+      "sourcePath": "00_鉄道省/01_客車/オハ32000系/オロ30600_ぶどう色1号.png",
+      "series": "オハ32000系",
+      "modelCode": "オロ30600",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / オハ32000系"
+      ],
+      "nameSyncedAs": "オロ30600_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1gjkrsj11v67rr",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/カニ39500_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "カニ39500",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "カニ39500_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_o3qn1yiw8gvy",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/カニ39550_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "カニ39550",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "カニ39550_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1ed08cjh6tt5z",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/カニMB3201_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "カニMB3201",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "カニMB3201_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_s3kqg78d54qz",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37000_ぶどう色1号．富士_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．富士",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スイテ37000_ぶどう色1号．富士_R.png"
+    },
+    {
+      "id": "vp_1nqyx3a1260jmw",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37010_ぶどう色1号．富士_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37010",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．富士",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スイテ37010_ぶどう色1号．富士_R.png"
+    },
+    {
+      "id": "vp_gols7r17zdnlb",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37020_ぶどう色1号．燕_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37020",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．燕",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スイテ37020_ぶどう色1号．燕_R.png"
+    },
+    {
+      "id": "vp_1noz6vs11p1lo6",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37010_ぶどう色1号．富士_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37010",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．富士",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スイテ37010_ぶどう色1号．富士_L.png"
+    },
+    {
+      "id": "vp_1o7ycpbe4f4dr",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37040_クリーム帯_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37040",
+      "variantCode": "",
+      "liveryName": "クリーム帯",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スイテ37040_クリーム帯_L.png"
+    },
+    {
+      "id": "vp_1nvcqj5dugui9",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37040_クリーム帯_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37040",
+      "variantCode": "",
+      "liveryName": "クリーム帯",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スイテ37040_クリーム帯_R.png"
+    },
+    {
+      "id": "vp_1u0g6q91rsma8p",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイテ37040_ぶどう色1号．燕_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スイテ37040",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．燕",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スイテ37040_ぶどう色1号．燕_R.png"
+    },
+    {
+      "id": "vp_1ha8yai16u6v5s",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スイロフ30550_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スイロフ30550",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スイロフ30550_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1ucemw688vfyg",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スシ37740_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スシ37740",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スシ37740_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_2vcw0dcdwsh9",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スシ37800_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スシ37800",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スシ37800_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_1uaewoo7rwhzq",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スシ37740_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スシ37740",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スシ37740_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_1wkuzszwoo6x1",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハ32800_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スハ32800",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スハ32800_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1jchrf31pymf5x",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハ34200_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スハ34200",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スハ34200_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_7r74h01vbvi9o",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハニ35650_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スハニ35650",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スハニ35650_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1f1mbw61fshri",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハネ30100_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "スハネ30100",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スハネ30100_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_1fm6ofc15u7w0",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハネ30100_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "スハネ30100",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スハネ30100_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_3hq01o166omzo",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スハフ34400_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "スハフ34400",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スハフ34400_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_pv8cml17yz8e9",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スロハ315450_ぶどう色1号．帯なし.png",
+      "series": "スハ32000系",
+      "modelCode": "スロハ315450",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スロハ315450_ぶどう色1号．帯なし.png"
+    },
+    {
+      "id": "vp_fhfly1dpcvp6",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/スロハフ31700_ぶどう色1号．淡緑帯.png",
+      "series": "スハ32000系",
+      "modelCode": "スロハフ31700",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "スロハフ31700_ぶどう色1号．淡緑帯.png"
+    },
+    {
+      "id": "vp_of8dri15vkt8u",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイネ37100_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マイネ37100",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイネ37100_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1xciw0u1gfs478",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイネ37130_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マイネ37130",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイネ37130_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_19ux97c1jhg5ve",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイネフ37200_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マイネフ37200",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイネフ37200_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1xmgzk01gcuoka",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイネ37130_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マイネ37130",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイネ37130_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_1sc5k141a1jegg",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイネフ37230_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マイネフ37230",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイネフ37230_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_1rrl7hy1abhoby",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイネフ37230_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マイネフ37230",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイネフ37230_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_9iia8lwcozc1",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイネロ37260_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マイネロ37260",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイネロ37260_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_a0exmzw535of",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイネロ37260_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マイネロ37260",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイネロ37260_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_1h3sazy1t03rzs",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイロネフ37280_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マイロネフ37280",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイロネフ37280_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_1gr6ots1t0oxk6",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マイロネフ37280_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マイロネフ37280",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マイロネフ37280_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_1cc0vn2w716x0",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マニ36750_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マニ36750",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マニ36750_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_4rl8mexvylm",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マニ36820_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マニ36820",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マニ36820_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1d1vfaacr4u3c",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マニ36790_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マニ36790",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マニ36790_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_5hwhfquktvr6",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロシ37900_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マロシ37900",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロシ37900_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_ifdkyl1p1pek5",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロシ37950_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マロシ37950",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロシ37950_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_1g73pk017kya0q",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロシ38000_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マロシ38000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロシ38000_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_1fx5fi617nvpno",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロシ38000_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マロシ38000",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロシ38000_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_ze6mmd1n9mbx7",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネ37300_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネ37300",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネ37300_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_wxlpc01ygd5ne",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネ37350_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネ37350",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネ37350_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1eqk5uqkvp6ra",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネ37400_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネ37400",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネ37400_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1w7k7zmr97woc",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネ49_ぶどう色1号．冷改_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．冷改",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネ49_ぶどう色1号．冷改_R.png"
+    },
+    {
+      "id": "vp_1wmtcrwqwxcqa",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネ49_ぶどう色1号．冷改_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネ49",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．冷改",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネ49_ぶどう色1号．冷改_L.png"
+    },
+    {
+      "id": "vp_17ujk6u1a7xcr6",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネフ37500_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネフ37500",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネフ37500_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1a1wlf71ys7etv",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネフ37550_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネフ37550",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネフ37550_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_2iswn7tt9gup",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネフ37560_ぶどう色1号_L.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネフ37560",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネフ37560_ぶどう色1号_L.png"
+    },
+    {
+      "id": "vp_2bibq5u37klr",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネフ37560_ぶどう色1号_R.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネフ37560",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネフ37560_ぶどう色1号_R.png"
+    },
+    {
+      "id": "vp_1og8sq51ubahvv",
+      "sourcePath": "00_鉄道省/01_客車/スハ32000系/マロネロ37600_ぶどう色1号.png",
+      "series": "スハ32000系",
+      "modelCode": "マロネロ37600",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "00_鉄道省 / 01_客車 / スハ32000系"
+      ],
+      "nameSyncedAs": "マロネロ37600_ぶどう色1号.png"
+    },
+    {
+      "id": "vp_1gts5yy1jb2fva",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オハ31_茶．帯なし.png",
+      "series": "オハ31系",
+      "modelCode": "オハ31",
+      "variantCode": "",
+      "liveryName": "茶．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オハ31_茶．帯なし.png"
+    },
+    {
+      "id": "vp_77ym4fprkb8r",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オハ34_茶．帯なし.png",
+      "series": "オハ31系",
+      "modelCode": "オハ34",
+      "variantCode": "",
+      "liveryName": "茶．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オハ34_茶．帯なし.png"
+    },
+    {
+      "id": "vp_1mmk1o01qodn0g",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オハニ30_茶．帯なし.png",
+      "series": "オハ31系",
+      "modelCode": "オハニ30",
+      "variantCode": "",
+      "liveryName": "茶．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オハニ30_茶．帯なし.png"
+    },
+    {
+      "id": "vp_1xvf9pq1utvp1q",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オハフ30_茶．帯なし.png",
+      "series": "オハ31系",
+      "modelCode": "オハフ30",
+      "variantCode": "",
+      "liveryName": "茶．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オハフ30_茶．帯なし.png"
+    },
+    {
+      "id": "vp_1ip6czd11bqxvp",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ31系/オロハ30_茶．三等なし.png",
+      "series": "オハ31系",
+      "modelCode": "オロハ30",
+      "variantCode": "",
+      "liveryName": "茶．三等なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ31系"
+      ],
+      "nameSyncedAs": "オロハ30_茶．三等なし.png"
+    },
+    {
+      "id": "vp_fmi6yt1spoy47",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マイネ40_茶_L.png",
+      "series": "オハ35系",
+      "modelCode": "マイネ40",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ35系"
+      ],
+      "nameSyncedAs": "マイネ40_茶_L.png"
+    },
+    {
+      "id": "vp_fhuy571t4vd1l",
+      "sourcePath": "01_JR 国鉄/01_客車/オハ35系/マイネ40_茶_R.png",
+      "series": "オハ35系",
+      "modelCode": "マイネ40",
+      "variantCode": "",
+      "liveryName": "茶",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / オハ35系"
+      ],
+      "nameSyncedAs": "マイネ40_茶_R.png"
+    },
+    {
+      "id": "vp_11tj73131pk69",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系/スハ32_茶・赤帶.png",
+      "series": "スハ32系",
+      "modelCode": "スハ32",
+      "variantCode": "",
+      "liveryName": "茶・赤帶",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系"
+      ],
+      "nameSyncedAs": "スハ32_茶・赤帶.png"
+    },
+    {
+      "id": "vp_yy80ttc0ch83",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/カニ29_ぶどう色2号.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "カニ29",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "カニ29_ぶどう色2号.png"
+    },
+    {
+      "id": "vp_fgnxb01tn4c0u",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロハ32_ぶどう色2号．帯なし.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロハ32",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．帯なし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロハ32_ぶどう色2号．帯なし.png"
+    },
+    {
+      "id": "vp_8hihypg8tz0d",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/スロハ32_ぶどう色2号．淡緑帯.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "スロハ32",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "スロハ32_ぶどう色2号．淡緑帯.png"
+    },
+    {
+      "id": "vp_1uofjgc64wtc6",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29 (ぶどう色2号))_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マシ29 (ぶどう色2号))",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マシ29 (ぶどう色2号))_L.png"
+    },
+    {
+      "id": "vp_stk89bbssklp",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29 (青大将色) (ぶどう色2号)).png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マシ29 (青大将色) (ぶどう色2号))",
+      "variantCode": "",
+      "liveryName": "",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マシ29 (青大将色) (ぶどう色2号)).png"
+    },
+    {
+      "id": "vp_a52fz8qs8i5q",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ29-100_ぶどう色2号．淡緑帯_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ29",
+      "variantCode": "100",
+      "liveryName": "ぶどう色2号．淡緑帯",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ29-100_ぶどう色2号．淡緑帯_L.png"
+    },
+    {
+      "id": "vp_nn6pyh1y1mdf3",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ29_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ29",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ29_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_1w3plu112cd5p1",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ38_ぶどう色2号_L.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "L",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ38_ぶどう色2号_L.png"
+    },
+    {
+      "id": "vp_n2mdfb1xro3jl",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ29_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ29",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ29_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_1vj59av12r0iwb",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネフ38_ぶどう色2号_R.png",
+      "series": "スハ32系二重屋根",
+      "modelCode": "マロネフ38",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号",
+      "side": "R",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
+      ],
+      "nameSyncedAs": "マロネフ38_ぶどう色2号_R.png"
+    },
+    {
+      "id": "vp_urngrz15jk4j3",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ50_ぶどう色2号．青二等帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ50",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ50_ぶどう色2号．青二等帯.png"
+    },
+    {
+      "id": "vp_1khghgtg5x9f1",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ51_ぶどう色1号．青二等帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ51",
+      "variantCode": "",
+      "liveryName": "ぶどう色1号．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ51_ぶどう色1号．青二等帯.png"
+    },
+    {
+      "id": "vp_gn0knl1tmcbjd",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ51_茶．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ51",
+      "variantCode": "",
+      "liveryName": "茶．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ51_茶．淡緑帯.png"
+    },
+    {
+      "id": "vp_orf4ha1qatyzy",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ51_ぶどう色2号．青二等帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ51",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ51_ぶどう色2号．青二等帯.png"
+    },
+    {
+      "id": "vp_1u6djdesgzqn6",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ52_茶．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ52",
+      "variantCode": "",
+      "liveryName": "茶．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ52_茶．淡緑帯.png"
+    },
+    {
+      "id": "vp_qnxcks1sv3fv8",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ53_ぶどう色2号．青二等帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ53",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ53_ぶどう色2号．青二等帯.png"
+    },
+    {
+      "id": "vp_x5malpqrelrp",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ52_ぶどう色2号．青二等帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ52",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ52_ぶどう色2号．青二等帯.png"
+    },
+    {
+      "id": "vp_1fb9ehfj7iq97",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ53_茶．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ53",
+      "variantCode": "",
+      "liveryName": "茶．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ53_茶．淡緑帯.png"
+    },
+    {
+      "id": "vp_1y7z6if10cpydz",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ53_青．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ53",
+      "variantCode": "",
+      "liveryName": "青．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ53_青．淡緑帯.png"
+    },
+    {
+      "id": "vp_1o4obzf17w4jh7",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ54_ぶどう色2号．青二等帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ54",
+      "variantCode": "",
+      "liveryName": "ぶどう色2号．青二等帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ54_ぶどう色2号．青二等帯.png"
+    },
+    {
+      "id": "vp_am33hyjrwp3i",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ52_青．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ52",
+      "variantCode": "",
+      "liveryName": "青．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ52_青．淡緑帯.png"
+    },
+    {
+      "id": "vp_1ae6ru81mqfx8g",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ54_青．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ54",
+      "variantCode": "",
+      "liveryName": "青．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ54_青．淡緑帯.png"
+    },
+    {
+      "id": "vp_zjqcol10yt2od",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ51_青．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ51",
+      "variantCode": "",
+      "liveryName": "青．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ51_青．淡緑帯.png"
+    },
+    {
+      "id": "vp_vyjtxwf9dtpg",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロ54_茶．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロ54",
+      "variantCode": "",
+      "liveryName": "茶．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロ54_茶．淡緑帯.png"
+    },
+    {
+      "id": "vp_191eaw05lzdi4",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ44系/スロフ51_青．淡緑帯.png",
+      "series": "スハ44系",
+      "modelCode": "スロフ51",
+      "variantCode": "",
+      "liveryName": "青．淡緑帯",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "01_JR 国鉄 / 01_客車 / スハ44系"
+      ],
+      "nameSyncedAs": "スロフ51_青．淡緑帯.png"
     }
   ]
 }
