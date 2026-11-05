@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-05T03:52:33.338Z",
+  "exportedAt": "2026-11-05T03:57:53.767Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -20447,10 +20447,10 @@
       "nameSyncedAs": "クハ282-700_R.png"
     },
     {
-      "id": "vp_11umnkhag098",
-      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/283系/クハ283-500_R.png",
+      "id": "vp_xk3bshl9qe8p",
+      "sourcePath": "01_JR 国鉄/03_電車/03_急行形・特急形/01_直流用/283系/クハ282-500_R.png",
       "series": "283系",
-      "modelCode": "クハ283",
+      "modelCode": "クハ282",
       "variantCode": "500",
       "liveryName": "",
       "side": "R",
@@ -20462,7 +20462,7 @@
       "categories": [
         "01_JR 国鉄 / 03_電車 / 03_急行形・特急形 / 01_直流用 / 283系"
       ],
-      "nameSyncedAs": "クハ283-500_R.png"
+      "nameSyncedAs": "クハ282-500_R.png"
     },
     {
       "id": "vp_1ocw0mt1cou4hn",
