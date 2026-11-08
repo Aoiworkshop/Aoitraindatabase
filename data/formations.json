@@ -664,11 +664,11 @@
         "オシ25-900",
         "オハフ25-900",
         "オロネ25-900",
-        "スハフ14-550",
+        "スハフ14-500",
         "オハ14-500",
         "マイテ49"
       ],
-      "updatedAt": "2026-10-13T12:47:06.569Z"
+      "updatedAt": "2026-11-07T14:37:03.820Z"
     },
     {
       "id": "f_1789549406585",
@@ -1520,7 +1520,7 @@
         "オハ47",
         "オハフ45"
       ],
-      "updatedAt": "2026-10-13T12:52:27.497Z"
+      "updatedAt": "2026-11-07T12:46:14.974Z"
     },
     {
       "id": "f_1789723706490",
@@ -3819,7 +3819,7 @@
           }
         },
         {
-          "vehicleId": "vp_hwcl9f1rphzz",
+          "vehicleId": "vp_1xq144t1lctsfj",
           "flipped": false,
           "attribute": "増SetB",
           "productCode": "10-1743G",
@@ -3832,7 +3832,7 @@
           }
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "増SetB",
           "productCode": "10-1743G",
@@ -4108,14 +4108,14 @@
           "setGroupId": ""
         },
         {
-          "vehicleId": "vp_hwcl9f1rphzz",
+          "vehicleId": "vp_1xq144t1lctsfj",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1743G",
           "setGroupId": "C"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1743G",
@@ -4291,14 +4291,14 @@
           "setGroupId": "A"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "単",
           "productCode": "10-1744B",
           "setGroupId": ""
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "単",
           "productCode": "10-1744B",
@@ -4399,28 +4399,28 @@
           "setGroupId": "A"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "単",
           "productCode": "10-1744B",
           "setGroupId": ""
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1744B",
           "setGroupId": "B"
         },
         {
-          "vehicleId": "vp_hwcl9f1rphzz",
+          "vehicleId": "vp_1xq144t1lctsfj",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1744B",
           "setGroupId": "B"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1744B",
@@ -4434,14 +4434,14 @@
           "setGroupId": ""
         },
         {
-          "vehicleId": "vp_hwcl9f1rphzz",
+          "vehicleId": "vp_1xq144t1lctsfj",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1743G",
           "setGroupId": "C"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1743G",
@@ -4521,14 +4521,14 @@
           "setGroupId": ""
         },
         {
-          "vehicleId": "vp_hwcl9f1rphzz",
+          "vehicleId": "vp_1xq144t1lctsfj",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1743G",
           "setGroupId": "C"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1743G",
@@ -4838,28 +4838,28 @@
           "setGroupId": "A"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1744B",
           "setGroupId": "B"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1744B",
           "setGroupId": "C"
         },
         {
-          "vehicleId": "vp_hwcl9f1rphzz",
+          "vehicleId": "vp_1xq144t1lctsfj",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1744B",
           "setGroupId": "C"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1744B",
@@ -4873,14 +4873,14 @@
           "setGroupId": ""
         },
         {
-          "vehicleId": "vp_hwcl9f1rphzz",
+          "vehicleId": "vp_1xq144t1lctsfj",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1744B",
           "setGroupId": "B"
         },
         {
-          "vehicleId": "vp_1kzrpbo94bj7s",
+          "vehicleId": "vp_14res9mdqltpa",
           "flipped": false,
           "attribute": "Set",
           "productCode": "10-1744B",
@@ -4932,7 +4932,7 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_n06jc01oy5t6a",
+          "vehicleId": "vp_3s2ygtt868kj",
           "flipped": false,
           "attribute": "",
           "productCode": "",
@@ -5002,7 +5002,7 @@
           "setGroupId": ""
         },
         {
-          "vehicleId": "vp_n06jc01oy5t6a",
+          "vehicleId": "vp_3s2ygtt868kj",
           "flipped": false,
           "attribute": "",
           "productCode": "",
@@ -5124,7 +5124,7 @@
           "setGroupId": "C"
         },
         {
-          "vehicleId": "vp_n06jc01oy5t6a",
+          "vehicleId": "vp_3s2ygtt868kj",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "98677",
@@ -5182,49 +5182,100 @@
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92792",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "オシ25",
+            "v": "900",
+            "l": "夢空間",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オシ25-900_夢空間.png"
+          }
         },
         {
           "vehicleId": "vp_3ko1qehznzq",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92792",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "オハフ25",
+            "v": "900",
+            "l": "夢空間",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オハフ25-900_夢空間.png"
+          }
         },
         {
           "vehicleId": "vp_1c88u10bvv6zg",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "92792",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "オロネ25",
+            "v": "900",
+            "l": "夢空間",
+            "e": "24系",
+            "p": "01_JR 国鉄/01_客車/24系/オロネ25-900_夢空間.png"
+          }
         },
         {
           "vehicleId": "vp_fnphcag6dvz4",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "92322",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "スハフ14",
+            "v": "500",
+            "l": "白帯",
+            "s": "L",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/スハフ14-500_白帯_L.png"
+          }
         },
         {
           "vehicleId": "vp_f5snf8fyrw72",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "92322",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "スハフ14",
+            "v": "500",
+            "l": "白帯",
+            "s": "R",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/スハフ14-500_白帯_R.png"
+          }
         },
         {
           "vehicleId": "vp_t08n9bk7y4sf",
           "flipped": false,
           "attribute": "単",
           "productCode": "98781",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "オハ14",
+            "v": "500",
+            "l": "白帯",
+            "e": "14系",
+            "p": "01_JR 国鉄/01_客車/14系/オハ14-500_白帯.png"
+          }
         },
         {
-          "vehicleId": "vp_hihfovh9kxb",
+          "vehicleId": "vp_1f36im01di8oli",
           "flipped": false,
           "attribute": "単",
           "productCode": "10-1893",
-          "setGroupId": ""
+          "setGroupId": "",
+          "vref": {
+            "m": "マイテ49",
+            "l": "ぶどう色2号",
+            "s": "L",
+            "e": "スハ32系二重屋根",
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/マイテ49_ぶどう色2号_L.png"
+          }
         }
       ],
       "reversed": false,
@@ -5267,7 +5318,7 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_1qqkg8m17cc60e",
+          "vehicleId": "vp_173bi5owvacn8",
           "flipped": false,
           "attribute": "",
           "productCode": "",
@@ -5367,7 +5418,7 @@
           }
         },
         {
-          "vehicleId": "vp_n06jc01oy5t6a",
+          "vehicleId": "vp_3s2ygtt868kj",
           "flipped": false,
           "attribute": "単",
           "productCode": "9529",
@@ -5411,7 +5462,7 @@
           }
         },
         {
-          "vehicleId": "vp_n06jc01oy5t6a",
+          "vehicleId": "vp_3s2ygtt868kj",
           "flipped": false,
           "attribute": "単",
           "productCode": "9531",
@@ -6922,91 +6973,172 @@
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1546",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "スハフ42",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハフ42_青.png"
+          }
         },
         {
           "vehicleId": "vp_qfegzmdlei5u",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1546",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "スハ43",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハ43_青.png"
+          }
         },
         {
           "vehicleId": "vp_p9syda8dh10s",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1546",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "オロ61",
+            "l": "青．帯入り",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/オロ61_青．帯入り_L.png"
+          }
         },
         {
           "vehicleId": "vp_p9syda8dh10s",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "オロ61",
+            "l": "青．帯入り",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/オロ61_青．帯入り_L.png"
+          }
         },
         {
-          "vehicleId": "vp_1w5n89o1yd5bzw",
+          "vehicleId": "vp_155lccr68gx1l",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1546",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "スシ48",
+            "l": "ぶどう色2号",
+            "s": "L",
+            "e": "スハ32系二重屋根",
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ48_ぶどう色2号_L.png"
+          }
         },
         {
           "vehicleId": "vp_2df9hi1mq2kdm",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "ナハ11",
+            "l": "青",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハ11_青.png"
+          }
         },
         {
           "vehicleId": "vp_2df9hi1mq2kdm",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "ナハ11",
+            "l": "青",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハ11_青.png"
+          }
         },
         {
           "vehicleId": "vp_qfegzmdlei5u",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "スハ43",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハ43_青.png"
+          }
         },
         {
           "vehicleId": "vp_qfegzmdlei5u",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1546",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "スハ43",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハ43_青.png"
+          }
         },
         {
           "vehicleId": "vp_qfegzmdlei5u",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "10-1546",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "スハ43",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハ43_青.png"
+          }
         },
         {
           "vehicleId": "vp_1s80piu1g60ttw",
           "flipped": true,
           "attribute": "基Set",
           "productCode": "10-1546",
-          "setGroupId": "A"
+          "setGroupId": "A",
+          "vref": {
+            "m": "スハフ42",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハフ42_青.png"
+          }
         },
         {
           "vehicleId": "vp_1i4k0s5v4cogv",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハ47",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/オハ47_青.png"
+          }
         },
         {
           "vehicleId": "vp_1pd10v617qqhtg",
           "flipped": true,
           "attribute": "増Set",
           "productCode": "10-1547",
-          "setGroupId": "B"
+          "setGroupId": "B",
+          "vref": {
+            "m": "オハフ45",
+            "l": "青",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/オハフ45_青.png"
+          }
         }
       ],
       "reversed": false,
@@ -7863,7 +7995,7 @@
       ],
       "cars": [
         {
-          "vehicleId": "vp_n06jc01oy5t6a",
+          "vehicleId": "vp_3s2ygtt868kj",
           "flipped": false,
           "attribute": "基Set",
           "productCode": "98835",
@@ -7933,7 +8065,7 @@
           "setGroupId": "A"
         },
         {
-          "vehicleId": "vp_n06jc01oy5t6a",
+          "vehicleId": "vp_3s2ygtt868kj",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "98836",
@@ -9927,7 +10059,7 @@
           }
         },
         {
-          "vehicleId": "vp_mq8fsu1pag6zw",
+          "vehicleId": "vp_3zdjdvt2wiv1",
           "flipped": false,
           "attribute": "",
           "productCode": "",
@@ -10232,7 +10364,7 @@
           "setGroupId": "A"
         },
         {
-          "vehicleId": "vp_1nsmb301aq825g",
+          "vehicleId": "vp_gmunpp1igacsv",
           "flipped": false,
           "attribute": "単",
           "productCode": "98102",
@@ -13555,7 +13687,7 @@
           }
         },
         {
-          "vehicleId": "vp_11jgn4p1xg9mh3",
+          "vehicleId": "vp_19odisk1l9ioh0",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1148",
@@ -13731,7 +13863,7 @@
           }
         },
         {
-          "vehicleId": "vp_11jgn4p1xg9mh3",
+          "vehicleId": "vp_19odisk1l9ioh0",
           "flipped": false,
           "attribute": "増Set",
           "productCode": "10-1148",
@@ -14409,5 +14541,5 @@
       "visibility": "public"
     }
   },
-  "savedAt": "2026-11-05T16:31:17.901Z"
+  "savedAt": "2026-11-08T08:50:38.636Z"
 }

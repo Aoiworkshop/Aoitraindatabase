@@ -4128,10 +4128,40 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   }
   let currentPickerVehicleId = null;
 
+  // ---------- 出血(ブリード) ----------
+  // PPTの図形の外枠線は「中央揃え」で描かれるので、38mmの図形なら
+  // 線の外側半分は38mmの外にある。ちょうどの寸法で切ると線が半分だけ
+  // 切り落とされ、端の線が細く見えたり曲線が途切れて見える。
+  // 母檔の実測:最も太い線は1.5pt(=0.529mm)、片側のはみ出しは0.265mm、
+  // 300dpiで約3px。これを拾うために左・右・上へ BLEED_CM だけ余分に切る。
+  // 下はつけない(裁切帯の下端は車名の文字枠の下辺で、図より下にある)。
+  //
+  // この値が影響するのは「画像ファイルの寸法」と「画面に描く寸法」だけ。
+  // データベースの車体幅(3.8 などのモジュール値)は変えないので、
+  // ファイル名・編成・品番はいっさい影響を受けない。
+  //
+  // 横:増えた分は車両間のすき間から借りるので、ピッチは変わらない。
+  //   画像幅   = 車体幅 + 2×BLEED_CM
+  //   すき間   = CAR_GAP_CM − 2×BLEED_CM
+  //   → ピッチ = 車体幅 + CAR_GAP_CM (変わらない)
+  // 縦:上へ伸ばし、下端(=車体の下辺)は動かさない。
+  //   画像高さ = CAR_BODY_CM + BLEED_CM
+  //   車体の下辺の位置も、その下に並ぶ車番・貨物の位置も変わらない。
+  const BLEED_CM = 0.03;        // 片側 0.3mm
+  const CAR_GAP_CM = 0.2;       // 母檔上の車両間すき間 2mm
+  const CAR_BODY_CM = 3.0;      // 車体の高さ(出血を含まない)
+
   function carWidthCm(v){
     const n = parseFloat(v && v.widthCm);
     return (n && n > 0) ? n : 3.8;
   }
+  // 画面に描くときの幅(=画像ファイルの中身の幅)。
+  // 車体幅そのものが必要なときは carWidthCm() を使う。
+  function carImageCm(v){ return carWidthCm(v) + 2 * BLEED_CM; }
+  // 出血のぶんだけ詰めたすき間。これでピッチが元のままになる。
+  function carGapCm(){ return Math.max(0, CAR_GAP_CM - 2 * BLEED_CM); }
+  // 画像の高さ。上だけ出血があるので車体の高さ＋1×BLEED_CM。
+  function carImageHCm(){ return CAR_BODY_CM + BLEED_CM; }
 
   // ---------- 貨櫃(平車裝載) ----------
   // 平車只有這三種寬度,裝載區的位置與寬度固定,直接寫死。
@@ -4154,9 +4184,13 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
   function deckOf(v){
     if(!v || !v.isFlatcar) return null;
     const base = DECK_BY_WIDTH[String(carWidthCm(v))] || { inset: 0.2, deck: carWidthCm(v) - 0.2 };
+    // inset は「画像の左端から積載区の左端まで」なので、
+    // 画像が左へ BLEED_CM 広がったぶんだけ右へずらす。
+    // deck(積載区の幅)は車体側の寸法なので出血とは無関係。
+    const inset = base.inset + BLEED_CM;
     return isRebuiltFlatcar(v)
-      ? { inset: base.inset, deck: base.deck, slotCount: 4, rebuilt: true }
-      : { inset: base.inset, deck: base.deck, slotCount: CONTAINER_SLOTS, rebuilt: false };
+      ? { inset, deck: base.deck, slotCount: 4, rebuilt: true }
+      : { inset, deck: base.deck, slotCount: CONTAINER_SLOTS, rebuilt: false };
   }
   // 這輛車是不是貨櫃,以及它幾英尺寬
   function containerFtOf(v){
@@ -8226,12 +8260,14 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       const ri = realIndex(idx);          // 對應到 state.cars 裡真正的位置
       const v = vehiclesById[entry.vehicleId];
       const slot = document.createElement("div");
-      const previewW = Math.round(carWidthCm(v) * 20); // 預覽比例:20px/公分(3.8cm車廂=76px,跟原本一致)
+      // 預覽比例 20px/公分。出血を含めた画像の幅で確保しないと、
+      // 38.6mm の画像を 38mm の枠に押し込んで横に潰れてしまう。
+      const previewW = Math.round(carImageCm(v) * 20);
       slot.className = "car-slot"; slot.style.width = previewW + "px";
       if(!v){
         // 車輛已從資料庫刪除,但這一節仍然佔著編成的位置,
         // 所以照樣給它完整的操作按鈕(尤其是刪除),不然會變成刪不掉的殘留欄位
-        slot.style.width = "76px";
+        slot.style.width = Math.round((3.8 + 2 * BLEED_CM) * 20) + "px";
         attachCarToolbar(slot, ri, idx, true);
 
         const gone = document.createElement("div");
@@ -8284,12 +8320,12 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       const loaded = layoutContainers(entry, v);
       if(loaded.length){
         imgBox.style.position = "relative";
-        const carImgH = 3.0 * 20;
+        const carImgH = carImageHCm() * 20;
         loaded.forEach(item => {
           const ci = document.createElement("img");
           ci.src = vehicleImgSrc(item.v);
           ci.title = vehicleLabel(item.v);
-          const cx = dc.flipped ? mirrorContainerX(item.x, item.w, carWidthCm(v)) : item.x;
+          const cx = dc.flipped ? mirrorContainerX(item.x, item.w, carImageCm(v)) : item.x;
           ci.style.cssText = "position:absolute;display:block;pointer-events:none;" +
             `left:${cx * 20}px;` +
             `bottom:${CONTAINER_BOTTOM_CM * 20}px;` +
@@ -8948,7 +8984,11 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     // 如果要退回原本的畫質,把下面這行改回 const scale = 40; 就好,其他程式碼不用動。
     const scale = 300 / 2.54;
     const K = scale / 40; // 等比例縮放係數,讓下面幾個原本寫死的像素值(邊框粗細、留白間距)跟著解析度一起放大
-    const carH = 3.0 * scale, gap = 0.2 * scale;
+    // carH は「車体の高さ」。画像は上に出血があるぶんだけ高い。
+    // 下端(carY + carH)は動かさないので、車番・貨櫃・貨物の位置は
+    // いっさい変わらない ―― 画像だけが上へ BLEED_CM 伸びる。
+    const carH = CAR_BODY_CM * scale, gap = carGapCm() * scale;
+    const bleedPx = BLEED_CM * scale;
     // 標題區高度:原本 2 公分是「標題 + 起訖站/愛稱」共用的。
     // 如果起訖站與愛稱都沒填,那一行不會畫任何東西,就把高度縮到 1.2 公分,
     // 避免圖片上方留下一段尷尬的空白。所有座標都是從 topH 推算,所以不用改其他公式。
@@ -8972,7 +9012,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
 
     // 依每輛車實際寬度(公分)算出每節車廂的實際寬度與左邊界(不是固定值 × 編號那種算法),
     // 這樣才能容納「二軸貨車」這種跟一般車廂寬度不同的車輛
-    const carWidthsPx = cars.map(c => carWidthCm(c.v) * scale);
+    const carWidthsPx = cars.map(c => carImageCm(c.v) * scale);
     const carLefts = [];
     {
       let cx0 = margin;
@@ -9202,15 +9242,15 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
           ctx.save();
           ctx.translate(cx + w, 0);
           ctx.scale(-1, 1);
-          ctx.drawImage(imgs[idx], 0, carY, w, carH);
+          ctx.drawImage(imgs[idx], 0, carY - bleedPx, w, carH + bleedPx);
           ctx.restore();
         }else{
-          ctx.drawImage(imgs[idx], cx, carY, w, carH);
+          ctx.drawImage(imgs[idx], cx, carY - bleedPx, w, carH + bleedPx);
         }
         // 平車上的貨櫃:疊在車輛圖片上面。
         // 車輛翻轉時位置左右對調(視覺順序跟著相反),但貨櫃圖案本身不鏡射。
         (containerImgs[idx] || []).forEach(({ item, img }) => {
-          const ix = c.flipped ? mirrorContainerX(item.x, item.w, carWidthCm(c.v)) : item.x;
+          const ix = c.flipped ? mirrorContainerX(item.x, item.w, carImageCm(c.v)) : item.x;
           ctx.drawImage(img,
             cx + ix * scale,
             carY + carH - (CONTAINER_BOTTOM_CM + CONTAINER_HEIGHT_CM) * scale,
@@ -9711,10 +9751,10 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
     if(!list.length) return null;
 
     const S = STRIP_PX_PER_CM;
-    const carH = Math.round(3.0 * S);
+    const carH = Math.round(carImageHCm() * S);
     const strip = document.createElement("div");
     strip.className = "fc-strip";
-    strip.style.gap = Math.round(0.2 * S) + "px";
+    strip.style.gap = Math.round(carGapCm() * S) + "px";
 
     list.forEach(dc => {
       const v = vehiclesById[dc.entry.vehicleId];
@@ -9722,7 +9762,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
         // 車輛已從資料庫刪除:留一個灰色空格,一眼看出這個編成缺車
         const gone = document.createElement("div");
         gone.className = "fc-strip-gone";
-        gone.style.width = Math.round(3.8 * S) + "px";
+        gone.style.width = Math.round((3.8 + 2 * BLEED_CM) * S) + "px";
         gone.style.height = carH + "px";
         gone.title = "車両がデータベースから削除されています";
         strip.appendChild(gone);
@@ -9734,7 +9774,7 @@ window.UI_ZH_TABLE = {}; Object.assign(window.UI_ZH_TABLE, {
       img.title = vehicleLabel(v) + (v.liveryName ? `（${v.liveryName}）` : "");
       img.loading = "lazy";      // 捲到才下載,編成很多時也不會一次抓幾百張
       img.decoding = "async";
-      img.style.width = Math.round(carWidthCm(v) * S) + "px";
+      img.style.width = Math.round(carImageCm(v) * S) + "px";
       img.style.height = carH + "px";
       if(dc.flipped) img.style.transform = "scaleX(-1)";
       strip.appendChild(img);
