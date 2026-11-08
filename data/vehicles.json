@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-08T09:21:23.511Z",
+  "exportedAt": "2026-11-08T17:21:11.879Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -29536,24 +29536,6 @@
       "nameSyncedAs": "オハ12-300_SLばんえつ物語.png"
     },
     {
-      "id": "vp_16nznjmu8zad6",
-      "sourcePath": "01_JR 国鉄/01_客車/12系/オハテ12_SL大樹.png",
-      "series": "12系",
-      "modelCode": "オハテ12",
-      "variantCode": "",
-      "liveryName": "SL大樹",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 12系"
-      ],
-      "nameSyncedAs": "オハテ12_SL大樹.png"
-    },
-    {
       "id": "vp_19h6fhm8135pe",
       "sourcePath": "01_JR 国鉄/01_客車/12系/オロ12-700_ユーロライナー．個室車.png",
       "series": "12系",
@@ -29653,24 +29635,6 @@
       "nameSyncedAs": "スハフ12_101．オコジョ展望車.png"
     },
     {
-      "id": "vp_1o63kqc4tp7mw",
-      "sourcePath": "01_JR 国鉄/01_客車/12系/スハフ14_SL大樹.png",
-      "series": "12系",
-      "modelCode": "スハフ14",
-      "variantCode": "",
-      "liveryName": "SL大樹",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 12系"
-      ],
-      "nameSyncedAs": "スハフ14_SL大樹.png"
-    },
-    {
       "id": "vp_n8gja09yemlq",
       "sourcePath": "01_JR 国鉄/01_客車/12系/マニ44_ユーロライナー色.png",
       "series": "12系",
@@ -29687,24 +29651,6 @@
         "01_JR 国鉄 / 01_客車 / 12系"
       ],
       "nameSyncedAs": "マニ44_ユーロライナー色.png"
-    },
-    {
-      "id": "vp_4e79at4jjgnn",
-      "sourcePath": "01_JR 国鉄/01_客車/12系/スハフ15_SL大樹.png",
-      "series": "12系",
-      "modelCode": "スハフ15",
-      "variantCode": "",
-      "liveryName": "SL大樹",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "01_JR 国鉄 / 01_客車 / 12系"
-      ],
-      "nameSyncedAs": "スハフ15_SL大樹.png"
     },
     {
       "id": "vp_lfwiz31krqspp",
@@ -58581,168 +58527,6 @@
       "nameSyncedAs": "9600_北海道型.png"
     },
     {
-      "id": "vp_1rre66j1vwd031",
-      "sourcePath": "03_機関車/01_蒸気機関車/C11/C11_26.png",
-      "series": "C11",
-      "modelCode": "C11",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 2.6,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C11"
-      ],
-      "nameSyncedAs": "C11_26.png"
-    },
-    {
-      "id": "vp_1bms7d74gz29d",
-      "sourcePath": "03_機関車/01_蒸気機関車/C12/C12_26.png",
-      "series": "C12",
-      "modelCode": "C12",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 2.6,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C12"
-      ],
-      "nameSyncedAs": "C12_26.png"
-    },
-    {
-      "id": "vp_e46e7kn6jfos",
-      "sourcePath": "03_機関車/01_蒸気機関車/C55/C55.png",
-      "series": "C55",
-      "modelCode": "C55",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C55"
-      ],
-      "nameSyncedAs": "C55.png"
-    },
-    {
-      "id": "vp_34y5d61o5qwpa",
-      "sourcePath": "03_機関車/01_蒸気機関車/C56/C56_36.png",
-      "series": "C56",
-      "modelCode": "C56",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.6,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C56"
-      ],
-      "nameSyncedAs": "C56_36.png"
-    },
-    {
-      "id": "vp_1j9dsz4u7ba98",
-      "sourcePath": "03_機関車/01_蒸気機関車/C57/C57.png",
-      "series": "C57",
-      "modelCode": "C57",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C57"
-      ],
-      "nameSyncedAs": "C57.png"
-    },
-    {
-      "id": "vp_1wvn2o81gd067g",
-      "sourcePath": "03_機関車/01_蒸気機関車/C58/C58239.png",
-      "series": "C58",
-      "modelCode": "C58239",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C58"
-      ],
-      "nameSyncedAs": "C58239.png"
-    },
-    {
-      "id": "vp_1n1lxtc1v4xlbg",
-      "sourcePath": "03_機関車/01_蒸気機関車/C59/C59.png",
-      "series": "C59",
-      "modelCode": "C59",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C59"
-      ],
-      "nameSyncedAs": "C59.png"
-    },
-    {
-      "id": "vp_1b5az7410houaw",
-      "sourcePath": "03_機関車/01_蒸気機関車/C61/C61.png",
-      "series": "C61",
-      "modelCode": "C61",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C61"
-      ],
-      "nameSyncedAs": "C61.png"
-    },
-    {
-      "id": "vp_s3uxyobbyfdc",
-      "sourcePath": "03_機関車/01_蒸気機関車/C62/C62.png",
-      "series": "C62",
-      "modelCode": "C62",
-      "variantCode": "",
-      "liveryName": "",
-      "side": "",
-      "company": "",
-      "widthCm": 3.8,
-      "note": "",
-      "defaultAttribute": "",
-      "defaultProductCode": "",
-      "categories": [
-        "03_機関車 / 01_蒸気機関車 / C62"
-      ],
-      "nameSyncedAs": "C62.png"
-    },
-    {
       "id": "vp_6gy9uxyv5gg7",
       "sourcePath": "03_機関車/02_ディーゼル機関車/DD13/DD13_36.png",
       "series": "DD13",
@@ -69574,10 +69358,10 @@
       "nameSyncedAs": "マイロネフ38_ぶどう色2号_R.png"
     },
     {
-      "id": "vp_1uofjgc64wtc6",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29 (ぶどう色2号))_L.png",
+      "id": "vp_1jkq4dx1ex0wb9",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29 (ぶどう色2号)_L.png",
       "series": "スハ32系二重屋根",
-      "modelCode": "マシ29 (ぶどう色2号))",
+      "modelCode": "マシ29 (ぶどう色2号)",
       "variantCode": "",
       "liveryName": "",
       "side": "L",
@@ -69589,7 +69373,7 @@
       "categories": [
         "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
       ],
-      "nameSyncedAs": "マシ29 (ぶどう色2号))_L.png"
+      "nameSyncedAs": "マシ29 (ぶどう色2号)_L.png"
     },
     {
       "id": "vp_n9e6s71qpp8q1",
@@ -69610,13 +69394,13 @@
       "nameSyncedAs": "マシ29_青_L.png"
     },
     {
-      "id": "vp_stk89bbssklp",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29 (青大将色) (ぶどう色2号)).png",
+      "id": "vp_1k2myaz1fbo9ij",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29 (ぶどう色2号)_R.png",
       "series": "スハ32系二重屋根",
-      "modelCode": "マシ29 (青大将色) (ぶどう色2号))",
+      "modelCode": "マシ29 (ぶどう色2号)",
       "variantCode": "",
       "liveryName": "",
-      "side": "",
+      "side": "R",
       "company": "",
       "widthCm": 3.8,
       "note": "",
@@ -69625,7 +69409,7 @@
       "categories": [
         "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
       ],
-      "nameSyncedAs": "マシ29 (青大将色) (ぶどう色2号)).png"
+      "nameSyncedAs": "マシ29 (ぶどう色2号)_R.png"
     },
     {
       "id": "vp_ntyjbd1q83tnb",
@@ -75084,6 +74868,438 @@
         "07_海外車輌 / 台灣 / 機関車 / 電気機関車 / E500"
       ],
       "nameSyncedAs": "E500.png"
+    },
+    {
+      "id": "vp_1jqdbfk1uomgcu",
+      "sourcePath": "03_機関車/01_蒸気機関車/8620/8620_デフなし.png",
+      "series": "8620",
+      "modelCode": "8620",
+      "variantCode": "",
+      "liveryName": "デフなし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / 8620"
+      ],
+      "nameSyncedAs": "8620_デフなし.png"
+    },
+    {
+      "id": "vp_es3j1579b6yb",
+      "sourcePath": "03_機関車/01_蒸気機関車/8620/8620_門鉄デフ.png",
+      "series": "8620",
+      "modelCode": "8620",
+      "variantCode": "",
+      "liveryName": "門鉄デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / 8620"
+      ],
+      "nameSyncedAs": "8620_門鉄デフ.png"
+    },
+    {
+      "id": "vp_15xp27v92grgl",
+      "sourcePath": "03_機関車/01_蒸気機関車/8620/8620_ワグナー式デフ.png",
+      "series": "8620",
+      "modelCode": "8620",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / 8620"
+      ],
+      "nameSyncedAs": "8620_ワグナー式デフ.png"
+    },
+    {
+      "id": "vp_1bbr83k1eugcgo",
+      "sourcePath": "03_機関車/01_蒸気機関車/C11/C11_ワグナー式デフ_26.png",
+      "series": "C11",
+      "modelCode": "C11",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 2.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C11"
+      ],
+      "nameSyncedAs": "C11_ワグナー式デフ_26.png"
+    },
+    {
+      "id": "vp_1nwt9ckjs91l6",
+      "sourcePath": "03_機関車/01_蒸気機関車/C11/C11_長工デフ_26.png",
+      "series": "C11",
+      "modelCode": "C11",
+      "variantCode": "",
+      "liveryName": "長工デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 2.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C11"
+      ],
+      "nameSyncedAs": "C11_長工デフ_26.png"
+    },
+    {
+      "id": "vp_d48faa1huzqda",
+      "sourcePath": "03_機関車/01_蒸気機関車/C11/C11_門鉄デフ_26.png",
+      "series": "C11",
+      "modelCode": "C11",
+      "variantCode": "",
+      "liveryName": "門鉄デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 2.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C11"
+      ],
+      "nameSyncedAs": "C11_門鉄デフ_26.png"
+    },
+    {
+      "id": "vp_n4jlkr10ndghd",
+      "sourcePath": "03_機関車/01_蒸気機関車/C12/C12_デフなし_26.png",
+      "series": "C12",
+      "modelCode": "C12",
+      "variantCode": "",
+      "liveryName": "デフなし",
+      "side": "",
+      "company": "",
+      "widthCm": 2.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C12"
+      ],
+      "nameSyncedAs": "C12_デフなし_26.png"
+    },
+    {
+      "id": "vp_17abww01sp4vzw",
+      "sourcePath": "03_機関車/01_蒸気機関車/C12/C12_ワグナー式デフ_26.png",
+      "series": "C12",
+      "modelCode": "C12",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 2.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C12"
+      ],
+      "nameSyncedAs": "C12_ワグナー式デフ_26.png"
+    },
+    {
+      "id": "vp_1657d34dgd7hk",
+      "sourcePath": "03_機関車/01_蒸気機関車/C50/C50_デフなし.png",
+      "series": "C50",
+      "modelCode": "C50",
+      "variantCode": "",
+      "liveryName": "デフなし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C50"
+      ],
+      "nameSyncedAs": "C50_デフなし.png"
+    },
+    {
+      "id": "vp_1nllcu81pqyobm",
+      "sourcePath": "03_機関車/01_蒸気機関車/C50/C50_ヴィッテ式デフ.png",
+      "series": "C50",
+      "modelCode": "C50",
+      "variantCode": "",
+      "liveryName": "ヴィッテ式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C50"
+      ],
+      "nameSyncedAs": "C50_ヴィッテ式デフ.png"
+    },
+    {
+      "id": "vp_1y7m1vkrt4m5g",
+      "sourcePath": "03_機関車/01_蒸気機関車/C51/C51_デフなし.png",
+      "series": "C51",
+      "modelCode": "C51",
+      "variantCode": "",
+      "liveryName": "デフなし",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C51"
+      ],
+      "nameSyncedAs": "C51_デフなし.png"
+    },
+    {
+      "id": "vp_c7hgez18l9md7",
+      "sourcePath": "03_機関車/01_蒸気機関車/C51/C51_ワグナー式デフ.png",
+      "series": "C51",
+      "modelCode": "C51",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C51"
+      ],
+      "nameSyncedAs": "C51_ワグナー式デフ.png"
+    },
+    {
+      "id": "vp_1ml41cr68ien3",
+      "sourcePath": "03_機関車/01_蒸気機関車/C52/C52_ワグナー式デフ.png",
+      "series": "C52",
+      "modelCode": "C52",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C52"
+      ],
+      "nameSyncedAs": "C52_ワグナー式デフ.png"
+    },
+    {
+      "id": "vp_dd2x97uh7aej",
+      "sourcePath": "03_機関車/01_蒸気機関車/C53/C53_ワグナー式デフ.png",
+      "series": "C53",
+      "modelCode": "C53",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C53"
+      ],
+      "nameSyncedAs": "C53_ワグナー式デフ.png"
+    },
+    {
+      "id": "vp_126b9og15obgye",
+      "sourcePath": "03_機関車/01_蒸気機関車/C53/C53_ヴィッテ式デフ.png",
+      "series": "C53",
+      "modelCode": "C53",
+      "variantCode": "",
+      "liveryName": "ヴィッテ式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C53"
+      ],
+      "nameSyncedAs": "C53_ヴィッテ式デフ.png"
+    },
+    {
+      "id": "vp_1bphs7zzjjqsx",
+      "sourcePath": "03_機関車/01_蒸気機関車/C53/C53_流線型.png",
+      "series": "C53",
+      "modelCode": "C53",
+      "variantCode": "",
+      "liveryName": "流線型",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C53"
+      ],
+      "nameSyncedAs": "C53_流線型.png"
+    },
+    {
+      "id": "vp_kjy3x71cqp73",
+      "sourcePath": "03_機関車/01_蒸気機関車/C54/C54_ワグナー式デフ.png",
+      "series": "C54",
+      "modelCode": "C54",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C54"
+      ],
+      "nameSyncedAs": "C54_ワグナー式デフ.png"
+    },
+    {
+      "id": "vp_136s5s012vbb7q",
+      "sourcePath": "03_機関車/01_蒸気機関車/C55/C55_ヴィッテ式デフ.png",
+      "series": "C55",
+      "modelCode": "C55",
+      "variantCode": "",
+      "liveryName": "ヴィッテ式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C55"
+      ],
+      "nameSyncedAs": "C55_ヴィッテ式デフ.png"
+    },
+    {
+      "id": "vp_1q3bxi9m368in",
+      "sourcePath": "03_機関車/01_蒸気機関車/C56/C56_ワグナー式デフ_36.png",
+      "series": "C56",
+      "modelCode": "C56",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.6,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C56"
+      ],
+      "nameSyncedAs": "C56_ワグナー式デフ_36.png"
+    },
+    {
+      "id": "vp_1b51vbv1x3rd2z",
+      "sourcePath": "03_機関車/01_蒸気機関車/C57/C57_ワグナー式デフ.png",
+      "series": "C57",
+      "modelCode": "C57",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C57"
+      ],
+      "nameSyncedAs": "C57_ワグナー式デフ.png"
+    },
+    {
+      "id": "vp_4fyv6mqsv9go",
+      "sourcePath": "03_機関車/01_蒸気機関車/C58/C58_239号機．ヴィッテ式デフ.png",
+      "series": "C58",
+      "modelCode": "C58",
+      "variantCode": "",
+      "liveryName": "239号機．ヴィッテ式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C58"
+      ],
+      "nameSyncedAs": "C58_239号機．ヴィッテ式デフ.png"
+    },
+    {
+      "id": "vp_1vv5qvv7apxmj",
+      "sourcePath": "03_機関車/01_蒸気機関車/C59/C59_ワグナー式デフ.png",
+      "series": "C59",
+      "modelCode": "C59",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C59"
+      ],
+      "nameSyncedAs": "C59_ワグナー式デフ.png"
+    },
+    {
+      "id": "vp_o6154izheo32",
+      "sourcePath": "03_機関車/01_蒸気機関車/C61/C61_ヴィッテ式.png",
+      "series": "C61",
+      "modelCode": "C61",
+      "variantCode": "",
+      "liveryName": "ヴィッテ式",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C61"
+      ],
+      "nameSyncedAs": "C61_ヴィッテ式.png"
+    },
+    {
+      "id": "vp_za9gt7dnl4an",
+      "sourcePath": "03_機関車/01_蒸気機関車/C62/C62_ワグナー式デフ.png",
+      "series": "C62",
+      "modelCode": "C62",
+      "variantCode": "",
+      "liveryName": "ワグナー式デフ",
+      "side": "",
+      "company": "",
+      "widthCm": 3.8,
+      "note": "",
+      "defaultAttribute": "",
+      "defaultProductCode": "",
+      "categories": [
+        "03_機関車 / 01_蒸気機関車 / C62"
+      ],
+      "nameSyncedAs": "C62_ワグナー式デフ.png"
     }
   ]
 }
