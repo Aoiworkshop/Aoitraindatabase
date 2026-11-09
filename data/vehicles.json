@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-09T16:02:07.356Z",
+  "exportedAt": "2026-11-09T16:09:49.177Z",
   "vehicles": [
     {
       "id": "vp_kjl6nhbvikzd",
@@ -69358,12 +69358,12 @@
       "nameSyncedAs": "マイロネフ38_ぶどう色2号_R.png"
     },
     {
-      "id": "vp_1jkq4dx1ex0wb9",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29 (ぶどう色2号)_L.png",
+      "id": "vp_uhcjnv2y26xb",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29_ぶどう色2号_L.png",
       "series": "スハ32系二重屋根",
-      "modelCode": "マシ29 (ぶどう色2号)",
+      "modelCode": "マシ29",
       "variantCode": "",
-      "liveryName": "",
+      "liveryName": "ぶどう色2号",
       "side": "L",
       "company": "",
       "widthCm": 3.8,
@@ -69373,7 +69373,7 @@
       "categories": [
         "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
       ],
-      "nameSyncedAs": "マシ29 (ぶどう色2号)_L.png"
+      "nameSyncedAs": "マシ29_ぶどう色2号_L.png"
     },
     {
       "id": "vp_n9e6s71qpp8q1",
@@ -69394,12 +69394,12 @@
       "nameSyncedAs": "マシ29_青_L.png"
     },
     {
-      "id": "vp_1k2myaz1fbo9ij",
-      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29 (ぶどう色2号)_R.png",
+      "id": "vp_tzfpqt2o4369",
+      "sourcePath": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29_ぶどう色2号_R.png",
       "series": "スハ32系二重屋根",
-      "modelCode": "マシ29 (ぶどう色2号)",
+      "modelCode": "マシ29",
       "variantCode": "",
-      "liveryName": "",
+      "liveryName": "ぶどう色2号",
       "side": "R",
       "company": "",
       "widthCm": 3.8,
@@ -69409,7 +69409,7 @@
       "categories": [
         "01_JR 国鉄 / 01_客車 / スハ32系二重屋根"
       ],
-      "nameSyncedAs": "マシ29 (ぶどう色2号)_R.png"
+      "nameSyncedAs": "マシ29_ぶどう色2号_R.png"
     },
     {
       "id": "vp_ntyjbd1q83tnb",

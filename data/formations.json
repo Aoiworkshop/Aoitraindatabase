@@ -661,6 +661,7 @@
       "titleNote": "",
       "visibility": "public",
       "carModelsUsed": [
+        "EF81-0",
         "オシ25-900",
         "オハフ25-900",
         "オロネ25-900",
@@ -668,7 +669,7 @@
         "オハ14-500",
         "マイテ49"
       ],
-      "updatedAt": "2026-11-07T14:37:03.820Z"
+      "updatedAt": "2026-11-09T16:20:37.402Z"
     },
     {
       "id": "f_1789549406585",
@@ -2853,12 +2854,13 @@
       "titleNote": "",
       "visibility": "public",
       "carModelsUsed": [
+        "EF30",
         "マニ37",
         "スハフ14",
         "オハ14",
         "オハフ15"
       ],
-      "updatedAt": "2026-10-30T08:35:03.319Z"
+      "updatedAt": "2026-11-09T16:14:42.760Z"
     },
     {
       "id": "f_1793851708155",
@@ -2891,13 +2893,14 @@
       "titleNote": "",
       "visibility": "public",
       "carModelsUsed": [
+        "EF58",
         "スハニ35",
         "スハ44",
         "ナロ10",
         "オシ17",
         "マイテ39"
       ],
-      "updatedAt": "2026-11-05T16:19:54.180Z"
+      "updatedAt": "2026-11-09T16:14:26.056Z"
     },
     {
       "id": "f_1793863761522",
@@ -2930,6 +2933,7 @@
       "titleNote": "牽引機はEF53（他にもC53も牽引）",
       "visibility": "public",
       "carModelsUsed": [
+        "C53",
         "スニ36650",
         "スハネ30100",
         "スハ33000",
@@ -2940,7 +2944,7 @@
         "マイネ37100",
         "スイテ37000"
       ],
-      "updatedAt": "2026-11-05T10:02:22.022Z"
+      "updatedAt": "2026-11-09T16:14:14.306Z"
     },
     {
       "id": "f_1793873135324",
@@ -2973,6 +2977,7 @@
       "titleNote": "牽引機はC53なと",
       "visibility": "private",
       "carModelsUsed": [
+        "C53",
         "スニ36500",
         "マイネ37100",
         "マロネ37300",
@@ -2981,7 +2986,7 @@
         "オハ32000",
         "オハフ34000"
       ],
-      "updatedAt": "2026-11-05T10:05:52.981Z"
+      "updatedAt": "2026-11-09T16:13:35.214Z"
     },
     {
       "id": "f_1793873240858",
@@ -3053,12 +3058,13 @@
       "titleNote": "牽引機はC53",
       "visibility": "public",
       "carModelsUsed": [
+        "C53",
         "オハニ35500",
         "オロ30600",
         "オハ32000",
         "オハフ34000"
       ],
-      "updatedAt": "2026-11-05T10:09:26.718Z"
+      "updatedAt": "2026-11-09T16:13:24.368Z"
     },
     {
       "id": "f_1793873408301",
@@ -3131,11 +3137,13 @@
       "titleNote": "牽引機はC55(後補機逆向きC11)",
       "visibility": "private",
       "carModelsUsed": [
+        "C55",
         "オハニ30",
         "オハフ30",
-        "オハ31"
+        "オハ31",
+        "C11"
       ],
-      "updatedAt": "2026-11-05T10:13:28.952Z"
+      "updatedAt": "2026-11-09T16:12:55.274Z"
     },
     {
       "id": "f_1793873769618",
@@ -3168,6 +3176,7 @@
       "titleNote": "",
       "visibility": "public",
       "carModelsUsed": [
+        "C53",
         "スユ36000",
         "スニ36500",
         "マイネフ37230",
@@ -3178,7 +3187,7 @@
         "マロネ37300",
         "マロネフ37560"
       ],
-      "updatedAt": "2026-11-05T10:16:35.376Z"
+      "updatedAt": "2026-11-09T16:12:10.867Z"
     },
     {
       "id": "f_1793887733176",
@@ -3211,6 +3220,7 @@
       "titleNote": "牽引機はC51",
       "visibility": "public",
       "carModelsUsed": [
+        "C51",
         "スハニ32",
         "スハ32",
         "スシ28",
@@ -3218,7 +3228,7 @@
         "スロ34",
         "マイネフ29"
       ],
-      "updatedAt": "2026-11-05T15:10:17.423Z"
+      "updatedAt": "2026-11-09T16:11:01.914Z"
     },
     {
       "id": "f_1793891526854",
@@ -3467,6 +3477,93 @@
         "KTR8000"
       ],
       "updatedAt": "2026-11-05T16:31:17.884Z"
+    },
+    {
+      "id": "f_1794240587884",
+      "name": "●急行「筑紫」(1957年10月，42列車) ※牽引機はEF58(35年7月：EF58．C59．EF10)",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1957年10月",
+      "trainInfo": "42列車",
+      "segments": [
+        {
+          "nickname": "筑紫",
+          "from": "東京",
+          "fromPos": "1",
+          "to": "博多",
+          "toPos": "11"
+        },
+        {
+          "nickname": "",
+          "from": "東京",
+          "fromPos": "12",
+          "to": "岡山",
+          "toPos": "13"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "牽引機はEF58(35年7月：EF58．C59．EF10)",
+      "visibility": "public",
+      "carModelsUsed": [
+        "EF58",
+        "マニ31",
+        "マロネ48",
+        "マロネ29",
+        "スロ53",
+        "オロ35",
+        "ナハネ10",
+        "マシ29",
+        "ナハ11",
+        "スハフ42",
+        "スハ43"
+      ],
+      "updatedAt": "2026-11-09T16:15:08.882Z"
+    },
+    {
+      "id": "f_1794240609815",
+      "name": "●特急「平和」(1959年，7列車) ※牽引機はEF58青大将(他にC62．EF10．C59．C57も牽引)",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1959年",
+      "trainInfo": "7列車",
+      "segments": [
+        {
+          "nickname": "平和",
+          "from": "東京",
+          "fromPos": "1",
+          "to": "長崎",
+          "toPos": "8"
+        },
+        {
+          "nickname": "",
+          "from": "東京",
+          "fromPos": "9",
+          "to": "博多",
+          "toPos": "13"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "titleNote": "牽引機はEF58青大将(他にC62．EF10．C59．C57も牽引)",
+      "visibility": "public",
+      "carModelsUsed": [
+        "EF58",
+        "オハニ36",
+        "マロネ48",
+        "マロネ40",
+        "スロ54",
+        "オシ17",
+        "ナハネ11",
+        "ナハフ11"
+      ],
+      "updatedAt": "2026-11-09T16:10:09.816Z"
     }
   ],
   "formationsData": {
@@ -5177,6 +5274,20 @@
         ""
       ],
       "cars": [
+        {
+          "vehicleId": "vp_4ra2k518n5ii9",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "7152",
+          "setGroupId": "",
+          "vref": {
+            "m": "EF81",
+            "v": "0",
+            "l": "長岡運転所・ローズ",
+            "e": "EF81",
+            "p": "03_機関車/03_電気機関車/F級/EF81/EF81-0_長岡運転所・ローズ_36.png"
+          }
+        },
         {
           "vehicleId": "vp_qck8c31grg61l",
           "flipped": false,
@@ -11998,6 +12109,19 @@
       ],
       "cars": [
         {
+          "vehicleId": "vp_1rke7rx1q3mq5h",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "EF30",
+            "l": "銀",
+            "e": "EF30",
+            "p": "03_機関車/03_電気機関車/F級/EF30/EF30_銀.png"
+          }
+        },
+        {
           "vehicleId": "vp_15wt3g0i2uaas",
           "flipped": false,
           "attribute": "単",
@@ -12085,9 +12209,9 @@
           "vref": {
             "m": "オハフ15",
             "l": "白帯",
-            "s": "L",
+            "s": "R",
             "e": "14系",
-            "p": "01_JR 国鉄/01_客車/14系/オハフ15_白帯_L.png"
+            "p": "01_JR 国鉄/01_客車/14系/オハフ15_白帯_R.png"
           }
         },
         {
@@ -12165,9 +12289,9 @@
           "vref": {
             "m": "オハフ15",
             "l": "白帯",
-            "s": "L",
+            "s": "R",
             "e": "14系",
-            "p": "01_JR 国鉄/01_客車/14系/オハフ15_白帯_L.png"
+            "p": "01_JR 国鉄/01_客車/14系/オハフ15_白帯_R.png"
           }
         }
       ],
@@ -12203,6 +12327,19 @@
         ""
       ],
       "cars": [
+        {
+          "vehicleId": "vp_ng0onato8t96",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "EF58",
+            "l": "青大将色",
+            "e": "EF58",
+            "p": "03_機関車/03_電気機関車/F級/EF58/EF58_青大将色_36.png"
+          }
+        },
         {
           "vehicleId": "vp_17l77hlb6zkzn",
           "flipped": false,
@@ -12395,6 +12532,19 @@
       ],
       "cars": [
         {
+          "vehicleId": "vp_1bphs7zzjjqsx",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "C53",
+            "l": "流線型",
+            "e": "C53",
+            "p": "03_機関車/01_蒸気機関車/C53/C53_流線型.png"
+          }
+        },
+        {
           "vehicleId": "vp_l9b8nc2hmnaq",
           "flipped": false,
           "attribute": "",
@@ -12469,9 +12619,9 @@
           "vref": {
             "m": "スシ37800",
             "l": "ぶどう色1号",
-            "s": "L",
+            "s": "R",
             "e": "スハ32000系",
-            "p": "00_鉄道省/01_客車/スハ32000系/スシ37800_ぶどう色1号_L.png"
+            "p": "00_鉄道省/01_客車/スハ32000系/スシ37800_ぶどう色1号_R.png"
           }
         },
         {
@@ -12575,6 +12725,19 @@
         ""
       ],
       "cars": [
+        {
+          "vehicleId": "vp_126b9og15obgye",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "C53",
+            "l": "ヴィッテ式デフ",
+            "e": "C53",
+            "p": "03_機関車/01_蒸気機関車/C53/C53_ヴィッテ式デフ.png"
+          }
+        },
         {
           "vehicleId": "vp_u4ezamlb1pci",
           "flipped": true,
@@ -12851,6 +13014,19 @@
       ],
       "cars": [
         {
+          "vehicleId": "vp_126b9og15obgye",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "C53",
+            "l": "ヴィッテ式デフ",
+            "e": "C53",
+            "p": "03_機関車/01_蒸気機関車/C53/C53_ヴィッテ式デフ.png"
+          }
+        },
+        {
           "vehicleId": "vp_1bg1q4w1gulg50",
           "flipped": false,
           "attribute": "",
@@ -13099,6 +13275,19 @@
       ],
       "cars": [
         {
+          "vehicleId": "vp_136s5s012vbb7q",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "C55",
+            "l": "ヴィッテ式デフ",
+            "e": "C55",
+            "p": "03_機関車/01_蒸気機関車/C55/C55_ヴィッテ式デフ.png"
+          }
+        },
+        {
           "vehicleId": "vp_1mmk1o01qodn0g",
           "flipped": false,
           "attribute": "",
@@ -13162,6 +13351,19 @@
             "e": "オハ31系",
             "p": "01_JR 国鉄/01_客車/オハ31系/オハフ30_茶．帯なし.png"
           }
+        },
+        {
+          "vehicleId": "vp_1nwt9ckjs91l6",
+          "flipped": true,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "C11",
+            "l": "長工デフ",
+            "e": "C11",
+            "p": "03_機関車/01_蒸気機関車/C11/C11_長工デフ_26.png"
+          }
         }
       ],
       "reversed": false,
@@ -13196,6 +13398,19 @@
         "牽引機はC53なと"
       ],
       "cars": [
+        {
+          "vehicleId": "vp_1bphs7zzjjqsx",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "C53",
+            "l": "流線型",
+            "e": "C53",
+            "p": "03_機関車/01_蒸気機関車/C53/C53_流線型.png"
+          }
+        },
         {
           "vehicleId": "vp_1i8t9k71eugedj",
           "flipped": false,
@@ -13389,6 +13604,19 @@
       ],
       "cars": [
         {
+          "vehicleId": "vp_1y7m1vkrt4m5g",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "C51",
+            "l": "デフなし",
+            "e": "C51",
+            "p": "03_機関車/01_蒸気機関車/C51/C51_デフなし.png"
+          }
+        },
+        {
           "vehicleId": "vp_k5mfdwbjqf6i",
           "flipped": false,
           "attribute": "",
@@ -13396,9 +13624,9 @@
           "setGroupId": "",
           "vref": {
             "m": "スハニ32",
-            "l": "茶",
+            "l": "茶・赤帶",
             "e": "スハ32系",
-            "p": "01_JR 国鉄/01_客車/スハ32系/スハニ32_茶.png"
+            "p": "01_JR 国鉄/01_客車/スハ32系/スハニ32_茶・赤帶.png"
           }
         },
         {
@@ -13435,10 +13663,10 @@
           "setGroupId": "",
           "vref": {
             "m": "スシ28",
-            "l": "青大将色",
+            "l": "ぶどう色2号",
             "s": "L",
             "e": "スハ32系二重屋根",
-            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ28_青大将色_L.png"
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/スシ28_ぶどう色2号_L.png"
           }
         },
         {
@@ -14539,7 +14767,449 @@
       "reversed": false,
       "titleNote": "",
       "visibility": "public"
+    },
+    "f_1794240587884": {
+      "id": "f_1794240587884",
+      "routeName": "",
+      "trainType": "急行",
+      "dateStr": "1957年10月",
+      "trainInfo": "42列車",
+      "segments": [
+        {
+          "nickname": "筑紫",
+          "from": "東京",
+          "fromPos": "1",
+          "to": "博多",
+          "toPos": "11"
+        },
+        {
+          "nickname": "",
+          "from": "東京",
+          "fromPos": "12",
+          "to": "岡山",
+          "toPos": "13"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_t7olt1ehdtbv",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "EF58",
+            "l": "茶",
+            "e": "EF58",
+            "p": "03_機関車/03_電気機関車/F級/EF58/EF58_茶_36.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1qk5pr08qouzo",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "マニ31",
+            "e": "スハ32系二重屋根",
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/マニ31.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1mueb973fikeh",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "マロネ48",
+            "l": "ぶどう色2号",
+            "s": "L",
+            "e": "スハ32系二重屋根",
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネ48_ぶどう色2号_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1ic7m3zjqlyx1",
+          "flipped": true,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "マロネ29",
+            "l": "ぶどう色2号",
+            "e": "スハ32系二重屋根",
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネ29_ぶどう色2号.png"
+          }
+        },
+        {
+          "vehicleId": "vp_qnxcks1sv3fv8",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "スロ53",
+            "l": "ぶどう色2号．青二等帯",
+            "e": "スハ44系",
+            "p": "01_JR 国鉄/01_客車/スハ44系/スロ53_ぶどう色2号．青二等帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_s884o8pszga4",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "オロ35",
+            "l": "ぶどう色2号",
+            "s": "L",
+            "e": "スハ32系二重屋根",
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/オロ35_ぶどう色2号_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1k0pyjh1u0admr",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハネ10",
+            "l": "茶",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハネ10_茶_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_uhcjnv2y26xb",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "マシ29",
+            "l": "ぶどう色2号",
+            "s": "L",
+            "e": "スハ32系二重屋根",
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/マシ29_ぶどう色2号_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_f5fhnm1e1wfny",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハ11",
+            "l": "茶",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハ11_茶.png"
+          }
+        },
+        {
+          "vehicleId": "vp_f5fhnm1e1wfny",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハ11",
+            "l": "茶",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハ11_茶.png"
+          }
+        },
+        {
+          "vehicleId": "vp_f5fhnm1e1wfny",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハ11",
+            "l": "茶",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハ11_茶.png"
+          }
+        },
+        {
+          "vehicleId": "vp_24cwk218jiwv4",
+          "flipped": true,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "スハフ42",
+            "l": "茶",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハフ42_茶.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1venazq6vrb12",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "スハ43",
+            "l": "茶",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハ43_茶.png"
+          }
+        },
+        {
+          "vehicleId": "vp_24cwk218jiwv4",
+          "flipped": true,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "スハフ42",
+            "l": "茶",
+            "e": "スハ43系",
+            "p": "01_JR 国鉄/01_客車/スハ43系/スハフ42_茶.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "牽引機はEF58(35年7月：EF58．C59．EF10)",
+      "visibility": "public"
+    },
+    "f_1794240609815": {
+      "id": "f_1794240609815",
+      "routeName": "",
+      "trainType": "特急",
+      "dateStr": "1959年",
+      "trainInfo": "7列車",
+      "segments": [
+        {
+          "nickname": "平和",
+          "from": "東京",
+          "fromPos": "1",
+          "to": "長崎",
+          "toPos": "8"
+        },
+        {
+          "nickname": "",
+          "from": "東京",
+          "fromPos": "9",
+          "to": "博多",
+          "toPos": "13"
+        }
+      ],
+      "company": "",
+      "region": "",
+      "notes": [
+        ""
+      ],
+      "cars": [
+        {
+          "vehicleId": "vp_ng0onato8t96",
+          "flipped": false,
+          "attribute": "",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "EF58",
+            "l": "青大将色",
+            "e": "EF58",
+            "p": "03_機関車/03_電気機関車/F級/EF58/EF58_青大将色_36.png"
+          }
+        },
+        {
+          "vehicleId": "vp_eugizywg23zy",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "オハニ36",
+            "l": "茶",
+            "e": "オハ35系",
+            "p": "01_JR 国鉄/01_客車/オハ35系/オハニ36_茶.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1mueb973fikeh",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "マロネ48",
+            "l": "ぶどう色2号",
+            "s": "L",
+            "e": "スハ32系二重屋根",
+            "p": "01_JR 国鉄/01_客車/スハ32系二重屋根/マロネ48_ぶどう色2号_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_f9s5x6hrm2sk",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "マロネ40",
+            "l": "茶．青二等帯",
+            "s": "L",
+            "e": "オハ35系",
+            "p": "01_JR 国鉄/01_客車/オハ35系/マロネ40_茶．青二等帯_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_1o4obzf17w4jh7",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "スロ54",
+            "l": "ぶどう色2号．青二等帯",
+            "e": "スハ44系",
+            "p": "01_JR 国鉄/01_客車/スハ44系/スロ54_ぶどう色2号．青二等帯.png"
+          }
+        },
+        {
+          "vehicleId": "vp_18x45anat3c91",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "オシ17",
+            "l": "茶",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/オシ17_茶_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i62g4cltfjsy",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハネ11",
+            "l": "茶",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハネ11_茶_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i62g4cltfjsy",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハネ11",
+            "l": "茶",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハネ11_茶_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_vvgtyvw9qs1z",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハフ11",
+            "l": "茶",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハフ11_茶.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i62g4cltfjsy",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハネ11",
+            "l": "茶",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハネ11_茶_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i62g4cltfjsy",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハネ11",
+            "l": "茶",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハネ11_茶_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i62g4cltfjsy",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハネ11",
+            "l": "茶",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハネ11_茶_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_i62g4cltfjsy",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハネ11",
+            "l": "茶",
+            "s": "L",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハネ11_茶_L.png"
+          }
+        },
+        {
+          "vehicleId": "vp_vvgtyvw9qs1z",
+          "flipped": false,
+          "attribute": "単",
+          "productCode": "",
+          "setGroupId": "",
+          "vref": {
+            "m": "ナハフ11",
+            "l": "茶",
+            "e": "10系",
+            "p": "01_JR 国鉄/01_客車/10系/ナハフ11_茶.png"
+          }
+        }
+      ],
+      "reversed": false,
+      "titleNote": "牽引機はEF58青大将(他にC62．EF10．C59．C57も牽引)",
+      "visibility": "public"
     }
   },
-  "savedAt": "2026-11-09T16:02:02.619Z"
+  "savedAt": "2026-11-09T16:20:37.420Z"
 }
